@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Confluence on My New Hugo Site</title>
+    <link>http://example.org/tags/confluence/</link>
+    <description>Recent content in Confluence on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Nov 2018 13:57:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/confluence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
+      <link>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;p&gt;之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
+&lt;strong&gt;迁移思路：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;按照原来搭建方法在新宿主机上新建相同的容器（注意控制版本，可以用指定的版本来替代image的latest标签）&lt;/li&gt;
+&lt;li&gt;将备份的数据导入新的容器中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
+PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用&lt;a href=&#34;https://github.com/Chevereto/Chevereto-Free&#34;&gt;【chevreto】&lt;/a&gt;，有时间了整一整。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Docker搭建Jira和Confluence系统</title>
+      <link>http://example.org/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;p&gt;**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence&#34;&gt;【Github】&lt;/a&gt;上都有&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**&lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt;&lt;strong&gt;是Atlassian公司出品的项目与事务跟踪工具，被广泛应用于缺陷跟踪、客户服务、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理等工作领域。
+&lt;/strong&gt;&lt;a href=&#34;https://www.atlassian.com/software/confluence&#34;&gt;Confluence&lt;/a&gt;&lt;strong&gt;是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。使用简单，但它强大的编辑和站点管理特征能够帮助团队成员之间共享信息、文档协作、集体讨论，信息推送。
+&lt;/strong&gt;&lt;a href=&#34;https://github.com/phacility/phabricator&#34;&gt;Phabricator&lt;/a&gt;**是一套基于Web的软件开发协作工具，一个Web应用用于帮助软件公司构建更好的软件。原是facebook员工开发的可视化代码评审工具,主要功能有CodeReview、代码托管、Bug跟踪、Task管理、Wiki文档等功能。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

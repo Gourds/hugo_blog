@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on My New Hugo Site</title>
+    <link>http://example.org/tags/windows/</link>
+    <description>Recent content in Windows on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Mar 2017 21:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小米Air系统重装Win7</title>
+      <link>http://example.org/post/%E5%B0%8F%E7%B1%B3air%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85win7/</link>
+      <pubDate>Wed, 01 Mar 2017 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%B0%8F%E7%B1%B3air%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85win7/</guid>
+      <description>&lt;p&gt;**Tips:**为毛装个系统还要记一下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;网络的解释说第六代酷睿使用了更新的主板芯片，win7缺少驱动。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Skylake一代会支持DDR4，100系列芯片组升级也很诱人，但新平台有个大坑需要注意——Skylake平台上不能通过USB接口装Windows 7系统了。&lt;/li&gt;
+&lt;li&gt;Skylake一代Intel会移除EHCI主控，改为支持XHCI主控，但Windows 7系统原生不支持XHCI主控。再进一步说就是，如果你打算在Skylake平台上继续使用Windows 7系统，那么安装系统时就会遇到一个难题——不能通过USB硬盘安装，也不能通过USB光驱安装。&lt;/li&gt;
+&lt;li&gt;Skylake的这个改动只影响Windows 7系统，Windows 8及之后的系统都会原生支持XHCI主控，装系统时USB接口没问题。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>windows批量修改文件后缀</title>
+      <link>http://example.org/post/windows%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80/</link>
+      <pubDate>Fri, 23 Jan 2015 10:55:28 +0000</pubDate>
+      
+      <guid>http://example.org/post/windows%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80/</guid>
+      <description>&lt;p&gt;Ren命令可用于修改文件的名称，包括后缀名。比如，将D盘中的1.jpg重命名为2.png，只需在命令提示符中输入下面的命令，然后回车即可。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

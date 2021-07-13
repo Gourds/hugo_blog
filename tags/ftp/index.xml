@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FTP on My New Hugo Site</title>
+    <link>http://example.org/tags/ftp/</link>
+    <description>Recent content in FTP on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Mar 2016 12:38:41 +0000</lastBuildDate><atom:link href="http://example.org/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS搭建支持ftp的cdn服务</title>
+      <link>http://example.org/post/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Fri, 25 Mar 2016 12:38:41 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/</guid>
+      <description>&lt;p&gt;**摘要：**由于测试需要，需用nginx搭建cdn服务器，并要求可以使用ftp上传。送个之前nginx搭建cdn的&lt;a href=&#34;http://blog.arvon.top/2016/03/03/Nginx%E6%90%AD%E5%BB%BACDN%E6%BA%90%E7%AB%99/&#34;&gt;&amp;ndash;&amp;gt;飞机票&lt;/a&gt;,下面是主要vsftp的配置，nginx配置cdn参照飞机票那篇即可。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

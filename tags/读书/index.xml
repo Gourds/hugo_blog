@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>读书 on My New Hugo Site</title>
+    <link>http://example.org/tags/%E8%AF%BB%E4%B9%A6/</link>
+    <description>Recent content in 读书 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Aug 2016 00:38:24 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>8月读书计划</title>
+      <link>http://example.org/post/8%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Sat, 13 Aug 2016 00:38:24 +0000</pubDate>
+      
+      <guid>http://example.org/post/8%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20160813-augustread-1.jpg&#34; alt=&#34;20160813-augustread-1&#34;&gt;
+前天入了三本图灵的图解系列丛书，要计划读一下，这里做个记录。&lt;/p&gt;
+&lt;h3 id=&#34;书单&#34;&gt;书单&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.cn/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C%E7%A1%AC%E4%BB%B6-%E4%B8%89%E8%BD%AE%E8%B4%A4%E4%B8%80/dp/B00LZZADJC/ref=pd_bxgy_14_img_3?ie=UTF8&amp;amp;psc=1&amp;amp;refRID=F6ZZB1SS4HR0R286HEJA&#34;&gt;图解网络硬件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-%E5%9B%BE%E8%A7%A3TCP-IP-%E7%AB%B9%E4%B8%8B%E9%9A%86%E5%8F%B2/dp/B00DMS9990/ref=sr_1_1?ie=UTF8&amp;amp;qid=1471020135&amp;amp;sr=8-1&amp;amp;keywords=%E5%9B%BE%E8%A7%A3tcp+ip&#34;&gt;图解tcp/ip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-%E5%9B%BE%E8%A7%A3HTTP-%E4%B8%8A%E9%87%8E%E5%AE%A3/dp/B00JTQK1L4/ref=pd_bxgy_14_img_3?ie=UTF8&amp;amp;psc=1&amp;amp;refRID=X611PHYM2A37XZX7CZZW&#34;&gt;图解http&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>4月读书计划</title>
+      <link>http://example.org/post/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Sun, 03 Apr 2016 10:05:16 +0000</pubDate>
+      
+      <guid>http://example.org/post/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20160403-aprilread-1.jpg&#34; alt=&#34;20160403-aprilread-1&#34;&gt;
+PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多，不过心里很踏实，最近学习ansibel和git。&lt;/p&gt;
+&lt;h3 id=&#34;关于最近的学习方向&#34;&gt;关于最近的学习方向&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ansibel
+&lt;ul&gt;
+&lt;li&gt;最近购买了4本图书，买了就不能白买不是，而且也是机遇不错，现阶段也在使用ansibel，配置管理和版本控制对于运维确实是挺重要的，【奔跑吧ansible】预计花费4周左右时间来学习。&lt;/li&gt;
+&lt;li&gt;由于最近需要使用AWS，所需需要研究下ec2模块&lt;/li&gt;
+&lt;li&gt;需要进行学习变量和遍历循环&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

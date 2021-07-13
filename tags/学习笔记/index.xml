@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记 on My New Hugo Site</title>
+    <link>http://example.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 学习笔记 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Apr 2018 19:35:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>即学即用Docker读书笔记</title>
+      <link>http://example.org/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 09 Apr 2018 19:35:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26700648/&#34;&gt;《即学即用Docker》&lt;/a&gt;这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
+&lt;strong&gt;容器是什么&lt;/strong&gt;
+容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
+容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Notes：第一本Docker书</title>
+      <link>http://example.org/post/notes%E7%AC%AC%E4%B8%80%E6%9C%ACdocker%E4%B9%A6/</link>
+      <pubDate>Tue, 11 Oct 2016 15:49:18 +0000</pubDate>
+      
+      <guid>http://example.org/post/notes%E7%AC%AC%E4%B8%80%E6%9C%ACdocker%E4%B9%A6/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20161011-notedocker-1.jpg&#34; alt=&#34;&#34;&gt;
+图解http已经阅读完毕，现在开始转向docker的学习，先读《第一本Docker书》，就这样，简要记录读书笔记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python复习笔记</title>
+      <link>http://example.org/post/python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 19 Sep 2016 16:54:29 +0000</pubDate>
+      
+      <guid>http://example.org/post/python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;python复习笔记
+记录一下观看milo在网易云课堂上《疯狂的python》的复习笔记，源视频地址&lt;a href=&#34;http://study.163.com/course/courseLearn.htm?courseId=302001#/learn/video?lessonId=417020&amp;amp;courseId=302001&#34;&gt;戳这里&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

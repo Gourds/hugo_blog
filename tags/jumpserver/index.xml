@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jumpserver on My New Hugo Site</title>
+    <link>http://example.org/tags/jumpserver/</link>
+    <description>Recent content in Jumpserver on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Nov 2018 15:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/jumpserver/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker方式安装Jumpserver</title>
+      <link>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
+      <pubDate>Tue, 27 Nov 2018 15:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
+      <description>&lt;p&gt;之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jumpserver&#34;&gt;【github】&lt;/a&gt;上都有。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jumpserver实践记录</title>
+      <link>http://example.org/post/jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Wed, 24 May 2017 12:32:05 +0000</pubDate>
+      
+      <guid>http://example.org/post/jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170524-jumpserver-1.jpg&#34; alt=&#34;20170524-jumpserver-1&#34;&gt;
+&lt;strong&gt;Jumpserver&lt;/strong&gt;是一个由一群有理想有抱负的大牛们开发的开源跳板机及资产管理系统，最近在整理搭建，发现还是蛮好用的，过程记录如下，感谢&lt;a href=&#34;https://github.com/jumpserver/jumpserver/tree/0.3.2&#34;&gt;作者&lt;/a&gt;开源！！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

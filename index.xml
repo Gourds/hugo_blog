@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Sep 2019 20:38:24 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于对Python面向对象的理解</title>
+      <link>http://example.org/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</link>
+      <pubDate>Tue, 10 Sep 2019 20:38:24 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
+      <description>&lt;p&gt;说起面向对象(Object Oriented Programming)首先想到的就是三个词：封装、继承和多态。&lt;/p&gt;
+&lt;p&gt;**封装：**目的是为了简化编程和提升安全性(标识出允许外部使用的所有成员函数和数据项)。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性封装&lt;/li&gt;
+&lt;li&gt;方法封装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**继承和多态：**顾名思义，继承就是子类可以获取父类的特性，实际上就是为了更好的进行代码复用，而多态是指基于不同的父类调用同一方法也可能有不同的执行逻辑，与这个相关的还有一个有趣的名词”&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B&#34;&gt;鸭子模型&lt;/a&gt;“。&lt;/p&gt;
+&lt;p&gt;另外与面向对象对应的还有个面向过程(Process Oriented)。其中的区别下面有一个通俗的解释，可以做一个参考&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;面向对象是相对于面向过程的，比如你要充话费，你会想，可以下个支付宝，然后绑定银行卡，然后在淘宝上买卡，自己冲，这种种过程。但是对于你女朋友就不一样了，她是面向“对象”的，她会想，谁会充话费呢？当然是你了，她就给你电话，然后你把之前的做了一遍，然后她收到到帐的短信，说了句，亲爱的。这就是面向对象！女的思维大部分是面向“对象”的！她不关心处理的细节，只关心谁可以，和结果！&lt;/p&gt;
+&lt;p&gt;来源：知乎 &lt;a href=&#34;https://www.zhihu.com/question/31021366/answer/50581592&#34;&gt;链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>python中特殊方法和特殊变量总结</title>
+      <link>http://example.org/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 01 Sep 2019 10:59:29 +0000</pubDate>
+      
+      <guid>http://example.org/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;在研究一些python项目的源码时经常会看到一些特殊的方法和变量，比如两边双下划线&lt;code&gt;__init__&lt;/code&gt;定义的方法，还有一些类中会有以双下划线&lt;code&gt;__&lt;/code&gt;开头定义的变量，以及以单下划线&lt;code&gt;_&lt;/code&gt;开头的定义的变量。这里对目前经常遇到的做一个记录&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;__method__&lt;/code&gt;:在class中有一些以双下划线开头和结尾的函数被称为特殊方法(Magic Method)，更具体可以参考&lt;a href=&#34;https://docs.python.org/3/reference/datamodel.html#special-method-names&#34;&gt; 官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;顺便说一下访问限制。如下（限制其实并不严格，主要靠自觉）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;__&lt;/code&gt;:在类内部如果使用双下划线开头定义变量，那么这个变量就变成了私有变量（private），即这个变量只有在内部访问（并不是绝对控制，可以通过其他方法访问）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_&lt;/code&gt;:在类内部如果使用_开头定义变量，其实表示建议（表示可以从外部访问但最好不要访问）当成私有变量&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>JenkinsActiveChoices插件使用</title>
+      <link>http://example.org/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 30 Aug 2019 08:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;之前使用过Jenkins的&lt;a href=&#34;https://wiki.jenkins.io/display/JENKINS/Active+Choices+Plugin&#34;&gt;Active Choices Plugin&lt;/a&gt;插件，概述下当时我想实现的效果&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;针对自定义选项支持多选&lt;/li&gt;
+&lt;li&gt;在Job中点击构建是默认全部选中&lt;/li&gt;
+&lt;li&gt;采用DSL构建
+所以当时调研后就选择了这个插件，使用起来还不错。不过今天又遇到一个问题，记录一下&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flask中Jinja2模板使用总结</title>
+      <link>http://example.org/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 28 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;之前&lt;a href=&#34;&#34;&gt;已经总结过Jinja2&lt;/a&gt;了,这里主要总结在Falsk中的一些东西。包括以下方面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模板的目录结构设计&lt;/li&gt;
+&lt;li&gt;常用的模块&lt;/li&gt;
+&lt;li&gt;HTML转义&lt;/li&gt;
+&lt;li&gt;特殊装饰器&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jinja2语法</title>
+      <link>http://example.org/post/jinja2%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/jinja2%E8%AF%AD%E6%B3%95/</guid>
+      <description>&lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
+&lt;p&gt;大概介绍一下，主要介绍模板（模板仅仅是文本文件。它可以生成任何基于文本的格式（HTML、XML、CSV、LaTex 等等）。它并没有特定的扩展名，&lt;code&gt;.html&lt;/code&gt;或&lt;code&gt;.xml&lt;/code&gt;都是可以的。）模板包含变量或表达式 ，这两者在模板求值的时候会被替换为值。模板中 还有标签，控制模板的逻辑。模板语法的大量灵感来自于 Django和Python。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模板语言。它速度快，被广泛使用，并且提供了可选的沙箱模板执行环境保证安全.特征如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;沙箱中执行&lt;/li&gt;
+&lt;li&gt;强大的HTML自动转义系统保护系统免受XSS&lt;/li&gt;
+&lt;li&gt;模板继承&lt;/li&gt;
+&lt;li&gt;及时编译最优的python代码&lt;/li&gt;
+&lt;li&gt;易于调试。异常的行数直接指向模板中的对应行&lt;/li&gt;
+&lt;li&gt;可配置的语法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;mdash;选自 &lt;a href=&#34;http://docs.jinkan.org/docs/jinja2/index.html&#34;&gt;http://docs.jinkan.org&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>python中的*与**用法</title>
+      <link>http://example.org/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于Cookie和Session以及Token的说明</title>
+      <link>http://example.org/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Sun, 25 Aug 2019 12:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;p&gt;现在做web的话就绕不开安全认证这一步，那就先介绍下目前常见的认证方式然后再说关于cookie、session、token的东西。常用的认证方式简单概述如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cookie-session认证方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;出现较早的认证方式，主要形式是浏览器客户端将用户名密码发送给服务器，服务器验证后创建session并发放用于识别用户的sessionID（与用户状态绑定后记录在服务器端），这个sessionID以及一些相关的其他信息就是cookie，cookie随着响应(Set-Cookie)返回给客户端由客户端存储于浏览器，之后客户端的请求都会带上这个cookie，服务端通过cookie来获取Session信息从而进行认证校验。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Oauth认证方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Oauth是一种授权机制，主要为第三方应用颁发授权令牌（token）,目前有Oauth2.0和Oauth1.0版本，其中Oauth2.0版本的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc6749.html&#34;&gt;RFC6749&lt;/a&gt;，Oauth1.0版本的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc5849&#34;&gt;RFC5849&lt;/a&gt;。Oauth2.0的具体介绍可以参考&lt;a href=&#34;http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html&#34;&gt;阮一峰|Oauth2.0&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;JWT认证方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JWT的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc7519.html&#34;&gt;RFC7519&lt;/a&gt;。大概原理是客户端经过服务器认证后服务器给客户端返回一个json对象（包含用户信息且加密处理的数据），之后客户端与服务器通信都会带上这个json对象，服务器只通过这个对象来认证用户，也就是说服务器端是无状态的不会保存状态数据了（比如session）。具体可参考&lt;a href=&#34;http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html&#34;&gt;阮一峰|JSON Web Token 入门教程&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Aws使用EMR对Dynamodb进行备份还原</title>
+      <link>http://example.org/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
+      <pubDate>Wed, 21 Aug 2019 13:38:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
+      <description>&lt;p&gt;最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由&lt;code&gt;AutoScaling&lt;/code&gt;修改成了&lt;code&gt;按需&lt;/code&gt;，当使用之前的HIVE脚本时出现了&lt;code&gt;Read throughput should not be less than 1&lt;/code&gt;的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持&lt;code&gt;On-Demand billing&lt;/code&gt;这个功能，接着又准备使用&lt;code&gt;awscli&lt;/code&gt;命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的&lt;code&gt;版本问题说明&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
+      <link>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;p&gt;之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
+&lt;strong&gt;迁移思路：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;按照原来搭建方法在新宿主机上新建相同的容器（注意控制版本，可以用指定的版本来替代image的latest标签）&lt;/li&gt;
+&lt;li&gt;将备份的数据导入新的容器中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
+PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用&lt;a href=&#34;https://github.com/Chevereto/Chevereto-Free&#34;&gt;【chevreto】&lt;/a&gt;，有时间了整一整。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker方式安装Jumpserver</title>
+      <link>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
+      <pubDate>Tue, 27 Nov 2018 15:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
+      <description>&lt;p&gt;之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jumpserver&#34;&gt;【github】&lt;/a&gt;上都有。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>博客迁移至阿里云</title>
+      <link>http://example.org/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</link>
+      <pubDate>Tue, 30 Oct 2018 18:23:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
+      <description>&lt;p&gt;之前博客使用的是搬瓦工的机器，感觉访问速度受限，刚好阿里云有活动，就决定迁移到阿里。鉴于之前一直没有一个好用的评论系统，迁移到阿里后进行了备案，开始使用畅言评论系统。
+另外考虑到备份问题，也对部署方式进行了更新。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS7安装配置supervisor</title>
+      <link>http://example.org/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
+      <pubDate>Thu, 30 Aug 2018 21:12:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
+      <description>&lt;p&gt;之前一直用AWS的服务，使用的也是AWS官方提供的系统镜像，感觉挺好使的，所以centos7的版本用的不多。最近刚好需要使用腾讯云，记录一下supervisor的安装配置，不管简单与否，好久没写博客了还是记录一下吧。
+&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-27.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch使用curator管理index</title>
+      <link>http://example.org/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
+      <pubDate>Wed, 01 Aug 2018 12:11:16 +0000</pubDate>
+      
+      <guid>http://example.org/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
+      <description>&lt;p&gt;有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具&lt;code&gt;curator&lt;/code&gt;，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句&lt;code&gt;curator&lt;/code&gt;的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitbucket实践</title>
+      <link>http://example.org/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Sat, 09 Jun 2018 12:38:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
+      <description>&lt;p&gt;前言：之前使用了Atlassian公司的Confluence和Jira，现在新项目考虑使用Bitbucket做代码仓库，这里记录一下调研实践过程。由于之前的服务是使用docker进行部署的，所以Bitbucket也决定使用docker的方式进行部署。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;update:&lt;/strong&gt;
+2018-06-12: 添加备份还原文档，文档在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/bitbucket/backup-restore&#34;&gt;【这里】&lt;/a&gt;，就不单独在放Blog了&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Etcd的v3版本常用操作及可视化</title>
+      <link>http://example.org/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <pubDate>Tue, 24 Apr 2018 17:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <description>&lt;p&gt;简单记录一下&lt;code&gt;Etcd API v3&lt;/code&gt;版本的基本操作和可视化&lt;code&gt;WEB UI&lt;/code&gt;使用，关于V2的使用可以看我之前的一篇介绍&lt;a href=&#34;http://arvon.top/tags/%E8%BF%90%E7%BB%B4%E6%9E%B6%E6%9E%84/&#34;&gt;【etcd v2】&lt;/a&gt;。Etcd v2 和 v3 本质上是共享同一套 raft 协议代码的两个独立的应用，接口不一样，存储不一样，数据也是互相隔离的。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;V3相对V2的一些主要变化：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;接口通过grpc提供rpc接口，放弃了v2的http接口。优势是长连接效率提升明显，缺点是使用不如以前方便，尤其对不方便维护长连接的场景。&lt;/li&gt;
+&lt;li&gt;废弃了原来的目录结构，变成了纯粹的kv，用户可以通过前缀匹配模式模拟目录&lt;/li&gt;
+&lt;li&gt;内存中不再保存value，同样的内存可以支持存储更多的key&lt;/li&gt;
+&lt;li&gt;watch机制更稳定，基本上可以通过watch机制实现数据的完全同步&lt;/li&gt;
+&lt;li&gt;提供了批量操作以及事务机制，用户可以通过批量事务请求来实现Etcd v2的CAS机制（批量事务支持if条件判断）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&amp;ndash;以上摘自王渊命的文章[侵删]&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gitlab迁移升级记录</title>
+      <link>http://example.org/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 21 Apr 2018 19:33:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;之前写了gitlab的安装文档，目的是为了为迁移做准备，现在记录一下测试迁移的过程。现在需要将编译安装的&lt;code&gt;7.13.4&lt;/code&gt;版本的gitlab升级至&lt;code&gt;10.6.0&lt;/code&gt;并采用docker的方式运行。经查阅官方Docker&lt;a href=&#34;https://hub.docker.com/r/gitlab/gitlab-ce/tags/&#34;&gt;【版本】&lt;/a&gt;是&lt;code&gt;9.5.1-10.7.0&lt;/code&gt;。而在Github上&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn版本】&lt;/a&gt;是&lt;code&gt;v6.1-v10.6.4&lt;/code&gt;。另外
+还有Gitlab的&lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce/tree/master/doc/update&#34;&gt;【官方升级说明】&lt;/a&gt;,这个说明里面都是临近的版本升级说明，但并没有介绍大跨度升级的详细内容。最后决定采用github上提供的升级建议。记录说明如下&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gitlab搭建使用记录</title>
+      <link>http://example.org/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 14 Apr 2018 20:54:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
+操作之前看一把架构图,图片来自官方,侵删
+&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20180413-gitlab-1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Docker搭建Jira和Confluence系统</title>
+      <link>http://example.org/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sat, 14 Apr 2018 15:47:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;p&gt;**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence&#34;&gt;【Github】&lt;/a&gt;上都有&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**&lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt;&lt;strong&gt;是Atlassian公司出品的项目与事务跟踪工具，被广泛应用于缺陷跟踪、客户服务、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理等工作领域。
+&lt;/strong&gt;&lt;a href=&#34;https://www.atlassian.com/software/confluence&#34;&gt;Confluence&lt;/a&gt;&lt;strong&gt;是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。使用简单，但它强大的编辑和站点管理特征能够帮助团队成员之间共享信息、文档协作、集体讨论，信息推送。
+&lt;/strong&gt;&lt;a href=&#34;https://github.com/phacility/phabricator&#34;&gt;Phabricator&lt;/a&gt;**是一套基于Web的软件开发协作工具，一个Web应用用于帮助软件公司构建更好的软件。原是facebook员工开发的可视化代码评审工具,主要功能有CodeReview、代码托管、Bug跟踪、Task管理、Wiki文档等功能。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fluentd使用中遇到的丢数据问题</title>
+      <link>http://example.org/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 11 Apr 2018 17:52:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇&lt;a href=&#34;http://arvon.top/2018/02/23/Td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/&#34;&gt;Blog&lt;/a&gt;）&lt;/p&gt;
+&lt;p&gt;需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到&lt;a href=&#34;https://docs.fluentd.org/v1.0/articles/quickstart&#34;&gt;【Fluentd官网】&lt;/a&gt;获取支持。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph LR;
+	  A(Td-client)--&amp;gt;F(Td-forward)
+    B(Td-client)--&amp;gt;F(Td-forward)
+    F--&amp;gt;E(Elasticsearch cluster)
+    E--&amp;gt;K(Kibana)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>即学即用Docker读书笔记</title>
+      <link>http://example.org/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 09 Apr 2018 19:35:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26700648/&#34;&gt;《即学即用Docker》&lt;/a&gt;这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
+&lt;strong&gt;容器是什么&lt;/strong&gt;
+容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
+容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用IPsec搭建vpn系统</title>
+      <link>http://example.org/post/%E4%BD%BF%E7%94%A8ipsec%E6%90%AD%E5%BB%BAvpn%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sat, 31 Mar 2018 20:53:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E4%BD%BF%E7%94%A8ipsec%E6%90%AD%E5%BB%BAvpn%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;p&gt;多机房情况下，有时候需要将跨机房内网打通，现在还是使用ipsec的多。而且相对也比较成熟。IPsec全称ip Security，由两类协议组成，分别为AH协议（Authentication Header）和ESP协议（Encapsulated Security Payload），由于AH协议无法提供数据加密，所有数据在传输时以明文传输，且AH由于提供数据来源确认，所以无法穿越NAT，所以这两种协议中ESP协议应用更广泛一些。VPN只是IPSec的一种应用方式。刚好有空余的机器就简单实验一下。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kibana使用sentinl报警实践</title>
+      <link>http://example.org/post/kibana%E4%BD%BF%E7%94%A8sentinl%E6%8A%A5%E8%AD%A6%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Thu, 15 Mar 2018 13:13:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/kibana%E4%BD%BF%E7%94%A8sentinl%E6%8A%A5%E8%AD%A6%E5%AE%9E%E8%B7%B5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;背景介绍：&lt;/strong&gt;
+对于Kibana的一些数据我们有时候是想要对某些字段进行持续关注的，这时候通过报警的手段就可以大幅提升对这些信息状态了解的及时性及可靠性。使用&lt;a href=&#34;https://github.com/sirensolutions/sentinl&#34;&gt;Sentinl这个kibana开源插件&lt;/a&gt;，就可以帮助我们实现这个功能。这里记录一下我的实践过程，主要是对一些业务数据某些字段进行监控报警。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker备份还原简介</title>
+      <link>http://example.org/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Tue, 06 Mar 2018 16:50:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/</guid>
+      <description>&lt;p&gt;一般而言，使用docker远端镜像仓库的话，基本不需要使用备份还原，但再某些情况下也是需要这些操作的，如对网络受限的主机进行部署或者基于安全考虑对本地仓库进行备份，就需要这些操作，总之Docker的备份还原还是十分简便的，这里也做一下记录。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于Fluentd使用中filter及ES插件的问题记录</title>
+      <link>http://example.org/post/%E5%85%B3%E4%BA%8Efluentd%E4%BD%BF%E7%94%A8%E4%B8%ADfilter%E5%8F%8Aes%E6%8F%92%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 01 Mar 2018 11:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%85%B3%E4%BA%8Efluentd%E4%BD%BF%E7%94%A8%E4%B8%ADfilter%E5%8F%8Aes%E6%8F%92%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;测试环境：
+OS: Amazon Linux AMI release 2015.03
+Fluentd: td-agent 0.12.20&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Td-agent配置说明</title>
+      <link>http://example.org/post/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Fri, 23 Feb 2018 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;简介：&lt;/strong&gt;
+生产环境并没有使用传统ELK,而是使用tdagent来代替Logstash作日志收集。
+关于td-agent和Fluentd的关系可以引用&lt;a href=&#34;https://www.fluentd.org/faqs&#34;&gt;官网的描述&lt;/a&gt;：&lt;code&gt;&amp;quot;In one word, td-agent is a stable distribution package of Fluentd.&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;update：2017-05-20 初次修改&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;一般架构&#34;&gt;一般架构&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170911-fluentd-1.jpg&#34; alt=&#34;fluentd-1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jenkins使用GitSubmodule实现代码库调用</title>
+      <link>http://example.org/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Wed, 29 Nov 2017 11:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</guid>
+      <description>&lt;p&gt;**背景：**在实际项目构建中有时会用到调用其他代码库的情况，例如调用公共代码库和基础代码库，此时就可以用git submodule这个模块实现这个需求，git submodule可以将一个git仓库以目录的方式作为另一个git仓库的子目录。Jenkins用来做项目的持续集成，如果使用了Git Submodule,每次Jenkins更新版本库的时候还需要更新submodule的内容。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>collectd使用exec模块进行自定义监控</title>
+      <link>http://example.org/post/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Tue, 28 Nov 2017 15:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/</guid>
+      <description>&lt;p&gt;使用Grafana进行服务监控的明显优点就是监控出图漂亮，而且拥有丰富的插件，可以直接监控系统资源和负荷信息以及常见的服务进程状态，不过还是会有一些场景直接使用模块是不太容易进行监控的，这个时候更适合使用编写脚本进行数据收集和监控，而&lt;strong&gt;exec&lt;/strong&gt;模块就可以满足这样的需求，下面就列举一个小栗子。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch默认fields1000报错解决</title>
+      <link>http://example.org/post/elasticsearch%E9%BB%98%E8%AE%A4fields1000%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Fri, 24 Nov 2017 16:11:16 +0000</pubDate>
+      
+      <guid>http://example.org/post/elasticsearch%E9%BB%98%E8%AE%A4fields1000%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</guid>
+      <description>&lt;p&gt;**背景：**由于日志输出调整，ES出现了很多如下的报错，这个issue可以在&lt;a href=&#34;https://github.com/elastic/elasticsearch/pull/17357&#34;&gt;这个github地址找到&lt;/a&gt;,另外还有&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/reference/5.0/indices-update-settings.html&#34;&gt;5.0版本关于这个问题的说明&lt;/a&gt;。
+我的ES版本为：5.0.0(直接curl yourip:9200就可以看到)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is to prevent mapping explosion when dynamic keys such as UUID are used as field names. index.mapping.total_fields.limit specifies the total number of fields an index can have. An exception will be thrown when the limit is reached. The default limit is 1000. Value 0 means no limit. This setting is runtime adjustable
+&lt;strong&gt;&amp;ndash; &amp;ndash; &amp;ndash; 以上摘自&lt;/strong&gt;yanjunh对于该issue的答复&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于Kafka分布式消息队列</title>
+      <link>http://example.org/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sun, 05 Nov 2017 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;背景:&lt;/strong&gt; 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK+kafka的应用落地记录。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Etcd及相关组件安装配置说明</title>
+      <link>http://example.org/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Fri, 13 Oct 2017 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;简介：&lt;/strong&gt;&lt;a href=&#34;https://coreos.com/etcd/&#34;&gt;Etcd&lt;/a&gt;是CentOS公司发起的一个开源项目，灵感来自于 ZooKeeper 和 Doozer，它使用Go语言编写，并通过Raft一致性算法处理日志复制以保证强一致性（Raft是一个来自Stanford的新的一致性算法，适用于分布式系统的日志复制，Raft通过选举的方式来实现一致性，在Raft中，任何一个节点都可能成为Leader。），主要用于&lt;strong&gt;共享配置和服务发现&lt;/strong&gt;的分布式、一致性的KV存储系统。
+除了常见的共享配置及服务发现，还可以使用Etcd结合SkyDNS提供&lt;strong&gt;内网域名解析服务&lt;/strong&gt;。
+这里主要涉及etcd安装配置说明、etcd-view安装配置、skydns安装配置&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ansible部署NFS服务</title>
+      <link>http://example.org/post/ansible%E9%83%A8%E7%BD%B2nfs%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Thu, 07 Sep 2017 20:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/ansible%E9%83%A8%E7%BD%B2nfs%E6%9C%8D%E5%8A%A1/</guid>
+      <description>&lt;p&gt;虽然很简单，写的比较low，不过还是记下吧，下次就可以直接拿着用了。很久以前写过一篇如何配置，这个安装基本是把原来的给改成playbook了，附原来&lt;a href=&#34;http://arvon.top/2015/10/20/NFS%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/&#34;&gt;手动配置&lt;/a&gt;的链接。
+另附官方模块地址：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://docs.ansible.com/ansible/latest/mount_module.html&#34;&gt;http://docs.ansible.com/ansible/latest/mount_module.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>vsftp安装配置记录</title>
+      <link>http://example.org/post/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 13 Aug 2017 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;ftp服务在运维工作中还是十分常用的。下面记录下安装配置过程。关于主动被动原理可以看一下&lt;a href=&#34;http://wiki.arvon.top/doku.php?id=ftp&#34;&gt;我的wiki&lt;/a&gt;
+vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下面是适用于一般场景的配置，使用虚拟用户进行登录操作，更多定制需要需要自行进行修改。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shell编程多线程并发实践</title>
+      <link>http://example.org/post/shell%E7%BC%96%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B9%B6%E5%8F%91%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Wed, 02 Aug 2017 22:15:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/shell%E7%BC%96%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B9%B6%E5%8F%91%E5%AE%9E%E8%B7%B5/</guid>
+      <description>&lt;p&gt;**Tips：**正常来说shell是不具备多线程能力的，也就是说shell本身是按顺序进行执行指令的，并不能并发执行。但是可以换个思路，通过遍历+后台执行的方式进行模拟多线程的方式。但是还有个问题就是如何去控制并发数量，比如你要批量往1w台机器上copy一个文件，如果不设置并发数，估计直接就带宽跑满game over了，不过也有对应的解决方案，往下看吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rsync服务安装配置记录</title>
+      <link>http://example.org/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 24 Jul 2017 22:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;关于RSYNC，个人理解传送大量资源文件或较多小文件时适合使用传输，具有数据验证、断点续传、增量传输、差异传输等特性。优于scp及ftp等工具。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;rsync是unix/linux下同步文件的一个高效算法，它能同步更新两处计算机的文件与目录，并适当利用查找文件中的不同块以减少数据传输。rsync中一项与其他大部分类似程序或协定中所未见的重要特性是镜像是只对有变更的部分进行传送。rsync可拷贝／显示目录属性，以及拷贝文件，并可选择性的压缩以及递归拷贝。rsync利用由Andrew Tridgell发明的算法&amp;hellip;&lt;/p&gt;
+&lt;p&gt;摘自&lt;a href=&#34;http://coolshell.cn/articles/7425.html&#34;&gt;Rsync的核心算法&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>弱网终端替代工具Mosh</title>
+      <link>http://example.org/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/</link>
+      <pubDate>Mon, 17 Jul 2017 23:00:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/</guid>
+      <description>&lt;p&gt;**应用背景：**当有海外服务器维护需求的时候，常常会遇到使用ssh终端延时高并经常性假死的情况，非常影响维护效率。然后一个能缓解延时假死的小工具就是十分有用的，Mosh正是这样一个工具。Mosh是一个用于从客户端跨互联网连接远程服务器的命令行工具，程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下，基于UDP方式进行数据传输。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx添加登录认证</title>
+      <link>http://example.org/post/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/</link>
+      <pubDate>Sun, 16 Jul 2017 13:23:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/</guid>
+      <description>&lt;p&gt;之前在爆Zabbix漏洞的时候，在未进行漏洞升级修复的情况下，可以先对nginx的web入口加一个认证，这样就能很大程度上降低被黑的风险。同理在使用Nginx代理一些服务的时候，也可以用这种方法进行安全上的加固。做起来比较简单，却行之有效。Nginx上一般使用的认证方式有2种，分别是auth_basic（本机认证）及ngx_http_auth_request_module（第三方认证）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AWS-cli操作S3及DynamoDB</title>
+      <link>http://example.org/post/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/</link>
+      <pubDate>Sat, 08 Jul 2017 18:23:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;AWS的cli还是挺好用的，文档也比较全面，其实看个文档就可以使用，但是我毕竟是我，记下来，减少查询搜索的时间也是挺赚的，不是么。。话说“懒人使世界进步”，其实有个很重要的前提就是你这个懒人做出了可以帮你出色完成原定任务的东西，这时你才有资格懒。很显然，我没有。。。But我一直在实现这个前提的路上前进&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>记ARDB频繁崩溃错误</title>
+      <link>http://example.org/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Fri, 07 Jul 2017 23:23:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/</guid>
+      <description>&lt;p&gt;**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以&lt;a href=&#34;https://github.com/yinqiwen/ardb&#34;&gt;看这里&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>open-falcon业务监控实践</title>
+      <link>http://example.org/post/open-falcon%E4%B8%9A%E5%8A%A1%E7%9B%91%E6%8E%A7%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Thu, 06 Jul 2017 19:50:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/open-falcon%E4%B8%9A%E5%8A%A1%E7%9B%91%E6%8E%A7%E5%AE%9E%E8%B7%B5/</guid>
+      <description>&lt;p&gt;上一篇已经写了falcon的基础安装配置以及简单的使用说明，现在来记录下一些业务相关的监控如何做，截图居多。心疼流量三秒&amp;hellip;其实实现方法都不难，设计一个良好的命名规范以及科学的分组，实际上对监控来说是十分必要的。还有就是要对监控指标的判断做个性化设置，最好就是看图的话一眼就概览全局（要让图清晰直观的反应状况），报警的话做到真实有效人性化。这篇里面只涉及如何对常见服务进行配置。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;对于基础监控：cpu、内存、IO、网络适合折线图；而磁盘使用量这些其实设置多维度报警即可（如磁盘使用率&amp;gt;80%且小于20G报警）&lt;/li&gt;
+&lt;li&gt;对于服务和端口：监控出数字显示服务总数量，服务正常数量、服务异常数量，然后配置报警即可&lt;/li&gt;
+&lt;li&gt;对于业务监控：对业务指标使用折线图一般都是适用的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>open-falcon安装部署记录</title>
+      <link>http://example.org/post/open-falcon%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 29 Jun 2017 19:50:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/open-falcon%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;监控对运维来说是相当重要的，现在来说falcon确实相对zabbix有一定优势，不过也存在明显短板，优势是架构设计以及一些设计思路很好，就单说模板继承，这个相对zabbix就很有优势，毕竟是已经有了前人的经验，小米之前也是用的zabbix，所以大众常见的zabbix痛点在falcon上基本得到了改善，但falcon的UI真是很难受啊，不过毕竟火起来还不久，又是一个互联网领头企业开源的项目，还是很有前景的，不妨尝试一下，现在只是基本搭建完成，TAG系统和表达式这些还没开始尝试，最近应该还会了解这个，以下是安装配置及简单调试使用过程。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux启动流程</title>
+      <link>http://example.org/post/linux%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sun, 25 Jun 2017 06:50:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170624-Linuxboot-1.jpg&#34; alt=&#34;1&#34;&gt;
+**背景故事：**为啥想起来写Linux启动流程了呢，这个呢要从一个月以前说起，蜜汁尴尬~~~。我媳妇用的Ubuntu，然后她需要装很多环境，不知道为何内核老是更新，结果就是后面装东西的时候提示/boot分区空间不足无法安装，但我天真可爱的媳妇不会清呀，然后我就来了，一看简单啊，删呗，凡事总有**BUT**，我觉得这个事情嘛要清就要清彻底，就不rm-rf了，直接卸安装包多清爽，于是乎系统挂了，剁手啊打什么通配符。。。不过总结一下还是对系统层认识不够生动，所以就补一篇日志，万一我最棒的媳妇看到了呢，那就点点点~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux后台执行执行程序及环境变量优先级</title>
+      <link>http://example.org/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <pubDate>Sun, 25 Jun 2017 01:23:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <description>&lt;p&gt;**背景故事：**为什么写这个呢，因为有次给媳妇弄翻墙的shadows，配完了想让她每次开机就自动运行，然后发现了个事情，就是脚本有输出的时候直接用&amp;amp;是不大好的。还查了下，这可不应该啊，虽然说好久不用这个玩意，不过还是应该掌握的，所以就当记个笔记吧&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux管理员的瑞士军刀-AWK</title>
+      <link>http://example.org/post/linux%E7%AE%A1%E7%90%86%E5%91%98%E7%9A%84%E7%91%9E%E5%A3%AB%E5%86%9B%E5%88%80-awk/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E7%AE%A1%E7%90%86%E5%91%98%E7%9A%84%E7%91%9E%E5%A3%AB%E5%86%9B%E5%88%80-awk/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170624-awkcommand-1.jpg&#34; alt=&#34;1&#34;&gt;
+作为Linux系统管理员的瑞士小军刀，awk的作用是显而易见的，但是一般情况下使用的都是很简单的分割打印，但有时候需要稍微复杂一些的用法，这里进行一下我的总结。其实之前有写过一篇awk的博客，不过写的比较基础，这次作为补充并尽可能覆盖常用用法，之前的地址&lt;a href=&#34;http://arvon.top/2015/07/29/awk%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B/&#34;&gt;戳这里&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GTX直压上云技术实践</title>
+      <link>http://example.org/post/gtx%E7%9B%B4%E5%8E%8B%E4%B8%8A%E4%BA%91%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/gtx%E7%9B%B4%E5%8E%8B%E4%B8%8A%E4%BA%91%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</guid>
+      <description>&lt;p&gt;**update:**测试时出现二进制文件大小恰好为256M整数倍时解压不退出的bug,提交至维护人员后已经解决，不得不说反馈速度真的是快，从我提出到解决总共用了不到1天时间。给点个赞，棒棒哒
+GTX Compressor(直压上云技术)调研,由于现业务存在大规模业务数据上传云存储，云厂商提供接口具有一些局限性，现在尝试gtz这个工具。该工具目前支持阿里云及AWS非常符合业务场景，具有高压缩比、高性能、高速直压云等特点，且有数据校验机制，而且开包即用，&lt;strong&gt;不依赖当前系统其他任何库&lt;/strong&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;**介绍：**GTX Compressor是Genetalks公司GTX Lab实验室开发的面向大型数据（数GB甚至数TB数据，尤其是生物信息数据）上云，而量身定制的复杂通用数据压缩打包系统，可以对任意基因测序数据以及数据目录进行高压缩率的快速打包，形成单个压缩数据文件，以方便存储档与远程传输、校验。区别于以往的压缩工具，GT Compressor系统着力于 高压缩率，高速率，方便的数据抽取 。
+——————摘自&lt;a href=&#34;https://github.com/Genetalks/gtz/blob/master/README_chs.md&#34;&gt;Github上该项目官方介绍&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>常见压缩格式对比</title>
+      <link>http://example.org/post/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/</link>
+      <pubDate>Tue, 30 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;数据压缩&lt;/strong&gt;可以分为无损压缩和有损压缩，有损，指的是压缩之后就无法完整还原原始信息，但是压缩率可以很高，主要应用于视频、话音等数据的压缩，因为损失了一点信息，人是很难察觉的，或者说，也没必要那么清晰照样可以看可以听；无损压缩则用于文件等等必须完整还原信息的场合。目前只归纳zip、rar、tar.gz、tar.bz常见的这几种，其他的以后接触了再进行补充。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jumpserver实践记录</title>
+      <link>http://example.org/post/jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Wed, 24 May 2017 12:32:05 +0000</pubDate>
+      
+      <guid>http://example.org/post/jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170524-jumpserver-1.jpg&#34; alt=&#34;20170524-jumpserver-1&#34;&gt;
+&lt;strong&gt;Jumpserver&lt;/strong&gt;是一个由一群有理想有抱负的大牛们开发的开源跳板机及资产管理系统，最近在整理搭建，发现还是蛮好用的，过程记录如下，感谢&lt;a href=&#34;https://github.com/jumpserver/jumpserver/tree/0.3.2&#34;&gt;作者&lt;/a&gt;开源！！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS下pip安装报permitted错误解决</title>
+      <link>http://example.org/post/macos%E4%B8%8Bpip%E5%AE%89%E8%A3%85%E6%8A%A5permitted%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Wed, 24 May 2017 01:23:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/macos%E4%B8%8Bpip%E5%AE%89%E8%A3%85%E6%8A%A5permitted%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170627-macerror-1.jpg&#34; alt=&#34;1&#34;&gt;
+安装个python的etcd模块报错，那红红的一串很是好看。。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>计算机度量单位总结</title>
+      <link>http://example.org/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%A6%E9%87%8F%E5%8D%95%E4%BD%8D%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 24 Apr 2017 21:23:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%A6%E9%87%8F%E5%8D%95%E4%BD%8D%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;第一次可以分不清大B小b，但二次就不应该。。。
+&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>小米Air系统重装Win7</title>
+      <link>http://example.org/post/%E5%B0%8F%E7%B1%B3air%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85win7/</link>
+      <pubDate>Wed, 01 Mar 2017 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%B0%8F%E7%B1%B3air%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85win7/</guid>
+      <description>&lt;p&gt;**Tips:**为毛装个系统还要记一下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;网络的解释说第六代酷睿使用了更新的主板芯片，win7缺少驱动。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Skylake一代会支持DDR4，100系列芯片组升级也很诱人，但新平台有个大坑需要注意——Skylake平台上不能通过USB接口装Windows 7系统了。&lt;/li&gt;
+&lt;li&gt;Skylake一代Intel会移除EHCI主控，改为支持XHCI主控，但Windows 7系统原生不支持XHCI主控。再进一步说就是，如果你打算在Skylake平台上继续使用Windows 7系统，那么安装系统时就会遇到一个难题——不能通过USB硬盘安装，也不能通过USB光驱安装。&lt;/li&gt;
+&lt;li&gt;Skylake的这个改动只影响Windows 7系统，Windows 8及之后的系统都会原生支持XHCI主控，装系统时USB接口没问题。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于Ansible条件判断的一个思考</title>
+      <link>http://example.org/post/%E5%85%B3%E4%BA%8Eansible%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E6%80%9D%E8%80%83/</link>
+      <pubDate>Wed, 01 Feb 2017 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E5%85%B3%E4%BA%8Eansible%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E6%80%9D%E8%80%83/</guid>
+      <description>&lt;p&gt;**背景：**生产环境中偶然遇到一个问题，在使用Playbook调用supervisor进行stop进程时，虽然supervisor指令成功执行，但进程并没有结束。然后准备使用ansible原生的条件判断，但是目前并没有找到合适的。所以呢就先用笨方法自己手动实现类似于while的判断循环结构。另外引发的思考：1.程序在成功启动的情况下什么操作会导致程序的瞬间崩溃。2.运行状态下移除程序源文件对程序有何影响。3.我需要一本书《程序是如何跑起来的》哈哈。。下面写个playbook模拟下使用Ansible如何等待后台进程执行完毕&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx状态码总结</title>
+      <link>http://example.org/post/nginx%E7%8A%B6%E6%80%81%E7%A0%81%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 04 Dec 2016 11:23:45 +0000</pubDate>
+      
+      <guid>http://example.org/post/nginx%E7%8A%B6%E6%80%81%E7%A0%81%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-26.jpg&#34; alt=&#34;我要学习&#34;&gt;
+工作中常见的状态码其实并不多，去小米面试的时候问到关于这个问题，回答的不太好，这里就总结记录一下。万一面试再遇到呢。是吧&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Iptables整理笔记</title>
+      <link>http://example.org/post/iptables%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 17 Nov 2016 11:23:17 +0000</pubDate>
+      
+      <guid>http://example.org/post/iptables%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20161117-iptables-1.png&#34; alt=&#34;20161117-iptables-1&#34;&gt;
+iptabels还是很实用的，分享下我的整理笔记&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>yum安装ffmpeg记录</title>
+      <link>http://example.org/post/yum%E5%AE%89%E8%A3%85ffmpeg%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Tue, 25 Oct 2016 16:34:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/yum%E5%AE%89%E8%A3%85ffmpeg%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;Tips：最近安装一个名为ffmpeg的包，但是epel和ali的源都没有这个包。所以&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Notes：第一本Docker书</title>
+      <link>http://example.org/post/notes%E7%AC%AC%E4%B8%80%E6%9C%ACdocker%E4%B9%A6/</link>
+      <pubDate>Tue, 11 Oct 2016 15:49:18 +0000</pubDate>
+      
+      <guid>http://example.org/post/notes%E7%AC%AC%E4%B8%80%E6%9C%ACdocker%E4%B9%A6/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20161011-notedocker-1.jpg&#34; alt=&#34;&#34;&gt;
+图解http已经阅读完毕，现在开始转向docker的学习，先读《第一本Docker书》，就这样，简要记录读书笔记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>yum 报错：rpmdb open failed</title>
+      <link>http://example.org/post/yum-%E6%8A%A5%E9%94%99rpmdb-open-failed/</link>
+      <pubDate>Fri, 30 Sep 2016 11:42:03 +0000</pubDate>
+      
+      <guid>http://example.org/post/yum-%E6%8A%A5%E9%94%99rpmdb-open-failed/</guid>
+      <description>&lt;p&gt;**背景：**刚刚直接kill掉yum进程后，yum报了rpmdb的报错，记一下解决方法&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python复习笔记</title>
+      <link>http://example.org/post/python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 19 Sep 2016 16:54:29 +0000</pubDate>
+      
+      <guid>http://example.org/post/python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;python复习笔记
+记录一下观看milo在网易云课堂上《疯狂的python》的复习笔记，源视频地址&lt;a href=&#34;http://study.163.com/course/courseLearn.htm?courseId=302001#/learn/video?lessonId=417020&amp;amp;courseId=302001&#34;&gt;戳这里&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Centos下搭建svn服务器</title>
+      <link>http://example.org/post/centos%E4%B8%8B%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Fri, 09 Sep 2016 16:57:56 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E4%B8%8B%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>&lt;p&gt;**前言：**因需求需搭建一个svn服务器，这里顺带记录一下svn的搭建及使用方法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.8搭建个人dokuwiki</title>
+      <link>http://example.org/post/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/</link>
+      <pubDate>Sat, 20 Aug 2016 11:42:10 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt;&lt;a href=&#34;https://www.dokuwiki.org/wiki:dokuwiki&#34;&gt;dokuwiki&lt;/a&gt;是一个开源的wiki引擎程序，非常适合知识库管理，因为有的东西知识不完善不好用blog写，有时也许即时记录一下想法什么的，所以这个还是很有必要的。之前也对比过其他的wiki程序，不过这个比较符合我的要求，所以就用这个程序，这里主要对安装配置做一下记录。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu14.04命令行连接无线网络</title>
+      <link>http://example.org/post/ubuntu14-04%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Wed, 17 Aug 2016 12:34:25 +0000</pubDate>
+      
+      <guid>http://example.org/post/ubuntu14-04%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C/</guid>
+      <description>&lt;p&gt;***摘要：***自己有个性能一般的ThinkPad本子，装了Ubuntu14.04，不过最近感觉触摸板很不好用，就打算使用命令行直接使用不用图形界面了，也更省资源。命令行启动后遇见个问题，我不会用命令行直接连接无线网络，真是尴尬，这里记录一下解决过程。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DNS端口使用解释</title>
+      <link>http://example.org/post/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/</link>
+      <pubDate>Tue, 16 Aug 2016 12:59:31 +0000</pubDate>
+      
+      <guid>http://example.org/post/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/</guid>
+      <description>&lt;p&gt;**前言：**我们公司有个面试题很有意思，DNS的默认查询端口是什么？可能大家都很熟悉dns使用53端口，那究竟是使用udp协议还是tcp协议呢，恩，我也不清楚，所以就看了个科普贴！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hexo之Next主题设置</title>
+      <link>http://example.org/post/hexo%E4%B9%8Bnext%E4%B8%BB%E9%A2%98%E5%A4%B4%E5%83%8F%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 15 Aug 2016 16:21:22 +0000</pubDate>
+      
+      <guid>http://example.org/post/hexo%E4%B9%8Bnext%E4%B8%BB%E9%A2%98%E5%A4%B4%E5%83%8F%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;p&gt;**摘要：**使用Next主题搭建了博客，虽然说头像什么的都是浮云，但是没有还是略显不爽，但恕我愚昧只按照&lt;a href=&#34;http://theme-next.iissnan.com/getting-started.html&#34;&gt;Next官方文档&lt;/a&gt;没弄出来，官方写的太简略了，记录一下较为详细的步骤。
+更新：打赏
+更新：站内搜索&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>8月读书计划</title>
+      <link>http://example.org/post/8%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Sat, 13 Aug 2016 00:38:24 +0000</pubDate>
+      
+      <guid>http://example.org/post/8%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20160813-augustread-1.jpg&#34; alt=&#34;20160813-augustread-1&#34;&gt;
+前天入了三本图灵的图解系列丛书，要计划读一下，这里做个记录。&lt;/p&gt;
+&lt;h3 id=&#34;书单&#34;&gt;书单&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.cn/%E5%9B%BE%E8%A7%A3%E7%BD%91%E7%BB%9C%E7%A1%AC%E4%BB%B6-%E4%B8%89%E8%BD%AE%E8%B4%A4%E4%B8%80/dp/B00LZZADJC/ref=pd_bxgy_14_img_3?ie=UTF8&amp;amp;psc=1&amp;amp;refRID=F6ZZB1SS4HR0R286HEJA&#34;&gt;图解网络硬件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-%E5%9B%BE%E8%A7%A3TCP-IP-%E7%AB%B9%E4%B8%8B%E9%9A%86%E5%8F%B2/dp/B00DMS9990/ref=sr_1_1?ie=UTF8&amp;amp;qid=1471020135&amp;amp;sr=8-1&amp;amp;keywords=%E5%9B%BE%E8%A7%A3tcp+ip&#34;&gt;图解tcp/ip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-%E5%9B%BE%E8%A7%A3HTTP-%E4%B8%8A%E9%87%8E%E5%AE%A3/dp/B00JTQK1L4/ref=pd_bxgy_14_img_3?ie=UTF8&amp;amp;psc=1&amp;amp;refRID=X611PHYM2A37XZX7CZZW&#34;&gt;图解http&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git钩子在hexo中的应用</title>
+      <link>http://example.org/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Fri, 12 Aug 2016 15:12:44 +0000</pubDate>
+      
+      <guid>http://example.org/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/</guid>
+      <description>&lt;p&gt;**摘要：**早该记录了，最开始我的blog是使用hexo+github搭建的使用jacman主题，也是因为对git不够了解，当时绑定域名是使用直接在github上写CNAME文件。感觉太麻烦了，就买了空间换了WordPress，wp也是用了要有快一年，然后感觉markdown支持的真是不好，而且迁移很不爽，然后就换了现在的。关于现在这套blog架构，依然使用hexo作为blog框架，我自己的电脑用作服务器，然后VPS作为web服务器提供发布，使用git hook进行更新blog。&lt;/p&gt;
+&lt;h3 id=&#34;git钩子简介---摘自git-scmhttpsgit-scmcombookzhv2e887aae5ae9ae4b989-git-git-e992a9e5ad90&#34;&gt;git钩子简介 &amp;ndash;摘自&lt;a href=&#34;https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90&#34;&gt;git-scm&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tmux源码安装</title>
+      <link>http://example.org/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 12 Aug 2016 12:26:51 +0000</pubDate>
+      
+      <guid>http://example.org/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</guid>
+      <description>&lt;p&gt;**简述：**之前其实有写过&lt;a href=&#34;http://arvon.top/2015/07/22/Tmux-%E4%BD%BF%E7%94%A8%E7%AE%80%E8%AE%B0/&#34;&gt;一篇tmux的简单使用绍&lt;/a&gt;,但是不够详尽，而且当时也并没有出现几个问题，当yum不好使的时候，就要上源码了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>sort小插曲</title>
+      <link>http://example.org/post/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/</link>
+      <pubDate>Thu, 11 Aug 2016 16:10:05 +0000</pubDate>
+      
+      <guid>http://example.org/post/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/</guid>
+      <description>&lt;p&gt;**Tips:**遇见一个有趣的sort命令问题，很有意思，这里记录一下，顺便也再复习一下sort命令。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ssh无交互批量认证</title>
+      <link>http://example.org/post/ssh%E6%97%A0%E4%BA%A4%E4%BA%92%E6%89%B9%E9%87%8F%E8%AE%A4%E8%AF%81/</link>
+      <pubDate>Mon, 08 Aug 2016 16:38:38 +0000</pubDate>
+      
+      <guid>http://example.org/post/ssh%E6%97%A0%E4%BA%A4%E4%BA%92%E6%89%B9%E9%87%8F%E8%AE%A4%E8%AF%81/</guid>
+      <description>&lt;p&gt;***Tips:***在使用ansible部署服务器的时候，部署机需要先做好和其他服务器的免密码登陆，如果一台一台手动执行那就太low了，所以就需要脚本来批量完成这些繁琐的工作，下面是我写的脚本，主要使用了expect这个工具。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cassandra简单使用记录</title>
+      <link>http://example.org/post/cassandra%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 06 Aug 2016 00:14:09 +0000</pubDate>
+      
+      <guid>http://example.org/post/cassandra%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;**简述：**在现在公司接触这个比较多，但是之前并不熟悉，所以需要简单记录下基础增删改查，以及简单介绍。我目前的理解就是这个nosql非常适合做集群，在吞吐量上应该远高于传统数据库。需要再以后工作学习中再深入了解，先简单记录一下吧。&lt;/p&gt;
+&lt;h3 id=&#34;简介&#34;&gt;简介&lt;/h3&gt;
+&lt;p&gt;Apache Cassandra最初由Facebook创建，集Google BigTable的数据模型与Amazon Dynamo的完全分布式的架构于一身,是一个大规模可伸缩的开源NoSQL数据库。Cassandra完美地支持管理大量的结构化，半结构化和非结构化数据，且能够跨多个数据中心和云。Cassandra提供了持续可用性，线性扩展，操作简单，跨多个服务器而没有单点故障。且提供了一个有力的动态数据模型，支持最大的灵活性和快速响应。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zabbix添加自定义监控项</title>
+      <link>http://example.org/post/zabbix%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/</link>
+      <pubDate>Fri, 05 Aug 2016 15:14:59 +0000</pubDate>
+      
+      <guid>http://example.org/post/zabbix%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Intorduction:&lt;/em&gt; 最近一直有使用zabbix，根据需求需要自己手动监控一些服务，这时就需要自己动手自己写一些小脚本了，我这里写了一个比较简单的小脚本，主要用来监控monit监控的服务状态，听起来有些拗口，不过就是这样的。 这里尽可以详细的记录一下，哪里有不对欢迎指正&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS搭建rsync服务</title>
+      <link>http://example.org/post/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 11 Apr 2016 13:08:07 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/</guid>
+      <description>&lt;p&gt;更新：本篇选择独立启动模式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;选择rsync服务器启动方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;rsync服务器负载比较高，则使用独立启动模式&lt;/li&gt;
+&lt;li&gt;rsync服务器负责较低，使用xinetd运行方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tips：由于需要将线上大量数据迁移至本地，直接使用ftp或scp会很不方便，使用rsync可以有断点续传功能，而且搭建起来十分快捷方便。&lt;/p&gt;
+&lt;h4 id=&#34;环境&#34;&gt;环境&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;本地CentOS release 6.7&lt;/li&gt;
+&lt;li&gt;线上CentOS release 6.5&lt;/li&gt;
+&lt;li&gt;这里是将线上数据拉至本地，本地主机在局域网中 ，并没有单独的公网IP，故线上服务器做rsync的服务端，本地PC做rsync的客户端&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>4月读书计划</title>
+      <link>http://example.org/post/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Sun, 03 Apr 2016 10:05:16 +0000</pubDate>
+      
+      <guid>http://example.org/post/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20160403-aprilread-1.jpg&#34; alt=&#34;20160403-aprilread-1&#34;&gt;
+PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多，不过心里很踏实，最近学习ansibel和git。&lt;/p&gt;
+&lt;h3 id=&#34;关于最近的学习方向&#34;&gt;关于最近的学习方向&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ansibel
+&lt;ul&gt;
+&lt;li&gt;最近购买了4本图书，买了就不能白买不是，而且也是机遇不错，现阶段也在使用ansibel，配置管理和版本控制对于运维确实是挺重要的，【奔跑吧ansible】预计花费4周左右时间来学习。&lt;/li&gt;
+&lt;li&gt;由于最近需要使用AWS，所需需要研究下ec2模块&lt;/li&gt;
+&lt;li&gt;需要进行学习变量和遍历循环&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS搭建支持ftp的cdn服务</title>
+      <link>http://example.org/post/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Fri, 25 Mar 2016 12:38:41 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/</guid>
+      <description>&lt;p&gt;**摘要：**由于测试需要，需用nginx搭建cdn服务器，并要求可以使用ftp上传。送个之前nginx搭建cdn的&lt;a href=&#34;http://blog.arvon.top/2016/03/03/Nginx%E6%90%AD%E5%BB%BACDN%E6%BA%90%E7%AB%99/&#34;&gt;&amp;ndash;&amp;gt;飞机票&lt;/a&gt;,下面是主要vsftp的配置，nginx配置cdn参照飞机票那篇即可。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nginx搭建CDN源站记录</title>
+      <link>http://example.org/post/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/</link>
+      <pubDate>Thu, 03 Mar 2016 12:32:05 +0000</pubDate>
+      
+      <guid>http://example.org/post/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/</guid>
+      <description>&lt;p&gt;**摘要：**nginx有很多很强大的功能，可以做web，可以做代理、可以做SLB、还可以做缓存CDN等等，这里记录以下做缓存时的配置。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>python2.6升级2.7记录</title>
+      <link>http://example.org/post/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 12 Feb 2016 12:08:36 +0000</pubDate>
+      
+      <guid>http://example.org/post/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;Tips:由于想自己用Django搭建blog，需要2.7的python环境而centos6.7默认是2.6版本，所以升级了python&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>selinux和iptables关闭</title>
+      <link>http://example.org/post/selinux%E5%92%8Ciptables%E5%85%B3%E9%97%AD/</link>
+      <pubDate>Mon, 01 Feb 2016 19:08:28 +0000</pubDate>
+      
+      <guid>http://example.org/post/selinux%E5%92%8Ciptables%E5%85%B3%E9%97%AD/</guid>
+      <description>&lt;h3 id=&#34;iptables&#34;&gt;iptables&lt;/h3&gt;
+&lt;h4 id=&#34;centos6x&#34;&gt;Centos6.x&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;临时关闭&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;service iptables stop
+/etc/init.d/iptabels stop
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;永久关闭&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;chkconfig iptables off
+chkconfig iptables on    &lt;span style=&#34;color:#75715e&#34;&gt;#开启&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS搭建NTP服务器</title>
+      <link>http://example.org/post/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Wed, 20 Jan 2016 12:15:50 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;简介：&lt;/strong&gt;
+NTP（NetworkTime Protocol，网络时间协议）是用来在分布式时间服务器和客户端之间进行时间同步。&lt;a href=&#34;http://blog.arvon.top/2015/12/13/Linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/&#34;&gt;&amp;ndash;&amp;gt;另一篇关于时间的&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NTP基于UDP报文进行传输，使用的UDP端口号为123。
+使用NTP的目的是对网络内所有具有时钟的设备进行时钟同步，使网络内所有设备的时钟保持一致，从而使设备能够提供基于统一时间的多种应用。
+对于时间错误会导致服务器宕机，所以运行NTP的本地系统，既可以接受来自其他时钟源的同步，又可以作为时钟源同步其他的时钟，并且可以和其他设备互相同步。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.x挂载ntfs和xfs问题</title>
+      <link>http://example.org/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 13 Jan 2016 11:30:24 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; centos6.x默认是ext4的文件系统，而centos7.x是默认xfs的文件系统，所以直接挂载是会出问题的，另外ntfs是windows上的文件系统，挂载也会出问题，这里记录一下如何解决。&lt;/p&gt;
+&lt;h3 id=&#34;挂载xfs&#34;&gt;挂载xfs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;安装支持包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wget http://mirrors.opencas.cn/epel/6/i386/epel-release-6-8.noarch.rpm
+yum install xfsprogs kmod-xfs xfsdump xfsprogs-devel
+mount -t xfs /dev/sdc1 /data3/sdc1/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux主机时间不准问题</title>
+      <link>http://example.org/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 13 Dec 2015 11:20:56 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;**摘要：**linux主机时间过一段时间就会发现时间不对了，查阅资料这个大概是因为硬件时间和服务器时间不一致导致的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>linux解压rar及xshell的rz</title>
+      <link>http://example.org/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/</link>
+      <pubDate>Sat, 05 Dec 2015 11:53:05 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/</guid>
+      <description>&lt;p&gt;**摘要：**有时会遇到要在linux下解压rar包，这就很不舒服，毕竟rar是win下不开源的东西，所以建议还是少用，另外rz这个小工具在使用xshell想上传个小东西的时候非常方便，大文件还是建议ftp或者弄个rsync。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>cp和chown的几个好用选项</title>
+      <link>http://example.org/post/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/</link>
+      <pubDate>Sat, 14 Nov 2015 10:09:54 +0000</pubDate>
+      
+      <guid>http://example.org/post/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/</guid>
+      <description>&lt;p&gt;**摘要：**生产环境中对权限什么的要求是很严格的，而使用root用户进行操作，难免会变更权限信息，修改权限就变得十分有必要，而以下的选线都是很实用的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NFS服务安装部署记录</title>
+      <link>http://example.org/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Tue, 20 Oct 2015 01:00:10 +0000</pubDate>
+      
+      <guid>http://example.org/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ansible之HAVE_DECL_MPZ_POWM_SEC报错记录</title>
+      <link>http://example.org/post/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 12 Oct 2015 17:00:27 +0000</pubDate>
+      
+      <guid>http://example.org/post/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;简述：在centOS6.5上使用pip安装ansible(version=2.1.1.0)时报错&lt;/p&gt;
+&lt;h3 id=&#34;报错解决&#34;&gt;报错解决&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;解决如下
+分析为PyCrypto模块安装有问题，所以就直接卸载重装。。有能力的话我会进一步探究这个报错，不过现在以下方法可以解决，先这样吧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pip uninstall python-keyczar pycrypto pyasn1
+yum erase python-keyczar python-crypto pyasn1
+yum install python-keyczar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>安装hexo记录</title>
+      <link>http://example.org/post/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 13 Jun 2015 10:00:02 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;简要记录一下在centos上安装hexo的过程
+记录在CentOS环境下配置hexo博客环境记录&lt;/p&gt;
+&lt;h2 id=&#34;install-git&#34;&gt;Install Git&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yum remove git
+yum install git-core
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux下关于文件属性的三个时间</title>
+      <link>http://example.org/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Wed, 13 May 2015 10:36:23 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/</guid>
+      <description>&lt;p&gt;Tips: 主要区分linux下文件的三个时间属性，atime、mtime、ctime&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;文件的 Access time，atime 是在读取文件或者执行文件时更改的任何对inode的访问都会使此处改变。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;文件的Modified time，mtime 是在写入文件时随文件内容的更改而更改的。&lt;/li&gt;
+&lt;li&gt;文件的 Change time，ctime 是在写入文件、更改所有者、权限或链接设置时随 Inode 的内容更改而更改的。只要stat出来的内容发生改变就会发生改变。mtime的改变必然导致ctime的改变。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux查看主机信息</title>
+      <link>http://example.org/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/</link>
+      <pubDate>Mon, 13 Apr 2015 11:08:25 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/</guid>
+      <description>&lt;p&gt;这篇包括（系统版本、内核信息、核心数、主机名）还有一个关于系统信息查看的，&lt;a href=&#34;http://blog.arvon.top/2015/07/27/Linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/&#34;&gt;&amp;ndash;&amp;gt;飞机票&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Centos搭建nginx&#43;php环境</title>
+      <link>http://example.org/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Fri, 13 Feb 2015 12:58:28 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</guid>
+      <description>&lt;p&gt;Tips：线上pfsense中添加bandwidthd监控流量的功能存在问题，需要配置一个支持php的web环境来进行支持，这里选择了nginx+php。&lt;/p&gt;
+&lt;h3 id=&#34;environment&#34;&gt;Environment&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;yum&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;wget http://mirrors.opencas.cn/epel/6/i386/epel-release-6-8.noarch.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;CentOS6.3_x64&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>windows批量修改文件后缀</title>
+      <link>http://example.org/post/windows%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80/</link>
+      <pubDate>Fri, 23 Jan 2015 10:55:28 +0000</pubDate>
+      
+      <guid>http://example.org/post/windows%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80/</guid>
+      <description>&lt;p&gt;Ren命令可用于修改文件的名称，包括后缀名。比如，将D盘中的1.jpg重命名为2.png，只需在命令提示符中输入下面的命令，然后回车即可。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/</guid>
+      <description>&lt;h2 id=&#34;tags-pythonansible&#34;&gt;title: Ansible根据excel自动生成inventory文件
+date: 2016-08-05
+tags: [Python,Ansible]&lt;/h2&gt;
+&lt;p&gt;Tip: 根据excel表格手动写入inventory文件是个费时费力还容易出错的事情，这种事情本就应该使用脚本完成，刚好最近需要，然后就查阅文档，本来是想用shell的，毕竟相比python我还是对shell比较熟悉，奈何python的xlrd模块实在太合适所以就用python写了脚本（需要先安装xlrd模块）。
+Update:现在不推荐使用xlrd模块了，原因是现在python3.0趋向于使用新模块openpyx，而且xlrd模块只是读取excel还需xlwd模块进行写入操作，不过现在这个模块已经支持不是很好了，我用pip没装上，所以现在使用openpyx模块，在&lt;a href=&#34;http://arvon.top/2017/05/24/Jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/&#34;&gt;我博客Jumpserver&lt;/a&gt;这篇文章里记录有这个模块的用法&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h2 id=&#34;tags-ansiblepython&#34;&gt;title: Ansible自定义插件获取指定远端配置
+date: 2018-05-11
+tags: [Ansible,Python]&lt;/h2&gt;
+&lt;p&gt;**概述:**将ansible部署与变量控制拆分，解决应用与主机的规划问题。其中使用Ansible本地&lt;code&gt;fact&lt;/code&gt;实现应用主机规划，使用自定义的Ansible&lt;code&gt;lookup&lt;/code&gt;插件来实现从远端获取变量。通过这种方式可以提高ansible代码的利用率和普适性，降低运维的配置管理工作复杂度。可以关注下以下几点&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;本地git注册文件的目录结构&lt;/li&gt;
+&lt;li&gt;ansible的local fact与git中注册目录的对应关系&lt;/li&gt;
+&lt;li&gt;ansible的playbook配置模板与获取fact的配置关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;设计好以上几点可以大幅降低不必要的麻烦，设计的时候最好充分考虑后期扩展问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/awk%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/awk%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B/</guid>
+      <description>&lt;h2 id=&#34;tags-正则&#34;&gt;title: awk用法实例
+date: 2015-07-29 10:45:32
+tags: [正则]&lt;/h2&gt;
+&lt;p&gt;**简介：**awk一种优秀的文本处理工具，Linux和Unix环境中现有的功能最强大的数据处理引擎之一。这个编程及数据操作语言其名称得自于它的创始人阿尔佛雷德·艾侯、彼得·温伯格和布莱恩·柯林汉姓氏的首个字母。awk的处理文本和数据的方式是这样的，它逐行扫描文件，从第一行到最后一行，寻找匹配的特定模式的行，并在这些行上进行你想要的操作。如果没有指定处理动作，则把匹配的行显示到标准输出(屏幕)，如果没有指定模式，则所有被操作所指定的行都被处理，awk有3个不同版本: awk、nawk和gawk，未作特别说明，一般指gawk，gawk 是 AWK 的 GNU 版本。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAzabbix%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAzabbix%E7%9B%91%E6%8E%A7/</guid>
+      <description>&lt;h2 id=&#34;tags-zabbix&#34;&gt;title: CentOS环境搭建zabbix2.2监控
+date: 2015-09-09 10:48:06
+tags: [Zabbix]&lt;/h2&gt;
+&lt;p&gt;##zabbix server
+更新：此版本为2.2版本，已更新3.0版本&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/crontab%E7%AE%80%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/crontab%E7%AE%80%E8%AE%B0/</guid>
+      <description>&lt;h2 id=&#34;tags-crontab&#34;&gt;title: crontab简记
+date: 2015-09-16 17:01:58
+tags: [Crontab]&lt;/h2&gt;
+&lt;p&gt;今天刚好要备份线上的crontab，就顺便记下来，省得忘了以后还要去上网找。
+**介绍:**crontab命令
+常见于Unix和类Unix的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中，以供之后读取和执行。该词来源于希腊语 chronos(χρνο)，原意是时间。常，crontab储存的指令被守护进程激活， crond常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为cron jobs。&lt;em&gt;crontab文件&lt;/em&gt;包含送交cron守护进程的一系列作业和指令。每个用户可以拥有自己的crontab文件；同时，操作系统保存一个针对整个系统的crontab文件，该文件通常存放于/etc或者/etc之下的子目录中，而这个文件只能由系统管理员来修改。
+crontab文件的每一行均遵守特定的格式，由空格或tab分隔为数个领域，每个领域可以放置单一或多个数值。(ps:摘自百度百科)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/grep%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/grep%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;h2 id=&#34;tags-linux正则&#34;&gt;title: grep命令
+date: 2016-07-15
+tags: [Linux,正则]&lt;/h2&gt;
+&lt;p&gt;Tips：很有用的几个选项&lt;/p&gt;
+&lt;h3 id=&#34;常用&#34;&gt;常用&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;定向匹配&amp;amp;忽略大小写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#-B&lt;/span&gt;
+grep -B &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; part filename &lt;span style=&#34;color:#75715e&#34;&gt;#显示filename中匹配part的前5行&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#-A&lt;/span&gt;
+grep -A &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; part filename &lt;span style=&#34;color:#75715e&#34;&gt;#显示filename中匹配part的后5行&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#-C&lt;/span&gt;
+grep -C &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; part filename &lt;span style=&#34;color:#75715e&#34;&gt;#显示filename中匹配part的前后5行&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#-i&lt;/span&gt;
+grep -i part filename &lt;span style=&#34;color:#75715e&#34;&gt;#匹配filename中的part不区分大小写&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/hexo%E7%AE%80%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/hexo%E7%AE%80%E6%98%8E/</guid>
+      <description>&lt;h2 id=&#34;tags-hexo&#34;&gt;title: Hexo简明
+date: 2015-07-20 16:42:47
+tags: [Hexo]&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;简介&lt;/strong&gt;：出自台湾某大学生之手，说是叫tommy351，感觉是叼了个扎天。是一个基于Node.js的静态博客程序，其
+编译上百篇文字只需要几秒。hexo生成静态网页可以直接放到Github Pages，BAE，SAE等平台上。&lt;/p&gt;
+&lt;p&gt;###常用的命令&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hexo n “我的博客” == hexo new “我的博客”	#新建文章&lt;/li&gt;
+&lt;li&gt;hexo p == hexo publish	#将_drafts下的文件放到_post下，也就是发布草稿&lt;/li&gt;
+&lt;li&gt;hexo g == hexo generate	#生成静态网页&lt;/li&gt;
+&lt;li&gt;hexo d == hexo deploy	#发布到远程服务器，开启&amp;ndash;generate选项可以在deploy前自动generate&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/linux%E4%B8%8Bhexo%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E4%B8%8Bhexo%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h2 id=&#34;tags-hexo&#34;&gt;title: Linux下hexo配置
+date: 2015-03-13 11:25:11
+tags: [Hexo]&lt;/h2&gt;
+&lt;h3 id=&#34;本地环境&#34;&gt;本地环境&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;CentOS6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;下载nvm（Node.js的版本管理器）软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;wget -qO- &lt;a href=&#34;https://raw.github.com/creationix/nvm/master/install.sh&#34;&gt;https://raw.github.com/creationix/nvm/master/install.sh&lt;/a&gt; | sh	#下载安装nvm（安装目录在/root/.nvm/）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;安装nvm软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nvm install 0.10	#选择Node.js的安装版本
+nvm ls	#查看node.js的版本&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/linux%E4%B8%8B%E6%90%AD%E5%BB%BAvsftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E4%B8%8B%E6%90%AD%E5%BB%BAvsftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>&lt;h2 id=&#34;tags-toolsftp&#34;&gt;title: Linux下搭建VSFTP服务器
+date: 2015-07-28 15:04:06
+tags: [Tools,FTP]&lt;/h2&gt;
+&lt;p&gt;**简介：**VSFTP（Very Secure FTP）是一个基于GPL发布的类Unix系统上使用的FTP服务器软件，设计者的初衷是代码的安全，
+另外速度在使用ASCII代码的模式下在数据时，VSFTP的速度为Wu-FTp的两倍，如果Linux主机使用2.4.x的内核，在千兆以太网的
+下的下载速度可以达到86MB/S。而且很稳定，在单机上支持4000以上的并发用户同时连接，根据RedHat和Ftp服务器的数据，VSFTP
+服务器可以支持15000个并发用户&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/</guid>
+      <description>&lt;h2 id=&#34;tags-linux&#34;&gt;title: Linux挂载LVM分区
+date: 2015-08-07 18:02:24
+tags: [Linux]&lt;/h2&gt;
+&lt;p&gt;**简介：**LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制，它由Heinz Mauelshagen在Linux 2.4内核上实现，目前最新版本为：稳定版1.0.5，开发版 1.1.0-rc2，以及LVM2开发版。Linux用户安装Linux操作系统时遇到的一个常见的难以决定的问题就是如何正确地评估各分区大小，以分配合适的硬盘空间。普通的磁盘分区管理方式在逻辑分区划分好之后就无法改变其大小，当一个逻辑分区存放不下某个文件时，这个文件因为受上层文件系统的限制，也不能跨越多个分区来存放，所以也不能同时放到别的磁盘上。而遇到出现某个分区空间耗尽时，解决的方法通常是使用符号链接，或者使用调整分区大小的工具，但这只是暂时解决办法，没有从根本上解决问题。随着Linux的逻辑卷管理功能的出现，这些问题都迎刃而解，用户在无需停机的情况下可以方便地调整各个分区大小。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;h2 id=&#34;tags-linux&#34;&gt;title: Linux查看系统信息命令
+date: 2015-07-27 10:49:08
+tags: [Linux]&lt;/h2&gt;
+&lt;p&gt;**Command Include：**disk、memory、hostname、find&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/lsof%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/lsof%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;h2 id=&#34;tags-commandtools&#34;&gt;title: lsof命令
+date: 2015-08-21 10:37:24
+tags: [Command,Tools]&lt;/h2&gt;
+&lt;p&gt;**简介：**lsof命令既（list open files）Lsof 是遵从Unix 哲学的典范，它只做一件事情，并且做的相当完美——它可以列出某个进程打开的所有文件信息。打开的文件可能是普通的文件，目录，NFS文件，块文件，字符文件，共享库，常规管道，明明管道，符号链接，Socket流，网络Socket，UNIX域Socket，以及其它更多。因为Unix系统中几乎所有东西都是文件，你可以想象lsof该有多有用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/markdown-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/markdown-introduction/</guid>
+      <description>&lt;h2 id=&#34;tags-hexo&#34;&gt;title: Markdown Introduction
+date: 2015-07-21 08:17:54
+tags: [Hexo]&lt;/h2&gt;
+&lt;p&gt;**简介：**Markdown是一个web上使用的文本到HTML的转换工具，目前github、Stackoverflow等网站均支持这种格式，还有简书也是
+很支持的呦。它存在的宗旨就是实现易读易写，称为适用于网络的书写语言。自我感觉也确实不错，很适合做IT的人记笔记用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h2 id=&#34;tags-mysql&#34;&gt;title: mysql主从
+date: 2015-09-07 15:38:14
+tags: [Mysql]&lt;/h2&gt;
+&lt;p&gt;这篇题目占了好长时间了，一直说补上也没补上，今天没事，就弄个实验环境来记录一下。正所谓好记性不如烂笔头，那就写一下。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/mysql%E8%87%AA%E7%94%A8%E5%91%BD%E4%BB%A4%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/mysql%E8%87%AA%E7%94%A8%E5%91%BD%E4%BB%A4%E6%89%8B%E5%86%8C/</guid>
+      <description>&lt;h2 id=&#34;tags-mysql&#34;&gt;title: mysql自用命令手册
+date: 2015-07-22 16:10:15
+tags: [Mysql]&lt;/h2&gt;
+&lt;h3 id=&#34;连接登录数据库&#34;&gt;连接登录数据库&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mysql –u用户名 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;–h主机名或者IP地址&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; –p密码
+eggs: mysql -uusername -hIPaddress -p&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;password&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#1. 连接到本机上的MYSQL。&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#首先打开DOS窗口，然后进入目录mysql\bin，再键入命令mysql -u root -p，回车后提示你输密码.注意用户名前可以有空格也可以没有空格，但是密码前必须没有空格，否则让你重新输入密码.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MYSQL的提示符是： mysql&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#2. 连接到远程主机上的MYSQL。假设远程主机的IP为：110.110.110.110，用户名为root,密码为abcd123。则键入以下命令：&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#mysql -h110.110.110.110 -u root -p 123;（注:u与root之间可以不用加空格，其它也一样）&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#3. 退出MYSQL命令： exit （回车） 或者 \q&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/nc%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/nc%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;h2 id=&#34;tags-commandlinux&#34;&gt;title: nc命令
+date: 2015-07-30 12:10:00
+tags: [Command,Linux]&lt;/h2&gt;
+&lt;p&gt;由于telnet不能测试udp端口联通性，nc命令可以检测udp端口连接状态，这里记录一下用法
+&lt;code&gt;nc命令介绍:&lt;/code&gt;可以检测tcp/udp端口连通性、端口扫描、远程传输文件、克隆硬盘或分区、保存web页面、模拟http Headers、简单聊天等等&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;h2 id=&#34;tags-nginx&#34;&gt;title: Nginx重定向及域名CNAME问题
+date: 2017-05-29 17:12:05
+tags: [Nginx]&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170529-nginxcname-1.jpg&#34; alt=&#34;20170529-nginxcname-1&#34;&gt;
+&lt;strong&gt;关于域名解析&lt;/strong&gt;的几个问题整理，最近换了博客评论系统，原因是多说马上就停止支持了，所以现在转用网易云跟帖，个人感觉还可以。期间有个域名解析的问题我觉得可以记录下。主要就是DNS的CNAME记录以及Nginx的301、302重定向。&lt;/p&gt;
+&lt;h3 id=&#34;关于dns的cname解析&#34;&gt;关于DNS的CNAME解析&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其实这个也蛮好理解，不涉及数据报内容的改变，就是将要解析的域名指向另一个域名解析。对比A记录就更清晰了，A记录是域名到IP的解析，而CNAME记录是域名解析到域名。所以通过域名的CNAME记录对web访问时没有任何影响的，它只是改变了域名解析的过程而已。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A82/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A82/</guid>
+      <description>&lt;h2 id=&#34;tags-学习笔记&#34;&gt;title: Perl语言入门
+date: 2015-08-17 17:45:52
+tags: [学习笔记]&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;更新记录&lt;/strong&gt;
+2015/08/17	拆开来记，start with foreach
+2015/09/01 更新到子程序，最近有点懒惰了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</guid>
+      <description>&lt;h2 id=&#34;tags-学习笔记&#34;&gt;title: Perl语言入门（6th）课后习题
+date: 2015-08-12 16:00:21
+tags: [学习笔记]&lt;/h2&gt;
+&lt;p&gt;个人感觉课后习题单独分出来比较方便，这里有可能的话会多放些例子，ok，go&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/prel%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/prel%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;h2 id=&#34;tags-学习笔记&#34;&gt;title: Perl语言入门（一）
+date: 2015-08-10 14:55:36
+tags: [学习笔记]&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;更新记录：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2015/08/10 DonePage45&lt;/li&gt;
+&lt;li&gt;2015/08/11 DonePage68&lt;/li&gt;
+&lt;li&gt;2015/08/17 Read list and array, do a new one.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/sa%E8%BF%90%E7%BB%B4%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/sa%E8%BF%90%E7%BB%B4%E8%B5%84%E6%BA%90/</guid>
+      <description>&lt;h2 id=&#34;tags-tools&#34;&gt;title: SA运维资源
+date: 2015-07-28 16:07:50
+tags: [Tools]&lt;/h2&gt;
+&lt;p&gt;运维是个杂学呀~~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/sed-%E5%91%BD%E4%BB%A4%E5%AE%9E%E4%BE%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/sed-%E5%91%BD%E4%BB%A4%E5%AE%9E%E4%BE%8B/</guid>
+      <description>&lt;h2 id=&#34;tags-正则&#34;&gt;title: sed 命令实例
+date: 2015-08-20 11:50:23
+tags: [正则]&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sed命令在很有目的性的针对文本进行操作的时候还是十分有优势的。
+sed 是一种在线编辑器，它一次处理一行内容。处理时，把当前处理的行存储在临时缓冲区中，称为“模式空间”（pattern space），接着用sed命令处理缓冲区中的内容，处理完成后，把缓冲区的内容送往屏幕。接着处理下一行，这样不断重复，直到文件末尾。文件内容并没有 改变，除非你使用重定向存储输出。Sed主要用来自动编辑一个或多个文件；简化对文件的反复操作；编写转换程序等。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/tmux-%E4%BD%BF%E7%94%A8%E7%AE%80%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/tmux-%E4%BD%BF%E7%94%A8%E7%AE%80%E8%AE%B0/</guid>
+      <description>&lt;h2 id=&#34;tags-运维工具linux&#34;&gt;title: Tmux 使用简记
+date: 2015-07-22 09:49:22
+tags: [运维工具,Linux]&lt;/h2&gt;
+&lt;p&gt;简述：tmux是指通过一个终端登录远程主机并运行后，在其中可以开启多个控制台的终端复用软件。tmux是一个优秀的终端复用软件，类似GNU Screen，但来自于OpenBSD，采用BSD授权。使用它最直观的好处就是，通过一个终端登录远程主机并运行tmux后，在其中可以开启多个控制台而无需再“浪费”多余的终端来连接这台远程主机；个人更注重工作环境的连续性，可以进行会话保持(保证可以在网络情况不佳的情况下工作现场不丢失)。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/top%E8%BE%93%E5%87%BA%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/top%E8%BE%93%E5%87%BA%E8%AF%A6%E8%A7%A3/</guid>
+      <description>title: top输出详解 date: 2015-03-30 12:10:00 tags: [Linux] 常用快捷  按键“1”：查看每颗cpu负载 按键“c”：查看进程启动命令
+ top输出解释  Introduction title     task explanation     02:41:47 系统当前时间   up 系统运行时间64天   user 当前登录用户数,可以使用w系统命令进行查看具体用户登录信息   load average 系统cpu负载，表示任务队列1分钟、5分钟、15分钟的平均负载,该数值理论上应该小于cpu核心数   Tasks 系统当前共有99个进程，1个处于运行状态（running），98个处于睡眠状态（sleeping），0个处于停止状态（stopped），0个处于僵尸状态（zombie）   us user,用户进程占用cpu   sy system，系统进程占用cpu   ni nice，用户的进程nice值，表示优先级，没有改变过就是0   id idle，处于空闲的cpu   wa wait，等待的io输入输出   hi hardware interrupt,硬件中断请求占cpu的时间   si software interrupt,软件中断请求占cpu的时间   st steal time,虚拟服务占用cpu时间的百分比，一般应用的机器上都是0， IBM解释为当 hypervisor 服务另一个虚拟处理器的时候，虚拟 CPU 等待实际 CPU 的时间的百分比   Mem 总共的内存为16，已使用15G，还剩1G空闲，buffers和cached都属于缓存，后面写buffer和cache的区别   Swap 交换分区大小为0     Steal 值比较高的话，你需要向主机供应商申请扩容虚拟机。服务器上的另一个虚拟机可能拥有更大更多的 CPU时间片，你可能需要申请升级以与之竞争。另外，高 steal 值可能意味着主机供应商在服务器上过量地出售虚拟机。如果升级了虚拟机， steal 值还是不降的话，你应该寻找另一家服务供应商。 低 steal 值意味着你的应用程序在目前的虚拟机上运作良好。因为你的虚拟机不会经常地为了 CPU 时间与其它虚拟机激烈竞争，你的虚拟机会更快地响应。这一点也暗示了，你的主机供应商没有过量地出售虚拟服务，绝对是一件好事情。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/yum%E6%BA%90%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/yum%E6%BA%90%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</guid>
+      <description>&lt;h2 id=&#34;tags-commandlinux&#34;&gt;title: yum源配置手册
+date: 2015-08-21 15:07:07
+tags: [Command,Linux]&lt;/h2&gt;
+&lt;p&gt;yum（yellow dog updater， modified）是一个在Fedora和RedHat以及SUSE中的Shell前端软件包管理器，能够从指定的服务器自动下载RPM包并安装，可以自动处理依赖关系，并且一次安装所有的依赖关系软件包。系统管理过程中，难免要找软件装软件，如果定制性不高的话，使用yum安装不失为一个好办法，废话少说，开始介绍&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/zabbix3.0%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/zabbix3.0%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;h2 id=&#34;tags-zabbix&#34;&gt;title: zabbix3.0配置文档
+date: 2016-07-30
+tags: [Zabbix]&lt;/h2&gt;
+&lt;p&gt;zabbix安装配置记录&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/zabbix_too_many_open_files%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/zabbix_too_many_open_files%E9%94%99%E8%AF%AF/</guid>
+      <description>&lt;h2 id=&#34;tags-zabbix&#34;&gt;title: zabbix Too many open files错误
+date: 2015-08-21 10:10:18
+tags: [Zabbix]&lt;/h2&gt;
+&lt;h2 id=&#34;问题描述今天看了zabbix监控又一个agent-unreachable然后惯例我要去重启agentbut并没有什么卵用看报错查log&#34;&gt;问题描述：今天看了zabbix监控，又一个agent unreachable，然后惯例我要去重启agent，but并没有什么卵用。看报错，查log&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/zabbix%E4%BD%BF%E7%94%A8percona%E7%BB%84%E4%BB%B6%E7%9B%91%E6%8E%A7mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/zabbix%E4%BD%BF%E7%94%A8percona%E7%BB%84%E4%BB%B6%E7%9B%91%E6%8E%A7mysql/</guid>
+      <description>&lt;h2 id=&#34;tags-zabbix&#34;&gt;title: Zabbix使用Percona组件监控Mysql
+date: 2015-09-14 17:40:45
+tags: [Zabbix]&lt;/h2&gt;
+&lt;p&gt;上周测试了使用percona Monitoring Plugins 监控mysql，确认可行。
+Percona Monitoring Plugins是一个高质量的组件，为mysql数据库添加企业级的监控和图表功能。该插件可以和Nagios或者是Cati等监控系统集成，从Percona1.1开始支持zabbix监控。其脚本由php实现，所以需安装php环境&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/</guid>
+      <description>&lt;h2 id=&#34;tags-tools&#34;&gt;title: 使用fio工具测试linux的磁盘性能
+date: 2015-08-24 17:01:45
+tags: [Tools]&lt;/h2&gt;
+&lt;p&gt;很多时候我们需要对服务器的性能进行评估，这就少不了运用合适的工具。其中fio是测试iops的一款很好用的工具，用来对硬件进行压力测试和验证，支持13中不同的I/O引擎，包括：sync、mmap、libaio、posixaio、SG v3、splice、null、network、syslet、guasi、solarisaio等等&lt;/p&gt;
+&lt;h3 id=&#34;简单测试写性能&#34;&gt;简单测试写性能&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用dd简单测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-perl&#34; data-lang=&#34;perl&#34;&gt;dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/dev/&lt;/span&gt;zero of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;testfile bs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;M count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; oflag&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;dsync
+&lt;span style=&#34;color:#75715e&#34;&gt;#采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BAblog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BAblog/</guid>
+      <description>&lt;h2 id=&#34;tags-hexo&#34;&gt;title: 使用Hexo和Github搭建Blog
+date: 2015-07-17 12:10:00
+tags: [Hexo]&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;:添加了云音乐外链，方法非常简单粗暴，直接在网易云音乐上生成外链然后放进文章里就行了，如图
+&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20150717-hexoblog-1.jpg&#34; alt=&#34;20150717-hexoblog-1&#34;&gt;
+&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20150717-hexoblog-2.jpg&#34; alt=&#34;20150717-hexoblog-2&#34;&gt;
+Tips：最近几天都在折腾这个东西，网上有很多的教程，但终究还是有点费劲，在这里总结一下。我是在win7上做的，我尽可能把我出问题的地方着重描述，希望让有兴趣玩这个伙伴们可以顺利点，嘻嘻。特别鸣谢陈素封的博客，帮助很大，话不多说，开始整理。win上多有不便，还会在linux上进行搭建。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/%E7%AE%80%E6%98%8Epython%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E7%AE%80%E6%98%8Epython%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;h2 id=&#34;tags-学习笔记&#34;&gt;title: 简明Python读书笔记
+date: 2015-07-30 11:25:39
+tags: [学习笔记]&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20150730-pythonnote-1.jpg&#34; alt=&#34;20150730-pythonnote-1&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;更新记录&#34;&gt;更新记录&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;20150730 总结介绍&lt;/li&gt;
+&lt;li&gt;20150731 控制流&lt;/li&gt;
+&lt;li&gt;20150804 module&lt;/li&gt;
+&lt;li&gt;20150806 脚本练手&lt;/li&gt;
+&lt;li&gt;20150807 模块方法&lt;/li&gt;
+&lt;li&gt;20150810 是时候结束了&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>消息队列介绍及常用MQ对比</title>
+      <link>http://example.org/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/</guid>
+      <description>&lt;h3 id=&#34;什么是消息队列&#34;&gt;什么是消息队列&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;概述：&lt;/strong&gt; 消息队列（Message Queue）一般大家习惯简称为MQ。主要特点为异步处理,也就是说消息的发送者和接收者不需要同时与消息队列交互。消息会保存在队列中，直到接收者取回它。消息队列和信号相比，能够传递更多的信息。与管道相比，消息队列提供了有格式的数据。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;举一个直观的小例子&lt;/strong&gt;
+姐姐小红希望弟弟小明多读书，经常拿好书给小明看。之前的方式是先问小明什么时候有空，然后把书给小明送过去，监督小明把书读完。后来两人都觉得太麻烦，就换了一个方式。
+买了一个书架，小红一有好书就放到书架上，小明看到书架上有书就取着读。这里，书架其实就是一个消息队列，小红就是生产者，小明就是消费者。
+这样的&lt;strong&gt;好处&lt;/strong&gt;是：
+1.小红想给小明书的时候不必问小明什么时候有时间，直接把书放在书架上就行了，小红和小明的时间都更自由
+2.小红相信小明的读书自觉和读书能力，不必亲眼观察小明的读书过程，小红只要做一个放书的动作，很节省时间。
+3.当明天有另一个爱读书的小伙伴小强加入，小红仍旧只需要把书放到书架上，小明和小强从书架上取书即可
+4.书在书架上，小明读的慢就晚点看完，读的快就早点看完，小明的压力会小点。
+对应可以总结为：&lt;strong&gt;解耦&lt;/strong&gt;、&lt;strong&gt;提速&lt;/strong&gt;、&lt;strong&gt;广播&lt;/strong&gt;、&lt;strong&gt;削峰&lt;/strong&gt;
+相应&lt;strong&gt;缺点&lt;/strong&gt;就是：
+1.引入复杂度
+2.暂时的不一致性
+**PS：**以上内容引自知乎祁达方&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

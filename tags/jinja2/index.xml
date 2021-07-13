@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jinja2 on My New Hugo Site</title>
+    <link>http://example.org/tags/jinja2/</link>
+    <description>Recent content in Jinja2 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Aug 2019 21:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/jinja2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flask中Jinja2模板使用总结</title>
+      <link>http://example.org/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 28 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;之前&lt;a href=&#34;&#34;&gt;已经总结过Jinja2&lt;/a&gt;了,这里主要总结在Falsk中的一些东西。包括以下方面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模板的目录结构设计&lt;/li&gt;
+&lt;li&gt;常用的模块&lt;/li&gt;
+&lt;li&gt;HTML转义&lt;/li&gt;
+&lt;li&gt;特殊装饰器&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jinja2语法</title>
+      <link>http://example.org/post/jinja2%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/jinja2%E8%AF%AD%E6%B3%95/</guid>
+      <description>&lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
+&lt;p&gt;大概介绍一下，主要介绍模板（模板仅仅是文本文件。它可以生成任何基于文本的格式（HTML、XML、CSV、LaTex 等等）。它并没有特定的扩展名，&lt;code&gt;.html&lt;/code&gt;或&lt;code&gt;.xml&lt;/code&gt;都是可以的。）模板包含变量或表达式 ，这两者在模板求值的时候会被替换为值。模板中 还有标签，控制模板的逻辑。模板语法的大量灵感来自于 Django和Python。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模板语言。它速度快，被广泛使用，并且提供了可选的沙箱模板执行环境保证安全.特征如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;沙箱中执行&lt;/li&gt;
+&lt;li&gt;强大的HTML自动转义系统保护系统免受XSS&lt;/li&gt;
+&lt;li&gt;模板继承&lt;/li&gt;
+&lt;li&gt;及时编译最优的python代码&lt;/li&gt;
+&lt;li&gt;易于调试。异常的行数直接指向模板中的对应行&lt;/li&gt;
+&lt;li&gt;可配置的语法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;mdash;选自 &lt;a href=&#34;http://docs.jinkan.org/docs/jinja2/index.html&#34;&gt;http://docs.jinkan.org&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
