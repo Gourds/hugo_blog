@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Gourds" />
   <meta name="description" content="简单记录一下Etcd API v3版本的基本操作和可视化WEB UI使用，关于V2的使用可以看我之前的一篇介绍【etcd v2】。Etcd v2 和 v3 本质上是共享同一套 raft 协议代码的两个独立的应用，接口不一样，存储不一样，数据也是互相隔离的。
  V3相对V2的一些主要变化：
  接口通过grpc提供rpc接口，放弃了v2的http接口。优势是长连接效率提升明显，缺点是使用不如以前方便，尤其对不方便维护长连接的场景。 废弃了原来的目录结构，变成了纯粹的kv，用户可以通过前缀匹配模式模拟目录 内存中不再保存value，同样的内存可以支持存储更多的key watch机制更稳定，基本上可以通过watch机制实现数据的完全同步 提供了批量操作以及事务机制，用户可以通过批量事务请求来实现Etcd v2的CAS机制（批量事务支持if条件判断）  &amp;ndash;以上摘自王渊命的文章[侵删]
@@ -38,7 +38,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/" />
+<link rel="canonical" href="http://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/" />
 
 
 
@@ -56,7 +56,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
 
 
 
@@ -76,7 +76,7 @@ watch机制更稳定，基本上可以通过watch机制实现数据的完全同�
 &ndash;以上摘自王渊命的文章[侵删]
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-04-24T17:00:00+00:00" />
 <meta property="article:modified_time" content="2018-04-24T17:00:00+00:00" />
 
@@ -140,36 +140,36 @@ watch机制更稳定，基本上可以通过watch机制实现数据的完全同�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -272,7 +272,7 @@ watch机制更稳定，基本上可以通过watch机制实现数据的完全同�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
 
         
@@ -283,7 +283,7 @@ watch机制更稳定，基本上可以通过watch机制实现数据的完全同�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
 
         
@@ -294,7 +294,7 @@ watch机制更稳定，基本上可以通过watch机制实现数据的完全同�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -305,7 +305,7 @@ watch机制更稳定，基本上可以通过watch机制实现数据的完全同�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -316,8 +316,8 @@ watch机制更稳定，基本上可以通过watch机制实现数据的完全同�
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -460,7 +460,7 @@ ETCDCTL_API<span style="color:#f92672">=</span><span style="color:#ae81ff">3</sp
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Gourds</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -482,7 +482,7 @@ ETCDCTL_API<span style="color:#f92672">=</span><span style="color:#ae81ff">3</sp
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://blog.gourds.site/tags/etcd/">Etcd</a>
+          <a href="http://blog.gourds.site/tags/etcd/">Etcd</a>
           
         </div>
 
@@ -593,7 +593,7 @@ ETCDCTL_API<span style="color:#f92672">=</span><span style="color:#ae81ff">3</sp
     </a>
 
 
-<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -631,7 +631,7 @@ ETCDCTL_API<span style="color:#f92672">=</span><span style="color:#ae81ff">3</sp
 
       </i>
     </span><span class="author">
-        xianmin
+        Gourds
         
       </span></span>
 
@@ -662,10 +662,17 @@ ETCDCTL_API<span style="color:#f92672">=</span><span style="color:#ae81ff">3</sp
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

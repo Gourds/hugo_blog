@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitbucket on Gourds</title>
-    <link>https://blog.gourds.site/tags/bitbucket/</link>
+    <link>http://blog.gourds.site/tags/bitbucket/</link>
     <description>Recent content in Bitbucket on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Nov 2018 13:57:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/bitbucket/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Nov 2018 13:57:00 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/bitbucket/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
-      <link>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
+      <link>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
       <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
+      <guid>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
       <description>&lt;p&gt;之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
 &lt;strong&gt;迁移思路：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;

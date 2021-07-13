@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Gourds" />
   <meta name="description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
 需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
 graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward) F--&amp;gt;E(Elasticsearch cluster) E--&amp;gt;K(Kibana) " />
@@ -37,7 +37,7 @@ graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" />
+<link rel="canonical" href="http://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" />
 
 
 
@@ -55,7 +55,7 @@ graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
 
 
 
@@ -71,7 +71,7 @@ graph LR;
     E--&gt;K(Kibana)
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-04-11T17:52:00+00:00" />
 <meta property="article:modified_time" content="2018-04-11T17:52:00+00:00" />
 
@@ -127,36 +127,36 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -259,7 +259,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
 
         
@@ -270,7 +270,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
 
         
@@ -281,7 +281,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -292,7 +292,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -303,8 +303,8 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -592,7 +592,7 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Gourds</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -614,8 +614,8 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://blog.gourds.site/tags/elk/">ELK</a>
-          <a href="https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/">踩坑指南</a>
+          <a href="http://blog.gourds.site/tags/elk/">ELK</a>
+          <a href="http://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/">踩坑指南</a>
           
         </div>
 
@@ -726,7 +726,7 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
     </a>
 
 
-<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -764,7 +764,7 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
 
       </i>
     </span><span class="author">
-        xianmin
+        Gourds
         
       </span></span>
 
@@ -795,10 +795,17 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

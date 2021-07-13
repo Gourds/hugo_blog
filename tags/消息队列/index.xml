@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>消息队列 on Gourds</title>
-    <link>https://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</link>
+    <link>http://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</link>
     <description>Recent content in 消息队列 on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Nov 2017 21:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2017 21:00:00 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于Kafka分布式消息队列</title>
-      <link>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</link>
+      <link>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</link>
       <pubDate>Sun, 05 Nov 2017 21:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</guid>
+      <guid>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</guid>
       <description>&lt;p&gt;&lt;strong&gt;背景:&lt;/strong&gt; 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK+kafka的应用落地记录。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>消息队列介绍及常用MQ对比</title>
-      <link>https://blog.gourds.site/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/</link>
+      <link>http://blog.gourds.site/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/</guid>
+      <guid>http://blog.gourds.site/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/</guid>
       <description>&lt;h3 id=&#34;什么是消息队列&#34;&gt;什么是消息队列&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;概述：&lt;/strong&gt; 消息队列（Message Queue）一般大家习惯简称为MQ。主要特点为异步处理,也就是说消息的发送者和接收者不需要同时与消息队列交互。消息会保存在队列中，直到接收者取回它。消息队列和信号相比，能够传递更多的信息。与管道相比，消息队列提供了有格式的数据。&lt;/p&gt;
 &lt;blockquote&gt;

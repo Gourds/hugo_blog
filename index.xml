@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gourds</title>
-    <link>https://blog.gourds.site/</link>
+    <link>http://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 10 Sep 2019 20:38:24 +0000</lastBuildDate>
     
-        <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于对Python面向对象的理解</title>
-      <link>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</link>
+      <link>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</link>
       <pubDate>Tue, 10 Sep 2019 20:38:24 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
+      <guid>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
       
         <description>&lt;p&gt;说起面向对象(Object Oriented Programming)首先想到的就是三个词：封装、继承和多态。&lt;/p&gt;
 &lt;p&gt;**封装：**目的是为了简化编程和提升安全性(标识出允许外部使用的所有成员函数和数据项)。&lt;/p&gt;
@@ -58,10 +58,10 @@ print(a1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;test())
     
     <item>
       <title>python中特殊方法和特殊变量总结</title>
-      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
+      <link>http://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 01 Sep 2019 10:59:29 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
       
         <description>&lt;p&gt;在研究一些python项目的源码时经常会看到一些特殊的方法和变量，比如两边双下划线&lt;code&gt;__init__&lt;/code&gt;定义的方法，还有一些类中会有以双下划线&lt;code&gt;__&lt;/code&gt;开头定义的变量，以及以单下划线&lt;code&gt;_&lt;/code&gt;开头的定义的变量。这里对目前经常遇到的做一个记录&lt;/p&gt;
 &lt;blockquote&gt;
@@ -204,10 +204,10 @@ print(foo()) &lt;span style=&#34;color:#75715e&#34;&gt;#hello&lt;/span&gt;
     
     <item>
       <title>JenkinsActiveChoices插件使用</title>
-      <link>https://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
+      <link>http://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 30 Aug 2019 08:30:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
+      <guid>http://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
       
         <description>&lt;p&gt;之前使用过Jenkins的&lt;a href=&#34;https://wiki.jenkins.io/display/JENKINS/Active+Choices+Plugin&#34;&gt;Active Choices Plugin&lt;/a&gt;插件，概述下当时我想实现的效果&lt;/p&gt;
 &lt;ul&gt;
@@ -250,10 +250,10 @@ wiki2就写一个Groovy的写法不截图了&lt;/p&gt;
     
     <item>
       <title>Flask中Jinja2模板使用总结</title>
-      <link>https://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</link>
+      <link>http://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 28 Aug 2019 21:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
       
         <description>&lt;p&gt;之前&lt;a href=&#34;&#34;&gt;已经总结过Jinja2&lt;/a&gt;了,这里主要总结在Falsk中的一些东西。包括以下方面&lt;/p&gt;
 &lt;ul&gt;
@@ -387,10 +387,10 @@ wiki2就写一个Groovy的写法不截图了&lt;/p&gt;
     
     <item>
       <title>Jinja2语法</title>
-      <link>https://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/</link>
+      <link>http://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/</guid>
+      <guid>http://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/</guid>
       
         <description>&lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
 &lt;p&gt;大概介绍一下，主要介绍模板（模板仅仅是文本文件。它可以生成任何基于文本的格式（HTML、XML、CSV、LaTex 等等）。它并没有特定的扩展名，&lt;code&gt;.html&lt;/code&gt;或&lt;code&gt;.xml&lt;/code&gt;都是可以的。）模板包含变量或表达式 ，这两者在模板求值的时候会被替换为值。模板中 还有标签，控制模板的逻辑。模板语法的大量灵感来自于 Django和Python。&lt;/p&gt;
@@ -779,74 +779,11 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
     </item>
     
     <item>
-      <title>python中的*与**用法</title>
-      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
-      
-        <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;
-&lt;h3 id=&#34;对于函数调用中的和&#34;&gt;对于函数调用中的&lt;code&gt;*&lt;/code&gt;和&lt;code&gt;**&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;主要功能是一个函数解压传入的过程&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#demo1  * list&lt;/span&gt;
-demo_list &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;demo1&lt;/span&gt;(a,b,c):
-    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a+b+c=&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; str(a&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;b&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;c))
-&lt;span style=&#34;color:#75715e&#34;&gt;#列表前面加星号作用是将列表解开成两个独立的参数，传入函数&lt;/span&gt;
-demo1(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;demo_list)
-&lt;span style=&#34;color:#75715e&#34;&gt;#a+b+c=6&lt;/span&gt;
-
-
-&lt;span style=&#34;color:#75715e&#34;&gt;#demo2 ** dict&lt;/span&gt;
-demo_dict &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
-            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k1&amp;#39;&lt;/span&gt;:{&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;v1&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;},
-            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k2&amp;#39;&lt;/span&gt;:{&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;v2&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;},
-            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k3&amp;#39;&lt;/span&gt;:{&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;v3&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;}
-             }
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;demo2&lt;/span&gt;(k1,k2,k3):
-    print(k1,k2,k3)
-&lt;span style=&#34;color:#75715e&#34;&gt;#字典前面加两个星号，是将字典解开成独立的元素作为形参&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#补充：当将字典传入形参时，形参的名称要与字典的键名称相同&lt;/span&gt;
-demo2(&lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;demo_dict)
-&lt;span style=&#34;color:#75715e&#34;&gt;#{&amp;#39;v1&amp;#39;: 1} {&amp;#39;v2&amp;#39;: 2} {&amp;#39;v3&amp;#39;: 3}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;对于函数定义中的和&#34;&gt;对于函数定义中的&lt;code&gt;*&lt;/code&gt;和&lt;code&gt;**&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;主要功能是将任意个数的参数导入到python函数中&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;foo&lt;/span&gt;(param1, &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;param2):
-    &lt;span style=&#34;color:#75715e&#34;&gt;#将所以参数以元组(tuple)的形式导入&lt;/span&gt;
-    print(param1)
-    print(param2)
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;bar&lt;/span&gt;(param1, &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;param2):
-    &lt;span style=&#34;color:#75715e&#34;&gt;#将参数以字典的形式导入&lt;/span&gt;
-    print(param1)
-    print(param2)
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;foo_bar&lt;/span&gt;(param1,&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;param2,&lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;param3):
-    &lt;span style=&#34;color:#75715e&#34;&gt;#上面两个可以混合使用&lt;/span&gt;
-    print(param1)
-    print(param2)
-    print(param3)
-
-foo(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
-&lt;span style=&#34;color:#75715e&#34;&gt;#1&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#(2, 3)&lt;/span&gt;
-bar(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,a&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;)
-&lt;span style=&#34;color:#75715e&#34;&gt;#1&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#{&amp;#39;a&amp;#39;: 2, &amp;#39;b&amp;#39;: 3}&lt;/span&gt;
-foo_bar(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,a&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)
-&lt;span style=&#34;color:#75715e&#34;&gt;#1&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#(2, 3)&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#{&amp;#39;a&amp;#39;: 4, &amp;#39;b&amp;#39;: 5}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;扩展&#34;&gt;扩展&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/33896402&#34;&gt;知乎的一篇文章&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>关于Cookie和Session以及Token的说明</title>
-      <link>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
+      <link>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
       <pubDate>Sun, 25 Aug 2019 12:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</guid>
+      <guid>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</guid>
       
         <description>&lt;p&gt;现在做web的话就绕不开安全认证这一步，那就先介绍下目前常见的认证方式然后再说关于cookie、session、token的东西。常用的认证方式简单概述如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -997,10 +934,10 @@ allow_login &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span st
     
     <item>
       <title>Aws使用EMR对Dynamodb进行备份还原</title>
-      <link>https://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
+      <link>http://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
       <pubDate>Wed, 21 Aug 2019 13:38:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
+      <guid>http://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
       
         <description>&lt;p&gt;最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由&lt;code&gt;AutoScaling&lt;/code&gt;修改成了&lt;code&gt;按需&lt;/code&gt;，当使用之前的HIVE脚本时出现了&lt;code&gt;Read throughput should not be less than 1&lt;/code&gt;的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持&lt;code&gt;On-Demand billing&lt;/code&gt;这个功能，接着又准备使用&lt;code&gt;awscli&lt;/code&gt;命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的&lt;code&gt;版本问题说明&lt;/code&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;使用hive进行table的备份和还原&#34;&gt;使用Hive进行Table的备份和还原&lt;/h3&gt;
@@ -1312,10 +1249,10 @@ Command exiting with ret &#39;1&#39;
     
     <item>
       <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
-      <link>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
+      <link>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
       <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
+      <guid>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
       
         <description>&lt;p&gt;之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
 &lt;strong&gt;迁移思路：&lt;/strong&gt;&lt;/p&gt;
@@ -1499,10 +1436,10 @@ bitbucket_20181118.tar.gz
     
     <item>
       <title>Docker方式安装Jumpserver</title>
-      <link>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
+      <link>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
       <pubDate>Tue, 27 Nov 2018 15:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
+      <guid>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
       
         <description>&lt;p&gt;之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jumpserver&#34;&gt;【github】&lt;/a&gt;上都有。&lt;/p&gt;
 &lt;h3 id=&#34;开箱即用&#34;&gt;开箱即用&lt;/h3&gt;
@@ -1612,10 +1549,10 @@ bitbucket_20181118.tar.gz
     
     <item>
       <title>博客迁移至阿里云</title>
-      <link>https://blog.gourds.site/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</link>
+      <link>http://blog.gourds.site/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</link>
       <pubDate>Tue, 30 Oct 2018 18:23:45 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
+      <guid>http://blog.gourds.site/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
       
         <description>&lt;p&gt;之前博客使用的是搬瓦工的机器，感觉访问速度受限，刚好阿里云有活动，就决定迁移到阿里。鉴于之前一直没有一个好用的评论系统，迁移到阿里后进行了备案，开始使用畅言评论系统。
 另外考虑到备份问题，也对部署方式进行了更新。&lt;/p&gt;
@@ -1689,10 +1626,10 @@ Nginx使用Docker的方式&lt;/p&gt;
     
     <item>
       <title>CentOS7安装配置supervisor</title>
-      <link>https://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
+      <link>http://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
       <pubDate>Thu, 30 Aug 2018 21:12:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
+      <guid>http://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
       
         <description>&lt;p&gt;之前一直用AWS的服务，使用的也是AWS官方提供的系统镜像，感觉挺好使的，所以centos7的版本用的不多。最近刚好需要使用腾讯云，记录一下supervisor的安装配置，不管简单与否，好久没写博客了还是记录一下吧。
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-27.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -1871,10 +1808,10 @@ systemctl is-enabled supervisord
     
     <item>
       <title>Elasticsearch使用curator管理index</title>
-      <link>https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
+      <link>http://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
       <pubDate>Wed, 01 Aug 2018 12:11:16 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
+      <guid>http://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
       
         <description>&lt;p&gt;有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具&lt;code&gt;curator&lt;/code&gt;，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句&lt;code&gt;curator&lt;/code&gt;的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。&lt;/p&gt;
 &lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
@@ -2007,10 +1944,10 @@ docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config cura
     
     <item>
       <title>Bitbucket实践</title>
-      <link>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
+      <link>http://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Sat, 09 Jun 2018 12:38:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>http://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
       
         <description>&lt;p&gt;前言：之前使用了Atlassian公司的Confluence和Jira，现在新项目考虑使用Bitbucket做代码仓库，这里记录一下调研实践过程。由于之前的服务是使用docker进行部署的，所以Bitbucket也决定使用docker的方式进行部署。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2062,10 +1999,10 @@ bitbucket:
     
     <item>
       <title>Etcd的v3版本常用操作及可视化</title>
-      <link>https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <link>http://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Tue, 24 Apr 2018 17:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <guid>http://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       
         <description>&lt;p&gt;简单记录一下&lt;code&gt;Etcd API v3&lt;/code&gt;版本的基本操作和可视化&lt;code&gt;WEB UI&lt;/code&gt;使用，关于V2的使用可以看我之前的一篇介绍&lt;a href=&#34;http://arvon.top/tags/%E8%BF%90%E7%BB%B4%E6%9E%B6%E6%9E%84/&#34;&gt;【etcd v2】&lt;/a&gt;。Etcd v2 和 v3 本质上是共享同一套 raft 协议代码的两个独立的应用，接口不一样，存储不一样，数据也是互相隔离的。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2137,10 +2074,10 @@ ETCDCTL_API&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span styl
     
     <item>
       <title>Gitlab迁移升级记录</title>
-      <link>https://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
+      <link>http://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 21 Apr 2018 19:33:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
+      <guid>http://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
       
         <description>&lt;p&gt;之前写了gitlab的安装文档，目的是为了为迁移做准备，现在记录一下测试迁移的过程。现在需要将编译安装的&lt;code&gt;7.13.4&lt;/code&gt;版本的gitlab升级至&lt;code&gt;10.6.0&lt;/code&gt;并采用docker的方式运行。经查阅官方Docker&lt;a href=&#34;https://hub.docker.com/r/gitlab/gitlab-ce/tags/&#34;&gt;【版本】&lt;/a&gt;是&lt;code&gt;9.5.1-10.7.0&lt;/code&gt;。而在Github上&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn版本】&lt;/a&gt;是&lt;code&gt;v6.1-v10.6.4&lt;/code&gt;。另外
 还有Gitlab的&lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce/tree/master/doc/update&#34;&gt;【官方升级说明】&lt;/a&gt;,这个说明里面都是临近的版本升级说明，但并没有介绍大跨度升级的详细内容。最后决定采用github上提供的升级建议。记录说明如下&lt;/p&gt;
@@ -2254,10 +2191,10 @@ command=&amp;quot;/home/git/gitlab-shell/bin/gitlab-shell key-59&amp;quot;,no-po
     
     <item>
       <title>Gitlab搭建使用记录</title>
-      <link>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <link>http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 14 Apr 2018 20:54:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
       
         <description>&lt;p&gt;Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
 操作之前看一把架构图,图片来自官方,侵删
@@ -2534,10 +2471,10 @@ docker exec -t &amp;lt;your container name&amp;gt; gitlab-rake gitlab:backup:cre
     
     <item>
       <title>使用Docker搭建Jira和Confluence系统</title>
-      <link>https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
+      <link>http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sat, 14 Apr 2018 15:47:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
       
         <description>&lt;p&gt;**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence&#34;&gt;【Github】&lt;/a&gt;上都有&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2778,10 +2715,10 @@ upload_s3
     
     <item>
       <title>Fluentd使用中遇到的丢数据问题</title>
-      <link>https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</link>
+      <link>http://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 11 Apr 2018 17:52:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</guid>
       
         <description>&lt;p&gt;目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇&lt;a href=&#34;http://arvon.top/2018/02/23/Td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/&#34;&gt;Blog&lt;/a&gt;）&lt;/p&gt;
 &lt;p&gt;需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到&lt;a href=&#34;https://docs.fluentd.org/v1.0/articles/quickstart&#34;&gt;【Fluentd官网】&lt;/a&gt;获取支持。&lt;/p&gt;
@@ -2996,10 +2933,10 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
     
     <item>
       <title>即学即用Docker读书笔记</title>
-      <link>https://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <link>http://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Mon, 09 Apr 2018 19:35:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
       
         <description>&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26700648/&#34;&gt;《即学即用Docker》&lt;/a&gt;这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
 &lt;strong&gt;容器是什么&lt;/strong&gt;
@@ -3320,6 +3257,157 @@ docker logs -f d2c3ce380095
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;响应式宣言&#34;&gt;响应式宣言&lt;/h3&gt;
 &lt;p&gt;2013年7月，Typesafe公司CTO jonas和几个贡献者完善了这个宣言，根据这个宣言定义，&lt;code&gt;响应式系统&lt;/code&gt;应具备四个特点：反应迅速、恢复力强、灵活性高、消息驱动&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>使用IPsec搭建vpn系统</title>
+      <link>http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8ipsec%E6%90%AD%E5%BB%BAvpn%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Sat, 31 Mar 2018 20:53:45 +0000</pubDate>
+      
+      <guid>http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8ipsec%E6%90%AD%E5%BB%BAvpn%E7%B3%BB%E7%BB%9F/</guid>
+      
+        <description>&lt;p&gt;多机房情况下，有时候需要将跨机房内网打通，现在还是使用ipsec的多。而且相对也比较成熟。IPsec全称ip Security，由两类协议组成，分别为AH协议（Authentication Header）和ESP协议（Encapsulated Security Payload），由于AH协议无法提供数据加密，所有数据在传输时以明文传输，且AH由于提供数据来源确认，所以无法穿越NAT，所以这两种协议中ESP协议应用更广泛一些。VPN只是IPSec的一种应用方式。刚好有空余的机器就简单实验一下。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;协议&lt;/th&gt;
+&lt;th&gt;数据来源确认&lt;/th&gt;
+&lt;th&gt;数据加密&lt;/th&gt;
+&lt;th&gt;数据完整性确认&lt;/th&gt;
+&lt;th&gt;其他&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;AH&lt;/td&gt;
+&lt;td&gt;是&lt;/td&gt;
+&lt;td&gt;否&lt;/td&gt;
+&lt;td&gt;是&lt;/td&gt;
+&lt;td&gt;AH常用摘要算法（单向Hash函数）MD5和SHA1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ESP&lt;/td&gt;
+&lt;td&gt;否&lt;/td&gt;
+&lt;td&gt;是&lt;/td&gt;
+&lt;td&gt;是&lt;/td&gt;
+&lt;td&gt;ESP通常使用DES、3DES、AES等加密算法实现数据加密，使用MD5或SHA1来实现数据完整性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;搭建&#34;&gt;搭建&lt;/h3&gt;
+&lt;h4 id=&#34;实验环境&#34;&gt;实验环境&lt;/h4&gt;
+&lt;p&gt;|Region|Public IP|Private IP|Gateway|
+|&amp;mdash;|&amp;mdash;|&amp;mdash;|
+|CD-Host-A|118.24.48.193|172.27.0.12|172.27.0.1|
+|CD-Host-B|118.24.49.251|172.27.0.4|172.27.0.1|
+|GZ-Host-A|193.112.154.165|172.16.0.10|172.16.0.1|
+|GZ-Host-B|193.112.143.226|172.16.0.16|172.16.0.1|&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;版本信息：&lt;/strong&gt;
+规划：其中CD-A和GZ-A这两台机器作为vpn服务器。
+版本：&lt;code&gt;Linux Libreswan 3.20 (netkey) on 3.10.0-514.26.2.el7.x86_64&lt;/code&gt;
+OS:&lt;code&gt;CentOS Linux release 7.2.1511 (Core)&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;安装初始化主机cd-a&#34;&gt;安装初始化（主机CD-A）&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yum install -y openswan
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;系统参数调整&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cat /etc/sysctl.conf &lt;span style=&#34;color:#75715e&#34;&gt;#修改参数如下&lt;/span&gt;
+net.ipv4.ip_forward &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+net.ipv4.conf.default.rp_filter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+sysctl -p &lt;span style=&#34;color:#75715e&#34;&gt;#执行命令让参数生效&lt;/span&gt;
+setenforce &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;#关闭selinux&lt;/span&gt;
+iptables -nvL &lt;span style=&#34;color:#75715e&#34;&gt;#确认端口开放UDP 500 4500&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#关闭ipmp重定向（是否需要）&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#sysctl -a | egrep &amp;#34;ipv4.*(accept|send)_redirects&amp;#34; | awk -F &amp;#34;=&amp;#34; &amp;#39;{print$1&amp;#34;= 0&amp;#34;}&amp;#39; &amp;gt;&amp;gt; /etc/sysctl.conf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;主配置如下&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#cat /etc/ipsec.conf&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#version 2&lt;/span&gt;
+config setup
+	protostack&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;netkey
+	dumpdir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/run/pluto/
+	nat_traversal&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;yes
+	virtual_private&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;%v4:10.0.0.0/8,%v4:192.168.0.0/16,%v4:172.16.0.0/12,%v4:25.0.0.0/8,%v4:100.64.0.0/10,%v6:fd00::/8,%v6:fe80::/10
+include /etc/ipsec.d/*.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;配置key认证&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo 0.0.0.0   0.0.0.0 : PSK &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;arvon.top&amp;#34;&lt;/span&gt; &amp;gt; /etc/ipsec.d/cn.secrets#引号内为key字段
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;**关于配置:**可以通过命令&lt;code&gt;man ipsec.conf&lt;/code&gt;获得帮助
+&lt;strong&gt;填写连接的配置&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#cat /etc/ipsec.d/cn.conf&lt;/span&gt;
+conn cn-test
+	ike&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3des-sha1
+	authby&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;secret
+	phase2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;esp
+	phase2alg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3des-sha1
+	compress&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no
+	pfs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;yes
+	type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;tunnel
+	left&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;172.27.0.12
+	leftid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;118.24.48.193
+	leftsubnet&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;172.27.0.0/24
+	leftnexthop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;%defaultroute
+	right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;193.112.154.165
+	rightid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;193.112.154.165
+	rightsubnet&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;172.16.0.0/24
+	rightnexthop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;%defaultroute
+	auto&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;add
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;启动ipsec&lt;/strong&gt;
+**Tips：**修改连接配置auto=start，这样就不用每次重启ipsec后手动起连接了&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl start ipsec
+ipsec auto --up cn-test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;安装初始化主机gz-a&#34;&gt;安装初始化（主机GZ-A）&lt;/h4&gt;
+&lt;p&gt;**注意：**配置基本可以从CD-A照搬过来，不过由于我这里的环境是云端不同子网，所以连接的配置还需要做一些修改如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#cat /etc/ipsec.d/cn.conf&lt;/span&gt;
+conn cn-test
+	ike&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3des-sha1
+	authby&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;secret
+	phase2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;esp
+	phase2alg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3des-sha1
+	compress&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;no
+	pfs&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;yes
+	type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;tunnel
+	left&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;118.24.48.193
+	leftid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;118.24.48.193
+	leftsubnet&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;172.27.0.0/24
+	leftnexthop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;%defaultroute
+	right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;172.16.0.10
+	rightid&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;193.112.154.165
+	rightsubnet&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;172.16.0.0/24
+	rightnexthop&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;%defaultroute
+	auto&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;add
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;此时，两台IPsec server已经联通了，不过是CD-B和GZ-B无法和对端网络联通，并没有达到实验目的，很明显现在主要问题是路由&lt;/p&gt;
+&lt;h3 id=&#34;问题&#34;&gt;问题&lt;/h3&gt;
+&lt;p&gt;Step0: 方便排错&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;route -n &lt;span style=&#34;color:#75715e&#34;&gt;#查看路由&lt;/span&gt;
+ip rule ls &lt;span style=&#34;color:#75715e&#34;&gt;#查看路由优先级&lt;/span&gt;
+ip route get 172.27.0.4 &lt;span style=&#34;color:#75715e&#34;&gt;#获取IP地址使用的路由&lt;/span&gt;
+route add -net 10.0.60.0 netmask 255.255.255.0 gw 10.0.50.1 &lt;span style=&#34;color:#75715e&#34;&gt;#添加路由&lt;/span&gt;
+route del -net 172.16.0.0 netmask 255.255.255.0 eth0 &lt;span style=&#34;color:#75715e&#34;&gt;#删除路由需要写完整&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#systemctl start firewalld&lt;/span&gt;
+iptables -t nat -F &lt;span style=&#34;color:#75715e&#34;&gt;#清除防火墙nat规则&lt;/span&gt;
+iptables -t nat -nvL &lt;span style=&#34;color:#75715e&#34;&gt;#查看防火墙nat规则&lt;/span&gt;
+tcpdump -n -i eth0 dst 172.27.0.12 &lt;span style=&#34;color:#75715e&#34;&gt;#抓取eth0网卡上目标IP为12的包&lt;/span&gt;
+tcpdump -n -i eth0 src 172.27.0.12 &lt;span style=&#34;color:#75715e&#34;&gt;#抓取eth0网卡上源IP为12的包&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Step1：以CD-A为例，当前路由如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;root@VM_0_12_centos ipsec.d&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# route -n&lt;/span&gt;
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         172.27.0.1      0.0.0.0         UG    &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; eth0
+169.254.0.0     0.0.0.0         255.255.0.0     U     &lt;span style=&#34;color:#ae81ff&#34;&gt;1002&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; eth0
+172.27.0.0      0.0.0.0         255.255.240.0   U     &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; eth0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Step2: 在内网其他机器添加到VPN的路由&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#在CD-B添加到CD-A的路由&lt;/span&gt;
+route add -net 172.16.0.0 netmask 255.255.255.0 gw 172.27.0.12
+&lt;span style=&#34;color:#75715e&#34;&gt;#在GZ-B添加到GZ-A的路由&lt;/span&gt;
+route add -net 172.27.0.0 netmask 255.255.255.0 gw 172.16.0.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Step3：在vpn网关机器上进行SNAT&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;iptables -t nat -A POSTROUTING -s 172.27.0.0/24 -d 172.16.0.0/24 -j SNAT --to 118.24.48.193
+&lt;span style=&#34;color:#75715e&#34;&gt;#iptables -t nat -A POSTROUTING -s 172.27.0.0/24 -d 172.16.0.0/24 -j RETURN&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#iptables -t nat -A POSTROUTING -s 172.27.0.0/24 -o eth0 -j MASQUERADE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;**最后说一下：**比较容易踩坑的是使用公有云，由于外网网卡并不是直接与内网实例关联的，说以需要其他的途径才可以实现，一般对应服务商都有解决方案，而且关于ipsec连接配置也跟这个有关，具体还需要看一下实际情况。&lt;/p&gt;
+&lt;h3 id=&#34;参考链接&#34;&gt;参考链接&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/xelerance/Openswan&#34;&gt;openswan github&lt;/a&gt;
+&lt;a href=&#34;https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/README-zh.md&#34;&gt;ipsec vpn&lt;/a&gt;
+&lt;a href=&#34;https://segmentfault.com/a/1190000006125737&#34;&gt;唐霜的vpn教程&lt;/a&gt;
+&lt;a href=&#34;https://docs.ucloud.cn/software/vpn/ipsec&#34;&gt;ucloud教程&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     

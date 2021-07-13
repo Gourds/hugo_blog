@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Gourds</title>
-    <link>https://blog.gourds.site/tags/shell/</link>
+    <link>http://blog.gourds.site/tags/shell/</link>
     <description>Recent content in Shell on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Apr 2018 20:54:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Apr 2018 20:54:00 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gitlab搭建使用记录</title>
-      <link>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <link>http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 14 Apr 2018 20:54:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
 操作之前看一把架构图,图片来自官方,侵删
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20180413-gitlab-1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;</description>
@@ -20,19 +20,19 @@
     
     <item>
       <title>Shell编程多线程并发实践</title>
-      <link>https://blog.gourds.site/post/shell%E7%BC%96%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B9%B6%E5%8F%91%E5%AE%9E%E8%B7%B5/</link>
+      <link>http://blog.gourds.site/post/shell%E7%BC%96%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B9%B6%E5%8F%91%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Wed, 02 Aug 2017 22:15:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/shell%E7%BC%96%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B9%B6%E5%8F%91%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>http://blog.gourds.site/post/shell%E7%BC%96%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%B9%B6%E5%8F%91%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;p&gt;**Tips：**正常来说shell是不具备多线程能力的，也就是说shell本身是按顺序进行执行指令的，并不能并发执行。但是可以换个思路，通过遍历+后台执行的方式进行模拟多线程的方式。但是还有个问题就是如何去控制并发数量，比如你要批量往1w台机器上copy一个文件，如果不设置并发数，估计直接就带宽跑满game over了，不过也有对应的解决方案，往下看吧。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ssh无交互批量认证</title>
-      <link>https://blog.gourds.site/post/ssh%E6%97%A0%E4%BA%A4%E4%BA%92%E6%89%B9%E9%87%8F%E8%AE%A4%E8%AF%81/</link>
+      <link>http://blog.gourds.site/post/ssh%E6%97%A0%E4%BA%A4%E4%BA%92%E6%89%B9%E9%87%8F%E8%AE%A4%E8%AF%81/</link>
       <pubDate>Mon, 08 Aug 2016 16:38:38 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/ssh%E6%97%A0%E4%BA%A4%E4%BA%92%E6%89%B9%E9%87%8F%E8%AE%A4%E8%AF%81/</guid>
+      <guid>http://blog.gourds.site/post/ssh%E6%97%A0%E4%BA%A4%E4%BA%92%E6%89%B9%E9%87%8F%E8%AE%A4%E8%AF%81/</guid>
       <description>&lt;p&gt;***Tips:***在使用ansible部署服务器的时候，部署机需要先做好和其他服务器的免密码登陆，如果一台一台手动执行那就太low了，所以就需要脚本来批量完成这些繁琐的工作，下面是我写的脚本，主要使用了expect这个工具。&lt;/p&gt;</description>
     </item>
     

@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Gourds" />
   <meta name="description" content="现在做web的话就绕不开安全认证这一步，那就先介绍下目前常见的认证方式然后再说关于cookie、session、token的东西。常用的认证方式简单概述如下：
  cookie-session认证方式   出现较早的认证方式，主要形式是浏览器客户端将用户名密码发送给服务器，服务器验证后创建session并发放用于识别用户的sessionID（与用户状态绑定后记录在服务器端），这个sessionID以及一些相关的其他信息就是cookie，cookie随着响应(Set-Cookie)返回给客户端由客户端存储于浏览器，之后客户端的请求都会带上这个cookie，服务端通过cookie来获取Session信息从而进行认证校验。
   Oauth认证方式   Oauth是一种授权机制，主要为第三方应用颁发授权令牌（token）,目前有Oauth2.0和Oauth1.0版本，其中Oauth2.0版本的标准是RFC6749，Oauth1.0版本的标准是RFC5849。Oauth2.0的具体介绍可以参考阮一峰|Oauth2.0
@@ -39,7 +39,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/" />
+<link rel="canonical" href="http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/" />
 
 
 
@@ -57,7 +57,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
 
 
 
@@ -84,7 +84,7 @@ JWT认证方式
 JWT的标准是RFC7519。大概原理是客户端经过服务器认证后服务器给客户端返回一个json对象（包含用户信息且加密处理的数据），之后客户端与服务器通信都会带上这个json对象，服务器只通过这个对象来认证用户，也就是说服务器端是无状态的不会保存状态数据了（比如session）。具体可参考阮一峰|JSON Web Token 入门教程
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-08-25T12:00:00+00:00" />
 <meta property="article:modified_time" content="2019-08-25T12:00:00+00:00" />
 
@@ -162,36 +162,36 @@ JWT的标准是RFC7519。大概原理是客户端经过服务器认证后服务�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -294,7 +294,7 @@ JWT的标准是RFC7519。大概原理是客户端经过服务器认证后服务�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
 
         
@@ -305,7 +305,7 @@ JWT的标准是RFC7519。大概原理是客户端经过服务器认证后服务�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
 
         
@@ -316,7 +316,7 @@ JWT的标准是RFC7519。大概原理是客户端经过服务器认证后服务�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -327,7 +327,7 @@ JWT的标准是RFC7519。大概原理是客户端经过服务器认证后服务�
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -338,8 +338,8 @@ JWT的标准是RFC7519。大概原理是客户端经过服务器认证后服务�
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -563,7 +563,7 @@ allow_login <span style="color:#f92672">=</span> <span style="color:#66d9ef">Fal
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Gourds</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -585,15 +585,15 @@ allow_login <span style="color:#f92672">=</span> <span style="color:#66d9ef">Fal
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://blog.gourds.site/tags/flask/">Flask</a>
-          <a href="https://blog.gourds.site/tags/web/">Web</a>
+          <a href="http://blog.gourds.site/tags/flask/">Flask</a>
+          <a href="http://blog.gourds.site/tags/web/">Web</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/">
+          <a class="prev" href="/post/jinja2%E8%AF%AD%E6%B3%95/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -603,7 +603,7 @@ allow_login <span style="color:#f92672">=</span> <span style="color:#66d9ef">Fal
 </svg>
 
             </i>
-            <span class="prev-text nav-default">python中的*与**用法</span>
+            <span class="prev-text nav-default">Jinja2语法</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
@@ -697,7 +697,7 @@ allow_login <span style="color:#f92672">=</span> <span style="color:#66d9ef">Fal
     </a>
 
 
-<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -735,7 +735,7 @@ allow_login <span style="color:#f92672">=</span> <span style="color:#66d9ef">Fal
 
       </i>
     </span><span class="author">
-        xianmin
+        Gourds
         
       </span></span>
 
@@ -766,10 +766,17 @@ allow_login <span style="color:#f92672">=</span> <span style="color:#66d9ef">Fal
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

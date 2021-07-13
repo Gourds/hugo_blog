@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Gourds" />
   <meta name="description" content="**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client
 " />
 
@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" />
+<link rel="canonical" href="http://blog.gourds.site/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,7 +63,7 @@
 <meta property="og:title" content="NFS服务安装部署记录" />
 <meta property="og:description" content="**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gourds.site/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://blog.gourds.site/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2015-10-20T01:00:10+00:00" />
 <meta property="article:modified_time" content="2015-10-20T01:00:10+00:00" />
 
@@ -105,36 +105,36 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -281,8 +281,8 @@
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -419,7 +419,7 @@ umount -l mountmoint
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Gourds</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -441,7 +441,7 @@ umount -l mountmoint
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://blog.gourds.site/tags/linux/">Linux</a>
+          <a href="http://blog.gourds.site/tags/linux/">Linux</a>
           
         </div>
 
@@ -552,7 +552,7 @@ umount -l mountmoint
     </a>
 
 
-<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -590,7 +590,7 @@ umount -l mountmoint
 
       </i>
     </span><span class="author">
-        xianmin
+        Gourds
         
       </span></span>
 
@@ -621,10 +621,17 @@ umount -l mountmoint
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

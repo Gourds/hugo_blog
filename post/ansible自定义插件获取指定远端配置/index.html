@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Gourds" />
   <meta name="description" content="title: Ansible自定义插件获取指定远端配置 date: 2018-05-11 tags: [Ansible,Python] **概述:**将ansible部署与变量控制拆分，解决应用与主机的规划问题。其中使用Ansible本地fact实现应用主机规划，使用自定义的Ansiblelookup插件来实现从远端获取变量。通过这种方式可以提高ansible代码的利用率和普适性，降低运维的配置管理工作复杂度。可以关注下以下几点
   本地git注册文件的目录结构 ansible的local fact与git中注册目录的对应关系 ansible的playbook配置模板与获取fact的配置关系   设计好以上几点可以大幅降低不必要的麻烦，设计的时候最好充分考虑后期扩展问题。
 " />
@@ -37,7 +37,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/" />
+<link rel="canonical" href="http://blog.gourds.site/post/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/" />
 
 
 
@@ -55,7 +55,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
 
 
 
@@ -75,7 +75,7 @@ ansible的playbook配置模板与获取fact的配置关系
 
 设计好以上几点可以大幅降低不必要的麻烦，设计的时候最好充分考虑后期扩展问题。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gourds.site/post/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://blog.gourds.site/post/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="post" />
 
 
 
@@ -139,36 +139,36 @@ ansible的playbook配置模板与获取fact的配置关系
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -271,7 +271,7 @@ ansible的playbook配置模板与获取fact的配置关系
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
 
         
@@ -282,7 +282,7 @@ ansible的playbook配置模板与获取fact的配置关系
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
 
         
@@ -293,7 +293,7 @@ ansible的playbook配置模板与获取fact的配置关系
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -304,7 +304,7 @@ ansible的playbook配置模板与获取fact的配置关系
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -315,8 +315,8 @@ ansible的playbook配置模板与获取fact的配置关系
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -516,7 +516,7 @@ DSN = {{etcdvalue.DSN}}
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Gourds</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -646,7 +646,7 @@ DSN = {{etcdvalue.DSN}}
     </a>
 
 
-<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -684,7 +684,7 @@ DSN = {{etcdvalue.DSN}}
 
       </i>
     </span><span class="author">
-        xianmin
+        Gourds
         
       </span></span>
 
@@ -715,10 +715,17 @@ DSN = {{etcdvalue.DSN}}
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

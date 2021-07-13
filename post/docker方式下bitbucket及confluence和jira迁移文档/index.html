@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Gourds" />
   <meta name="description" content="之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情 迁移思路：
   按照原来搭建方法在新宿主机上新建相同的容器（注意控制版本，可以用指定的版本来替代image的latest标签） 将备份的数据导入新的容器中   这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。 PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用【chevreto】，有时间了整一整。
 " />
@@ -37,7 +37,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" />
+<link rel="canonical" href="http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" />
 
 
 
@@ -55,7 +55,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
 
 
 
@@ -73,7 +73,7 @@
 这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
 PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用【chevreto】，有时间了整一整。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-11-29T13:57:00+00:00" />
 <meta property="article:modified_time" content="2018-11-29T13:57:00+00:00" />
 
@@ -133,36 +133,36 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -265,7 +265,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
           
 
         
@@ -276,7 +276,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
           
 
         
@@ -287,7 +287,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -298,7 +298,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -309,8 +309,8 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -569,7 +569,7 @@ bitbucket_20181118.tar.gz
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Gourds</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -591,10 +591,10 @@ bitbucket_20181118.tar.gz
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://blog.gourds.site/tags/docker/">Docker</a>
-          <a href="https://blog.gourds.site/tags/bitbucket/">Bitbucket</a>
-          <a href="https://blog.gourds.site/tags/confluence/">Confluence</a>
-          <a href="https://blog.gourds.site/tags/jira/">Jira</a>
+          <a href="http://blog.gourds.site/tags/docker/">Docker</a>
+          <a href="http://blog.gourds.site/tags/bitbucket/">Bitbucket</a>
+          <a href="http://blog.gourds.site/tags/confluence/">Confluence</a>
+          <a href="http://blog.gourds.site/tags/jira/">Jira</a>
           
         </div>
 
@@ -705,7 +705,7 @@ bitbucket_20181118.tar.gz
     </a>
 
 
-<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -743,7 +743,7 @@ bitbucket_20181118.tar.gz
 
       </i>
     </span><span class="author">
-        xianmin
+        Gourds
         
       </span></span>
 
@@ -774,10 +774,17 @@ bitbucket_20181118.tar.gz
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Etcd on Gourds</title>
-    <link>https://blog.gourds.site/tags/etcd/</link>
+    <link>http://blog.gourds.site/tags/etcd/</link>
     <description>Recent content in Etcd on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Apr 2018 17:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/etcd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Apr 2018 17:00:00 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/etcd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Etcd的v3版本常用操作及可视化</title>
-      <link>https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <link>http://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Tue, 24 Apr 2018 17:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <guid>http://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       <description>&lt;p&gt;简单记录一下&lt;code&gt;Etcd API v3&lt;/code&gt;版本的基本操作和可视化&lt;code&gt;WEB UI&lt;/code&gt;使用，关于V2的使用可以看我之前的一篇介绍&lt;a href=&#34;http://arvon.top/tags/%E8%BF%90%E7%BB%B4%E6%9E%B6%E6%9E%84/&#34;&gt;【etcd v2】&lt;/a&gt;。Etcd v2 和 v3 本质上是共享同一套 raft 协议代码的两个独立的应用，接口不一样，存储不一样，数据也是互相隔离的。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;V3相对V2的一些主要变化：&lt;/strong&gt;&lt;/p&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>Etcd及相关组件安装配置说明</title>
-      <link>https://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</link>
+      <link>http://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</link>
       <pubDate>Fri, 13 Oct 2017 21:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</guid>
+      <guid>http://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/</guid>
       <description>&lt;p&gt;&lt;strong&gt;简介：&lt;/strong&gt;&lt;a href=&#34;https://coreos.com/etcd/&#34;&gt;Etcd&lt;/a&gt;是CentOS公司发起的一个开源项目，灵感来自于 ZooKeeper 和 Doozer，它使用Go语言编写，并通过Raft一致性算法处理日志复制以保证强一致性（Raft是一个来自Stanford的新的一致性算法，适用于分布式系统的日志复制，Raft通过选举的方式来实现一致性，在Raft中，任何一个节点都可能成为Leader。），主要用于&lt;strong&gt;共享配置和服务发现&lt;/strong&gt;的分布式、一致性的KV存储系统。
 除了常见的共享配置及服务发现，还可以使用Etcd结合SkyDNS提供&lt;strong&gt;内网域名解析服务&lt;/strong&gt;。
 这里主要涉及etcd安装配置说明、etcd-view安装配置、skydns安装配置&lt;/p&gt;</description>

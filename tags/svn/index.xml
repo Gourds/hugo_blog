@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Svn on Gourds</title>
-    <link>https://blog.gourds.site/tags/svn/</link>
+    <link>http://blog.gourds.site/tags/svn/</link>
     <description>Recent content in Svn on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Sep 2016 16:57:56 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/svn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Sep 2016 16:57:56 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/svn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Centos下搭建svn服务器</title>
-      <link>https://blog.gourds.site/post/centos%E4%B8%8B%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>http://blog.gourds.site/post/centos%E4%B8%8B%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Fri, 09 Sep 2016 16:57:56 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/centos%E4%B8%8B%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>http://blog.gourds.site/post/centos%E4%B8%8B%E6%90%AD%E5%BB%BAsvn%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>&lt;p&gt;**前言：**因需求需搭建一个svn服务器，这里顺带记录一下svn的搭建及使用方法。&lt;/p&gt;</description>
     </item>
     

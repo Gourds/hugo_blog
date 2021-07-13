@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Date on Gourds</title>
-    <link>https://blog.gourds.site/tags/date/</link>
+    <link>http://blog.gourds.site/tags/date/</link>
     <description>Recent content in Date on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Jan 2016 12:15:50 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/date/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2016 12:15:50 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/date/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS搭建NTP服务器</title>
-      <link>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>http://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Wed, 20 Jan 2016 12:15:50 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>http://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>&lt;p&gt;&lt;strong&gt;简介：&lt;/strong&gt;
 NTP（NetworkTime Protocol，网络时间协议）是用来在分布式时间服务器和客户端之间进行时间同步。&lt;a href=&#34;http://blog.arvon.top/2015/12/13/Linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/&#34;&gt;&amp;ndash;&amp;gt;另一篇关于时间的&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;NTP基于UDP报文进行传输，使用的UDP端口号为123。
@@ -22,10 +22,10 @@ NTP（NetworkTime Protocol，网络时间协议）是用来在分布式时间服
     
     <item>
       <title>Linux主机时间不准问题</title>
-      <link>https://blog.gourds.site/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/</link>
+      <link>http://blog.gourds.site/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sun, 13 Dec 2015 11:20:56 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://blog.gourds.site/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;p&gt;**摘要：**linux主机时间过一段时间就会发现时间不对了，查阅资料这个大概是因为硬件时间和服务器时间不一致导致的。&lt;/p&gt;</description>
     </item>
     

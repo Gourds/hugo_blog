@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>版本控制 on Gourds</title>
-    <link>https://blog.gourds.site/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
+    <link>http://blog.gourds.site/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
     <description>Recent content in 版本控制 on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Jun 2018 12:38:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jun 2018 12:38:00 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitbucket实践</title>
-      <link>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
+      <link>http://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Sat, 09 Jun 2018 12:38:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>http://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;p&gt;前言：之前使用了Atlassian公司的Confluence和Jira，现在新项目考虑使用Bitbucket做代码仓库，这里记录一下调研实践过程。由于之前的服务是使用docker进行部署的，所以Bitbucket也决定使用docker的方式进行部署。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;update:&lt;/strong&gt;
