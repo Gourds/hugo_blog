@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Grafana on My New Hugo Site</title>
-    <link>http://example.org/tags/grafana/</link>
-    <description>Recent content in Grafana on My New Hugo Site</description>
+    <title>Grafana on Gourds</title>
+    <link>https://blog.gourds.site/tags/grafana/</link>
+    <description>Recent content in Grafana on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 Nov 2017 15:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Nov 2017 15:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>collectd使用exec模块进行自定义监控</title>
-      <link>http://example.org/post/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/</link>
+      <link>https://blog.gourds.site/post/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/</link>
       <pubDate>Tue, 28 Nov 2017 15:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/</guid>
+      <guid>https://blog.gourds.site/post/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/</guid>
       <description>&lt;p&gt;使用Grafana进行服务监控的明显优点就是监控出图漂亮，而且拥有丰富的插件，可以直接监控系统资源和负荷信息以及常见的服务进程状态，不过还是会有一些场景直接使用模块是不太容易进行监控的，这个时候更适合使用编写脚本进行数据收集和监控，而&lt;strong&gt;exec&lt;/strong&gt;模块就可以满足这样的需求，下面就列举一个小栗子。&lt;/p&gt;</description>
     </item>
     

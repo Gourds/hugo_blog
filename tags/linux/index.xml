@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on My New Hugo Site</title>
-    <link>http://example.org/tags/linux/</link>
-    <description>Recent content in Linux on My New Hugo Site</description>
+    <title>Linux on Gourds</title>
+    <link>https://blog.gourds.site/tags/linux/</link>
+    <description>Recent content in Linux on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jul 2017 22:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Jul 2017 22:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rsync服务安装配置记录</title>
-      <link>http://example.org/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 24 Jul 2017 22:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;关于RSYNC，个人理解传送大量资源文件或较多小文件时适合使用传输，具有数据验证、断点续传、增量传输、差异传输等特性。优于scp及ftp等工具。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;rsync是unix/linux下同步文件的一个高效算法，它能同步更新两处计算机的文件与目录，并适当利用查找文件中的不同块以减少数据传输。rsync中一项与其他大部分类似程序或协定中所未见的重要特性是镜像是只对有变更的部分进行传送。rsync可拷贝／显示目录属性，以及拷贝文件，并可选择性的压缩以及递归拷贝。rsync利用由Andrew Tridgell发明的算法&amp;hellip;&lt;/p&gt;
@@ -22,65 +22,65 @@
     
     <item>
       <title>Linux启动流程</title>
-      <link>http://example.org/post/linux%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
+      <link>https://blog.gourds.site/post/linux%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Sun, 25 Jun 2017 06:50:45 +0000</pubDate>
       
-      <guid>http://example.org/post/linux%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
+      <guid>https://blog.gourds.site/post/linux%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20170624-Linuxboot-1.jpg&#34; alt=&#34;1&#34;&gt;
 **背景故事：**为啥想起来写Linux启动流程了呢，这个呢要从一个月以前说起，蜜汁尴尬~~~。我媳妇用的Ubuntu，然后她需要装很多环境，不知道为何内核老是更新，结果就是后面装东西的时候提示/boot分区空间不足无法安装，但我天真可爱的媳妇不会清呀，然后我就来了，一看简单啊，删呗，凡事总有**BUT**，我觉得这个事情嘛要清就要清彻底，就不rm-rf了，直接卸安装包多清爽，于是乎系统挂了，剁手啊打什么通配符。。。不过总结一下还是对系统层认识不够生动，所以就补一篇日志，万一我最棒的媳妇看到了呢，那就点点点~&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux后台执行执行程序及环境变量优先级</title>
-      <link>http://example.org/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <link>https://blog.gourds.site/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/</link>
       <pubDate>Sun, 25 Jun 2017 01:23:45 +0000</pubDate>
       
-      <guid>http://example.org/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <guid>https://blog.gourds.site/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
       <description>&lt;p&gt;**背景故事：**为什么写这个呢，因为有次给媳妇弄翻墙的shadows，配完了想让她每次开机就自动运行，然后发现了个事情，就是脚本有输出的时候直接用&amp;amp;是不大好的。还查了下，这可不应该啊，虽然说好久不用这个玩意，不过还是应该掌握的，所以就当记个笔记吧&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>yum安装ffmpeg记录</title>
-      <link>http://example.org/post/yum%E5%AE%89%E8%A3%85ffmpeg%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/yum%E5%AE%89%E8%A3%85ffmpeg%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 25 Oct 2016 16:34:00 +0000</pubDate>
       
-      <guid>http://example.org/post/yum%E5%AE%89%E8%A3%85ffmpeg%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/yum%E5%AE%89%E8%A3%85ffmpeg%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;Tips：最近安装一个名为ffmpeg的包，但是epel和ali的源都没有这个包。所以&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>yum 报错：rpmdb open failed</title>
-      <link>http://example.org/post/yum-%E6%8A%A5%E9%94%99rpmdb-open-failed/</link>
+      <link>https://blog.gourds.site/post/yum-%E6%8A%A5%E9%94%99rpmdb-open-failed/</link>
       <pubDate>Fri, 30 Sep 2016 11:42:03 +0000</pubDate>
       
-      <guid>http://example.org/post/yum-%E6%8A%A5%E9%94%99rpmdb-open-failed/</guid>
+      <guid>https://blog.gourds.site/post/yum-%E6%8A%A5%E9%94%99rpmdb-open-failed/</guid>
       <description>&lt;p&gt;**背景：**刚刚直接kill掉yum进程后，yum报了rpmdb的报错，记一下解决方法&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tmux源码安装</title>
-      <link>http://example.org/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</link>
+      <link>https://blog.gourds.site/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</link>
       <pubDate>Fri, 12 Aug 2016 12:26:51 +0000</pubDate>
       
-      <guid>http://example.org/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://blog.gourds.site/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</guid>
       <description>&lt;p&gt;**简述：**之前其实有写过&lt;a href=&#34;http://arvon.top/2015/07/22/Tmux-%E4%BD%BF%E7%94%A8%E7%AE%80%E8%AE%B0/&#34;&gt;一篇tmux的简单使用绍&lt;/a&gt;,但是不够详尽，而且当时也并没有出现几个问题，当yum不好使的时候，就要上源码了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>sort小插曲</title>
-      <link>http://example.org/post/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/</link>
+      <link>https://blog.gourds.site/post/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/</link>
       <pubDate>Thu, 11 Aug 2016 16:10:05 +0000</pubDate>
       
-      <guid>http://example.org/post/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/</guid>
+      <guid>https://blog.gourds.site/post/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/</guid>
       <description>&lt;p&gt;**Tips:**遇见一个有趣的sort命令问题，很有意思，这里记录一下，顺便也再复习一下sort命令。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>CentOS6.x挂载ntfs和xfs问题</title>
-      <link>http://example.org/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/</link>
+      <link>https://blog.gourds.site/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 13 Jan 2016 11:30:24 +0000</pubDate>
       
-      <guid>http://example.org/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://blog.gourds.site/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt; centos6.x默认是ext4的文件系统，而centos7.x是默认xfs的文件系统，所以直接挂载是会出问题的，另外ntfs是windows上的文件系统，挂载也会出问题，这里记录一下如何解决。&lt;/p&gt;
 &lt;h3 id=&#34;挂载xfs&#34;&gt;挂载xfs&lt;/h3&gt;
 &lt;ul&gt;
@@ -94,37 +94,37 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
     
     <item>
       <title>linux解压rar及xshell的rz</title>
-      <link>http://example.org/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/</link>
+      <link>https://blog.gourds.site/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/</link>
       <pubDate>Sat, 05 Dec 2015 11:53:05 +0000</pubDate>
       
-      <guid>http://example.org/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/</guid>
+      <guid>https://blog.gourds.site/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/</guid>
       <description>&lt;p&gt;**摘要：**有时会遇到要在linux下解压rar包，这就很不舒服，毕竟rar是win下不开源的东西，所以建议还是少用，另外rz这个小工具在使用xshell想上传个小东西的时候非常方便，大文件还是建议ftp或者弄个rsync。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>cp和chown的几个好用选项</title>
-      <link>http://example.org/post/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/</link>
+      <link>https://blog.gourds.site/post/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/</link>
       <pubDate>Sat, 14 Nov 2015 10:09:54 +0000</pubDate>
       
-      <guid>http://example.org/post/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/</guid>
+      <guid>https://blog.gourds.site/post/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/</guid>
       <description>&lt;p&gt;**摘要：**生产环境中对权限什么的要求是很严格的，而使用root用户进行操作，难免会变更权限信息，修改权限就变得十分有必要，而以下的选线都是很实用的。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>NFS服务安装部署记录</title>
-      <link>http://example.org/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 20 Oct 2015 01:00:10 +0000</pubDate>
       
-      <guid>http://example.org/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux下关于文件属性的三个时间</title>
-      <link>http://example.org/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/</link>
+      <link>https://blog.gourds.site/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/</link>
       <pubDate>Wed, 13 May 2015 10:36:23 +0000</pubDate>
       
-      <guid>http://example.org/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/</guid>
+      <guid>https://blog.gourds.site/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/</guid>
       <description>&lt;p&gt;Tips: 主要区分linux下文件的三个时间属性，atime、mtime、ctime&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -139,19 +139,19 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
     
     <item>
       <title>Linux查看主机信息</title>
-      <link>http://example.org/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/</link>
+      <link>https://blog.gourds.site/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/</link>
       <pubDate>Mon, 13 Apr 2015 11:08:25 +0000</pubDate>
       
-      <guid>http://example.org/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/</guid>
+      <guid>https://blog.gourds.site/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/</guid>
       <description>&lt;p&gt;这篇包括（系统版本、内核信息、核心数、主机名）还有一个关于系统信息查看的，&lt;a href=&#34;http://blog.arvon.top/2015/07/27/Linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/&#34;&gt;&amp;ndash;&amp;gt;飞机票&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Centos搭建nginx&#43;php环境</title>
-      <link>http://example.org/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</link>
+      <link>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Fri, 13 Feb 2015 12:58:28 +0000</pubDate>
       
-      <guid>http://example.org/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</guid>
       <description>&lt;p&gt;Tips：线上pfsense中添加bandwidthd监控流量的功能存在问题，需要配置一个支持php的web环境来进行支持，这里选择了nginx+php。&lt;/p&gt;
 &lt;h3 id=&#34;environment&#34;&gt;Environment&lt;/h3&gt;
 &lt;ul&gt;

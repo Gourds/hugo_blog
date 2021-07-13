@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nginx on My New Hugo Site</title>
-    <link>http://example.org/tags/nginx/</link>
-    <description>Recent content in Nginx on My New Hugo Site</description>
+    <title>Nginx on Gourds</title>
+    <link>https://blog.gourds.site/tags/nginx/</link>
+    <description>Recent content in Nginx on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 16 Jul 2017 13:23:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jul 2017 13:23:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nginx添加登录认证</title>
-      <link>http://example.org/post/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/</link>
+      <link>https://blog.gourds.site/post/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/</link>
       <pubDate>Sun, 16 Jul 2017 13:23:00 +0000</pubDate>
       
-      <guid>http://example.org/post/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/</guid>
+      <guid>https://blog.gourds.site/post/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/</guid>
       <description>&lt;p&gt;之前在爆Zabbix漏洞的时候，在未进行漏洞升级修复的情况下，可以先对nginx的web入口加一个认证，这样就能很大程度上降低被黑的风险。同理在使用Nginx代理一些服务的时候，也可以用这种方法进行安全上的加固。做起来比较简单，却行之有效。Nginx上一般使用的认证方式有2种，分别是auth_basic（本机认证）及ngx_http_auth_request_module（第三方认证）&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Nginx状态码总结</title>
-      <link>http://example.org/post/nginx%E7%8A%B6%E6%80%81%E7%A0%81%E6%80%BB%E7%BB%93/</link>
+      <link>https://blog.gourds.site/post/nginx%E7%8A%B6%E6%80%81%E7%A0%81%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 04 Dec 2016 11:23:45 +0000</pubDate>
       
-      <guid>http://example.org/post/nginx%E7%8A%B6%E6%80%81%E7%A0%81%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://blog.gourds.site/post/nginx%E7%8A%B6%E6%80%81%E7%A0%81%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-26.jpg&#34; alt=&#34;我要学习&#34;&gt;
 工作中常见的状态码其实并不多，去小米面试的时候问到关于这个问题，回答的不太好，这里就总结记录一下。万一面试再遇到呢。是吧&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Nginx搭建CDN源站记录</title>
-      <link>http://example.org/post/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/</link>
+      <link>https://blog.gourds.site/post/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/</link>
       <pubDate>Thu, 03 Mar 2016 12:32:05 +0000</pubDate>
       
-      <guid>http://example.org/post/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/</guid>
+      <guid>https://blog.gourds.site/post/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/</guid>
       <description>&lt;p&gt;**摘要：**nginx有很多很强大的功能，可以做web，可以做代理、可以做SLB、还可以做缓存CDN等等，这里记录以下做缓存时的配置。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Centos搭建nginx&#43;php环境</title>
-      <link>http://example.org/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</link>
+      <link>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Fri, 13 Feb 2015 12:58:28 +0000</pubDate>
       
-      <guid>http://example.org/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</guid>
+      <guid>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/</guid>
       <description>&lt;p&gt;Tips：线上pfsense中添加bandwidthd监控流量的功能存在问题，需要配置一个支持php的web环境来进行支持，这里选择了nginx+php。&lt;/p&gt;
 &lt;h3 id=&#34;environment&#34;&gt;Environment&lt;/h3&gt;
 &lt;ul&gt;

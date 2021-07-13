@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on My New Hugo Site</title>
-    <link>http://example.org/tags/python/</link>
-    <description>Recent content in Python on My New Hugo Site</description>
+    <title>Python on Gourds</title>
+    <link>https://blog.gourds.site/tags/python/</link>
+    <description>Recent content in Python on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 10 Sep 2019 20:38:24 +0000</lastBuildDate><atom:link href="http://example.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Sep 2019 20:38:24 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于对Python面向对象的理解</title>
-      <link>http://example.org/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</link>
+      <link>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</link>
       <pubDate>Tue, 10 Sep 2019 20:38:24 +0000</pubDate>
       
-      <guid>http://example.org/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
+      <guid>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
       <description>&lt;p&gt;说起面向对象(Object Oriented Programming)首先想到的就是三个词：封装、继承和多态。&lt;/p&gt;
 &lt;p&gt;**封装：**目的是为了简化编程和提升安全性(标识出允许外部使用的所有成员函数和数据项)。&lt;/p&gt;
 &lt;ul&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>python中特殊方法和特殊变量总结</title>
-      <link>http://example.org/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
+      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 01 Sep 2019 10:59:29 +0000</pubDate>
       
-      <guid>http://example.org/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;在研究一些python项目的源码时经常会看到一些特殊的方法和变量，比如两边双下划线&lt;code&gt;__init__&lt;/code&gt;定义的方法，还有一些类中会有以双下划线&lt;code&gt;__&lt;/code&gt;开头定义的变量，以及以单下划线&lt;code&gt;_&lt;/code&gt;开头的定义的变量。这里对目前经常遇到的做一个记录&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;__method__&lt;/code&gt;:在class中有一些以双下划线开头和结尾的函数被称为特殊方法(Magic Method)，更具体可以参考&lt;a href=&#34;https://docs.python.org/3/reference/datamodel.html#special-method-names&#34;&gt; 官方文档&lt;/a&gt;&lt;/p&gt;
@@ -46,19 +46,19 @@
     
     <item>
       <title>python中的*与**用法</title>
-      <link>http://example.org/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
+      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
       <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
+      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
       <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>python2.6升级2.7记录</title>
-      <link>http://example.org/post/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 12 Feb 2016 12:08:36 +0000</pubDate>
       
-      <guid>http://example.org/post/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;Tips:由于想自己用Django搭建blog，需要2.7的python环境而centos6.7默认是2.6版本，所以升级了python&lt;/p&gt;</description>
     </item>
     

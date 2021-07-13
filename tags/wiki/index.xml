@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wiki on My New Hugo Site</title>
-    <link>http://example.org/tags/wiki/</link>
-    <description>Recent content in Wiki on My New Hugo Site</description>
+    <title>Wiki on Gourds</title>
+    <link>https://blog.gourds.site/tags/wiki/</link>
+    <description>Recent content in Wiki on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 20 Aug 2016 11:42:10 +0000</lastBuildDate><atom:link href="http://example.org/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Aug 2016 11:42:10 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS6.8搭建个人dokuwiki</title>
-      <link>http://example.org/post/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/</link>
+      <link>https://blog.gourds.site/post/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/</link>
       <pubDate>Sat, 20 Aug 2016 11:42:10 +0000</pubDate>
       
-      <guid>http://example.org/post/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/</guid>
+      <guid>https://blog.gourds.site/post/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/</guid>
       <description>&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt;&lt;a href=&#34;https://www.dokuwiki.org/wiki:dokuwiki&#34;&gt;dokuwiki&lt;/a&gt;是一个开源的wiki引擎程序，非常适合知识库管理，因为有的东西知识不完善不好用blog写，有时也许即时记录一下想法什么的，所以这个还是很有必要的。之前也对比过其他的wiki程序，不过这个比较符合我的要求，所以就用这个程序，这里主要对安装配置做一下记录。&lt;/p&gt;</description>
     </item>
     

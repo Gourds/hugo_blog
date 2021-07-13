@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> - Gourds</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="xianmin" />
+  <meta name="description" content="title: Perl语言入门（一） date: 2015-08-10 14:55:36 tags: [学习笔记] 更新记录：
+ 2015/08/10 DonePage45 2015/08/11 DonePage68 2015/08/17 Read list and array, do a new one. " />
+
+  <meta name="keywords" content="Hugo, theme, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.85.0" />
+
+
+<link rel="canonical" href="https://blog.gourds.site/post/prel%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="title: Perl语言入门（一）
+date: 2015-08-10 14:55:36
+tags: [学习笔记]
+更新记录：
+
+2015/08/10 DonePage45
+2015/08/11 DonePage68
+2015/08/17 Read list and array, do a new one.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/prel%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="post" />
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="title: Perl语言入门（一）
+date: 2015-08-10 14:55:36
+tags: [学习笔记]
+更新记录：
+
+2015/08/10 DonePage45
+2015/08/11 DonePage68
+2015/08/17 Read list and array, do a new one.
+">
+
+<meta itemprop="wordCount" content="5823">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="title: Perl语言入门（一）
+date: 2015-08-10 14:55:36
+tags: [学习笔记]
+更新记录：
+
+2015/08/10 DonePage45
+2015/08/11 DonePage68
+2015/08/17 Read list and array, do a new one.
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">进击de葫芦娃</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
+              external-link
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      进击de葫芦娃
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
+              external-link
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+      
+      <div class="post-meta">
+        <time datetime="0001-01-01" class="post-time">
+          0001-01-01
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tags-学习笔记">title: Perl语言入门（一）
+date: 2015-08-10 14:55:36
+tags: [学习笔记]</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h2 id="tags-学习笔记">title: Perl语言入门（一）
+date: 2015-08-10 14:55:36
+tags: [学习笔记]</h2>
+<p><strong>更新记录：</strong></p>
+<ul>
+<li>2015/08/10 DonePage45</li>
+<li>2015/08/11 DonePage68</li>
+<li>2015/08/17 Read list and array, do a new one.</li>
+</ul>
+<p>##前言杂记</p>
+<ul>
+<li>适合管理员使用的语言</li>
+<li>Arvon&rsquo;s读书笔记</li>
+<li>sixth edtion for learning perl</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.014</span>;<span style="color:#75715e">#该脚本需要在Perl 5.14或更高版本才能正常运行</span>
+perl <span style="color:#f92672">-</span>v<span style="color:#75715e">#查看perl的版本</span>
+</code></pre></div><ul>
+<li>Hello，World</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+printf <span style="color:#e6db74">&#34;Hello, world!\n&#34;</span>;
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+say <span style="color:#e6db74">&#34;Hello, world!&#34;</span>;
+</code></pre></div><ul>
+<li>替换字符演示</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+@lines <span style="color:#f92672">=</span> <span style="color:#e6db74">`perldoc -u -fatan2`</span>;
+<span style="color:#66d9ef">foreach</span> (@lines){
+    <span style="color:#e6db74">s/\w&lt;([^&gt;]+)&gt;/\U$1/g</span>;
+        <span style="color:#66d9ef">print</span>;
+        }
+</code></pre></div><p>##标量数据</p>
+<ul>
+<li>标量数据是Perl里面最简单的一种数据类型。对大部分标量来说，它要么是数字（如123或3.25e23），要
+么是由字符组成的序列（如hello）。对Perl来说，数字和字符串大多情况下是可以在内部转换的。可以用操
+作符对标量进行操作（如加法或字符串连接），产生的结果通常也是一个标量。标量可以存储在标量变量里，
+也可以从文件和设备读取或写入这些位置。</li>
+</ul>
+<p>###数字
+####所有数字的内部格式都相同</p>
+<ul>
+<li>Perl内部，总是按“双精度浮点数（double-precision floating-point）”的要求来保存数字并进行运算
+的。也就是说，Perl内部并不存在整数值&ndash;程序中用到的整数型常量会被转换成等效的浮点数值。</li>
+</ul>
+<p>####浮点数直接量</p>
+<ul>
+<li>直接量（literal）是指某个数字在Perl源代码中的写法。直接量并非运算结果，也不是I/O（输入/输出）
+操作的结果，它只是直接键入源程序代码中的数据。</li>
+<li>Perl浮点数直接量的写法，小数点与前置的正负号都是可选的，数字后面也可以加上用“e”表示的10的次方
+表示符（即指数表示法）。</li>
+<li>如下列写法</li>
+</ul>
+<blockquote>
+<p>1.25
+255.000
+255.0
+7.25e45	#7.25乘以10的45次方，其中e可以大写
+-6.5e123</p>
+</blockquote>
+<p>####整数直接量</p>
+<ul>
+<li>整数直接量：</li>
+</ul>
+<blockquote>
+<p>0
+1234
+-4321
+41023789873	#可以写成41_023_789_873,Perl允许在整数直接量插入下划线，方便辨认</p>
+</blockquote>
+<p>####非十进制的整数直接量</p>
+<ul>
+<li>Perl语言和其他许多程序语言一样，允许使用十进制（decimal）意外的其他进制表示数字。八进制（octal）
+直接量以0开头，十六进制（hexadecimal）直接量以ox开头，二进制（binary）直接量以ob开头。十六进制的
+A到F（可以写成小写的a到f，来代表十进制的10到15）。例如</li>
+</ul>
+<blockquote>
+<p>o377	#八进制的377，等于十进制的255
+0xff	#十六进制的FF，等于十进制的255
+ob11111111	#二进制的，等于十进制的255</p>
+</blockquote>
+<ul>
+<li>这三个数字虽然看起来不同，但对Perl来说都是同一个数字</li>
+</ul>
+<p>####数字操作符</p>
+<ul>
+<li>Perl提供了各种常见的数字操作符，如加、减、乘、除、取模、次方。例如：</li>
+</ul>
+<blockquote>
+<p>2+3
+5.1-2.4
+3*12
+14/2
+10.2/0.3
+10/3
+10%3	#取模，结果为1
+2**3	#次方，结果为8</p>
+</blockquote>
+<p>###字符串</p>
+<ul>
+<li>字符串就是一个字符序列，如hello。字符串可以各种字符任意组合而成。最短的字符串不包含任何字符，也
+叫做空字符串。最长的字符串的长度没有限制。这符合Perl遵守的“无内置限制（nobuilt-inlimits）”的原则。
+字符串通常是由可输出地字母、数字及标点符号组成，其范围介于ASCII编码的32到126之间。由于字符串可以
+包含任何字符，所以可用它来创建、扫描或操控二进制数据，这是许多其他工具语言望尘莫及的。例如：你可以
+将一个图形文件或编译过的可执行文件读进Perl的字符串变变量，修改它的内容再写回去。</li>
+<li>Perl完全支持Unicode，所以在字符串中可以使用任意一个合法的Unicode字符。不过由于Perl的历史原因
+它不会自动将程序源代码当做Unicode编码的文本读入，所以如果你想要在源代码中使用Unicode书写直接量
+的话，需手工加上utf8编译指令：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> utf8;
+</code></pre></div><ul>
+<li>和数字一样，字符串也有直接量记法，也就是Perl程序中字符串的书写方式。包括单引号内的字符串和双引号
+内的字符串。</li>
+</ul>
+<p>####单引号内的字符串直接量</p>
+<ul>
+<li>除了单引号和反斜线之外，单引号内所有的字符串都代表他们自己。</li>
+</ul>
+<blockquote>
+<p>&lsquo;fred&rsquo;
+&lsquo;hello&rsquo;
+''
+&lsquo;#$@%&rsquo;
+&lsquo;Don't let me go!&rsquo;
+&lsquo;the last character is a backslash:\&rsquo;
+&lsquo;'\&rsquo;	#单引号后面紧接着反斜线
+&lsquo;hi\n&rsquo;	#单引号内的\n并不是换行符，而是表示字面上的两个字符</p>
+</blockquote>
+<p>####双引号内的字符串直接量</p>
+<ul>
+<li>双引号中的反斜线更为强大</li>
+</ul>
+<blockquote>
+<p>&ldquo;hi\n&rdquo;		#换行符
+&ldquo;love\tyou&rdquo;		#水平制表符
+&ldquo;\r&rdquo;	#回车
+&ldquo;\f&rdquo;	#换页符
+&ldquo;\b&rdquo;	#退格
+&ldquo;\e&rdquo;	#Esc（ASCII编码的转义字符）
+&ldquo;\cC&rdquo;	#控制符，就是COntrol键的代码（此例表示同时按下Ctrl和c键的返回码）
+&ldquo;\l&rdquo;	#将下个字母转换为小写
+&ldquo;\L&rdquo;	#将它后面的所有字母都转换为小写的，直到\E为止
+&ldquo;\u&rdquo;	#将下个字符转换为大写
+&ldquo;\U&rdquo;	#将它后面所有的字母都转换为大写，直到\E为止
+&ldquo;\E&rdquo;	#结束\L、\U和\Q开始的作用范围</p>
+</blockquote>
+<p>####字符串操作符</p>
+<ul>
+<li>字符串可以用.操作符链接起来</li>
+</ul>
+<blockquote>
+<p>&ldquo;hello&rdquo;.&ldquo;world&rdquo;	#等同于”helloworld”
+&ldquo;hello&rdquo; . ' ' . &ldquo;world&rdquo;	#等同于&rsquo;hello world'
+&lsquo;hello world&rsquo; . &ldquo;\n&rdquo;	#等同于&quot;hello world\n&quot;</p>
+</blockquote>
+<ul>
+<li><code>注意</code>：链接运算符必须显示使用连接操作符（concatenation operator），而不是像其他一些语言
+只需要把两个字符串放在一起就行。</li>
+<li><code>特殊的重复操作符，小写字母x</code>，此操作符会将其左边的操作数与它本身重复连接，重复次数由右边的
+操作数（某个数字）指定。例子：</li>
+</ul>
+<blockquote>
+<p>&ldquo;fred&rdquo; x 3	#得到“fredfredfred”
+&ldquo;barney&rdquo; x (4+1)	#得到“barneybarneybarneybarneybarney”
+5 x 4.8	#相当于5乘以4，它会把4.8当做4，因为这里是小写字母x而不是*</p>
+</blockquote>
+<p>####数字与字符串之间的自动转换</p>
+<ul>
+<li>Perl根据操作符来确定你需要的是数字还是字符串。如操作符（比如+号）需要的是数字，Perl会将操作
+数视为数字；在操作符（比如.）需要字符串时，Perl便会将数视为字符串。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#75715e">#Todo: concatenation operator</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+printf <span style="color:#e6db74">&#34;5*4.8\n&#34;</span>;
+printf <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4.8</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+printf <span style="color:#ae81ff">5</span> x <span style="color:#ae81ff">4.8</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+printf <span style="color:#e6db74">&#34;z&#34;</span> <span style="color:#f92672">.</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">*</span><span style="color:#ae81ff">7</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl string_repetition</span>
+<span style="color:#ae81ff">5</span><span style="color:#f92672">*</span><span style="color:#ae81ff">4.8</span>
+<span style="color:#ae81ff">24</span>
+<span style="color:#ae81ff">5555</span>
+z35
+</code></pre></div><p>###Perl的内置警告信息</p>
+<ul>
+<li>从Perl的5.6版本开始，可以通过编译指令开启警告功能</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> warnings;
+</code></pre></div><ul>
+<li>也可以在命令行上使用-w选项对要运行的程序开启警告功能</li>
+</ul>
+<blockquote>
+<p>$ perl -w program.pl</p>
+</blockquote>
+<ul>
+<li>还可以在shebang行上指定命令行选项</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl -w</span>
+</code></pre></div><ul>
+<li>如果看不懂某个警告信息，可以利用diagnostics这个编译命令报告更为详尽的问题描述。在perdiag文档
+中列有简要警告信息和详细诊断说明，该文档时理解diagnostics输出信息的最佳参考：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> diagnostics;	<span style="color:#75715e">#会使程序变慢，如果熟悉，尽量不使用</span>
+</code></pre></div><p>###标量变量</p>
+<ul>
+<li>变量（variable）就是存储一个或多个值的容器的名称。而标量变量就是单单存储一个值的变量。变量的
+名称在整个程序中保持不变，但它所持有的值是可以在程序运行时不断修改变化的。</li>
+<li>标量变量存储的是单个标量值。标量变量的名称是以$开头的，这个符号也称为魔符（sigil），然后是变
+量Perl的标识符：由一个字母或下划线开头，后接多个字母、数字、下划线。标识符是区分大小写的：$Fred
+和$fred是完全不同的变量。</li>
+</ul>
+<blockquote>
+<p>$name
+$Name
+$NAME
+$a_very_long_variable_that_ends_in_i</p>
+</blockquote>
+<ul>
+<li>Perl通过变量标识符的魔符来区分它是什么类型的变量。所以不管取什么名字，都不会和Perl自带的函数
+或操作符的写法相冲突。$的确切意思是“取单个东西”或者“取标量”。</li>
+<li>给变量取个好名字，例如：$my_name or $myName</li>
+</ul>
+<p>###标量的赋值（assignment）</p>
+<ul>
+<li>和其他程序语言差不多，Perl的赋值操作符为等号，等号的左边是变量名称，右边为某个表达式。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$fred <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>;
+$barney <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>;
+$barney <span style="color:#f92672">=</span> $fred<span style="color:#f92672">+</span><span style="color:#ae81ff">3</span>;
+$barney <span style="color:#f92672">=</span> $barney<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>;
+</code></pre></div><p>####双目赋值的操作符</p>
+<ul>
+<li>例子一</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$fred <span style="color:#f92672">=</span> $fred <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;	<span style="color:#75715e">#相当于$fred += 5;</span>
+$barney <span style="color:#f92672">=</span> $barney <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>;	<span style="color:#75715e">#相当于$barney *= 3;</span>
+$str <span style="color:#f92672">=</span> $str<span style="color:#f92672">.</span> <span style="color:#e6db74">&#34; &#34;</span>;	<span style="color:#75715e">#相当于$str .= &#34;&#34;;</span>
+</code></pre></div><ul>
+<li>例子二</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+$fred <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+$fred <span style="color:#f92672">=</span> $fred <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+printf <span style="color:#e6db74">&#34;now + 5 fred is &#34;</span> <span style="color:#f92672">.</span> $fred <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+$fred <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>;
+printf <span style="color:#e6db74">&#34;then + 2 fred is &#34;</span> <span style="color:#f92672">.</span> $fred <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+$str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>;
+$str <span style="color:#f92672">=</span> $str <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34; &#34;</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;the string \$str is &#34;</span> <span style="color:#f92672">.</span> $str <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+
+<span style="color:#75715e">###Output</span>
+root@Mo arvon_perl]<span style="color:#75715e"># perl double.pl</span>
+now <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span> fred is <span style="color:#ae81ff">6</span>
+<span style="color:#66d9ef">then</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> fred is <span style="color:#ae81ff">8</span>
+</code></pre></div><ul>
+<li>字符串中的标量变量内插</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+$meal <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;love&#34;</span>;
+$things <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;arvon $meal mo&#34;</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$things\n&#34;</span>;
+$newThings <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39; arvon &#39;</span> <span style="color:#f92672">.</span> $meal <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39; mo&#39;</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#39;now the $newThings is&#39;</span> <span style="color:#f92672">.</span> $newThings <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+
+<span style="color:#75715e">###Output[root@Mo arvon_perl]# perl varInsert.pl</span>
+arvon love mo
+now the $newThings is arvon love mo
+</code></pre></div><ul>
+<li>如果变量从未被赋值过，就会用空字符串来替换</li>
+<li>如果只是打印这个变量值，则不必使用变量内插的方式：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$fred&#34;</span><span style="color:#960050;background-color:#1e0010">；</span>
+<span style="color:#66d9ef">print</span> $fred<span style="color:#960050;background-color:#1e0010">；</span>	<span style="color:#75715e">#用这个比较好</span>
+</code></pre></div><ul>
+<li>可以直接键入一些字符的代码点(code point)，再通过chr（）函数转换成对应字符,反过来我们可以通过
+ord（）函数把字符转换为代码点</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$alef <span style="color:#f92672">=</span> chr( <span style="color:#ae81ff">0x05D</span>o <span style="color:#960050;background-color:#1e0010">）；</span>
+$codePoint <span style="color:#f92672">=</span> ord(<span style="color:#e6db74">&#39;?&#39;</span>);
+</code></pre></div><p>###操作符的优先级与结合性</p>
+<ul>
+<li>在复杂的表达式里，先执行哪个操作再执行哪个操作，取决于操作符的优先级。在Perl里乘法的优先级高于
+加法，可以使用括号改变执行的优先级</li>
+<li>当两个优先级相同的操作符抢着使用三个操作数时，优先级便交由结合性解决：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#ae81ff">4</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span> <span style="color:#75715e">#4 ** (3 ** 2),得4 ** 9，向右结合</span>
+<span style="color:#ae81ff">72</span> <span style="color:#e6db74">/ 12 /</span> <span style="color:#ae81ff">3</span><span style="color:#75715e">#(72 / 12） / 3,得6 / 3，向左结合</span>
+<span style="color:#ae81ff">36</span> <span style="color:#e6db74">/ 6 * 3	#(36 /</span> <span style="color:#ae81ff">6</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>
+</code></pre></div><p>###比较操作符</p>
+<ul>
+<li>perl的比较操作符类似于代数系统：&lt;,&lt;=,==,&gt;=,&gt;,!=。这些操作符的返回值要么是true要么是false。</li>
+<li>字符串比较时，使用lt、le、eq、ge、gt、ne。<code>注意:</code>字符在ASCII编码中的顺序并不总是对应于字
+符本身意义上的顺序。</li>
+</ul>
+<p>##控制结构
+###if控制结构
+####例子</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#75715e">#$name = &#39;fred&#39;;</span>
+$name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Nfred&#39;</span>;
+<span style="color:#66d9ef">if</span> ($name <span style="color:#f92672">eq</span> <span style="color:#e6db74">&#34;fred&#34;</span>){
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;&#39;$name&#39; is &#39;fred&#39; in\n&#34;</span>;
+}
+<span style="color:#66d9ef">else</span>{
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;&#39;$name&#39; is not &#39;fred&#39; is $name\n&#34;</span>;
+}
+
+</code></pre></div><p>####布尔值</p>
+<ul>
+<li>任何标量值都可以成为if控制结构里的判断条件。如果把表达式返回的真假值保存到变量中，那在判断时可以
+直接检查该变量的值，读起来也方便：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#75715e">#$name = &#39;fred&#39;;</span>
+$name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Nfred&#39;</span>;
+<span style="color:#66d9ef">if</span> ($name <span style="color:#f92672">eq</span> <span style="color:#e6db74">&#34;fred&#34;</span>){
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;&#39;$name&#39; is &#39;fred&#39; in\n&#34;</span>;
+}
+<span style="color:#66d9ef">else</span>{
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;&#39;$name&#39; is not &#39;fred&#39; is $name\n&#34;</span>;
+}
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl Boolean_value.pl</span>
+hello, world
+</code></pre></div><ul>
+<li>Perl和其他语言不同，Perl并没有专用的“布尔（boolean）”数据类型，它是靠一些简单的规则来判断的：</li>
+</ul>
+<blockquote>
+<ul>
+<li>如果是数字，0为假，所有其他数字都为真</li>
+<li>如果是字符串，空字符串（'')为假；所有其他字符串为真。</li>
+<li>如果既不是数字也不是字符串，那就先转换成数字或字符串再进行判断。</li>
+</ul>
+</blockquote>
+<p>###获取用户输入</p>
+<ul>
+<li>用户输入的例子</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Input something please: &#34;</span>;
+$line <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>;
+<span style="color:#66d9ef">if</span> ($line <span style="color:#f92672">eq</span> <span style="color:#e6db74">&#34;\n&#34;</span>){
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;That was just a blank line!\n&#34;</span>;
+}
+<span style="color:#66d9ef">else</span>{
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;That line of input was: $line&#34;</span>;
+}
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl stdin01.pl</span>
+Input something please:
+That was just a blank line<span style="color:#f92672">!</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl stdin01.pl ]</span>
+Input something please: hello
+That line of input was: hello
+</code></pre></div><p>###chomp操作符</p>
+<ul>
+<li>chomp（）操作符只能用于单个变量，且该变量的内容必须为字符串，如果该字符串的末尾是换行符，chomp（）
+的任务就是去掉它。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+$text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a line of text\n&#34;</span>;     <span style="color:#75715e">#or input by &lt;STDIN&gt;</span>
+chomp($text);   <span style="color:#75715e">#remove the \n</span>
+<span style="color:#66d9ef">print</span> $text;
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl chompTraining.pl</span>
+a line of text[root@Mo arvon_perl]<span style="color:#75715e">#</span>
+</code></pre></div><ul>
+<li>处理字符串变量</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+chomp($text <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>); <span style="color:#75715e">#读入文字，略过最后的换行符</span>
+<span style="color:#75715e">#$text = &lt;STDIN&gt;;       #等同于上面的写法</span>
+<span style="color:#75715e">#chomp($text):</span>
+<span style="color:#66d9ef">print</span> $text;
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl chompTraining02.pl</span>
+hello,world
+hello,world[root@Mo arvon_perl]<span style="color:#75715e">#</span>
+</code></pre></div><p>###while控制结构</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+$count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">while</span> ($count <span style="color:#f92672">&lt;</span>  <span style="color:#ae81ff">10</span>){
+    $count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>;
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Now the number is $count\n&#34;</span>;
+}
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl whileCount.pl</span>
+Now the number is <span style="color:#ae81ff">2</span>
+Now the number is <span style="color:#ae81ff">4</span>
+Now the number is <span style="color:#ae81ff">6</span>
+Now the number is <span style="color:#ae81ff">8</span>
+Now the number is <span style="color:#ae81ff">10</span>
+</code></pre></div><p>###undef值</p>
+<ul>
+<li>我们未赋值时就用到了某个不存在标量变量，并不会让程序停止运行，当成数字使用，它会表现的像0；当
+做字符串使用，它会表现的像空字符串。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#75715e">#累加奇数</span>
+$n <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#66d9ef">while</span> ($n <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>){
+    $sum <span style="color:#f92672">+=</span> $n;
+    $n <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>;<span style="color:#75715e">#准备奇数</span>
+}
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The total was $sum.\n&#34;</span>
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl accumulation.pl</span>
+The total was <span style="color:#ae81ff">25</span><span style="color:#f92672">.</span>
+</code></pre></div><p>###definded函数</p>
+<ul>
+<li>行输入操作符<!-- raw HTML omitted -->有时候会返回undef。要判断某个字符串是undef而不是空字符串，可以使用defined
+函数。如果是undef，该函数返回假，否则返回真：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+$madonna <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>;
+<span style="color:#66d9ef">if</span> (defined($madonna)){
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The input was $madonna&#34;</span>;
+}
+<span style="color:#66d9ef">else</span>{
+    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;No input available\n&#34;</span>;
+}
+<span style="color:#75715e">#$madonna = undef;</span>
+
+<span style="color:#75715e">###Output</span>
+[root@Mo arvon_perl]<span style="color:#75715e"># perl undef01.pl</span>
+No input available
+[root@Mo arvon_perl]<span style="color:#75715e"># perl undef01.pl</span>
+Mo
+The input was Mo
+[root@Mo arvon_perl]<span style="color:#75715e"># perl undef01.pl</span>
+
+The input was
+</code></pre></div><p>##列表和数组</p>
+<ul>
+<li>如果Perl的标量代表单数（singular），那么列表和数组就表示复数（plural）。</li>
+<li>列表（list）是标量的有序集合，而数组（array）则是存储列表的变量。列表指的是数据，而数组指的是变
+量。列表里的值不一定放在数组里，但每个数组变量都包含一个列表（即便是不含任何元素的空列表。</li>
+<li>数组或列表中的每个元素 （element）都是单独的标量变量，拥有独立的标量值。这些值是有序的，从开始到
+终止元素的先后次序是固定的。</li>
+</ul>
+<p>###访问数组中的元素</p>
+<ul>
+<li>Example one</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+<span style="color:#75715e">#print &#34;Hello world\n&#34;;</span>
+$fred[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello&#34;</span>;
+$fred[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My&#34;</span>;
+$fred[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Name&#34;</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$fred[0]\n&#34;</span>;
+
+<span style="color:#75715e">###Output</span>
+<span style="color:#f92672">&gt;</span>arvon@Mo:<span style="color:#f92672">~/</span>arvon_perl<span style="color:#f92672">&gt;</span> perl array<span style="color:#f92672">.</span>pl
+Hello
+</code></pre></div><p>###特殊的数字索引</p>
+<ul>
+<li>Example two</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+$rocks[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>;
+$rocks[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;list&#39;</span>;
+$rocks[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;array&#39;</span>;
+$rocks[<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;element&#39;</span>;
+$rocks[<span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;four&#39;</span>;
+$rocks[<span style="color:#ae81ff">9</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;nine&#39;</span>;
+<span style="color:#75715e">#</span>
+$end <span style="color:#f92672">=</span> $#rocks;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$end is $end\n&#34;</span>;
+<span style="color:#75715e">#</span>
+$number_of_rocks <span style="color:#f92672">=</span> $end <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The number is $number_of_rocks\n&#34;</span>;
+<span style="color:#75715e">#</span>
+$rocks[ $#rocks ] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hard rodk&#39;</span>;
+
+<span style="color:#75715e">###Output</span>
+arvon@Mo:<span style="color:#f92672">~/</span>arvon_perl<span style="color:#f92672">&gt;</span> perl array_print<span style="color:#f92672">.</span>pl
+$end is <span style="color:#ae81ff">9</span>
+The number is <span style="color:#ae81ff">10</span>
+</code></pre></div><p>###列表直接量</p>
+<ul>
+<li>列表直接量（list literal），可以由圆括号内用逗号隔开的一组数据表示，而这些数据就称为元素。
+for example</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)  <span style="color:#75715e">#(1, 2, 3,)相同的逗号会被忽略</span>
+(<span style="color:#e6db74">&#34;fred&#34;</span>, <span style="color:#ae81ff">4.5</span>)   <span style="color:#75715e">#两个元素，&#39;fred&#39;和4.5</span>
+()  <span style="color:#75715e">#空列表，0个元素</span>
+(<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">100</span>)    <span style="color:#75715e">#100个整数组成的列表</span>
+(<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">5</span>)  <span style="color:#75715e">#..是范围操作符（range operator）</span>
+(<span style="color:#ae81ff">1.7</span><span style="color:#f92672">..</span><span style="color:#ae81ff">5.7</span>)  <span style="color:#75715e">#同上，但两个数字的小数部分会被去掉</span>
+(<span style="color:#ae81ff">5</span><span style="color:#f92672">..</span><span style="color:#ae81ff">1</span>)  <span style="color:#75715e">#表示空列表，只能正向计数</span>
+($m<span style="color:#f92672">..</span>$n)    <span style="color:#75715e">#由$m和$n决定</span>
+</code></pre></div><p>###<code>qw简写</code></p>
+<ul>
+<li>在perl程序中，经常会需要建立简单的单词列表。使用qw简写，可以省去键入的引号。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+(<span style="color:#e6db74">&#34;Mo&#34;</span>, <span style="color:#e6db74">&#34;have&#34;</span>, <span style="color:#e6db74">&#34;rose&#34;</span>, <span style="color:#e6db74">&#34;you&#34;</span>, <span style="color:#e6db74">&#34;known&#34;</span>);
+<span style="color:#75715e">#</span>
+<span style="color:#e6db74">qw( Mo have rose you known )</span>;
+<span style="color:#75715e">#</span>
+<span style="color:#e6db74">qw(Mo
+</span><span style="color:#e6db74">hava    rose
+</span><span style="color:#e6db74">you known)</span>;
+<span style="color:#75715e">#</span>
+<span style="color:#e6db74">qw(
+</span><span style="color:#e6db74">    Mo
+</span><span style="color:#e6db74">    have
+</span><span style="color:#e6db74">    rose
+</span><span style="color:#e6db74">    you
+</span><span style="color:#e6db74">    known
+</span><span style="color:#e6db74">)</span>;
+<span style="color:#75715e">#</span>
+<span style="color:#e6db74">qw! Mo have rose you known!</span>;
+<span style="color:#e6db74">qw/ Mo have rose you known/</span>;
+<span style="color:#e6db74">qw# Mo have rose you known#</span>;
+</code></pre></div><p>###列表的赋值</p>
+<ul>
+<li>和标量赋值一样，列表值可以被赋值给变量</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+($fred, $barney, $dino) <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#34;flintstone&#34;</span>, <span style="color:#e6db74">&#34;rubble&#34;</span>, undef);
+<span style="color:#75715e">#左侧列表中的三个变量会依次被赋予右侧列表中对应的值，相当于分别做了三次独立的赋值操作；</span>
+</code></pre></div><p>###pop和push操作符</p>
+<ul>
+<li>要增加元素到数组尾端时，只要将它存放到更高索引的新位置就可以了。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+@array <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">..</span><span style="color:#ae81ff">9</span>;
+$mo <span style="color:#f92672">=</span> pop(@array);
+printf <span style="color:#e6db74">&#34;now \$mo is $mo\n&#34;</span>;
+$arvon <span style="color:#f92672">=</span> pop(@array);
+printf <span style="color:#e6db74">&#34;now \$arvon is $arvon\n&#34;</span>;
+push(@array, <span style="color:#ae81ff">0</span>);
+printf <span style="color:#e6db74">&#34;now \@array is @array\n&#34;</span>;
+push@array,<span style="color:#ae81ff">3</span>;
+printf <span style="color:#e6db74">&#34;now \@array is @array\n&#34;</span>;
+push@array,<span style="color:#e6db74">&#34;Hello&#34;</span>;
+printf <span style="color:#e6db74">&#34;now \@array is @array\n&#34;</span>;
+@newOne <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ my name is arvon /</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;@newOne\n&#34;</span>;
+<span style="color:#75715e">###Output</span>
+arvon@Mo:<span style="color:#f92672">~/</span>arvon_perl<span style="color:#f92672">&gt;</span> perl assignment_array<span style="color:#f92672">.</span>pl
+now $mo is <span style="color:#ae81ff">9</span>
+now $arvon is <span style="color:#ae81ff">8</span>
+now @array is <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">0</span>
+now @array is <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">3</span>
+now @array is <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">3</span> Hello
+<span style="color:#66d9ef">my</span> name is arvon
+</code></pre></div><p>###shift和unshift操作符</p>
+<ul>
+<li>相反，unshift和shift操作符是对数组的开头进行处理</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+@array <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ why are you so diao /</span>;
+$one <span style="color:#f92672">=</span> shift@array;<span style="color:#75715e">#$one is &#34;why&#34;, @array = are you so diao</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$one is not @array\n&#34;</span>;
+$two <span style="color:#f92672">=</span> shift(@array);<span style="color:#75715e">#$two is &#34;are&#34;, @array = you so diao</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$two is not @array\n&#34;</span>;
+$three <span style="color:#f92672">=</span> shift@array;<span style="color:#75715e">#$three is &#34;you&#34;, @array= so diao</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$three is not @array\n&#34;</span>;
+<span style="color:#75715e">##</span>
+unshift(@array, <span style="color:#ae81ff">4</span>);
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Now \@array is @array\n&#34;</span>;
+unshift(@array, <span style="color:#ae81ff">5</span>);
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Now \@array is @array\n&#34;</span>;
+@others <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">3</span>;
+unshift @array, @others; <span style="color:#75715e">#@array变成了(1, 2, 3, 4, 5, )</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\@others is @others, But now \@array is already @array&#34;</span>;
+
+<span style="color:#75715e">###Output</span>
+arvon@Mo:<span style="color:#f92672">~/</span>arvon_perl<span style="color:#f92672">&gt;</span> perl unshift_str<span style="color:#f92672">.</span>pl
+why is <span style="color:#f92672">not</span> are you so diao
+are is <span style="color:#f92672">not</span> you so diao
+you is <span style="color:#f92672">not</span> so diao
+Now @array is <span style="color:#ae81ff">4</span> so diao
+Now @array is <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> so diao
+@others is <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>, But now @array is already <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> so diao
+</code></pre></div><p>###splice操作符</p>
+<ul>
+<li>push-pop和shift-unshift操作符都是对数组首尾进行操作的，中间的话就用splice</li>
+<li>Example one</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+@array <span style="color:#f92672">=</span> <span style="color:#e6db74">qw( pebbles dino fred barney betty )</span>;
+@removed <span style="color:#f92672">=</span> splice @array, <span style="color:#ae81ff">2</span>;<span style="color:#75715e">#在原来的数组中删掉fred及其后的元素</span>
+<span style="color:#75715e">#@removed变成qw（fred barney betty）</span>
+<span style="color:#75715e">#而原来的@array则变成qw（pebbles dino）</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\@array now is @array\n&#34;</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\@removed is @removed\n&#34;</span>;
+
+<span style="color:#75715e">###Output</span>
+arvon@Mo:<span style="color:#f92672">~/</span>arvon_perl<span style="color:#f92672">&gt;</span> perl splice_string<span style="color:#f92672">.</span>pl
+@array now is pebbles dino
+@removed is fred barney betty
+</code></pre></div><ul>
+<li>Example two</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+@array <span style="color:#f92672">=</span> <span style="color:#e6db74">qw( pebbles dino fred barney betty )</span>;
+<span style="color:#75715e">#@removed = splice @array, 2;#在原来的数组中删掉fred及其后的元素</span>
+<span style="color:#75715e">##@removed变成qw（fred barney betty）</span>
+<span style="color:#75715e">##而原来的@array则变成qw（pebbles dino）</span>
+<span style="color:#75715e">#print &#34;\@array now is @array\n&#34;;</span>
+<span style="color:#75715e">#print &#34;\@removed is @removed\n&#34;;</span>
+<span style="color:#75715e">#@removed = splice @array, 1, 2;</span>
+<span style="color:#75715e">##This time @removed is (pebbles, barney, betty )</span>
+@removed <span style="color:#f92672">=</span> splice @array, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">qw(wilema)</span>;
+<span style="color:#75715e">##Just known @array is became (pebbles wilema dino fred barney betty)</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;now \@removed is @removed, and \@array is @array.\n&#34;</span>
+
+<span style="color:#75715e">###Output</span>
+arvon@Mo:<span style="color:#f92672">~/</span>arvon_perl<span style="color:#f92672">&gt;</span> perl splice_string<span style="color:#f92672">.</span>pl
+now @removed is , <span style="color:#f92672">and</span> @array is pebbles wilema dino fred barney betty<span style="color:#f92672">.</span>
+</code></pre></div><p>###字符串的内插</p>
+<ul>
+<li>和标量一样，数组的内容同样可以被内插到双引号中。内插时，会在数组的各个元素之间自动添加分隔用的空格</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+@rocks <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ flintstone slate rubble /</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Quartz @rocks limestone\n&#34;</span>
+
+<span style="color:#75715e">###Output</span>
+arvon@Mo:<span style="color:#f92672">~/</span>arvon_perl<span style="color:#f92672">&gt;</span> perl array_one<span style="color:#f92672">.</span>pl
+Quartz flintstone slate rubble limestone
+</code></pre></div><ul>
+<li>Example for index_expression</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
+<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
+@fred <span style="color:#f92672">=</span> <span style="color:#e6db74">qw(eating rocks is wrong)</span>;
+$fred <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;right&#34;</span>;
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;This is $fred[3]\n&#34;</span>;     <span style="color:#75715e">#just right</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;This is ${fred}[3]\n&#34;</span>;   <span style="color:#75715e">#wrong</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;This is $fred&#34;</span><span style="color:#f92672">.</span><span style="color:#e6db74">&#34;[3]\n&#34;</span>;  <span style="color:#75715e">#wrong</span>
+<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;This is $fred\[3]\n&#34;</span>;    <span style="color:#75715e">#still wrong</span>
+</code></pre></div><p>##后续下一篇，太长了不方便查阅</p>
+<ul>
+<li>So， Let&rsquo;s go</li>
+</ul>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">xianmin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      0001-01-01
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/sa%E8%BF%90%E7%BB%B4%E8%B5%84%E6%BA%90/">
+            <span class="next-text nav-default"></span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:gourds@yeah.net" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://gourds.github.com" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://localhost:1313" rel="me noopener" class="iconfont"
+      title="zhihu"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M351.791182 562.469462l192.945407 0c0-45.367257-21.3871-71.939449-21.3871-71.939449L355.897709 490.530013c3.977591-82.182744 7.541767-187.659007 8.816806-226.835262l159.282726 0c0 0-0.86367-67.402109-18.578124-67.402109s-279.979646 0-279.979646 0 16.850783-88.141456 39.318494-127.053698c0 0-83.60514-4.510734-112.121614 106.962104S81.344656 355.077018 76.80834 367.390461c-4.536316 12.313443 24.62791 5.832845 36.941354 0 12.313443-5.832845 68.050885-25.924439 84.252893-103.69571l86.570681 0c1.165546 49.28652 4.596691 200.335724 3.515057 226.835262L109.86113 490.530013c-25.275663 18.147312-33.701566 71.939449-33.701566 71.939449L279.868105 562.469462c-8.497535 56.255235-23.417339 128.763642-44.275389 167.210279-33.05279 60.921511-50.55235 116.65793-169.802314 212.576513 0 0-19.442818 14.257725 40.829917 9.073656 60.273758-5.185093 117.305683-20.739347 156.840094-99.807147 20.553105-41.107233 41.805128-93.250824 58.386782-146.138358l-0.055259 0.185218 167.855986 193.263655c0 0 22.035876-51.847855 5.832845-108.880803L371.045711 650.610918l-42.1244 31.157627-0.045025 0.151449c11.69946-41.020252 20.11206-81.5749 22.726607-116.858498C351.665315 564.212152 351.72876 563.345412 351.791182 562.469462z"></path>
+  <path d="M584.918753 182.033893l0 668.840094 70.318532 0 28.807093 80.512708 121.875768-80.512708 153.600307 0L959.520453 182.033893 584.918753 182.033893zM887.150192 778.934538l-79.837326 0-99.578949 65.782216-23.537066-65.782216-24.855084 0L659.341766 256.673847l227.807403 0L887.149169 778.934538z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2015 -
+    2021
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        xianmin
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

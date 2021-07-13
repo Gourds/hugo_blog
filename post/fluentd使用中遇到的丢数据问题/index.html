@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fluentd使用中遇到的丢数据问题 - Gourds</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="xianmin" />
+  <meta name="description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
+需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
+graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward) F--&amp;gt;E(Elasticsearch cluster) E--&amp;gt;K(Kibana) " />
+
+  <meta name="keywords" content="Hugo, theme, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.85.0" />
+
+
+<link rel="canonical" href="https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="Fluentd使用中遇到的丢数据问题" />
+<meta property="og:description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
+需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
+graph LR;
+	  A(Td-client)--&gt;F(Td-forward)
+    B(Td-client)--&gt;F(Td-forward)
+    F--&gt;E(Elasticsearch cluster)
+    E--&gt;K(Kibana)
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-04-11T17:52:00+00:00" />
+<meta property="article:modified_time" content="2018-04-11T17:52:00+00:00" />
+
+<meta itemprop="name" content="Fluentd使用中遇到的丢数据问题">
+<meta itemprop="description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
+需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
+graph LR;
+	  A(Td-client)--&gt;F(Td-forward)
+    B(Td-client)--&gt;F(Td-forward)
+    F--&gt;E(Elasticsearch cluster)
+    E--&gt;K(Kibana)
+"><meta itemprop="datePublished" content="2018-04-11T17:52:00+00:00" />
+<meta itemprop="dateModified" content="2018-04-11T17:52:00+00:00" />
+<meta itemprop="wordCount" content="1663">
+<meta itemprop="keywords" content="ELK,踩坑指南," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fluentd使用中遇到的丢数据问题"/>
+<meta name="twitter:description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
+需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
+graph LR;
+	  A(Td-client)--&gt;F(Td-forward)
+    B(Td-client)--&gt;F(Td-forward)
+    F--&gt;E(Elasticsearch cluster)
+    E--&gt;K(Kibana)
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">进击de葫芦娃</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
+              external-link
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      进击de葫芦娃
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
+              external-link
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Fluentd使用中遇到的丢数据问题</h1>
+      
+      <div class="post-meta">
+        <time datetime="2018-04-11" class="post-time">
+          2018-04-11
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#q1td-client端的buffer问题">Q1：Td-client端的Buffer问题</a></li>
+        <li><a href="#q2td-forward端的buffer问题">Q2：Td-forward端的Buffer问题</a></li>
+        <li><a href="#q3td-forward端的connection问题">Q3：Td-forward端的connection问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇<a href="http://arvon.top/2018/02/23/Td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">Blog</a>）</p>
+<p>需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到<a href="https://docs.fluentd.org/v1.0/articles/quickstart">【Fluentd官网】</a>获取支持。</p>
+<pre><code class="language-mermaid" data-lang="mermaid">graph LR;
+	  A(Td-client)--&gt;F(Td-forward)
+    B(Td-client)--&gt;F(Td-forward)
+    F--&gt;E(Elasticsearch cluster)
+    E--&gt;K(Kibana)
+</code></pre><p><strong>Version：</strong></p>
+<blockquote>
+<p><code>td-agent 0.14.21</code>
+<code>ES Version: 5.0.0, Build: 253032b/2016-10-26T04:37:51.531Z, JVM: 1.8.0_121</code> And <code>lucene_version : &quot;6.2.0</code>
+<em>Td-agent的es插件版本</em>
+<code>elasticsearch (1.0.18)</code>
+<code>elasticsearch-api (1.0.18)</code>
+<code>elasticsearch-transport (1.0.18)</code>
+<code>fluent-plugin-elasticsearch (1.8.0)</code></p>
+</blockquote>
+<h3 id="q1td-client端的buffer问题">Q1：Td-client端的Buffer问题</h3>
+<p>这个问题出现次数最多，而且log暴露的问题也是显而易见，主要解决是参数问题</p>
+<ul>
+<li>报错日志</li>
+</ul>
+<pre><code>  2018-03-16 03:25:19 +0000 [warn]: #0 suppressed same stacktrace
+2018-03-16 03:25:19 +0000 [warn]: #0 failed to write data into buffer by buffer overflow action=:throw_exception
+2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&quot;buffer space has too many data&quot; tag=&quot;logics.5013.205&quot;
+  2018-03-16 03:25:19 +0000 [warn]: #0 suppressed same stacktrace
+2018-03-16 03:25:19 +0000 [warn]: #0 failed to write data into buffer by buffer overflow action=:throw_exception
+2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&quot;buffer space has too many data&quot; tag=&quot;logics.5073.205&quot;
+</code></pre><ul>
+<li>修改后的配置</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;match</span> <span style="color:#960050;background-color:#1e0010">logics.**</span><span style="color:#f92672">&gt;</span>
+   type forward
+   <span style="color:#f92672">&lt;buffer&gt;</span>
+     @type file
+     path /var/log/td-agent/buffer/td-gamex-buffer
+     chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
+     total_limit_size 32GB #Default: 512MB (memory) / 64GB (file)
+     chunk_full_threshold 0.9 #flush the chunk when actual size reaches chunk_limit_size * chunk_full_threshold
+     compress text #The option to specify compression of each chunks, during events are buffered
+     flush_mode default
+     flush_interval 15s #Default: 60s
+     flush_thread_count 1 #Default: 1 The number threads used to write chunks in parallel
+     delayed_commit_timeout 60 #The timeout seconds decides that async write operation fails
+     overflow_action throw_exception
+     retry_timeout 10m
+   <span style="color:#f92672">&lt;/buffer&gt;</span>
+   send_timeout 60s
+   recover_wait 10s
+   heartbeat_interval 1s
+   phi_threshold 16
+   hard_timeout 60s
+   heartbeat_type tcp
+   <span style="color:#f92672">&lt;server&gt;</span>
+      name logics.shard
+      host tdagent.test.net
+      port 24224
+      weight 1
+   <span style="color:#f92672">&lt;/server&gt;</span>
+<span style="color:#f92672">&lt;/match&gt;</span>
+</code></pre></div><h3 id="q2td-forward端的buffer问题">Q2：Td-forward端的Buffer问题</h3>
+<p>正常来说对forward端配置buffer跟client端一样就行了，不过在实际使用中发现按client的配置会报错，如下，从报错来看是路径的问题，经查证是buffer的路径在<code>forest copy </code>的配置类型下，需要区分index来进行缓存，使用<code>${tag}</code>作为buffer存储路径的话就很好的解决了这个问题。类似issues可前往<a href="https://github.com/uken/fluent-plugin-elasticsearch/issues/103">【Github】</a>查看</p>
+<ul>
+<li>报错日志</li>
+</ul>
+<pre><code>2018-04-11 02:24:29 +0000 [error]: #0 Cannot output messages with tag 'logics.5022.205'
+2018-04-11 02:24:29 +0000 [error]: #0 failed to configure sub output copy: Other 'elasticsearch' plugin already use same buffer path: type = elasticsearch, buffer path = /var/log/td-agent/buffer/td-gamex-buffer
+2018-04-11 02:24:29 +0000 [error]: #0 /opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/buf_file.rb:71:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/output.rb:305:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/inject.rb:104:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_emitter.rb:73:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:504:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-elasticsearch-1.9.2/lib/fluent/plugin/out_elasticsearch.rb:71:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:73:in `block in configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `each'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:132:in `block in plant'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `synchronize'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `plant'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:169:in `emit'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:211:in `process'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/bare_output.rb:53:in `emit_sync'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/event_router.rb:96:in `emit_stream'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:300:in `on_message'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:211:in `block in handle_connection'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `call'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `block (3 levels) in read_messages'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `feed_each'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `block (2 levels) in read_messages'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `call'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `block in read_messages'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `call'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `on_read_without_connection'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:123:in `on_readable'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:186:in `on_readable'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run_once'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_loop.rb:84:in `block in start'
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/thread.rb:78:in `block in thread_create'
+</code></pre><ul>
+<li>解决后的配置</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;match</span> <span style="color:#960050;background-color:#1e0010">logics.**</span><span style="color:#f92672">&gt;</span>
+  type forest
+  subtype copy
+  <span style="color:#f92672">&lt;template&gt;</span>
+    <span style="color:#f92672">&lt;store&gt;</span>
+      @type elasticsearch
+      <span style="color:#f92672">&lt;buffer&gt;</span>
+        @type file
+        path /var/log/td-agent/buffer/td-gamex-buffer/${tag}
+        chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
+        total_limit_size 32GB #Default: 512MB (memory) / 64GB (file)
+        chunk_full_threshold 0.9 #flush the chunk when actual size reaches chunk_limit_size * chunk_full_threshold
+        compress text #The option to specify compression of each chunks, during events are buffered
+        flush_mode default
+        flush_interval 15s #Default: 60s
+        flush_thread_count 1 #Default: 1 The number threads  used to write chunks in parallel
+        delayed_commit_timeout 60 #The timeout seconds decides that async write operation fails
+        overflow_action throw_exception
+        retry_timeout 10m
+      <span style="color:#f92672">&lt;/buffer&gt;</span>
+      host elasticsearch.test.net
+      port 9200
+      logstash_format true
+      logstash_prefix bilogs
+      logstash_dateformat logics-${tag_parts[-1]}.%Y.%m.%d
+      time_key time
+      request_timeout 60s
+      reload_connections false
+      reload_on_failure true
+      reconnect_on_error true
+    <span style="color:#f92672">&lt;/store&gt;</span>
+  <span style="color:#f92672">&lt;/template&gt;</span>
+<span style="color:#f92672">&lt;/match&gt;</span>
+</code></pre></div><h3 id="q3td-forward端的connection问题">Q3：Td-forward端的connection问题</h3>
+<p>这个问题主要发生在TD向ES发送数据阶段，起初考虑是ES集群处理能力达到上限，无法分配更对的连接给TD，但是进行Reload之后就正常了，所以这个问题的可能性不大，很可能是TD或者ES在处理连接的逻辑上存在问题，没有正确的关闭或者使用连接。经过查找资料，也找到了一些蛛丝马迹，可供参考的资料也一快带上</p>
+<ul>
+<li>参考资料</li>
+</ul>
+<blockquote>
+<p>A. <a href="https://github.com/atomita/fluent-plugin-aws-elasticsearch-service/issues/15">【Github 关于这个问题的Issues】</a></p>
+</blockquote>
+<ul>
+<li>报错信息</li>
+</ul>
+<pre><code>2018-03-21 04:28:19 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:28:34 +0000 error_class=&quot;Elasticsearch::Transport::Transport::Error&quot; error=&quot;Cannot get new connection from pool.&quot; plugin_id=&quot;object:3fe6fced399c&quot;
+  2018-03-21 04:28:19 +0000 [warn]: suppressed same stacktrace
+2018-03-21 04:28:35 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:29:08 +0000 error_class=&quot;Elasticsearch::Transport::Transport::Error&quot; error=&quot;Cannot get new connection from pool.&quot; plugin_id=&quot;object:3fe6fced399c&quot;
+</code></pre><ul>
+<li>再说明
+**解决方法：**还是升级吧，升级至1.9.1版本之后该问题消失。<a href="https://github.com/uken/fluent-plugin-elasticsearch/pull/220">【关于修复PR信息点这里】</a>在<a href="https://github.com/uken/fluent-plugin-elasticsearch/pull/220/commits/494a68d6b26575e212713b156ab6fe61a7b38733">【版本1.9.1 该Release版本时间为2016.12.14】</a>中修复</li>
+</ul>
+<blockquote>
+<p>目前解决主要涉及以下几个方面</p>
+<ul>
+<li><code>reload_connections false # defaults to true</code>
+You can tune how the elasticsearch-transport host reloading feature works. By default it will reload the host list from the server every 10,000th request to spread the load. This can be an issue if your Elasticsearch cluster is behind a Reverse Proxy, as Fluentd process may not have direct network access to the Elasticsearch nodes.
+对于这个参数，我这里ES集群并没有使用代理而是DSN域名</li>
+<li><code>reload_on_failure true # defaults to false</code>
+Indicates that the elasticsearch-transport will try to reload the nodes addresses if there is a failure while making the</li>
+<li><code>request, this can be useful to quickly remove a dead node from the list of addresses</code>
+这个主要是当请求发生故障时ES-transport将重新加载节点地址，删除死节点，我这里使用的也是true</li>
+<li><code>reconnect_on_error true</code>
+Github提到这个有帮助，实测并不好用，问题还是会出现，但频率貌似有减少。</li>
+</ul>
+</blockquote>
+<ul>
+<li>目前解决途径</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;match</span> <span style="color:#960050;background-color:#1e0010">logics.**</span><span style="color:#f92672">&gt;</span>
+  type forest
+  subtype copy
+  <span style="color:#f92672">&lt;template&gt;</span>
+    <span style="color:#f92672">&lt;store&gt;</span>
+      type elasticsearch
+      <span style="color:#f92672">&lt;buffer&gt;</span>
+        @type file
+        path /var/log/td-agent/buffer/td-gamex-buffer/${tag}
+        chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
+        total_limit_size 32GB #Default: 512MB (memory) / 64GB (file)
+        chunk_full_threshold 0.9 #flush chunk when size reaches chunk_limit_size * chunk_full_threshold
+        compress text #The option to specify compression of each chunks, during events are buffered
+        flush_mode default
+        flush_interval 15s #Default: 60s
+        flush_thread_count 1 #Default: 1 The number threads used to write chunks in parallel
+        delayed_commit_timeout 60 #The timeout seconds  async write operation fails
+        overflow_action throw_exception
+        retry_timeout 10m
+      <span style="color:#f92672">&lt;/buffer&gt;</span>
+      host elasticsearch.yingxiong.net
+      port 9200
+      logstash_format true
+      logstash_prefix bilogs
+      logstash_dateformat logics-${tag_parts[-1]}.%Y.%W
+      time_key time
+      flush_interval 10s
+      request_timeout 15s
+      num_threads 2
+      reload_connections false
+      reload_on_failure true
+      reconnect_on_error true
+    <span style="color:#f92672">&lt;/store&gt;</span>
+  <span style="color:#f92672">&lt;/template&gt;</span>
+<span style="color:#f92672">&lt;/match&gt;</span>
+</code></pre></div>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">xianmin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2018-04-11
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://blog.gourds.site/tags/elk/">ELK</a>
+          <a href="https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/">踩坑指南</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">使用Docker搭建Jira和Confluence系统</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">
+            <span class="next-text nav-default">即学即用Docker读书笔记</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:gourds@yeah.net" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://gourds.github.com" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://localhost:1313" rel="me noopener" class="iconfont"
+      title="zhihu"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M351.791182 562.469462l192.945407 0c0-45.367257-21.3871-71.939449-21.3871-71.939449L355.897709 490.530013c3.977591-82.182744 7.541767-187.659007 8.816806-226.835262l159.282726 0c0 0-0.86367-67.402109-18.578124-67.402109s-279.979646 0-279.979646 0 16.850783-88.141456 39.318494-127.053698c0 0-83.60514-4.510734-112.121614 106.962104S81.344656 355.077018 76.80834 367.390461c-4.536316 12.313443 24.62791 5.832845 36.941354 0 12.313443-5.832845 68.050885-25.924439 84.252893-103.69571l86.570681 0c1.165546 49.28652 4.596691 200.335724 3.515057 226.835262L109.86113 490.530013c-25.275663 18.147312-33.701566 71.939449-33.701566 71.939449L279.868105 562.469462c-8.497535 56.255235-23.417339 128.763642-44.275389 167.210279-33.05279 60.921511-50.55235 116.65793-169.802314 212.576513 0 0-19.442818 14.257725 40.829917 9.073656 60.273758-5.185093 117.305683-20.739347 156.840094-99.807147 20.553105-41.107233 41.805128-93.250824 58.386782-146.138358l-0.055259 0.185218 167.855986 193.263655c0 0 22.035876-51.847855 5.832845-108.880803L371.045711 650.610918l-42.1244 31.157627-0.045025 0.151449c11.69946-41.020252 20.11206-81.5749 22.726607-116.858498C351.665315 564.212152 351.72876 563.345412 351.791182 562.469462z"></path>
+  <path d="M584.918753 182.033893l0 668.840094 70.318532 0 28.807093 80.512708 121.875768-80.512708 153.600307 0L959.520453 182.033893 584.918753 182.033893zM887.150192 778.934538l-79.837326 0-99.578949 65.782216-23.537066-65.782216-24.855084 0L659.341766 256.673847l227.807403 0L887.149169 778.934538z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2015 -
+    2021
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        xianmin
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

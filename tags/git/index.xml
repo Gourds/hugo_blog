@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on My New Hugo Site</title>
-    <link>http://example.org/tags/git/</link>
-    <description>Recent content in Git on My New Hugo Site</description>
+    <title>Git on Gourds</title>
+    <link>https://blog.gourds.site/tags/git/</link>
+    <description>Recent content in Git on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 29 Nov 2017 11:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Nov 2017 11:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jenkins使用GitSubmodule实现代码库调用</title>
-      <link>http://example.org/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</link>
+      <link>https://blog.gourds.site/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</link>
       <pubDate>Wed, 29 Nov 2017 11:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://blog.gourds.site/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</guid>
       <description>&lt;p&gt;**背景：**在实际项目构建中有时会用到调用其他代码库的情况，例如调用公共代码库和基础代码库，此时就可以用git submodule这个模块实现这个需求，git submodule可以将一个git仓库以目录的方式作为另一个git仓库的子目录。Jenkins用来做项目的持续集成，如果使用了Git Submodule,每次Jenkins更新版本库的时候还需要更新submodule的内容。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Git钩子在hexo中的应用</title>
-      <link>http://example.org/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/</link>
+      <link>https://blog.gourds.site/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/</link>
       <pubDate>Fri, 12 Aug 2016 15:12:44 +0000</pubDate>
       
-      <guid>http://example.org/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/</guid>
+      <guid>https://blog.gourds.site/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/</guid>
       <description>&lt;p&gt;**摘要：**早该记录了，最开始我的blog是使用hexo+github搭建的使用jacman主题，也是因为对git不够了解，当时绑定域名是使用直接在github上写CNAME文件。感觉太麻烦了，就买了空间换了WordPress，wp也是用了要有快一年，然后感觉markdown支持的真是不好，而且迁移很不爽，然后就换了现在的。关于现在这套blog架构，依然使用hexo作为blog框架，我自己的电脑用作服务器，然后VPS作为web服务器提供发布，使用git hook进行更新blog。&lt;/p&gt;
 &lt;h3 id=&#34;git钩子简介---摘自git-scmhttpsgit-scmcombookzhv2e887aae5ae9ae4b989-git-git-e992a9e5ad90&#34;&gt;git钩子简介 &amp;ndash;摘自&lt;a href=&#34;https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90&#34;&gt;git-scm&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。&lt;/p&gt;</description>

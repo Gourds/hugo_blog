@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gitlab搭建使用记录 - Gourds</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="xianmin" />
+  <meta name="description" content="Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。 操作之前看一把架构图,图片来自官方,侵删 " />
+
+  <meta name="keywords" content="Hugo, theme, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.85.0" />
+
+
+<link rel="canonical" href="https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="Gitlab搭建使用记录" />
+<meta property="og:description" content="Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
+操作之前看一把架构图,图片来自官方,侵删
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-04-14T20:54:00+00:00" />
+<meta property="article:modified_time" content="2018-04-14T20:54:00+00:00" />
+
+<meta itemprop="name" content="Gitlab搭建使用记录">
+<meta itemprop="description" content="Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
+操作之前看一把架构图,图片来自官方,侵删
+"><meta itemprop="datePublished" content="2018-04-14T20:54:00+00:00" />
+<meta itemprop="dateModified" content="2018-04-14T20:54:00+00:00" />
+<meta itemprop="wordCount" content="3158">
+<meta itemprop="keywords" content="Gitlab,Shell,Docker," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Gitlab搭建使用记录"/>
+<meta name="twitter:description" content="Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
+操作之前看一把架构图,图片来自官方,侵删
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">进击de葫芦娃</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
+              external-link
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      进击de葫芦娃
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
+              external-link
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Gitlab搭建使用记录</h1>
+      
+      <div class="post-meta">
+        <time datetime="2018-04-14" class="post-time">
+          2018-04-14
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#使用omnibus安装centos7">使用Omnibus安装（centos7）</a></li>
+        <li><a href="#使用docker安装gitlab">使用Docker安装Gitlab</a></li>
+        <li><a href="#gitlab备份还原centos7">Gitlab备份还原（CentOS7）</a></li>
+        <li><a href="#docker情况下的备份还原">Docker情况下的备份还原</a></li>
+        <li><a href="#参考文档">参考文档</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
+操作之前看一把架构图,图片来自官方,侵删
+<img src="http://img.arvon.top:80/images/2019/08/12/20180413-gitlab-1.jpg" alt="1"></p>
+<h3 id="使用omnibus安装centos7">使用Omnibus安装（centos7）</h3>
+<ul>
+<li>基础环境配置</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install -y curl policycoreutils-python openssh-server
+systemctl enable sshd
+systemctl start sshd
+</code></pre></div><ul>
+<li>IPtables配置（不需要的话直接跳过）</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl start firewalld
+firewall-cmd --permanent --add-service<span style="color:#f92672">=</span>http
+systemctl reload firewalld
+</code></pre></div><ul>
+<li>邮件服务器安装及配置（如有自己的邮件服务器跳过postfix安装，直接配置SMTM服务器即可）
+具体配置就不写了，可以参照廖雪峰的<a href="https://www.liaoxuefeng.com/article/00137387674890099a71c0400504765b89a5fac65728976000">【文章】</a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install postfix
+systemctl enable postfix
+sed -i <span style="color:#e6db74">&#39;s/^inet_interfaces = .*/inet_interfaces = 127.0.0.1/g&#39;</span> /etc/postfix/main.cf
+<span style="color:#75715e">#if no sed will report an error like &#34;fatal: parameter inet_interfaces: no local interface found for&#34;</span>
+systemctl start postfix
+<span style="color:#75715e">#config   #使用已有的邮件服务器，这个不写了</span>
+<span style="color:#75715e">#useradd -m -s /bin/bash arvon #创建邮件用户</span>
+<span style="color:#75715e">#echo &#34;123456&#34; | passwd --stdin arvon #设置密码</span>
+<span style="color:#75715e">#telnet localhost 25 #测试主机邮件端口</span>
+</code></pre></div><h4 id="安装gitlab">安装gitlab</h4>
+<p><strong>添加Gitlab安装源及安装gitlab</strong>
+既然选择了gitlab一部分原因也是因为开源，所以用免费的CE就行，关于<a href="https://www.gitlab.com.cn/products/">【CE和EE的区别】</a>另外可以使用国内的镜像源来提升安装速度，如<a href="https://mirror.tuna.tsinghua.edu.cn/help/gitlab-ce/">【清华镜像站】</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash</span>
+<span style="color:#75715e">#EXTERNAL_URL=&#34;http://193.112.135.23&#34; yum install -y gitlab-ee #IP地址填写期望访问的URL地址</span>
+EXTERNAL_URL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://193.112.135.23&#34;</span> yum install -y gitlab-ce
+</code></pre></div><p>这里安装的版本<code>gitlab-ce-10.6.4-ce.0.el7.x86_64</code>
+在RHEL/CentOS上可以新建yum源<code>/etc/yum.repos.d/gitlab-ce.repo</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">[gitlab-ce]
+name=Gitlab CE Repository
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el$releasever/
+gpgcheck=0
+enabled=1
+</code></pre></div><p>安装完成后自己就启动了，十分智能，WEB服务端口默认是<code>80</code>，还是看看安装在哪了都有哪些路径</p>
+<pre><code>[root@VM_0_11_centos gitlab]# rpm -qa |grep  gitlab-ce |xargs rpm -ql |wc -l
+81091
+[root@VM_0_11_centos gitlab]# rpm -qa |grep  gitlab-ce |xargs rpm -ql |grep /opt/gitlab |wc -l
+81090
+</code></pre><p>可见装了这么多东西，都在<code>/opt/gitlab</code>下</p>
+<h4 id="配置gitlab及组件说明">配置gitlab及组件说明</h4>
+<ul>
+<li>
+<p>配置gitlab
+访问<code>http://193.112.135.23:80/</code>会提示你重置密码，重置密码后用<code>root</code>和你重置后的密码就可以登录了</p>
+</li>
+<li>
+<p>Gitlab相关路径</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">/opt/gitlab #Gitlab安装位置
+/etc/gitlab/gitlab.rb #Gitlab主要配置文件
+/var/opt/gitlab/git-data/repositories/ #代码仓库保存位置
+/var/opt/gitlab/backups/ #代码仓库备份位置
+/var/log/gitlab/ #日志位置
+/var/opt/gitlab/postgresql/data/ #postgresql数据及配置目录
+/var/opt/gitlab/redis #Redis配置目录
+/var/opt/gitlab/gitlab-rails/etc/unicorn.rb  #unicorn配置文件
+</code></pre></div><ul>
+<li>服务及进程作用</li>
+</ul>
+<blockquote>
+<ul>
+<li><strong>nginx</strong>
+Web服务器,提供Httpweb浏览管理服务</li>
+<li><strong>gitlab-shell</strong>
+处理一些git命令什么的</li>
+<li><strong>unicorn</strong>
+Gitlab自身的WEB服务器，Ruby Web Server，托管 GitLab Rails 服务。增加 unicorn 的 workers 数量，可以减少应用的响应时间并提高处理并发请求的能力。对于大部分实例，建议的配置：CPU 核心数 + 1 = unicorn workers 数</li>
+<li><strong>gitlab-workhorse</strong>
+轻量级别代理服务器，用来处理大的 HTTP 请求，比如文件上传下载如Git Push/Pull ，其它请求会反向代理到 GitLab Rails 应用，即反向代理给后端的 unicorn</li>
+<li><strong>gitaly</strong>
+RPC 服务，执行 gitlab-shell 和 gitloab-workhorse 的 git 操作，并向 GitLab web 应用程序提供一个 API，以从 git（例如 title, branches, tags, other meta data）获取属性，并获取 blob（例如 diffs，commits，files）</li>
+<li><strong>postgresql</strong>
+使用PostgreSQL必须确认GitLab使用的数据库安装了<code>pg_trgm</code>扩展。 这个扩展需要PostgreSQL使用root用户在GitLab每个数据库里面执行 <code>CREATE EXTENSION pg_trgm;</code>命令</li>
+<li><strong>redis</strong>
+Redis 存储每个客户端的sessions和后台任务队列。Redis需求的存储空间很小, 大约每个用户25kB</li>
+<li><strong>sidekiq</strong>
+Sidekiq使用多线程处理后台任务（异步）。这个进程启动的时候会使用整个Rails堆栈（200MB+），但是它会在内存泄漏的情况下增加。一个用户非常活跃的服务器上（10,000个活跃用户），Sidekiq进程会占用1GB+的内存</li>
+<li><strong>logrotate</strong>
+日志文件管理</li>
+</ul>
+</blockquote>
+<ul>
+<li>Gitlab管理命令</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/opt/gitlab/bin/gitlab-ctl status <span style="color:#75715e">#查看状态</span>
+/opt/gitlab/bin/gitlab-ctl stop
+/opt/gitlab/bin/gitlab-ctl start
+<span style="color:#75715e">#/opt/gitlab/bin/gitlab-ctl show-config #查看当前配置</span>
+/opt/gitlab/bin/gitlab-ctl help <span style="color:#75715e">#获取命令行帮助</span>
+cat /opt/gitlab/version-manifest.json | grep build_version <span style="color:#75715e">#查看版本</span>
+</code></pre></div><ul>
+<li>安装及配置完成
+现在可以在gitlab上创建项目、用户及用户组了。之后就可以正常使用了</li>
+</ul>
+<h4 id="附邮件配置">附邮件配置</h4>
+<p>在主配置文件<code>/etc/gitlab/gitlab.rb</code>如下修改，更详细的配置参考<a href="https://docs.gitlab.com/omnibus/settings/smtp.html#smtp-settings">【官方说明】</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">gitlab_rails[&#39;smtp_enable&#39;] = true
+gitlab_rails[&#39;smtp_address&#39;] = &#34;smtp.server&#34;
+gitlab_rails[&#39;smtp_port&#39;] = 465
+gitlab_rails[&#39;smtp_user_name&#39;] = &#34;smtp user&#34;
+gitlab_rails[&#39;smtp_password&#39;] = &#34;smtp password&#34;
+gitlab_rails[&#39;smtp_domain&#39;] = &#34;example.com&#34;
+gitlab_rails[&#39;smtp_authentication&#39;] = &#34;login&#34;
+gitlab_rails[&#39;smtp_enable_starttls_auto&#39;] = true
+gitlab_rails[&#39;smtp_openssl_verify_mode&#39;] = &#39;peer&#39;
+# If your SMTP server does not like the default &#39;From: gitlab@localhost&#39; you
+# can change the &#39;From&#39; with this setting.
+gitlab_rails[&#39;gitlab_email_from&#39;] = &#39;gitlab@example.com&#39;
+gitlab_rails[&#39;gitlab_email_reply_to&#39;] = &#39;noreply@example.com&#39;
+</code></pre></div><p>修改完成后通过命令<code>/opt/gitlab/bin/gitlab-ctl reconfigure</code>使配置生效</p>
+<h3 id="使用docker安装gitlab">使用Docker安装Gitlab</h3>
+<p>按照官网来了一遍，主要注意以下3点,更详细可以参考<a href="https://docs.gitlab.com/omnibus/docker/">【Docker Install Guide地址】</a>和<a href="https://gitlab.com/gitlab-org/omnibus-gitlab/tree/master/docker">【Docker File地址:】 </a></p>
+<blockquote>
+<ol>
+<li>端口配置，可以参照以下命令，注意不要和宿主机冲突</li>
+<li>hostname参数,这个hostname类似手动装的那个配置，会在pull库时候用就是上面显示的那个连接</li>
+<li>客户端再pull代码的时候命令需要改成<code>git clone ssh://git@host:port/your-project.git</code></li>
+</ol>
+</blockquote>
+<ul>
+<li>启动命令</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --detach <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --hostname 12.13.14.13 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --publish 443:443 --publish 18080:80 --publish 222:22 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --env <span style="color:#e6db74">&#39;GITLAB_PORT=18080&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --env <span style="color:#e6db74">&#39;GITLAB_SHELL_SSH_PORT=222&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --env <span style="color:#e6db74">&#39;GITLAB_SSH_PORT=222&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --name gitlab <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --restart always <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --volume /srv/gitlab/config:/etc/gitlab <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --volume /srv/gitlab/logs:/var/log/gitlab <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --volume /srv/gitlab/data:/var/opt/gitlab <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    gitlab/gitlab-ce:latest
+</code></pre></div><ul>
+<li>客户端连接命令</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone ssh://git@12.13.14.13:222/root/arvon-test.git
+touch demo.txt
+git add .
+git config --global user.email <span style="color:#e6db74">&#34;arvon@gourds.com&#34;</span>
+git config --global user.name <span style="color:#e6db74">&#34;arvon&#34;</span>
+git commit -m <span style="color:#e6db74">&#39;add test&#39;</span>
+git push origin master <span style="color:#75715e">#推远端</span>
+cat .git/config <span style="color:#75715e">#查看git配置</span>
+git pull <span style="color:#75715e">#拉代码</span>
+</code></pre></div><h3 id="gitlab备份还原centos7">Gitlab备份还原（CentOS7）</h3>
+<p><strong>关于备份的官方说明</strong></p>
+<blockquote>
+<p>&ldquo;You can only restore a backup to exactly the same version and type (CE/EE) of GitLab on which it was created. The best way to migrate your repositories from one server to another is through backup restore.&rdquo;</p>
+</blockquote>
+<p><strong>注意点</strong></p>
+<blockquote>
+<ol>
+<li>如果是通过源码安装，需要确保自己安装了rsync服务,可以通过<code>yum install -y rsync</code>安装</li>
+<li>备份配置可以在主配置文件<code>/etc/gitlab/gitlab.rb</code>中<code>Backup Settings</code>选项下修改，一般不需修改</li>
+<li>推荐备份<code>/etc/gitlab</code>这个目录，如果使用了<code>two-factor</code>至少要备份<code>/etc/gitlab/gitlab-secrets.json</code></li>
+<li>注意<code>8.17</code>之后的版本，这个版本<a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#backup-strategy-option">【详情描述】</a>引入了新的备份策略<code>COPY</code>可以解决备份过程中由于数据快速变化而导致备份过程失败这个问题，可以通过<code>gitlab-rake gitlab:backup:create STRATEGY=copy</code>在执行备份的时候指定，不过需要占用额外的1X磁盘。</li>
+<li>如果想有选择的备份Project，可以参照<a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#excluding-specific-directories-from-the-backup">【官方说明】</a>配置</li>
+<li>使用AWS服务的话推荐使用S3，可以参照<a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#uploading-backups-to-a-remote-cloud-storage">【官方说明】</a>配置</li>
+</ol>
+</blockquote>
+<h4 id="配置备份还原">配置备份还原</h4>
+<p><strong>配置backup</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sh -c <span style="color:#e6db74">&#39;umask 0077; tar -cf $(date &#34;+etc-gitlab-%s.tar&#34;) -C / etc/gitlab&#39;</span>
+</code></pre></div><p><strong>配置restore</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv /etc/gitlab /etc/gitlab.<span style="color:#66d9ef">$(</span>date +%s<span style="color:#66d9ef">)</span>
+tar -xf etc-gitlab-1399948539.tar -C /
+/usr/bin/gitlab-ctl reconfigure  <span style="color:#75715e">#重新加载配置</span>
+</code></pre></div><h4 id="数据备份还原">数据备份还原</h4>
+<p><strong>数据备份</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#如果使用Omnibus安装方式</span>
+/opt/gitlab/bin/gitlab-rake gitlab:backup:create
+<span style="color:#75715e">#如果使用源码安装的话</span>
+sudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV<span style="color:#f92672">=</span>production
+</code></pre></div><p><strong>另外</strong>如果使用AWS的服务需要将备份传S3那么可以直接再Gitlab的主配置文件进行配置，如何配置可以参照<a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#using-amazon-s3">【官方说明】</a>,里面的<code>bucket</code>参数只能写bucket的名字，不能有二级目录</p>
+<p><strong>数据还原</strong>
+将备份的数据文件放的需要还原的Gitlab主机上的备份目录</p>
+<pre><code>[root@VM_0_11_centos gitlab]# ls /var/opt/gitlab/backups/
+1523625192_2018_04_13_10.6.4_gitlab_backup.tar
+</code></pre><p>然后停止连接数据库的进程</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gitlab-ctl stop unicorn
+gitlab-ctl stop sidekiq
+gitlab-ctl status
+</code></pre></div><p>然后执行还原命令</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># This command will overwrite the contents of your GitLab database!</span>
+gitlab-rake gitlab:backup:restore BACKUP<span style="color:#f92672">=</span>1523625192_2018_04_13_10.6.4
+<span style="color:#75715e">#还原使用备份文件名除去&#34;_gitlab_backup.tar&#34;这个部分</span>
+</code></pre></div><p>如果有必要还原<code>/etc/gitlab/gitlab-secrets.json</code>最后重启Gitlab</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gitlab-ctl restart
+gitlab-rake gitlab:check SANITIZE<span style="color:#f92672">=</span>true
+</code></pre></div><p>还原完成
+另外如果还原需要降级，以下命令可能会需要</p>
+<blockquote>
+<p><code>Gitlab</code>历史版本地址<a href="https://packages.gitlab.com/gitlab/gitlab-ce">【戳这里】</a>
+<code>yum downgrade &quot;下载的旧版本的文件名&quot;</code></p>
+</blockquote>
+<p><strong>备份脚本</strong><a href="https://github.com/Gourds/daily-scripts/blob/master/shell-scripts/backup_gitlab.sh">【获取脚本】</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env sh
+</span><span style="color:#75715e"></span>RETVAL<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+: <span style="color:#e6db74">${</span>ConfigBakDir:=/data/backup/gitlab<span style="color:#e6db74">}</span>
+<span style="color:#66d9ef">function</span> backup_config<span style="color:#f92672">(){</span>
+    <span style="color:#f92672">[</span> -d /etc/gitlab <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> exit <span style="color:#ae81ff">4</span>
+    <span style="color:#f92672">[</span> -d <span style="color:#e6db74">${</span>ConfigBakDir<span style="color:#e6db74">}</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> mkdir -p <span style="color:#e6db74">${</span>ConfigBakDir<span style="color:#e6db74">}</span>
+    sh -c <span style="color:#e6db74">&#34;cd </span><span style="color:#e6db74">${</span>ConfigBakDir<span style="color:#e6db74">}</span><span style="color:#e6db74"> &amp;&amp; umask 0077 &amp;&amp; tar -cf </span><span style="color:#66d9ef">$(</span>date <span style="color:#e6db74">&#34;+etc-gitlab-%s_%Y_%m_%d.tar&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74"> -C / etc/gitlab&#34;</span>
+    RETVAL<span style="color:#f92672">=</span>$?
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">function</span> backup_data<span style="color:#f92672">(){</span>
+    <span style="color:#f92672">[</span> -f <span style="color:#e6db74">`</span>which gitlab-rake<span style="color:#e6db74">`</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> exit <span style="color:#ae81ff">5</span>
+    gitlab-rake gitlab:backup:create
+    RETVAL<span style="color:#f92672">=</span>$?
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">function</span> restore_data<span style="color:#f92672">(){</span>
+    <span style="color:#f92672">[</span> -f <span style="color:#e6db74">`</span>which gitlab-rake<span style="color:#e6db74">`</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">[</span> -f <span style="color:#e6db74">`</span>which gitlab-ctl<span style="color:#e6db74">`</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> exit <span style="color:#ae81ff">6</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">`</span>gitlab-ctl status unicorn |awk <span style="color:#e6db74">&#39;{print $1}&#39;</span> |sed <span style="color:#e6db74">&#39;s/://&#39;</span><span style="color:#e6db74">`</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;run&#39;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">`</span>gitlab-ctl status sidekiq |awk <span style="color:#e6db74">&#39;{print $1}&#39;</span> |sed <span style="color:#e6db74">&#39;s/://&#39;</span><span style="color:#e6db74">`</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;run&#39;</span> <span style="color:#f92672">]]</span>;<span style="color:#66d9ef">then</span>
+        msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;&#39;Usage: gitlab-rake gitlab:backup:restore BACKUP=1523625192_2018_04_13_10.6.4&#39;&#39;&#39;</span>
+        echo $msg
+    <span style="color:#66d9ef">else</span>
+        echo <span style="color:#e6db74">&#39;Please make sure unicorn and sidekiq process have stop ! Now exit&#39;</span>
+        exit <span style="color:#ae81ff">7</span>
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">case</span> $1 in
+    bak-etc<span style="color:#f92672">)</span>
+    backup_config
+    ;;
+    bak-data<span style="color:#f92672">)</span>
+    backup_data
+    ;;
+    bak<span style="color:#f92672">)</span>
+    backup_config
+    backup_data
+    ;;
+    restore<span style="color:#f92672">)</span>
+    restore_data
+    ;;
+    *<span style="color:#f92672">)</span>
+    echo $<span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> {bak|bak-etc|bak-data|restore}&#34;</span>
+    RETVAL<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+<span style="color:#66d9ef">esac</span>
+exit $RETVAL
+</code></pre></div><p><strong>存储策略</strong>
+如果想定期删除一段时间前的备份文件，官方配置里已经有现成可配置的地方，在主配置文件<code>/etc/gitlab/gitlab.rb</code>中通过设置以下参数后，然后重新加载配置即可</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># limit backup lifetime to 7 days - 604800 seconds</span>
+gitlab_rails<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;backup_keep_time&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">604800</span>
+</code></pre></div><p><strong>计划任务</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">2</span> * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create CRON<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+<span style="color:#75715e">#The CRON=1 environment setting tells the backup script to suppress all progress output if there are no errors.This is recommended to reduce cron spam.</span>
+</code></pre></div><h3 id="docker情况下的备份还原">Docker情况下的备份还原</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># backup config</span>
+docker exec -t &lt;your container name&gt; /bin/sh -c <span style="color:#e6db74">&#39;umask 0077; tar cfz /secret/gitlab/backups/$(date &#34;+etc-gitlab-\%s.tgz&#34;) -C / etc/gitlab&#39;</span>
+<span style="color:#75715e"># backup data</span>
+docker exec -t &lt;your container name&gt; gitlab-rake gitlab:backup:create
+</code></pre></div><h3 id="参考文档">参考文档</h3>
+<p><a href="https://docs.gitlab.com.cn/ce/administration/index.html">【Gitlab官网】</a>
+<a href="https://docs.gitlab.com/omnibus/settings/backups.html">【官方配置备份还原说明】</a>
+<a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#creating-a-backup-of-the-gitlab-system">【官方数据备份还原说明】</a>
+<a href="https://gitlab.com/help/raketasks/backup_restore.md">【备份还原说明】</a>
+<a href="https://github.com/sund/auto-gitlab-backup">【备份脚本说明】</a>
+<a href="https://blog.mallux.me/2017/02/27/gitlab/">【mallux的Blog】</a></p>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">xianmin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2018-04-14
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://blog.gourds.site/tags/gitlab/">Gitlab</a>
+          <a href="https://blog.gourds.site/tags/shell/">Shell</a>
+          <a href="https://blog.gourds.site/tags/docker/">Docker</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Gitlab迁移升级记录</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/">
+            <span class="next-text nav-default">使用Docker搭建Jira和Confluence系统</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:gourds@yeah.net" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://gourds.github.com" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://localhost:1313" rel="me noopener" class="iconfont"
+      title="zhihu"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M351.791182 562.469462l192.945407 0c0-45.367257-21.3871-71.939449-21.3871-71.939449L355.897709 490.530013c3.977591-82.182744 7.541767-187.659007 8.816806-226.835262l159.282726 0c0 0-0.86367-67.402109-18.578124-67.402109s-279.979646 0-279.979646 0 16.850783-88.141456 39.318494-127.053698c0 0-83.60514-4.510734-112.121614 106.962104S81.344656 355.077018 76.80834 367.390461c-4.536316 12.313443 24.62791 5.832845 36.941354 0 12.313443-5.832845 68.050885-25.924439 84.252893-103.69571l86.570681 0c1.165546 49.28652 4.596691 200.335724 3.515057 226.835262L109.86113 490.530013c-25.275663 18.147312-33.701566 71.939449-33.701566 71.939449L279.868105 562.469462c-8.497535 56.255235-23.417339 128.763642-44.275389 167.210279-33.05279 60.921511-50.55235 116.65793-169.802314 212.576513 0 0-19.442818 14.257725 40.829917 9.073656 60.273758-5.185093 117.305683-20.739347 156.840094-99.807147 20.553105-41.107233 41.805128-93.250824 58.386782-146.138358l-0.055259 0.185218 167.855986 193.263655c0 0 22.035876-51.847855 5.832845-108.880803L371.045711 650.610918l-42.1244 31.157627-0.045025 0.151449c11.69946-41.020252 20.11206-81.5749 22.726607-116.858498C351.665315 564.212152 351.72876 563.345412 351.791182 562.469462z"></path>
+  <path d="M584.918753 182.033893l0 668.840094 70.318532 0 28.807093 80.512708 121.875768-80.512708 153.600307 0L959.520453 182.033893 584.918753 182.033893zM887.150192 778.934538l-79.837326 0-99.578949 65.782216-23.537066-65.782216-24.855084 0L659.341766 256.673847l227.807403 0L887.149169 778.934538z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2015 -
+    2021
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        xianmin
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

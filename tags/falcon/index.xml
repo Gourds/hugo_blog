@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Falcon on My New Hugo Site</title>
-    <link>http://example.org/tags/falcon/</link>
-    <description>Recent content in Falcon on My New Hugo Site</description>
+    <title>Falcon on Gourds</title>
+    <link>https://blog.gourds.site/tags/falcon/</link>
+    <description>Recent content in Falcon on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jul 2017 19:50:45 +0000</lastBuildDate><atom:link href="http://example.org/tags/falcon/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Jul 2017 19:50:45 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/falcon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>open-falcon业务监控实践</title>
-      <link>http://example.org/post/open-falcon%E4%B8%9A%E5%8A%A1%E7%9B%91%E6%8E%A7%E5%AE%9E%E8%B7%B5/</link>
+      <link>https://blog.gourds.site/post/open-falcon%E4%B8%9A%E5%8A%A1%E7%9B%91%E6%8E%A7%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Thu, 06 Jul 2017 19:50:45 +0000</pubDate>
       
-      <guid>http://example.org/post/open-falcon%E4%B8%9A%E5%8A%A1%E7%9B%91%E6%8E%A7%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>https://blog.gourds.site/post/open-falcon%E4%B8%9A%E5%8A%A1%E7%9B%91%E6%8E%A7%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;p&gt;上一篇已经写了falcon的基础安装配置以及简单的使用说明，现在来记录下一些业务相关的监控如何做，截图居多。心疼流量三秒&amp;hellip;其实实现方法都不难，设计一个良好的命名规范以及科学的分组，实际上对监控来说是十分必要的。还有就是要对监控指标的判断做个性化设置，最好就是看图的话一眼就概览全局（要让图清晰直观的反应状况），报警的话做到真实有效人性化。这篇里面只涉及如何对常见服务进行配置。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>open-falcon安装部署记录</title>
-      <link>http://example.org/post/open-falcon%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/open-falcon%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Thu, 29 Jun 2017 19:50:45 +0000</pubDate>
       
-      <guid>http://example.org/post/open-falcon%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/open-falcon%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;监控对运维来说是相当重要的，现在来说falcon确实相对zabbix有一定优势，不过也存在明显短板，优势是架构设计以及一些设计思路很好，就单说模板继承，这个相对zabbix就很有优势，毕竟是已经有了前人的经验，小米之前也是用的zabbix，所以大众常见的zabbix痛点在falcon上基本得到了改善，但falcon的UI真是很难受啊，不过毕竟火起来还不久，又是一个互联网领头企业开源的项目，还是很有前景的，不妨尝试一下，现在只是基本搭建完成，TAG系统和表达式这些还没开始尝试，最近应该还会了解这个，以下是安装配置及简单调试使用过程。&lt;/p&gt;</description>
     </item>
     
