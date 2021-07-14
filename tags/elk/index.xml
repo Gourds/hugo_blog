@@ -48,7 +48,7 @@
       <pubDate>Thu, 01 Mar 2018 11:00:00 +0000</pubDate>
       
       <guid>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Efluentd%E4%BD%BF%E7%94%A8%E4%B8%ADfilter%E5%8F%8Aes%E6%8F%92%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;背景介绍：&lt;/strong&gt; 线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;测试环境：
 OS: Amazon Linux AMI release 2015.03

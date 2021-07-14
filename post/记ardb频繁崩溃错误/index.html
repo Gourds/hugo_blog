@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里
+  <meta name="description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里
 " />
 
   <meta name="keywords" content="Hugo, theme, jane" />
@@ -61,19 +61,19 @@
 
 
 <meta property="og:title" content="记ARDB频繁崩溃错误" />
-<meta property="og:description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里" />
+<meta property="og:description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://blog.gourds.site/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2017-07-07T23:23:45+00:00" />
 <meta property="article:modified_time" content="2017-07-07T23:23:45+00:00" />
 
 <meta itemprop="name" content="记ARDB频繁崩溃错误">
-<meta itemprop="description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"><meta itemprop="datePublished" content="2017-07-07T23:23:45+00:00" />
+<meta itemprop="description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"><meta itemprop="datePublished" content="2017-07-07T23:23:45+00:00" />
 <meta itemprop="dateModified" content="2017-07-07T23:23:45+00:00" />
-<meta itemprop="wordCount" content="1103">
+<meta itemprop="wordCount" content="1099">
 <meta itemprop="keywords" content="踩坑指南," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="记ARDB频繁崩溃错误"/>
-<meta name="twitter:description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"/>
+<meta name="twitter:description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -353,7 +353,7 @@
 
     
     <div class="post-content">
-      <p>**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以<a href="https://github.com/yinqiwen/ardb">看这里</a></p>
+      <p><strong>背景：</strong> 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以<a href="https://github.com/yinqiwen/ardb">看这里</a></p>
 <h4 id="从崩溃到崩溃">从崩溃到崩溃</h4>
 <ul>
 <li>现象：

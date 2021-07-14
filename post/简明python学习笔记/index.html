@@ -93,7 +93,7 @@ tags: [学习笔记]
 20150810 是时候结束了
 ">
 
-<meta itemprop="wordCount" content="11871">
+<meta itemprop="wordCount" content="11785">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: 简明Python读书笔记
@@ -417,6 +417,50 @@ tags: [学习笔记]</a></li>
         <li><a href="#列表">列表</a></li>
         <li><a href="#对象和类简介">对象和类简介</a></li>
         <li><a href="#元组">元组</a></li>
+        <li><a href="#字典">字典</a></li>
+        <li><a href="#序列">序列</a></li>
+        <li><a href="#引用">引用</a></li>
+      </ul>
+    </li>
+    <li><a href="#编写脚本实例">编写脚本实例</a>
+      <ul>
+        <li><a href="#备份脚本">备份脚本</a></li>
+      </ul>
+    </li>
+    <li><a href="#面向对象的编程">面向对象的编程</a>
+      <ul>
+        <li><a href="#面向对象介绍">面向对象介绍</a></li>
+        <li><a href="#self">self</a></li>
+        <li><a href="#类">类</a></li>
+        <li><a href="#对象的方法">对象的方法</a></li>
+        <li><a href="#使用__init__方法">使用__init__方法</a></li>
+        <li><a href="#类与对象的方法">类与对象的方法</a></li>
+        <li><a href="#继承">继承</a></li>
+      </ul>
+    </li>
+    <li><a href="#输入输出">输入/输出</a>
+      <ul>
+        <li><a href="#文件">文件</a></li>
+        <li><a href="#储存器">储存器</a></li>
+      </ul>
+    </li>
+    <li><a href="#异常">异常</a>
+      <ul>
+        <li><a href="#处理异常">处理异常</a></li>
+        <li><a href="#引发异常">引发异常</a></li>
+        <li><a href="#try-finally">Try finally</a></li>
+      </ul>
+    </li>
+    <li><a href="#python的标准库">Python的标准库</a>
+      <ul>
+        <li><a href="#sys模块">sys模块</a></li>
+        <li><a href="#os模块">OS模块</a></li>
+      </ul>
+    </li>
+    <li><a href="#参考">参考</a>
+      <ul>
+        <li><a href="#特殊的方法">特殊的方法</a></li>
+        <li><a href="#参考书籍">参考书籍</a></li>
       </ul>
     </li>
   </ul>
@@ -836,7 +880,7 @@ print <span style="color:#e6db74">&#39;Why is </span><span style="color:#e6db74"
 [root<span style="color:#a6e22e">@Mo</span> arvon_python]<span style="color:#75715e"># python print_tuple.py</span>
 Arvon <span style="color:#f92672">is</span> <span style="color:#ae81ff">23</span> years lold
 Why <span style="color:#f92672">is</span> Arvon playing <span style="color:#66d9ef">with</span> that python<span style="color:#960050;background-color:#1e0010">?</span>
-</code></pre></div><p>###字典</p>
+</code></pre></div><h3 id="字典">字典</h3>
 <ul>
 <li>
 <p>只能使用不可变的对象（比如字符串）来作为字典的键，但是你可以把不可变或可变
@@ -854,7 +898,7 @@ Why <span style="color:#f92672">is</span> Arvon playing <span style="color:#66d9
 <p>字典是dict类的实例/对象。</p>
 </li>
 </ul>
-<p>####使用字典实例</p>
+<h4 id="使用字典实例">使用字典实例</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e">#-*- coding: utf-8 -*-</span>
 <span style="color:#75715e">#Todo: script&#39;s name is using_dict.py</span>
@@ -885,7 +929,7 @@ Contact Pikachu at pikachu<span style="color:#a6e22e">@love</span><span style="c
 
  life<span style="color:#e6db74">&#39;s address is travl@world.com</span>
 
-</code></pre></div><p>###序列</p>
+</code></pre></div><h3 id="序列">序列</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e">#-*- coding: utf-8 -*-</span>
 <span style="color:#75715e">#Todo: The script&#39;s name is seq.py</span>
@@ -925,7 +969,7 @@ characters <span style="color:#ae81ff">1</span> to <span style="color:#ae81ff">3
 characters <span style="color:#ae81ff">2</span> to end <span style="color:#f92672">is</span> aroop
 characters <span style="color:#ae81ff">1</span> to <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">is</span> waroo
 characters start to end <span style="color:#f92672">is</span> swaroop
-</code></pre></div><p>###引用</p>
+</code></pre></div><h3 id="引用">引用</h3>
 <ul>
 <li>当你创建一个对象并给它赋一个变量的时候，这个变量仅仅 引用 那个对象，而不是表示这个
 对象本身！也就是说，变量名指向你计算机中存储那个对象的内存。这被称作名称到对象的绑
@@ -956,9 +1000,9 @@ mylist <span style="color:#f92672">is</span> [<span style="color:#e6db74">&#39;m
 Copy by making a full slice
 shoplist <span style="color:#f92672">is</span> [<span style="color:#e6db74">&#39;mango&#39;</span>, <span style="color:#e6db74">&#39;carrot&#39;</span>, <span style="color:#e6db74">&#39;banana&#39;</span>]
 mylist <span style="color:#f92672">is</span> [<span style="color:#e6db74">&#39;carrot&#39;</span>, <span style="color:#e6db74">&#39;banana&#39;</span>]
-</code></pre></div><p>##编写脚本实例
-###备份脚本
-<strong>Question：</strong></p>
+</code></pre></div><h2 id="编写脚本实例">编写脚本实例</h2>
+<h3 id="备份脚本">备份脚本</h3>
+<p><strong>Question：</strong></p>
 <ol>
 <li>需要备份的文件和目录由一个列表指定。</li>
 <li>备份应该保存在主备份目录中。</li>
@@ -968,7 +1012,7 @@ mylist <span style="color:#f92672">is</span> [<span style="color:#e6db74">&#39;c
 用Info-Zip程序。注意你可以使用任何地存档命令，只要它有命令行界面就可以了，那
 样的话我们可以从我们的脚本中传递参数给它。</li>
 </ol>
-<p>####Answer_1</p>
+<h4 id="answer_1">Answer_1</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e">#-*- coding: utf-8 -*-</span>
 <span style="color:#75715e">#Todo: backup_verl.py</span>
@@ -990,7 +1034,7 @@ zip_command <span style="color:#f92672">=</span> <span style="color:#e6db74">&#3
  print <span style="color:#e6db74">&#39;Successful backup to&#39;</span>, target
 <span style="color:#66d9ef">else</span>:
  print <span style="color:#e6db74">&#39;Backup FAILED&#39;</span>
-</code></pre></div><p>####Answer_2</p>
+</code></pre></div><h4 id="answer_2">Answer_2</h4>
 <ul>
 <li>注意os.sep变量的用法——这会根据你的操作系统给出目录分隔符，即在Linux、Unix下它
 是'/'，在Windows下它是'\'，而在Mac OS下它是':'。使用os.sep而非直接使用字符，会使我们的
@@ -1024,7 +1068,7 @@ zip_command <span style="color:#f92672">=</span> <span style="color:#e6db74">&#3
     print <span style="color:#e6db74">&#39;Successful backup to&#39;</span>, target
 <span style="color:#66d9ef">else</span>:
     print <span style="color:#e6db74">&#39;Backup FAILED&#39;</span>
-</code></pre></div><p>####Answer_3</p>
+</code></pre></div><h4 id="answer_3">Answer_3</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e">#-*- coding: utf-8 -*-</span>
 <span style="color:#75715e">#Todo: backup_ver3.py</span>
@@ -1049,26 +1093,29 @@ zip_command <span style="color:#f92672">=</span> <span style="color:#e6db74">&#3
     print <span style="color:#e6db74">&#34;Successfule backup to&#34;</span>, target
 <span style="color:#66d9ef">else</span>:
     print <span style="color:#e6db74">&#39;Backup FAILED&#39;</span>
-</code></pre></div><p>##面向对象的编程
-###面向对象介绍
-到目前为止，在我们的程序中，我们都是根据操作数据的函数或语句块来设计程序的。这被称
+</code></pre></div><h2 id="面向对象的编程">面向对象的编程</h2>
+<h3 id="面向对象介绍">面向对象介绍</h3>
+<ul>
+<li>到目前为止，在我们的程序中，我们都是根据操作数据的函数或语句块来设计程序的。这被称
 为<code>面向过程的</code>编程。还有一种把数据和功能结合起来，用称为对象的东西包裹起来组织程序
 的方法。这种方法称为<code>面向对象</code>的编程理念。在大多数时候你可以使用过程性编程，但是有
 些时候当你想要编写大型程序或是寻求一个更加合适的解决方案的时候，你就得使用面向对象
-的编程技术。
-类和对象是面向对象编程的两个主要方面。类创建一个新类型，而对象是这个类的实例 。这类
-似于你有一个int类型的变量，存储整数的变量是int类的实例（对象）。
-给C/C++/Java/C#程序员的注释
-注意，即便是整数也被作为对象（属于int类）。这和C++、Java（1.5版之前）把整数纯粹作为
-类型是不同的。通过help(int)了解更多这个类的详情。 C#和Java 1.5程序员会熟悉这个概念，因
-为它类似与 封装与解封装 的概念。
+的编程技术。</li>
+<li>类和对象是面向对象编程的两个主要方面。类创建一个新类型，而对象是这个类的实例 。这类
+似于你有一个int类型的变量，存储整数的变量是int类的实例（对象）。</li>
+</ul>
+<p>给C/C++/Java/C#程序员的注释</p>
+<blockquote>
+<p>注意，即便是整数也被作为对象（属于int类）。这和C++、Java（1.5版之前）把整数纯粹作为
+类型是不同的。通过help(int)了解更多这个类的详情。 C#和Java 1.5程序员会熟悉这个概念，因为它类似与 封装与解封装 的概念。
 对象可以使用普通的 属于 对象的变量存储数据。属于一个对象或类的变量被称为域。对象也
 可以使用 属于 类的函数来具有功能。这样的函数被称为类的方法。这些术语帮助我们把它们
 与孤立的函数和变量区分开来。域和方法可以合称为类的属性。
 域有两种类型——属于每个实例/类的对象或属于类本身。它们分别被称为实例变量和类变量。
 类使用class关键字创建。类的域和方法被列在一个缩进块中。</p>
-<p>###self
-类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称，但是
+</blockquote>
+<h3 id="self">self</h3>
+<p>类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称，但是
 在调用这个方法的时候你不为这个参数赋值，Python会提供这个值。这个特别的变量指对象本
 身，按照惯例它的名称是self。
 虽然你可以给这个参数任何名称，但是 强烈建议 你使用self这个名称——其他名称都是不赞成
@@ -1081,8 +1128,8 @@ Python中的self等价于C++中的self指针和Java、C#中的this参考。
 MyObject.method(arg1, arg2)的时候，这会由Python自动转为MyClass.method(MyObject, arg1,
 arg2)——这就是self的原理了。
 这也意味着如果你有一个不需要参数的方法，你还是得给这个方法定义一个self参数。</p>
-<p>###类
-####创建一个类</p>
+<h3 id="类">类</h3>
+<h4 id="创建一个类">创建一个类</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e">#-*- coding: utf-8 -*-</span>
 <span style="color:#75715e">#Todo: simplest_class.py</span>
@@ -1094,13 +1141,13 @@ print p
 <span style="color:#75715e">#**输出：**</span>
 [root<span style="color:#a6e22e">@Mo</span> arvon_python]<span style="color:#75715e"># python simplestclass.py</span>
 <span style="color:#f92672">&lt;</span>__main__<span style="color:#f92672">.</span>Person instance at <span style="color:#ae81ff">0x7fdec3490d88</span><span style="color:#f92672">&gt;</span>
-</code></pre></div><p>**说明：**我们使用class语句后跟类名，创建了一个新的类。这后面跟着一个缩进的语句块形成类体。在
+</code></pre></div><p><strong>说明：</strong> 我们使用class语句后跟类名，创建了一个新的类。这后面跟着一个缩进的语句块形成类体。在
 这个例子中，我们使用了一个空白块，它由pass语句表示。
 我们简单地打印了这个变量的类型。它告诉我们我们已经在__main__模块中有了一个Person类的实例。
 可以注意到存储对象的计算机内存地址也打印了出来。这个地址在你的计算机上会是另外一个
 值，因为Python可以在任何空位存储对象。</p>
-<p>###对象的方法
-####使用对象的方法</p>
+<h3 id="对象的方法">对象的方法</h3>
+<h4 id="使用对象的方法">使用对象的方法</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e">#-*- coding: utf-8 -*-</span>
 <span style="color:#75715e">#Todo: method.py</span>
@@ -1114,7 +1161,7 @@ p<span style="color:#f92672">.</span>sayHi()
 <span style="color:#75715e">###Output</span>
 [root<span style="color:#a6e22e">@Mo</span> arvon_python]<span style="color:#75715e"># python method.py</span>
 Hello, how are you<span style="color:#960050;background-color:#1e0010">?</span>
-</code></pre></div><p>###使用__init__方法</p>
+</code></pre></div><h3 id="使用__init__方法">使用__init__方法</h3>
 <ul>
 <li>__init__方法在类的一个对象被建立时，马上运行。这个方法可以用来对你的对象做一些你希
 望的 初始化 。注意，这个名称的开始和结尾都是双下划线。</li>
@@ -1134,7 +1181,7 @@ p<span style="color:#f92672">.</span>sayHi()
 <span style="color:#75715e">###Output</span>
 [root<span style="color:#a6e22e">@Mo</span> arvon_python]<span style="color:#75715e"># python class_init.py</span>
 Hello, my name <span style="color:#f92672">is</span> Arvon
-</code></pre></div><p>###类与对象的方法</p>
+</code></pre></div><h3 id="类与对象的方法">类与对象的方法</h3>
 <ul>
 <li>事实上，类与对象的数据部分只是与类和对象的名称空间<code>绑定</code>的普通变量，即这些名称只
 在这些类与对象的前提下有效。
@@ -1212,8 +1259,8 @@ Python中所有的类成员（包括数据成员）都是 公共的 ，所有的
 的（与双下划线前缀不同）。
 同样，注意__del__方法与 destructor 的概念类似。</li>
 </ul>
-<p>###继承
-面向对象的编程带来的主要好处之一是代码的重用，实现这种重用的方法之一是通过 继承 机
+<h3 id="继承">继承</h3>
+<p>面向对象的编程带来的主要好处之一是代码的重用，实现这种重用的方法之一是通过 继承 机
 制。继承完全可以理解成类之间的<code>类型和子类型</code>关系。
 假设你想要写一个程序来记录学校之中的教师和学生情况。他们有一些共同属性，比如姓名、
 年龄和地址。他们也有专有的属性，比如教师的薪水、课程和假期，学生的成绩和学费。
@@ -1293,14 +1340,14 @@ SchoolMember的实例。
 中指明的。
 一个术语的注释——如果在继承元组中列了一个以上的类，那么它就被称作 多重继承 。</li>
 </ul>
-<p>##输入/输出
-###文件</p>
+<h2 id="输入输出">输入/输出</h2>
+<h3 id="文件">文件</h3>
 <ul>
 <li>通过创建一个file类的对象来打开一个文件，分别使用file类的read、readline或write方法来
 恰当地读写文件。对文件的读写能力依赖于你在打开文件时指定的模式。最后，当你完成对文
 件的操作的时候，你调用close方法来告诉Python我们完成了对文件的使用。</li>
 </ul>
-<p>####使用文件</p>
+<h4 id="使用文件">使用文件</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/python</span>
 <span style="color:#75715e">#-*- coding: utf-8 -*-</span>
 poem <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;&#39;</span><span style="color:#ae81ff">\
@@ -1329,7 +1376,7 @@ Programming <span style="color:#f92672">is</span> fun
 When the work <span style="color:#f92672">is</span> done
 <span style="color:#66d9ef">if</span> you wanna make your work also fun:
     use Python<span style="color:#960050;background-color:#1e0010">!</span>
-</code></pre></div><p>###储存器</p>
+</code></pre></div><h3 id="储存器">储存器</h3>
 <ul>
 <li>Python提供一个标准的模块，称为pickle。使用它你可以在一个文件中储存任何Python对象，之
 后你又可以把它完整无缺地取出来。这被称为 持久地 储存对象。
@@ -1367,8 +1414,8 @@ pickle）！在程序的其余部分的时候，我们简单地把这个模块�
 数，把对象储存到打开的文件中。这个过程称为 储存 。
 接下来，我们使用pickle模块的load函数的返回来取回对象。这个过程称为 取储存 。</li>
 </ul>
-<p>##异常
-###处理异常</p>
+<h2 id="异常">异常</h2>
+<h3 id="处理异常">处理异常</h3>
 <ul>
 <li>使用try..except语句来处理异常。我们把通常的语句放在try-块中，而把我们的错误处
 理语句放在except-块中。</li>
@@ -1405,7 +1452,7 @@ except从句可以专门处理单一的错误或异常，或者一组包括在�
 你还可以让try..catch块关联上一个else从句。当没有异常发生的时候，else从句将被执行。
 我们还可以得到异常对象，从而获取更多有个这个异常的信息。</li>
 </ul>
-<p>###引发异常</p>
+<h3 id="引发异常">引发异常</h3>
 <ul>
 <li>可以使用raise语句 引发 异常。你还得指明错误/异常的名称和伴随异常 触发的 异常对象。你
 可以引发的错误或异常应该分别是一个Error或Exception类的直接或间接导出类。</li>
@@ -1441,7 +1488,7 @@ ShortINputException: The Input was of length <span style="color:#ae81ff">1</span
 [root<span style="color:#a6e22e">@Mo</span> arvon_python]<span style="color:#75715e"># python raising.py</span>
 Enter something <span style="color:#f92672">--&gt;</span>abc
 No exception was raised<span style="color:#f92672">.</span>
-</code></pre></div><p>###Try finally</p>
+</code></pre></div><h3 id="try-finally">Try finally</h3>
 <ul>
 <li>假如你在读一个文件的时候，希望在无论异常发生与否的情况下都关闭文件，该怎么做呢？这
 可以使用finally块来完成。注意，在一个try块下，你可以同时使用except从句和finally块。如果
@@ -1478,13 +1525,13 @@ Cleaning up<span style="color:#f92672">...</span> closed the file
 我们可以观察到KeyboardInterrupt异常被触发，程序退出。但是在程序退出之前，finally从句仍
 然被执行，把文件关闭</li>
 </ul>
-<p>##Python的标准库</p>
+<h2 id="python的标准库">Python的标准库</h2>
 <ul>
 <li>Python标准库是随Python附带安装的，它包含大量极其有用的模块。熟悉Python标准库是十分
 重要的，因为如果你熟悉这些库中的模块，那么你的大多数问题都可以简单快捷地使用它们来
 解决。</li>
 </ul>
-<p>###sys模块</p>
+<h3 id="sys模块">sys模块</h3>
 <ul>
 <li>sys模块包含系统对应的功能。</li>
 </ul>
@@ -1540,7 +1587,7 @@ Programming <span style="color:#f92672">is</span> fun
 When the work <span style="color:#f92672">is</span> done
 <span style="color:#66d9ef">if</span> you wanna make your work also fun:
     use Python<span style="color:#960050;background-color:#1e0010">!</span>
-</code></pre></div><p>###OS模块</p>
+</code></pre></div><h3 id="os模块">OS模块</h3>
 <ul>
 <li>简略
 ● os.name字符串指示你正在使用的平台。比如对于Windows，它是&rsquo;nt'，而对于Linux/Unix
@@ -1558,8 +1605,8 @@ os.path.split('/home/swaroop/byte/code/poem.txt')
 ● os.path.isfile()和os.path.isdir()函数分别检验给出的路径是一个文件还是目录。类似地，os.
 path.exists()函数用来检验给出的路径是否真地存在。</li>
 </ul>
-<p>##参考
-###特殊的方法</p>
+<h2 id="参考">参考</h2>
+<h3 id="特殊的方法">特殊的方法</h3>
 <ul>
 <li><strong>init</strong>(self, &hellip;)
 这个方法在新建对象恰好要被返回使用之前被调用</li>
@@ -1572,12 +1619,14 @@ path.exists()函数用来检验给出的路径是否真地存在。</li>
 <li><strong>len</strong>(self)
 对序列对象使用内建的len（）函数的时候调用</li>
 </ul>
-<p>###参考书籍
-<a href="https://docs.python.org/3/">Python标准文档（英文）</a>
-<a href="http://code.activestate.com/recipes/langs/python/">Python实用大全（英文）</a>
-<a href="http://daqinbuyi.iteye.com/blog/1668678">Python常用类库（Blog）</a>
-<a href="http://wiki.woodpecker.org.cn/moin/PythonStandardLib">Python类库手册（中文）</a>
-<a href="http://python.usyiyi.cn/">Python官方文档（中文）</a></p>
+<h3 id="参考书籍">参考书籍</h3>
+<ul>
+<li><a href="https://docs.python.org/3/">Python标准文档（英文）</a></li>
+<li><a href="http://code.activestate.com/recipes/langs/python/">Python实用大全（英文）</a></li>
+<li><a href="http://daqinbuyi.iteye.com/blog/1668678">Python常用类库（Blog）</a></li>
+<li><a href="http://wiki.woodpecker.org.cn/moin/PythonStandardLib">Python类库手册（中文）</a></li>
+<li><a href="http://python.usyiyi.cn/">Python官方文档（中文）</a></li>
+</ul>
     </div>
 
     

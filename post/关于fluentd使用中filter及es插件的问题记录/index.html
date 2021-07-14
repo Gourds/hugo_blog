@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
+  <meta name="description" content="背景介绍： 线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
  测试环境： OS: Amazon Linux AMI release 2015.03 Fluentd: td-agent 0.12.20
 " />
 
@@ -62,7 +62,7 @@
 
 
 <meta property="og:title" content="关于Fluentd使用中filter及ES插件的问题记录" />
-<meta property="og:description" content="**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
+<meta property="og:description" content="背景介绍： 线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
 
 测试环境：
 OS: Amazon Linux AMI release 2015.03
@@ -74,17 +74,17 @@ Fluentd: td-agent 0.12.20
 <meta property="article:modified_time" content="2018-03-01T11:00:00+00:00" />
 
 <meta itemprop="name" content="关于Fluentd使用中filter及ES插件的问题记录">
-<meta itemprop="description" content="**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
+<meta itemprop="description" content="背景介绍： 线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
 
 测试环境：
 OS: Amazon Linux AMI release 2015.03
 Fluentd: td-agent 0.12.20
 "><meta itemprop="datePublished" content="2018-03-01T11:00:00+00:00" />
 <meta itemprop="dateModified" content="2018-03-01T11:00:00+00:00" />
-<meta itemprop="wordCount" content="1354">
+<meta itemprop="wordCount" content="1350">
 <meta itemprop="keywords" content="ELK,踩坑指南," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="关于Fluentd使用中filter及ES插件的问题记录"/>
-<meta name="twitter:description" content="**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
+<meta name="twitter:description" content="背景介绍： 线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。
 
 测试环境：
 OS: Amazon Linux AMI release 2015.03
@@ -372,7 +372,7 @@ Fluentd: td-agent 0.12.20
 
     
     <div class="post-content">
-      <p>**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。</p>
+      <p><strong>背景介绍：</strong> 线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。</p>
 <blockquote>
 <p>测试环境：
 OS: Amazon Linux AMI release 2015.03

@@ -14,12 +14,12 @@
       
       <guid>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
       <description>&lt;p&gt;说起面向对象(Object Oriented Programming)首先想到的就是三个词：封装、继承和多态。&lt;/p&gt;
-&lt;p&gt;**封装：**目的是为了简化编程和提升安全性(标识出允许外部使用的所有成员函数和数据项)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;封装：&lt;/strong&gt; 目的是为了简化编程和提升安全性(标识出允许外部使用的所有成员函数和数据项)。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;属性封装&lt;/li&gt;
 &lt;li&gt;方法封装&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;**继承和多态：**顾名思义，继承就是子类可以获取父类的特性，实际上就是为了更好的进行代码复用，而多态是指基于不同的父类调用同一方法也可能有不同的执行逻辑，与这个相关的还有一个有趣的名词”&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B&#34;&gt;鸭子模型&lt;/a&gt;“。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;继承和多态：&lt;/strong&gt; 顾名思义，继承就是子类可以获取父类的特性，实际上就是为了更好的进行代码复用，而多态是指基于不同的父类调用同一方法也可能有不同的执行逻辑，与这个相关的还有一个有趣的名词”&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B&#34;&gt;鸭子模型&lt;/a&gt;“。&lt;/p&gt;
 &lt;p&gt;另外与面向对象对应的还有个面向过程(Process Oriented)。其中的区别下面有一个通俗的解释，可以做一个参考&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;面向对象是相对于面向过程的，比如你要充话费，你会想，可以下个支付宝，然后绑定银行卡，然后在淘宝上买卡，自己冲，这种种过程。但是对于你女朋友就不一样了，她是面向“对象”的，她会想，谁会充话费呢？当然是你了，她就给你电话，然后你把之前的做了一遍，然后她收到到帐的短信，说了句，亲爱的。这就是面向对象！女的思维大部分是面向“对象”的！她不关心处理的细节，只关心谁可以，和结果！&lt;/p&gt;
@@ -280,11 +280,13 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
       <pubDate>Mon, 09 Apr 2018 19:35:00 +0000</pubDate>
       
       <guid>http://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26700648/&#34;&gt;《即学即用Docker》&lt;/a&gt;这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
-&lt;strong&gt;容器是什么&lt;/strong&gt;
-容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
-容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26700648/&#34;&gt;《即学即用Docker》&lt;/a&gt;这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;容器是什么&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。&lt;/li&gt;
+&lt;li&gt;容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。&lt;/li&gt;
+&lt;li&gt;容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>

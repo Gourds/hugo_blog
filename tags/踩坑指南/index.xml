@@ -29,7 +29,7 @@
       <pubDate>Thu, 01 Mar 2018 11:00:00 +0000</pubDate>
       
       <guid>http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Efluentd%E4%BD%BF%E7%94%A8%E4%B8%ADfilter%E5%8F%8Aes%E6%8F%92%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;背景介绍：&lt;/strong&gt; 线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;测试环境：
 OS: Amazon Linux AMI release 2015.03
@@ -57,7 +57,7 @@ Fluentd: td-agent 0.12.20&lt;/p&gt;
       <pubDate>Fri, 07 Jul 2017 23:23:45 +0000</pubDate>
       
       <guid>http://blog.gourds.site/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/</guid>
-      <description>&lt;p&gt;**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以&lt;a href=&#34;https://github.com/yinqiwen/ardb&#34;&gt;看这里&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;背景：&lt;/strong&gt; 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以&lt;a href=&#34;https://github.com/yinqiwen/ardb&#34;&gt;看这里&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

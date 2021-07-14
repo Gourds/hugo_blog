@@ -70,7 +70,7 @@
 <meta itemprop="name" content="关于Kafka分布式消息队列">
 <meta itemprop="description" content="背景: 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK&#43;kafka的应用落地记录。"><meta itemprop="datePublished" content="2017-11-05T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2017-11-05T21:00:00+00:00" />
-<meta itemprop="wordCount" content="3396">
+<meta itemprop="wordCount" content="3392">
 <meta itemprop="keywords" content="ELK,消息队列," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="关于Kafka分布式消息队列"/>
 <meta name="twitter:description" content="背景: 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK&#43;kafka的应用落地记录。"/>
@@ -404,7 +404,7 @@
 </ul>
 <h3 id="搭建kafka集群">搭建kafka集群</h3>
 <blockquote>
-<p>**Tips：**这里使用的zk及kafka版本如下
+<p><strong>Tips：</strong> 这里使用的zk及kafka版本如下
 zookeeper:3.4.10
 kafka:2.11-0.10.2.0</p>
 </blockquote>

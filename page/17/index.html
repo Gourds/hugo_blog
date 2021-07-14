@@ -336,7 +336,7 @@
   <div class="post-content">
     
     <div class="post-summary">
-      <p>**背景：**生产环境中偶然遇到一个问题，在使用Playbook调用supervisor进行stop进程时，虽然supervisor指令成功执行，但进程并没有结束。然后准备使用ansible原生的条件判断，但是目前并没有找到合适的。所以呢就先用笨方法自己手动实现类似于while的判断循环结构。另外引发的思考：1.程序在成功启动的情况下什么操作会导致程序的瞬间崩溃。2.运行状态下移除程序源文件对程序有何影响。3.我需要一本书《程序是如何跑起来的》哈哈。。下面写个playbook模拟下使用Ansible如何等待后台进程执行完毕</p>
+      <p><strong>背景：</strong> 生产环境中偶然遇到一个问题，在使用Playbook调用supervisor进行stop进程时，虽然supervisor指令成功执行，但进程并没有结束。然后准备使用ansible原生的条件判断，但是目前并没有找到合适的。所以呢就先用笨方法自己手动实现类似于while的判断循环结构。另外引发的思考：1.程序在成功启动的情况下什么操作会导致程序的瞬间崩溃。2.运行状态下移除程序源文件对程序有何影响。3.我需要一本书《程序是如何跑起来的》哈哈。。下面写个playbook模拟下使用Ansible如何等待后台进程执行完毕</p>
     </div>
     <div class="read-more">
       <a href="/post/%E5%85%B3%E4%BA%8Eansible%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E6%80%9D%E8%80%83/" class="read-more-link">Read more</a>

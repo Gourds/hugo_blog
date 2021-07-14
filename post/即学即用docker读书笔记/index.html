@@ -23,8 +23,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。 容器是什么 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。 容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
-" />
+  <meta name="description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
+容器是什么
+ 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。 容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。 " />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -63,9 +64,11 @@
 <meta property="og:title" content="即学即用Docker读书笔记" />
 <meta property="og:description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
 容器是什么
+
 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。" />
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-04-09T19:35:00+00:00" />
@@ -74,18 +77,22 @@
 <meta itemprop="name" content="即学即用Docker读书笔记">
 <meta itemprop="description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
 容器是什么
+
 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。"><meta itemprop="datePublished" content="2018-04-09T19:35:00+00:00" />
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
+"><meta itemprop="datePublished" content="2018-04-09T19:35:00+00:00" />
 <meta itemprop="dateModified" content="2018-04-09T19:35:00+00:00" />
-<meta itemprop="wordCount" content="5725">
+<meta itemprop="wordCount" content="5713">
 <meta itemprop="keywords" content="学习笔记," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="即学即用Docker读书笔记"/>
 <meta name="twitter:description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
 容器是什么
+
 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。"/>
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -377,11 +384,13 @@
 
     
     <div class="post-content">
-      <p><a href="https://book.douban.com/subject/26700648/">《即学即用Docker》</a>这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
-<strong>容器是什么</strong>
-容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
-容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。</p>
+      <p><a href="https://book.douban.com/subject/26700648/">《即学即用Docker》</a>这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。</p>
+<p><strong>容器是什么</strong></p>
+<ul>
+<li>容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。</li>
+<li>容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。</li>
+<li>容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。</li>
+</ul>
 <h3 id="命令相关">命令相关</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker version
 <span style="color:#75715e">#查看docker版本信息</span>
@@ -442,7 +451,7 @@ docker run -it  -c <span style="color:#ae81ff">512</span>  --cpuset<span style="
 <span style="color:#75715e">#创建一个内存限额512M交换分区限额512的容器,使用-m参数</span>
 docker run -it -m 512m --memory-swap<span style="color:#f92672">=</span> 1024m progrium/stress --cpu <span style="color:#ae81ff">2</span> --io <span style="color:#ae81ff">1</span> --vm <span style="color:#ae81ff">2</span> --vm-bytes 128M --timeout 120s
 <span style="color:#75715e">#创建一个内存限额512M交换分区限额1024M的容器，使用--memory-swap单独制定swap，设置为-1则禁用交换空间</span>
-</code></pre></div><p>**权限限制：**类似Linux中的ulimit</p>
+</code></pre></div><p><strong>权限限制：</strong> 类似Linux中的ulimit</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d --default-ulimit nofile<span style="color:#f92672">=</span>50:150 --default-ulimit nproc<span style="color:#f92672">=</span>10:20
 <span style="color:#75715e">#告诉docker守护进程每个容器可以打开150个文件，运行20个进程，为硬性限制</span>
 </code></pre></div><h3 id="容器自动重启">容器自动重启</h3>
@@ -492,7 +501,7 @@ docker logs -f d2c3ce380095
 </code></pre></div><p>Docker中容器的默认log存储在<code>/var/lib/docker/containers/&lt;your-contain-id&gt;/</code>这个目录下，记录的格式如下</p>
 <pre><code>{&quot;log&quot;:&quot;[7] 04-08 13:10:00,633 INFO total_commands_processed:3906596\r\n&quot;,&quot;stream&quot;:&quot;stdout&quot;,&quot;time&quot;:&quot;2018-04-08T13:10:00.848081205Z&quot;}
 #log:实际log，stream：log的输出，time：docker守护进程收到log的时间
-</code></pre><p>**Tips：**目前大规模部署docker时处理日志的最佳方式是把容器的log直接发送给系统日志syslog，使用这种方式构建容器时需要指定<code>--log-driver=syslog</code>选项</p>
+</code></pre><p><strong>Tips：</strong> 目前大规模部署docker时处理日志的最佳方式是把容器的log直接发送给系统日志syslog，使用这种方式构建容器时需要指定<code>--log-driver=syslog</code>选项</p>
 <p>目前解决log问题的思路：</p>
 <ul>
 <li>让应用直接把日志发给系统日志</li>
@@ -593,7 +602,7 @@ docker logs -f d2c3ce380095
 <blockquote>
 <p>用户命名空间把容器里的用户和用户组与Docker宿主机的用户和用户组隔离开。在容器里和宿主机上看到用户ID不同的原因就是因为有这个用户命名空间。</p>
 </blockquote>
-<p>**补充说明之前的一个例子：**命名空间就是之前可以进入一个已经退出的容器的原因，以下命令就是进入这个容器的所有命名空间</p>
+<p><strong>补充说明之前的一个例子：</strong> 命名空间就是之前可以进入一个已经退出的容器的原因，以下命令就是进入这个容器的所有命名空间</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nsenter --target $PID --mount --uts --ipc --net --pid
 </code></pre></div><h3 id="关于容器安全性">关于容器安全性</h3>
 <p>容器只是运行在Docker宿主机中的一个进程。容器实现的隔离性没有虚拟机实现的强。容器的性能之所以高其中的一个原因就是与宿主机公用一个内核，但是内核中的一切并不都会放在命名空间中，这就是人们认为Docker容器存在的安全隐患之一也是最严重的一个。</p>
