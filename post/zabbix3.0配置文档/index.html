@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/zabbix3.0%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/" />
+<link rel="canonical" href="https://blog.gourds.site/post/zabbix3.0%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,7 +66,7 @@ date: 2016-07-30
 tags: [Zabbix]
 zabbix安装配置记录" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/zabbix3.0%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/zabbix3.0%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="post" />
 
 
 
@@ -76,7 +76,7 @@ date: 2016-07-30
 tags: [Zabbix]
 zabbix安装配置记录">
 
-<meta itemprop="wordCount" content="252">
+<meta itemprop="wordCount" content="312">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: zabbix3.0配置文档
@@ -114,28 +114,28 @@ zabbix安装配置记录"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -246,7 +246,7 @@ zabbix安装配置记录"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -257,7 +257,7 @@ zabbix安装配置记录"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -268,7 +268,7 @@ zabbix安装配置记录"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -279,7 +279,7 @@ zabbix安装配置记录"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -333,7 +333,8 @@ zabbix安装配置记录"/>
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 312 words </span>
+          <span class="more-meta"> 1 min read </span>
 
         
         
@@ -371,91 +372,205 @@ tags: [Zabbix]</h2>
 <h3 id="command-record">Command record</h3>
 <ul>
 <li>Yum Repo Install
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#The system Version is CentOS7.2</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#The system Version is CentOS7.2</span>
 wget http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el7.noarch.rpm
 rpm -ivh  zabbix-release-3.0-1.el6.noarch.rpm
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>LAMP Environment</li>
 <li>Warning
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#iptables</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#iptables</span>
 systemctl stop iptables
-<span style="color:#75715e">#selinux</span>
-setenforce <span style="color:#ae81ff">0</span>
-<span style="color:#75715e">#install lamp package</span>
+<span class="c1">#selinux</span>
+setenforce <span class="m">0</span>
+<span class="c1">#install lamp package</span>
 yum install mysql mysql mysql-server php php-mysql httpd
-<span style="color:#75715e">#Installed:</span>
-<span style="color:#75715e">#  mysql-community-client.x86_64 0:5.6.30-2.el6       mysql-community-libs.x86_64 0:5.6.30-2.el6         mysql-community-server.x86_64 0:5.6.30-2.el6       nginx.x86_64 1:1.6.3-8.el7       php.x86_64   0:5.4.16-36.1.el7_2.1       php-mysql.x86_64 0:5.4.16-36.1.el7_2.1      </span>
+<span class="c1">#Installed:</span>
+<span class="c1">#  mysql-community-client.x86_64 0:5.6.30-2.el6       mysql-community-libs.x86_64 0:5.6.30-2.el6         mysql-community-server.x86_64 0:5.6.30-2.el6       nginx.x86_64 1:1.6.3-8.el7       php.x86_64   0:5.4.16-36.1.el7_2.1       php-mysql.x86_64 0:5.4.16-36.1.el7_2.1      </span>
 /etc/init.d/mysqld start
 mysqladmin password
-mysql -uroot -padmin -e <span style="color:#e6db74">&#34;create database zabbix character set utf8;&#34;</span>
-mysql -uroot -padmin -e <span style="color:#e6db74">&#34;grant all privileges on zabbix.* to zabbix@localhost identified by &#39;zabbix&#39;;&#34;</span>
-mysql -uroot -padmin -e <span style="color:#e6db74">&#34;flush privileges;&#34;</span>
-<span style="color:#75715e">#mysql -h$zabbixIP -uzabbix -pzabbix</span>
+mysql -uroot -padmin -e <span class="s2">&#34;create database zabbix character set utf8;&#34;</span>
+mysql -uroot -padmin -e <span class="s2">&#34;grant all privileges on zabbix.* to zabbix@localhost identified by &#39;zabbix&#39;;&#34;</span>
+mysql -uroot -padmin -e <span class="s2">&#34;flush privileges;&#34;</span>
+<span class="c1">#mysql -h$zabbixIP -uzabbix -pzabbix</span>
 systemctl start httpd
 systemctl status httpd
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="zabbix-server">Zabbix Server</h4>
 <ul>
 <li>Zabbix Server Install
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum -y install zabbix-server-mysql zabbix-web-mysql zabbix-get
-<span style="color:#75715e">#Installed:</span>
-<span style="color:#75715e">#  zabbix-get.x86_64 0:3.0.3-1.el7                                                       zabbix-server-mysql.x86_64 0:3.0.3-1.el7                                                       zabbix-web-mysql.noarch 0:3.0.3-1.el7                </span>
-cd /usr/share/doc/zabbix-server-mysql-3.0.3/
-zcat create.sql.gz | mysql -uroot -padmin zabbix
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">yum -y install zabbix-server-mysql zabbix-web-mysql zabbix-get
+<span class="c1">#Installed:</span>
+<span class="c1">#  zabbix-get.x86_64 0:3.0.3-1.el7                                                       zabbix-server-mysql.x86_64 0:3.0.3-1.el7                                                       zabbix-web-mysql.noarch 0:3.0.3-1.el7                </span>
+<span class="nb">cd</span> /usr/share/doc/zabbix-server-mysql-3.0.3/
+zcat create.sql.gz <span class="p">|</span> mysql -uroot -padmin zabbix
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Zabbix Modify config</li>
 <li>zabbix_server.conf
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#cat /etc/zabbix/zabbix_server.conf | egrep -v &#34;^#|^$&#34;</span>
-LogFile<span style="color:#f92672">=</span>/var/log/zabbix/zabbix_server.log
-LogFileSize<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-PidFile<span style="color:#f92672">=</span>/var/run/zabbix/zabbix_server.pid
-DBHost<span style="color:#f92672">=</span>localhost
-DBName<span style="color:#f92672">=</span>zabbix
-DBUser<span style="color:#f92672">=</span>zabbix
-DBPassword<span style="color:#f92672">=</span>zabbix
-SNMPTrapperFile<span style="color:#f92672">=</span>/var/log/snmptrap/snmptrap.log
-Timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>
-AlertScriptsPath<span style="color:#f92672">=</span>/usr/lib/zabbix/alertscripts
-ExternalScripts<span style="color:#f92672">=</span>/usr/lib/zabbix/externalscripts
-LogSlowQueries<span style="color:#f92672">=</span><span style="color:#ae81ff">3000</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#cat /etc/zabbix/zabbix_server.conf | egrep -v &#34;^#|^$&#34;</span>
+<span class="nv">LogFile</span><span class="o">=</span>/var/log/zabbix/zabbix_server.log
+<span class="nv">LogFileSize</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">PidFile</span><span class="o">=</span>/var/run/zabbix/zabbix_server.pid
+<span class="nv">DBHost</span><span class="o">=</span>localhost
+<span class="nv">DBName</span><span class="o">=</span>zabbix
+<span class="nv">DBUser</span><span class="o">=</span>zabbix
+<span class="nv">DBPassword</span><span class="o">=</span>zabbix
+<span class="nv">SNMPTrapperFile</span><span class="o">=</span>/var/log/snmptrap/snmptrap.log
+<span class="nv">Timeout</span><span class="o">=</span><span class="m">4</span>
+<span class="nv">AlertScriptsPath</span><span class="o">=</span>/usr/lib/zabbix/alertscripts
+<span class="nv">ExternalScripts</span><span class="o">=</span>/usr/lib/zabbix/externalscripts
+<span class="nv">LogSlowQueries</span><span class="o">=</span><span class="m">3000</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>zabbix_config
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#vim /etc/httpd/conf.d/zabbix.conf</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#vim /etc/httpd/conf.d/zabbix.conf</span>
   &lt;IfModule mod_php5.c&gt;
-      php_value max_execution_time <span style="color:#ae81ff">300</span>
+      php_value max_execution_time <span class="m">300</span>
       php_value memory_limit 128M
       php_value post_max_size 16M
       php_value upload_max_filesize 2M
-      php_value max_input_time <span style="color:#ae81ff">300</span>
+      php_value max_input_time <span class="m">300</span>
       php_value always_populate_raw_post_data -1
       php_value date.timezone Asia/Chongqing
   &lt;/IfModule&gt;
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Start Zabbix
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">systemctl enable zabbix-server
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">systemctl <span class="nb">enable</span> zabbix-server
 systemctl start zabbix-server
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Zabbix Web Install
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#Use Web Access: http://$IPADDRESS/zabbix/setup.php</span>
-<span style="color:#75715e">#Mdodify Parameter Base： https://www.zabbix.com/documentation/3.0/manual/installation/install_from_packages</span>
-<span style="color:#75715e">#The web Default Name/Password is Admin/zabbix</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#Use Web Access: http://$IPADDRESS/zabbix/setup.php</span>
+<span class="c1">#Mdodify Parameter Base： https://www.zabbix.com/documentation/3.0/manual/installation/install_from_packages</span>
+<span class="c1">#The web Default Name/Password is Admin/zabbix</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="zabbix-agent">Zabbix Agent</h4>
 <ul>
 <li>Install
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install zabbix zabbix-agent
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">yum install zabbix zabbix-agent
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Modify config
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">PidFile<span style="color:#f92672">=</span>/var/run/zabbix/zabbix_agentd.pid
-LogFile<span style="color:#f92672">=</span>/var/log/zabbix/zabbix_agentd.log
-LogFileSize<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-Server<span style="color:#f92672">=</span>127.0.0.1,172.17.18.64   <span style="color:#75715e">#Add the agent IP</span>
-ServerActive<span style="color:#f92672">=</span>172.17.18.64   <span style="color:#75715e">#Modify</span>
-Hostname<span style="color:#f92672">=</span>Zabbix server
-Include<span style="color:#f92672">=</span>/etc/zabbix/zabbix_agentd.d/
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">PidFile</span><span class="o">=</span>/var/run/zabbix/zabbix_agentd.pid
+<span class="nv">LogFile</span><span class="o">=</span>/var/log/zabbix/zabbix_agentd.log
+<span class="nv">LogFileSize</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">Server</span><span class="o">=</span>127.0.0.1,172.17.18.64   <span class="c1">#Add the agent IP</span>
+<span class="nv">ServerActive</span><span class="o">=</span>172.17.18.64   <span class="c1">#Modify</span>
+<span class="nv">Hostname</span><span class="o">=</span>Zabbix server
+<span class="nv">Include</span><span class="o">=</span>/etc/zabbix/zabbix_agentd.d/
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
     </div>
 
@@ -521,6 +636,8 @@ Include<span style="color:#f92672">=</span>/etc/zabbix/zabbix_agentd.d/
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -594,7 +711,7 @@ Include<span style="color:#f92672">=</span>/etc/zabbix/zabbix_agentd.d/
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -663,7 +780,7 @@ Include<span style="color:#f92672">=</span>/etc/zabbix/zabbix_agentd.d/
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

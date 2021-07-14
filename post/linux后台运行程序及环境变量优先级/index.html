@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/" />
+<link rel="canonical" href="https://blog.gourds.site/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,14 +63,14 @@
 <meta property="og:title" content="Linux后台执行执行程序及环境变量优先级" />
 <meta property="og:description" content="**背景故事：**为什么写这个呢，因为有次给媳妇弄翻墙的shadows，配完了想让她每次开机就自动运行，然后发现了个事情，就是脚本有输出的时候直接用&amp;是不大好的。还查了下，这可不应该啊，虽然说好久不用这个玩意，不过还是应该掌握的，所以就当记个笔记吧" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2017-06-25T01:23:45+00:00" />
 <meta property="article:modified_time" content="2017-06-25T01:23:45+00:00" />
 
 <meta itemprop="name" content="Linux后台执行执行程序及环境变量优先级">
 <meta itemprop="description" content="**背景故事：**为什么写这个呢，因为有次给媳妇弄翻墙的shadows，配完了想让她每次开机就自动运行，然后发现了个事情，就是脚本有输出的时候直接用&amp;是不大好的。还查了下，这可不应该啊，虽然说好久不用这个玩意，不过还是应该掌握的，所以就当记个笔记吧"><meta itemprop="datePublished" content="2017-06-25T01:23:45+00:00" />
 <meta itemprop="dateModified" content="2017-06-25T01:23:45+00:00" />
-<meta itemprop="wordCount" content="1212">
+<meta itemprop="wordCount" content="1232">
 <meta itemprop="keywords" content="Linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux后台执行执行程序及环境变量优先级"/>
 <meta name="twitter:description" content="**背景故事：**为什么写这个呢，因为有次给媳妇弄翻墙的shadows，配完了想让她每次开机就自动运行，然后发现了个事情，就是脚本有输出的时候直接用&amp;是不大好的。还查了下，这可不应该啊，虽然说好久不用这个玩意，不过还是应该掌握的，所以就当记个笔记吧"/>
@@ -105,28 +105,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -324,7 +324,8 @@
           2017-06-25
         </time>
         
-        
+        <span class="more-meta"> 1232 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -374,43 +375,105 @@
 </blockquote>
 <h3 id="关于sudu命令">关于sudu命令</h3>
 <p>当你使用sudo去执行一个程序时，处于安全的考虑，这个程序将在一个新的、最小化的环境中执行，也就是说，诸如PATH这样的环境变量，在sudo命令下已经被重置成默认状态了。所以当一个刚初始化的PATH变量中不包含你所要运行的程序所在的目录，用sudo去执行，你就会得到&quot;command not found&quot;的错误提示。要想改变PATH在sudo会话中的初始值，用文本编辑器打开/etc/sudoers文件，找到&quot;secure_path&quot;一行，当你执行sudo 命令时，&ldquo;secure_path&quot;中包含的路径将被当做默认PATH变量使用。添加所需要的路径(如 /usr/local/bin）到&quot;secure_path&quot;下,如下</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Defaults    secure_path <span style="color:#f92672">=</span> /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
-</code></pre></div><h3 id="关于export">关于export</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">Defaults    <span class="nv">secure_path</span> <span class="o">=</span> /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="关于export">关于export</h3>
 <p>使用export可以直接声明环境变量，不过这种方式只对当前终端有效。所以一般在脚本里或测试时会用到这种方式，如果是需要每次登陆都有这些变量的话，还是需要写入全局或用户的配置中去。</p>
 <h3 id="关于后台运行脚本或命令">关于后台运行脚本或命令</h3>
 <p>一般用两种方法，一种是直接command+&amp;，还有种就是nohup command+&amp;。一般来说用第二种的多一点，因为如果脚本有输出的话终端就会被占用，而且关闭终端后台进程会终止；但是第二种会把输出记录在当前目录nohup.out的输出中,而且关闭端口后台进程也不会结束。</p>
 <p><strong>看命令吧</strong>，下面通过演示怎么在后台执行这个没用的脚本</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">while</span> true;<span style="color:#66d9ef">do</span>
-    ehco <span style="color:#e6db74">&#34;Hello world, `date`&#34;</span>
-    sleep <span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">done</span>
-<span style="color:#75715e">#named hello.sh</span>
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">while</span> true<span class="p">;</span><span class="k">do</span>
+    ehco <span class="s2">&#34;Hello world, `date`&#34;</span>
+    sleep <span class="m">2</span>
+<span class="k">done</span>
+<span class="c1">#named hello.sh</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>使用&amp;
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sh hello.sh &amp;
-<span style="color:#75715e">#像上面这种有输出的，不要用这个，反正不推荐</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sh hello.sh <span class="p">&amp;</span>
+<span class="c1">#像上面这种有输出的，不要用这个，反正不推荐</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>使用nohup
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nohup sh hello.sh &amp;
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">nohup sh hello.sh <span class="p">&amp;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>查看后台任务jobs
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">jobs
-<span style="color:#75715e">#bogon:tmp arvon$ jobs</span>
-<span style="color:#75715e">#[1]-  Running                 sh xxx.sh &amp;</span>
-<span style="color:#75715e">#[2]+  Running                 sh ppp.sh &amp;</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">jobs</span>
+<span class="c1">#bogon:tmp arvon$ jobs</span>
+<span class="c1">#[1]-  Running                 sh xxx.sh &amp;</span>
+<span class="c1">#[2]+  Running                 sh ppp.sh &amp;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>调出后台任务fg
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fg %1
-fg %2
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">fg</span> %1
+<span class="nb">fg</span> %2
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>使用ctrl+z将前台程序放入后台，此时程序会变为stop</li>
 <li>使用bg将后台暂停的程序启动
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bogon:tmp arvon$ jobs
-<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>-  Stopped                 sh xxx.sh
-<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span>+  Stopped                 sh ppp.sh
-bogon:tmp arvon$ bg %1
-<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>- sh xxx.sh &amp;
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">bogon:tmp arvon$ <span class="nb">jobs</span>
+<span class="o">[</span>1<span class="o">]</span>-  Stopped                 sh xxx.sh
+<span class="o">[</span>2<span class="o">]</span>+  Stopped                 sh ppp.sh
+bogon:tmp arvon$ <span class="nb">bg</span> %1
+<span class="o">[</span>1<span class="o">]</span>- sh xxx.sh <span class="p">&amp;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
     </div>
 
@@ -441,7 +504,7 @@ bogon:tmp arvon$ bg %1
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/linux/">Linux</a>
+          <a href="https://blog.gourds.site/tags/linux/">Linux</a>
           
         </div>
 
@@ -479,6 +542,8 @@ bogon:tmp arvon$ bg %1
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -552,7 +617,7 @@ bogon:tmp arvon$ bg %1
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -621,7 +686,7 @@ bogon:tmp arvon$ bg %1
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

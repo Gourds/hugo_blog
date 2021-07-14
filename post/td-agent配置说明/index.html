@@ -37,7 +37,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" />
+<link rel="canonical" href="https://blog.gourds.site/post/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" />
 
 
 
@@ -55,7 +55,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -71,7 +71,7 @@ update：2017-05-20 初次修改
 一般架构
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-02-23T21:00:00+00:00" />
 <meta property="article:modified_time" content="2018-02-23T21:00:00+00:00" />
 
@@ -85,7 +85,7 @@ update：2017-05-20 初次修改
 一般架构
 "><meta itemprop="datePublished" content="2018-02-23T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2018-02-23T21:00:00+00:00" />
-<meta itemprop="wordCount" content="3003">
+<meta itemprop="wordCount" content="3106">
 <meta itemprop="keywords" content="ELK," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Td-agent配置说明"/>
 <meta name="twitter:description" content="简介：
@@ -127,28 +127,28 @@ update：2017-05-20 初次修改
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -259,7 +259,7 @@ update：2017-05-20 初次修改
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -270,7 +270,7 @@ update：2017-05-20 初次修改
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -281,7 +281,7 @@ update：2017-05-20 初次修改
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -292,7 +292,7 @@ update：2017-05-20 初次修改
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -346,7 +346,8 @@ update：2017-05-20 初次修改
           2018-02-23
         </time>
         
-        
+        <span class="more-meta"> 3106 words </span>
+          <span class="more-meta"> 7 min read </span>
 
         
         
@@ -442,27 +443,53 @@ update：2017-05-20 初次修改
 <!-- raw HTML omitted --><strong>time</strong><!-- raw HTML omitted -->：时间字段由输入插件指定，并且必须为 Unix 时间格式。
 <!-- raw HTML omitted --><strong>record</strong><!-- raw HTML omitted -->：一个 JSON 对象。</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;source&gt;
-  type forward <span style="color:#75715e">#使 fluentd 转变为一个 TCP 端点，以接受 TCP 报文，监听24224端口</span>
-  port <span style="color:#ae81ff">24224</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">&lt;source&gt;
+  <span class="nb">type</span> forward <span class="c1">#使 fluentd 转变为一个 TCP 端点，以接受 TCP 报文，监听24224端口</span>
+  port <span class="m">24224</span>
 &lt;/source&gt;
 
 &lt;source&gt;
-  @type http <span style="color:#75715e">#使fluentd转变为一个httpd端点以接受进入的 http 报文,监听7777端口</span>
-  port <span style="color:#ae81ff">7777</span>
+  @type http <span class="c1">#使fluentd转变为一个httpd端点以接受进入的 http 报文,监听7777端口</span>
+  port <span class="m">7777</span>
 &lt;/source&gt;
-<span style="color:#75715e">#可以使用curl -X POST -d &#39;json={&#34;json&#34;:&#34;message&#34;}&#39; http://localhost:7777/debug.test测试，可以在/var/log/td-agent/td-agent.log看到输入内容,这个例子中tag就是debug.test，时间就是current time，record就是{&#34;json&#34;:&#34;message&#34;}，这个url还可以写成http://localhost:7777/debug.test?json={&#34;json&#34;:&#34;message&#34;}</span>
+<span class="c1">#可以使用curl -X POST -d &#39;json={&#34;json&#34;:&#34;message&#34;}&#39; http://localhost:7777/debug.test测试，可以在/var/log/td-agent/td-agent.log看到输入内容,这个例子中tag就是debug.test，时间就是current time，record就是{&#34;json&#34;:&#34;message&#34;}，这个url还可以写成http://localhost:7777/debug.test?json={&#34;json&#34;:&#34;message&#34;}</span>
 
 &lt;source&gt;
-  type tail <span style="color:#75715e">#tail方式是 Fluentd 内置的输入方式，其原理是不停地从源文件中获取增量日志，与linx命令tail相似，也可以使用其他输入方式如http、forward等输入，也可以使用输入插件，将 tail 改为相应的插件名称 如： type tail_ex</span>
-  format json  <span style="color:#75715e">#指定json格式解析，也可使用apache格式（apache为fluentd内置的日志解析器）</span>
-  time_key time
+  <span class="nb">type</span> tail <span class="c1">#tail方式是 Fluentd 内置的输入方式，其原理是不停地从源文件中获取增量日志，与linx命令tail相似，也可以使用其他输入方式如http、forward等输入，也可以使用输入插件，将 tail 改为相应的插件名称 如： type tail_ex</span>
+  format json  <span class="c1">#指定json格式解析，也可使用apache格式（apache为fluentd内置的日志解析器）</span>
+  time_key <span class="nb">time</span>
   time_format %N
-  pos_file /var/log/td-agent/logics_5001.log.pos <span style="color:#75715e">#优化参数（将access_log上次的读取长度写入到该文件，主要保证在fluentd服务宕机重启后能够继续收集，避免日志数据收集丢失，保证数据收集的完整性），注意此文件的权限</span>
-  path /opt/supervisor/log/logics_shard5001.%d.%m.%Y.log   <span style="color:#75715e">#指定收集日志文件的位置</span>
-  tag logics.5001.205  <span style="color:#75715e">#指定标签，用来对不同的日志进行分类，与match操作相匹配</span>
+  pos_file /var/log/td-agent/logics_5001.log.pos <span class="c1">#优化参数（将access_log上次的读取长度写入到该文件，主要保证在fluentd服务宕机重启后能够继续收集，避免日志数据收集丢失，保证数据收集的完整性），注意此文件的权限</span>
+  path /opt/supervisor/log/logics_shard5001.%d.%m.%Y.log   <span class="c1">#指定收集日志文件的位置</span>
+  tag logics.5001.205  <span class="c1">#指定标签，用来对不同的日志进行分类，与match操作相匹配</span>
 &lt;/source&gt;
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="match指令">match指令</h4>
 <ul>
@@ -475,32 +502,63 @@ update：2017-05-20 初次修改
 {X,Y,Z}：匹配 X、Y 或 Z，其中 X、Y 和 Z 是匹配模式。可以和 * 和 ** 模式组合使用
 当多个模式列在一个 <!-- raw HTML omitted --> 标签（由一个或多个空格分隔）内时，它匹配任何列出的模式</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;match logics.**&gt; <span style="color:#75715e">#配置输出数据流的匹配规则及匹配成功后所需要执行的动作，匹配logics标签成功的数据执行转发操作</span>
-   type forward <span style="color:#75715e"># forward模式，转发给其他服务器处理（file类型 会将数据写入到路径文件中）</span>
-   send_timeout 60s  <span style="color:#75715e">#发送事件日志的超时时间，默认60s</span>
-   recover_wait 10s  <span style="color:#75715e">#接受服务器故障恢复之前等待时间，默认10s</span>
-   heartbeat_interval 1s  <span style="color:#75715e">#心跳时间刷新频率</span>
-   phi_threshold <span style="color:#ae81ff">16</span>  <span style="color:#75715e">#用于检测服务器故障的阈值参数。 默认值为16。</span>
-   hard_timeout 60s  <span style="color:#75715e">#用于检测服务器故障的硬超时。 默认值等于send_timeout参数。</span>
-   heartbeat_type tcp  <span style="color:#75715e">#用于心跳的传输协议默认UDP连接，这里为tcp连接方式</span>
-   slow_flush_log_threshold 300.0  <span style="color:#75715e">#用于检查块冲洗性能的阈值。默认值为20.0秒。注意，参数类型是float，而不是时间。</span>
-如果chunk flush需要比这个阈值更长的时间，fluentd日志警告消息如下：2016-12-19 12:00:00 +0000 <span style="color:#f92672">[</span>warn<span style="color:#f92672">]</span>：缓冲区刷新花费的时间比slow_flush_log_threshold更长：elapsed_time <span style="color:#f92672">=</span> 15.0031226690043695 slow_flush_log_threshold <span style="color:#f92672">=</span> 10.0
-   num_threads <span style="color:#ae81ff">2</span>      <span style="color:#75715e">#default 1</span>
-   buffer_chunk_limit  16M  <span style="color:#75715e">#default 8M</span>
-   buffer_queue_limit  <span style="color:#ae81ff">256</span>  <span style="color:#75715e">#default 256</span>
-   flush_interval  5s   <span style="color:#75715e">#default 60s</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">&lt;match logics.**&gt; <span class="c1">#配置输出数据流的匹配规则及匹配成功后所需要执行的动作，匹配logics标签成功的数据执行转发操作</span>
+   <span class="nb">type</span> forward <span class="c1"># forward模式，转发给其他服务器处理（file类型 会将数据写入到路径文件中）</span>
+   send_timeout 60s  <span class="c1">#发送事件日志的超时时间，默认60s</span>
+   recover_wait 10s  <span class="c1">#接受服务器故障恢复之前等待时间，默认10s</span>
+   heartbeat_interval 1s  <span class="c1">#心跳时间刷新频率</span>
+   phi_threshold <span class="m">16</span>  <span class="c1">#用于检测服务器故障的阈值参数。 默认值为16。</span>
+   hard_timeout 60s  <span class="c1">#用于检测服务器故障的硬超时。 默认值等于send_timeout参数。</span>
+   heartbeat_type tcp  <span class="c1">#用于心跳的传输协议默认UDP连接，这里为tcp连接方式</span>
+   slow_flush_log_threshold 300.0  <span class="c1">#用于检查块冲洗性能的阈值。默认值为20.0秒。注意，参数类型是float，而不是时间。</span>
+如果chunk flush需要比这个阈值更长的时间，fluentd日志警告消息如下：2016-12-19 12:00:00 +0000 <span class="o">[</span>warn<span class="o">]</span>：缓冲区刷新花费的时间比slow_flush_log_threshold更长：elapsed_time <span class="o">=</span> 15.0031226690043695 <span class="nv">slow_flush_log_threshold</span> <span class="o">=</span> 10.0
+   num_threads <span class="m">2</span>      <span class="c1">#default 1</span>
+   buffer_chunk_limit  16M  <span class="c1">#default 8M</span>
+   buffer_queue_limit  <span class="m">256</span>  <span class="c1">#default 256</span>
+   flush_interval  5s   <span class="c1">#default 60s</span>
    &lt;server&gt;
       name logics.shard
       host tdagent.test.net
-      port <span style="color:#ae81ff">24224</span>
-      weight <span style="color:#ae81ff">1</span>
+      port <span class="m">24224</span>
+      weight <span class="m">1</span>
    &lt;/server&gt;
-   &lt;secondary&gt;  <span style="color:#75715e">#所有服务器不可用时使用的备份策略，这里是直接生成文件到本地目录</span>
-      type file
+   &lt;secondary&gt;  <span class="c1">#所有服务器不可用时使用的备份策略，这里是直接生成文件到本地目录</span>
+      <span class="nb">type</span> file
       path /var/log/td-agent/logics-forward-failed
    &lt;/secondary&gt;
 &lt;/match&gt;  
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="filter指令">filter指令</h4>
 <ul>
@@ -511,23 +569,45 @@ update：2017-05-20 初次修改
 <p>下面例子里，filter 获取数据后，调用原生的 @type record_transformer 插件，在事件的 record 里插入了新的字段 host_param，然后再交给 match 输出。
 filter 匹配顺序与 match 相同，我们应该在 <!-- raw HTML omitted --> 之前放置 <!-- raw HTML omitted --></p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Input -&gt; filter 1 -&gt; ... -&gt; filter N -&gt; Output（Match tag）</span>
-<span style="color:#75715e">### http://this.host:9880/myapp.access?json={&#34;event&#34;:&#34;data&#34;}</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Input -&gt; filter 1 -&gt; ... -&gt; filter N -&gt; Output（Match tag）</span>
+<span class="c1">### http://this.host:9880/myapp.access?json={&#34;event&#34;:&#34;data&#34;}</span>
 &lt;source&gt;
   @type http
-  port <span style="color:#ae81ff">9880</span>
+  port <span class="m">9880</span>
 &lt;/source&gt;
 &lt;filter myapp.access&gt;
   @type record_transformer
   &lt;record&gt;
-    host_param <span style="color:#e6db74">&#34;#{Socket.gethostname}&#34;</span>
+    host_param <span class="s2">&#34;#{Socket.gethostname}&#34;</span>
   &lt;/record&gt;
 &lt;/filter&gt;
 &lt;match myapp.access&gt;
   @type file
   path /var/log/fluent/access
 &lt;/match&gt;
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="system指令">system指令</h4>
 <ul>
@@ -543,52 +623,103 @@ filter 匹配顺序与 match 相同，我们应该在 <!-- raw HTML omitted --> 
 <li>without_source</li>
 </ul>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;system&gt;
-  <span style="color:#75715e"># equal to -qq option</span>
-  log_level error  <span style="color:#75715e">#启动配置</span>
-  <span style="color:#75715e"># equal to --without-source option</span>
-  without_source   <span style="color:#75715e">#启动配置</span>
-  <span style="color:#75715e"># ...</span>
-  process_name fluentd1  <span style="color:#75715e">#服务进程名，可通过ps查看到</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">&lt;system&gt;
+  <span class="c1"># equal to -qq option</span>
+  log_level error  <span class="c1">#启动配置</span>
+  <span class="c1"># equal to --without-source option</span>
+  without_source   <span class="c1">#启动配置</span>
+  <span class="c1"># ...</span>
+  process_name fluentd1  <span class="c1">#服务进程名，可通过ps查看到</span>
 &lt;/system&gt;
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="label指令">label指令</h4>
 <ul>
 <li>label
 **Tips:**label用于将任务进行分组，方便复杂任务的管理。可以在 source 里指定 @label @&lt;LABEL_NAME&gt;，这个 source 所触发的事件就会被发送给指定的 label 所包含的任务，而不会被后续的其他任务获取到。用来接收插件通过调用 emit_error_event API 抛出的异常，使用方法和 label 一样，通过设定 就可以接收到相关的异常。
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;source&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">&lt;source&gt;
   @type forward
 &lt;/source&gt;
 &lt;source&gt;
-  <span style="color:#75715e">### 这个任务指定了 label 为 @SYSTEM</span>
-  <span style="color:#75715e">### 会被发送给 &lt;label @SYSTEM&gt;</span>
-  <span style="color:#75715e">### 而不会被发送给下面紧跟的 filter 和 match</span>
+  <span class="c1">### 这个任务指定了 label 为 @SYSTEM</span>
+  <span class="c1">### 会被发送给 &lt;label @SYSTEM&gt;</span>
+  <span class="c1">### 而不会被发送给下面紧跟的 filter 和 match</span>
   @type tail
   @label @SYSTEM
 &lt;/source&gt;
 &lt;filter access.**&gt;
   @type record_transformer
   &lt;record&gt;
-    <span style="color:#75715e"># ...</span>
+    <span class="c1"># ...</span>
   &lt;/record&gt;
 &lt;/filter&gt;
 &lt;match **&gt;
   @type elasticsearch
-  <span style="color:#75715e"># ...</span>
+  <span class="c1"># ...</span>
 &lt;/match&gt;
 &lt;label @SYSTEM&gt;
-  <span style="color:#75715e">### 将会接收到上面 @type tail 的 source event</span>
+  <span class="c1">### 将会接收到上面 @type tail 的 source event</span>
   &lt;filter var.log.middleware.**&gt;
     @type grep
-    <span style="color:#75715e"># ...</span>
+    <span class="c1"># ...</span>
   &lt;/filter&gt;
   &lt;match **&gt;
     @type s3
-    <span style="color:#75715e"># ...</span>
+    <span class="c1"># ...</span>
   &lt;/match&gt;
 &lt;/label&gt;
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="include指令">include指令</h4>
 <ul>
@@ -611,10 +742,19 @@ filter 匹配顺序与 match 相同，我们应该在 <!-- raw HTML omitted --> 
 <ul>
 <li>安装步骤
 **Tips:**这里安装的td-agent是fluentd的易安装版本，也是业界流行的的安装版本，<a href="https://www.fluentd.org/download">点击查看版本下载页</a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /etc/issue <span style="color:#75715e">#这里实验机型为Amazon Linux AMI release 2016.09</span>
-curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">cat /etc/issue <span class="c1">#这里实验机型为Amazon Linux AMI release 2016.09</span>
+curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh <span class="p">|</span> sh
 
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="参考说明">参考说明</h3>
 <p><a href="http://www.fluentd.org/plugins">Plugins</a></p>
@@ -648,7 +788,7 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/elk/">ELK</a>
+          <a href="https://blog.gourds.site/tags/elk/">ELK</a>
           
         </div>
 
@@ -686,6 +826,8 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -759,7 +901,7 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -828,7 +970,7 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

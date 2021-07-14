@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" />
+<link rel="canonical" href="https://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -65,7 +65,7 @@
 除了常见的共享配置及服务发现，还可以使用Etcd结合SkyDNS提供内网域名解析服务。
 这里主要涉及etcd安装配置说明、etcd-view安装配置、skydns安装配置" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2017-10-13T21:00:00+00:00" />
 <meta property="article:modified_time" content="2017-10-13T21:00:00+00:00" />
 
@@ -74,7 +74,7 @@
 除了常见的共享配置及服务发现，还可以使用Etcd结合SkyDNS提供内网域名解析服务。
 这里主要涉及etcd安装配置说明、etcd-view安装配置、skydns安装配置"><meta itemprop="datePublished" content="2017-10-13T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2017-10-13T21:00:00+00:00" />
-<meta itemprop="wordCount" content="2723">
+<meta itemprop="wordCount" content="2785">
 <meta itemprop="keywords" content="Etcd," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Etcd及相关组件安装配置说明"/>
 <meta name="twitter:description" content="简介：Etcd是CentOS公司发起的一个开源项目，灵感来自于 ZooKeeper 和 Doozer，它使用Go语言编写，并通过Raft一致性算法处理日志复制以保证强一致性（Raft是一个来自Stanford的新的一致性算法，适用于分布式系统的日志复制，Raft通过选举的方式来实现一致性，在Raft中，任何一个节点都可能成为Leader。），主要用于共享配置和服务发现的分布式、一致性的KV存储系统。
@@ -111,28 +111,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -243,7 +243,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -254,7 +254,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -265,7 +265,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -276,7 +276,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -330,7 +330,8 @@
           2017-10-13
         </time>
         
-        
+        <span class="more-meta"> 2785 words </span>
+          <span class="more-meta"> 6 min read </span>
 
         
         
@@ -434,8 +435,15 @@ Need:</li>
 <h4 id="常用命令">常用命令</h4>
 <ul>
 <li>启动参数
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/local/bin/etcd <span style="color:#ae81ff">\
-</span></code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">/usr/local/bin/etcd <span class="se">\
+</span></code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <p>-name ip-10-222-0-218-2<br>
 &ndash;data-dir /opt/etcd/etcd-data<br>
@@ -446,7 +454,37 @@ Need:</li>
 -initial-cluster-token etcd-cluster-arvon<br>
 -initial-cluster ip-10-222-0-218=http://10.222.0.218:12380,ip-10-222-0-218=http://10.222.0.218:2380<br>
 -initial-cluster-state new</p>
-<pre><code>- 常用命令
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">- 常用命令
 ```bash
 etcdctl member list
 #查看集群状况
@@ -472,51 +510,106 @@ etcdctl rmdir dir3
 #删除指定空目录（只能删除空目录）
 etcdctl rm -r  dir1
 #递归删除指定目录，也能删除key
-</code></pre><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>HTTP接口常用命令
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl http://10.222.0.80:2379/version
-<span style="color:#75715e">#查看版本</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">curl http://10.222.0.80:2379/version
+<span class="c1">#查看版本</span>
 curl http://10.222.0.80:2379/v2/members
-<span style="color:#75715e">#查看集群节点</span>
+<span class="c1">#查看集群节点</span>
 curl http://10.222.0.80:2379/v2/stats/store
-<span style="color:#75715e">#查看集群运行状态</span>
+<span class="c1">#查看集群运行状态</span>
 curl http://10.222.0.80:2379/v2/stats/leader
-<span style="color:#75715e">#查看选举的leader</span>
+<span class="c1">#查看选举的leader</span>
 curl http://10.222.0.80:2379/v2/stats/self
-<span style="color:#75715e">#查看节点自身信息</span>
+<span class="c1">#查看节点自身信息</span>
 curl http://10.222.0.80:2379/v2/keys
-<span style="color:#75715e">#查看键</span>
-curl -XPUT http://10.222.0.80:2379/v2/keys/test-key11 -d value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;value11&#34;</span>
-curl -XPUT http://10.222.0.80:2379/v2/keys/dir3/dir33/test-key333 -d value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;value333&#34;</span>
-<span style="color:#75715e">#创建一个键值</span>
-curl http://10.222.0.80:2379/v2/keys/cdir1 -XPUT -d dir<span style="color:#f92672">=</span>true
-curl http://10.222.0.80:2379/v2/keys/cdir2/cdir3 -XPUT -d dir<span style="color:#f92672">=</span>true
-<span style="color:#75715e">#创建一个目录</span>
-curl http://10.222.0.80:2379/v2/keys/tvalue1 -XPUT -d value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;t1&#34;</span> -d ttl<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
-<span style="color:#75715e">#创建一个带ttl的键值，单位为秒，即10s后此键值自动消失</span>
-curl http://10.222.0.80:2379/v2/keys/seqvar -XPOST -d value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;s01&#34;</span>
-curl http://10.222.0.80:2379/v2/keys/seqvar -XPOST -d value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;s02&#34;</span>
-curl http://10.222.0.80:2379/v2/keys/seqvar -XPOST -d value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;s03&#34;</span>
+<span class="c1">#查看键</span>
+curl -XPUT http://10.222.0.80:2379/v2/keys/test-key11 -d <span class="nv">value</span><span class="o">=</span><span class="s2">&#34;value11&#34;</span>
+curl -XPUT http://10.222.0.80:2379/v2/keys/dir3/dir33/test-key333 -d <span class="nv">value</span><span class="o">=</span><span class="s2">&#34;value333&#34;</span>
+<span class="c1">#创建一个键值</span>
+curl http://10.222.0.80:2379/v2/keys/cdir1 -XPUT -d <span class="nv">dir</span><span class="o">=</span><span class="nb">true</span>
+curl http://10.222.0.80:2379/v2/keys/cdir2/cdir3 -XPUT -d <span class="nv">dir</span><span class="o">=</span><span class="nb">true</span>
+<span class="c1">#创建一个目录</span>
+curl http://10.222.0.80:2379/v2/keys/tvalue1 -XPUT -d <span class="nv">value</span><span class="o">=</span><span class="s2">&#34;t1&#34;</span> -d <span class="nv">ttl</span><span class="o">=</span><span class="m">10</span>
+<span class="c1">#创建一个带ttl的键值，单位为秒，即10s后此键值自动消失</span>
+curl http://10.222.0.80:2379/v2/keys/seqvar -XPOST -d <span class="nv">value</span><span class="o">=</span><span class="s2">&#34;s01&#34;</span>
+curl http://10.222.0.80:2379/v2/keys/seqvar -XPOST -d <span class="nv">value</span><span class="o">=</span><span class="s2">&#34;s02&#34;</span>
+curl http://10.222.0.80:2379/v2/keys/seqvar -XPOST -d <span class="nv">value</span><span class="o">=</span><span class="s2">&#34;s03&#34;</span>
 curl http://10.222.0.80:2379/v2/keys/seqvar
-<span style="color:#75715e">#创建有序键值（例如类似DNS轮训注册）</span>
+<span class="c1">#创建有序键值（例如类似DNS轮训注册）</span>
 curl http://10.222.0.80:2379/v2/keys/value111 -XDELETE
-<span style="color:#75715e">#删除一个键值</span>
-</code></pre></div></li>
+<span class="c1">#删除一个键值</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="备份还原策略">备份还原策略</h3>
 <ul>
 <li>数据备份
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ps axu | grep etcd|sed <span style="color:#e6db74">&#34;s/ -/\n/g&#34;</span> |grep <span style="color:#e6db74">&#34;data-dir&#34;</span> |awk <span style="color:#e6db74">&#39;{print $2}&#39;</span>
-<span style="color:#75715e">#获取data目录</span>
-etcdctl backup --data-dir<span style="color:#f92672">=</span>/opt/etcd/etcd-data --backup-dir<span style="color:#f92672">=</span>/tmp/etcd-backup-<span style="color:#e6db74">`</span>date +%y%m%d%H<span style="color:#e6db74">`</span>
-<span style="color:#75715e">#备份数据目录到tmp下</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">ps axu <span class="p">|</span> grep etcd<span class="p">|</span>sed <span class="s2">&#34;s/ -/\n/g&#34;</span> <span class="p">|</span>grep <span class="s2">&#34;data-dir&#34;</span> <span class="p">|</span>awk <span class="s1">&#39;{print $2}&#39;</span>
+<span class="c1">#获取data目录</span>
+etcdctl backup --data-dir<span class="o">=</span>/opt/etcd/etcd-data --backup-dir<span class="o">=</span>/tmp/etcd-backup-<span class="sb">`</span>date +%y%m%d%H<span class="sb">`</span>
+<span class="c1">#备份数据目录到tmp下</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>备份还原（单机情况）
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#1. 关闭etcd</span>
-<span style="color:#75715e">#2. 将备份数据拷贝至datadir</span>
-<span style="color:#75715e">#3. 启动配置需加上--force-new-cluster参数</span>
-<span style="color:#75715e">#4. 启动etcd</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#1. 关闭etcd</span>
+<span class="c1">#2. 将备份数据拷贝至datadir</span>
+<span class="c1">#3. 启动配置需加上--force-new-cluster参数</span>
+<span class="c1">#4. 启动etcd</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>说明
 <blockquote>
 <p>1.使用 &ndash;force-new-cluster 参数启动Etcd服务。这个参数会重置集群ID和集群的所有成员信息，其中节点的监听地址会被重置为localhost:2379, 表示集群中只有一个节点。</p>
@@ -577,7 +670,7 @@ etcdctl backup --data-dir<span style="color:#f92672">=</span>/opt/etcd/etcd-data
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/etcd/">Etcd</a>
+          <a href="https://blog.gourds.site/tags/etcd/">Etcd</a>
           
         </div>
 
@@ -615,6 +708,8 @@ etcdctl backup --data-dir<span style="color:#f92672">=</span>/opt/etcd/etcd-data
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -688,7 +783,7 @@ etcdctl backup --data-dir<span style="color:#f92672">=</span>/opt/etcd/etcd-data
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -757,7 +852,7 @@ etcdctl backup --data-dir<span style="color:#f92672">=</span>/opt/etcd/etcd-data
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

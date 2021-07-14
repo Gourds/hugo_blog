@@ -38,7 +38,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/" />
+<link rel="canonical" href="https://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/" />
 
 
 
@@ -56,7 +56,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -80,7 +80,7 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
 &mdash;选自 http://docs.jinkan.org
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-08-25T21:00:00+00:00" />
 <meta property="article:modified_time" content="2019-08-25T21:00:00+00:00" />
 
@@ -102,7 +102,7 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
 &mdash;选自 http://docs.jinkan.org
 "><meta itemprop="datePublished" content="2019-08-25T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2019-08-25T21:00:00+00:00" />
-<meta itemprop="wordCount" content="4636">
+<meta itemprop="wordCount" content="4848">
 <meta itemprop="keywords" content="Jinja2," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Jinja2语法"/>
 <meta name="twitter:description" content="介绍
@@ -152,28 +152,28 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -284,7 +284,7 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -295,7 +295,7 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -306,7 +306,7 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -317,7 +317,7 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -371,7 +371,8 @@ Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模�
           2019-08-25
         </time>
         
-        
+        <span class="more-meta"> 4848 words </span>
+          <span class="more-meta"> 10 min read </span>
 
         
         
@@ -457,107 +458,242 @@ Jinja2内部使用Unicode ，这意味着你需要向渲染函数传递 Unicode 
 -若没有，返回一个未定义的对象</p>
 </blockquote>
 <p>变量赋值</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% set navigation = [(&#39;index.html&#39;, &#39;Index&#39;), (&#39;about.html&#39;, &#39;About&#39;)] %&amp;#125;
-&amp;#123;% set key, value = call_something() %&amp;#125;
-</code></pre></div><h4 id="过滤器">过滤器</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% set navigation = [(&#39;index.html&#39;, &#39;Index&#39;), (&#39;about.html&#39;, &#39;About&#39;)] %<span class="ni">&amp;#125;</span>
+<span class="ni">&amp;#123;</span>% set key, value = call_something() %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="过滤器">过滤器</h4>
 <p>变量可以通过过滤器修改。过滤器与变量用管道符<code>|</code>分割，并且也可以用圆括号传递可选参数。多个过滤器可以链式调用
 常见的内置过滤器如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">abs(number)  <span style="color:#75715e">#取绝对值</span>
-attr(obj, name) <span style="color:#75715e">#获得对象属性</span>
-batch(value, linecount, fill_with<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#75715e">#批处理项目的过滤器，类似切片</span>
-capitalize(s) <span style="color:#75715e">#将第一个字母大写其余小写</span>
-center(value, width<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span>) <span style="color:#75715e">#将值的宽度增加到指定值</span>
-default(value, default_value<span style="color:#f92672">=</span><span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;&#39;</span>, boolean<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>) <span style="color:#75715e">#如果值未定义就设置为默认值，如果要对布尔值使用boolean参数需要为True</span>
-dictsort(value, case_sensitive<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, by<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;key&#39;</span>) <span style="color:#75715e">#对字典进行排序</span>
-escape(s) <span style="color:#75715e">#将字符串中的字符&amp;、&#39;、和&#39;转换为安全的序列。如果您需要在HTML中显示可能包含此类字符的文本，请使用此选项。将返回值标记为标记字符串。</span>
-filesizeformat(value, binary<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>) <span style="color:#75715e">#将文件大小格式转化为便于阅读的格式,如MB，G</span>
-first(seq) <span style="color:#75715e">#返回序列中的第一个，字符串列表都可以，字符串如果包括,会以,分割，列表直接拿第一项</span>
-float(value, default<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>) <span style="color:#75715e">#将输入转换成浮点数，转换失败就返回默认值</span>
-forceescape(value) <span style="color:#75715e">#强制HTML转义。这可能会使转义变量翻倍</span>
-format(value, args, kwargs<span style="color:#f92672">*</span>) <span style="color:#75715e">#给对象应用python字符串格式，如value=&#34;%s - %s&#34;</span>
-groupby(value, attribute) <span style="color:#75715e">#使用公共属性将对象序列分组</span>
-indent(s, width<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, indentfirst<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>) <span style="color:#75715e">#返回传递字符串的副本，每行缩进4个空格。第一行没有缩进。如果您想更改空格数或缩进第一行，可以向筛选器传递其他参数</span>
-int(value, default<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>) <span style="color:#75715e">#将输入转换成整数，转换失败就返回默认值</span>
-join(value, d<span style="color:#f92672">=</span><span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;&#39;</span>, attribute<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#75715e">#将列表拼接，也可以连接对象的某些属性</span>
-last(seq) <span style="color:#75715e">#返回序列中的最后一个</span>
-length(object) <span style="color:#75715e">#返回序列或映射的项数，最简单可以看str的长度，已经列表的元素数</span>
-list(value) <span style="color:#75715e">#将值转化为列表</span>
-lower(s) <span style="color:#75715e">#将值转化为小写</span>
-map() <span style="color:#75715e">#映射属性，对对象序列应用过滤器或查找属性，如&amp;#123;&amp;#123; titles|map(&#39;lower&#39;)|join(&#39;, &#39;) &amp;#125;&amp;#125;</span>
-pprint(value, verbose<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>) <span style="color:#75715e">#方便调试，美观的打印</span>
-random(seq) <span style="color:#75715e">#从序列中返回随机项目</span>
-reject() <span style="color:#75715e">#通过将测试应用于对象或属性，并在测试成功后拒绝这些对象来过滤对象序列。</span>
-rejectattr() <span style="color:#75715e">#通过将测试应用于对象或属性，并在测试成功后拒绝这些对象来过滤对象序列。</span>
-replace(s, old, new, count<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#75715e">#查找替换</span>
-reverse(value) <span style="color:#75715e">#反转对象</span>
-round(value, precision<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;common&#39;</span>) <span style="color:#75715e">#将数字舍入到给定的精度。第一个参数指定精度(默认值为0)，第二个参数指定舍入方法</span>
-safe(value) <span style="color:#75715e">#将该值标记为安全，这意味着在启用自动转义的环境中，该变量不会被转义。</span>
-select() <span style="color:#75715e">#通过将测试应用于对象或属性，并仅选择测试成功的对象，过滤对象序列。</span>
-selectattr() <span style="color:#75715e">#通过将测试应用于对象或属性，并仅选择测试成功的对象，过滤对象序列。</span>
-slice(value, slices, fill_with<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#75715e">#分割迭代器并返回包含这些项目的列表。当创建包含三个表示列的ul标记的div时很有用</span>
-sort(value, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, case_sensitive<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, attribute<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#75715e">#排序</span>
-string(object) <span style="color:#75715e">#创建字符串unicode</span>
-striptags(value) <span style="color:#75715e">#去掉SGML/XML标签，用一个空格替换相邻的空格。</span>
-sum(iterable, attribute<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, start<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>) <span style="color:#75715e">#返回数字的和，如&amp;#123;&amp;#123; items|sum(attribute=&#39;price&#39;) &amp;#125;&amp;#125;</span>
-title(s) <span style="color:#75715e">#返回该值的标题大小写版本。即单词将以大写字母开头，所有剩余字符都是小写的</span>
-trim(value) <span style="color:#75715e">#去掉开头和结尾的空格</span>
-truncate(s, length<span style="color:#f92672">=</span><span style="color:#ae81ff">255</span>, killwords<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;...&#39;</span>) <span style="color:#75715e">#截断字符串指定长度</span>
-upper(s) <span style="color:#75715e">#将值转为大写</span>
-urlencode(value) <span style="color:#75715e">#用于网址的转义字符串(使用UTF-8编码)。既接受字典和常规字符串也接受成对的iterables。</span>
-urlize(value, trim_url_limit<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, nofollow<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>) <span style="color:#75715e">#将纯文本网址转换为可点击</span>
-wordcount(s) <span style="color:#75715e">#返回字符串中的单词数</span>
-wordwrap(s, width<span style="color:#f92672">=</span><span style="color:#ae81ff">79</span>, break_long_words<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, wrapstring<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#75715e">#返回传递给筛选器的字符串的副本，该字符串在指定个字符后换行</span>
-xmlattr(d, autospace<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>) <span style="color:#75715e">#基于字典中的项目创建一个SGML/XML属性字符串。所有既不是无也不是未定义的值都会自动转义</span>
-</code></pre></div><p>过滤器小栗子</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% filter upper %&amp;#125;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="nb">abs</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>  <span class="c1">#取绝对值</span>
+<span class="n">attr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="c1">#获得对象属性</span>
+<span class="n">batch</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">linecount</span><span class="p">,</span> <span class="n">fill_with</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="c1">#批处理项目的过滤器，类似切片</span>
+<span class="n">capitalize</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1">#将第一个字母大写其余小写</span>
+<span class="n">center</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span> <span class="c1">#将值的宽度增加到指定值</span>
+<span class="n">default</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">default_value</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">boolean</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#如果值未定义就设置为默认值，如果要对布尔值使用boolean参数需要为True</span>
+<span class="n">dictsort</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s1">&#39;key&#39;</span><span class="p">)</span> <span class="c1">#对字典进行排序</span>
+<span class="n">escape</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1">#将字符串中的字符&amp;、&#39;、和&#39;转换为安全的序列。如果您需要在HTML中显示可能包含此类字符的文本，请使用此选项。将返回值标记为标记字符串。</span>
+<span class="n">filesizeformat</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">binary</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#将文件大小格式转化为便于阅读的格式,如MB，G</span>
+<span class="n">first</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span> <span class="c1">#返回序列中的第一个，字符串列表都可以，字符串如果包括,会以,分割，列表直接拿第一项</span>
+<span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span> <span class="c1">#将输入转换成浮点数，转换失败就返回默认值</span>
+<span class="n">forceescape</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#强制HTML转义。这可能会使转义变量翻倍</span>
+<span class="nb">format</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">*</span><span class="p">)</span> <span class="c1">#给对象应用python字符串格式，如value=&#34;%s - %s&#34;</span>
+<span class="n">groupby</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">attribute</span><span class="p">)</span> <span class="c1">#使用公共属性将对象序列分组</span>
+<span class="n">indent</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">indentfirst</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#返回传递字符串的副本，每行缩进4个空格。第一行没有缩进。如果您想更改空格数或缩进第一行，可以向筛选器传递其他参数</span>
+<span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#将输入转换成整数，转换失败就返回默认值</span>
+<span class="n">join</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="c1">#将列表拼接，也可以连接对象的某些属性</span>
+<span class="n">last</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span> <span class="c1">#返回序列中的最后一个</span>
+<span class="n">length</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="c1">#返回序列或映射的项数，最简单可以看str的长度，已经列表的元素数</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#将值转化为列表</span>
+<span class="n">lower</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1">#将值转化为小写</span>
+<span class="nb">map</span><span class="p">()</span> <span class="c1">#映射属性，对对象序列应用过滤器或查找属性，如&amp;#123;&amp;#123; titles|map(&#39;lower&#39;)|join(&#39;, &#39;) &amp;#125;&amp;#125;</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#方便调试，美观的打印</span>
+<span class="n">random</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span> <span class="c1">#从序列中返回随机项目</span>
+<span class="n">reject</span><span class="p">()</span> <span class="c1">#通过将测试应用于对象或属性，并在测试成功后拒绝这些对象来过滤对象序列。</span>
+<span class="n">rejectattr</span><span class="p">()</span> <span class="c1">#通过将测试应用于对象或属性，并在测试成功后拒绝这些对象来过滤对象序列。</span>
+<span class="n">replace</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="c1">#查找替换</span>
+<span class="n">reverse</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#反转对象</span>
+<span class="nb">round</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;common&#39;</span><span class="p">)</span> <span class="c1">#将数字舍入到给定的精度。第一个参数指定精度(默认值为0)，第二个参数指定舍入方法</span>
+<span class="n">safe</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#将该值标记为安全，这意味着在启用自动转义的环境中，该变量不会被转义。</span>
+<span class="n">select</span><span class="p">()</span> <span class="c1">#通过将测试应用于对象或属性，并仅选择测试成功的对象，过滤对象序列。</span>
+<span class="n">selectattr</span><span class="p">()</span> <span class="c1">#通过将测试应用于对象或属性，并仅选择测试成功的对象，过滤对象序列。</span>
+<span class="nb">slice</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">slices</span><span class="p">,</span> <span class="n">fill_with</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="c1">#分割迭代器并返回包含这些项目的列表。当创建包含三个表示列的ul标记的div时很有用</span>
+<span class="n">sort</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">case_sensitive</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="c1">#排序</span>
+<span class="n">string</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="c1">#创建字符串unicode</span>
+<span class="n">striptags</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#去掉SGML/XML标签，用一个空格替换相邻的空格。</span>
+<span class="nb">sum</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#返回数字的和，如&amp;#123;&amp;#123; items|sum(attribute=&#39;price&#39;) &amp;#125;&amp;#125;</span>
+<span class="n">title</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1">#返回该值的标题大小写版本。即单词将以大写字母开头，所有剩余字符都是小写的</span>
+<span class="n">trim</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#去掉开头和结尾的空格</span>
+<span class="n">truncate</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span> <span class="n">killwords</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;...&#39;</span><span class="p">)</span> <span class="c1">#截断字符串指定长度</span>
+<span class="n">upper</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1">#将值转为大写</span>
+<span class="n">urlencode</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#用于网址的转义字符串(使用UTF-8编码)。既接受字典和常规字符串也接受成对的iterables。</span>
+<span class="n">urlize</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">trim_url_limit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">nofollow</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#将纯文本网址转换为可点击</span>
+<span class="n">wordcount</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1">#返回字符串中的单词数</span>
+<span class="n">wordwrap</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">79</span><span class="p">,</span> <span class="n">break_long_words</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">wrapstring</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="c1">#返回传递给筛选器的字符串的副本，该字符串在指定个字符后换行</span>
+<span class="n">xmlattr</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">autospace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1">#基于字典中的项目创建一个SGML/XML属性字符串。所有既不是无也不是未定义的值都会自动转义</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>过滤器小栗子</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% filter upper %<span class="ni">&amp;#125;</span>
     This text becomes uppercase
-&amp;#123;% endfilter %&amp;#125;
-</code></pre></div><h3 id="基础语法">基础语法</h3>
+<span class="ni">&amp;#123;</span>% endfilter %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="基础语法">基础语法</h3>
 <h4 id="测试">测试</h4>
 <p>测试可以对普通表达式进行测试变量,测试也可以接受参数。如果测试只接受一个参数，你可以省去括号来分组它们</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% if loop.index is divisibleby(3) %&amp;#125;</span>
-</code></pre></div><p>内置测试清单</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">callable(object) <span style="color:#75715e">#对象是否可调用</span>
-defined(value) <span style="color:#75715e">#是否定义</span>
-divisibleby(value, num) <span style="color:#75715e">#能否被整除</span>
-escaped(value) <span style="color:#75715e">#是否转义</span>
-even(value) <span style="color:#75715e">#如果是偶数为true</span>
-iterable(value) <span style="color:#75715e">#是否有可迭代对象</span>
-lower(value) <span style="color:#75715e">#小写返回true</span>
-mapping(value) <span style="color:#75715e">#字典返回true</span>
-none(value) <span style="color:#75715e">#空返回true</span>
-number(value) <span style="color:#75715e">#数字返回true</span>
-odd(value) <span style="color:#75715e">#变量为奇数返回true</span>
-sameas(value, other) <span style="color:#75715e">#是否指向相同的内存地址</span>
-sequence(value) <span style="color:#75715e">#列表返回true</span>
-string(value) <span style="color:#75715e">#字符串返回true</span>
-undefined(value) <span style="color:#75715e">#是否未定义</span>
-upper(value) <span style="color:#75715e">#大写返回true</span>
-</code></pre></div><h4 id="注释空白控制转义">注释&amp;空白控制&amp;转义</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&amp;</span><span class="c1">#123;% if loop.index is divisibleby(3) %&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>内置测试清单</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">callable</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="c1">#对象是否可调用</span>
+<span class="n">defined</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#是否定义</span>
+<span class="n">divisibleby</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span> <span class="c1">#能否被整除</span>
+<span class="n">escaped</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#是否转义</span>
+<span class="n">even</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#如果是偶数为true</span>
+<span class="n">iterable</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#是否有可迭代对象</span>
+<span class="n">lower</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#小写返回true</span>
+<span class="n">mapping</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#字典返回true</span>
+<span class="n">none</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#空返回true</span>
+<span class="n">number</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#数字返回true</span>
+<span class="n">odd</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#变量为奇数返回true</span>
+<span class="n">sameas</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="c1">#是否指向相同的内存地址</span>
+<span class="n">sequence</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#列表返回true</span>
+<span class="n">string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#字符串返回true</span>
+<span class="n">undefined</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#是否未定义</span>
+<span class="n">upper</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="c1">#大写返回true</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="注释空白控制转义">注释&amp;空白控制&amp;转义</h4>
 <p><strong>注释：</strong> 在模板内进行注释使用<code>&amp;#123;# 要注释的内容 #&amp;#125;</code>,如</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;# note: disabled template example</span>
-    <span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% for user in users %&amp;#125;</span>
-        <span style="color:#f92672">...</span>
-    <span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% endfor %&amp;#125;</span>
-<span style="color:#75715e">#&amp;#125;</span>
-</code></pre></div><p><strong>空白控制</strong> :默认情况下，模板引擎不会对空白进行修改，如果配置了Jinja的<code>trim_blocks</code>则模板标签后的第一个换行符会被移除，另外，可以通过在块的开始或结束放置一个减号<code>-</code>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&amp;</span><span class="c1">#123;# note: disabled template example</span>
+    <span class="o">&amp;</span><span class="c1">#123;% for user in users %&amp;#125;</span>
+        <span class="o">...</span>
+    <span class="o">&amp;</span><span class="c1">#123;% endfor %&amp;#125;</span>
+<span class="c1">#&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>空白控制</strong> :默认情况下，模板引擎不会对空白进行修改，如果配置了Jinja的<code>trim_blocks</code>则模板标签后的第一个换行符会被移除，另外，可以通过在块的开始或结束放置一个减号<code>-</code>
 <strong>注意</strong>:标签和减号之间不能有空格,可以移除块前或块后的空白.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#demo1: 生成不换行的所有元素</span>
-<span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% for item in seq -%&amp;#125;</span>
-    <span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;&amp;#123; item &amp;#125;&amp;#125;</span>
-<span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;%- endfor %&amp;#125;</span>
-<span style="color:#75715e">#demo2</span>
-<span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;%- if foo -%&amp;#125;...&amp;#123;% endif %&amp;#125;</span>
-</code></pre></div><p>**转义：**较短的转义可以使用变量表达式，较长的内容或段落可以通过<code>raw</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#75715e">#demo1</span>
-<span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;&amp;#123; &#39;&amp;#123;&#39; &amp;#125;&amp;#125;</span>
-<span style="color:#75715e">#demo2</span>
-<span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% raw %&amp;#125;</span>
-  <span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% for i in [1,2,3] %&amp;#125;</span>
-    <span style="color:#f92672">&lt;</span>li<span style="color:#f92672">&gt;&amp;</span><span style="color:#75715e">#123;&amp;#123; i &amp;#125;&amp;#125;&lt;/li&gt;</span>
-  <span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% endfor %&amp;#125;</span>
-<span style="color:#f92672">&amp;</span><span style="color:#75715e">#123;% endraw %&amp;#125;</span>
-</code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#demo1: 生成不换行的所有元素</span>
+<span class="o">&amp;</span><span class="c1">#123;% for item in seq -%&amp;#125;</span>
+    <span class="o">&amp;</span><span class="c1">#123;&amp;#123; item &amp;#125;&amp;#125;</span>
+<span class="o">&amp;</span><span class="c1">#123;%- endfor %&amp;#125;</span>
+<span class="c1">#demo2</span>
+<span class="o">&amp;</span><span class="c1">#123;%- if foo -%&amp;#125;...&amp;#123;% endif %&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>**转义：**较短的转义可以使用变量表达式，较长的内容或段落可以通过<code>raw</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1">#demo1</span>
+<span class="o">&amp;</span><span class="c1">#123;&amp;#123; &#39;&amp;#123;&#39; &amp;#125;&amp;#125;</span>
+<span class="c1">#demo2</span>
+<span class="o">&amp;</span><span class="c1">#123;% raw %&amp;#125;</span>
+  <span class="o">&amp;</span><span class="c1">#123;% for i in [1,2,3] %&amp;#125;</span>
+    <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&amp;</span><span class="c1">#123;&amp;#123; i &amp;#125;&amp;#125;&lt;/li&gt;</span>
+  <span class="o">&amp;</span><span class="c1">#123;% endfor %&amp;#125;</span>
+<span class="o">&amp;</span><span class="c1">#123;% endraw %&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>扩展：
 当从模板生成 HTML 时，始终有这样的风险:变量包含影响已生成 HTML 的字符。有两种 解决方法:手动转义每个字符或默认自动转义所有的东西。</p>
 <ul>
@@ -575,83 +711,195 @@ upper(value) <span style="color:#75715e">#大写返回true</span>
 <h3 id="模板继承包含">模板继承&amp;包含</h3>
 <p>模板继承可以说是Jinja最强大的部分了，模板继承允许定义一个基础模板，然后定义子模板可以覆盖的块。如下例子</p>
 <p><strong>基础模板</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-    &amp;#123;% block head %&amp;#125;
-    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;style.css&#34;</span> /&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;&amp;#123;% block title %&amp;#125;&amp;#123;% endblock %&amp;#125; - My Webpage&lt;/<span style="color:#f92672">title</span>&gt;
-    &amp;#123;% endblock %&amp;#125;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;&amp;#123;% block content %&amp;#125;&amp;#123;% endblock %&amp;#125;&lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;footer&#34;</span>&gt;
-        &amp;#123;% block footer %&amp;#125;
-        &amp;copy; Copyright 2008 by &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://gourds.site/&#34;</span>&gt;Gourds&lt;/<span style="color:#f92672">a</span>&gt;.
-        &amp;#123;% endblock %&amp;#125;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-</code></pre></div><p><strong>子模板s1</strong>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>% block head %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span><span class="ni">&amp;#123;</span>% block title %<span class="ni">&amp;#125;&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span> - My Webpage<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;content&#34;</span><span class="p">&gt;</span><span class="ni">&amp;#123;</span>% block content %<span class="ni">&amp;#125;&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;footer&#34;</span><span class="p">&gt;</span>
+        <span class="ni">&amp;#123;</span>% block footer %<span class="ni">&amp;#125;</span>
+        <span class="ni">&amp;copy;</span> Copyright 2008 by <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;http://gourds.site/&#34;</span><span class="p">&gt;</span>Gourds<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.
+        <span class="ni">&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>子模板s1</strong>
 <code>&amp;#123;% extends%&amp;#125;</code>标签确定继承的模板，也可以访问多级目录下的模板<code>&amp;#123;% extends &quot;path_to/my_template.html&quot; %&amp;#125;</code>。使用<code>super()</code>可以调用super来渲染父级块的内容，会返回父级块的结果。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% extends &#34;base.html&#34; %&amp;#125;
-&amp;#123;% block title %&amp;#125;Index&amp;#123;% endblock %&amp;#125;
-&amp;#123;% block head %&amp;#125;
-    &amp;#123;&amp;#123; super() &amp;#125;&amp;#125;
-    &lt;<span style="color:#f92672">style</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>&gt;
-        .<span style="color:#a6e22e">important</span> <span style="color:#f92672">&amp;</span>#123<span style="color:#f92672">;</span> <span style="color:#f92672">color</span><span style="color:#f92672">:</span> #336699<span style="color:#f92672">;</span> <span style="color:#f92672">&amp;</span>#125<span style="color:#f92672">;</span>
-    &lt;/<span style="color:#f92672">style</span>&gt;
-&amp;#123;% endblock %&amp;#125;
-&amp;#123;% block content %&amp;#125;
-    &lt;<span style="color:#f92672">h1</span>&gt;Index Test &lt;/<span style="color:#f92672">h1</span>&gt;
-    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;important&#34;</span>&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% extends &#34;base.html&#34; %<span class="ni">&amp;#125;</span>
+<span class="ni">&amp;#123;</span>% block title %<span class="ni">&amp;#125;</span>Index<span class="ni">&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span>
+<span class="ni">&amp;#123;</span>% block head %<span class="ni">&amp;#125;</span>
+    <span class="ni">&amp;#123;&amp;#123;</span> super() <span class="ni">&amp;#125;&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+        <span class="p">.</span><span class="nc">important</span> <span class="o">&amp;</span><span class="p">#</span><span class="nn">123</span><span class="o">;</span> <span class="nt">color</span><span class="o">:</span> <span class="p">#</span><span class="nn">336699</span><span class="o">;</span> <span class="o">&amp;</span><span class="p">#</span><span class="nn">125</span><span class="o">;</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span>
+<span class="ni">&amp;#123;</span>% block content %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Index Test <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;important&#34;</span><span class="p">&gt;</span>
       Gourds test page s1.
-    &lt;/<span style="color:#f92672">p</span>&gt;
-&amp;#123;% endblock %&amp;#125;
-</code></pre></div><p>推荐使用命名块结束标签提升可读性(<code>endblock</code>后面写的要与<code>block</code>后面的对应),如</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% block my_data %&amp;#125;
-  &amp;#123;% block you_data %&amp;#125;
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>推荐使用命名块结束标签提升可读性(<code>endblock</code>后面写的要与<code>block</code>后面的对应),如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% block my_data %<span class="ni">&amp;#125;</span>
+  <span class="ni">&amp;#123;</span>% block you_data %<span class="ni">&amp;#125;</span>
     ...
-  &amp;#123;% endblock you_data %&amp;#125;
-&amp;#123;% endblock my_data%&amp;#125;
-</code></pre></div><p><strong>嵌套块和作用域</strong>
+  <span class="ni">&amp;#123;</span>% endblock you_data %<span class="ni">&amp;#125;</span>
+<span class="ni">&amp;#123;</span>% endblock my_data%<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>嵌套块和作用域</strong>
 默认的块不允许访问块外作用域中的变量，嵌套块可以.从Jinja2.2开始，只需在块声明中添加<code>scoped</code>装饰，就可以显示的指定在块中可用的变量，当覆盖一个块时不需要<code>scoped</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&amp;#123;% for item in seq %&amp;#125;
-    &lt;<span style="color:#f92672">li</span>&gt;&amp;#123;% block loop_item scoped %&amp;#125;&amp;#123;&amp;#123; item &amp;#125;&amp;#125;&amp;#123;% endblock %&amp;#125;&lt;/<span style="color:#f92672">li</span>&gt;
-&amp;#123;% endfor %&amp;#125;
-</code></pre></div><p><strong>包含</strong>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="ni">&amp;#123;</span>% for item in seq %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="ni">&amp;#123;</span>% block loop_item scoped %<span class="ni">&amp;#125;&amp;#123;&amp;#123;</span> item <span class="ni">&amp;#125;&amp;#125;&amp;#123;</span>% endblock %<span class="ni">&amp;#125;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endfor %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>包含</strong>
 Include语句用于包含一个模板，并在当前命名空间返回文件的渲染结果，包含的模板默认可以访问活动的上下文中的变量</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% include &#39;header.html&#39; %&amp;#125;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% include &#39;header.html&#39; %<span class="ni">&amp;#125;</span>
     Body
-&amp;#123;% include &#39;footer.html&#39; %&amp;#125;
-</code></pre></div><h3 id="控制结构">控制结构</h3>
+<span class="ni">&amp;#123;</span>% include &#39;footer.html&#39; %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="控制结构">控制结构</h3>
 <h4 id="for语句">for语句</h4>
 <p>遍历列表中的每一元素，支持大部分python语法。注意不能在循环中使用<code>break</code>或<code>continue</code>.但可以通过过滤来跳过项目，如<code>&amp;#123;% for user in users if not user.hidden %&amp;#125;</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% for k,v in local_data.items() %&amp;#125;
-    &lt;<span style="color:#f92672">tr</span>&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% for k,v in local_data.items() %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
 
-        &lt;<span style="color:#f92672">td</span>&gt;&amp;#123;&amp;#123; v[&#39;Name&#39;] &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">td</span>&gt;
-        &lt;<span style="color:#f92672">td</span>&gt;&amp;#123;&amp;#123; v.Age &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">td</span>&gt;
-        &lt;<span style="color:#f92672">td</span>&gt;&amp;#123;&amp;#123; v.Site &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">td</span>&gt;
-    &lt;/<span style="color:#f92672">tr</span>&gt;
-&amp;#123;% endfor %&amp;#125;
-</code></pre></div><p>如果因序列是空或者过滤移除了序列中的所有项目而没有执行循环，你可以使用 else 渲染一个用于替换的块</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">ul</span>&gt;
-&amp;#123;% for user in users %&amp;#125;
-    &lt;<span style="color:#f92672">li</span>&gt;&amp;#123;&amp;#123; user.username|e &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">li</span>&gt;
-&amp;#123;% else %&amp;#125;
-    &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">em</span>&gt;no users found&lt;/<span style="color:#f92672">em</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
-&amp;#123;% endfor %&amp;#125;
-&lt;/<span style="color:#f92672">ul</span>&gt;
-</code></pre></div><p>递归的使用循环</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sitemap&#34;</span>&gt;
-&amp;#123;%- for item in sitemap recursive %&amp;#125;
-    &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; item.href|e &amp;#125;&amp;#125;&#34;</span>&gt;&amp;#123;&amp;#123; item.title &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">a</span>&gt;
-    &amp;#123;%- if item.children -%&amp;#125;
-        &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submenu&#34;</span>&gt;&amp;#123;&amp;#123; loop(item.children) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">ul</span>&gt;
-    &amp;#123;%- endif %&amp;#125;&lt;/<span style="color:#f92672">li</span>&gt;
-&amp;#123;%- endfor %&amp;#125;
-&lt;/<span style="color:#f92672">ul</span>&gt;
-</code></pre></div><p>在for循环中可用的特殊变量</p>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> v[&#39;Name&#39;] <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> v.Age <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> v.Site <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endfor %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如果因序列是空或者过滤移除了序列中的所有项目而没有执行循环，你可以使用 else 渲染一个用于替换的块</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% for user in users %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> user.username|e <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% else %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">em</span><span class="p">&gt;</span>no users found<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endfor %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>递归的使用循环</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sitemap&#34;</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>%- for item in sitemap recursive %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; item.href|e &amp;#125;&amp;#125;&#34;</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> item.title <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>%- if item.children -%<span class="ni">&amp;#125;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;submenu&#34;</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> loop(item.children) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>%- endif %<span class="ni">&amp;#125;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>%- endfor %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在for循环中可用的特殊变量</p>
 <table>
 <thead>
 <tr>
@@ -696,22 +944,43 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 </table>
 <h4 id="if语句">if语句</h4>
 <p>跟python中的if差不多，可以使用<code>if、elif、else</code>，可以测试变量或其他表达式，在jinja中也可以叫做内联表达式或者循环过滤</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% if users %&amp;#125;
-&lt;<span style="color:#f92672">ul</span>&gt;
-&amp;#123;% for user in users %&amp;#125;
-    &lt;<span style="color:#f92672">li</span>&gt;&amp;#123;&amp;#123; user.username|e &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">li</span>&gt;
-&amp;#123;% endfor %&amp;#125;
-&lt;/<span style="color:#f92672">ul</span>&gt;
-&amp;#123;% endif %&amp;#125;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% if users %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% for user in users %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> user.username|e <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endfor %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endif %<span class="ni">&amp;#125;</span>
 
-&amp;#123;% if kenny.sick %&amp;#125;
+<span class="ni">&amp;#123;</span>% if kenny.sick %<span class="ni">&amp;#125;</span>
     Kenny is sick.
-&amp;#123;% elif kenny.dead %&amp;#125;
+<span class="ni">&amp;#123;</span>% elif kenny.dead %<span class="ni">&amp;#125;</span>
     You killed Kenny!  You bastard!!!
-&amp;#123;% else %&amp;#125;
+<span class="ni">&amp;#123;</span>% else %<span class="ni">&amp;#125;</span>
     Kenny looks okay --- so far
-&amp;#123;% endif %&amp;#125;
-</code></pre></div><h4 id="关于宏">关于宏</h4>
+<span class="ni">&amp;#123;</span>% endif %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="关于宏">关于宏</h4>
 <p>类似其他语言，宏用来将重复行为分装成可重用的函数.如果宏在不同模板定义需要先<code>import</code>，如果一个宏的名称以下划线开始，则它不能导出且不能被导入
 宏内部，可以访问的特殊的变量</p>
 <ul>
@@ -726,31 +995,71 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 <li><code>caller</code>：如果宏访问特殊的caller变量且由call标签调用，为true</li>
 </ul>
 <p>如下例子，定义宏</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% macro input(name, value=&#39;&#39;, type=&#39;text&#39;, size=20) -%&amp;#125;
-    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; type &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123;
-</span><span style="color:#e6db74">        value|e &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; size &amp;#125;&amp;#125;&#34;</span>&gt;
-&amp;#123;%- endmacro %&amp;#125;
-</code></pre></div><p>使用宏</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; input(&#39;username&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; input(&#39;password&#39;, type=&#39;password&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">p</span>&gt;
-</code></pre></div><p>带参数调用块的例子</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% macro dump_users(users) -%&amp;#125;
-    &lt;<span style="color:#f92672">ul</span>&gt;
-    &amp;#123;%- for user in users %&amp;#125;
-        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; user.username|e &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; caller(user) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">li</span>&gt;
-    &amp;#123;%- endfor %&amp;#125;
-    &lt;/<span style="color:#f92672">ul</span>&gt;
-&amp;#123;%- endmacro %&amp;#125;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% macro input(name, value=&#39;&#39;, type=&#39;text&#39;, size=20) -%<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; type &amp;#125;&amp;#125;&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123;
+</span><span class="s">        value|e &amp;#125;&amp;#125;&#34;</span> <span class="na">size</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; size &amp;#125;&amp;#125;&#34;</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>%- endmacro %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>使用宏</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> input(&#39;username&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> input(&#39;password&#39;, type=&#39;password&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>带参数调用块的例子</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% macro dump_users(users) -%<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>%- for user in users %<span class="ni">&amp;#125;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> user.username|e <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> caller(user) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>%- endfor %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>%- endmacro %<span class="ni">&amp;#125;</span>
 
-&amp;#123;% call(user) dump_users(list_of_user) %&amp;#125;
-    &lt;<span style="color:#f92672">dl</span>&gt;
-        &lt;<span style="color:#f92672">dl</span>&gt;Realname&lt;/<span style="color:#f92672">dl</span>&gt;
-        &lt;<span style="color:#f92672">dd</span>&gt;&amp;#123;&amp;#123; user.realname|e &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">dd</span>&gt;
-        &lt;<span style="color:#f92672">dl</span>&gt;Description&lt;/<span style="color:#f92672">dl</span>&gt;
-        &lt;<span style="color:#f92672">dd</span>&gt;&amp;#123;&amp;#123; user.description &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">dd</span>&gt;
-    &lt;/<span style="color:#f92672">dl</span>&gt;
-&amp;#123;% endcall %&amp;#125;
-</code></pre></div><h4 id="表达式">表达式</h4>
+<span class="ni">&amp;#123;</span>% call(user) dump_users(list_of_user) %<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>Realname<span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> user.realname|e <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>Description<span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> user.description <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>% endcall %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="表达式">表达式</h4>
 <p><strong>比较</strong>：</p>
 <ul>
 <li><code>==</code>/<code>!=</code></li>
@@ -760,33 +1069,75 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 </ul>
 <h3 id="典型示例">典型示例</h3>
 <p>导入模板并使用模板中的宏，如下是被导入的forms.html</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% macro input(name, value=&#39;&#39;, type=&#39;text&#39;) -%&amp;#125;
-    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; type &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; value|e &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span>&gt;
-&amp;#123;%- endmacro %&amp;#125;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% macro input(name, value=&#39;&#39;, type=&#39;text&#39;) -%<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; type &amp;#125;&amp;#125;&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; value|e &amp;#125;&amp;#125;&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>%- endmacro %<span class="ni">&amp;#125;</span>
 
-&amp;#123;%- macro textarea(name, value=&#39;&#39;, rows=10, cols=40) -%&amp;#125;
-    &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">rows</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; rows &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">cols</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; cols
-</span><span style="color:#e6db74">        &amp;#125;&amp;#125;&#34;</span>&gt;&amp;#123;&amp;#123; value|e &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">textarea</span>&gt;
-&amp;#123;%- endmacro %&amp;#125;
-</code></pre></div><p>可以这样使用</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&amp;#123;% import &#39;forms.html&#39; as forms %&amp;#125;
-&lt;<span style="color:#f92672">dl</span>&gt;
-    &lt;<span style="color:#f92672">dt</span>&gt;Username&lt;/<span style="color:#f92672">dt</span>&gt;
-    &lt;<span style="color:#f92672">dd</span>&gt;&amp;#123;&amp;#123; forms.input(&#39;username&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">dd</span>&gt;
-    &lt;<span style="color:#f92672">dt</span>&gt;Password&lt;/<span style="color:#f92672">dt</span>&gt;
-    &lt;<span style="color:#f92672">dd</span>&gt;&amp;#123;&amp;#123; forms.input(&#39;password&#39;, type=&#39;password&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">dd</span>&gt;
-&lt;/<span style="color:#f92672">dl</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; forms.textarea(&#39;comment&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">p</span>&gt;
-</code></pre></div><p>还可以导入到命名空间中</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&amp;#123;% from &#39;forms.html&#39; import input as input_field, textarea %&amp;#125;
-&lt;<span style="color:#f92672">dl</span>&gt;
-    &lt;<span style="color:#f92672">dt</span>&gt;Username&lt;/<span style="color:#f92672">dt</span>&gt;
-    &lt;<span style="color:#f92672">dd</span>&gt;&amp;#123;&amp;#123; input_field(&#39;username&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">dd</span>&gt;
-    &lt;<span style="color:#f92672">dt</span>&gt;Password&lt;/<span style="color:#f92672">dt</span>&gt;
-    &lt;<span style="color:#f92672">dd</span>&gt;&amp;#123;&amp;#123; input_field(&#39;password&#39;, type=&#39;password&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">dd</span>&gt;
-&lt;/<span style="color:#f92672">dl</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; textarea(&#39;comment&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">p</span>&gt;
-</code></pre></div><hr>
+<span class="ni">&amp;#123;</span>%- macro textarea(name, value=&#39;&#39;, rows=10, cols=40) -%<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span> <span class="na">rows</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; rows &amp;#125;&amp;#125;&#34;</span> <span class="na">cols</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; cols
+</span><span class="s">        &amp;#125;&amp;#125;&#34;</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> value|e <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>%- endmacro %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>可以这样使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="ni">&amp;#123;</span>% import &#39;forms.html&#39; as forms %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Username<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> forms.input(&#39;username&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> forms.input(&#39;password&#39;, type=&#39;password&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> forms.textarea(&#39;comment&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>还可以导入到命名空间中</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="ni">&amp;#123;</span>% from &#39;forms.html&#39; import input as input_field, textarea %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Username<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> input_field(&#39;username&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> input_field(&#39;password&#39;, type=&#39;password&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> textarea(&#39;comment&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
 <p>基本是<code>W3Cschool</code>的学习笔记，大部分是复制粘贴的，相当于读写一遍，侵删，以上</p>
     </div>
 
@@ -817,7 +1168,7 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/jinja2/">Jinja2</a>
+          <a href="https://blog.gourds.site/tags/jinja2/">Jinja2</a>
           
         </div>
 
@@ -838,8 +1189,8 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/">
-            <span class="next-text nav-default">关于Cookie和Session以及Token的说明</span>
+          <a class="next" href="/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/">
+            <span class="next-text nav-default">python中的*与**用法</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
@@ -855,6 +1206,8 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -928,7 +1281,7 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -997,7 +1350,7 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

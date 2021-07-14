@@ -24,7 +24,7 @@
 
 <meta name="author" content="Gourds" />
   <meta name="description" content="title: 使用fio工具测试linux的磁盘性能 date: 2015-08-24 17:01:45 tags: [Tools] 很多时候我们需要对服务器的性能进行评估，这就少不了运用合适的工具。其中fio是测试iops的一款很好用的工具，用来对硬件进行压力测试和验证，支持13中不同的I/O引擎，包括：sync、mmap、libaio、posixaio、SG v3、splice、null、network、syslet、guasi、solarisaio等等
-简单测试写性能  使用dd简单测试  dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync #采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync " />
+简单测试写性能  使用dd简单测试  1 2  dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync #采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync   " />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/" />
+<link rel="canonical" href="https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -69,11 +69,19 @@ tags: [Tools]
 
 使用dd简单测试
 
+
+
+1
+2
+
+
 dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
 #采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync
+
+
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/" /><meta property="article:section" content="post" />
 
 
 
@@ -86,11 +94,19 @@ tags: [Tools]
 
 使用dd简单测试
 
+
+
+1
+2
+
+
 dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
 #采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync
+
+
 ">
 
-<meta itemprop="wordCount" content="665">
+<meta itemprop="wordCount" content="688">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: 使用fio工具测试linux的磁盘性能
@@ -101,8 +117,16 @@ tags: [Tools]
 
 使用dd简单测试
 
+
+
+1
+2
+
+
 dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
 #采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync
+
+
 "/>
 
 <!--[if lte IE 9]>
@@ -135,28 +159,28 @@ dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -267,7 +291,7 @@ dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -278,7 +302,7 @@ dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -289,7 +313,7 @@ dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -300,7 +324,7 @@ dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -354,7 +378,8 @@ dd if=/dev/zero of=testfile bs=1M count=1024 oflag=dsync
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 688 words </span>
+          <span class="more-meta"> 2 min read </span>
 
         
         
@@ -395,24 +420,48 @@ tags: [Tools]</h2>
 <ul>
 <li>使用dd简单测试</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span><span style="color:#e6db74">/dev/</span>zero of<span style="color:#f92672">=</span>testfile bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>M count<span style="color:#f92672">=</span><span style="color:#ae81ff">1024</span> oflag<span style="color:#f92672">=</span>dsync
-<span style="color:#75715e">#采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync</span>
-</code></pre></div><h3 id="准备安装">准备&amp;安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="n">dd</span> <span class="k">if</span><span class="o">=</span><span class="sr">/dev/</span><span class="n">zero</span> <span class="n">of</span><span class="o">=</span><span class="n">testfile</span> <span class="n">bs</span><span class="o">=</span><span class="mi">1</span><span class="n">M</span> <span class="n">count</span><span class="o">=</span><span class="mi">1024</span> <span class="n">oflag</span><span class="o">=</span><span class="n">dsync</span>
+<span class="c1">#采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="准备安装">准备&amp;安装</h3>
 <ul>
 <li><a href="http://freecode.com/projects/fio/">FIO官网</a></li>
 <li>安装系统</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">wget http:<span style="color:#e6db74">//</span>brick<span style="color:#f92672">.</span>kernel<span style="color:#f92672">.</span>dk<span style="color:#e6db74">/snaps/</span>fio<span style="color:#f92672">-</span><span style="color:#ae81ff">2.0.7</span><span style="color:#f92672">.</span>tar<span style="color:#f92672">.</span>gz
-<span style="color:#75715e">#download the software</span>
-yum install libaio<span style="color:#f92672">-</span>devel
-<span style="color:#75715e">#安装依赖包</span>
-tar <span style="color:#f92672">-</span>xvf fio<span style="color:#f92672">-</span><span style="color:#ae81ff">2.0.7</span><span style="color:#f92672">.</span>tar<span style="color:#f92672">.</span>gz
-<span style="color:#75715e">#decompression</span>
-cd fio<span style="color:#f92672">-</span><span style="color:#ae81ff">2.0.7</span>
-<span style="color:#75715e">#进入解压目录</span>
-make
-make install
-</code></pre></div><h3 id="使用说明">使用说明</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="n">wget</span> <span class="n">http:</span><span class="sr">//</span><span class="n">brick</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">dk</span><span class="sr">/snaps/</span><span class="n">fio</span><span class="o">-</span><span class="mf">2.0.7</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="c1">#download the software</span>
+<span class="n">yum</span> <span class="n">install</span> <span class="n">libaio</span><span class="o">-</span><span class="n">devel</span>
+<span class="c1">#安装依赖包</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">fio</span><span class="o">-</span><span class="mf">2.0.7</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="c1">#decompression</span>
+<span class="n">cd</span> <span class="n">fio</span><span class="o">-</span><span class="mf">2.0.7</span>
+<span class="c1">#进入解压目录</span>
+<span class="n">make</span>
+<span class="n">make</span> <span class="n">install</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="使用说明">使用说明</h3>
 <ul>
 <li>fio选项说明</li>
 </ul>
@@ -437,18 +486,35 @@ nrfiles=8                每个进程生成文件的数量。</p>
 <ul>
 <li>例子</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#随机读</span>
-fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</span><span style="color:#e6db74">/root/</span>filename <span style="color:#f92672">-</span>direct<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>iodepth <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>thread <span style="color:#f92672">-</span>rw<span style="color:#f92672">=</span>randread <span style="color:#f92672">-</span>ioengine<span style="color:#f92672">=</span>psync <span style="color:#f92672">-</span>bs<span style="color:#f92672">=</span><span style="color:#ae81ff">16</span>k <span style="color:#f92672">-</span>size<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>G <span style="color:#f92672">-</span>numjobs<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">-</span>runtime<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span> <span style="color:#f92672">-</span>group_reporting <span style="color:#f92672">-</span>name<span style="color:#f92672">=</span>mytest
-<span style="color:#75715e">#顺序读</span>
-fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</span>filename <span style="color:#f92672">-</span>direct<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>iodepth <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>thread <span style="color:#f92672">-</span>rw<span style="color:#f92672">=</span>read <span style="color:#f92672">-</span>ioengine<span style="color:#f92672">=</span>psync <span style="color:#f92672">-</span>bs<span style="color:#f92672">=</span><span style="color:#ae81ff">16</span>k <span style="color:#f92672">-</span>size<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>G <span style="color:#f92672">-</span>numjobs<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span> <span style="color:#f92672">-</span>runtime<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span> <span style="color:#f92672">-</span>group_reporting <span style="color:#f92672">-</span>name<span style="color:#f92672">=</span>mytest
-<span style="color:#75715e">#随机写</span>
-fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</span>filename <span style="color:#f92672">-</span>direct<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>iodepth <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>thread <span style="color:#f92672">-</span>rw<span style="color:#f92672">=</span>randwrite <span style="color:#f92672">-</span>ioengine<span style="color:#f92672">=</span>psync <span style="color:#f92672">-</span>bs<span style="color:#f92672">=</span><span style="color:#ae81ff">16</span>k <span style="color:#f92672">-</span>size<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>G <span style="color:#f92672">-</span>numjobs<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span> <span style="color:#f92672">-</span>runtime<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span> <span style="color:#f92672">-</span>group_reporting <span style="color:#f92672">-</span>name<span style="color:#f92672">=</span>mytest
-<span style="color:#75715e">#顺序写</span>
-fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</span>filename <span style="color:#f92672">-</span>direct<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>iodepth <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>thread <span style="color:#f92672">-</span>rw<span style="color:#f92672">=</span>write <span style="color:#f92672">-</span>ioengine<span style="color:#f92672">=</span>psync <span style="color:#f92672">-</span>bs<span style="color:#f92672">=</span><span style="color:#ae81ff">16</span>k <span style="color:#f92672">-</span>size<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>G <span style="color:#f92672">-</span>numjobs<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span> <span style="color:#f92672">-</span>runtime<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span> <span style="color:#f92672">-</span>group_reporting <span style="color:#f92672">-</span>name<span style="color:#f92672">=</span>mytest
-<span style="color:#75715e">#混合随机读写</span>
-fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</span>filename <span style="color:#f92672">-</span>direct<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>iodepth <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span>thread <span style="color:#f92672">-</span>rw<span style="color:#f92672">=</span>randrw <span style="color:#f92672">-</span>rwmixread<span style="color:#f92672">=</span><span style="color:#ae81ff">70</span> <span style="color:#f92672">-</span>ioengine<span style="color:#f92672">=</span>psync <span style="color:#f92672">-</span>bs<span style="color:#f92672">=</span><span style="color:#ae81ff">16</span>k <span style="color:#f92672">-</span>size<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>G <span style="color:#f92672">-</span>numjobs<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span> <span style="color:#f92672">-</span>runtime<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> <span style="color:#f92672">-</span>group_reporting <span style="color:#f92672">-</span>name<span style="color:#f92672">=</span>mytest <span style="color:#f92672">-</span>ioscheduler<span style="color:#f92672">=</span>noop
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="c1">#随机读</span>
+<span class="n">fio</span> <span class="o">-</span><span class="n">filename</span><span class="o">=</span><span class="sr">/root/</span><span class="n">filename</span> <span class="o">-</span><span class="n">direct</span><span class="o">=</span><span class="mi">1</span> <span class="o">-</span><span class="n">iodepth</span> <span class="mi">1</span> <span class="o">-</span><span class="n">thread</span> <span class="o">-</span><span class="n">rw</span><span class="o">=</span><span class="n">randread</span> <span class="o">-</span><span class="n">ioengine</span><span class="o">=</span><span class="n">psync</span> <span class="o">-</span><span class="n">bs</span><span class="o">=</span><span class="mi">16</span><span class="n">k</span> <span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="n">G</span> <span class="o">-</span><span class="n">numjobs</span><span class="o">=</span><span class="mi">10</span> <span class="o">-</span><span class="n">runtime</span><span class="o">=</span><span class="mi">1000</span> <span class="o">-</span><span class="n">group_reporting</span> <span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">mytest</span>
+<span class="c1">#顺序读</span>
+<span class="n">fio</span> <span class="o">-</span><span class="n">filename</span><span class="o">=</span><span class="n">filename</span> <span class="o">-</span><span class="n">direct</span><span class="o">=</span><span class="mi">1</span> <span class="o">-</span><span class="n">iodepth</span> <span class="mi">1</span> <span class="o">-</span><span class="n">thread</span> <span class="o">-</span><span class="n">rw</span><span class="o">=</span><span class="nb">read</span> <span class="o">-</span><span class="n">ioengine</span><span class="o">=</span><span class="n">psync</span> <span class="o">-</span><span class="n">bs</span><span class="o">=</span><span class="mi">16</span><span class="n">k</span> <span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="n">G</span> <span class="o">-</span><span class="n">numjobs</span><span class="o">=</span><span class="mi">30</span> <span class="o">-</span><span class="n">runtime</span><span class="o">=</span><span class="mi">1000</span> <span class="o">-</span><span class="n">group_reporting</span> <span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">mytest</span>
+<span class="c1">#随机写</span>
+<span class="n">fio</span> <span class="o">-</span><span class="n">filename</span><span class="o">=</span><span class="n">filename</span> <span class="o">-</span><span class="n">direct</span><span class="o">=</span><span class="mi">1</span> <span class="o">-</span><span class="n">iodepth</span> <span class="mi">1</span> <span class="o">-</span><span class="n">thread</span> <span class="o">-</span><span class="n">rw</span><span class="o">=</span><span class="n">randwrite</span> <span class="o">-</span><span class="n">ioengine</span><span class="o">=</span><span class="n">psync</span> <span class="o">-</span><span class="n">bs</span><span class="o">=</span><span class="mi">16</span><span class="n">k</span> <span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="n">G</span> <span class="o">-</span><span class="n">numjobs</span><span class="o">=</span><span class="mi">30</span> <span class="o">-</span><span class="n">runtime</span><span class="o">=</span><span class="mi">1000</span> <span class="o">-</span><span class="n">group_reporting</span> <span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">mytest</span>
+<span class="c1">#顺序写</span>
+<span class="n">fio</span> <span class="o">-</span><span class="n">filename</span><span class="o">=</span><span class="n">filename</span> <span class="o">-</span><span class="n">direct</span><span class="o">=</span><span class="mi">1</span> <span class="o">-</span><span class="n">iodepth</span> <span class="mi">1</span> <span class="o">-</span><span class="n">thread</span> <span class="o">-</span><span class="n">rw</span><span class="o">=</span><span class="nb">write</span> <span class="o">-</span><span class="n">ioengine</span><span class="o">=</span><span class="n">psync</span> <span class="o">-</span><span class="n">bs</span><span class="o">=</span><span class="mi">16</span><span class="n">k</span> <span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="n">G</span> <span class="o">-</span><span class="n">numjobs</span><span class="o">=</span><span class="mi">30</span> <span class="o">-</span><span class="n">runtime</span><span class="o">=</span><span class="mi">1000</span> <span class="o">-</span><span class="n">group_reporting</span> <span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">mytest</span>
+<span class="c1">#混合随机读写</span>
+<span class="n">fio</span> <span class="o">-</span><span class="n">filename</span><span class="o">=</span><span class="n">filename</span> <span class="o">-</span><span class="n">direct</span><span class="o">=</span><span class="mi">1</span> <span class="o">-</span><span class="n">iodepth</span> <span class="mi">1</span> <span class="o">-</span><span class="n">thread</span> <span class="o">-</span><span class="n">rw</span><span class="o">=</span><span class="n">randrw</span> <span class="o">-</span><span class="n">rwmixread</span><span class="o">=</span><span class="mi">70</span> <span class="o">-</span><span class="n">ioengine</span><span class="o">=</span><span class="n">psync</span> <span class="o">-</span><span class="n">bs</span><span class="o">=</span><span class="mi">16</span><span class="n">k</span> <span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="n">G</span> <span class="o">-</span><span class="n">numjobs</span><span class="o">=</span><span class="mi">30</span> <span class="o">-</span><span class="n">runtime</span><span class="o">=</span><span class="mi">100</span> <span class="o">-</span><span class="n">group_reporting</span> <span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">mytest</span> <span class="o">-</span><span class="n">ioscheduler</span><span class="o">=</span><span class="n">noop</span>
 
-</code></pre></div>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -513,6 +579,8 @@ fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</s
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -586,7 +654,7 @@ fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</s
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -655,7 +723,7 @@ fio <span style="color:#f92672">-</span>filename<span style="color:#f92672">=</s
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

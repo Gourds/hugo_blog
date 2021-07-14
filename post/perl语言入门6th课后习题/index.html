@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" />
+<link rel="canonical" href="https://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,7 +66,7 @@ date: 2015-08-12 16:00:21
 tags: [学习笔记]
 个人感觉课后习题单独分出来比较方便，这里有可能的话会多放些例子，ok，go" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" /><meta property="article:section" content="post" />
 
 
 
@@ -76,7 +76,7 @@ date: 2015-08-12 16:00:21
 tags: [学习笔记]
 个人感觉课后习题单独分出来比较方便，这里有可能的话会多放些例子，ok，go">
 
-<meta itemprop="wordCount" content="479">
+<meta itemprop="wordCount" content="546">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: Perl语言入门（6th）课后习题
@@ -114,28 +114,28 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -246,7 +246,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -257,7 +257,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -268,7 +268,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -279,7 +279,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -333,7 +333,8 @@ tags: [学习笔记]
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 546 words </span>
+          <span class="more-meta"> 2 min read </span>
 
         
         
@@ -372,104 +373,231 @@ tags: [学习笔记]</h2>
 <ol>
 <li>计算半径为12.5的园的周长，可自行输入，小于0输出为0</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Please input a number: &#34;</span>;
-$inputNumber <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>;
-$perimeter <span style="color:#f92672">=</span> $inputNumber <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3.14</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The perimeter is $perimeter\n&#34;</span>;
-</code></pre></div><p>###Chapter two</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">print</span> <span class="s">&#34;Please input a number: &#34;</span><span class="p">;</span>
+<span class="nv">$inputNumber</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">;</span>
+<span class="nv">$perimeter</span> <span class="o">=</span> <span class="nv">$inputNumber</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="mf">3.14</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;The perimeter is $perimeter\n&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>###Chapter two</p>
 <ol>
 <li>半径12.5圆，求周长</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
-$pi <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.141592654</span>;
-$circ <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> $pi <span style="color:#f92672">*</span> <span style="color:#ae81ff">12.5</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The circumference of a circle of radius 12.5 is $circ.\n&#34;</span>;
-</code></pre></div><ol start="2">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="mf">5.010</span><span class="p">;</span>
+<span class="nv">$pi</span> <span class="o">=</span> <span class="mf">3.141592654</span><span class="p">;</span>
+<span class="nv">$circ</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nv">$pi</span> <span class="o">*</span> <span class="mf">12.5</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;The circumference of a circle of radius 12.5 is $circ.\n&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
 <li>交互算周长</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl -w</span>
-$pi <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.141592654</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;What is the radius?\n&#34;</span>;
-chomp($radius <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>);
-$circ <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> $pi <span style="color:#f92672">*</span> $radius;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The circumference of a circlee of radius $radius is $circ.\n&#34;</span>;
-</code></pre></div><ol start="3">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl -w</span>
+<span class="nv">$pi</span> <span class="o">=</span> <span class="mf">3.141592654</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;What is the radius?\n&#34;</span><span class="p">;</span>
+<span class="nb">chomp</span><span class="p">(</span><span class="nv">$radius</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">);</span>
+<span class="nv">$circ</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nv">$pi</span> <span class="o">*</span> <span class="nv">$radius</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;The circumference of a circlee of radius $radius is $circ.\n&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
 <li>加验证的交互算周长</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-$pi <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.1415926</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;What is the radius?&#34;</span>;
-chomp($radius <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>);
-$circ <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> $pi <span style="color:#f92672">*</span> $radius;
-<span style="color:#66d9ef">if</span> ($radius <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>){
-    $circ <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-}
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The circumference of a circle of radius $radius is $circ.\n&#34;</span>;         
-</code></pre></div><ol start="4">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="nv">$pi</span> <span class="o">=</span> <span class="mf">3.1415926</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;What is the radius?&#34;</span><span class="p">;</span>
+<span class="nb">chomp</span><span class="p">(</span><span class="nv">$radius</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">);</span>
+<span class="nv">$circ</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nv">$pi</span> <span class="o">*</span> <span class="nv">$radius</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$radius</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="nv">$circ</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">print</span> <span class="s">&#34;The circumference of a circle of radius $radius is $circ.\n&#34;</span><span class="p">;</span>         
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
 <li>交互求和</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Enter first number: &#34;</span>;
-chomp($one <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>);
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Enter second number: &#34;</span>;
-chomp($two <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>);
-$result <span style="color:#f92672">=</span> $one <span style="color:#f92672">+</span> $two;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The result is $result.\n&#34;</span>
-</code></pre></div><ol start="5">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">print</span> <span class="s">&#34;Enter first number: &#34;</span><span class="p">;</span>
+<span class="nb">chomp</span><span class="p">(</span><span class="nv">$one</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">);</span>
+<span class="k">print</span> <span class="s">&#34;Enter second number: &#34;</span><span class="p">;</span>
+<span class="nb">chomp</span><span class="p">(</span><span class="nv">$two</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">);</span>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nv">$one</span> <span class="o">+</span> <span class="nv">$two</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;The result is $result.\n&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="5">
 <li>字符串重复术，中间的是小写字母x</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Enter a string: &#34;</span>;
-$str <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Enter a number of times: &#34;</span>;
-chomp($num <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>);
-$result <span style="color:#f92672">=</span> $str x $num;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;The result is:\n$result&#34;</span>;
-</code></pre></div><h3 id="chapter-three">Chapter three</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">print</span> <span class="s">&#34;Enter a string: &#34;</span><span class="p">;</span>
+<span class="nv">$str</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;Enter a number of times: &#34;</span><span class="p">;</span>
+<span class="nb">chomp</span><span class="p">(</span><span class="nv">$num</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">);</span>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nv">$str</span> <span class="n">x</span> <span class="nv">$num</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;The result is:\n$result&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="chapter-three">Chapter three</h3>
 <ol>
 <li>将输入的字符串倒序打印</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/binj/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Enter some lines, then press Ctrl-D:\n&#34;</span>;<span style="color:#75715e">#or try Ctrl-Z</span>
-@lines <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>;
-@reverse_lines <span style="color:#f92672">=</span> reverse @lines;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;@reverse_lines&#34;</span>;
-</code></pre></div><ol start="2">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/binj/perl</span>
+<span class="k">use</span> <span class="mf">5.010</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;Enter some lines, then press Ctrl-D:\n&#34;</span><span class="p">;</span><span class="c1">#or try Ctrl-Z</span>
+<span class="nv">@lines</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">;</span>
+<span class="nv">@reverse_lines</span> <span class="o">=</span> <span class="nb">reverse</span> <span class="nv">@lines</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;@reverse_lines&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
 <li>键入数字，输出对应的name</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-@names <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ guo qiu arvon mo love /</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Enter some number from 1 to 5, one per line, then press Ctrl-D:\n&#34;</span>;
-<span style="color:#75715e">#print @names;</span>
-chomp(@number <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;STDIN&gt;</span>);
-<span style="color:#75715e">#print &#34;\@number is @number\n&#34;;</span>
-<span style="color:#66d9ef">foreach</span> $num (@number){
-<span style="color:#75715e">#    print &#34;now \$num is $num&#34;;</span>
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$names[ $num -1 ]\n&#34;</span>;
-}
-</code></pre></div><ol start="3">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="nv">@names</span> <span class="o">=</span> <span class="sx">qw/ guo qiu arvon mo love /</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;Enter some number from 1 to 5, one per line, then press Ctrl-D:\n&#34;</span><span class="p">;</span>
+<span class="c1">#print @names;</span>
+<span class="nb">chomp</span><span class="p">(</span><span class="nv">@number</span> <span class="o">=</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">);</span>
+<span class="c1">#print &#34;\@number is @number\n&#34;;</span>
+<span class="k">foreach</span> <span class="nv">$num</span> <span class="p">(</span><span class="nv">@number</span><span class="p">){</span>
+<span class="c1">#    print &#34;now \$num is $num&#34;;</span>
+    <span class="k">print</span> <span class="s">&#34;$names[ $num -1 ]\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
 <li>注释的是在一行输入输入的，没注释的分行显示</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#75715e">#chomp(@lines = &lt;STDIN&gt;);</span>
-<span style="color:#75715e">#@sorted = sort @lines;</span>
-<span style="color:#75715e">#print &#34;@sorted\n&#34;;</span>
-<span style="color:#66d9ef">print</span> sort <span style="color:#e6db74">&lt;STDIN&gt;</span>;
-</code></pre></div><p>###小代码块</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="c1">#chomp(@lines = &lt;STDIN&gt;);</span>
+<span class="c1">#@sorted = sort @lines;</span>
+<span class="c1">#print &#34;@sorted\n&#34;;</span>
+<span class="k">print</span> <span class="nb">sort</span> <span class="sr">&lt;STDIN&gt;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>###小代码块</p>
 <ul>
 <li>检查参数个数是否正确</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">max</span> {
-    <span style="color:#66d9ef">if</span> (@_ <span style="color:#f92672">!=</span> <span style="color:#ae81ff">2</span>){
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;WAENING! &amp;max should get exactly two argumnets!\n&#34;</span>;
-    }
-    <span style="color:#75715e"># follow</span>
-    <span style="color:#75715e">#...</span>
-}
-</code></pre></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="k">sub</span> <span class="nf">max</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">@_</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">){</span>
+        <span class="k">print</span> <span class="s">&#34;WAENING! &amp;max should get exactly two argumnets!\n&#34;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1"># follow</span>
+    <span class="c1">#...</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -534,6 +662,8 @@ chomp(@number <span style="color:#f92672">=</span> <span style="color:#e6db74">&
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -607,7 +737,7 @@ chomp(@number <span style="color:#f92672">=</span> <span style="color:#e6db74">&
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -676,7 +806,7 @@ chomp(@number <span style="color:#f92672">=</span> <span style="color:#e6db74">&
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

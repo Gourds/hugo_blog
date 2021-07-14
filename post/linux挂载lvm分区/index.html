@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/" />
+<link rel="canonical" href="https://blog.gourds.site/post/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,7 +66,7 @@ date: 2015-08-07 18:02:24
 tags: [Linux]
 **简介：**LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制，它由Heinz Mauelshagen在Linux 2.4内核上实现，目前最新版本为：稳定版1.0.5，开发版 1.1.0-rc2，以及LVM2开发版。Linux用户安装Linux操作系统时遇到的一个常见的难以决定的问题就是如何正确地评估各分区大小，以分配合适的硬盘空间。普通的磁盘分区管理方式在逻辑分区划分好之后就无法改变其大小，当一个逻辑分区存放不下某个文件时，这个文件因为受上层文件系统的限制，也不能跨越多个分区来存放，所以也不能同时放到别的磁盘上。而遇到出现某个分区空间耗尽时，解决的方法通常是使用符号链接，或者使用调整分区大小的工具，但这只是暂时解决办法，没有从根本上解决问题。随着Linux的逻辑卷管理功能的出现，这些问题都迎刃而解，用户在无需停机的情况下可以方便地调整各个分区大小。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/" /><meta property="article:section" content="post" />
 
 
 
@@ -76,7 +76,7 @@ date: 2015-08-07 18:02:24
 tags: [Linux]
 **简介：**LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制，它由Heinz Mauelshagen在Linux 2.4内核上实现，目前最新版本为：稳定版1.0.5，开发版 1.1.0-rc2，以及LVM2开发版。Linux用户安装Linux操作系统时遇到的一个常见的难以决定的问题就是如何正确地评估各分区大小，以分配合适的硬盘空间。普通的磁盘分区管理方式在逻辑分区划分好之后就无法改变其大小，当一个逻辑分区存放不下某个文件时，这个文件因为受上层文件系统的限制，也不能跨越多个分区来存放，所以也不能同时放到别的磁盘上。而遇到出现某个分区空间耗尽时，解决的方法通常是使用符号链接，或者使用调整分区大小的工具，但这只是暂时解决办法，没有从根本上解决问题。随着Linux的逻辑卷管理功能的出现，这些问题都迎刃而解，用户在无需停机的情况下可以方便地调整各个分区大小。">
 
-<meta itemprop="wordCount" content="698">
+<meta itemprop="wordCount" content="720">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: Linux挂载LVM分区
@@ -114,28 +114,28 @@ tags: [Linux]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -246,7 +246,7 @@ tags: [Linux]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -257,7 +257,7 @@ tags: [Linux]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -268,7 +268,7 @@ tags: [Linux]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -279,7 +279,7 @@ tags: [Linux]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -333,7 +333,8 @@ tags: [Linux]
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 720 words </span>
+          <span class="more-meta"> 2 min read </span>
 
         
         
@@ -366,29 +367,57 @@ date: 2015-08-07 18:02:24
 tags: [Linux]</h2>
 <p>**简介：**LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制，它由Heinz Mauelshagen在Linux 2.4内核上实现，目前最新版本为：稳定版1.0.5，开发版 1.1.0-rc2，以及LVM2开发版。Linux用户安装Linux操作系统时遇到的一个常见的难以决定的问题就是如何正确地评估各分区大小，以分配合适的硬盘空间。普通的磁盘分区管理方式在逻辑分区划分好之后就无法改变其大小，当一个逻辑分区存放不下某个文件时，这个文件因为受上层文件系统的限制，也不能跨越多个分区来存放，所以也不能同时放到别的磁盘上。而遇到出现某个分区空间耗尽时，解决的方法通常是使用符号链接，或者使用调整分区大小的工具，但这只是暂时解决办法，没有从根本上解决问题。随着Linux的逻辑卷管理功能的出现，这些问题都迎刃而解，用户在无需停机的情况下可以方便地调整各个分区大小。</p>
 <h2 id="手动将lvm挂载至linux系统">手动将LVM挂载至linux系统</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">rpm <span style="color:#f92672">-</span>qa lvm2
-<span style="color:#75715e">#查看是否安装了lvm</span>
-yum install lvm2
-<span style="color:#75715e">#安装lvm软件</span>
-vgscan
-<span style="color:#75715e">#查找并显示系统中存在的LVN卷组</span>
-lvscan
-<span style="color:#75715e">#查看系统中存在哪些卷组以及它们的激活状态（注意：如果有两个卷组名一样，其中一个是无法挂载的，要想挂载，需要重命名一个卷组）</span>
-vgdisplay LVMname <span style="color:#f92672">|</span> more
-<span style="color:#75715e">#显示所有名为LVMname卷组的详细信息，请记住你将要挂载卷组的 VG UUID。</span>
-	vgrename o236o6<span style="color:#f92672">-</span>MGAQ<span style="color:#f92672">-</span>erKG<span style="color:#f92672">-</span>k6cH<span style="color:#f92672">-</span><span style="color:#ae81ff">12</span>Zs<span style="color:#f92672">-</span><span style="color:#ae81ff">8</span>NwX<span style="color:#f92672">-</span>CCqPG3 vgNewName
-<span style="color:#75715e">#卷组重新命名为vgNewName</span>
-vgchange <span style="color:#f92672">-</span>ay <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>vgNewName
-<span style="color:#75715e">#激活卷组vsNewName，此时你也并不能使用，需要挂载</span>
-lvscan
-<span style="color:#75715e">#查看现在的激活状态</span>
-mount <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>vgNewName <span style="color:#f92672">/</span>somePoint
-<span style="color:#75715e">#挂载LVM到挂载点，这样就可以访问了</span>
-umount <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>vgNewName<span style="color:#75715e"># or usr &#39;umount /somePoint&#39;</span>
-<span style="color:#75715e">#卸载LVM卷组</span>
-vgchange <span style="color:#f92672">-</span>an <span style="color:#f92672">/</span>dev<span style="color:#f92672">/</span>vgNewName
-<span style="color:#75715e">#将卷组修改成不激活状态</span>
-</code></pre></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">rpm</span> <span class="o">-</span><span class="n">qa</span> <span class="n">lvm2</span>
+<span class="c1">#查看是否安装了lvm</span>
+<span class="n">yum</span> <span class="n">install</span> <span class="n">lvm2</span>
+<span class="c1">#安装lvm软件</span>
+<span class="n">vgscan</span>
+<span class="c1">#查找并显示系统中存在的LVN卷组</span>
+<span class="n">lvscan</span>
+<span class="c1">#查看系统中存在哪些卷组以及它们的激活状态（注意：如果有两个卷组名一样，其中一个是无法挂载的，要想挂载，需要重命名一个卷组）</span>
+<span class="n">vgdisplay</span> <span class="n">LVMname</span> <span class="o">|</span> <span class="n">more</span>
+<span class="c1">#显示所有名为LVMname卷组的详细信息，请记住你将要挂载卷组的 VG UUID。</span>
+	<span class="n">vgrename</span> <span class="n">o236o6</span><span class="o">-</span><span class="n">MGAQ</span><span class="o">-</span><span class="n">erKG</span><span class="o">-</span><span class="n">k6cH</span><span class="o">-</span><span class="mi">12</span><span class="n">Zs</span><span class="o">-</span><span class="mi">8</span><span class="n">NwX</span><span class="o">-</span><span class="n">CCqPG3</span> <span class="n">vgNewName</span>
+<span class="c1">#卷组重新命名为vgNewName</span>
+<span class="n">vgchange</span> <span class="o">-</span><span class="n">ay</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vgNewName</span>
+<span class="c1">#激活卷组vsNewName，此时你也并不能使用，需要挂载</span>
+<span class="n">lvscan</span>
+<span class="c1">#查看现在的激活状态</span>
+<span class="n">mount</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vgNewName</span> <span class="o">/</span><span class="n">somePoint</span>
+<span class="c1">#挂载LVM到挂载点，这样就可以访问了</span>
+<span class="n">umount</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vgNewName</span><span class="c1"># or usr &#39;umount /somePoint&#39;</span>
+<span class="c1">#卸载LVM卷组</span>
+<span class="n">vgchange</span> <span class="o">-</span><span class="n">an</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">vgNewName</span>
+<span class="c1">#将卷组修改成不激活状态</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -453,6 +482,8 @@ vgchange <span style="color:#f92672">-</span>an <span style="color:#f92672">/</s
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -526,7 +557,7 @@ vgchange <span style="color:#f92672">-</span>an <span style="color:#f92672">/</s
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -595,7 +626,7 @@ vgchange <span style="color:#f92672">-</span>an <span style="color:#f92672">/</s
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

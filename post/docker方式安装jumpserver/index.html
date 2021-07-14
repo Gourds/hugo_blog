@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/" />
+<link rel="canonical" href="https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,14 +63,14 @@
 <meta property="og:title" content="Docker方式安装Jumpserver" />
 <meta property="og:description" content="之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的【github】上都有。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-11-27T15:00:00+00:00" />
 <meta property="article:modified_time" content="2018-11-27T15:00:00+00:00" />
 
 <meta itemprop="name" content="Docker方式安装Jumpserver">
 <meta itemprop="description" content="之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的【github】上都有。"><meta itemprop="datePublished" content="2018-11-27T15:00:00+00:00" />
 <meta itemprop="dateModified" content="2018-11-27T15:00:00+00:00" />
-<meta itemprop="wordCount" content="583">
+<meta itemprop="wordCount" content="579">
 <meta itemprop="keywords" content="Jumpserver,Docker," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker方式安装Jumpserver"/>
 <meta name="twitter:description" content="之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的【github】上都有。"/>
@@ -105,28 +105,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -324,7 +324,8 @@
           2018-11-27
         </time>
         
-        
+        <span class="more-meta"> 579 words </span>
+          <span class="more-meta"> 2 min read </span>
 
         
         
@@ -365,75 +366,168 @@
 <li>docker-compose.yml （编排配置）</li>
 </ul>
 <p><strong>Mysql配置文件</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">[<span style="color:#ae81ff">mysqld]</span>
-<span style="color:#ae81ff">character-set-server = utf8</span>
-<span style="color:#ae81ff">collation-server = utf8_unicode_ci</span>
-<span style="color:#ae81ff">skip-character-set-client-handshake</span>
-</code></pre></div><p><strong>使用的docker-compose如下</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
-
-<span style="color:#f92672">services</span>:
-  <span style="color:#f92672">db</span>:
-    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mysql:5.7.23</span>
-    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-    <span style="color:#f92672">container_name</span>: <span style="color:#e6db74">&#34;mysql_jms&#34;</span>
-    <span style="color:#f92672">environment</span>:
-      <span style="color:#f92672">MYSQL_ROOT_PASSWORD</span>: <span style="color:#ae81ff">123456</span>
-      <span style="color:#f92672">MYSQL_DATABASE</span>: <span style="color:#ae81ff">jumpserver</span>
-      <span style="color:#f92672">MYSQL_USER</span>: <span style="color:#ae81ff">jumpserver</span>
-      <span style="color:#f92672">MYSQL_PASSWORD</span>: <span style="color:#ae81ff">123456</span>
-    <span style="color:#f92672">ports</span>:
-      - <span style="color:#ae81ff">3306</span>:<span style="color:#ae81ff">3306</span>
-    <span style="color:#f92672">volumes</span>:
-      - <span style="color:#ae81ff">/data/jumpserver-data/mysql:/var/lib/mysql</span>
-      - <span style="color:#ae81ff">/data/docker-app/jms/my.cnf:/etc/mysql/conf.d/custom.cnf</span>
-    <span style="color:#f92672">networks</span>:
-      - <span style="color:#e6db74">&#34;jumpservernet&#34;</span>
-  <span style="color:#f92672">redis</span>:
-    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">redis:3</span>
-    <span style="color:#f92672">container_name</span>: <span style="color:#e6db74">&#34;redis_jms&#34;</span>
-    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-    <span style="color:#f92672">ports</span>:
-      - <span style="color:#ae81ff">6379</span>:<span style="color:#ae81ff">6379</span>
-    <span style="color:#f92672">volumes</span>:
-      - <span style="color:#ae81ff">/data/jumpserver-data/redis:/data</span>
-    <span style="color:#f92672">networks</span>:
-      - <span style="color:#e6db74">&#34;jumpservernet&#34;</span>
-  <span style="color:#f92672">jumpserver</span>:
-    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">wojiushixiaobai/jumpserver:1.4.3</span>
-    <span style="color:#f92672">container_name</span>: <span style="color:#e6db74">&#34;jms_v1.4.3&#34;</span>
-    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
-    <span style="color:#f92672">depends_on</span>:
-      - <span style="color:#ae81ff">db</span>
-      - <span style="color:#ae81ff">redis</span>
-    <span style="color:#f92672">environment</span>:
-      <span style="color:#f92672">DB_ENGINE</span>: <span style="color:#ae81ff">mysql</span>
-      <span style="color:#f92672">DB_HOST</span>: <span style="color:#ae81ff">db</span>
-      <span style="color:#f92672">DB_PORT</span>: <span style="color:#ae81ff">3306</span>
-      <span style="color:#f92672">DB_USER</span>: <span style="color:#ae81ff">jumpserver</span>
-      <span style="color:#f92672">DB_PASSWORD</span>: <span style="color:#ae81ff">123456</span>
-      <span style="color:#f92672">DB_NAME</span>: <span style="color:#ae81ff">jumpserver</span>
-      <span style="color:#f92672">REDIS_HOST</span>: <span style="color:#ae81ff">redis</span>
-      <span style="color:#f92672">REDIS_PORT</span>: <span style="color:#ae81ff">6379</span>
-    <span style="color:#f92672">ports</span>:
-      - <span style="color:#ae81ff">8080</span>:<span style="color:#ae81ff">80</span>
-      - <span style="color:#ae81ff">2222</span>:<span style="color:#ae81ff">2222</span>
-    <span style="color:#f92672">volumes</span>:
-      - <span style="color:#ae81ff">/data/jumpserver-data/jms_data/jms:/opt/jumpserver/data</span>
-      - <span style="color:#ae81ff">/data/jumpserver-data/jms_data/coco_keys:/opt/coco/keys</span>
-      - <span style="color:#ae81ff">/data/jumpserver-data/jms_data/guacamole:/config/guacamole/keys</span>
-      - <span style="color:#ae81ff">/data/jumpserver-data/jms_data/mysql:/var/lib/mysql</span>
-    <span style="color:#f92672">networks</span>:
-      - <span style="color:#e6db74">&#34;jumpservernet&#34;</span>
-
-<span style="color:#f92672">networks</span>:
-  <span style="color:#f92672">jumpservernet</span>:
-    <span style="color:#f92672">driver</span>: <span style="color:#ae81ff">bridge</span>
-</code></pre></div><h3 id="故障排查">故障排查</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="p">[</span><span class="l">mysqld]</span><span class="w">
+</span><span class="w"></span><span class="l">character-set-server = utf8</span><span class="w">
+</span><span class="w"></span><span class="l">collation-server = utf8_unicode_ci</span><span class="w">
+</span><span class="w"></span><span class="l">skip-character-set-client-handshake</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><p><strong>使用的docker-compose如下</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">db</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">mysql:5.7.23</span><span class="w">
+</span><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;mysql_jms&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">MYSQL_ROOT_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="m">123456</span><span class="w">
+</span><span class="w">      </span><span class="nt">MYSQL_DATABASE</span><span class="p">:</span><span class="w"> </span><span class="l">jumpserver</span><span class="w">
+</span><span class="w">      </span><span class="nt">MYSQL_USER</span><span class="p">:</span><span class="w"> </span><span class="l">jumpserver</span><span class="w">
+</span><span class="w">      </span><span class="nt">MYSQL_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="m">123456</span><span class="w">
+</span><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="m">3306</span><span class="p">:</span><span class="m">3306</span><span class="w">
+</span><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">/data/jumpserver-data/mysql:/var/lib/mysql</span><span class="w">
+</span><span class="w">      </span>- <span class="l">/data/docker-app/jms/my.cnf:/etc/mysql/conf.d/custom.cnf</span><span class="w">
+</span><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;jumpservernet&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">redis</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">redis:3</span><span class="w">
+</span><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;redis_jms&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="m">6379</span><span class="p">:</span><span class="m">6379</span><span class="w">
+</span><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">/data/jumpserver-data/redis:/data</span><span class="w">
+</span><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;jumpservernet&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">jumpserver</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">wojiushixiaobai/jumpserver:1.4.3</span><span class="w">
+</span><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;jms_v1.4.3&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span><span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">db</span><span class="w">
+</span><span class="w">      </span>- <span class="l">redis</span><span class="w">
+</span><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">DB_ENGINE</span><span class="p">:</span><span class="w"> </span><span class="l">mysql</span><span class="w">
+</span><span class="w">      </span><span class="nt">DB_HOST</span><span class="p">:</span><span class="w"> </span><span class="l">db</span><span class="w">
+</span><span class="w">      </span><span class="nt">DB_PORT</span><span class="p">:</span><span class="w"> </span><span class="m">3306</span><span class="w">
+</span><span class="w">      </span><span class="nt">DB_USER</span><span class="p">:</span><span class="w"> </span><span class="l">jumpserver</span><span class="w">
+</span><span class="w">      </span><span class="nt">DB_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="m">123456</span><span class="w">
+</span><span class="w">      </span><span class="nt">DB_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">jumpserver</span><span class="w">
+</span><span class="w">      </span><span class="nt">REDIS_HOST</span><span class="p">:</span><span class="w"> </span><span class="l">redis</span><span class="w">
+</span><span class="w">      </span><span class="nt">REDIS_PORT</span><span class="p">:</span><span class="w"> </span><span class="m">6379</span><span class="w">
+</span><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="m">8080</span><span class="p">:</span><span class="m">80</span><span class="w">
+</span><span class="w">      </span>- <span class="m">2222</span><span class="p">:</span><span class="m">2222</span><span class="w">
+</span><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">/data/jumpserver-data/jms_data/jms:/opt/jumpserver/data</span><span class="w">
+</span><span class="w">      </span>- <span class="l">/data/jumpserver-data/jms_data/coco_keys:/opt/coco/keys</span><span class="w">
+</span><span class="w">      </span>- <span class="l">/data/jumpserver-data/jms_data/guacamole:/config/guacamole/keys</span><span class="w">
+</span><span class="w">      </span>- <span class="l">/data/jumpserver-data/jms_data/mysql:/var/lib/mysql</span><span class="w">
+</span><span class="w">    </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;jumpservernet&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">jumpservernet</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l">bridge</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="故障排查">故障排查</h3>
 <ul>
 <li>mysql问题(确认mysql编码正确)</li>
 </ul>
-<pre><code>mysql&gt; show variables like 'character%';
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">mysql&gt; show variables like &#39;character%&#39;;
 +--------------------------+----------------------------+
 | Variable_name            | Value                      |
 +--------------------------+----------------------------+
@@ -447,12 +541,21 @@
 | character_sets_dir       | /usr/share/mysql/charsets/ |
 +--------------------------+----------------------------+
 8 rows in set (0.01 sec)
-</code></pre><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>Docker的volume问题
 如果不将docker定义的volume挂载出来，测试阶段会多出很多无用的volume，按照上面的配置就没问题，下面贴一个可以方便删除指定volume的命令</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker volume ls | grep local |awk <span style="color:#e6db74">&#39;{print $2}&#39;</span> |xargs docker volume rm
-</code></pre></div><h3 id="参考链接">参考链接</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker volume ls <span class="p">|</span> grep <span class="nb">local</span> <span class="p">|</span>awk <span class="s1">&#39;{print $2}&#39;</span> <span class="p">|</span>xargs docker volume rm
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="参考链接">参考链接</h3>
 <ul>
 <li><a href="https://github.com/jumpserver/jumpserver">Jumpserver官网</a></li>
 <li><a href="https://github.com/jumpserver/Dockerfile">官方Dockerfile</a></li>
@@ -487,8 +590,8 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/jumpserver/">Jumpserver</a>
-          <a href="http://blog.gourds.site/tags/docker/">Docker</a>
+          <a href="https://blog.gourds.site/tags/jumpserver/">Jumpserver</a>
+          <a href="https://blog.gourds.site/tags/docker/">Docker</a>
           
         </div>
 
@@ -526,6 +629,8 @@
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -599,7 +704,7 @@
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -668,7 +773,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

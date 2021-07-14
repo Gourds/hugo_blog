@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/" />
+<link rel="canonical" href="https://blog.gourds.site/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,14 +63,14 @@
 <meta property="og:title" content="Tmux源码安装" />
 <meta property="og:description" content="**简述：**之前其实有写过一篇tmux的简单使用绍,但是不够详尽，而且当时也并没有出现几个问题，当yum不好使的时候，就要上源码了。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2016-08-12T12:26:51+00:00" />
 <meta property="article:modified_time" content="2016-08-12T12:26:51+00:00" />
 
 <meta itemprop="name" content="Tmux源码安装">
 <meta itemprop="description" content="**简述：**之前其实有写过一篇tmux的简单使用绍,但是不够详尽，而且当时也并没有出现几个问题，当yum不好使的时候，就要上源码了。"><meta itemprop="datePublished" content="2016-08-12T12:26:51+00:00" />
 <meta itemprop="dateModified" content="2016-08-12T12:26:51+00:00" />
-<meta itemprop="wordCount" content="459">
+<meta itemprop="wordCount" content="477">
 <meta itemprop="keywords" content="Linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tmux源码安装"/>
 <meta name="twitter:description" content="**简述：**之前其实有写过一篇tmux的简单使用绍,但是不够详尽，而且当时也并没有出现几个问题，当yum不好使的时候，就要上源码了。"/>
@@ -105,28 +105,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -324,7 +324,8 @@
           2016-08-12
         </time>
         
-        
+        <span class="more-meta"> 477 words </span>
+          <span class="more-meta"> 1 min read </span>
 
         
         
@@ -361,33 +362,69 @@
 <ul>
 <li>先装开发库</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install gcc kernel-devel make ncurses-devel
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install gcc kernel-devel make ncurses-devel
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>安装libevent库</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
 tar xvf libevent-2.0.21-stable.tar.gz
-cd libevent-2.0.21-stable
+<span class="nb">cd</span> libevent-2.0.21-stable
 ./configure
-make <span style="color:#f92672">&amp;&amp;</span> make install
-<span style="color:#75715e">#注意了，有个坑，这时libevent并咩有安装在默认路径，所以会报错的，因此需要做个软链或者直接cp一份到默认路径，我的环境是CentOS6.7—x64的，所以就放到/usr/lib64下面</span>
+make <span class="o">&amp;&amp;</span> make install
+<span class="c1">#注意了，有个坑，这时libevent并咩有安装在默认路径，所以会报错的，因此需要做个软链或者直接cp一份到默认路径，我的环境是CentOS6.7—x64的，所以就放到/usr/lib64下面</span>
 cp libevent-2.0.21-stable/.libs/libevent-2.0.so.5 /usr/lib64/
-<span style="color:#75715e">#顺便贴一句报错--&gt;tmux: error while loading shared libraries: libevent-2.0.so.5: cannot open shared object file: No such file or directory</span>
-</code></pre></div><h4 id="关于tmux源码">关于tmux源码</h4>
+<span class="c1">#顺便贴一句报错--&gt;tmux: error while loading shared libraries: libevent-2.0.so.5: cannot open shared object file: No such file or directory</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="关于tmux源码">关于tmux源码</h4>
 <p>现在装tmux就比较顺滑了</p>
 <ul>
 <li>下载tmux源码，方式有多种（tmux、curl、git均可）</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#这里我使用了2.0版本</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#这里我使用了2.0版本</span>
 wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz
-<span style="color:#75715e">#curl -OL http://downloads.sourceforge.net/tmux/tmux-1.9a.tar.gz</span>
-<span style="color:#75715e">#git clone git://git.code.sf.net/p/tmux/tmux-code</span>
-<span style="color:#75715e">#根据下载源码具体情况安装</span>
+<span class="c1">#curl -OL http://downloads.sourceforge.net/tmux/tmux-1.9a.tar.gz</span>
+<span class="c1">#git clone git://git.code.sf.net/p/tmux/tmux-code</span>
+<span class="c1">#根据下载源码具体情况安装</span>
 tar xvf tmux-2.0.tar.gz
-cd tmux-2.0
+<span class="nb">cd</span> tmux-2.0
 ./configure
-make <span style="color:#f92672">&amp;&amp;</span> make install
-</code></pre></div><h3 id="参考文档">参考文档</h3>
+make <span class="o">&amp;&amp;</span> make install
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="参考文档">参考文档</h3>
 <p>ok, 开始愉快的使用吧,简单使用命令参照我之前的那一篇就可以
 <a href="https://tmux.github.io/">Tmux官方</a>
 <a href="http://cenalulu.github.io/linux/tmux/">很好的普及文章</a>
@@ -421,7 +458,7 @@ make <span style="color:#f92672">&amp;&amp;</span> make install
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/linux/">Linux</a>
+          <a href="https://blog.gourds.site/tags/linux/">Linux</a>
           
         </div>
 
@@ -459,6 +496,8 @@ make <span style="color:#f92672">&amp;&amp;</span> make install
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -532,7 +571,7 @@ make <span style="color:#f92672">&amp;&amp;</span> make install
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -601,7 +640,7 @@ make <span style="color:#f92672">&amp;&amp;</span> make install
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

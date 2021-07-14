@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/iptables%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" />
+<link rel="canonical" href="https://blog.gourds.site/post/iptables%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -64,7 +64,7 @@
 <meta property="og:description" content="
 iptabels还是很实用的，分享下我的整理笔记" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/iptables%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/iptables%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2016-11-17T11:23:17+00:00" />
 <meta property="article:modified_time" content="2016-11-17T11:23:17+00:00" />
 
@@ -72,7 +72,7 @@ iptabels还是很实用的，分享下我的整理笔记" />
 <meta itemprop="description" content="
 iptabels还是很实用的，分享下我的整理笔记"><meta itemprop="datePublished" content="2016-11-17T11:23:17+00:00" />
 <meta itemprop="dateModified" content="2016-11-17T11:23:17+00:00" />
-<meta itemprop="wordCount" content="873">
+<meta itemprop="wordCount" content="930">
 <meta itemprop="keywords" content="Iptables," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Iptables整理笔记"/>
 <meta name="twitter:description" content="
@@ -108,28 +108,28 @@ iptabels还是很实用的，分享下我的整理笔记"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -240,7 +240,7 @@ iptabels还是很实用的，分享下我的整理笔记"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -251,7 +251,7 @@ iptabels还是很实用的，分享下我的整理笔记"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -262,7 +262,7 @@ iptabels还是很实用的，分享下我的整理笔记"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -273,7 +273,7 @@ iptabels还是很实用的，分享下我的整理笔记"/>
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -327,7 +327,8 @@ iptabels还是很实用的，分享下我的整理笔记"/>
           2016-11-17
         </time>
         
-        
+        <span class="more-meta"> 930 words </span>
+          <span class="more-meta"> 2 min read </span>
 
         
         
@@ -365,65 +366,134 @@ iptabels还是很实用的，分享下我的整理笔记"/>
       <p><img src="http://img.arvon.top:80/images/2019/08/12/20161117-iptables-1.png" alt="20161117-iptables-1">
 iptabels还是很实用的，分享下我的整理笔记</p>
 <h2 id="场景规则">场景规则</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#对本机lo回环地址放开</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#对本机lo回环地址放开</span>
 iptables -I INPUT -i lo -j ACCEPT
-<span style="color:#75715e">#对本机访问外部网络放开(ESTABLISHED表示tcp的一种状态，RELETED为ftp的一种状态)</span>
+<span class="c1">#对本机访问外部网络放开(ESTABLISHED表示tcp的一种状态，RELETED为ftp的一种状态)</span>
 iptabels -I INPUT -m state --state ESTABLISHED,RELETED -j ACCEPT
-<span style="color:#75715e">#对所有地址开放本机tcp（80，22，10-21）端口</span>
-iptabels -I INPUT -p tcp --dport <span style="color:#ae81ff">22</span> -j ACCEPT
-iptabels -I INPUT -p tcp --dports 10:21 -j ACCEPT -m comment --comment <span style="color:#e6db74">&#34; 2015-09-24 by arvon&#34;</span>
-<span style="color:#75715e">#允许所有的地址开放本机的基于ICMP协议的数据包访问</span>
+<span class="c1">#对所有地址开放本机tcp（80，22，10-21）端口</span>
+iptabels -I INPUT -p tcp --dport <span class="m">22</span> -j ACCEPT
+iptabels -I INPUT -p tcp --dports 10:21 -j ACCEPT -m comment --comment <span class="s2">&#34; 2015-09-24 by arvon&#34;</span>
+<span class="c1">#允许所有的地址开放本机的基于ICMP协议的数据包访问</span>
 iptables -I INPUT -p icmp -j ACCEPT
-<span style="color:#75715e">#ftp主动模式下规则</span>
+<span class="c1">#ftp主动模式下规则</span>
 iptables -I INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
-iptables -I INPUT -p tcp --dport <span style="color:#ae81ff">21</span> -j ACCEPT
-<span style="color:#75715e">#ftp被动模式下规则</span>
-iptables -I INPUT -p tcp --dport <span style="color:#ae81ff">21</span> -j ACCEPT
-  <span style="color:#75715e">##vim /etc/vsftpd/vsftpd.conf</span>
-  <span style="color:#75715e">#pasv_min_port=50000</span>
-  <span style="color:#75715e">#pasv_max_port=60000</span>
+iptables -I INPUT -p tcp --dport <span class="m">21</span> -j ACCEPT
+<span class="c1">#ftp被动模式下规则</span>
+iptables -I INPUT -p tcp --dport <span class="m">21</span> -j ACCEPT
+  <span class="c1">##vim /etc/vsftpd/vsftpd.conf</span>
+  <span class="c1">#pasv_min_port=50000</span>
+  <span class="c1">#pasv_max_port=60000</span>
 iptables -I INPUT -p tcp --dports 50000:60000 -j ACCEPT
-<span style="color:#75715e">#ftp被动模式下规则二</span>
+<span class="c1">#ftp被动模式下规则二</span>
 iptables —I INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
-iptables -I INPUT -p tcp --dport <span style="color:#ae81ff">21</span> -j ACCEPT
-  <span style="color:#75715e">#modprobe nf_conntrack_ftp #临时开启内核连接追踪模块ftp</span>
-  <span style="color:#75715e">#vim /etc/sysconfig/iptables-config    #开机自动加载</span>
-  <span style="color:#75715e">##IPTABLES_MODULES=&#34;nf_conntrack_ftp&#34;</span>
-<span style="color:#75715e">#防CC攻击</span>
-<span style="color:#75715e">#对源地址为12并且并发大于10的数据包进行拒绝并返回错误信息</span>
-iptables -I INPUT -p tcp --dport <span style="color:#ae81ff">80</span> -s 192.168.1.12 -m connlimit --connlimit-above <span style="color:#ae81ff">10</span> -j REJECT
-<span style="color:#75715e">#当icmp不超过10个时放行，当超过10个每分钟放行1个</span>
-iptables -A INPUT -p icmp -m limit --limit 1/m --limit-burst <span style="color:#ae81ff">10</span> -j ACCEPT
+iptables -I INPUT -p tcp --dport <span class="m">21</span> -j ACCEPT
+  <span class="c1">#modprobe nf_conntrack_ftp #临时开启内核连接追踪模块ftp</span>
+  <span class="c1">#vim /etc/sysconfig/iptables-config    #开机自动加载</span>
+  <span class="c1">##IPTABLES_MODULES=&#34;nf_conntrack_ftp&#34;</span>
+<span class="c1">#防CC攻击</span>
+<span class="c1">#对源地址为12并且并发大于10的数据包进行拒绝并返回错误信息</span>
+iptables -I INPUT -p tcp --dport <span class="m">80</span> -s 192.168.1.12 -m connlimit --connlimit-above <span class="m">10</span> -j REJECT
+<span class="c1">#当icmp不超过10个时放行，当超过10个每分钟放行1个</span>
+iptables -A INPUT -p icmp -m limit --limit 1/m --limit-burst <span class="m">10</span> -j ACCEPT
 iptables -A INPUT -p icmp DROP
-<span style="color:#75715e">#防SYN攻击</span>
+<span class="c1">#防SYN攻击</span>
 iptables -N syn-flood
 iptables -A INPUT -p tcp --syn -j syn-flood
-iptables -I syn-flood -p tcp -m limit --limit 3/s --limit-burst <span style="color:#ae81ff">6</span> -j RETURN
+iptables -I syn-flood -p tcp -m limit --limit 3/s --limit-burst <span class="m">6</span> -j RETURN
 iptables -A syn-flood -j REJECT
-<span style="color:#75715e">#转发</span>
+<span class="c1">#转发</span>
 iptables -A FORWARD -p tcp -s 10.10.0.0/24 -m multiport --dports 80,110,21 -j ACCEPT
-<span style="color:#75715e">#工作日工作时间禁止访问tencent的域名</span>
-iptables -I FORWARD -p udp --dport <span style="color:#ae81ff">53</span> -m string --string <span style="color:#e6db74">&#34;tencent&#34;</span> -m time --timestart 8:00 --timestop 12:00 --days Mon,Tue,Wed,Thu,Fri,Sat -j DROP
-<span style="color:#75715e">#内核参数调整</span>
-sysctl -w net.ipv4.ip_forward<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#75715e">#开启内核数据包转发功能</span>
-sysctl -w net.ipv4.tcp_syncookies<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#75715e">#开启cookies验证，一定程度防止syn攻击</span>
-</code></pre></div><h2 id="iptables命令">Iptables命令</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#列出所有规则</span>
+<span class="c1">#工作日工作时间禁止访问tencent的域名</span>
+iptables -I FORWARD -p udp --dport <span class="m">53</span> -m string --string <span class="s2">&#34;tencent&#34;</span> -m <span class="nb">time</span> --timestart 8:00 --timestop 12:00 --days Mon,Tue,Wed,Thu,Fri,Sat -j DROP
+<span class="c1">#内核参数调整</span>
+sysctl -w net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span> <span class="c1">#开启内核数据包转发功能</span>
+sysctl -w net.ipv4.tcp_syncookies<span class="o">=</span><span class="m">1</span> <span class="c1">#开启cookies验证，一定程度防止syn攻击</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="iptables命令">Iptables命令</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#列出所有规则</span>
 iptables -nVL
-<span style="color:#75715e">#添加规则</span>
+<span class="c1">#添加规则</span>
 iptables -I INPUT -s 192.168.1.0/24 -p tcp -m multiport --dport 22,80 -j ACCEPT
-<span style="color:#75715e">#删除一条规则</span>
+<span class="c1">#删除一条规则</span>
 iptables -D INPUT -p icmp -j ACCEPT
-iptables -D INPUT <span style="color:#ae81ff">2</span>
-<span style="color:#75715e">#清除所有规则</span>
+iptables -D INPUT <span class="m">2</span>
+<span class="c1">#清除所有规则</span>
 iptables -F
-<span style="color:#75715e">#SNAT</span>
+<span class="c1">#SNAT</span>
 iptables -t nat -A POSTROUTING -s 10.10.10.177.0/24 -j SNAT --to 10.10.188.111
-<span style="color:#75715e">#DNAT</span>
-iptables -t nat -A PREROUTING -d 10.10.188.111 -p tcp --dport <span style="color:#ae81ff">80</span> -j DNAT --to 10.10.177.222:80
-<span style="color:#75715e">#在最后添加默认拒绝的规则</span>
+<span class="c1">#DNAT</span>
+iptables -t nat -A PREROUTING -d 10.10.188.111 -p tcp --dport <span class="m">80</span> -j DNAT --to 10.10.177.222:80
+<span class="c1">#在最后添加默认拒绝的规则</span>
 iptables -P INPUT DROP
-</code></pre></div><h2 id="iptables规则组成">iptables规则组成</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="iptables规则组成">iptables规则组成</h2>
 <ul>
 <li>Usage： 四张表 + 五条链(hook point) + 规则</li>
 </ul>
@@ -495,7 +565,7 @@ iptables -P INPUT DROP
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/iptables/">Iptables</a>
+          <a href="https://blog.gourds.site/tags/iptables/">Iptables</a>
           
         </div>
 
@@ -533,6 +603,8 @@ iptables -P INPUT DROP
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -606,7 +678,7 @@ iptables -P INPUT DROP
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -675,7 +747,7 @@ iptables -P INPUT DROP
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

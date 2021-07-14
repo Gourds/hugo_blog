@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/lsof%E5%91%BD%E4%BB%A4/" />
+<link rel="canonical" href="https://blog.gourds.site/post/lsof%E5%91%BD%E4%BB%A4/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,7 +66,7 @@ date: 2015-08-21 10:37:24
 tags: [Command,Tools]
 **简介：**lsof命令既（list open files）Lsof 是遵从Unix 哲学的典范，它只做一件事情，并且做的相当完美——它可以列出某个进程打开的所有文件信息。打开的文件可能是普通的文件，目录，NFS文件，块文件，字符文件，共享库，常规管道，明明管道，符号链接，Socket流，网络Socket，UNIX域Socket，以及其它更多。因为Unix系统中几乎所有东西都是文件，你可以想象lsof该有多有用。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/lsof%E5%91%BD%E4%BB%A4/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/lsof%E5%91%BD%E4%BB%A4/" /><meta property="article:section" content="post" />
 
 
 
@@ -76,7 +76,7 @@ date: 2015-08-21 10:37:24
 tags: [Command,Tools]
 **简介：**lsof命令既（list open files）Lsof 是遵从Unix 哲学的典范，它只做一件事情，并且做的相当完美——它可以列出某个进程打开的所有文件信息。打开的文件可能是普通的文件，目录，NFS文件，块文件，字符文件，共享库，常规管道，明明管道，符号链接，Socket流，网络Socket，UNIX域Socket，以及其它更多。因为Unix系统中几乎所有东西都是文件，你可以想象lsof该有多有用。">
 
-<meta itemprop="wordCount" content="1614">
+<meta itemprop="wordCount" content="1718">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: lsof命令
@@ -114,28 +114,28 @@ tags: [Command,Tools]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -246,7 +246,7 @@ tags: [Command,Tools]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -257,7 +257,7 @@ tags: [Command,Tools]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -268,7 +268,7 @@ tags: [Command,Tools]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -279,7 +279,7 @@ tags: [Command,Tools]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -333,7 +333,8 @@ tags: [Command,Tools]
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 1718 words </span>
+          <span class="more-meta"> 4 min read </span>
 
         
         
@@ -376,160 +377,372 @@ tags: [Command,Tools]</h2>
 <h3 id="安装">安装</h3>
 <ul>
 <li>yum安装
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install lsof -y
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">yum install lsof -y
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>源码安装
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">wget http://down1.chinaunix.net/distfiles/lsof_4.76.tar.gz
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">wget http://down1.chinaunix.net/distfiles/lsof_4.76.tar.gz
 tar -zxvf lsof.tar.gz
-cd lsof_4.78
+<span class="nb">cd</span> lsof_4.78
 tar xvf lsof_4.78_srv.tar
 ./configure lunux
 make
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="例子">例子</h3>
 <ul>
 <li>lsof
 不加参数的输出，是列出所有进程打开的所有文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">arvon@Mo:~&gt; lsof
-lsof: WARNING: can<span style="color:#960050;background-color:#1e0010">&#39;</span>t stat<span style="color:#f92672">()</span> fuse.gvfs-fuse-daemon file system /root/.gvfs
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">arvon@Mo:~&gt; lsof
+lsof: WARNING: can<span class="err">&#39;</span>t stat<span class="o">()</span> fuse.gvfs-fuse-daemon file system /root/.gvfs
     Output information may be incomplete.
 COMMAND     PID         USER        FD      	TYPE 		DEVICE 			SIZE/OFF   NODE 	NAME
 进程的名称	进程标识符	进程所有者	文件描述符	文件类型	指定磁盘的名称		文件的大小 索引节点 打开文件的确切名称
-init          <span style="color:#ae81ff">1</span>       root  cwd   unknown                        /proc/1/cwd <span style="color:#f92672">(</span>readlink: Permission denied<span style="color:#f92672">)</span>
-init          <span style="color:#ae81ff">1</span>       root  rtd   unknown                        /proc/1/root <span style="color:#f92672">(</span>readlink: Permission denied<span style="color:#f92672">)</span>
-init          <span style="color:#ae81ff">1</span>       root  txt   unknown                        /proc/1/exe <span style="color:#f92672">(</span>readlink: Permission denied<span style="color:#f92672">)</span>
-init          <span style="color:#ae81ff">1</span>       root NOFD                                  /proc/1/fd <span style="color:#f92672">(</span>opendir: Permission denied<span style="color:#f92672">)</span>
-</code></pre></div></li>
+init          <span class="m">1</span>       root  cwd   unknown                        /proc/1/cwd <span class="o">(</span>readlink: Permission denied<span class="o">)</span>
+init          <span class="m">1</span>       root  rtd   unknown                        /proc/1/root <span class="o">(</span>readlink: Permission denied<span class="o">)</span>
+init          <span class="m">1</span>       root  txt   unknown                        /proc/1/exe <span class="o">(</span>readlink: Permission denied<span class="o">)</span>
+init          <span class="m">1</span>       root NOFD                                  /proc/1/fd <span class="o">(</span>opendir: Permission denied<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>lsof /path/to/file /path/to/file2
 找出谁在使用某个文件,可一次指定多个文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">arvon@Mo:~&gt; lsof /home/arvon
-lsof: WARNING: can<span style="color:#960050;background-color:#1e0010">&#39;</span>t stat<span style="color:#f92672">()</span> fuse.gvfs-fuse-daemon file system /root/.gvfs
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">arvon@Mo:~&gt; lsof /home/arvon
+lsof: WARNING: can<span class="err">&#39;</span>t stat<span class="o">()</span> fuse.gvfs-fuse-daemon file system /root/.gvfs
     Output information may be incomplete.
 COMMAND   PID  USER   FD   TYPE DEVICE SIZE/OFF   NODE NAME
-bash    <span style="color:#ae81ff">24519</span> arvon  cwd    DIR    8,2     <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">463289</span> /home/arvon
-lsof    <span style="color:#ae81ff">25011</span> arvon  cwd    DIR    8,2     <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">463289</span> /home/arvon
-lsof    <span style="color:#ae81ff">25012</span> arvon  cwd    DIR    8,2     <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">463289</span> /home/arvon
-</code></pre></div></li>
+bash    <span class="m">24519</span> arvon  cwd    DIR    8,2     <span class="m">4096</span> <span class="m">463289</span> /home/arvon
+lsof    <span class="m">25011</span> arvon  cwd    DIR    8,2     <span class="m">4096</span> <span class="m">463289</span> /home/arvon
+lsof    <span class="m">25012</span> arvon  cwd    DIR    8,2     <span class="m">4096</span> <span class="m">463289</span> /home/arvon
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>lsof +D /usr/lib
 加上+D参数，lsof会对指定目录进行递归查找，注意这个参数要比grep版本慢
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">arvon@Mo:~&gt; lsof +D /usr/lib
-lsof: WARNING: can<span style="color:#960050;background-color:#1e0010">&#39;</span>t stat<span style="color:#f92672">()</span> fuse.gvfs-fuse-daemon file system /root/.gvfs
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">arvon@Mo:~&gt; lsof +D /usr/lib
+lsof: WARNING: can<span class="err">&#39;</span>t stat<span class="o">()</span> fuse.gvfs-fuse-daemon file system /root/.gvfs
     Output information may be incomplete.
 COMMAND   PID  USER  FD   TYPE DEVICE SIZE/OFF   NODE NAME
-bash    <span style="color:#ae81ff">24519</span> arvon mem    REG    8,2   <span style="color:#ae81ff">256324</span> <span style="color:#ae81ff">445427</span> /usr/lib/locale/es_VE.utf8/LC_CTYPE
-bash    <span style="color:#ae81ff">24519</span> arvon mem    REG    8,2       <span style="color:#ae81ff">54</span> <span style="color:#ae81ff">445420</span> /usr/lib/locale/om_ET/LC_NUMERIC
-bash    <span style="color:#ae81ff">24519</span> arvon mem    REG    8,2     <span style="color:#ae81ff">2454</span> <span style="color:#ae81ff">431855</span> /usr/lib/locale/en_US.utf8/LC_TIME
-</code></pre></div></li>
+bash    <span class="m">24519</span> arvon mem    REG    8,2   <span class="m">256324</span> <span class="m">445427</span> /usr/lib/locale/es_VE.utf8/LC_CTYPE
+bash    <span class="m">24519</span> arvon mem    REG    8,2       <span class="m">54</span> <span class="m">445420</span> /usr/lib/locale/om_ET/LC_NUMERIC
+bash    <span class="m">24519</span> arvon mem    REG    8,2     <span class="m">2454</span> <span class="m">431855</span> /usr/lib/locale/en_US.utf8/LC_TIME
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>查看文件、设备被哪些进程占用
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof /dev/tty1</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof /dev/tty1</span>
 COMMAND     PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-bash       <span style="color:#ae81ff">1770</span> jian    0u   CHR    4,1      0t0 <span style="color:#ae81ff">1045</span> /dev/tty1
-bash       <span style="color:#ae81ff">1770</span> jian    1u   CHR    4,1      0t0 <span style="color:#ae81ff">1045</span> /dev/tty1
-bash       <span style="color:#ae81ff">1770</span> jian    2u   CHR    4,1      0t0 <span style="color:#ae81ff">1045</span> /dev/tty1
-bash       <span style="color:#ae81ff">1770</span> jian  255u   CHR    4,1      0t0 <span style="color:#ae81ff">1045</span> /dev/tty1
-startx     <span style="color:#ae81ff">1845</span> jian    0u   CHR    4,1      0t0 <span style="color:#ae81ff">1045</span> /dev/tty1
-startx     <span style="color:#ae81ff">1845</span> jian    1u   CHR    4,1      0t0 <span style="color:#ae81ff">1045</span> /dev/tty1
+bash       <span class="m">1770</span> jian    0u   CHR    4,1      0t0 <span class="m">1045</span> /dev/tty1
+bash       <span class="m">1770</span> jian    1u   CHR    4,1      0t0 <span class="m">1045</span> /dev/tty1
+bash       <span class="m">1770</span> jian    2u   CHR    4,1      0t0 <span class="m">1045</span> /dev/tty1
+bash       <span class="m">1770</span> jian  255u   CHR    4,1      0t0 <span class="m">1045</span> /dev/tty1
+startx     <span class="m">1845</span> jian    0u   CHR    4,1      0t0 <span class="m">1045</span> /dev/tty1
+startx     <span class="m">1845</span> jian    1u   CHR    4,1      0t0 <span class="m">1045</span> /dev/tty1
 ...
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>监控文件系统：指定目录、挂载点，可以看到有哪些进程打开了其下的文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof /data/</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof /data/</span>
 COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-bash    <span style="color:#ae81ff">15983</span> jian  cwd    DIR    8,5     <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">8252</span> /data/backup
+bash    <span class="m">15983</span> jian  cwd    DIR    8,5     <span class="m">4096</span> <span class="m">8252</span> /data/backup
 ...
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>列出被指定进程名打开的文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof -c ssh -c init</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof -c ssh -c init</span>
 COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF   NODE NAME
-init         <span style="color:#ae81ff">1</span>       root  txt    REG        8,1   <span style="color:#ae81ff">124704</span>  <span style="color:#ae81ff">917562</span> /sbin/init
-init         <span style="color:#ae81ff">1</span>       root  mem    REG        8,1  <span style="color:#ae81ff">1434180</span> <span style="color:#ae81ff">1442625</span> /lib/i386-linux-gnu/libc-2.13.so
-init         <span style="color:#ae81ff">1</span>       root  mem    REG        8,1    <span style="color:#ae81ff">30684</span> <span style="color:#ae81ff">1442694</span> /lib/i386-linux-gnu/librt-2.13.so
+init         <span class="m">1</span>       root  txt    REG        8,1   <span class="m">124704</span>  <span class="m">917562</span> /sbin/init
+init         <span class="m">1</span>       root  mem    REG        8,1  <span class="m">1434180</span> <span class="m">1442625</span> /lib/i386-linux-gnu/libc-2.13.so
+init         <span class="m">1</span>       root  mem    REG        8,1    <span class="m">30684</span> <span class="m">1442694</span> /lib/i386-linux-gnu/librt-2.13.so
 ...
-ssh-agent <span style="color:#ae81ff">1528</span> lakshmanan    1u   CHR        1,3      0t0    <span style="color:#ae81ff">4369</span> /dev/null
-ssh-agent <span style="color:#ae81ff">1528</span> lakshmanan    2u   CHR        1,3      0t0    <span style="color:#ae81ff">4369</span> /dev/null
-ssh-agent <span style="color:#ae81ff">1528</span> lakshmanan    3u  unix 0xdf70e240      0t0   <span style="color:#ae81ff">10464</span> /tmp/ssh-sUymKXxw1495/agent.1495
-</code></pre></div></li>
+ssh-agent <span class="m">1528</span> lakshmanan    1u   CHR        1,3      0t0    <span class="m">4369</span> /dev/null
+ssh-agent <span class="m">1528</span> lakshmanan    2u   CHR        1,3      0t0    <span class="m">4369</span> /dev/null
+ssh-agent <span class="m">1528</span> lakshmanan    3u  unix 0xdf70e240      0t0   <span class="m">10464</span> /tmp/ssh-sUymKXxw1495/agent.1495
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>监控进程：指定进程号，可以查看该进程打开的文件：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof -p 2064</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof -p 2064</span>
 COMMAND  PID USER   FD   TYPE     DEVICE SIZE/OFF    NODE NAME
-firefox <span style="color:#ae81ff">2064</span> jian  cwd    DIR        8,6     <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">1571780</span> /home/jian
-firefox <span style="color:#ae81ff">2064</span> jian  rtd    DIR        8,6     <span style="color:#ae81ff">4096</span>       <span style="color:#ae81ff">2</span> /
-firefox <span style="color:#ae81ff">2064</span> jian  txt    REG        8,6    <span style="color:#ae81ff">44224</span> <span style="color:#ae81ff">1985670</span> /usr/lib/firefox-12.0/firefox
-firefox <span style="color:#ae81ff">2064</span> jian  mem    REG        8,6 <span style="color:#ae81ff">14707012</span>  <span style="color:#ae81ff">925361</span> /usr/share/fonts/chinese/msyhbd.ttf
-firefox <span style="color:#ae81ff">2064</span> jian  mem    REG        8,6 <span style="color:#ae81ff">15067744</span>  <span style="color:#ae81ff">925362</span> /usr/share/fonts/chinese/msyh.ttf
-firefox <span style="color:#ae81ff">2064</span> jian  mem    REG        8,6 <span style="color:#ae81ff">16791251</span> <span style="color:#ae81ff">1701681</span> /usr/share/fonts/wenquanyi/wqy-zenhei.ttc
-firefox <span style="color:#ae81ff">2064</span> jian  mem    REG       0,16 <span style="color:#ae81ff">67108904</span>   <span style="color:#ae81ff">10203</span> /dev/shm/pulse-shm-3021850167
+firefox <span class="m">2064</span> jian  cwd    DIR        8,6     <span class="m">4096</span> <span class="m">1571780</span> /home/jian
+firefox <span class="m">2064</span> jian  rtd    DIR        8,6     <span class="m">4096</span>       <span class="m">2</span> /
+firefox <span class="m">2064</span> jian  txt    REG        8,6    <span class="m">44224</span> <span class="m">1985670</span> /usr/lib/firefox-12.0/firefox
+firefox <span class="m">2064</span> jian  mem    REG        8,6 <span class="m">14707012</span>  <span class="m">925361</span> /usr/share/fonts/chinese/msyhbd.ttf
+firefox <span class="m">2064</span> jian  mem    REG        8,6 <span class="m">15067744</span>  <span class="m">925362</span> /usr/share/fonts/chinese/msyh.ttf
+firefox <span class="m">2064</span> jian  mem    REG        8,6 <span class="m">16791251</span> <span class="m">1701681</span> /usr/share/fonts/wenquanyi/wqy-zenhei.ttc
+firefox <span class="m">2064</span> jian  mem    REG       0,16 <span class="m">67108904</span>   <span class="m">10203</span> /dev/shm/pulse-shm-3021850167
 ...
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>当你想要杀掉某个用户所有打开的文件、设备，你可以这样：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kill -9 <span style="color:#e6db74">`</span>lsof -t -u lakshmanan<span style="color:#e6db74">`</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">kill</span> -9 <span class="sb">`</span>lsof -t -u lakshmanan<span class="sb">`</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="监控网络">监控网络</h3>
 <ul>
 <li>监控网络:查看<code>指定端口有哪些进程在使用</code>（lsof -i 列出所有的打开的网络连接）：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof -i:22</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof -i:22</span>
 COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-sshd    <span style="color:#ae81ff">1569</span> root    3u  IPv4  <span style="color:#ae81ff">10303</span>      0t0  TCP *:ssh <span style="color:#f92672">(</span>LISTEN<span style="color:#f92672">)</span>
-sshd    <span style="color:#ae81ff">1569</span> root    4u  IPv6  <span style="color:#ae81ff">10305</span>      0t0  TCP *:ssh <span style="color:#f92672">(</span>LISTEN<span style="color:#f92672">)</span>
+sshd    <span class="m">1569</span> root    3u  IPv4  <span class="m">10303</span>      0t0  TCP *:ssh <span class="o">(</span>LISTEN<span class="o">)</span>
+sshd    <span class="m">1569</span> root    4u  IPv6  <span class="m">10305</span>      0t0  TCP *:ssh <span class="o">(</span>LISTEN<span class="o">)</span>
 ...
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>监控网络：列出被某个进程打开所有的网络文件：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">lsof -i -a -p <span style="color:#ae81ff">234</span>
-<span style="color:#75715e">#lsof -i -a -c ssh</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">lsof -i -a -p <span class="m">234</span>
+<span class="c1">#lsof -i -a -c ssh</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>监控网络：列出所有 tcp、udp 连接：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">lsof -i tcp;
-lsof -i udp;
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">lsof -i tcp<span class="p">;</span>
+lsof -i udp<span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>列出所有NFS文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">lsof -N -u lakshmanan -a   
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">lsof -N -u lakshmanan -a   
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>查看指定网口有哪些进程在使用
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof -i@192.168.1.91</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof -i@192.168.1.91</span>
 COMMAND     PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-skype      <span style="color:#ae81ff">1909</span> jian   54u  IPv4   <span style="color:#ae81ff">9116</span>      0t0  TCP 192.168.1.91:40640-&gt;64.4.23.153:40047 <span style="color:#f92672">(</span>ESTABLISHED<span style="color:#f92672">)</span>
-pidgin     <span style="color:#ae81ff">1973</span> jian    7u  IPv4   <span style="color:#ae81ff">6599</span>      0t0  TCP 192.168.1.91:59311-&gt;hx-in-f125.1e100.net:https   <span style="color:#f92672">(</span>ESTABLISHED<span style="color:#f92672">)</span>
-pidgin     <span style="color:#ae81ff">1973</span> jian   13u  IPv4   <span style="color:#ae81ff">9260</span>      0t0  TCP 192.168.1.91:54447-&gt;by2msg3010511.phx.gbl:msnp   <span style="color:#f92672">(</span>ESTABLISHED<span style="color:#f92672">)</span>
+skype      <span class="m">1909</span> jian   54u  IPv4   <span class="m">9116</span>      0t0  TCP 192.168.1.91:40640-&gt;64.4.23.153:40047 <span class="o">(</span>ESTABLISHED<span class="o">)</span>
+pidgin     <span class="m">1973</span> jian    7u  IPv4   <span class="m">6599</span>      0t0  TCP 192.168.1.91:59311-&gt;hx-in-f125.1e100.net:https   <span class="o">(</span>ESTABLISHED<span class="o">)</span>
+pidgin     <span class="m">1973</span> jian   13u  IPv4   <span class="m">9260</span>      0t0  TCP 192.168.1.91:54447-&gt;by2msg3010511.phx.gbl:msnp   <span class="o">(</span>ESTABLISHED<span class="o">)</span>
 ...
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="监控用户">监控用户</h3>
 <ul>
 <li>查看指定用戶打开的文件（lsof -u ^lakshmanan 可以排除某用户）：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof -u messagebus</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof -u messagebus</span>
 COMMAND    PID       USER   FD   TYPE     DEVICE SIZE/OFF    NODE NAME
-dbus-daem <span style="color:#ae81ff">1805</span> messagebus  cwd    DIR        8,6     <span style="color:#ae81ff">4096</span>       <span style="color:#ae81ff">2</span> /
-dbus-daem <span style="color:#ae81ff">1805</span> messagebus  rtd    DIR        8,6     <span style="color:#ae81ff">4096</span>       <span style="color:#ae81ff">2</span> /
-dbus-daem <span style="color:#ae81ff">1805</span> messagebus  txt    REG        8,6  <span style="color:#ae81ff">1235361</span> <span style="color:#ae81ff">1834948</span> /usr/bin/dbus-daemon
-dbus-daem <span style="color:#ae81ff">1805</span> messagebus  mem    REG        8,6   <span style="color:#ae81ff">210473</span> <span style="color:#ae81ff">1700647</span> /lib/libnss_files-2.15.so
-dbus-daem <span style="color:#ae81ff">1805</span> messagebus  mem    REG        8,6   <span style="color:#ae81ff">190145</span> <span style="color:#ae81ff">1700642</span> /lib/libnss_nis-2.15.so
-dbus-daem <span style="color:#ae81ff">1805</span> messagebus  mem    REG        8,6   <span style="color:#ae81ff">490366</span> <span style="color:#ae81ff">1700636</span> /lib/libnsl-2.15.so
+dbus-daem <span class="m">1805</span> messagebus  cwd    DIR        8,6     <span class="m">4096</span>       <span class="m">2</span> /
+dbus-daem <span class="m">1805</span> messagebus  rtd    DIR        8,6     <span class="m">4096</span>       <span class="m">2</span> /
+dbus-daem <span class="m">1805</span> messagebus  txt    REG        8,6  <span class="m">1235361</span> <span class="m">1834948</span> /usr/bin/dbus-daemon
+dbus-daem <span class="m">1805</span> messagebus  mem    REG        8,6   <span class="m">210473</span> <span class="m">1700647</span> /lib/libnss_files-2.15.so
+dbus-daem <span class="m">1805</span> messagebus  mem    REG        8,6   <span class="m">190145</span> <span class="m">1700642</span> /lib/libnss_nis-2.15.so
+dbus-daem <span class="m">1805</span> messagebus  mem    REG        8,6   <span class="m">490366</span> <span class="m">1700636</span> /lib/libnsl-2.15.so
 ...
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>查看指定程序打开的文件：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof -c firefox</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof -c firefox</span>
 COMMAND  PID USER   FD   TYPE     DEVICE SIZE/OFF    NODE NAME
-firefox <span style="color:#ae81ff">2064</span> jian  cwd    DIR        8,6     <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">1571780</span> /home/jian
-firefox <span style="color:#ae81ff">2064</span> jian  rtd    DIR        8,6     <span style="color:#ae81ff">4096</span>       <span style="color:#ae81ff">2</span> /
-firefox <span style="color:#ae81ff">2064</span> jian  txt    REG        8,6    <span style="color:#ae81ff">44224</span> <span style="color:#ae81ff">1985670</span> /usr/lib/firefox-12.0/firefox
-firefox <span style="color:#ae81ff">2064</span> jian  mem    REG        8,6 <span style="color:#ae81ff">14707012</span>  <span style="color:#ae81ff">925361</span> /usr/share/fonts/chinese/msyhbd.ttf
-firefox <span style="color:#ae81ff">2064</span> jian  mem    REG        8,6 <span style="color:#ae81ff">15067744</span>  <span style="color:#ae81ff">925362</span> /usr/share/fonts/chinese/msyh.ttf
-firefox <span style="color:#ae81ff">2064</span> jian  mem    REG        8,6 <span style="color:#ae81ff">16791251</span> <span style="color:#ae81ff">1701681</span> /usr/share/fonts/wenquanyi/wqy-zenhei.ttc
+firefox <span class="m">2064</span> jian  cwd    DIR        8,6     <span class="m">4096</span> <span class="m">1571780</span> /home/jian
+firefox <span class="m">2064</span> jian  rtd    DIR        8,6     <span class="m">4096</span>       <span class="m">2</span> /
+firefox <span class="m">2064</span> jian  txt    REG        8,6    <span class="m">44224</span> <span class="m">1985670</span> /usr/lib/firefox-12.0/firefox
+firefox <span class="m">2064</span> jian  mem    REG        8,6 <span class="m">14707012</span>  <span class="m">925361</span> /usr/share/fonts/chinese/msyhbd.ttf
+firefox <span class="m">2064</span> jian  mem    REG        8,6 <span class="m">15067744</span>  <span class="m">925362</span> /usr/share/fonts/chinese/msyh.ttf
+firefox <span class="m">2064</span> jian  mem    REG        8,6 <span class="m">16791251</span> <span class="m">1701681</span> /usr/share/fonts/wenquanyi/wqy-zenhei.ttc
 ...
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="技巧">技巧</h3>
 <ul>
 <li>只有多个查询条件都满足， 用 &ldquo;-a&rdquo; 参数，默认是 -o 。
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># lsof -a -c bash -u root</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># lsof -a -c bash -u root</span>
 COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME
-bash    <span style="color:#ae81ff">1986</span> root  cwd    DIR    8,6     <span style="color:#ae81ff">4096</span> <span style="color:#ae81ff">1701593</span> /root/lab
-bash    <span style="color:#ae81ff">1986</span> root  rtd    DIR    8,6     <span style="color:#ae81ff">4096</span>       <span style="color:#ae81ff">2</span> /
-bash    <span style="color:#ae81ff">1986</span> root  txt    REG    8,6  <span style="color:#ae81ff">1994157</span> <span style="color:#ae81ff">1700632</span> /bin/bash
-bash    <span style="color:#ae81ff">1986</span> root  mem    REG    8,6  <span style="color:#ae81ff">9690800</span>  <span style="color:#ae81ff">405214</span> /usr/lib/locale/locale-archive
-bash    <span style="color:#ae81ff">1986</span> root  mem    REG    8,6   <span style="color:#ae81ff">210473</span> <span style="color:#ae81ff">1700647</span> /lib/libnss_files-2.15.so
-</code></pre></div></li>
+bash    <span class="m">1986</span> root  cwd    DIR    8,6     <span class="m">4096</span> <span class="m">1701593</span> /root/lab
+bash    <span class="m">1986</span> root  rtd    DIR    8,6     <span class="m">4096</span>       <span class="m">2</span> /
+bash    <span class="m">1986</span> root  txt    REG    8,6  <span class="m">1994157</span> <span class="m">1700632</span> /bin/bash
+bash    <span class="m">1986</span> root  mem    REG    8,6  <span class="m">9690800</span>  <span class="m">405214</span> /usr/lib/locale/locale-archive
+bash    <span class="m">1986</span> root  mem    REG    8,6   <span class="m">210473</span> <span class="m">1700647</span> /lib/libnss_files-2.15.so
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li><code>关于磁盘空间告警 df -h --max=1 与 du -hx --max=1 显示不一致的问题</code>
 <blockquote>
 <p>最常见的的还是下面这种情况：
@@ -612,6 +825,8 @@ pkill -9 nginx &amp;&amp; /etc/init.d/nginx restart</p>
 
   
   
+  
+  
 
   
   
@@ -683,7 +898,7 @@ pkill -9 nginx &amp;&amp; /etc/init.d/nginx restart</p>
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -752,7 +967,7 @@ pkill -9 nginx &amp;&amp; /etc/init.d/nginx restart</p>
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

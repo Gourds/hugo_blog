@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里
+  <meta name="description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里
 " />
 
   <meta name="keywords" content="Hugo, theme, jane" />
@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/" />
+<link rel="canonical" href="https://blog.gourds.site/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/" />
 
 
 
@@ -54,26 +54,26 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
 
 
 <meta property="og:title" content="记ARDB频繁崩溃错误" />
-<meta property="og:description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里" />
+<meta property="og:description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2017-07-07T23:23:45+00:00" />
 <meta property="article:modified_time" content="2017-07-07T23:23:45+00:00" />
 
 <meta itemprop="name" content="记ARDB频繁崩溃错误">
-<meta itemprop="description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"><meta itemprop="datePublished" content="2017-07-07T23:23:45+00:00" />
+<meta itemprop="description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"><meta itemprop="datePublished" content="2017-07-07T23:23:45+00:00" />
 <meta itemprop="dateModified" content="2017-07-07T23:23:45+00:00" />
-<meta itemprop="wordCount" content="1099">
+<meta itemprop="wordCount" content="1128">
 <meta itemprop="keywords" content="踩坑指南," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="记ARDB频繁崩溃错误"/>
-<meta name="twitter:description" content="背景： 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"/>
+<meta name="twitter:description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -105,28 +105,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -324,7 +324,8 @@
           2017-07-07
         </time>
         
-        
+        <span class="more-meta"> 1128 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -353,7 +354,7 @@
 
     
     <div class="post-content">
-      <p><strong>背景：</strong> 在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以<a href="https://github.com/yinqiwen/ardb">看这里</a></p>
+      <p>**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以<a href="https://github.com/yinqiwen/ardb">看这里</a></p>
 <h4 id="从崩溃到崩溃">从崩溃到崩溃</h4>
 <ul>
 <li>现象：
@@ -365,31 +366,68 @@
 </blockquote>
 </li>
 <li>addr2排查：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>root@ip-10-33-4-xx ardb-0.9.4<span style="color:#f92672">]</span><span style="color:#75715e"># addr2line -e ./src/ardb-server 0000000000578f46</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>root@ip-10-33-4-xx ardb-0.9.4<span class="o">]</span><span class="c1"># addr2line -e ./src/ardb-server 0000000000578f46</span>
 /opt/ardb/ardb-0.9.4/src/db/rocksdb/rocksdb_engine.cpp:222
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>撸源码报错段
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n &gt; <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> NULL !<span style="color:#f92672">=</span> buffer<span style="color:#f92672">)</span>
-<span style="color:#f92672">{</span>
-    buffer<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 0;
-    LOG_WITH_LEVEL<span style="color:#f92672">(</span>level, <span style="color:#e6db74">&#34;[RocksDB]%s&#34;</span>, buffer<span style="color:#f92672">)</span>;
-<span style="color:#f92672">}</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">if</span> <span class="o">(</span>n &gt; <span class="m">0</span> <span class="o">&amp;&amp;</span> NULL !<span class="o">=</span> buffer<span class="o">)</span>
+<span class="o">{</span>
+    buffer<span class="o">[</span>n<span class="o">]</span> <span class="o">=</span> 0<span class="p">;</span>
+    LOG_WITH_LEVEL<span class="o">(</span>level, <span class="s2">&#34;[RocksDB]%s&#34;</span>, buffer<span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>撸代码修改为（rocksdb_engine.cpp:222修改源代码中这个文件的222行）
 **说明：**这个代码经经沟通是一个临界问题，在win下和Linux下表现是不一样的，截取字符串存在问题，下面给出的是修复代码。因我并不懂C++所以理解有限，欢迎更正补充。
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n &gt; 0<span style="color:#f92672">)</span>
-<span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n &gt;<span style="color:#f92672">=</span> buf_len<span style="color:#f92672">)</span>
-    <span style="color:#f92672">{</span>
-        buffer<span style="color:#f92672">[</span>buf_len-1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 0;
-        LOG_WITH_LEVEL<span style="color:#f92672">(</span>level, <span style="color:#e6db74">&#34;[RocksDB]%s&#34;</span>, buffer<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-        buffer<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 0;
-        LOG_WITH_LEVEL<span style="color:#f92672">(</span>level, <span style="color:#e6db74">&#34;[RocksDB]%s&#34;</span>, buffer<span style="color:#f92672">)</span>;
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">if</span> <span class="o">(</span>n &gt; 0<span class="o">)</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span>n &gt;<span class="o">=</span> buf_len<span class="o">)</span>
+    <span class="o">{</span>
+        buffer<span class="o">[</span>buf_len-1<span class="o">]</span> <span class="o">=</span> 0<span class="p">;</span>
+        LOG_WITH_LEVEL<span class="o">(</span>level, <span class="s2">&#34;[RocksDB]%s&#34;</span>, buffer<span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+    <span class="k">else</span> <span class="o">{</span>
+        buffer<span class="o">[</span>n<span class="o">]</span> <span class="o">=</span> 0<span class="p">;</span>
+        LOG_WITH_LEVEL<span class="o">(</span>level, <span class="s2">&#34;[RocksDB]%s&#34;</span>, buffer<span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>总结
 这里我个人说三点对于更换DB的注意事项</li>
 </ul>
@@ -411,15 +449,33 @@
 </blockquote>
 <ul>
 <li>如何开启core dump
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#立即开启，重启后失效</span>
-ulimit -c unlimited
-<span style="color:#75715e">#修改配置，重启后生效</span>
-vim /etc/security/limits.conf   <span style="color:#75715e">#添加如下行</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#立即开启，重启后失效</span>
+<span class="nb">ulimit</span> -c unlimited
+<span class="c1">#修改配置，重启后生效</span>
+vim /etc/security/limits.conf   <span class="c1">#添加如下行</span>
 *          soft     core   unlimited
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>如何查看调试core文件
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gdb core_demo core_demo.core.24816
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gdb core_demo core_demo.core.24816
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <hr>
 <p>以上，换DB事情蛮大的，还是要慎重再慎重，表示线上频繁崩溃很绝望，记录一下引以为戒。</p>
@@ -452,7 +508,7 @@ vim /etc/security/limits.conf   <span style="color:#75715e">#添加如下行</sp
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/">踩坑指南</a>
+          <a href="https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/">踩坑指南</a>
           
         </div>
 
@@ -490,6 +546,8 @@ vim /etc/security/limits.conf   <span style="color:#75715e">#添加如下行</sp
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -563,7 +621,7 @@ vim /etc/security/limits.conf   <span style="color:#75715e">#添加如下行</sp
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -632,7 +690,7 @@ vim /etc/security/limits.conf   <span style="color:#75715e">#添加如下行</sp
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

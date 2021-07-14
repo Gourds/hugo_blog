@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" />
+<link rel="canonical" href="https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,14 +63,14 @@
 <meta property="og:title" content="关于Kafka分布式消息队列" />
 <meta property="og:description" content="背景: 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK&#43;kafka的应用落地记录。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2017-11-05T21:00:00+00:00" />
 <meta property="article:modified_time" content="2017-11-05T21:00:00+00:00" />
 
 <meta itemprop="name" content="关于Kafka分布式消息队列">
 <meta itemprop="description" content="背景: 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK&#43;kafka的应用落地记录。"><meta itemprop="datePublished" content="2017-11-05T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2017-11-05T21:00:00+00:00" />
-<meta itemprop="wordCount" content="3392">
+<meta itemprop="wordCount" content="3500">
 <meta itemprop="keywords" content="ELK,消息队列," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="关于Kafka分布式消息队列"/>
 <meta name="twitter:description" content="背景: 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK&#43;kafka的应用落地记录。"/>
@@ -105,28 +105,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -324,7 +324,8 @@
           2017-11-05
         </time>
         
-        
+        <span class="more-meta"> 3500 words </span>
+          <span class="more-meta"> 7 min read </span>
 
         
         
@@ -404,105 +405,237 @@
 </ul>
 <h3 id="搭建kafka集群">搭建kafka集群</h3>
 <blockquote>
-<p><strong>Tips：</strong> 这里使用的zk及kafka版本如下
+<p>**Tips：**这里使用的zk及kafka版本如下
 zookeeper:3.4.10
 kafka:2.11-0.10.2.0</p>
 </blockquote>
 <h4 id="安装配置zookeeper">安装配置zookeeper</h4>
 <ul>
 <li>Install
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.10/zookeeper-3.4.10.tar.gz
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.10/zookeeper-3.4.10.tar.gz
 tar xvf zookeeper-3.4.10.tar.gz
 cp zookeeper-3.4.10 /usr/local/zookeeper/ -r
-cd /usr/local/zookeeper/
+<span class="nb">cd</span> /usr/local/zookeeper/
 cp conf/zoo_sample.cfg conf/zoo.cfg
 mkdir -p /var/zookeeper/data
-echo <span style="color:#ae81ff">1</span> &gt;/var/zookeeper/data/myid
-<span style="color:#75715e">#注意，这里要与下面config中server.1的配置一致，此server为10.17.0.112，所以echo 1，同理226这台server就echo 2</span>
-</code></pre></div></li>
+<span class="nb">echo</span> <span class="m">1</span> &gt;/var/zookeeper/data/myid
+<span class="c1">#注意，这里要与下面config中server.1的配置一致，此server为10.17.0.112，所以echo 1，同理226这台server就echo 2</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Config
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#cat /usr/local/zookeeper/conf/zoo.cfg</span>
-tickTime<span style="color:#f92672">=</span><span style="color:#ae81ff">2000</span>
-initLimit<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
-syncLimit<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>
-dataDir<span style="color:#f92672">=</span>/var/zookeeper/data
-clientPort<span style="color:#f92672">=</span><span style="color:#ae81ff">2181</span>
-server.1<span style="color:#f92672">=</span>10.17.0.112:2888:3888
-server.2<span style="color:#f92672">=</span>10.17.0.226:2888:3888
-server.3<span style="color:#f92672">=</span>10.17.0.211:2888:3888
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#cat /usr/local/zookeeper/conf/zoo.cfg</span>
+<span class="nv">tickTime</span><span class="o">=</span><span class="m">2000</span>
+<span class="nv">initLimit</span><span class="o">=</span><span class="m">10</span>
+<span class="nv">syncLimit</span><span class="o">=</span><span class="m">5</span>
+<span class="nv">dataDir</span><span class="o">=</span>/var/zookeeper/data
+<span class="nv">clientPort</span><span class="o">=</span><span class="m">2181</span>
+server.1<span class="o">=</span>10.17.0.112:2888:3888
+server.2<span class="o">=</span>10.17.0.226:2888:3888
+server.3<span class="o">=</span>10.17.0.211:2888:3888
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Start
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /usr/local/zookeeper
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/local/zookeeper
 ./bin/zkServer.sh start
 ./bin/zkServer.sh status
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#cat /etc/rc.d/init.d/zookeeper</span>
-<span style="color:#75715e">#!/bin/bash</span>
-<span style="color:#75715e">#chkconfig:2345 20 90</span>
-<span style="color:#75715e">#description:zookeeper</span>
-<span style="color:#75715e">#processname:zookeeper</span>
-<span style="color:#66d9ef">case</span> $1 in
-      start<span style="color:#f92672">)</span> /usr/local/zookeeper/bin/zkServer.sh start;;
-      stop<span style="color:#f92672">)</span> /usr/local/zookeeper/bin/zkServer.sh stop;;
-      status<span style="color:#f92672">)</span> /usr/local/zookeeper/bin/zkServer.sh status;;
-      restart<span style="color:#f92672">)</span> /usr/local/zookeeper/bin/zkServer.sh restart;;
-      *<span style="color:#f92672">)</span>  echo <span style="color:#e6db74">&#34;require start|stop|status|restart&#34;</span>;;
-<span style="color:#66d9ef">esac</span>
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#cat /etc/rc.d/init.d/zookeeper</span>
+<span class="c1">#!/bin/bash</span>
+<span class="c1">#chkconfig:2345 20 90</span>
+<span class="c1">#description:zookeeper</span>
+<span class="c1">#processname:zookeeper</span>
+<span class="k">case</span> <span class="nv">$1</span> in
+      start<span class="o">)</span> /usr/local/zookeeper/bin/zkServer.sh start<span class="p">;;</span>
+      stop<span class="o">)</span> /usr/local/zookeeper/bin/zkServer.sh stop<span class="p">;;</span>
+      status<span class="o">)</span> /usr/local/zookeeper/bin/zkServer.sh status<span class="p">;;</span>
+      restart<span class="o">)</span> /usr/local/zookeeper/bin/zkServer.sh restart<span class="p">;;</span>
+      *<span class="o">)</span>  <span class="nb">echo</span> <span class="s2">&#34;require start|stop|status|restart&#34;</span><span class="p">;;</span>
+<span class="k">esac</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="安装配置kafka">安装配置kafka</h4>
 <ul>
 <li>Install
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget http://mirror.bit.edu.cn/apache/kafka/0.10.2.0/kafka_2.11-0.10.2.0.tgz
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget http://mirror.bit.edu.cn/apache/kafka/0.10.2.0/kafka_2.11-0.10.2.0.tgz
 tar xvf kafka_2.11-0.10.2.0.tgz
 cp kafka_2.11-0.10.2.0 /usr/local/kafka/ -r
-cd /usr/local/kafka/
-</code></pre></div></li>
+<span class="nb">cd</span> /usr/local/kafka/
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Config（需要改server和consumer配置）
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#cat /usr/local/kafka/config/server.properties |egrep -v &#34;^#|^$&#34;</span>
-broker.id<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
-<span style="color:#75715e">#唯一值，我这里按zk的serverID进行了配置</span>
-listeners <span style="color:#f92672">=</span> PLAINTEXT://10.17.0.226:9092
-<span style="color:#75715e">#这个地方在这个版本及以后需要打开注释填写本机地址，之前的版本需配置host.name</span>
-num.network.threads<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>
-num.io.threads<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>
-socket.send.buffer.bytes<span style="color:#f92672">=</span><span style="color:#ae81ff">102400</span>
-socket.receive.buffer.bytes<span style="color:#f92672">=</span><span style="color:#ae81ff">102400</span>
-socket.request.max.bytes<span style="color:#f92672">=</span><span style="color:#ae81ff">104857600</span>
-log.dirs<span style="color:#f92672">=</span>/tmp/kafka-logs
-num.partitions<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-num.recovery.threads.per.data.dir<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-log.retention.hours<span style="color:#f92672">=</span><span style="color:#ae81ff">168</span>
-log.segment.bytes<span style="color:#f92672">=</span><span style="color:#ae81ff">1073741824</span>
-log.retention.check.interval.ms<span style="color:#f92672">=</span><span style="color:#ae81ff">300000</span>
-zookeeper.connect<span style="color:#f92672">=</span>10.17.0.112:2181,10.17.0.226:2181,10.17.0.221:2181
-<span style="color:#75715e">#这里填写zookeeper的地址，另外消费配置上也需要做对应修改</span>
-zookeeper.connection.timeout.ms<span style="color:#f92672">=</span><span style="color:#ae81ff">6000</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#cat /usr/local/kafka/config/consumer.properties |egrep -v &#34;^#|^$&#34;</span>
-zookeeper.connect<span style="color:#f92672">=</span>10.17.0.112:2181,10.17.0.226:2181,10.17.0.221:2181
-zookeeper.connection.timeout.ms<span style="color:#f92672">=</span><span style="color:#ae81ff">6000</span>
-group.id<span style="color:#f92672">=</span>test-consumer-group
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#cat /usr/local/kafka/config/server.properties |egrep -v &#34;^#|^$&#34;</span>
+broker.id<span class="o">=</span><span class="m">2</span>
+<span class="c1">#唯一值，我这里按zk的serverID进行了配置</span>
+<span class="nv">listeners</span> <span class="o">=</span> PLAINTEXT://10.17.0.226:9092
+<span class="c1">#这个地方在这个版本及以后需要打开注释填写本机地址，之前的版本需配置host.name</span>
+num.network.threads<span class="o">=</span><span class="m">3</span>
+num.io.threads<span class="o">=</span><span class="m">8</span>
+socket.send.buffer.bytes<span class="o">=</span><span class="m">102400</span>
+socket.receive.buffer.bytes<span class="o">=</span><span class="m">102400</span>
+socket.request.max.bytes<span class="o">=</span><span class="m">104857600</span>
+log.dirs<span class="o">=</span>/tmp/kafka-logs
+num.partitions<span class="o">=</span><span class="m">1</span>
+num.recovery.threads.per.data.dir<span class="o">=</span><span class="m">1</span>
+log.retention.hours<span class="o">=</span><span class="m">168</span>
+log.segment.bytes<span class="o">=</span><span class="m">1073741824</span>
+log.retention.check.interval.ms<span class="o">=</span><span class="m">300000</span>
+zookeeper.connect<span class="o">=</span>10.17.0.112:2181,10.17.0.226:2181,10.17.0.221:2181
+<span class="c1">#这里填写zookeeper的地址，另外消费配置上也需要做对应修改</span>
+zookeeper.connection.timeout.ms<span class="o">=</span><span class="m">6000</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#cat /usr/local/kafka/config/consumer.properties |egrep -v &#34;^#|^$&#34;</span>
+zookeeper.connect<span class="o">=</span>10.17.0.112:2181,10.17.0.226:2181,10.17.0.221:2181
+zookeeper.connection.timeout.ms<span class="o">=</span><span class="m">6000</span>
+group.id<span class="o">=</span>test-consumer-group
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Start
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /usr/local/kafka/
-bin/kafka-server-start.sh config/server.properties &amp;
-<span style="color:#75715e">#后台执行，退出终端后终止</span>
-bin/kafka-server-start.sh -daemon config/server.properties &amp;
-<span style="color:#75715e">#后台执行，退出终端后不终止</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#cat /etc/rc.d/init.d/kafka</span>
-<span style="color:#75715e">#!/bin/bash</span>
-<span style="color:#75715e">#chkconfig:2345 30 80</span>
-<span style="color:#75715e">#description:kafka</span>
-<span style="color:#75715e">#processname:kafka</span>
-<span style="color:#66d9ef">case</span> $1 in
- start<span style="color:#f92672">)</span> /usr/local/kafka/bin/kafka-server-start.sh  -daemon /usr/local/kafka/config/server.properties &amp;;;
- stop<span style="color:#f92672">)</span> /usr/local/kafka/bin/kafka-server-stop.sh  /usr/local/kafka/config/server.properties;;
- restart<span style="color:#f92672">)</span> /usr/local/kafka/bin/kafka-server-stop.sh  /usr/local/kafka/config/server.properties
-         /usr/local/kafka/bin/kafka-server-start.sh  -daemon /usr/local/kafka/config/server.properties &amp;
-         ;;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/local/kafka/
+bin/kafka-server-start.sh config/server.properties <span class="p">&amp;</span>
+<span class="c1">#后台执行，退出终端后终止</span>
+bin/kafka-server-start.sh -daemon config/server.properties <span class="p">&amp;</span>
+<span class="c1">#后台执行，退出终端后不终止</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#cat /etc/rc.d/init.d/kafka</span>
+<span class="c1">#!/bin/bash</span>
+<span class="c1">#chkconfig:2345 30 80</span>
+<span class="c1">#description:kafka</span>
+<span class="c1">#processname:kafka</span>
+<span class="k">case</span> <span class="nv">$1</span> in
+ start<span class="o">)</span> /usr/local/kafka/bin/kafka-server-start.sh  -daemon /usr/local/kafka/config/server.properties <span class="p">&amp;;;</span>
+ stop<span class="o">)</span> /usr/local/kafka/bin/kafka-server-stop.sh  /usr/local/kafka/config/server.properties<span class="p">;;</span>
+ restart<span class="o">)</span> /usr/local/kafka/bin/kafka-server-stop.sh  /usr/local/kafka/config/server.properties
+         /usr/local/kafka/bin/kafka-server-start.sh  -daemon /usr/local/kafka/config/server.properties <span class="p">&amp;</span>
+         <span class="p">;;</span>
 
- *<span style="color:#f92672">)</span>  echo <span style="color:#e6db74">&#34;require start|stop|restart&#34;</span>  ;;
-<span style="color:#66d9ef">esac</span>
-</code></pre></div></li>
+ *<span class="o">)</span>  <span class="nb">echo</span> <span class="s2">&#34;require start|stop|restart&#34;</span>  <span class="p">;;</span>
+<span class="k">esac</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h4 id="安装配置kafka监控程序">安装配置kafka监控程序</h4>
 <blockquote>
@@ -514,48 +647,116 @@ KafkaOffsetMonitor：程序一个jar包的形式运行，部署较为方便。�
 </blockquote>
 <ul>
 <li>install
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget https://github.com/quantifind/KafkaOffsetMonitor/releases/download/v0.2.1/KafkaOffsetMonitor-assembly-0.2.1.jar
-<span style="color:#75715e">#下载即可</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget https://github.com/quantifind/KafkaOffsetMonitor/releases/download/v0.2.1/KafkaOffsetMonitor-assembly-0.2.1.jar
+<span class="c1">#下载即可</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>start
-<pre><code>java -cp KafkaOffsetMonitor-assembly-0.2.1.jar \
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">java -cp KafkaOffsetMonitor-assembly-0.2.1.jar \
      com.quantifind.kafka.offsetapp.OffsetGetterWeb \
      --zk 10.17.0.112:2181,10.17.0.226:2181,10.17.0.221:2181 \
      --port 8089 \
      --refresh 10.seconds \
      --retain 2.days &amp;
-</code></pre></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="常用kafka命令">常用kafka命令</h3>
 <ul>
 <li>创建及查看Topic
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bin/kafka-topics.sh --create --zookeeper 10.17.0.211:2181 --replication-factor <span style="color:#ae81ff">3</span> --partitions <span style="color:#ae81ff">2</span> --topic prod-test
-<span style="color:#75715e">#创建一个名为prod-test的topic，有3个副本（即控制消息保存在3个broker上），2个分区</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">bin/kafka-topics.sh --create --zookeeper 10.17.0.211:2181 --replication-factor <span class="m">3</span> --partitions <span class="m">2</span> --topic prod-test
+<span class="c1">#创建一个名为prod-test的topic，有3个副本（即控制消息保存在3个broker上），2个分区</span>
 bin/kafka-topics.sh --list --zookeeper 10.17.0.211:2181
-<span style="color:#75715e">#list topic，列出所有topic</span>
+<span class="c1">#list topic，列出所有topic</span>
 bin/kafka-topics.sh --describe --zookeeper 10.17.0.211:2181 --topic prod-test
-<span style="color:#75715e">#查看某个topic的具体信息</span>
-</code></pre></div></li>
+<span class="c1">#查看某个topic的具体信息</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>生产消费数据（可以测试集群搭建是否成功）
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bin/kafka-console-producer.sh --broker-list 10.17.0.211:9092 --topic prod-test
-<span style="color:#75715e">#从控制台向topic生产数据</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">bin/kafka-console-producer.sh --broker-list 10.17.0.211:9092 --topic prod-test
+<span class="c1">#从控制台向topic生产数据</span>
 bin/kafka-console-consumer.sh  --zookeeper 10.17.0.226:2181  --topic prod-test --from-beginning
-<span style="color:#75715e">#从控制台消费topic prod-test的数据，可以使用任意集群中的地址进行测试</span>
-</code></pre></div></li>
+<span class="c1">#从控制台消费topic prod-test的数据，可以使用任意集群中的地址进行测试</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>查看topic某分区偏移量最大（小）值
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic prod-test  --time -2 --broker-list 10.17.0.211:9092 --partitions <span style="color:#ae81ff">1</span>
-<span style="color:#75715e">#查看prod-test这个topic分区1的分组最小偏移值（time -2 表示最小偏移量）</span>
-bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic prod-test  --time -1 --broker-list 10.17.0.211:9092 --partitions <span style="color:#ae81ff">1</span>
-<span style="color:#75715e">#查看prod-test这个topic分区0的分组最大偏移值（time -1 表示最大偏移量</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic prod-test  --time -2 --broker-list 10.17.0.211:9092 --partitions <span class="m">1</span>
+<span class="c1">#查看prod-test这个topic分区1的分组最小偏移值（time -2 表示最小偏移量）</span>
+bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic prod-test  --time -1 --broker-list 10.17.0.211:9092 --partitions <span class="m">1</span>
+<span class="c1">#查看prod-test这个topic分区0的分组最大偏移值（time -1 表示最大偏移量</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>增加topic分区数
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bin/kafka-topics.sh --zookeeper 10.17.0.211:2181  --alter --topic prod-test --partitions <span style="color:#ae81ff">5</span>
-<span style="color:#75715e">#增加prod-test的这个topic的分区数到5个（比如之前是3个，就是再增加2个），这个数字只能比现在已有的分区数大。</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">bin/kafka-topics.sh --zookeeper 10.17.0.211:2181  --alter --topic prod-test --partitions <span class="m">5</span>
+<span class="c1">#增加prod-test的这个topic的分区数到5个（比如之前是3个，就是再增加2个），这个数字只能比现在已有的分区数大。</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>查看topic消费进度
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#consumer group可以从zk中查看</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#consumer group可以从zk中查看</span>
 bin/kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --group console-consumer-50561  --zookeeper 10.17.0.226:2181
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
     </div>
 
@@ -586,8 +787,8 @@ bin/kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --group console-consume
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/elk/">ELK</a>
-          <a href="http://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/">消息队列</a>
+          <a href="https://blog.gourds.site/tags/elk/">ELK</a>
+          <a href="https://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/">消息队列</a>
           
         </div>
 
@@ -625,6 +826,8 @@ bin/kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --group console-consume
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -698,7 +901,7 @@ bin/kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --group console-consume
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -767,7 +970,7 @@ bin/kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --group console-consume
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

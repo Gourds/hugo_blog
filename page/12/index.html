@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/" />
+<link rel="canonical" href="https://blog.gourds.site/" />
 <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Gourds" />
 
 
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -61,7 +61,7 @@
 <meta property="og:title" content="Gourds" />
 <meta property="og:description" content="Hugo theme jane example site." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://blog.gourds.site/" />
+<meta property="og:url" content="https://blog.gourds.site/" />
 
 <meta itemprop="name" content="Gourds">
 <meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
@@ -98,28 +98,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -230,7 +230,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -241,7 +241,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -252,7 +252,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -263,7 +263,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -319,14 +319,16 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/">弱网终端替代工具Mosh</a>
+      <a class="post-link" href="/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/">Rsync服务安装配置记录</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2017-07-17" class="post-time">
-        2017-07-17
+      <time datetime="2017-07-24" class="post-time">
+        2017-07-24
       </time>
       
+      <span class="more-meta"> 1139 words </span>
+      <span class="more-meta"> 3 min read </span>
       
       
       
@@ -336,7 +338,44 @@
   <div class="post-content">
     
     <div class="post-summary">
-      <p><strong>应用背景：</strong> 当有海外服务器维护需求的时候，常常会遇到使用ssh终端延时高并经常性假死的情况，非常影响维护效率。然后一个能缓解延时假死的小工具就是十分有用的，Mosh正是这样一个工具。Mosh是一个用于从客户端跨互联网连接远程服务器的命令行工具，程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下，基于UDP方式进行数据传输。</p>
+      <p>关于RSYNC，个人理解传送大量资源文件或较多小文件时适合使用传输，具有数据验证、断点续传、增量传输、差异传输等特性。优于scp及ftp等工具。</p>
+<blockquote>
+<p>rsync是unix/linux下同步文件的一个高效算法，它能同步更新两处计算机的文件与目录，并适当利用查找文件中的不同块以减少数据传输。rsync中一项与其他大部分类似程序或协定中所未见的重要特性是镜像是只对有变更的部分进行传送。rsync可拷贝／显示目录属性，以及拷贝文件，并可选择性的压缩以及递归拷贝。rsync利用由Andrew Tridgell发明的算法&hellip;</p>
+<p>摘自<a href="http://coolshell.cn/articles/7425.html">Rsync的核心算法</a></p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/">弱网终端替代工具Mosh</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2017-07-17" class="post-time">
+        2017-07-17
+      </time>
+      
+      <span class="more-meta"> 858 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**应用背景：**当有海外服务器维护需求的时候，常常会遇到使用ssh终端延时高并经常性假死的情况，非常影响维护效率。然后一个能缓解延时假死的小工具就是十分有用的，Mosh正是这样一个工具。Mosh是一个用于从客户端跨互联网连接远程服务器的命令行工具，程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下，基于UDP方式进行数据传输。</p>
     </div>
     <div class="read-more">
       <a href="/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/" class="read-more-link">Read more</a>
@@ -358,6 +397,8 @@
         2017-07-16
       </time>
       
+      <span class="more-meta"> 872 words </span>
+      <span class="more-meta"> 2 min read </span>
       
       
       
@@ -371,39 +412,6 @@
     </div>
     <div class="read-more">
       <a href="/post/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/">AWS-cli操作S3及DynamoDB</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2017-07-08" class="post-time">
-        2017-07-08
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <blockquote>
-<p>AWS的cli还是挺好用的，文档也比较全面，其实看个文档就可以使用，但是我毕竟是我，记下来，减少查询搜索的时间也是挺赚的，不是么。。话说“懒人使世界进步”，其实有个很重要的前提就是你这个懒人做出了可以帮你出色完成原定任务的东西，这时你才有资格懒。很显然，我没有。。。But我一直在实现这个前提的路上前进</p>
-</blockquote>
-    </div>
-    <div class="read-more">
-      <a href="/post/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -1372,6 +1380,27 @@
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/13/">»</a></li>
@@ -1379,7 +1408,7 @@
 
       
       
-      <li><a href="/page/39/">»»</a></li>
+      <li><a href="/page/40/">»»</a></li>
       
 
       </ul>
@@ -1432,7 +1461,7 @@
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1501,7 +1530,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

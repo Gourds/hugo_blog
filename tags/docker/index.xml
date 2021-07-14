@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Gourds</title>
-    <link>http://blog.gourds.site/tags/docker/</link>
+    <link>https://blog.gourds.site/tags/docker/</link>
     <description>Recent content in Docker on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Nov 2018 13:57:00 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Nov 2018 13:57:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
-      <link>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
+      <link>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
       <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
+      <guid>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
       <description>&lt;p&gt;之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
 &lt;strong&gt;迁移思路：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -27,28 +27,28 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
     
     <item>
       <title>Docker方式安装Jumpserver</title>
-      <link>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
+      <link>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
       <pubDate>Tue, 27 Nov 2018 15:00:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
+      <guid>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
       <description>&lt;p&gt;之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jumpserver&#34;&gt;【github】&lt;/a&gt;上都有。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Elasticsearch使用curator管理index</title>
-      <link>http://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
+      <link>https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
       <pubDate>Wed, 01 Aug 2018 12:11:16 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
+      <guid>https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
       <description>&lt;p&gt;有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具&lt;code&gt;curator&lt;/code&gt;，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句&lt;code&gt;curator&lt;/code&gt;的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Bitbucket实践</title>
-      <link>http://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
+      <link>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Sat, 09 Jun 2018 12:38:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;p&gt;前言：之前使用了Atlassian公司的Confluence和Jira，现在新项目考虑使用Bitbucket做代码仓库，这里记录一下调研实践过程。由于之前的服务是使用docker进行部署的，所以Bitbucket也决定使用docker的方式进行部署。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;update:&lt;/strong&gt;
@@ -58,20 +58,20 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
     
     <item>
       <title>Gitlab迁移升级记录</title>
-      <link>http://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 21 Apr 2018 19:33:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;之前写了gitlab的安装文档，目的是为了为迁移做准备，现在记录一下测试迁移的过程。现在需要将编译安装的&lt;code&gt;7.13.4&lt;/code&gt;版本的gitlab升级至&lt;code&gt;10.6.0&lt;/code&gt;并采用docker的方式运行。经查阅官方Docker&lt;a href=&#34;https://hub.docker.com/r/gitlab/gitlab-ce/tags/&#34;&gt;【版本】&lt;/a&gt;是&lt;code&gt;9.5.1-10.7.0&lt;/code&gt;。而在Github上&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn版本】&lt;/a&gt;是&lt;code&gt;v6.1-v10.6.4&lt;/code&gt;。另外
 还有Gitlab的&lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce/tree/master/doc/update&#34;&gt;【官方升级说明】&lt;/a&gt;,这个说明里面都是临近的版本升级说明，但并没有介绍大跨度升级的详细内容。最后决定采用github上提供的升级建议。记录说明如下&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gitlab搭建使用记录</title>
-      <link>http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 14 Apr 2018 20:54:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
 操作之前看一把架构图,图片来自官方,侵删
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20180413-gitlab-1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;</description>
@@ -79,10 +79,10 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
     
     <item>
       <title>使用Docker搭建Jira和Confluence系统</title>
-      <link>http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sat, 14 Apr 2018 15:47:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
       <description>&lt;p&gt;**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence&#34;&gt;【Github】&lt;/a&gt;上都有&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;**&lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt;&lt;strong&gt;是Atlassian公司出品的项目与事务跟踪工具，被广泛应用于缺陷跟踪、客户服务、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理等工作领域。
@@ -93,10 +93,10 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
     
     <item>
       <title>Docker备份还原简介</title>
-      <link>http://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/</link>
+      <link>https://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/</link>
       <pubDate>Tue, 06 Mar 2018 16:50:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/</guid>
+      <guid>https://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/</guid>
       <description>&lt;p&gt;一般而言，使用docker远端镜像仓库的话，基本不需要使用备份还原，但再某些情况下也是需要这些操作的，如对网络受限的主机进行部署或者基于安全考虑对本地仓库进行备份，就需要这些操作，总之Docker的备份还原还是十分简便的，这里也做一下记录。&lt;/p&gt;</description>
     </item>
     

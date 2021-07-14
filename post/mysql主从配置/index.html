@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/" />
+<link rel="canonical" href="https://blog.gourds.site/post/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,7 +66,7 @@ date: 2015-09-07 15:38:14
 tags: [Mysql]
 这篇题目占了好长时间了，一直说补上也没补上，今天没事，就弄个实验环境来记录一下。正所谓好记性不如烂笔头，那就写一下。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="post" />
 
 
 
@@ -76,7 +76,7 @@ date: 2015-09-07 15:38:14
 tags: [Mysql]
 这篇题目占了好长时间了，一直说补上也没补上，今天没事，就弄个实验环境来记录一下。正所谓好记性不如烂笔头，那就写一下。">
 
-<meta itemprop="wordCount" content="716">
+<meta itemprop="wordCount" content="751">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: mysql主从
@@ -114,28 +114,28 @@ tags: [Mysql]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -246,7 +246,7 @@ tags: [Mysql]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -257,7 +257,7 @@ tags: [Mysql]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -268,7 +268,7 @@ tags: [Mysql]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -279,7 +279,7 @@ tags: [Mysql]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -333,7 +333,8 @@ tags: [Mysql]
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 751 words </span>
+          <span class="more-meta"> 2 min read </span>
 
         
         
@@ -372,69 +373,158 @@ tags: [Mysql]</h2>
 <ul>
 <li>两台服务器</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>root@localhost ~<span style="color:#f92672">]</span><span style="color:#75715e"># cat /etc/redhat-release</span>
-CentOS release 6.7 <span style="color:#f92672">(</span>Final<span style="color:#f92672">)</span>
-<span style="color:#75715e">#其中62做master，63做salve, 66为VIP</span>
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># cat /etc/redhat-release</span>
+CentOS release 6.7 <span class="o">(</span>Final<span class="o">)</span>
+<span class="c1">#其中62做master，63做salve, 66为VIP</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>mysql版本
 mysql版本说明：mysqlAB复制版本都要高于3.2，slave版本可以高于master但不可以低于master</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>root@localhost ~<span style="color:#f92672">]</span><span style="color:#75715e"># mysql -V</span>
-mysql  Ver 14.14 Distrib 5.6.32, <span style="color:#66d9ef">for</span> Linux <span style="color:#f92672">(</span>x86_64<span style="color:#f92672">)</span> using  EditLine wrapper
-</code></pre></div><h4 id="master配置">Master配置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># mysql -V</span>
+mysql  Ver 14.14 Distrib 5.6.32, <span class="k">for</span> Linux <span class="o">(</span>x86_64<span class="o">)</span> using  EditLine wrapper
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="master配置">Master配置</h4>
 <ul>
 <li>初始化mysql</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/etc/init.d/mysql start
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">/etc/init.d/mysql start
 mysqladmin -uroot -parvon.top
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>配置文件</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#vim /etc/my.cfg</span>
-<span style="color:#f92672">[</span>mysqld<span style="color:#f92672">]</span>
-server-id <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#75715e">#backup这台设置2,</span>
-log-bin <span style="color:#f92672">=</span> arvon-mysql-bin
-<span style="color:#75715e">#binlog文件名称</span>
-binlog-ignore-db <span style="color:#f92672">=</span> mysql,information_schema
-<span style="color:#75715e">#忽略写入binlog日志的库</span>
-auto-increment-increment <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-<span style="color:#75715e">#字段变化增量值</span>
-auto-increment-offset <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#75715e">#初始字段ID为1</span>
-slave-skip-errors <span style="color:#f92672">=</span> all
-<span style="color:#75715e">#忽略所有复制产生的错误</span>
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#vim /etc/my.cfg</span>
+<span class="o">[</span>mysqld<span class="o">]</span>
+server-id <span class="o">=</span> <span class="m">1</span>
+<span class="c1">#backup这台设置2,</span>
+log-bin <span class="o">=</span> arvon-mysql-bin
+<span class="c1">#binlog文件名称</span>
+binlog-ignore-db <span class="o">=</span> mysql,information_schema
+<span class="c1">#忽略写入binlog日志的库</span>
+auto-increment-increment <span class="o">=</span> <span class="m">2</span>
+<span class="c1">#字段变化增量值</span>
+auto-increment-offset <span class="o">=</span> <span class="m">1</span>
+<span class="c1">#初始字段ID为1</span>
+slave-skip-errors <span class="o">=</span> all
+<span class="c1">#忽略所有复制产生的错误</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>添加slave读取master的用户和权限</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mysql&gt; grant replication slave on *.* to <span style="color:#e6db74">&#39;slave&#39;</span>@<span style="color:#e6db74">&#39;172.17.18.63&#39;</span> identified by <span style="color:#e6db74">&#39;blog.arvon.top&#39;</span>;
-mysql&gt; flush privileges;
-<span style="color:#75715e">#给slave用户读取master的权限密码为blog.arvon.top</span>
-</code></pre></div><h4 id="slave配置">Slave配置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">mysql&gt; grant replication slave on *.* to <span class="s1">&#39;slave&#39;</span>@<span class="s1">&#39;172.17.18.63&#39;</span> identified by <span class="s1">&#39;blog.arvon.top&#39;</span><span class="p">;</span>
+mysql&gt; flush privileges<span class="p">;</span>
+<span class="c1">#给slave用户读取master的权限密码为blog.arvon.top</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="slave配置">Slave配置</h4>
 <ul>
 <li>测试salve用户登录是否正常</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mysql -h172.17.18.62 -uslave -pblog.arvon.top
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">mysql -h172.17.18.62 -uslave -pblog.arvon.top
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>配置文件
 先修改my.cnf文件，主要写入server-id,没有把后面server的主机端口密码信息直接写入配置文件是因为mysql5.5之后直接写会报错，mysql不认识，需要直接在mysql中用后面的命令指出。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">server-id<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
-</code></pre></div><p>mysql中要指出的变量,后面MASTER_LOG_FILE和MASTER_LOG_POS就是上面server配置端binglog和post的值</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mysql&gt; CHANGE MASTER TO MASTER_HOST<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;172.17.18.62&#39;</span>,
-   -&gt; MASTER_PORT<span style="color:#f92672">=</span>3306,
-   -&gt; MASTER_USER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;slave&#39;</span>,
-   -&gt; MASTER_PASSWORD<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;blog.arvon.top&#39;</span>,
-   -&gt; MASTER_LOG_FILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;arvon-mysql-bin.000001&#39;</span>,
-   -&gt; MASTER_LOG_POS<span style="color:#f92672">=</span>120;
-<span style="color:#75715e">#启动slave进程</span>
-mysql&gt; slave start;
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">server-id<span class="o">=</span><span class="m">2</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>mysql中要指出的变量,后面MASTER_LOG_FILE和MASTER_LOG_POS就是上面server配置端binglog和post的值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">mysql&gt; CHANGE MASTER TO <span class="nv">MASTER_HOST</span><span class="o">=</span><span class="s1">&#39;172.17.18.62&#39;</span>,
+   -&gt; <span class="nv">MASTER_PORT</span><span class="o">=</span>3306,
+   -&gt; <span class="nv">MASTER_USER</span><span class="o">=</span><span class="s1">&#39;slave&#39;</span>,
+   -&gt; <span class="nv">MASTER_PASSWORD</span><span class="o">=</span><span class="s1">&#39;blog.arvon.top&#39;</span>,
+   -&gt; <span class="nv">MASTER_LOG_FILE</span><span class="o">=</span><span class="s1">&#39;arvon-mysql-bin.000001&#39;</span>,
+   -&gt; <span class="nv">MASTER_LOG_POS</span><span class="o">=</span>120<span class="p">;</span>
+<span class="c1">#启动slave进程</span>
+mysql&gt; slave start<span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>查看slave状态
 共有两个线程一个为IO线程，一个为SQL进程,如图都为yes说明成功</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mysql&gt; show slave status<span style="color:#ae81ff">\G</span>;
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">mysql&gt; show slave status<span class="se">\G</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>测试一下
 在master创建一个database，然后去slave查看一下是否有了，我这反正测试时成功的，哈哈。</li>
 </ul>
@@ -502,6 +592,8 @@ mysql&gt; slave start;
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -575,7 +667,7 @@ mysql&gt; slave start;
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -644,7 +736,7 @@ mysql&gt; slave start;
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

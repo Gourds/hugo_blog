@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/" />
+<link rel="canonical" href="https://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,14 +63,14 @@
 <meta property="og:title" content="Docker备份还原简介" />
 <meta property="og:description" content="一般而言，使用docker远端镜像仓库的话，基本不需要使用备份还原，但再某些情况下也是需要这些操作的，如对网络受限的主机进行部署或者基于安全考虑对本地仓库进行备份，就需要这些操作，总之Docker的备份还原还是十分简便的，这里也做一下记录。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/docker%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E7%AE%80%E4%BB%8B/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-03-06T16:50:00+00:00" />
 <meta property="article:modified_time" content="2018-03-06T16:50:00+00:00" />
 
 <meta itemprop="name" content="Docker备份还原简介">
 <meta itemprop="description" content="一般而言，使用docker远端镜像仓库的话，基本不需要使用备份还原，但再某些情况下也是需要这些操作的，如对网络受限的主机进行部署或者基于安全考虑对本地仓库进行备份，就需要这些操作，总之Docker的备份还原还是十分简便的，这里也做一下记录。"><meta itemprop="datePublished" content="2018-03-06T16:50:00+00:00" />
 <meta itemprop="dateModified" content="2018-03-06T16:50:00+00:00" />
-<meta itemprop="wordCount" content="460">
+<meta itemprop="wordCount" content="475">
 <meta itemprop="keywords" content="Docker," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker备份还原简介"/>
 <meta name="twitter:description" content="一般而言，使用docker远端镜像仓库的话，基本不需要使用备份还原，但再某些情况下也是需要这些操作的，如对网络受限的主机进行部署或者基于安全考虑对本地仓库进行备份，就需要这些操作，总之Docker的备份还原还是十分简便的，这里也做一下记录。"/>
@@ -105,28 +105,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -324,7 +324,8 @@
           2018-03-06
         </time>
         
-        
+        <span class="more-meta"> 475 words </span>
+          <span class="more-meta"> 1 min read </span>
 
         
         
@@ -359,29 +360,69 @@
 <h3 id="备份镜像">备份镜像</h3>
 <p>一般迁移时使用，有图可能更直观，如下,可以使用镜像名+TAG，也可以使用镜像ID
 <img src="http://img.arvon.top:80/images/2019/08/12/20180306-docker-1.jpg" alt="docker-1"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker images <span style="color:#75715e">#list images</span>
-docker history d86649f09ddb <span style="color:#75715e">#查看这个镜像的历史，如果有需要可以导出之前版本的镜像</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker images <span class="c1">#list images</span>
+docker <span class="nb">history</span> d86649f09ddb <span class="c1">#查看这个镜像的历史，如果有需要可以导出之前版本的镜像</span>
 docker save -o /data/image_bak.tar docker.taiyouxi.net/ticore/testlink:1.0.1
-<span style="color:#75715e">#save usage: docker save -o /down_dir/your_tar_file_name image:TAG</span>
-<span style="color:#75715e">#OR：docker save image:TAG &gt; /down_dir/your_tar_file_name</span>
-</code></pre></div><h3 id="备份容器">备份容器</h3>
+<span class="c1">#save usage: docker save -o /down_dir/your_tar_file_name image:TAG</span>
+<span class="c1">#OR：docker save image:TAG &gt; /down_dir/your_tar_file_name</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="备份容器">备份容器</h3>
 <p>备份容器跟备份镜像有些细微的差别，首先需要容器commit成为image，如果必要可以对容器的启动配置也进行备份，然后就跟直接对镜像备份一样对新生成的镜像备份即可
 <img src="http://img.arvon.top:80/images/2019/08/12/20180306-docker-2.png" alt="docker-2"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker ps <span style="color:#75715e">#list Running container</span>
-docker commit <span style="color:#e6db74">${</span>CONTAINER ID<span style="color:#e6db74">}</span> new_images_name:version <span style="color:#75715e">#将容器提交为镜像</span>
-docker rmi image_name:version <span style="color:#75715e">#删除某个镜像</span>
-</code></pre></div><p>另外可以备份容器的运行配置</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker inspect d7796307dfb7 &gt; /data/bak_container_config.json <span style="color:#75715e">#备份配置</span>
-<span style="color:#75715e">#PS：附送命令</span>
-docker inspect --format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39;</span> $INSTANCE_ID  <span style="color:#75715e">#获取IP地址</span>
-docker inspect --format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -&gt; {{(index $conf 0).HostPort}} {{end}}&#39;</span> $INSTANCE_ID <span style="color:#75715e">#获取端口映射</span>
-</code></pre></div><h3 id="还原镜像">还原镜像</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker ps <span class="c1">#list Running container</span>
+docker commit <span class="si">${</span><span class="nv">CONTAINER</span><span class="p"> ID</span><span class="si">}</span> new_images_name:version <span class="c1">#将容器提交为镜像</span>
+docker rmi image_name:version <span class="c1">#删除某个镜像</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>另外可以备份容器的运行配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker inspect d7796307dfb7 &gt; /data/bak_container_config.json <span class="c1">#备份配置</span>
+<span class="c1">#PS：附送命令</span>
+docker inspect --format<span class="o">=</span><span class="s1">&#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39;</span> <span class="nv">$INSTANCE_ID</span>  <span class="c1">#获取IP地址</span>
+docker inspect --format<span class="o">=</span><span class="s1">&#39;{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -&gt; {{(index $conf 0).HostPort}} {{end}}&#39;</span> <span class="nv">$INSTANCE_ID</span> <span class="c1">#获取端口映射</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="还原镜像">还原镜像</h3>
 <p>还原也十分简单，在具备docker环境并运行docker的主机上，执行导入镜像命令即可</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker load -i /data/image_bak.tar
-<span style="color:#75715e">#OR</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker load -i /data/image_bak.tar
+<span class="c1">#OR</span>
 docker load &lt; /data/image_bak.tar
 docker images
-</code></pre></div>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -411,7 +452,7 @@ docker images
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/docker/">Docker</a>
+          <a href="https://blog.gourds.site/tags/docker/">Docker</a>
           
         </div>
 
@@ -449,6 +490,8 @@ docker images
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -522,7 +565,7 @@ docker images
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -591,7 +634,7 @@ docker images
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

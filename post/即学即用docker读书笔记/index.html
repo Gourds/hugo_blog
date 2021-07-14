@@ -23,9 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
-容器是什么
- 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。 容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。 " />
+  <meta name="description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。 容器是什么 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。 容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
+" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -37,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" />
+<link rel="canonical" href="https://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" />
 
 
 
@@ -55,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -64,35 +63,29 @@
 <meta property="og:title" content="即学即用Docker读书笔记" />
 <meta property="og:description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
 容器是什么
-
 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
-" />
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-04-09T19:35:00+00:00" />
 <meta property="article:modified_time" content="2018-04-09T19:35:00+00:00" />
 
 <meta itemprop="name" content="即学即用Docker读书笔记">
 <meta itemprop="description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
 容器是什么
-
 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
-"><meta itemprop="datePublished" content="2018-04-09T19:35:00+00:00" />
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。"><meta itemprop="datePublished" content="2018-04-09T19:35:00+00:00" />
 <meta itemprop="dateModified" content="2018-04-09T19:35:00+00:00" />
-<meta itemprop="wordCount" content="5713">
+<meta itemprop="wordCount" content="5812">
 <meta itemprop="keywords" content="学习笔记," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="即学即用Docker读书笔记"/>
 <meta name="twitter:description" content="《即学即用Docker》这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
 容器是什么
-
 容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
 容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。
-"/>
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -124,28 +117,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -256,7 +249,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -267,7 +260,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -278,7 +271,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -289,7 +282,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -343,7 +336,8 @@
           2018-04-09
         </time>
         
-        
+        <span class="more-meta"> 5812 words </span>
+          <span class="more-meta"> 12 min read </span>
 
         
         
@@ -384,92 +378,188 @@
 
     
     <div class="post-content">
-      <p><a href="https://book.douban.com/subject/26700648/">《即学即用Docker》</a>这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。</p>
-<p><strong>容器是什么</strong></p>
-<ul>
-<li>容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。</li>
-<li>容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。</li>
-<li>容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。</li>
-</ul>
+      <p><a href="https://book.douban.com/subject/26700648/">《即学即用Docker》</a>这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
+<strong>容器是什么</strong>
+容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
+容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。</p>
 <h3 id="命令相关">命令相关</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker version
-<span style="color:#75715e">#查看docker版本信息</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker version
+<span class="c1">#查看docker版本信息</span>
 docker info
-<span style="color:#75715e">#查看服务器信息</span>
-docker run <span style="color:#f92672">==</span> docker create + docker start
-<span style="color:#75715e">#docker run 是两条命令的聚合</span>
-docker create --name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test-service&#34;</span> ubuntu:latest
-<span style="color:#75715e">#指定容器名称</span>
-docker run -d --name labels -l author<span style="color:#f92672">=</span>arvon -l tester<span style="color:#f92672">=</span>Mo  ubuntu:latest sleep <span style="color:#ae81ff">100</span>
-docker ps -a -f label<span style="color:#f92672">=</span>deployer<span style="color:#f92672">=</span>arvon
+<span class="c1">#查看服务器信息</span>
+docker <span class="nv">run</span> <span class="o">==</span> docker create + docker start
+<span class="c1">#docker run 是两条命令的聚合</span>
+docker create --name<span class="o">=</span><span class="s2">&#34;test-service&#34;</span> ubuntu:latest
+<span class="c1">#指定容器名称</span>
+docker run -d --name labels -l <span class="nv">author</span><span class="o">=</span>arvon -l <span class="nv">tester</span><span class="o">=</span>Mo  ubuntu:latest sleep <span class="m">100</span>
+docker ps -a -f <span class="nv">label</span><span class="o">=</span><span class="nv">deployer</span><span class="o">=</span>arvon
 docker inspect 509531d14f70
-<span style="color:#75715e">#指定容器标签、通过ps可以组合标签过滤、通过inspect可以查看所有标注</span>
+<span class="c1">#指定容器标签、通过ps可以组合标签过滤、通过inspect可以查看所有标注</span>
 docker run --rm -it ubuntu:latest /bin/bash
-<span style="color:#75715e">#启动一个没有任何特殊配置的容器，rm参数表示退出容器时会删除容器,i参数表示交互，t参数表示启动一个伪tty</span>
-docker run -it --hostname<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test.example.com&#34;</span> ubuntu:latest /bin/bash
-<span style="color:#75715e">#启动一个主机名为test.example.com的容器</span>
-docker run --it --dns<span style="color:#f92672">=</span>8.8.8.8 --dns<span style="color:#f92672">=</span>8.8.4.4 --dns-search<span style="color:#f92672">=</span>example.com --dns-search<span style="color:#f92672">=</span>example2.com ubuntu:latest /bin/bash
-<span style="color:#75715e">#启动一个指定dns的容器，默认会使用宿主机resolv.conf</span>
-docker run --it --mac-address<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;xx.xx.xx.xx.xx.xx&#34;</span> ubuntu:latest /bin/bash
-<span style="color:#75715e">#指定MAC地址，默认会自己计算，尽量别使用这个玩意</span>
+<span class="c1">#启动一个没有任何特殊配置的容器，rm参数表示退出容器时会删除容器,i参数表示交互，t参数表示启动一个伪tty</span>
+docker run -it --hostname<span class="o">=</span><span class="s2">&#34;test.example.com&#34;</span> ubuntu:latest /bin/bash
+<span class="c1">#启动一个主机名为test.example.com的容器</span>
+docker run --it --dns<span class="o">=</span>8.8.8.8 --dns<span class="o">=</span>8.8.4.4 --dns-search<span class="o">=</span>example.com --dns-search<span class="o">=</span>example2.com ubuntu:latest /bin/bash
+<span class="c1">#启动一个指定dns的容器，默认会使用宿主机resolv.conf</span>
+docker run --it --mac-address<span class="o">=</span><span class="s2">&#34;xx.xx.xx.xx.xx.xx&#34;</span> ubuntu:latest /bin/bash
+<span class="c1">#指定MAC地址，默认会自己计算，尽量别使用这个玩意</span>
 docker run --it -v /mnt/data1:/data ubuntu:latest /bin/bash
-<span style="color:#75715e">#挂载本地data1到容器/data，不需要容器内预先存在挂载点，会自己创建</span>
-docker stop -t <span style="color:#ae81ff">25</span> mysql
-<span style="color:#75715e">#强制停止myql容器，适用于无法正常停止的情况，发送SIGTERM信号，如果25s后容易还没有停止，就发送SIGKILL信号，强制清除容器</span>
-docker kill mysql
-<span style="color:#75715e">#清除容器，跟Linux的Kill命令一样</span>
-docker kill --signal<span style="color:#f92672">=</span>USR1 mysql
-<span style="color:#75715e">#发送UNIX信号对容器进行管理</span>
+<span class="c1">#挂载本地data1到容器/data，不需要容器内预先存在挂载点，会自己创建</span>
+docker stop -t <span class="m">25</span> mysql
+<span class="c1">#强制停止myql容器，适用于无法正常停止的情况，发送SIGTERM信号，如果25s后容易还没有停止，就发送SIGKILL信号，强制清除容器</span>
+docker <span class="nb">kill</span> mysql
+<span class="c1">#清除容器，跟Linux的Kill命令一样</span>
+docker <span class="nb">kill</span> --signal<span class="o">=</span>USR1 mysql
+<span class="c1">#发送UNIX信号对容器进行管理</span>
 docker ps
-<span style="color:#75715e">#查看运行中的容器</span>
+<span class="c1">#查看运行中的容器</span>
 docker ps -a
-<span style="color:#75715e">#查看所有容器</span>
+<span class="c1">#查看所有容器</span>
 docker rm mysql
-<span style="color:#75715e">#删除容器</span>
+<span class="c1">#删除容器</span>
 docker images
-<span style="color:#75715e">#列出镜像</span>
+<span class="c1">#列出镜像</span>
 docker rmi mysql:0.1
-<span style="color:#75715e">#删除镜像</span>
+<span class="c1">#删除镜像</span>
 docker inspect container_id
-<span style="color:#75715e">#查看容器详细信息</span>
-docker exec -it mysql /bin/bash
-<span style="color:#75715e">#进入运行中的容器mysql</span>
+<span class="c1">#查看容器详细信息</span>
+docker <span class="nb">exec</span> -it mysql /bin/bash
+<span class="c1">#进入运行中的容器mysql</span>
 docker stats
-<span style="color:#75715e">#查看docker容器的运行状态，类似top</span>
-</code></pre></div><h3 id="关于资源配额">关于资源配额</h3>
+<span class="c1">#查看docker容器的运行状态，类似top</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="关于资源配额">关于资源配额</h3>
 <p>Docker使用Linux内核中cgroup功能控制Docker容器的可用资源，执行docker create时可以直接配置分配给容器的CPU和内存量。
 使用<code>docker info</code>可以查看当前docker是否有支持，如不支持需要在内核启动时指定相应的参数，一般来说都是支持的。
 <strong>CPU配额</strong>：cpu配额类似nice，可以看做是对任务优先级的调整</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -it progrium/stress --cpu <span style="color:#ae81ff">2</span> --io <span style="color:#ae81ff">1</span> --vm <span style="color:#ae81ff">2</span> --vm-bytes 128M --timeout 120s
-<span style="color:#75715e">#创建一个容器包含2个cpu密集型1个io密集型和两个占用内存的进程，压测</span>
-docker run -it  -c <span style="color:#ae81ff">512</span>  progrium/stress --cpu <span style="color:#ae81ff">2</span> --io <span style="color:#ae81ff">1</span> --vm <span style="color:#ae81ff">2</span> --vm-bytes 128M --timeout 120s
-<span style="color:#75715e">#理论上cpu的load会是上一条命令的一般，使用-c参数指定cpu配额，类似nice，默认配额为1024</span>
-docker run -it  -c <span style="color:#ae81ff">512</span>  --cpuset<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> progrium/stress --cpu <span style="color:#ae81ff">2</span> --io <span style="color:#ae81ff">1</span> --vm <span style="color:#ae81ff">2</span> --vm-bytes 128M --timeout 120s
-<span style="color:#75715e">#创建一个容器--cpuset参数指定在特定cpu上运行，没有这个cpu的话容器启动会报错</span>
-</code></pre></div><p><strong>内存配额</strong>：内存限额是硬性限制，设定限额后容器内存不足会像普通进程一样使用swap</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -it -m 512m progrium/stress --cpu <span style="color:#ae81ff">2</span> --io <span style="color:#ae81ff">1</span> --vm <span style="color:#ae81ff">2</span> --vm-bytes 128M --timeout 120s
-<span style="color:#75715e">#创建一个内存限额512M交换分区限额512的容器,使用-m参数</span>
-docker run -it -m 512m --memory-swap<span style="color:#f92672">=</span> 1024m progrium/stress --cpu <span style="color:#ae81ff">2</span> --io <span style="color:#ae81ff">1</span> --vm <span style="color:#ae81ff">2</span> --vm-bytes 128M --timeout 120s
-<span style="color:#75715e">#创建一个内存限额512M交换分区限额1024M的容器，使用--memory-swap单独制定swap，设置为-1则禁用交换空间</span>
-</code></pre></div><p><strong>权限限制：</strong> 类似Linux中的ulimit</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d --default-ulimit nofile<span style="color:#f92672">=</span>50:150 --default-ulimit nproc<span style="color:#f92672">=</span>10:20
-<span style="color:#75715e">#告诉docker守护进程每个容器可以打开150个文件，运行20个进程，为硬性限制</span>
-</code></pre></div><h3 id="容器自动重启">容器自动重启</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -it progrium/stress --cpu <span class="m">2</span> --io <span class="m">1</span> --vm <span class="m">2</span> --vm-bytes 128M --timeout 120s
+<span class="c1">#创建一个容器包含2个cpu密集型1个io密集型和两个占用内存的进程，压测</span>
+docker run -it  -c <span class="m">512</span>  progrium/stress --cpu <span class="m">2</span> --io <span class="m">1</span> --vm <span class="m">2</span> --vm-bytes 128M --timeout 120s
+<span class="c1">#理论上cpu的load会是上一条命令的一般，使用-c参数指定cpu配额，类似nice，默认配额为1024</span>
+docker run -it  -c <span class="m">512</span>  --cpuset<span class="o">=</span><span class="m">0</span> progrium/stress --cpu <span class="m">2</span> --io <span class="m">1</span> --vm <span class="m">2</span> --vm-bytes 128M --timeout 120s
+<span class="c1">#创建一个容器--cpuset参数指定在特定cpu上运行，没有这个cpu的话容器启动会报错</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>内存配额</strong>：内存限额是硬性限制，设定限额后容器内存不足会像普通进程一样使用swap</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -it -m 512m progrium/stress --cpu <span class="m">2</span> --io <span class="m">1</span> --vm <span class="m">2</span> --vm-bytes 128M --timeout 120s
+<span class="c1">#创建一个内存限额512M交换分区限额512的容器,使用-m参数</span>
+docker run -it -m 512m --memory-swap<span class="o">=</span> 1024m progrium/stress --cpu <span class="m">2</span> --io <span class="m">1</span> --vm <span class="m">2</span> --vm-bytes 128M --timeout 120s
+<span class="c1">#创建一个内存限额512M交换分区限额1024M的容器，使用--memory-swap单独制定swap，设置为-1则禁用交换空间</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>**权限限制：**类似Linux中的ulimit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --default-ulimit <span class="nv">nofile</span><span class="o">=</span>50:150 --default-ulimit <span class="nv">nproc</span><span class="o">=</span>10:20
+<span class="c1">#告诉docker守护进程每个容器可以打开150个文件，运行20个进程，为硬性限制</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="容器自动重启">容器自动重启</h3>
 <p><strong>自动重启</strong>：共有三个参数可选</p>
 <ul>
 <li><code>no</code>: 容器退出不重启</li>
 <li><code>always</code>: 不管容器退出码是什么都重启</li>
 <li><code>on-failure:3</code>: 在容器退出码不是零的情况下尝试重启3次，3次依然失败的话就放弃重启</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --restart<span style="color:#f92672">=</span>on-failure:3 progrium/stress --cpu <span style="color:#ae81ff">2</span> --io <span style="color:#ae81ff">1</span> --vm <span style="color:#ae81ff">2</span> --vm-bytes 128M --timeout 120s
-<span style="color:#75715e">#启动一个容器容器退出后尝试重启3次</span>
-</code></pre></div><h3 id="暂停容器">暂停容器</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run --restart<span class="o">=</span>on-failure:3 progrium/stress --cpu <span class="m">2</span> --io <span class="m">1</span> --vm <span class="m">2</span> --vm-bytes 128M --timeout 120s
+<span class="c1">#启动一个容器容器退出后尝试重启3次</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="暂停容器">暂停容器</h3>
 <p><strong>暂停容器：</strong> 暂停功能是通过cgroup的冻结程序实现的，暂停容器时容器的内存等状态还在，只是无法提供服务，类似于快照的状态</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker pause mysql
-<span style="color:#75715e">#暂停容器</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker pause mysql
+<span class="c1">#暂停容器</span>
 dcoker unpause mysql
-<span style="color:#75715e">#恢复容器，运行时间从恢复的这一时刻计算</span>
-</code></pre></div><h3 id="镜像存储">镜像存储</h3>
+<span class="c1">#恢复容器，运行时间从恢复的这一时刻计算</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="镜像存储">镜像存储</h3>
 <p><strong>公共注册</strong></p>
 <ul>
 <li>Docker Hub</li>
@@ -484,24 +574,56 @@ dcoker unpause mysql
 <h3 id="容器命名空间">容器命名空间</h3>
 <p><strong>nsenter工具</strong>：Linux内核中的util-linux包里有个nsenter工具，用于进入linux的命令空间，因此可以通过这个工具进入运行在宿主机上的容器（不管这个容器是否有响应）
 **注意：**nsenter命令只能在宿主机上使用，并且需要把容器里顶层进程的PID传递给nsenter，看起来很麻烦的说，不过jpetazzo/nsenter容器有一个方便的脚本docker—enter会让这个过程简单不少</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
-<span style="color:#75715e">#安装nsenter工具到/usr/local/bin目录</span>
-docker inspect d2c3ce380095 --format <span style="color:#f92672">{{</span>.State.Pid<span style="color:#f92672">}}</span>
-<span style="color:#75715e">#查看容器的pid</span>
-nsenter --target <span style="color:#ae81ff">30302</span> --mount --uts --ipc --net --pid
-<span style="color:#75715e">#进入pid为30302的命名空间</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
+<span class="c1">#安装nsenter工具到/usr/local/bin目录</span>
+docker inspect d2c3ce380095 --format <span class="o">{{</span>.State.Pid<span class="o">}}</span>
+<span class="c1">#查看容器的pid</span>
+nsenter --target <span class="m">30302</span> --mount --uts --ipc --net --pid
+<span class="c1">#进入pid为30302的命名空间</span>
 docker-enter 12b57becb46b /bin/bash
-<span style="color:#75715e">#使用docker-enter命令相当于上面两条命令的合并，简单多了，主要用这个</span>
-</code></pre></div><h3 id="docker日志">Docker日志</h3>
+<span class="c1">#使用docker-enter命令相当于上面两条命令的合并，简单多了，主要用这个</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="docker日志">Docker日志</h3>
 <p>在Linux对log处理通常有两种方式，一种是将日志写入本地文件，一种是写入内核缓冲区然后使用dmesg命令读取。而docker提供的方式是使用<code>docker logs</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker logs d2c3ce380095
-<span style="color:#75715e">#查看容器的全部log</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker logs d2c3ce380095
+<span class="c1">#查看容器的全部log</span>
 docker logs -f d2c3ce380095
-<span style="color:#75715e">#阻塞方式查看log，与Linux中tail -f基本相同</span>
-</code></pre></div><p>Docker中容器的默认log存储在<code>/var/lib/docker/containers/&lt;your-contain-id&gt;/</code>这个目录下，记录的格式如下</p>
-<pre><code>{&quot;log&quot;:&quot;[7] 04-08 13:10:00,633 INFO total_commands_processed:3906596\r\n&quot;,&quot;stream&quot;:&quot;stdout&quot;,&quot;time&quot;:&quot;2018-04-08T13:10:00.848081205Z&quot;}
+<span class="c1">#阻塞方式查看log，与Linux中tail -f基本相同</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Docker中容器的默认log存储在<code>/var/lib/docker/containers/&lt;your-contain-id&gt;/</code>这个目录下，记录的格式如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{&#34;log&#34;:&#34;[7] 04-08 13:10:00,633 INFO total_commands_processed:3906596\r\n&#34;,&#34;stream&#34;:&#34;stdout&#34;,&#34;time&#34;:&#34;2018-04-08T13:10:00.848081205Z&#34;}
 #log:实际log，stream：log的输出，time：docker守护进程收到log的时间
-</code></pre><p><strong>Tips：</strong> 目前大规模部署docker时处理日志的最佳方式是把容器的log直接发送给系统日志syslog，使用这种方式构建容器时需要指定<code>--log-driver=syslog</code>选项</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>**Tips：**目前大规模部署docker时处理日志的最佳方式是把容器的log直接发送给系统日志syslog，使用这种方式构建容器时需要指定<code>--log-driver=syslog</code>选项</p>
 <p>目前解决log问题的思路：</p>
 <ul>
 <li>让应用直接把日志发给系统日志</li>
@@ -523,17 +645,33 @@ docker logs -f d2c3ce380095
 <li>Nagios</li>
 </ul>
 <p><strong>使用cAdvisor</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --volume<span style="color:#f92672">=</span>/:/rootfs:ro <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --volume<span style="color:#f92672">=</span>/var/run:/var/run:rw <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --volume<span style="color:#f92672">=</span>/sys:/sys:ro <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --volume<span style="color:#f92672">=</span>/var/lib/docker/:/var/lib/docker:ro <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --volume<span style="color:#f92672">=</span>/dev/disk/:/dev/disk:ro <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --publish<span style="color:#f92672">=</span>8080:8080 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --detach<span style="color:#f92672">=</span>true <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --name<span style="color:#f92672">=</span>cadvisor <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  google/cadvisor:v0.24.1
-</code></pre></div><p>访问<code>http://localhost:8080</code>即可查看web页面，很不错。另外还提供了REST API，可以通过这个api在自己的监控系统中轻松的查询众多详细信息,另外我这里使用0.24.1的原因是使用latest版本报错了，现在暂时不想折腾这个，这个0.24.1版本可用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run <span class="se">\
+</span><span class="se"></span>  --volume<span class="o">=</span>/:/rootfs:ro <span class="se">\
+</span><span class="se"></span>  --volume<span class="o">=</span>/var/run:/var/run:rw <span class="se">\
+</span><span class="se"></span>  --volume<span class="o">=</span>/sys:/sys:ro <span class="se">\
+</span><span class="se"></span>  --volume<span class="o">=</span>/var/lib/docker/:/var/lib/docker:ro <span class="se">\
+</span><span class="se"></span>  --volume<span class="o">=</span>/dev/disk/:/dev/disk:ro <span class="se">\
+</span><span class="se"></span>  --publish<span class="o">=</span>8080:8080 <span class="se">\
+</span><span class="se"></span>  --detach<span class="o">=</span><span class="nb">true</span> <span class="se">\
+</span><span class="se"></span>  --name<span class="o">=</span>cadvisor <span class="se">\
+</span><span class="se"></span>  google/cadvisor:v0.24.1
+</code></pre></td></tr></table>
+</div>
+</div><p>访问<code>http://localhost:8080</code>即可查看web页面，很不错。另外还提供了REST API，可以通过这个api在自己的监控系统中轻松的查询众多详细信息,另外我这里使用0.24.1的原因是使用latest版本报错了，现在暂时不想折腾这个，这个0.24.1版本可用。</p>
 <h3 id="部署工具介绍">部署工具介绍</h3>
 <p><strong>关于部署</strong>：部署应该满足两个条件</p>
 <ul>
@@ -602,9 +740,16 @@ docker logs -f d2c3ce380095
 <blockquote>
 <p>用户命名空间把容器里的用户和用户组与Docker宿主机的用户和用户组隔离开。在容器里和宿主机上看到用户ID不同的原因就是因为有这个用户命名空间。</p>
 </blockquote>
-<p><strong>补充说明之前的一个例子：</strong> 命名空间就是之前可以进入一个已经退出的容器的原因，以下命令就是进入这个容器的所有命名空间</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nsenter --target $PID --mount --uts --ipc --net --pid
-</code></pre></div><h3 id="关于容器安全性">关于容器安全性</h3>
+<p>**补充说明之前的一个例子：**命名空间就是之前可以进入一个已经退出的容器的原因，以下命令就是进入这个容器的所有命名空间</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">nsenter --target <span class="nv">$PID</span> --mount --uts --ipc --net --pid
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="关于容器安全性">关于容器安全性</h3>
 <p>容器只是运行在Docker宿主机中的一个进程。容器实现的隔离性没有虚拟机实现的强。容器的性能之所以高其中的一个原因就是与宿主机公用一个内核，但是内核中的一切并不都会放在命名空间中，这就是人们认为Docker容器存在的安全隐患之一也是最严重的一个。</p>
 <ul>
 <li>在容器中以非Root用户运行应用</li>
@@ -734,7 +879,7 @@ docker logs -f d2c3ce380095
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+          <a href="https://blog.gourds.site/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
           
         </div>
 
@@ -772,6 +917,8 @@ docker logs -f d2c3ce380095
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -845,7 +992,7 @@ docker logs -f d2c3ce380095
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -914,7 +1061,7 @@ docker logs -f d2c3ce380095
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

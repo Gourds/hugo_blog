@@ -37,7 +37,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/" />
+<link rel="canonical" href="https://blog.gourds.site/post/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/" />
 
 
 
@@ -55,7 +55,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -72,7 +72,7 @@ tags: [Nginx]
 其实这个也蛮好理解，不涉及数据报内容的改变，就是将要解析的域名指向另一个域名解析。对比A记录就更清晰了，A记录是域名到IP的解析，而CNAME记录是域名解析到域名。所以通过域名的CNAME记录对web访问时没有任何影响的，它只是改变了域名解析的过程而已。
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
 
 
 
@@ -87,7 +87,7 @@ tags: [Nginx]
 其实这个也蛮好理解，不涉及数据报内容的改变，就是将要解析的域名指向另一个域名解析。对比A记录就更清晰了，A记录是域名到IP的解析，而CNAME记录是域名解析到域名。所以通过域名的CNAME记录对web访问时没有任何影响的，它只是改变了域名解析的过程而已。
 ">
 
-<meta itemprop="wordCount" content="1166">
+<meta itemprop="wordCount" content="1198">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: Nginx重定向及域名CNAME问题
@@ -130,28 +130,28 @@ tags: [Nginx]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -262,7 +262,7 @@ tags: [Nginx]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -273,7 +273,7 @@ tags: [Nginx]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -284,7 +284,7 @@ tags: [Nginx]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -295,7 +295,7 @@ tags: [Nginx]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -349,7 +349,8 @@ tags: [Nginx]
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 1198 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -405,31 +406,65 @@ permanent – 返回永久重定向的HTTP状态301</p>
 </blockquote>
 <ul>
 <li>301永久重定向Nginx代码
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">server <span style="color:#f92672">{</span>
-        listen       80;
-        server_name  arvon.top;
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;www.arvon.top&#39;</span> <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            rewrite ^/<span style="color:#f92672">(</span>.*<span style="color:#f92672">)</span>$ http://arvon.top/$1 permanent;
-                   <span style="color:#f92672">}</span>
-        location / <span style="color:#f92672">{</span>
-            root   html/public;
-            index  index.html;
-        <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">server <span class="o">{</span>
+        listen       80<span class="p">;</span>
+        server_name  arvon.top<span class="p">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="nv">$host</span> <span class="o">=</span> <span class="s1">&#39;www.arvon.top&#39;</span> <span class="o">)</span> <span class="o">{</span>
+            rewrite ^/<span class="o">(</span>.*<span class="o">)</span>$ http://arvon.top/<span class="nv">$1</span> permanent<span class="p">;</span>
+                   <span class="o">}</span>
+        location / <span class="o">{</span>
+            root   html/public<span class="p">;</span>
+            index  index.html<span class="p">;</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>302临时重定向Nginx代码
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">server <span style="color:#f92672">{</span>
-        listen       80;
-        server_name  arvon.top;
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;blog.arvon.top&#39;</span> <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            rewrite ^/<span style="color:#f92672">(</span>.*<span style="color:#f92672">)</span>$ http://arvon.top/$1 redirect;
-                   <span style="color:#f92672">}</span>
-        location / <span style="color:#f92672">{</span>
-            root   html/public;
-            index  index.html;
-        <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">server <span class="o">{</span>
+        listen       80<span class="p">;</span>
+        server_name  arvon.top<span class="p">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="nv">$host</span> <span class="o">=</span> <span class="s1">&#39;blog.arvon.top&#39;</span> <span class="o">)</span> <span class="o">{</span>
+            rewrite ^/<span class="o">(</span>.*<span class="o">)</span>$ http://arvon.top/<span class="nv">$1</span> redirect<span class="p">;</span>
+                   <span class="o">}</span>
+        location / <span class="o">{</span>
+            root   html/public<span class="p">;</span>
+            index  index.html<span class="p">;</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="nginx地址重定向">Nginx地址重定向</h3>
 <blockquote>
@@ -440,21 +475,43 @@ permanent – 返回永久重定向的HTTP状态301</p>
 语法：root path;
 默认：root html;
 配置块：http、server、location、if
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">location /download/ <span style="color:#f92672">{</span>  
-root /opt/web/html/;  
-<span style="color:#f92672">}</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">location /download/ <span class="o">{</span>  
+root /opt/web/html/<span class="p">;</span>  
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>使用alias定义
 语法：alias path;
 配置块： location;
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">location /conf <span style="color:#f92672">{</span>  
-    alias /usr/local/nginx/conf/;      
-<span style="color:#f92672">}</span>
-<span style="color:#75715e">#如果用root，则如</span>
-location /conf <span style="color:#f92672">{</span>  
-       root /usr/local/nginx/;          
-<span style="color:#f92672">}</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">location /conf <span class="o">{</span>  
+    <span class="nb">alias</span> /usr/local/nginx/conf/<span class="p">;</span>      
+<span class="o">}</span>
+<span class="c1">#如果用root，则如</span>
+location /conf <span class="o">{</span>  
+       root /usr/local/nginx/<span class="p">;</span>          
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <blockquote>
 <p>使用alias时，在URI向实际文件路径的映射过程中，已经把location后配置的/conf这部分字符串丢弃掉，因此，/conf/nginx.conf请求将根据alias path映射为path/nginx.conf。root则不然，它会根据完整的URI请求来映射，因此，/conf/nginx.conf请求会根据root path映射为path/conf/nginx.conf。这也是root可以放置到http、server、location或if块中，而alias只能放置到location块中的原因。</p>
@@ -528,6 +585,8 @@ location /conf <span style="color:#f92672">{</span>
 
   
   
+  
+  
 
   
   
@@ -599,7 +658,7 @@ location /conf <span style="color:#f92672">{</span>
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -668,7 +727,7 @@ location /conf <span style="color:#f92672">{</span>
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/" />
+<link rel="canonical" href="https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,14 +63,14 @@
 <meta property="og:title" content="Elasticsearch使用curator管理index" />
 <meta property="og:description" content="有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具curator，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句curator的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-08-01T12:11:16+00:00" />
 <meta property="article:modified_time" content="2018-08-01T12:11:16+00:00" />
 
 <meta itemprop="name" content="Elasticsearch使用curator管理index">
 <meta itemprop="description" content="有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具curator，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句curator的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。"><meta itemprop="datePublished" content="2018-08-01T12:11:16+00:00" />
 <meta itemprop="dateModified" content="2018-08-01T12:11:16+00:00" />
-<meta itemprop="wordCount" content="1763">
+<meta itemprop="wordCount" content="2107">
 <meta itemprop="keywords" content="ELK,Docker," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Elasticsearch使用curator管理index"/>
 <meta name="twitter:description" content="有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具curator，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句curator的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。"/>
@@ -105,28 +105,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -324,7 +324,8 @@
           2018-08-01
         </time>
         
-        
+        <span class="more-meta"> 2107 words </span>
+          <span class="more-meta"> 5 min read </span>
 
         
         
@@ -362,23 +363,63 @@
 <ul>
 <li>本地环境</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># cat /etc/issue</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cat /etc/issue</span>
 Amazon Linux AMI release 2017.03
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>安装Docker环境&amp;下载源代码</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install docker
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install docker
 /etc/init.d/docker start
-<span style="color:#75715e">#Install and start docker service</span>
-mkdir -pv /data/ES-curator<span style="color:#f92672">&amp;&amp;</span>cd  /data/ES-curator
-wget https://github.com/elastic/curator/archive/v5.5.4.zip <span style="color:#f92672">&amp;&amp;</span> unzip v5.5.4.zip
-<span style="color:#75715e">#Download curator source code</span>
-</code></pre></div><ul>
+<span class="c1">#Install and start docker service</span>
+mkdir -pv /data/ES-curator<span class="o">&amp;&amp;</span><span class="nb">cd</span>  /data/ES-curator
+wget https://github.com/elastic/curator/archive/v5.5.4.zip <span class="o">&amp;&amp;</span> unzip v5.5.4.zip
+<span class="c1">#Download curator source code</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>简单升级DockerFile</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">FROM python:3.6-alpine3.6 as builder
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">FROM python:3.6-alpine3.6 as builder
 RUN apk --no-cache add build-base tar musl-utils openssl-dev
-RUN pip3 install setuptools cx_Freeze<span style="color:#f92672">==</span>6.0b1 requests-aws4auth boto3
+RUN pip3 install setuptools <span class="nv">cx_Freeze</span><span class="o">==</span>6.0b1 requests-aws4auth boto3
 COPY . .
 RUN ln -s /lib/libc.musl-x86_64.so.1 ldd
 RUN ln -s /lib /lib64
@@ -386,61 +427,122 @@ RUN pip3 install -r requirements.txt
 RUN python3 setup.py build_exe
 FROM alpine:3.6
 ENV CURATOR_CONFIG_HOME /data/curator-config
-RUN apk --no-cache upgrade <span style="color:#f92672">&amp;&amp;</span> apk --no-cache add ca-certificates  <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    mkdir -p <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CURATOR_CONFIG_HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-COPY --from<span style="color:#f92672">=</span>builder build/exe.linux-x86_64-3.6 /curator/
-VOLUME <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>CURATOR_CONFIG_HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">]</span>
+RUN apk --no-cache upgrade <span class="o">&amp;&amp;</span> apk --no-cache add ca-certificates  <span class="o">&amp;&amp;</span> <span class="se">\
+</span><span class="se"></span>    mkdir -p <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CURATOR_CONFIG_HOME</span><span class="si">}</span><span class="s2">&#34;</span>
+COPY --from<span class="o">=</span>builder build/exe.linux-x86_64-3.6 /curator/
+VOLUME <span class="o">[</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">CURATOR_CONFIG_HOME</span><span class="si">}</span><span class="s2">&#34;</span><span class="o">]</span>
 USER root:root
-ENTRYPOINT <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;/curator/curator&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><ul>
+ENTRYPOINT <span class="o">[</span><span class="s2">&#34;/curator/curator&#34;</span><span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>构建Docker镜像</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd curator-5.5.4/ <span style="color:#f92672">&amp;&amp;</span> docker build -t curator:v5.5.4 .
-<span style="color:#75715e">#build docker image from source code</span>
-</code></pre></div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> curator-5.5.4/ <span class="o">&amp;&amp;</span> docker build -t curator:v5.5.4 .
+<span class="c1">#build docker image from source code</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
 <h3 id="使用">使用</h3>
 <ul>
 <li>配置文件（默认会使用<code>~/.curator/curator.yml</code>，可以手动通过<code>--config</code>参数指定。配置如下，更具体的文档可以查阅<a href="https://www.elastic.co/guide/en/elasticsearch/client/curator/current/configfile.html">【官方】</a></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-<span style="color:#75715e"># Remember, leave a key empty if there is no value.  None will be a string,</span>
-<span style="color:#75715e"># not a Python &#34;NoneType&#34;</span>
-<span style="color:#f92672">client</span>:
-  <span style="color:#f92672">hosts</span>:
-  <span style="color:#75715e">#填写ES的服务节点，可以只写一个节点，可以写成下面的形式，也可以写成[&#39;host1&#39;, &#39;host2]这种形式</span>
-    - <span style="color:#ae81ff">x.x.x.x</span>
-  <span style="color:#f92672">port</span>: <span style="color:#ae81ff">9200</span> <span style="color:#75715e">#ES的端口</span>
-  <span style="color:#f92672">url_prefix</span>: <span style="color:#75715e">#默认留空即可，使用域名的时候可以根据需求修改</span>
-  <span style="color:#f92672">use_ssl</span>: <span style="color:#66d9ef">False</span>
-  <span style="color:#f92672">certificate</span>:
-  <span style="color:#f92672">client_cert</span>:
-  <span style="color:#f92672">client_key</span>:
-  <span style="color:#f92672">ssl_no_validate</span>: <span style="color:#66d9ef">False</span>
-  <span style="color:#f92672">http_auth</span>:
-  <span style="color:#f92672">timeout</span>: <span style="color:#ae81ff">30</span>
-  <span style="color:#f92672">master_only</span>: <span style="color:#66d9ef">False</span>
-
-<span style="color:#f92672">logging</span>:
-  <span style="color:#f92672">loglevel</span>: <span style="color:#ae81ff">INFO</span> <span style="color:#75715e">#记录log的级别</span>
-  <span style="color:#f92672">logfile</span>: <span style="color:#ae81ff">/data/curator-config/log/curator_%Y%m%d.log</span> <span style="color:#75715e">#log的输出设置，默认留空</span>
-  <span style="color:#f92672">logformat</span>: <span style="color:#ae81ff">default</span>
-  <span style="color:#f92672">blacklist</span>: [<span style="color:#e6db74">&#39;elasticsearch&#39;</span>, <span style="color:#e6db74">&#39;urllib3&#39;</span>] <span style="color:#75715e">#日志输出屏蔽的列表，按默认即可，这两个相关log输入太影响Debug</span>
-</code></pre></div><h4 id="使用docker对index进行管理">使用Docker对Index进行管理</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+</span><span class="w"></span><span class="c"># Remember, leave a key empty if there is no value.  None will be a string,</span><span class="w">
+</span><span class="w"></span><span class="c"># not a Python &#34;NoneType&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">client</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">hosts</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="c">#填写ES的服务节点，可以只写一个节点，可以写成下面的形式，也可以写成[&#39;host1&#39;, &#39;host2]这种形式</span><span class="w">
+</span><span class="w">    </span>- <span class="l">x.x.x.x</span><span class="w">
+</span><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">9200</span><span class="w"> </span><span class="c">#ES的端口</span><span class="w">
+</span><span class="w">  </span><span class="nt">url_prefix</span><span class="p">:</span><span class="w"> </span><span class="c">#默认留空即可，使用域名的时候可以根据需求修改</span><span class="w">
+</span><span class="w">  </span><span class="nt">use_ssl</span><span class="p">:</span><span class="w"> </span><span class="kc">False</span><span class="w">
+</span><span class="w">  </span><span class="nt">certificate</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">client_cert</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">client_key</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">ssl_no_validate</span><span class="p">:</span><span class="w"> </span><span class="kc">False</span><span class="w">
+</span><span class="w">  </span><span class="nt">http_auth</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="m">30</span><span class="w">
+</span><span class="w">  </span><span class="nt">master_only</span><span class="p">:</span><span class="w"> </span><span class="kc">False</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">logging</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">loglevel</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w"> </span><span class="c">#记录log的级别</span><span class="w">
+</span><span class="w">  </span><span class="nt">logfile</span><span class="p">:</span><span class="w"> </span><span class="l">/data/curator-config/log/curator_%Y%m%d.log</span><span class="w"> </span><span class="c">#log的输出设置，默认留空</span><span class="w">
+</span><span class="w">  </span><span class="nt">logformat</span><span class="p">:</span><span class="w"> </span><span class="l">default</span><span class="w">
+</span><span class="w">  </span><span class="nt">blacklist</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;elasticsearch&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;urllib3&#39;</span><span class="p">]</span><span class="w"> </span><span class="c">#日志输出屏蔽的列表，按默认即可，这两个相关log输入太影响Debug</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><h4 id="使用docker对index进行管理">使用Docker对Index进行管理</h4>
 <p>由于直接测试写的文档，也没有什么高深的技术，有兴趣可移步到我的<a href="https://github.com/Gourds/docker-image/tree/master/Service/elasticsearch_curator/cuator_config">Github</a>。里面有测试使用的例子（包括打开索引、关闭索引、段合并以及删除索引）</p>
 <p>自己写了一个简单的启动脚本，由于比较长也没什么营养，感兴趣的可以看<a href="https://github.com/Gourds/docker-image/blob/master/Service/elasticsearch_curator/cuator_config/curator-manage-index">【这里】</a>
 使用我这个脚本，然后再服务器上进行设置定时任务运行,当需要单独执行某个操作时候这种管理方式可能方便些。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#crontab -e</span>
-<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">3</span> * * * service curator-manage-index cron
-</code></pre></div><p><strong>使用命令</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/close_index_rule.yml
-<span style="color:#75715e">#关闭索引</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#crontab -e</span>
+<span class="m">0</span> <span class="m">3</span> * * * service curator-manage-index cron
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>使用命令</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/close_index_rule.yml
+<span class="c1">#关闭索引</span>
 docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/delete_index_rule.yml
-<span style="color:#75715e">#删除索引</span>
+<span class="c1">#删除索引</span>
 docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/merge_index_rule.yml
-<span style="color:#75715e">#段合并</span>
+<span class="c1">#段合并</span>
 docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/open_index_rule.yml
-<span style="color:#75715e">#打开索引</span>
-</code></pre></div><hr>
+<span class="c1">#打开索引</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
 <h3 id="补充配置说明">补充配置说明</h3>
 <p>上面记录了我使用中需求的具体示例，还有一些配置选项没有进行说明，就简单介绍下curator可以对Index进行哪些操作，以及常见具体操作时的参数选项。</p>
 <ul>
@@ -465,17 +567,33 @@ docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config cura
 <h4 id="选取indexfilters">选取Index（Filters）</h4>
 <p>使用filters进行筛选需要操作的index。虽然过滤器可以链接，但是每个过滤器都通过隐含的逻辑AND操作链接。如果想从几个不同的模式中匹配，就像用逻辑或运算一样，可以用模式过滤器类型使用正则表达式来匹配。</p>
 <p>操作筛选操作分为两部分（索引以及镜像），这里只对Index的过滤选项进行介绍，更多可以参照<a href="https://www.elastic.co/guide/en/elasticsearch/client/curator/current/filters.html">【官方】</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#支持正则进行多个index的匹配</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#支持正则进行多个index的匹配</span>
   filters:
   - filtertype: pattern
     kind: regex
-    value: <span style="color:#e6db74">&#39;^(alpha-|bravo-|charlie-).*$&#39;</span>
-  - filtertype: age <span style="color:#75715e">#按时间进行筛选index</span>
+    value: <span class="s1">&#39;^(alpha-|bravo-|charlie-).*$&#39;</span>
+  - filtertype: age <span class="c1">#按时间进行筛选index</span>
     source: creation_date
     direction: older
     unit: days
-    unit_count: <span style="color:#ae81ff">3</span>
-</code></pre></div><hr>
+    unit_count: <span class="m">3</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
 <h3 id="参考链接">参考链接</h3>
 <ul>
 <li><a href="https://github.com/elastic/curator">【Github地址】</a></li>
@@ -511,8 +629,8 @@ docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config cura
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/elk/">ELK</a>
-          <a href="http://blog.gourds.site/tags/docker/">Docker</a>
+          <a href="https://blog.gourds.site/tags/elk/">ELK</a>
+          <a href="https://blog.gourds.site/tags/docker/">Docker</a>
           
         </div>
 
@@ -550,6 +668,8 @@ docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config cura
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -623,7 +743,7 @@ docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config cura
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -692,7 +812,7 @@ docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config cura
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

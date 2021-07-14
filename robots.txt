@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://blog.gourds.site/sitemap.xml
+Sitemap: https://blog.gourds.site/sitemap.xml

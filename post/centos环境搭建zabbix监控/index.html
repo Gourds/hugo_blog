@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAzabbix%E7%9B%91%E6%8E%A7/" />
+<link rel="canonical" href="https://blog.gourds.site/post/centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAzabbix%E7%9B%91%E6%8E%A7/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -67,7 +67,7 @@ tags: [Zabbix]
 ##zabbix server
 更新：此版本为2.2版本，已更新3.0版本" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAzabbix%E7%9B%91%E6%8E%A7/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAzabbix%E7%9B%91%E6%8E%A7/" /><meta property="article:section" content="post" />
 
 
 
@@ -78,7 +78,7 @@ tags: [Zabbix]
 ##zabbix server
 更新：此版本为2.2版本，已更新3.0版本">
 
-<meta itemprop="wordCount" content="1317">
+<meta itemprop="wordCount" content="1391">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: CentOS环境搭建zabbix2.2监控
@@ -117,28 +117,28 @@ tags: [Zabbix]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -249,7 +249,7 @@ tags: [Zabbix]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -260,7 +260,7 @@ tags: [Zabbix]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -271,7 +271,7 @@ tags: [Zabbix]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -282,7 +282,7 @@ tags: [Zabbix]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -336,7 +336,8 @@ tags: [Zabbix]
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 1391 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -385,42 +386,108 @@ tags: [Zabbix]</h2>
 <p>##zabbix server
 更新：此版本为2.2版本，已更新3.0版本</p>
 <h3 id="配置yum源">配置yum源</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rpm -ivh http://repo.zabbix.com/zabbix/2.2/rhel/6/x86_64/zabbix-release-2.2-1.el6.noarch.rpm
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">rpm -ivh http://repo.zabbix.com/zabbix/2.2/rhel/6/x86_64/zabbix-release-2.2-1.el6.noarch.rpm
 http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-</code></pre></div><h3 id="install-zabbix-server">install zabbix server</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install -y zabbix zabbix-get zabbix-server zabbix-web-mysql zabbix-web zabbix-agent	<span style="color:#75715e">#这个装出来是1.8的版本。所以重来</span>
-<span style="color:#75715e">#* 下面是2.2版本的安装包</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="install-zabbix-server">install zabbix server</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">yum install -y zabbix zabbix-get zabbix-server zabbix-web-mysql zabbix-web zabbix-agent	<span class="c1">#这个装出来是1.8的版本。所以重来</span>
+<span class="c1">#* 下面是2.2版本的安装包</span>
 yum install -y zabbix22 zabbix22-web-mysql zabbix22-server zabbix22-agent zabbix22-web zabbix22-dbfiles-mysql zabbix22-server-mysql
-</code></pre></div><h3 id="mysql-config">mysql config</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install -y mysql-server
-</code></pre></div><h4 id="修改mysql配置文件">修改mysql配置文件</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp /etc/my.cnf /tmp
-egrep -v <span style="color:#e6db74">&#34;(^#|^</span>$<span style="color:#e6db74">)&#34;</span> 	<span style="color:#75715e">#cat /etc/my.cnf | grep -v ^# | grep -v ^$</span>
-<span style="color:#75715e">#vi /etc/my.cnf</span>
-<span style="color:#75715e">#参照P27[Zabbix企业级分布式监控系统](http://item.jd.com/11522142.html?cu=true&amp;utm_source=baidu-search&amp;utm_medium=cpc&amp;utm_campaign=t_262767352_baidusearch&amp;utm_term=12777330128_0_0757319b492245849616c53bac31a23e)</span>
-<span style="color:#f92672">[</span>mysqld<span style="color:#f92672">]</span>
-datadir<span style="color:#f92672">=</span>/var/lib/mysql
-socket<span style="color:#f92672">=</span>/var/lib/mysql/mysql.sock
-user<span style="color:#f92672">=</span>mysql
-<span style="color:#75715e"># Disabling symbolic-links is recommended to prevent assorted security risks</span>
-symbolic-links<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-character-set-server<span style="color:#f92672">=</span>utf8
-innodb_file_per_table<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-<span style="color:#f92672">[</span>mysqld_safe<span style="color:#f92672">]</span>
-log-error<span style="color:#f92672">=</span>/var/log/mysqld.log
-pid-file<span style="color:#f92672">=</span>/var/run/mysqld/mysqld.pid
-</code></pre></div><h3 id="启动mysql服务">启动mysql服务</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install mysql-server -y
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="mysql-config">mysql config</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">yum install -y mysql-server
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="修改mysql配置文件">修改mysql配置文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">cp /etc/my.cnf /tmp
+egrep -v <span class="s2">&#34;(^#|^</span>$<span class="s2">)&#34;</span> 	<span class="c1">#cat /etc/my.cnf | grep -v ^# | grep -v ^$</span>
+<span class="c1">#vi /etc/my.cnf</span>
+<span class="c1">#参照P27[Zabbix企业级分布式监控系统](http://item.jd.com/11522142.html?cu=true&amp;utm_source=baidu-search&amp;utm_medium=cpc&amp;utm_campaign=t_262767352_baidusearch&amp;utm_term=12777330128_0_0757319b492245849616c53bac31a23e)</span>
+<span class="o">[</span>mysqld<span class="o">]</span>
+<span class="nv">datadir</span><span class="o">=</span>/var/lib/mysql
+<span class="nv">socket</span><span class="o">=</span>/var/lib/mysql/mysql.sock
+<span class="nv">user</span><span class="o">=</span>mysql
+<span class="c1"># Disabling symbolic-links is recommended to prevent assorted security risks</span>
+symbolic-links<span class="o">=</span><span class="m">0</span>
+character-set-server<span class="o">=</span>utf8
+<span class="nv">innodb_file_per_table</span><span class="o">=</span><span class="m">1</span>
+<span class="o">[</span>mysqld_safe<span class="o">]</span>
+log-error<span class="o">=</span>/var/log/mysqld.log
+pid-file<span class="o">=</span>/var/run/mysqld/mysqld.pid
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="启动mysql服务">启动mysql服务</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">yum install mysql-server -y
 service mysqld start
-ps -ef | grep mysql
-netstat -nlput | grep <span style="color:#ae81ff">3306</span>
-</code></pre></div><h4 id="mysql设置">mysql设置</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mysqladmin -uroot password admin
+ps -ef <span class="p">|</span> grep mysql
+netstat -nlput <span class="p">|</span> grep <span class="m">3306</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="mysql设置">mysql设置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">mysqladmin -uroot password admin
 mysql -uroot -padmin
-mysql&gt; create database zabbix character set utf8;
-mysql&gt; grant all privileges on zabbix.* to zabbix@localhost identified by <span style="color:#e6db74">&#39;zabbix&#39;</span>;
-mysql&gt; flush privileges;
-</code></pre></div><h3 id="创建zabbix的数据库">创建zabbix的数据库</h3>
+mysql&gt; create database zabbix character <span class="nb">set</span> utf8<span class="p">;</span>
+mysql&gt; grant all privileges on zabbix.* to zabbix@localhost identified by <span class="s1">&#39;zabbix&#39;</span><span class="p">;</span>
+mysql&gt; flush privileges<span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="创建zabbix的数据库">创建zabbix的数据库</h3>
 <ul>
 <li>zabbix连接数据：zabbix/zabbix</li>
 </ul>
@@ -435,21 +502,49 @@ source /usr/share/zabbix-mysql/images.sql
 source /usr/share/zabbix-mysql/data.sql</li>
 </ul>
 <h4 id="在数据库外导入">在数据库外导入</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mysql -uzabbix -pzabbix zabbix &lt; /usr/share/zabbix-mysql/schema.sql
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">mysql -uzabbix -pzabbix zabbix &lt; /usr/share/zabbix-mysql/schema.sql
 mysql -uzabbix -p_zabbix_ zabbix &lt; /usr/share/zabbix-mysql/images.sql
 mysql -uzabbix -p_zabbix_ zabbix &lt; /usr/share/zabbix-mysql/data.sql
-</code></pre></div><p>###配置zabbix_server.conf</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>###配置zabbix_server.conf</p>
 <ul>
 <li>默认参数：
 egrep -v &ldquo;(^#|^$)&rdquo; /etc/zabbix/zabbix_server.conf
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">LogFile<span style="color:#f92672">=</span>/var/log/zabbix/zabbix_server.log
-LogFileSize<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-PidFile<span style="color:#f92672">=</span>/var/run/zabbix/zabbix.pid
-DBName<span style="color:#f92672">=</span>zabbix
-DBUser<span style="color:#f92672">=</span>zabbix
-DBSocket<span style="color:#f92672">=</span>/var/lib/mysql/mysql.sock
-AlertScriptsPath<span style="color:#f92672">=</span>/var/lib/zabbix/
-</code></pre></div><pre><code></code></pre></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">LogFile</span><span class="o">=</span>/var/log/zabbix/zabbix_server.log
+<span class="nv">LogFileSize</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">PidFile</span><span class="o">=</span>/var/run/zabbix/zabbix.pid
+<span class="nv">DBName</span><span class="o">=</span>zabbix
+<span class="nv">DBUser</span><span class="o">=</span>zabbix
+<span class="nv">DBSocket</span><span class="o">=</span>/var/lib/mysql/mysql.sock
+<span class="nv">AlertScriptsPath</span><span class="o">=</span>/var/lib/zabbix/
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
+</div>
+</div></li>
 <li>修改后参数：
 主要添加字段为：DBpassword=zabbix</li>
 </ul>
@@ -457,36 +552,94 @@ AlertScriptsPath<span style="color:#f92672">=</span>/var/lib/zabbix/
 <ul>
 <li>iptables设置(注意顺序)</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">-A INPUT -m state --state NEW -m tcp -p tcp --dport <span style="color:#ae81ff">80</span> -j ACCEPT
--A INPUT -m state --state NEW -m tcp -p tcp --dport <span style="color:#ae81ff">10051</span> -j ACCEPT
--A OUTPUT -m state --state NEW -m tcp -p tcp --dport <span style="color:#ae81ff">10050</span> -j ACCEPT
--A INPUT -m state --state NEW -m tcp -p tcp --sport <span style="color:#ae81ff">10050</span> -j ACCEPT
-<span style="color:#75715e">#* Selinux关闭</span>
-<span style="color:#f92672">[</span>root@localhost ~<span style="color:#f92672">]</span><span style="color:#75715e"># setenforce 0</span>
-<span style="color:#f92672">[</span>root@localhost ~<span style="color:#f92672">]</span><span style="color:#75715e"># getenforce</span>
-</code></pre></div><h3 id="启动zabbix服务http服务">启动zabbix服务&amp;http服务</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo /etc/init.d/zabbix-server start
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">-A INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">80</span> -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">10051</span> -j ACCEPT
+-A OUTPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">10050</span> -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --sport <span class="m">10050</span> -j ACCEPT
+<span class="c1">#* Selinux关闭</span>
+<span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># setenforce 0</span>
+<span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># getenforce</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="启动zabbix服务http服务">启动zabbix服务&amp;http服务</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">sudo /etc/init.d/zabbix-server start
 sudo /etc/init.d/httpd start
-</code></pre></div><h2 id="zabbix-agent">zabbix agent</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="zabbix-agent">zabbix agent</h2>
 <h3 id="sofaware">sofaware</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rpm -ivh http://repo.zabbix.com/zabbix/2.2/rhel/6/x86_64/zabbix-release-2.2-1.el6.noarch.rpm
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">rpm -ivh http://repo.zabbix.com/zabbix/2.2/rhel/6/x86_64/zabbix-release-2.2-1.el6.noarch.rpm
 yum install zabbix zabbix-agent
-</code></pre></div><h3 id="configure">configure</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="configure">configure</h3>
 <h4 id="iptables">iptables</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">-A INPUT -m state --state NEW -m tcp -p tcp --dport <span style="color:#ae81ff">10050</span> -j ACCEPT
--A OUTPUT -m state --state NEW -m tcp -p tcp --dport <span style="color:#ae81ff">10051</span> -j ACCEPT
-</code></pre></div><h4 id="zabbix_agentdconf">zabbix_agentd.conf</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>root@localhost ~<span style="color:#f92672">]</span><span style="color:#75715e"># egrep -v &#34;(^#|^$)&#34; /etc/zabbix/zabbix_agentd.conf</span>
-PidFile<span style="color:#f92672">=</span>/var/run/zabbix/zabbix_agentd.pid
-LogFile<span style="color:#f92672">=</span>/var/log/zabbix/zabbix_agentd.log
-LogFileSize<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-Server<span style="color:#f92672">=</span>192.168.138.133	<span style="color:#75715e">#server IP</span>
-ServerActive<span style="color:#f92672">=</span>192.168.138.133	<span style="color:#75715e">#server IP</span>
-Hostname<span style="color:#f92672">=</span>Centos-01.hostname
-Include<span style="color:#f92672">=</span>/etc/zabbix/zabbix_agentd.d/
-</code></pre></div><h4 id="启动">启动</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>root@localhost ~<span style="color:#f92672">]</span><span style="color:#75715e"># /etc/init.d/zabbix-agent restart</span>
-</code></pre></div><h4 id="zabbix添加主机">zabbix添加主机</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">-A INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">10050</span> -j ACCEPT
+-A OUTPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">10051</span> -j ACCEPT
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="zabbix_agentdconf">zabbix_agentd.conf</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># egrep -v &#34;(^#|^$)&#34; /etc/zabbix/zabbix_agentd.conf</span>
+<span class="nv">PidFile</span><span class="o">=</span>/var/run/zabbix/zabbix_agentd.pid
+<span class="nv">LogFile</span><span class="o">=</span>/var/log/zabbix/zabbix_agentd.log
+<span class="nv">LogFileSize</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">Server</span><span class="o">=</span>192.168.138.133	<span class="c1">#server IP</span>
+<span class="nv">ServerActive</span><span class="o">=</span>192.168.138.133	<span class="c1">#server IP</span>
+<span class="nv">Hostname</span><span class="o">=</span>Centos-01.hostname
+<span class="nv">Include</span><span class="o">=</span>/etc/zabbix/zabbix_agentd.d/
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="启动">启动</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>root@localhost ~<span class="o">]</span><span class="c1"># /etc/init.d/zabbix-agent restart</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="zabbix添加主机">zabbix添加主机</h4>
 <h5 id="手动添加">手动添加</h5>
 <p><img src="http://i1.tietuku.com/29ff780785f8142b.png" alt="看图">
 <img src="http://i1.tietuku.com/a5071fd29e260241.png" alt=""></p>
@@ -497,14 +650,31 @@ Include<span style="color:#f92672">=</span>/etc/zabbix/zabbix_agentd.d/
 <h4 id="timezone问题">timezone问题</h4>
 <p><img src="http://i1.tietuku.com/6eab8e80bb3eb1f1.png" alt="">
 php.ini配置文件设置</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp /etc/php.ini /tmp/
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">cp /etc/php.ini /tmp/
 sudo vim /etc/php.ini
-<span style="color:#75715e">#添加字段：date.timezone = Asia/Shanghai</span>
-</code></pre></div><h4 id="web参数不满足要求问题">web参数不满足要求问题</h4>
+<span class="c1">#添加字段：date.timezone = Asia/Shanghai</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="web参数不满足要求问题">web参数不满足要求问题</h4>
 <p><img src="http://i1.tietuku.com/0d83e480b0e348c7.png" alt=""></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp /etc/httpd/conf.d/zabbix.conf /tmp/
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">cp /etc/httpd/conf.d/zabbix.conf /tmp/
 sudo vim /etc/httpd/conf.d/zabbix.conf
-</code></pre></div><blockquote>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>修改其中字段为以下
 &lt;Directory &ldquo;/usr/share/zabbix&rdquo;&gt;
 Options FollowSymLinks
@@ -525,14 +695,27 @@ php_value upload_max_filesize 2M
 密码：zabbix</p>
 <h4 id="zabbix忘记密码将旧密码修改为arvon">zabbix忘记密码，将旧密码修改为arvon</h4>
 <p>登陆部署机数据库，修改数据库中的密码，步骤如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">echo -n arvon | openssl md5
-<span style="color:#f92672">(</span>stdin<span style="color:#f92672">)=</span> 5c48aaaa95a1797ffb2dc32699b0c6c3
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">echo</span> -n arvon <span class="p">|</span> openssl md5
+<span class="o">(</span>stdin<span class="o">)=</span> 5c48aaaa95a1797ffb2dc32699b0c6c3
 &gt;mysql -uname -ppassword
-&gt;use zabbix;
-&gt;select * from users;
-<span style="color:#75715e">#先在外面生成的md5码该用了</span>
-&gt;update users set  passwd<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;e2798af12a7a0f4f70b4d69efbc25f4d&#39;</span> where userid <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1&#39;</span>;
-</code></pre></div><p><img src="http://i1.tietuku.com/75f80ce9269b455a.png" alt=""></p>
+&gt;use zabbix<span class="p">;</span>
+&gt;select * from users<span class="p">;</span>
+<span class="c1">#先在外面生成的md5码该用了</span>
+&gt;update users <span class="nb">set</span>  <span class="nv">passwd</span><span class="o">=</span><span class="s1">&#39;e2798af12a7a0f4f70b4d69efbc25f4d&#39;</span> where <span class="nv">userid</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="http://i1.tietuku.com/75f80ce9269b455a.png" alt=""></p>
 <h4 id="报错贴图table-not-exist">报错贴图“table not exist”</h4>
 <p><img src="http://i1.tietuku.com/3f75b678db942213.png" alt="">
 <img src="http://i1.tietuku.com/b585f7995c14ad19.png" alt=""></p>
@@ -616,6 +799,8 @@ php_value upload_max_filesize 2M
 
   
   
+  
+  
 
   
   
@@ -687,7 +872,7 @@ php_value upload_max_filesize 2M
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -756,7 +941,7 @@ php_value upload_max_filesize 2M
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A82/" />
+<link rel="canonical" href="https://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A82/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -68,7 +68,7 @@ tags: [学习笔记]
 2015/08/17	拆开来记，start with foreach
 2015/09/01 更新到子程序，最近有点懒惰了" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A82/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A82/" /><meta property="article:section" content="post" />
 
 
 
@@ -80,7 +80,7 @@ tags: [学习笔记]
 2015/08/17	拆开来记，start with foreach
 2015/09/01 更新到子程序，最近有点懒惰了">
 
-<meta itemprop="wordCount" content="1549">
+<meta itemprop="wordCount" content="1691">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="title: Perl语言入门
@@ -120,28 +120,28 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -252,7 +252,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -263,7 +263,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -274,7 +274,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -285,7 +285,7 @@ tags: [学习笔记]
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -339,7 +339,8 @@ tags: [学习笔记]
           0001-01-01
         </time>
         
-        
+        <span class="more-meta"> 1691 words </span>
+          <span class="more-meta"> 4 min read </span>
 
         
         
@@ -387,12 +388,23 @@ tags: [学习笔记]</h2>
 <ul>
 <li>Example one</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
-<span style="color:#66d9ef">foreach</span> $rock (<span style="color:#e6db74">qw/ my girlfriend is Mo /</span>){
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;One word is named $rock\n&#34;</span>;
-}
-</code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="mf">5.010</span><span class="p">;</span>
+<span class="k">foreach</span> <span class="nv">$rock</span> <span class="p">(</span><span class="sx">qw/ my girlfriend is Mo /</span><span class="p">){</span>
+    <span class="k">print</span> <span class="s">&#34;One word is named $rock\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>arvon@Mo:~/arvon_perl&gt; perl foreach_one.pl
 One word is named my
 One word is named girlfriend
@@ -402,15 +414,29 @@ One word is named Mo</p>
 <ul>
 <li>Example two</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
-@rocks <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ hello world Mo /</span>;
-<span style="color:#66d9ef">foreach</span> $rock(@rocks){
-    $rock <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\t$rock&#34;</span>;
-    $rock <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$rock now is $rock&#34;</span>;
-}
-</code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="mf">5.010</span><span class="p">;</span>
+<span class="nv">@rocks</span> <span class="o">=</span> <span class="sx">qw/ hello world Mo /</span><span class="p">;</span>
+<span class="k">foreach</span> <span class="nv">$rock</span><span class="p">(</span><span class="nv">@rocks</span><span class="p">){</span>
+    <span class="nv">$rock</span> <span class="o">=</span> <span class="s">&#34;\t$rock&#34;</span><span class="p">;</span>
+    <span class="nv">$rock</span> <span class="o">.=</span> <span class="s">&#34;\n&#34;</span><span class="p">;</span>
+    <span class="k">print</span> <span class="s">&#34;\$rock now is $rock&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>arvon@Mo:~/arvon_perl&gt; perl foreach_two.pl
 $rock now is 	hello
 $rock now is 	world
@@ -420,12 +446,23 @@ $rock now is 	Mo</p>
 <ul>
 <li>Example one</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
-<span style="color:#66d9ef">foreach</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>){    <span style="color:#75715e">#使用了默认变量$_</span>
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;I can count to $_!\n&#34;</span>;
-}
-</code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="mf">5.010</span><span class="p">;</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">10</span><span class="p">){</span>    <span class="c1">#使用了默认变量$_</span>
+    <span class="k">print</span> <span class="s">&#34;I can count to $_!\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>arvon@Mo:~/arvon_perl&gt; perl variable_one.pl
 I can count to 1!
 I can count to 2!
@@ -442,14 +479,27 @@ I can count to 10!</p>
 <ul>
 <li>reverse操作符会读取列表的值，并按相反的次序返回该列表。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
-@fred <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>;
-@barney <span style="color:#f92672">=</span> reverse(@fred);
-@wilma <span style="color:#f92672">=</span> reverse <span style="color:#ae81ff">6</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>;
-@fred <span style="color:#f92672">=</span> reverse @fred;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;@fred, @barney, @wilma, \n&#34;</span>;
-</code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="mf">5.010</span><span class="p">;</span>
+<span class="nv">@fred</span> <span class="o">=</span> <span class="mi">6</span><span class="o">..</span><span class="mi">10</span><span class="p">;</span>
+<span class="nv">@barney</span> <span class="o">=</span> <span class="nb">reverse</span><span class="p">(</span><span class="nv">@fred</span><span class="p">);</span>
+<span class="nv">@wilma</span> <span class="o">=</span> <span class="nb">reverse</span> <span class="mi">6</span><span class="o">..</span><span class="mi">10</span><span class="p">;</span>
+<span class="nv">@fred</span> <span class="o">=</span> <span class="nb">reverse</span> <span class="nv">@fred</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;@fred, @barney, @wilma, \n&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>arvon@Mo:~/arvon_perl&gt; perl reverse_array.pl
 10 9 8 7 6, 10 9 8 7 6, 10 9 8 7 6,</p>
 </blockquote>
@@ -457,20 +507,39 @@ I can count to 10!</p>
 <ul>
 <li>其实啊，就是排序</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.010</span>;
-@rocks <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ happy birthday to Mo /</span>;
-@sorted <span style="color:#f92672">=</span> sort(@rocks);
-@back <span style="color:#f92672">=</span> reverse sort @rocks;
-@rocks <span style="color:#f92672">=</span> sort @rocks;
-@numbers <span style="color:#f92672">=</span> sort <span style="color:#ae81ff">97</span><span style="color:#f92672">..</span><span style="color:#ae81ff">102</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;
-</span><span style="color:#e6db74">       @rocks \
-</span><span style="color:#e6db74">       @sorted\
-</span><span style="color:#e6db74">       @back\
-</span><span style="color:#e6db74">       @rocks\
-</span><span style="color:#e6db74">       @numbers&#34;</span>;
-</code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="mf">5.010</span><span class="p">;</span>
+<span class="nv">@rocks</span> <span class="o">=</span> <span class="sx">qw/ happy birthday to Mo /</span><span class="p">;</span>
+<span class="nv">@sorted</span> <span class="o">=</span> <span class="nb">sort</span><span class="p">(</span><span class="nv">@rocks</span><span class="p">);</span>
+<span class="nv">@back</span> <span class="o">=</span> <span class="nb">reverse</span> <span class="nb">sort</span> <span class="nv">@rocks</span><span class="p">;</span>
+<span class="nv">@rocks</span> <span class="o">=</span> <span class="nb">sort</span> <span class="nv">@rocks</span><span class="p">;</span>
+<span class="nv">@numbers</span> <span class="o">=</span> <span class="nb">sort</span> <span class="mi">97</span><span class="o">..</span><span class="mi">102</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;
+</span><span class="s">       @rocks \
+</span><span class="s">       @sorted\
+</span><span class="s">       @back\
+</span><span class="s">       @rocks\
+</span><span class="s">       @numbers&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>arvon@Mo:~/arvon_perl&gt; perl sort_string.pl</p>
 </blockquote>
 <pre><code>   Mo birthday happy to
@@ -483,16 +552,31 @@ I can count to 10!</p>
 <ul>
 <li>每次对数组调用each，会返回数组中下一个元素所对应的两个值&ndash;该元素的索引以及该元素的值</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.012</span>;
-<span style="color:#66d9ef">my</span> @rocks <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ bedrock slate rubble granite /</span>;
-<span style="color:#66d9ef">while</span>( <span style="color:#66d9ef">my</span>( $index, $value ) <span style="color:#f92672">=</span> each @rocks){
-    say <span style="color:#e6db74">&#34;$index: $value&#34;</span>;
-}
-<span style="color:#66d9ef">foreach</span> $index(<span style="color:#ae81ff">0</span> <span style="color:#f92672">..</span> $#rocks ){
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$index: $rocks[$index]\n&#34;</span>;
-}
-</code></pre></div><h2 id="子程序">子程序</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="mf">5.012</span><span class="p">;</span>
+<span class="k">my</span> <span class="nv">@rocks</span> <span class="o">=</span> <span class="sx">qw/ bedrock slate rubble granite /</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span> <span class="k">my</span><span class="p">(</span> <span class="nv">$index</span><span class="p">,</span> <span class="nv">$value</span> <span class="p">)</span> <span class="o">=</span> <span class="nb">each</span> <span class="nv">@rocks</span><span class="p">){</span>
+    <span class="n">say</span> <span class="s">&#34;$index: $value&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">foreach</span> <span class="nv">$index</span><span class="p">(</span><span class="mi">0</span> <span class="o">..</span> <span class="nv">$#rocks</span> <span class="p">){</span>
+    <span class="k">print</span> <span class="s">&#34;$index: $rocks[$index]\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="子程序">子程序</h2>
 <ul>
 <li>子程序名称
 子程序名称以字母、数字、下划线组成，不能以数字开头，子程序名称属于独立的名字空间</li>
@@ -501,145 +585,324 @@ I can count to 10!</p>
 <ul>
 <li>定义子程序用sub、子程序名以及花括号封闭起来的代码块，for example：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">marine</span> {
-    $n <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>; <span style="color:#75715e">#全局变量$n</span>
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Hello, sailor number $n!\n&#34;</span>;
-}
-</code></pre></div><h3 id="调用子程序">调用子程序</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="k">sub</span> <span class="nf">marine</span> <span class="p">{</span>
+    <span class="nv">$n</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">#全局变量$n</span>
+    <span class="k">print</span> <span class="s">&#34;Hello, sailor number $n!\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="调用子程序">调用子程序</h3>
 <ul>
 <li>在任意表达式中使用程序名（前面加上与号）来调用它</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">marine</span>{
-    $n <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Hello, sailor number $n!\n&#34;</span>;
-}
-<span style="color:#f92672">&amp;</span>marine;    <span style="color:#75715e">#打印hello，sailor number 1！</span>
-<span style="color:#f92672">&amp;</span>marine;    <span style="color:#75715e">#打印hello，sailor number 2！</span>
-<span style="color:#f92672">&amp;</span>marine;    <span style="color:#75715e">#打印hello，sailor number 3！</span>
-<span style="color:#f92672">&amp;</span>marine;    <span style="color:#75715e">#打印hello，sailor number 4！</span>
-</code></pre></div><h3 id="返回值">返回值</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">sub</span> <span class="nf">marine</span><span class="p">{</span>
+    <span class="nv">$n</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">print</span> <span class="s">&#34;Hello, sailor number $n!\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">&amp;</span><span class="n">marine</span><span class="p">;</span>    <span class="c1">#打印hello，sailor number 1！</span>
+<span class="o">&amp;</span><span class="n">marine</span><span class="p">;</span>    <span class="c1">#打印hello，sailor number 2！</span>
+<span class="o">&amp;</span><span class="n">marine</span><span class="p">;</span>    <span class="c1">#打印hello，sailor number 3！</span>
+<span class="o">&amp;</span><span class="n">marine</span><span class="p">;</span>    <span class="c1">#打印hello，sailor number 4！</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="返回值">返回值</h3>
 <ul>
 <li>任何的perl子程序都有返回值，但不是所有的返回值都是有用的，Larry将之简化，在子程序的执行过程中，它会不断进行运算，而最后一次运算的结果（不管是什么）都会被自动当成子程序的返回值。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-$fred <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
-$barney <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
-$wilma <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>sum_of_fred_and_barney;
-<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">sum_of_fred_and_barney</span>{
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Hey, you called the sum_of_fred_and_barney subroutine!\n&#34;</span>;
-    $fred <span style="color:#f92672">+</span> $barney;
-}
-<span style="color:#75715e">#&amp;sum_of_fred_and_barney;</span>
-$betty <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#f92672">&amp;</span>sum_of_fred_and_barney;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$wilma is $wilma.\n&#34;</span>;
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$betty is $betty.\n&#34;</span>;
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-$fred <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
-$barney <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
-<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">larger_of_fred_or_barney</span>{
-    <span style="color:#66d9ef">if</span> ($fred <span style="color:#f92672">&gt;</span> $barney){
-        $fred;
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$fred is $fred\n&#34;</span>;
-    }
-    <span style="color:#66d9ef">else</span>{
-        $barney;
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$barney is $barney\n&#34;</span>;
-    }
-}
-<span style="color:#f92672">&amp;</span>larger_of_fred_or_barney;
-</code></pre></div><h3 id="参数">参数</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="nv">$fred</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$barney</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nv">$wilma</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">sum_of_fred_and_barney</span><span class="p">;</span>
+<span class="k">sub</span> <span class="nf">sum_of_fred_and_barney</span><span class="p">{</span>
+    <span class="k">print</span> <span class="s">&#34;Hey, you called the sum_of_fred_and_barney subroutine!\n&#34;</span><span class="p">;</span>
+    <span class="nv">$fred</span> <span class="o">+</span> <span class="nv">$barney</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">#&amp;sum_of_fred_and_barney;</span>
+<span class="nv">$betty</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="o">&amp;</span><span class="n">sum_of_fred_and_barney</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;\$wilma is $wilma.\n&#34;</span><span class="p">;</span>
+<span class="k">print</span> <span class="s">&#34;\$betty is $betty.\n&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="nv">$fred</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nv">$barney</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="k">sub</span> <span class="nf">larger_of_fred_or_barney</span><span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$fred</span> <span class="o">&gt;</span> <span class="nv">$barney</span><span class="p">){</span>
+        <span class="nv">$fred</span><span class="p">;</span>
+        <span class="k">print</span> <span class="s">&#34;\$fred is $fred\n&#34;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="nv">$barney</span><span class="p">;</span>
+        <span class="k">print</span> <span class="s">&#34;\$barney is $barney\n&#34;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="o">&amp;</span><span class="n">larger_of_fred_or_barney</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="参数">参数</h3>
 <ul>
 <li>要传递参数列表到子程序里，只要在子程序调用的后面加上被括号圈引得列表表达式就可以了，for example：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">$n <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>max(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">15</span>);
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">max</span>{
-    <span style="color:#66d9ef">if</span> ($_[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&gt;</span> $_[<span style="color:#ae81ff">1</span>]){
-        $_[<span style="color:#ae81ff">0</span>];
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$_[0] is $_[0]\n&#34;</span>;
-    }<span style="color:#66d9ef">else</span> {
-        $_[<span style="color:#ae81ff">1</span>];
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;\$_[1] is $_[1]\n&#34;</span>;
-    }
-}
-$n <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>max(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>);
-</code></pre></div><h4 id="子程序中的私有变量">子程序中的私有变量</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="nv">$n</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">max</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">sub</span> <span class="nf">max</span><span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nv">$_</span><span class="p">[</span><span class="mi">1</span><span class="p">]){</span>
+        <span class="nv">$_</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+        <span class="k">print</span> <span class="s">&#34;\$_[0] is $_[0]\n&#34;</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$_</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+        <span class="k">print</span> <span class="s">&#34;\$_[1] is $_[1]\n&#34;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nv">$n</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">max</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="子程序中的私有变量">子程序中的私有变量</h4>
 <ul>
 <li>默认情况下，perl里的所有变量都是全局变量，即在程序的任何地方都可以访问他们。随时可以借助my操作符来创建私有变量（lexical variable）</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">max</span> {
-    <span style="color:#66d9ef">my</span>($m, $n);
-    ($m, $n_) <span style="color:#f92672">=</span> @_;
-    <span style="color:#66d9ef">if</span> ($m <span style="color:#f92672">&gt;</span> $n){ $m } <span style="color:#66d9ef">else</span> { $n }
-}
-</code></pre></div><h4 id="变长的参数列表">变长的参数列表</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">sub</span> <span class="nf">max</span> <span class="p">{</span>
+    <span class="k">my</span><span class="p">(</span><span class="nv">$m</span><span class="p">,</span> <span class="nv">$n</span><span class="p">);</span>
+    <span class="p">(</span><span class="nv">$m</span><span class="p">,</span> <span class="nv">$n_</span><span class="p">)</span> <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$m</span> <span class="o">&gt;</span> <span class="nv">$n</span><span class="p">){</span> <span class="nv">$m</span> <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> <span class="nv">$n</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="变长的参数列表">变长的参数列表</h4>
 <ul>
 <li>打印最大值，“高水线（high-watermark）”算法</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-$maximum <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>max(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>);
-<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">max</span>{
-    <span style="color:#66d9ef">my</span>($max_so_far) <span style="color:#f92672">=</span> shift @_;
-    <span style="color:#66d9ef">foreach</span> (@_){
-        <span style="color:#66d9ef">if</span> ($_ <span style="color:#f92672">&gt;</span> $max_so_far){
-            $max_so_far <span style="color:#f92672">=</span> $_;
-        }
-    }
-    $max_so_far;
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Max is $max_so_far\n&#34;</span>;
-}
-</code></pre></div><h4 id="空参数列表">空参数列表</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="nv">$maximum</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">max</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="k">sub</span> <span class="nf">max</span><span class="p">{</span>
+    <span class="k">my</span><span class="p">(</span><span class="nv">$max_so_far</span><span class="p">)</span> <span class="o">=</span> <span class="nb">shift</span> <span class="nv">@_</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">@_</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$_</span> <span class="o">&gt;</span> <span class="nv">$max_so_far</span><span class="p">){</span>
+            <span class="nv">$max_so_far</span> <span class="o">=</span> <span class="nv">$_</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nv">$max_so_far</span><span class="p">;</span>
+    <span class="k">print</span> <span class="s">&#34;Max is $max_so_far\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="空参数列表">空参数列表</h4>
 <h4 id="关于词法my变量">关于词法（my）变量</h4>
 <ul>
 <li>词法变量可以用在任何语句块内，而不仅限于子程序语句块。比如说，它可以在if、while或foreach的语句块里使用</li>
 <li>求次方</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">foreach</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>){
-    <span style="color:#66d9ef">my</span>($square) <span style="color:#f92672">=</span> $_ <span style="color:#f92672">*</span> $_;
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;$_ squared is $square.\n&#34;</span>;
-}
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">10</span><span class="p">){</span>
+    <span class="k">my</span><span class="p">(</span><span class="nv">$square</span><span class="p">)</span> <span class="o">=</span> <span class="nv">$_</span> <span class="o">*</span> <span class="nv">$_</span><span class="p">;</span>
+    <span class="k">print</span> <span class="s">&#34;$_ squared is $square.\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>my操作符不加括号时，只能用来声明单个词法变量</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $fred, $barney;  <span style="color:#75715e">#只声明了fred这一个变量</span>
-<span style="color:#66d9ef">my</span><span style="color:#960050;background-color:#1e0010">（</span>$fred, $barney); <span style="color:#75715e">#两个都声明了</span>
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="k">my</span> <span class="nv">$fred</span><span class="p">,</span> <span class="nv">$barney</span><span class="p">;</span>  <span class="c1">#只声明了fred这一个变量</span>
+<span class="k">my</span><span class="err">（</span><span class="nv">$fred</span><span class="p">,</span> <span class="nv">$barney</span><span class="p">);</span> <span class="c1">#两个都声明了</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>在日常perl编程中，你最好对每个新变量都使用my声明，最好对每个新变量都使用my声明，让它保持在自己所在的词法作用域内。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">foreach</span> <span style="color:#66d9ef">my</span> $rock (<span style="color:#e6db74">qw/bedrock slate lava /</span>){
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;One rock is $rock.\n&#34;</span>;
-}
-</code></pre></div><h3 id="use-strict编译指令pragma">use strict编译指令（pragma）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">foreach</span> <span class="k">my</span> <span class="nv">$rock</span> <span class="p">(</span><span class="sx">qw/bedrock slate lava /</span><span class="p">){</span>
+    <span class="k">print</span> <span class="s">&#34;One rock is $rock.\n&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="use-strict编译指令pragma">use strict编译指令（pragma）</h3>
 <ul>
 <li>告诉perl我愿意接受更严格的限制使用use strict这个编译指令放在程序开头</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> strict;
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="k">use</span> <span class="nn">strict</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>自perl5.12开始，如果使用编译指令指定最低perl版本号的话，就相当于隐式打开了约束指令</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> <span style="color:#ae81ff">5.012</span>;
-</code></pre></div><h3 id="return操作符">return操作符</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="k">use</span> <span class="mf">5.012</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="return操作符">return操作符</h3>
 <ul>
 <li>return操作符可以让子程序执行到一半的时候停止执行</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/perl</span>
-<span style="color:#66d9ef">use</span> strict;
-<span style="color:#66d9ef">my</span> @names <span style="color:#f92672">=</span> <span style="color:#e6db74">qw/ fred barney betty dino wilma pebbles bamm-bam /</span>;
-<span style="color:#66d9ef">my</span> $result <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>which_element_is(<span style="color:#e6db74">&#34;dino&#34;</span>, @names);
-<span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">which_element_is</span>{
-    <span style="color:#66d9ef">my</span>($what, @array) <span style="color:#f92672">=</span> @_;
-    <span style="color:#66d9ef">foreach</span> (<span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>$#array){
-        <span style="color:#66d9ef">if</span> ($what <span style="color:#f92672">eq</span> $array[$_]){
-            <span style="color:#66d9ef">return</span> $_;
-        }
-    }
-    <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-}
-</code></pre></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="ch">#!/usr/bin/perl</span>
+<span class="k">use</span> <span class="nn">strict</span><span class="p">;</span>
+<span class="k">my</span> <span class="nv">@names</span> <span class="o">=</span> <span class="sx">qw/ fred barney betty dino wilma pebbles bamm-bam /</span><span class="p">;</span>
+<span class="k">my</span> <span class="nv">$result</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">which_element_is</span><span class="p">(</span><span class="s">&#34;dino&#34;</span><span class="p">,</span> <span class="nv">@names</span><span class="p">);</span>
+<span class="k">sub</span> <span class="nf">which_element_is</span><span class="p">{</span>
+    <span class="k">my</span><span class="p">(</span><span class="nv">$what</span><span class="p">,</span> <span class="nv">@array</span><span class="p">)</span> <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="nv">$#array</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$what</span> <span class="ow">eq</span> <span class="nv">$array</span><span class="p">[</span><span class="nv">$_</span><span class="p">]){</span>
+            <span class="k">return</span> <span class="nv">$_</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -704,6 +967,8 @@ $maximum <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;<
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -777,7 +1042,7 @@ $maximum <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;<
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -846,7 +1111,7 @@ $maximum <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;<
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

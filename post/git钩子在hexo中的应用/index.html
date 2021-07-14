@@ -37,7 +37,7 @@ git钩子简介 &amp;ndash;摘自git-scm Git 能在特定的重要动作发生�
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" />
+<link rel="canonical" href="https://blog.gourds.site/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" />
 
 
 
@@ -55,7 +55,7 @@ git钩子简介 &amp;ndash;摘自git-scm Git 能在特定的重要动作发生�
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,7 +66,7 @@ git钩子简介 &amp;ndash;摘自git-scm Git 能在特定的重要动作发生�
 git钩子简介 &ndash;摘自git-scm
 Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2016-08-12T15:12:44+00:00" />
 <meta property="article:modified_time" content="2016-08-12T15:12:44+00:00" />
 
@@ -75,7 +75,7 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
 git钩子简介 &ndash;摘自git-scm
 Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。"><meta itemprop="datePublished" content="2016-08-12T15:12:44+00:00" />
 <meta itemprop="dateModified" content="2016-08-12T15:12:44+00:00" />
-<meta itemprop="wordCount" content="1349">
+<meta itemprop="wordCount" content="1369">
 <meta itemprop="keywords" content="Git,Hexo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git钩子在hexo中的应用"/>
 <meta name="twitter:description" content="**摘要：**早该记录了，最开始我的blog是使用hexo&#43;github搭建的使用jacman主题，也是因为对git不够了解，当时绑定域名是使用直接在github上写CNAME文件。感觉太麻烦了，就买了空间换了WordPress，wp也是用了要有快一年，然后感觉markdown支持的真是不好，而且迁移很不爽，然后就换了现在的。关于现在这套blog架构，依然使用hexo作为blog框架，我自己的电脑用作服务器，然后VPS作为web服务器提供发布，使用git hook进行更新blog。
@@ -112,28 +112,28 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -244,7 +244,7 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -255,7 +255,7 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -266,7 +266,7 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -277,7 +277,7 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -331,7 +331,8 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
           2016-08-12
         </time>
         
-        
+        <span class="more-meta"> 1369 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -373,43 +374,93 @@ Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样
 <ul>
 <li>安装初始化</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install git-core -y
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install git-core -y
 adduser git-blog
-cd /home/git-blog
+<span class="nb">cd</span> /home/git-blog
 git init --bare blog.git
-<span style="color:#75715e">#使用--bare参数是创建一个裸仓库，没有工作区，这里不再裸仓库进行操作，只为共享而存在</span>
-</code></pre></div><h4 id="创建信任">创建信任</h4>
+<span class="c1">#使用--bare参数是创建一个裸仓库，没有工作区，这里不再裸仓库进行操作，只为共享而存在</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="创建信任">创建信任</h4>
 <ul>
 <li>创建从我本机到VPS上git-blog用户的信任</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id git-blog@VPShost
-<span style="color:#75715e">#就是把~/.ssh/id_rsa.pub中的内容添加到VPS主机上~/.ssh/authorized_keys文件中</span>
-</code></pre></div><h4 id="本地配置git发布">本地配置git发布</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">ssh-copy-id git-blog@VPShost
+<span class="c1">#就是把~/.ssh/id_rsa.pub中的内容添加到VPS主机上~/.ssh/authorized_keys文件中</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="本地配置git发布">本地配置git发布</h4>
 <ul>
 <li>Hexo主配置文件_config.yml如下</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">deploy:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">deploy:
  type: git
  message: Arvon
  repo: ssh://git-blog@blog.arvon.top:12345/home/arvon/blog.git
- <span style="color:#75715e">#repo: git-blog@blog.arvon.top:/home/arvon/blog.git</span>
+ <span class="c1">#repo: git-blog@blog.arvon.top:/home/arvon/blog.git</span>
  branch: master
-<span style="color:#75715e">#注意的地方，搬来repo那是直接写主机地址就可以了但是，我这主机ssh端口不是默认端口所以就需要写成ssh的形式。</span>
-</code></pre></div><h4 id="服务器配置git-hook">服务器配置git hook</h4>
+<span class="c1">#注意的地方，搬来repo那是直接写主机地址就可以了但是，我这主机ssh端口不是默认端口所以就需要写成ssh的形式。</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="服务器配置git-hook">服务器配置git hook</h4>
 <ul>
 <li>编辑blog.git/hooks下新建post-receive文件，内容如下</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
-</span><span style="color:#75715e"></span>git --work-tree<span style="color:#f92672">=</span>/usr/nginx/html/myblog --git-dir<span style="color:#f92672">=</span>/home/git-blog/blog.git checkout -f
-<span style="color:#75715e">#这个意思是发布的内容推送到/usr/nginx/html/myblog目录下</span>
-<span style="color:#75715e">#别忘了 chmod +x post-receive</span>
-</code></pre></div><h4 id="发布">发布</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>git --work-tree<span class="o">=</span>/usr/nginx/html/myblog --git-dir<span class="o">=</span>/home/git-blog/blog.git checkout -f
+<span class="c1">#这个意思是发布的内容推送到/usr/nginx/html/myblog目录下</span>
+<span class="c1">#别忘了 chmod +x post-receive</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="发布">发布</h4>
 <ul>
 <li>本地操作</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git new <span style="color:#e6db74">&#34;test&#34;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git new <span class="s2">&#34;test&#34;</span>
 git g -d
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>参考文档
 <a href="http://www.swiftyper.com/2016/04/17/deploy-hexo-with-git-hook/">swiftyper的blog</a>
 <a href="http://www.imys.net/20160303/hexo-nginx-auto-deploy.html">imys的blog</a></li>
@@ -449,8 +500,8 @@ git g -d
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/git/">Git</a>
-          <a href="http://blog.gourds.site/tags/hexo/">Hexo</a>
+          <a href="https://blog.gourds.site/tags/git/">Git</a>
+          <a href="https://blog.gourds.site/tags/hexo/">Hexo</a>
           
         </div>
 
@@ -488,6 +539,8 @@ git g -d
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -561,7 +614,7 @@ git g -d
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -630,7 +683,7 @@ git g -d
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

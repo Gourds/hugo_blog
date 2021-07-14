@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/" />
+<link rel="canonical" href="https://blog.gourds.site/" />
 <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Gourds" />
 
 
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -61,7 +61,7 @@
 <meta property="og:title" content="Gourds" />
 <meta property="og:description" content="Hugo theme jane example site." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://blog.gourds.site/" />
+<meta property="og:url" content="https://blog.gourds.site/" />
 
 <meta itemprop="name" content="Gourds">
 <meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
@@ -98,28 +98,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -230,7 +230,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -241,7 +241,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -252,7 +252,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -263,7 +263,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -319,14 +319,16 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">即学即用Docker读书笔记</a>
+      <a class="post-link" href="/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/">Fluentd使用中遇到的丢数据问题</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2018-04-09" class="post-time">
-        2018-04-09
+      <time datetime="2018-04-11" class="post-time">
+        2018-04-11
       </time>
       
+      <span class="more-meta"> 1810 words </span>
+      <span class="more-meta"> 4 min read </span>
       
       
       
@@ -336,13 +338,62 @@
   <div class="post-content">
     
     <div class="post-summary">
-      <p><a href="https://book.douban.com/subject/26700648/">《即学即用Docker》</a>这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。</p>
-<p><strong>容器是什么</strong></p>
-<ul>
-<li>容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。</li>
-<li>容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。</li>
-<li>容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。</li>
-</ul>
+      <p>目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇<a href="http://arvon.top/2018/02/23/Td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">Blog</a>）</p>
+<p>需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到<a href="https://docs.fluentd.org/v1.0/articles/quickstart">【Fluentd官网】</a>获取支持。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">graph LR;
+	  A(Td-client)--&gt;F(Td-forward)
+    B(Td-client)--&gt;F(Td-forward)
+    F--&gt;E(Elasticsearch cluster)
+    E--&gt;K(Kibana)
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    <div class="read-more">
+      <a href="/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">即学即用Docker读书笔记</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2018-04-09" class="post-time">
+        2018-04-09
+      </time>
+      
+      <span class="more-meta"> 5812 words </span>
+      <span class="more-meta"> 12 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p><a href="https://book.douban.com/subject/26700648/">《即学即用Docker》</a>这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
+<strong>容器是什么</strong>
+容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
+容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。</p>
     </div>
     <div class="read-more">
       <a href="/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="read-more-link">Read more</a>
@@ -364,6 +415,8 @@
         2018-03-31
       </time>
       
+      <span class="more-meta"> 1395 words </span>
+      <span class="more-meta"> 3 min read </span>
       
       
       
@@ -377,38 +430,6 @@
     </div>
     <div class="read-more">
       <a href="/post/%E4%BD%BF%E7%94%A8ipsec%E6%90%AD%E5%BB%BAvpn%E7%B3%BB%E7%BB%9F/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/kibana%E4%BD%BF%E7%94%A8sentinl%E6%8A%A5%E8%AD%A6%E5%AE%9E%E8%B7%B5/">Kibana使用sentinl报警实践</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2018-03-15" class="post-time">
-        2018-03-15
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><strong>背景介绍：</strong>
-对于Kibana的一些数据我们有时候是想要对某些字段进行持续关注的，这时候通过报警的手段就可以大幅提升对这些信息状态了解的及时性及可靠性。使用<a href="https://github.com/sirensolutions/sentinl">Sentinl这个kibana开源插件</a>，就可以帮助我们实现这个功能。这里记录一下我的实践过程，主要是对一些业务数据某些字段进行监控报警。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/kibana%E4%BD%BF%E7%94%A8sentinl%E6%8A%A5%E8%AD%A6%E5%AE%9E%E8%B7%B5/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -1494,6 +1515,30 @@
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/8/">»</a></li>
@@ -1501,7 +1546,7 @@
 
       
       
-      <li><a href="/page/39/">»»</a></li>
+      <li><a href="/page/40/">»»</a></li>
       
 
       </ul>
@@ -1554,7 +1599,7 @@
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1623,7 +1668,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

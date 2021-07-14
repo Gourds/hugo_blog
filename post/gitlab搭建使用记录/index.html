@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" />
+<link rel="canonical" href="https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" />
 
 
 
@@ -53,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -64,7 +64,7 @@
 操作之前看一把架构图,图片来自官方,侵删
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-04-14T20:54:00+00:00" />
 <meta property="article:modified_time" content="2018-04-14T20:54:00+00:00" />
 
@@ -73,7 +73,7 @@
 操作之前看一把架构图,图片来自官方,侵删
 "><meta itemprop="datePublished" content="2018-04-14T20:54:00+00:00" />
 <meta itemprop="dateModified" content="2018-04-14T20:54:00+00:00" />
-<meta itemprop="wordCount" content="3158">
+<meta itemprop="wordCount" content="3302">
 <meta itemprop="keywords" content="Gitlab,Shell,Docker," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gitlab搭建使用记录"/>
 <meta name="twitter:description" content="Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
@@ -110,28 +110,28 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -242,7 +242,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -253,7 +253,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -264,7 +264,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -275,7 +275,7 @@
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -329,7 +329,8 @@
           2018-04-14
         </time>
         
-        
+        <span class="more-meta"> 3302 words </span>
+          <span class="more-meta"> 7 min read </span>
 
         
         
@@ -369,47 +370,110 @@
 <ul>
 <li>基础环境配置</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install -y curl policycoreutils-python openssh-server
-systemctl enable sshd
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install -y curl policycoreutils-python openssh-server
+systemctl <span class="nb">enable</span> sshd
 systemctl start sshd
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>IPtables配置（不需要的话直接跳过）</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl start firewalld
-firewall-cmd --permanent --add-service<span style="color:#f92672">=</span>http
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl start firewalld
+firewall-cmd --permanent --add-service<span class="o">=</span>http
 systemctl reload firewalld
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>邮件服务器安装及配置（如有自己的邮件服务器跳过postfix安装，直接配置SMTM服务器即可）
 具体配置就不写了，可以参照廖雪峰的<a href="https://www.liaoxuefeng.com/article/00137387674890099a71c0400504765b89a5fac65728976000">【文章】</a></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install postfix
-systemctl enable postfix
-sed -i <span style="color:#e6db74">&#39;s/^inet_interfaces = .*/inet_interfaces = 127.0.0.1/g&#39;</span> /etc/postfix/main.cf
-<span style="color:#75715e">#if no sed will report an error like &#34;fatal: parameter inet_interfaces: no local interface found for&#34;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install postfix
+systemctl <span class="nb">enable</span> postfix
+sed -i <span class="s1">&#39;s/^inet_interfaces = .*/inet_interfaces = 127.0.0.1/g&#39;</span> /etc/postfix/main.cf
+<span class="c1">#if no sed will report an error like &#34;fatal: parameter inet_interfaces: no local interface found for&#34;</span>
 systemctl start postfix
-<span style="color:#75715e">#config   #使用已有的邮件服务器，这个不写了</span>
-<span style="color:#75715e">#useradd -m -s /bin/bash arvon #创建邮件用户</span>
-<span style="color:#75715e">#echo &#34;123456&#34; | passwd --stdin arvon #设置密码</span>
-<span style="color:#75715e">#telnet localhost 25 #测试主机邮件端口</span>
-</code></pre></div><h4 id="安装gitlab">安装gitlab</h4>
+<span class="c1">#config   #使用已有的邮件服务器，这个不写了</span>
+<span class="c1">#useradd -m -s /bin/bash arvon #创建邮件用户</span>
+<span class="c1">#echo &#34;123456&#34; | passwd --stdin arvon #设置密码</span>
+<span class="c1">#telnet localhost 25 #测试主机邮件端口</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="安装gitlab">安装gitlab</h4>
 <p><strong>添加Gitlab安装源及安装gitlab</strong>
 既然选择了gitlab一部分原因也是因为开源，所以用免费的CE就行，关于<a href="https://www.gitlab.com.cn/products/">【CE和EE的区别】</a>另外可以使用国内的镜像源来提升安装速度，如<a href="https://mirror.tuna.tsinghua.edu.cn/help/gitlab-ce/">【清华镜像站】</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash</span>
-<span style="color:#75715e">#EXTERNAL_URL=&#34;http://193.112.135.23&#34; yum install -y gitlab-ee #IP地址填写期望访问的URL地址</span>
-EXTERNAL_URL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://193.112.135.23&#34;</span> yum install -y gitlab-ce
-</code></pre></div><p>这里安装的版本<code>gitlab-ce-10.6.4-ce.0.el7.x86_64</code>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash</span>
+<span class="c1">#EXTERNAL_URL=&#34;http://193.112.135.23&#34; yum install -y gitlab-ee #IP地址填写期望访问的URL地址</span>
+<span class="nv">EXTERNAL_URL</span><span class="o">=</span><span class="s2">&#34;http://193.112.135.23&#34;</span> yum install -y gitlab-ce
+</code></pre></td></tr></table>
+</div>
+</div><p>这里安装的版本<code>gitlab-ce-10.6.4-ce.0.el7.x86_64</code>
 在RHEL/CentOS上可以新建yum源<code>/etc/yum.repos.d/gitlab-ce.repo</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">[gitlab-ce]
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml">[gitlab-ce]
 name=Gitlab CE Repository
 baseurl=https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el$releasever/
 gpgcheck=0
 enabled=1
-</code></pre></div><p>安装完成后自己就启动了，十分智能，WEB服务端口默认是<code>80</code>，还是看看安装在哪了都有哪些路径</p>
-<pre><code>[root@VM_0_11_centos gitlab]# rpm -qa |grep  gitlab-ce |xargs rpm -ql |wc -l
+</code></pre></td></tr></table>
+</div>
+</div><p>安装完成后自己就启动了，十分智能，WEB服务端口默认是<code>80</code>，还是看看安装在哪了都有哪些路径</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_11_centos gitlab]# rpm -qa |grep  gitlab-ce |xargs rpm -ql |wc -l
 81091
 [root@VM_0_11_centos gitlab]# rpm -qa |grep  gitlab-ce |xargs rpm -ql |grep /opt/gitlab |wc -l
 81090
-</code></pre><p>可见装了这么多东西，都在<code>/opt/gitlab</code>下</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>可见装了这么多东西，都在<code>/opt/gitlab</code>下</p>
 <h4 id="配置gitlab及组件说明">配置gitlab及组件说明</h4>
 <ul>
 <li>
@@ -420,7 +484,19 @@ enabled=1
 <p>Gitlab相关路径</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">/opt/gitlab #Gitlab安装位置
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml">/opt/gitlab #Gitlab安装位置
 /etc/gitlab/gitlab.rb #Gitlab主要配置文件
 /var/opt/gitlab/git-data/repositories/ #代码仓库保存位置
 /var/opt/gitlab/backups/ #代码仓库备份位置
@@ -428,7 +504,9 @@ enabled=1
 /var/opt/gitlab/postgresql/data/ #postgresql数据及配置目录
 /var/opt/gitlab/redis #Redis配置目录
 /var/opt/gitlab/gitlab-rails/etc/unicorn.rb  #unicorn配置文件
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>服务及进程作用</li>
 </ul>
 <blockquote>
@@ -456,19 +534,48 @@ Sidekiq使用多线程处理后台任务（异步）。这个进程启动的时�
 <ul>
 <li>Gitlab管理命令</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/opt/gitlab/bin/gitlab-ctl status <span style="color:#75715e">#查看状态</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">/opt/gitlab/bin/gitlab-ctl status <span class="c1">#查看状态</span>
 /opt/gitlab/bin/gitlab-ctl stop
 /opt/gitlab/bin/gitlab-ctl start
-<span style="color:#75715e">#/opt/gitlab/bin/gitlab-ctl show-config #查看当前配置</span>
-/opt/gitlab/bin/gitlab-ctl help <span style="color:#75715e">#获取命令行帮助</span>
-cat /opt/gitlab/version-manifest.json | grep build_version <span style="color:#75715e">#查看版本</span>
-</code></pre></div><ul>
+<span class="c1">#/opt/gitlab/bin/gitlab-ctl show-config #查看当前配置</span>
+/opt/gitlab/bin/gitlab-ctl <span class="nb">help</span> <span class="c1">#获取命令行帮助</span>
+cat /opt/gitlab/version-manifest.json <span class="p">|</span> grep build_version <span class="c1">#查看版本</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>安装及配置完成
 现在可以在gitlab上创建项目、用户及用户组了。之后就可以正常使用了</li>
 </ul>
 <h4 id="附邮件配置">附邮件配置</h4>
 <p>在主配置文件<code>/etc/gitlab/gitlab.rb</code>如下修改，更详细的配置参考<a href="https://docs.gitlab.com/omnibus/settings/smtp.html#smtp-settings">【官方说明】</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">gitlab_rails[&#39;smtp_enable&#39;] = true
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml">gitlab_rails[&#39;smtp_enable&#39;] = true
 gitlab_rails[&#39;smtp_address&#39;] = &#34;smtp.server&#34;
 gitlab_rails[&#39;smtp_port&#39;] = 465
 gitlab_rails[&#39;smtp_user_name&#39;] = &#34;smtp user&#34;
@@ -481,7 +588,9 @@ gitlab_rails[&#39;smtp_openssl_verify_mode&#39;] = &#39;peer&#39;
 # can change the &#39;From&#39; with this setting.
 gitlab_rails[&#39;gitlab_email_from&#39;] = &#39;gitlab@example.com&#39;
 gitlab_rails[&#39;gitlab_email_reply_to&#39;] = &#39;noreply@example.com&#39;
-</code></pre></div><p>修改完成后通过命令<code>/opt/gitlab/bin/gitlab-ctl reconfigure</code>使配置生效</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>修改完成后通过命令<code>/opt/gitlab/bin/gitlab-ctl reconfigure</code>使配置生效</p>
 <h3 id="使用docker安装gitlab">使用Docker安装Gitlab</h3>
 <p>按照官网来了一遍，主要注意以下3点,更详细可以参考<a href="https://docs.gitlab.com/omnibus/docker/">【Docker Install Guide地址】</a>和<a href="https://gitlab.com/gitlab-org/omnibus-gitlab/tree/master/docker">【Docker File地址:】 </a></p>
 <blockquote>
@@ -494,31 +603,64 @@ gitlab_rails[&#39;gitlab_email_reply_to&#39;] = &#39;noreply@example.com&#39;
 <ul>
 <li>启动命令</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --detach <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --hostname 12.13.14.13 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --publish 443:443 --publish 18080:80 --publish 222:22 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --env <span style="color:#e6db74">&#39;GITLAB_PORT=18080&#39;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --env <span style="color:#e6db74">&#39;GITLAB_SHELL_SSH_PORT=222&#39;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --env <span style="color:#e6db74">&#39;GITLAB_SSH_PORT=222&#39;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --name gitlab <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --restart always <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --volume /srv/gitlab/config:/etc/gitlab <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --volume /srv/gitlab/logs:/var/log/gitlab <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    --volume /srv/gitlab/data:/var/opt/gitlab <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    gitlab/gitlab-ce:latest
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run --detach <span class="se">\
+</span><span class="se"></span>    --hostname 12.13.14.13 <span class="se">\
+</span><span class="se"></span>    --publish 443:443 --publish 18080:80 --publish 222:22 <span class="se">\
+</span><span class="se"></span>    --env <span class="s1">&#39;GITLAB_PORT=18080&#39;</span> <span class="se">\
+</span><span class="se"></span>    --env <span class="s1">&#39;GITLAB_SHELL_SSH_PORT=222&#39;</span> <span class="se">\
+</span><span class="se"></span>    --env <span class="s1">&#39;GITLAB_SSH_PORT=222&#39;</span> <span class="se">\
+</span><span class="se"></span>    --name gitlab <span class="se">\
+</span><span class="se"></span>    --restart always <span class="se">\
+</span><span class="se"></span>    --volume /srv/gitlab/config:/etc/gitlab <span class="se">\
+</span><span class="se"></span>    --volume /srv/gitlab/logs:/var/log/gitlab <span class="se">\
+</span><span class="se"></span>    --volume /srv/gitlab/data:/var/opt/gitlab <span class="se">\
+</span><span class="se"></span>    gitlab/gitlab-ce:latest
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>客户端连接命令</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone ssh://git@12.13.14.13:222/root/arvon-test.git
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git clone ssh://git@12.13.14.13:222/root/arvon-test.git
 touch demo.txt
 git add .
-git config --global user.email <span style="color:#e6db74">&#34;arvon@gourds.com&#34;</span>
-git config --global user.name <span style="color:#e6db74">&#34;arvon&#34;</span>
-git commit -m <span style="color:#e6db74">&#39;add test&#39;</span>
-git push origin master <span style="color:#75715e">#推远端</span>
-cat .git/config <span style="color:#75715e">#查看git配置</span>
-git pull <span style="color:#75715e">#拉代码</span>
-</code></pre></div><h3 id="gitlab备份还原centos7">Gitlab备份还原（CentOS7）</h3>
+git config --global user.email <span class="s2">&#34;arvon@gourds.com&#34;</span>
+git config --global user.name <span class="s2">&#34;arvon&#34;</span>
+git commit -m <span class="s1">&#39;add test&#39;</span>
+git push origin master <span class="c1">#推远端</span>
+cat .git/config <span class="c1">#查看git配置</span>
+git pull <span class="c1">#拉代码</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="gitlab备份还原centos7">Gitlab备份还原（CentOS7）</h3>
 <p><strong>关于备份的官方说明</strong></p>
 <blockquote>
 <p>&ldquo;You can only restore a backup to exactly the same version and type (CE/EE) of GitLab on which it was created. The best way to migrate your repositories from one server to another is through backup restore.&rdquo;</p>
@@ -536,96 +678,231 @@ git pull <span style="color:#75715e">#拉代码</span>
 </blockquote>
 <h4 id="配置备份还原">配置备份还原</h4>
 <p><strong>配置backup</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sh -c <span style="color:#e6db74">&#39;umask 0077; tar -cf $(date &#34;+etc-gitlab-%s.tar&#34;) -C / etc/gitlab&#39;</span>
-</code></pre></div><p><strong>配置restore</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv /etc/gitlab /etc/gitlab.<span style="color:#66d9ef">$(</span>date +%s<span style="color:#66d9ef">)</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sh -c <span class="s1">&#39;umask 0077; tar -cf $(date &#34;+etc-gitlab-%s.tar&#34;) -C / etc/gitlab&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>配置restore</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mv /etc/gitlab /etc/gitlab.<span class="k">$(</span>date +%s<span class="k">)</span>
 tar -xf etc-gitlab-1399948539.tar -C /
-/usr/bin/gitlab-ctl reconfigure  <span style="color:#75715e">#重新加载配置</span>
-</code></pre></div><h4 id="数据备份还原">数据备份还原</h4>
+/usr/bin/gitlab-ctl reconfigure  <span class="c1">#重新加载配置</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="数据备份还原">数据备份还原</h4>
 <p><strong>数据备份</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#如果使用Omnibus安装方式</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#如果使用Omnibus安装方式</span>
 /opt/gitlab/bin/gitlab-rake gitlab:backup:create
-<span style="color:#75715e">#如果使用源码安装的话</span>
-sudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV<span style="color:#f92672">=</span>production
-</code></pre></div><p><strong>另外</strong>如果使用AWS的服务需要将备份传S3那么可以直接再Gitlab的主配置文件进行配置，如何配置可以参照<a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#using-amazon-s3">【官方说明】</a>,里面的<code>bucket</code>参数只能写bucket的名字，不能有二级目录</p>
+<span class="c1">#如果使用源码安装的话</span>
+sudo -u git -H bundle <span class="nb">exec</span> rake gitlab:backup:create <span class="nv">RAILS_ENV</span><span class="o">=</span>production
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>另外</strong>如果使用AWS的服务需要将备份传S3那么可以直接再Gitlab的主配置文件进行配置，如何配置可以参照<a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#using-amazon-s3">【官方说明】</a>,里面的<code>bucket</code>参数只能写bucket的名字，不能有二级目录</p>
 <p><strong>数据还原</strong>
 将备份的数据文件放的需要还原的Gitlab主机上的备份目录</p>
-<pre><code>[root@VM_0_11_centos gitlab]# ls /var/opt/gitlab/backups/
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_11_centos gitlab]# ls /var/opt/gitlab/backups/
 1523625192_2018_04_13_10.6.4_gitlab_backup.tar
-</code></pre><p>然后停止连接数据库的进程</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gitlab-ctl stop unicorn
+</code></pre></td></tr></table>
+</div>
+</div><p>然后停止连接数据库的进程</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gitlab-ctl stop unicorn
 gitlab-ctl stop sidekiq
 gitlab-ctl status
-</code></pre></div><p>然后执行还原命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># This command will overwrite the contents of your GitLab database!</span>
-gitlab-rake gitlab:backup:restore BACKUP<span style="color:#f92672">=</span>1523625192_2018_04_13_10.6.4
-<span style="color:#75715e">#还原使用备份文件名除去&#34;_gitlab_backup.tar&#34;这个部分</span>
-</code></pre></div><p>如果有必要还原<code>/etc/gitlab/gitlab-secrets.json</code>最后重启Gitlab</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gitlab-ctl restart
-gitlab-rake gitlab:check SANITIZE<span style="color:#f92672">=</span>true
-</code></pre></div><p>还原完成
+</code></pre></td></tr></table>
+</div>
+</div><p>然后执行还原命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># This command will overwrite the contents of your GitLab database!</span>
+gitlab-rake gitlab:backup:restore <span class="nv">BACKUP</span><span class="o">=</span>1523625192_2018_04_13_10.6.4
+<span class="c1">#还原使用备份文件名除去&#34;_gitlab_backup.tar&#34;这个部分</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如果有必要还原<code>/etc/gitlab/gitlab-secrets.json</code>最后重启Gitlab</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gitlab-ctl restart
+gitlab-rake gitlab:check <span class="nv">SANITIZE</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>还原完成
 另外如果还原需要降级，以下命令可能会需要</p>
 <blockquote>
 <p><code>Gitlab</code>历史版本地址<a href="https://packages.gitlab.com/gitlab/gitlab-ce">【戳这里】</a>
 <code>yum downgrade &quot;下载的旧版本的文件名&quot;</code></p>
 </blockquote>
 <p><strong>备份脚本</strong><a href="https://github.com/Gourds/daily-scripts/blob/master/shell-scripts/backup_gitlab.sh">【获取脚本】</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env sh
-</span><span style="color:#75715e"></span>RETVAL<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-: <span style="color:#e6db74">${</span>ConfigBakDir:=/data/backup/gitlab<span style="color:#e6db74">}</span>
-<span style="color:#66d9ef">function</span> backup_config<span style="color:#f92672">(){</span>
-    <span style="color:#f92672">[</span> -d /etc/gitlab <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> exit <span style="color:#ae81ff">4</span>
-    <span style="color:#f92672">[</span> -d <span style="color:#e6db74">${</span>ConfigBakDir<span style="color:#e6db74">}</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> mkdir -p <span style="color:#e6db74">${</span>ConfigBakDir<span style="color:#e6db74">}</span>
-    sh -c <span style="color:#e6db74">&#34;cd </span><span style="color:#e6db74">${</span>ConfigBakDir<span style="color:#e6db74">}</span><span style="color:#e6db74"> &amp;&amp; umask 0077 &amp;&amp; tar -cf </span><span style="color:#66d9ef">$(</span>date <span style="color:#e6db74">&#34;+etc-gitlab-%s_%Y_%m_%d.tar&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74"> -C / etc/gitlab&#34;</span>
-    RETVAL<span style="color:#f92672">=</span>$?
-<span style="color:#f92672">}</span>
-<span style="color:#66d9ef">function</span> backup_data<span style="color:#f92672">(){</span>
-    <span style="color:#f92672">[</span> -f <span style="color:#e6db74">`</span>which gitlab-rake<span style="color:#e6db74">`</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> exit <span style="color:#ae81ff">5</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/usr/bin/env sh
+</span><span class="cp"></span><span class="nv">RETVAL</span><span class="o">=</span><span class="m">0</span>
+: <span class="si">${</span><span class="nv">ConfigBakDir</span><span class="p">:=/data/backup/gitlab</span><span class="si">}</span>
+<span class="k">function</span> backup_config<span class="o">(){</span>
+    <span class="o">[</span> -d /etc/gitlab <span class="o">]</span> <span class="o">||</span> <span class="nb">exit</span> <span class="m">4</span>
+    <span class="o">[</span> -d <span class="si">${</span><span class="nv">ConfigBakDir</span><span class="si">}</span> <span class="o">]</span> <span class="o">||</span> mkdir -p <span class="si">${</span><span class="nv">ConfigBakDir</span><span class="si">}</span>
+    sh -c <span class="s2">&#34;cd </span><span class="si">${</span><span class="nv">ConfigBakDir</span><span class="si">}</span><span class="s2"> &amp;&amp; umask 0077 &amp;&amp; tar -cf </span><span class="k">$(</span>date <span class="s2">&#34;+etc-gitlab-%s_%Y_%m_%d.tar&#34;</span><span class="k">)</span><span class="s2"> -C / etc/gitlab&#34;</span>
+    <span class="nv">RETVAL</span><span class="o">=</span><span class="nv">$?</span>
+<span class="o">}</span>
+<span class="k">function</span> backup_data<span class="o">(){</span>
+    <span class="o">[</span> -f <span class="sb">`</span>which gitlab-rake<span class="sb">`</span> <span class="o">]</span> <span class="o">||</span> <span class="nb">exit</span> <span class="m">5</span>
     gitlab-rake gitlab:backup:create
-    RETVAL<span style="color:#f92672">=</span>$?
-<span style="color:#f92672">}</span>
-<span style="color:#66d9ef">function</span> restore_data<span style="color:#f92672">(){</span>
-    <span style="color:#f92672">[</span> -f <span style="color:#e6db74">`</span>which gitlab-rake<span style="color:#e6db74">`</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">[</span> -f <span style="color:#e6db74">`</span>which gitlab-ctl<span style="color:#e6db74">`</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> exit <span style="color:#ae81ff">6</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">`</span>gitlab-ctl status unicorn |awk <span style="color:#e6db74">&#39;{print $1}&#39;</span> |sed <span style="color:#e6db74">&#39;s/://&#39;</span><span style="color:#e6db74">`</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;run&#39;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">`</span>gitlab-ctl status sidekiq |awk <span style="color:#e6db74">&#39;{print $1}&#39;</span> |sed <span style="color:#e6db74">&#39;s/://&#39;</span><span style="color:#e6db74">`</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;run&#39;</span> <span style="color:#f92672">]]</span>;<span style="color:#66d9ef">then</span>
-        msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;&#39;Usage: gitlab-rake gitlab:backup:restore BACKUP=1523625192_2018_04_13_10.6.4&#39;&#39;&#39;</span>
-        echo $msg
-    <span style="color:#66d9ef">else</span>
-        echo <span style="color:#e6db74">&#39;Please make sure unicorn and sidekiq process have stop ! Now exit&#39;</span>
-        exit <span style="color:#ae81ff">7</span>
-    <span style="color:#66d9ef">fi</span>
-<span style="color:#f92672">}</span>
-<span style="color:#66d9ef">case</span> $1 in
-    bak-etc<span style="color:#f92672">)</span>
+    <span class="nv">RETVAL</span><span class="o">=</span><span class="nv">$?</span>
+<span class="o">}</span>
+<span class="k">function</span> restore_data<span class="o">(){</span>
+    <span class="o">[</span> -f <span class="sb">`</span>which gitlab-rake<span class="sb">`</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -f <span class="sb">`</span>which gitlab-ctl<span class="sb">`</span> <span class="o">]</span> <span class="o">||</span> <span class="nb">exit</span> <span class="m">6</span>
+    <span class="k">if</span> <span class="o">[[</span> <span class="sb">`</span>gitlab-ctl status unicorn <span class="p">|</span>awk <span class="s1">&#39;{print $1}&#39;</span> <span class="p">|</span>sed <span class="s1">&#39;s/://&#39;</span><span class="sb">`</span> !<span class="o">=</span> <span class="s1">&#39;run&#39;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">[[</span> <span class="sb">`</span>gitlab-ctl status sidekiq <span class="p">|</span>awk <span class="s1">&#39;{print $1}&#39;</span> <span class="p">|</span>sed <span class="s1">&#39;s/://&#39;</span><span class="sb">`</span> !<span class="o">=</span> <span class="s1">&#39;run&#39;</span> <span class="o">]]</span><span class="p">;</span><span class="k">then</span>
+        <span class="nv">msg</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;Usage: gitlab-rake gitlab:backup:restore BACKUP=1523625192_2018_04_13_10.6.4&#39;&#39;&#39;</span>
+        <span class="nb">echo</span> <span class="nv">$msg</span>
+    <span class="k">else</span>
+        <span class="nb">echo</span> <span class="s1">&#39;Please make sure unicorn and sidekiq process have stop ! Now exit&#39;</span>
+        <span class="nb">exit</span> <span class="m">7</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+<span class="k">case</span> <span class="nv">$1</span> in
+    bak-etc<span class="o">)</span>
     backup_config
-    ;;
-    bak-data<span style="color:#f92672">)</span>
+    <span class="p">;;</span>
+    bak-data<span class="o">)</span>
     backup_data
-    ;;
-    bak<span style="color:#f92672">)</span>
+    <span class="p">;;</span>
+    bak<span class="o">)</span>
     backup_config
     backup_data
-    ;;
-    restore<span style="color:#f92672">)</span>
+    <span class="p">;;</span>
+    restore<span class="o">)</span>
     restore_data
-    ;;
-    *<span style="color:#f92672">)</span>
-    echo $<span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> {bak|bak-etc|bak-data|restore}&#34;</span>
-    RETVAL<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
-<span style="color:#66d9ef">esac</span>
-exit $RETVAL
-</code></pre></div><p><strong>存储策略</strong>
+    <span class="p">;;</span>
+    *<span class="o">)</span>
+    <span class="nb">echo</span> $<span class="s2">&#34;Usage: </span><span class="nv">$0</span><span class="s2"> {bak|bak-etc|bak-data|restore}&#34;</span>
+    <span class="nv">RETVAL</span><span class="o">=</span><span class="m">2</span>
+<span class="k">esac</span>
+<span class="nb">exit</span> <span class="nv">$RETVAL</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>存储策略</strong>
 如果想定期删除一段时间前的备份文件，官方配置里已经有现成可配置的地方，在主配置文件<code>/etc/gitlab/gitlab.rb</code>中通过设置以下参数后，然后重新加载配置即可</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># limit backup lifetime to 7 days - 604800 seconds</span>
-gitlab_rails<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;backup_keep_time&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">604800</span>
-</code></pre></div><p><strong>计划任务</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">2</span> * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create CRON<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-<span style="color:#75715e">#The CRON=1 environment setting tells the backup script to suppress all progress output if there are no errors.This is recommended to reduce cron spam.</span>
-</code></pre></div><h3 id="docker情况下的备份还原">Docker情况下的备份还原</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># backup config</span>
-docker exec -t &lt;your container name&gt; /bin/sh -c <span style="color:#e6db74">&#39;umask 0077; tar cfz /secret/gitlab/backups/$(date &#34;+etc-gitlab-\%s.tgz&#34;) -C / etc/gitlab&#39;</span>
-<span style="color:#75715e"># backup data</span>
-docker exec -t &lt;your container name&gt; gitlab-rake gitlab:backup:create
-</code></pre></div><h3 id="参考文档">参考文档</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># limit backup lifetime to 7 days - 604800 seconds</span>
+gitlab_rails<span class="o">[</span><span class="s1">&#39;backup_keep_time&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="m">604800</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>计划任务</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="m">0</span> <span class="m">2</span> * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create <span class="nv">CRON</span><span class="o">=</span><span class="m">1</span>
+<span class="c1">#The CRON=1 environment setting tells the backup script to suppress all progress output if there are no errors.This is recommended to reduce cron spam.</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="docker情况下的备份还原">Docker情况下的备份还原</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># backup config</span>
+docker <span class="nb">exec</span> -t &lt;your container name&gt; /bin/sh -c <span class="s1">&#39;umask 0077; tar cfz /secret/gitlab/backups/$(date &#34;+etc-gitlab-\%s.tgz&#34;) -C / etc/gitlab&#39;</span>
+<span class="c1"># backup data</span>
+docker <span class="nb">exec</span> -t &lt;your container name&gt; gitlab-rake gitlab:backup:create
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="参考文档">参考文档</h3>
 <p><a href="https://docs.gitlab.com.cn/ce/administration/index.html">【Gitlab官网】</a>
 <a href="https://docs.gitlab.com/omnibus/settings/backups.html">【官方配置备份还原说明】</a>
 <a href="https://docs.gitlab.com/ce/raketasks/backup_restore.html#creating-a-backup-of-the-gitlab-system">【官方数据备份还原说明】</a>
@@ -661,9 +938,9 @@ docker exec -t &lt;your container name&gt; gitlab-rake gitlab:backup:create
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/gitlab/">Gitlab</a>
-          <a href="http://blog.gourds.site/tags/shell/">Shell</a>
-          <a href="http://blog.gourds.site/tags/docker/">Docker</a>
+          <a href="https://blog.gourds.site/tags/gitlab/">Gitlab</a>
+          <a href="https://blog.gourds.site/tags/shell/">Shell</a>
+          <a href="https://blog.gourds.site/tags/docker/">Docker</a>
           
         </div>
 
@@ -701,6 +978,8 @@ docker exec -t &lt;your container name&gt; gitlab-rake gitlab:backup:create
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -774,7 +1053,7 @@ docker exec -t &lt;your container name&gt; gitlab-rake gitlab:backup:create
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -843,7 +1122,7 @@ docker exec -t &lt;your container name&gt; gitlab-rake gitlab:backup:create
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

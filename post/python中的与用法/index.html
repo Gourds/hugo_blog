@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Gourds" />
   <meta name="description" content="在Python中经常会见到以下一些用法，如在函数调用中fun1(*vars)|fun2(**vars),以及在函数定义中如def fun1(*param) or def fun2(**param)这些形式。下面就针对这些情况使用具体例子进行一下说明。
 " />
 
@@ -70,7 +70,7 @@
 <meta itemprop="name" content="python中的*与**用法">
 <meta itemprop="description" content="在Python中经常会见到以下一些用法，如在函数调用中fun1(*vars)|fun2(**vars),以及在函数定义中如def fun1(*param) or def fun2(**param)这些形式。下面就针对这些情况使用具体例子进行一下说明。"><meta itemprop="datePublished" content="2019-08-25T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2019-08-25T21:00:00+00:00" />
-<meta itemprop="wordCount" content="376">
+<meta itemprop="wordCount" content="422">
 <meta itemprop="keywords" content="Python," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="python中的*与**用法"/>
 <meta name="twitter:description" content="在Python中经常会见到以下一些用法，如在函数调用中fun1(*vars)|fun2(**vars),以及在函数定义中如def fun1(*param) or def fun2(**param)这些形式。下面就针对这些情况使用具体例子进行一下说明。"/>
@@ -105,36 +105,36 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -237,7 +237,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/">This is Home</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -248,7 +248,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/">Archives</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -259,7 +259,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/tags/">Tags</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -270,7 +270,7 @@
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/categories/">Categories</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -281,8 +281,8 @@
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
-              external-link
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
               
               <i class="iconfont">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -324,7 +324,8 @@
           2019-08-25
         </time>
         
-        
+        <span class="more-meta"> 422 words </span>
+          <span class="more-meta"> 1 min read </span>
 
         
         
@@ -358,55 +359,113 @@
       <p>在Python中经常会见到以下一些用法，如在函数调用中<code>fun1(*vars)</code>|<code>fun2(**vars)</code>,以及在函数定义中如<code>def fun1(*param)</code> or <code>def fun2(**param)</code>这些形式。下面就针对这些情况使用具体例子进行一下说明。</p>
 <h3 id="对于函数调用中的和">对于函数调用中的<code>*</code>和<code>**</code></h3>
 <p>主要功能是一个函数解压传入的过程</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#demo1  * list</span>
-demo_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>]
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#demo1  * list</span>
+<span class="n">demo_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">demo1</span>(a,b,c):
-    print(<span style="color:#e6db74">&#39;a+b+c=&#39;</span> <span style="color:#f92672">+</span> str(a<span style="color:#f92672">+</span>b<span style="color:#f92672">+</span>c))
-<span style="color:#75715e">#列表前面加星号作用是将列表解开成两个独立的参数，传入函数</span>
-demo1(<span style="color:#f92672">*</span>demo_list)
-<span style="color:#75715e">#a+b+c=6</span>
+<span class="k">def</span> <span class="nf">demo1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a+b+c=&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">+</span><span class="n">c</span><span class="p">))</span>
+<span class="c1">#列表前面加星号作用是将列表解开成两个独立的参数，传入函数</span>
+<span class="n">demo1</span><span class="p">(</span><span class="o">*</span><span class="n">demo_list</span><span class="p">)</span>
+<span class="c1">#a+b+c=6</span>
 
 
-<span style="color:#75715e">#demo2 ** dict</span>
-demo_dict <span style="color:#f92672">=</span> {
-            <span style="color:#e6db74">&#39;k1&#39;</span>:{<span style="color:#e6db74">&#39;v1&#39;</span>:<span style="color:#ae81ff">1</span>},
-            <span style="color:#e6db74">&#39;k2&#39;</span>:{<span style="color:#e6db74">&#39;v2&#39;</span>:<span style="color:#ae81ff">2</span>},
-            <span style="color:#e6db74">&#39;k3&#39;</span>:{<span style="color:#e6db74">&#39;v3&#39;</span>:<span style="color:#ae81ff">3</span>}
-             }
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">demo2</span>(k1,k2,k3):
-    print(k1,k2,k3)
-<span style="color:#75715e">#字典前面加两个星号，是将字典解开成独立的元素作为形参</span>
-<span style="color:#75715e">#补充：当将字典传入形参时，形参的名称要与字典的键名称相同</span>
-demo2(<span style="color:#f92672">**</span>demo_dict)
-<span style="color:#75715e">#{&#39;v1&#39;: 1} {&#39;v2&#39;: 2} {&#39;v3&#39;: 3}</span>
-</code></pre></div><h3 id="对于函数定义中的和">对于函数定义中的<code>*</code>和<code>**</code></h3>
+<span class="c1">#demo2 ** dict</span>
+<span class="n">demo_dict</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;k1&#39;</span><span class="p">:{</span><span class="s1">&#39;v1&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="s1">&#39;k2&#39;</span><span class="p">:{</span><span class="s1">&#39;v2&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">},</span>
+            <span class="s1">&#39;k3&#39;</span><span class="p">:{</span><span class="s1">&#39;v3&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+             <span class="p">}</span>
+<span class="k">def</span> <span class="nf">demo2</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span><span class="n">k2</span><span class="p">,</span><span class="n">k3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span><span class="n">k2</span><span class="p">,</span><span class="n">k3</span><span class="p">)</span>
+<span class="c1">#字典前面加两个星号，是将字典解开成独立的元素作为形参</span>
+<span class="c1">#补充：当将字典传入形参时，形参的名称要与字典的键名称相同</span>
+<span class="n">demo2</span><span class="p">(</span><span class="o">**</span><span class="n">demo_dict</span><span class="p">)</span>
+<span class="c1">#{&#39;v1&#39;: 1} {&#39;v2&#39;: 2} {&#39;v3&#39;: 3}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="对于函数定义中的和">对于函数定义中的<code>*</code>和<code>**</code></h3>
 <p>主要功能是将任意个数的参数导入到python函数中</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>(param1, <span style="color:#f92672">*</span>param2):
-    <span style="color:#75715e">#将所以参数以元组(tuple)的形式导入</span>
-    print(param1)
-    print(param2)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bar</span>(param1, <span style="color:#f92672">**</span>param2):
-    <span style="color:#75715e">#将参数以字典的形式导入</span>
-    print(param1)
-    print(param2)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo_bar</span>(param1,<span style="color:#f92672">*</span>param2,<span style="color:#f92672">**</span>param3):
-    <span style="color:#75715e">#上面两个可以混合使用</span>
-    print(param1)
-    print(param2)
-    print(param3)
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="o">*</span><span class="n">param2</span><span class="p">):</span>
+    <span class="c1">#将所以参数以元组(tuple)的形式导入</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="o">**</span><span class="n">param2</span><span class="p">):</span>
+    <span class="c1">#将参数以字典的形式导入</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">foo_bar</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span><span class="o">*</span><span class="n">param2</span><span class="p">,</span><span class="o">**</span><span class="n">param3</span><span class="p">):</span>
+    <span class="c1">#上面两个可以混合使用</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param3</span><span class="p">)</span>
 
-foo(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)
-<span style="color:#75715e">#1</span>
-<span style="color:#75715e">#(2, 3)</span>
-bar(<span style="color:#ae81ff">1</span>,a<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>,b<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
-<span style="color:#75715e">#1</span>
-<span style="color:#75715e">#{&#39;a&#39;: 2, &#39;b&#39;: 3}</span>
-foo_bar(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,a<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>,b<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
-<span style="color:#75715e">#1</span>
-<span style="color:#75715e">#(2, 3)</span>
-<span style="color:#75715e">#{&#39;a&#39;: 4, &#39;b&#39;: 5}</span>
-</code></pre></div><h3 id="扩展">扩展</h3>
+<span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">#1</span>
+<span class="c1">#(2, 3)</span>
+<span class="n">bar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">#1</span>
+<span class="c1">#{&#39;a&#39;: 2, &#39;b&#39;: 3}</span>
+<span class="n">foo_bar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">a</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1">#1</span>
+<span class="c1">#(2, 3)</span>
+<span class="c1">#{&#39;a&#39;: 4, &#39;b&#39;: 5}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="扩展">扩展</h3>
 <p><a href="https://zhuanlan.zhihu.com/p/33896402">知乎的一篇文章</a></p>
     </div>
 
@@ -415,7 +474,7 @@ foo_bar(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Gourds</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -475,6 +534,8 @@ foo_bar(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -586,7 +647,7 @@ foo_bar(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span
 
       </i>
     </span><span class="author">
-        xianmin
+        Gourds
         
       </span></span>
 
@@ -621,6 +682,13 @@ foo_bar(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

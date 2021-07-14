@@ -25,7 +25,7 @@
 <meta name="author" content="Gourds" />
   <meta name="description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
 需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
-graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward) F--&amp;gt;E(Elasticsearch cluster) E--&amp;gt;K(Kibana) " />
+1 2 3 4 5  graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward) F--&amp;gt;E(Elasticsearch cluster) E--&amp;gt;K(Kibana)   " />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -37,7 +37,7 @@ graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" />
+<link rel="canonical" href="https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" />
 
 
 
@@ -55,7 +55,7 @@ graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -64,37 +64,70 @@ graph LR; A(Td-client)--&amp;gt;F(Td-forward) B(Td-client)--&amp;gt;F(Td-forward
 <meta property="og:title" content="Fluentd使用中遇到的丢数据问题" />
 <meta property="og:description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
 需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
+
+
+1
+2
+3
+4
+5
+
+
 graph LR;
 	  A(Td-client)--&gt;F(Td-forward)
     B(Td-client)--&gt;F(Td-forward)
     F--&gt;E(Elasticsearch cluster)
     E--&gt;K(Kibana)
+
+
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-04-11T17:52:00+00:00" />
 <meta property="article:modified_time" content="2018-04-11T17:52:00+00:00" />
 
 <meta itemprop="name" content="Fluentd使用中遇到的丢数据问题">
 <meta itemprop="description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
 需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
+
+
+1
+2
+3
+4
+5
+
+
 graph LR;
 	  A(Td-client)--&gt;F(Td-forward)
     B(Td-client)--&gt;F(Td-forward)
     F--&gt;E(Elasticsearch cluster)
     E--&gt;K(Kibana)
+
+
 "><meta itemprop="datePublished" content="2018-04-11T17:52:00+00:00" />
 <meta itemprop="dateModified" content="2018-04-11T17:52:00+00:00" />
-<meta itemprop="wordCount" content="1663">
+<meta itemprop="wordCount" content="1810">
 <meta itemprop="keywords" content="ELK,踩坑指南," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fluentd使用中遇到的丢数据问题"/>
 <meta name="twitter:description" content="目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇Blog）
 需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到【Fluentd官网】获取支持。
+
+
+1
+2
+3
+4
+5
+
+
 graph LR;
 	  A(Td-client)--&gt;F(Td-forward)
     B(Td-client)--&gt;F(Td-forward)
     F--&gt;E(Elasticsearch cluster)
     E--&gt;K(Kibana)
+
+
 "/>
 
 <!--[if lte IE 9]>
@@ -127,28 +160,28 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -259,7 +292,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -270,7 +303,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -281,7 +314,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -292,7 +325,7 @@ graph LR;
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -346,7 +379,8 @@ graph LR;
           2018-04-11
         </time>
         
-        
+        <span class="more-meta"> 1810 words </span>
+          <span class="more-meta"> 4 min read </span>
 
         
         
@@ -379,12 +413,23 @@ graph LR;
     <div class="post-content">
       <p>目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇<a href="http://arvon.top/2018/02/23/Td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">Blog</a>）</p>
 <p>需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到<a href="https://docs.fluentd.org/v1.0/articles/quickstart">【Fluentd官网】</a>获取支持。</p>
-<pre><code class="language-mermaid" data-lang="mermaid">graph LR;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">graph LR;
 	  A(Td-client)--&gt;F(Td-forward)
     B(Td-client)--&gt;F(Td-forward)
     F--&gt;E(Elasticsearch cluster)
     E--&gt;K(Kibana)
-</code></pre><p><strong>Version：</strong></p>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Version：</strong></p>
 <blockquote>
 <p><code>td-agent 0.14.21</code>
 <code>ES Version: 5.0.0, Build: 253032b/2016-10-26T04:37:51.531Z, JVM: 1.8.0_121</code> And <code>lucene_version : &quot;6.2.0</code>
@@ -399,18 +444,63 @@ graph LR;
 <ul>
 <li>报错日志</li>
 </ul>
-<pre><code>  2018-03-16 03:25:19 +0000 [warn]: #0 suppressed same stacktrace
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">  2018-03-16 03:25:19 +0000 [warn]: #0 suppressed same stacktrace
 2018-03-16 03:25:19 +0000 [warn]: #0 failed to write data into buffer by buffer overflow action=:throw_exception
-2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&quot;buffer space has too many data&quot; tag=&quot;logics.5013.205&quot;
+2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&#34;buffer space has too many data&#34; tag=&#34;logics.5013.205&#34;
   2018-03-16 03:25:19 +0000 [warn]: #0 suppressed same stacktrace
 2018-03-16 03:25:19 +0000 [warn]: #0 failed to write data into buffer by buffer overflow action=:throw_exception
-2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&quot;buffer space has too many data&quot; tag=&quot;logics.5073.205&quot;
-</code></pre><ul>
+2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&#34;buffer space has too many data&#34; tag=&#34;logics.5073.205&#34;
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>修改后的配置</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;match</span> <span style="color:#960050;background-color:#1e0010">logics.**</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;match</span> <span class="err">logics.**</span><span class="nt">&gt;</span>
    type forward
-   <span style="color:#f92672">&lt;buffer&gt;</span>
+   <span class="nt">&lt;buffer&gt;</span>
      @type file
      path /var/log/td-agent/buffer/td-gamex-buffer
      chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
@@ -423,71 +513,152 @@ graph LR;
      delayed_commit_timeout 60 #The timeout seconds decides that async write operation fails
      overflow_action throw_exception
      retry_timeout 10m
-   <span style="color:#f92672">&lt;/buffer&gt;</span>
+   <span class="nt">&lt;/buffer&gt;</span>
    send_timeout 60s
    recover_wait 10s
    heartbeat_interval 1s
    phi_threshold 16
    hard_timeout 60s
    heartbeat_type tcp
-   <span style="color:#f92672">&lt;server&gt;</span>
+   <span class="nt">&lt;server&gt;</span>
       name logics.shard
       host tdagent.test.net
       port 24224
       weight 1
-   <span style="color:#f92672">&lt;/server&gt;</span>
-<span style="color:#f92672">&lt;/match&gt;</span>
-</code></pre></div><h3 id="q2td-forward端的buffer问题">Q2：Td-forward端的Buffer问题</h3>
+   <span class="nt">&lt;/server&gt;</span>
+<span class="nt">&lt;/match&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="q2td-forward端的buffer问题">Q2：Td-forward端的Buffer问题</h3>
 <p>正常来说对forward端配置buffer跟client端一样就行了，不过在实际使用中发现按client的配置会报错，如下，从报错来看是路径的问题，经查证是buffer的路径在<code>forest copy </code>的配置类型下，需要区分index来进行缓存，使用<code>${tag}</code>作为buffer存储路径的话就很好的解决了这个问题。类似issues可前往<a href="https://github.com/uken/fluent-plugin-elasticsearch/issues/103">【Github】</a>查看</p>
 <ul>
 <li>报错日志</li>
 </ul>
-<pre><code>2018-04-11 02:24:29 +0000 [error]: #0 Cannot output messages with tag 'logics.5022.205'
-2018-04-11 02:24:29 +0000 [error]: #0 failed to configure sub output copy: Other 'elasticsearch' plugin already use same buffer path: type = elasticsearch, buffer path = /var/log/td-agent/buffer/td-gamex-buffer
-2018-04-11 02:24:29 +0000 [error]: #0 /opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/buf_file.rb:71:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/output.rb:305:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/inject.rb:104:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_emitter.rb:73:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:504:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-elasticsearch-1.9.2/lib/fluent/plugin/out_elasticsearch.rb:71:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:73:in `block in configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `each'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:132:in `block in plant'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `synchronize'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `plant'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:169:in `emit'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:211:in `process'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/bare_output.rb:53:in `emit_sync'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/event_router.rb:96:in `emit_stream'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:300:in `on_message'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:211:in `block in handle_connection'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `call'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `block (3 levels) in read_messages'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `feed_each'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `block (2 levels) in read_messages'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `call'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `block in read_messages'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `call'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `on_read_without_connection'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:123:in `on_readable'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:186:in `on_readable'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run_once'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_loop.rb:84:in `block in start'
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/thread.rb:78:in `block in thread_create'
-</code></pre><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">2018-04-11 02:24:29 +0000 [error]: #0 Cannot output messages with tag &#39;logics.5022.205&#39;
+2018-04-11 02:24:29 +0000 [error]: #0 failed to configure sub output copy: Other &#39;elasticsearch&#39; plugin already use same buffer path: type = elasticsearch, buffer path = /var/log/td-agent/buffer/td-gamex-buffer
+2018-04-11 02:24:29 +0000 [error]: #0 /opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/buf_file.rb:71:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/output.rb:305:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/inject.rb:104:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_emitter.rb:73:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:504:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-elasticsearch-1.9.2/lib/fluent/plugin/out_elasticsearch.rb:71:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:73:in `block in configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `each&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:132:in `block in plant&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `synchronize&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `plant&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:169:in `emit&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:211:in `process&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/bare_output.rb:53:in `emit_sync&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/event_router.rb:96:in `emit_stream&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:300:in `on_message&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:211:in `block in handle_connection&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `call&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `block (3 levels) in read_messages&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `feed_each&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `block (2 levels) in read_messages&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `call&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `block in read_messages&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `call&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `on_read_without_connection&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:123:in `on_readable&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:186:in `on_readable&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run_once&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_loop.rb:84:in `block in start&#39;
+/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/thread.rb:78:in `block in thread_create&#39;
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>解决后的配置</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;match</span> <span style="color:#960050;background-color:#1e0010">logics.**</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;match</span> <span class="err">logics.**</span><span class="nt">&gt;</span>
   type forest
   subtype copy
-  <span style="color:#f92672">&lt;template&gt;</span>
-    <span style="color:#f92672">&lt;store&gt;</span>
+  <span class="nt">&lt;template&gt;</span>
+    <span class="nt">&lt;store&gt;</span>
       @type elasticsearch
-      <span style="color:#f92672">&lt;buffer&gt;</span>
+      <span class="nt">&lt;buffer&gt;</span>
         @type file
         path /var/log/td-agent/buffer/td-gamex-buffer/${tag}
         chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
@@ -500,7 +671,7 @@ graph LR;
         delayed_commit_timeout 60 #The timeout seconds decides that async write operation fails
         overflow_action throw_exception
         retry_timeout 10m
-      <span style="color:#f92672">&lt;/buffer&gt;</span>
+      <span class="nt">&lt;/buffer&gt;</span>
       host elasticsearch.test.net
       port 9200
       logstash_format true
@@ -511,10 +682,12 @@ graph LR;
       reload_connections false
       reload_on_failure true
       reconnect_on_error true
-    <span style="color:#f92672">&lt;/store&gt;</span>
-  <span style="color:#f92672">&lt;/template&gt;</span>
-<span style="color:#f92672">&lt;/match&gt;</span>
-</code></pre></div><h3 id="q3td-forward端的connection问题">Q3：Td-forward端的connection问题</h3>
+    <span class="nt">&lt;/store&gt;</span>
+  <span class="nt">&lt;/template&gt;</span>
+<span class="nt">&lt;/match&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="q3td-forward端的connection问题">Q3：Td-forward端的connection问题</h3>
 <p>这个问题主要发生在TD向ES发送数据阶段，起初考虑是ES集群处理能力达到上限，无法分配更对的连接给TD，但是进行Reload之后就正常了，所以这个问题的可能性不大，很可能是TD或者ES在处理连接的逻辑上存在问题，没有正确的关闭或者使用连接。经过查找资料，也找到了一些蛛丝马迹，可供参考的资料也一快带上</p>
 <ul>
 <li>参考资料</li>
@@ -525,10 +698,19 @@ graph LR;
 <ul>
 <li>报错信息</li>
 </ul>
-<pre><code>2018-03-21 04:28:19 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:28:34 +0000 error_class=&quot;Elasticsearch::Transport::Transport::Error&quot; error=&quot;Cannot get new connection from pool.&quot; plugin_id=&quot;object:3fe6fced399c&quot;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">2018-03-21 04:28:19 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:28:34 +0000 error_class=&#34;Elasticsearch::Transport::Transport::Error&#34; error=&#34;Cannot get new connection from pool.&#34; plugin_id=&#34;object:3fe6fced399c&#34;
   2018-03-21 04:28:19 +0000 [warn]: suppressed same stacktrace
-2018-03-21 04:28:35 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:29:08 +0000 error_class=&quot;Elasticsearch::Transport::Transport::Error&quot; error=&quot;Cannot get new connection from pool.&quot; plugin_id=&quot;object:3fe6fced399c&quot;
-</code></pre><ul>
+2018-03-21 04:28:35 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:29:08 +0000 error_class=&#34;Elasticsearch::Transport::Transport::Error&#34; error=&#34;Cannot get new connection from pool.&#34; plugin_id=&#34;object:3fe6fced399c&#34;
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>再说明
 **解决方法：**还是升级吧，升级至1.9.1版本之后该问题消失。<a href="https://github.com/uken/fluent-plugin-elasticsearch/pull/220">【关于修复PR信息点这里】</a>在<a href="https://github.com/uken/fluent-plugin-elasticsearch/pull/220/commits/494a68d6b26575e212713b156ab6fe61a7b38733">【版本1.9.1 该Release版本时间为2016.12.14】</a>中修复</li>
 </ul>
@@ -549,13 +731,52 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
 <ul>
 <li>目前解决途径</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;match</span> <span style="color:#960050;background-color:#1e0010">logics.**</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;match</span> <span class="err">logics.**</span><span class="nt">&gt;</span>
   type forest
   subtype copy
-  <span style="color:#f92672">&lt;template&gt;</span>
-    <span style="color:#f92672">&lt;store&gt;</span>
+  <span class="nt">&lt;template&gt;</span>
+    <span class="nt">&lt;store&gt;</span>
       type elasticsearch
-      <span style="color:#f92672">&lt;buffer&gt;</span>
+      <span class="nt">&lt;buffer&gt;</span>
         @type file
         path /var/log/td-agent/buffer/td-gamex-buffer/${tag}
         chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
@@ -568,7 +789,7 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
         delayed_commit_timeout 60 #The timeout seconds  async write operation fails
         overflow_action throw_exception
         retry_timeout 10m
-      <span style="color:#f92672">&lt;/buffer&gt;</span>
+      <span class="nt">&lt;/buffer&gt;</span>
       host elasticsearch.yingxiong.net
       port 9200
       logstash_format true
@@ -581,10 +802,12 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
       reload_connections false
       reload_on_failure true
       reconnect_on_error true
-    <span style="color:#f92672">&lt;/store&gt;</span>
-  <span style="color:#f92672">&lt;/template&gt;</span>
-<span style="color:#f92672">&lt;/match&gt;</span>
-</code></pre></div>
+    <span class="nt">&lt;/store&gt;</span>
+  <span class="nt">&lt;/template&gt;</span>
+<span class="nt">&lt;/match&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -614,8 +837,8 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/elk/">ELK</a>
-          <a href="http://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/">踩坑指南</a>
+          <a href="https://blog.gourds.site/tags/elk/">ELK</a>
+          <a href="https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/">踩坑指南</a>
           
         </div>
 
@@ -653,6 +876,8 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -726,7 +951,7 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -795,7 +1020,7 @@ Github提到这个有帮助，实测并不好用，问题还是会出现，但�
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" />
+<link rel="canonical" href="https://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -69,7 +69,7 @@ HTML转义
 特殊装饰器
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-08-28T21:00:00+00:00" />
 <meta property="article:modified_time" content="2019-08-28T21:00:00+00:00" />
 
@@ -82,7 +82,7 @@ HTML转义
 特殊装饰器
 "><meta itemprop="datePublished" content="2019-08-28T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2019-08-28T21:00:00+00:00" />
-<meta itemprop="wordCount" content="1344">
+<meta itemprop="wordCount" content="1426">
 <meta itemprop="keywords" content="Flask,Jinja2," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Flask中Jinja2模板使用总结"/>
 <meta name="twitter:description" content="之前已经总结过Jinja2了,这里主要总结在Falsk中的一些东西。包括以下方面
@@ -123,28 +123,28 @@ HTML转义
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -255,7 +255,7 @@ HTML转义
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -266,7 +266,7 @@ HTML转义
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -277,7 +277,7 @@ HTML转义
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -288,7 +288,7 @@ HTML转义
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -342,7 +342,8 @@ HTML转义
           2019-08-28
         </time>
         
-        
+        <span class="more-meta"> 1426 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -380,7 +381,41 @@ HTML转义
 </ul>
 <h4 id="模板的目录设计">模板的目录设计</h4>
 <p>没有绝对答案，从别人博客复制一个结构又加了一点补充，更详尽的可以参考<a href="https://blog.csdn.net/xingyunLOST/article/details/77155584">他的博客</a></p>
-<pre><code>| - projectName
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">| - projectName
 	| - app  //程序包
 		| - templates //jinjia2模板
       | -  layout.html
@@ -410,42 +445,98 @@ HTML转义
 	|- venv  //虚拟环境
 	|- requirements.txt //列出了所有依赖包以及版本号，方便在其他位置生成相同的虚拟环境以及依赖
 	|- config.py //全局配置文件，配置全局变量
-</code></pre><h4 id="常用的模块">常用的模块</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask,render_template
-<span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/about&#39;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">about</span>():
-    <span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;about.html&#39;</span>,user<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Gourds&#39;</span>)
-  <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">  render_template参数说明：
-</span><span style="color:#e6db74">  第一个参数是模板名称，默认会在当前路径下的templates中查找
-</span><span style="color:#e6db74">  user=&#39;Gourds&#39;,其中左边data1表示模板中的占位符，右边表示在当前视图中的变量
-</span><span style="color:#e6db74">  &#34;&#34;&#34;</span>
-</code></pre></div><p>如下就是HTML的例子(定义user返回hello不然返回gun)。变量表达式使用<code>&amp;#123;&amp;#123; &amp;#125;&amp;#125;</code>，控制语句使用<code>&amp;#123;% %&amp;#125;</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;Gourds&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-    &amp;#123;% if user is defined() %&amp;#125;
-        &lt;<span style="color:#f92672">h1</span>&gt; Hello &amp;#123;&amp;#123; user &amp;#125;&amp;#125; !&lt;/<span style="color:#f92672">h1</span>&gt;
-    &amp;#123;% else %&amp;#125;
-        &lt;<span style="color:#f92672">h1</span>&gt; Gun !&lt;/<span style="color:#f92672">h1</span>&gt;
-    &amp;#123;% endif %&amp;#125;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><h4 id="html自动转义">HTML自动转义</h4>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="常用的模块">常用的模块</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span><span class="n">render_template</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/about&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">about</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">&#39;about.html&#39;</span><span class="p">,</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;Gourds&#39;</span><span class="p">)</span>
+  <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">  render_template参数说明：
+</span><span class="s2">  第一个参数是模板名称，默认会在当前路径下的templates中查找
+</span><span class="s2">  user=&#39;Gourds&#39;,其中左边data1表示模板中的占位符，右边表示在当前视图中的变量
+</span><span class="s2">  &#34;&#34;&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如下就是HTML的例子(定义user返回hello不然返回gun)。变量表达式使用<code>&amp;#123;&amp;#123; &amp;#125;&amp;#125;</code>，控制语句使用<code>&amp;#123;% %&amp;#125;</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Gourds<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>% if user is defined() %<span class="ni">&amp;#125;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Hello <span class="ni">&amp;#123;&amp;#123;</span> user <span class="ni">&amp;#125;&amp;#125;</span> !<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>% else %<span class="ni">&amp;#125;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Gun !<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="ni">&amp;#123;</span>% endif %<span class="ni">&amp;#125;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="html自动转义">HTML自动转义</h4>
 <p>jinja2默认情况下实惠自动转义的。如下,会被自动转义</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/index&#39;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
-    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&lt;h1&gt; Welcome </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> &lt;/h1&gt;&#39;</span> <span style="color:#f92672">%</span> <span style="color:#e6db74">&#39;&lt;em&gt;Gourds&lt;em&gt;&#39;</span>
-</code></pre></div><p>不过有时候你可能就是想让输出这个，在Flask中可以使用<code>Marup</code>实现</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Markup
-<span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/index&#39;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
-    <span style="color:#66d9ef">return</span> Markup(<span style="color:#e6db74">&#39;&lt;h1&gt; Welcome </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> &lt;/h1&gt;&#39;</span>) <span style="color:#f92672">%</span> <span style="color:#e6db74">&#39;&lt;em&gt;Gourds&lt;em&gt;&#39;</span>
-</code></pre></div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/index&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s1">&#39;&lt;h1&gt; Welcome </span><span class="si">%s</span><span class="s1"> &lt;/h1&gt;&#39;</span> <span class="o">%</span> <span class="s1">&#39;&lt;em&gt;Gourds&lt;em&gt;&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>不过有时候你可能就是想让输出这个，在Flask中可以使用<code>Marup</code>实现</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Python" data-lang="Python"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Markup</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/index&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">Markup</span><span class="p">(</span><span class="s1">&#39;&lt;h1&gt; Welcome </span><span class="si">%s</span><span class="s1"> &lt;/h1&gt;&#39;</span><span class="p">)</span> <span class="o">%</span> <span class="s1">&#39;&lt;em&gt;Gourds&lt;em&gt;&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p><strong>自动转义的原因</strong>
 原因：被渲染到页面的对象中没有实现<code>__html__</code>方法的对象。换句话说,就是假设一个对象实现了<code>__html__</code>方法那么这个对象就是安全的,jinja2模板就不会将它转义,即使他就是个恶意的脚本，那么为了防止被恶意脚本攻击,jinja2模板默认开启了自动转义,频繁的自动转义是会大量的消耗资源的,所以在确定该数据是安全的情况下可以用过滤器<code>|safe</code>或者<code>&amp;#123;% autoescape false %&amp;#125;&amp;#123;% endautoescape %&amp;#125;</code>关闭转义环境</p>
 <ul>
@@ -458,46 +549,110 @@ HTML转义
 <h4 id="模板继承include宏">模板继承&amp;include&amp;宏</h4>
 <p>之前在jinja语法中写过了，在这就简单记下</p>
 <p><strong>模板继承</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;&amp;#123; extends &#34;layout.html&#34; &amp;#125;&amp;#125;
-&amp;#123;&amp;#123; block content &amp;#125;&amp;#125;
-    &amp;#123;&amp;#123; var1 &amp;#125;&amp;#125;
-    &amp;#123;&amp;#123; fun(a,b)&amp;#125;&amp;#125;
-&amp;#123;&amp;#123; endblock &amp;#125;&amp;#125;
-</code></pre></div><p><strong>include模板</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;&amp;#123;</span> extends &#34;layout.html&#34; <span class="ni">&amp;#125;&amp;#125;</span>
+<span class="ni">&amp;#123;&amp;#123;</span> block content <span class="ni">&amp;#125;&amp;#125;</span>
+    <span class="ni">&amp;#123;&amp;#123;</span> var1 <span class="ni">&amp;#125;&amp;#125;</span>
+    <span class="ni">&amp;#123;&amp;#123;</span> fun(a,b)<span class="ni">&amp;#125;&amp;#125;</span>
+<span class="ni">&amp;#123;&amp;#123;</span> endblock <span class="ni">&amp;#125;&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>include模板</strong></p>
 <blockquote>
 <p>包含的模板会被传递到当前的上下文，使用<code>import</code>的话就不会。导入不会像包含被缓存，因为导入经常只作为容纳宏的模块</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&amp;#123;% include &#39;header.html&#39; without context %&amp;#125;
-</code></pre></div><p><strong>宏</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="ni">&amp;#123;</span>% include &#39;header.html&#39; without context %<span class="ni">&amp;#125;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>宏</strong></p>
 <blockquote>
 <p>宏其实就类似程序中的function，用来替代重复性操作</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML"><span style="color:#75715e">&lt;!-- 定义 --&gt;</span>
-&amp;#123;% macro input(name, value=&#39;&#39;, type=&#39;text&#39;, size=20) -%&amp;#125;
-    &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; type &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123;
-</span><span style="color:#e6db74">        value|e &amp;#125;&amp;#125;&#34;</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&amp;#123;&amp;#123; size &amp;#125;&amp;#125;&#34;</span>&gt;
-&amp;#123;%- endmacro %&amp;#125;
-<span style="color:#75715e">&lt;!-- 使用 --&gt;</span>
-&lt;<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; input(&#39;username&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;&amp;#123;&amp;#123; input(&#39;password&#39;, type=&#39;password&#39;) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">p</span>&gt;
-</code></pre></div><h4 id="两个特殊装饰器">两个特殊装饰器</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="c">&lt;!-- 定义 --&gt;</span>
+<span class="ni">&amp;#123;</span>% macro input(name, value=&#39;&#39;, type=&#39;text&#39;, size=20) -%<span class="ni">&amp;#125;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; type &amp;#125;&amp;#125;&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; name &amp;#125;&amp;#125;&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123;
+</span><span class="s">        value|e &amp;#125;&amp;#125;&#34;</span> <span class="na">size</span><span class="o">=</span><span class="s">&#34;&amp;#123;&amp;#123; size &amp;#125;&amp;#125;&#34;</span><span class="p">&gt;</span>
+<span class="ni">&amp;#123;</span>%- endmacro %<span class="ni">&amp;#125;</span>
+<span class="c">&lt;!-- 使用 --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> input(&#39;username&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> input(&#39;password&#39;, type=&#39;password&#39;) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="两个特殊装饰器">两个特殊装饰器</h4>
 <p><strong><code>@app.template_globle</code></strong></p>
 <blockquote>
 <p>这个装饰器可以使所有的模板都可以直接调用被装饰的函数</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>template_global()
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hi</span>(x, y):
-    <span style="color:#66d9ef">return</span> str(x) <span style="color:#f92672">+</span> str(y)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">h1</span>&gt;&amp;#123;&amp;#123; hi(&#39;hello&#39;, &#39;world&#39;)&amp;#125;&amp;#125;&lt;/<span style="color:#f92672">h1</span>&gt;
-</code></pre></div><p><strong><code>@app.template_filter</code></strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="nd">@app</span><span class="o">.</span><span class="n">template_global</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">hi</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> hi(&#39;hello&#39;, &#39;world&#39;)<span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong><code>@app.template_filter</code></strong></p>
 <blockquote>
 <p>这个装饰器下的函数可以方便测试表达式,比如IF判断<code>&amp;#123;&amp;#123; if a|fun(b,c) &amp;#125;&amp;#125;</code></p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>template_filter()
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span>(a, b, c):
-    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">-</span> b <span style="color:#f92672">-</span> c
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">h2</span>&gt;&amp;#123;&amp;#123; 1|hello(2, 3) &amp;#125;&amp;#125;&lt;/<span style="color:#f92672">h2</span>&gt;
-</code></pre></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="nd">@app</span><span class="o">.</span><span class="n">template_filter</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span> <span class="o">-</span> <span class="n">c</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span><span class="ni">&amp;#123;&amp;#123;</span> 1|hello(2, 3) <span class="ni">&amp;#125;&amp;#125;</span><span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -527,8 +682,8 @@ HTML转义
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/flask/">Flask</a>
-          <a href="http://blog.gourds.site/tags/jinja2/">Jinja2</a>
+          <a href="https://blog.gourds.site/tags/flask/">Flask</a>
+          <a href="https://blog.gourds.site/tags/jinja2/">Jinja2</a>
           
         </div>
 
@@ -566,6 +721,8 @@ HTML转义
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -639,7 +796,7 @@ HTML转义
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -708,7 +865,7 @@ HTML转义
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/" />
+<link rel="canonical" href="https://blog.gourds.site/post/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/" />
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -64,7 +64,7 @@
 <meta property="og:description" content="ftp服务在运维工作中还是十分常用的。下面记录下安装配置过程。关于主动被动原理可以看一下我的wiki
 vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下面是适用于一般场景的配置，使用虚拟用户进行登录操作，更多定制需要需要自行进行修改。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2017-08-13T21:00:00+00:00" />
 <meta property="article:modified_time" content="2017-08-13T21:00:00+00:00" />
 
@@ -72,7 +72,7 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
 <meta itemprop="description" content="ftp服务在运维工作中还是十分常用的。下面记录下安装配置过程。关于主动被动原理可以看一下我的wiki
 vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下面是适用于一般场景的配置，使用虚拟用户进行登录操作，更多定制需要需要自行进行修改。"><meta itemprop="datePublished" content="2017-08-13T21:00:00+00:00" />
 <meta itemprop="dateModified" content="2017-08-13T21:00:00+00:00" />
-<meta itemprop="wordCount" content="1438">
+<meta itemprop="wordCount" content="1560">
 <meta itemprop="keywords" content="运维工具,网络协议," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="vsftp安装配置记录"/>
 <meta name="twitter:description" content="ftp服务在运维工作中还是十分常用的。下面记录下安装配置过程。关于主动被动原理可以看一下我的wiki
@@ -108,28 +108,28 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -240,7 +240,7 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -251,7 +251,7 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -262,7 +262,7 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -273,7 +273,7 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -327,7 +327,8 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
           2017-08-13
         </time>
         
-        
+        <span class="more-meta"> 1560 words </span>
+          <span class="more-meta"> 4 min read </span>
 
         
         
@@ -376,115 +377,251 @@ vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下
 </blockquote>
 </li>
 <li>Check and Install vsftp pkg
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm -q vsftpd
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">rpm -q vsftpd
 yum install vsftpd -y
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Stop Firewall and SElinux
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">setenforce <span style="color:#ae81ff">0</span>
-<span style="color:#75715e"># forver stop</span>
-vi /etc/selinux/config  <span style="color:#75715e">#SELINUX=disabled</span>
-<span style="color:#75715e"># Stop firewall</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">setenforce <span class="m">0</span>
+<span class="c1"># forver stop</span>
+vi /etc/selinux/config  <span class="c1">#SELINUX=disabled</span>
+<span class="c1"># Stop firewall</span>
 systemctl stop firewalld.service
 systemctl disable firewalld.service
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="配置修改">配置修改</h3>
 <ul>
 <li>主配置文件修改如下
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">anonymous_enable<span style="color:#f92672">=</span>No
-local_enable<span style="color:#f92672">=</span>YES
-allow_writeable_chroot<span style="color:#f92672">=</span>YES
-write_enable<span style="color:#f92672">=</span>YES
-local_umask<span style="color:#f92672">=</span><span style="color:#ae81ff">022</span>
-dirmessage_enable<span style="color:#f92672">=</span>YES
-xferlog_enable<span style="color:#f92672">=</span>YES
-connect_from_port_20<span style="color:#f92672">=</span>YES
-xferlog_std_format<span style="color:#f92672">=</span>YES
-chroot_local_user<span style="color:#f92672">=</span>YES
-chroot_list_enable<span style="color:#f92672">=</span>YES
-listen<span style="color:#f92672">=</span>YES
-pam_service_name<span style="color:#f92672">=</span>vsftpd
-userlist_enable<span style="color:#f92672">=</span>YES
-tcp_wrappers<span style="color:#f92672">=</span>YES
-listen_port<span style="color:#f92672">=</span><span style="color:#ae81ff">21</span>
-idle_session_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">300</span>
-data_connection_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">120</span>
-guest_enable<span style="color:#f92672">=</span>YES
-guest_username<span style="color:#f92672">=</span>ftpuser
-user_config_dir<span style="color:#f92672">=</span>/etc/vsftpd/vuser_conf
-virtual_use_local_privs<span style="color:#f92672">=</span>YES
-pasv_address<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Your Public IP&#34;</span>
-pasv_min_port<span style="color:#f92672">=</span><span style="color:#ae81ff">10060</span>
-pasv_max_port<span style="color:#f92672">=</span><span style="color:#ae81ff">10090</span>
-accept_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>
-connect_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">anonymous_enable</span><span class="o">=</span>No
+<span class="nv">local_enable</span><span class="o">=</span>YES
+<span class="nv">allow_writeable_chroot</span><span class="o">=</span>YES
+<span class="nv">write_enable</span><span class="o">=</span>YES
+<span class="nv">local_umask</span><span class="o">=</span><span class="m">022</span>
+<span class="nv">dirmessage_enable</span><span class="o">=</span>YES
+<span class="nv">xferlog_enable</span><span class="o">=</span>YES
+<span class="nv">connect_from_port_20</span><span class="o">=</span>YES
+<span class="nv">xferlog_std_format</span><span class="o">=</span>YES
+<span class="nv">chroot_local_user</span><span class="o">=</span>YES
+<span class="nv">chroot_list_enable</span><span class="o">=</span>YES
+<span class="nv">listen</span><span class="o">=</span>YES
+<span class="nv">pam_service_name</span><span class="o">=</span>vsftpd
+<span class="nv">userlist_enable</span><span class="o">=</span>YES
+<span class="nv">tcp_wrappers</span><span class="o">=</span>YES
+<span class="nv">listen_port</span><span class="o">=</span><span class="m">21</span>
+<span class="nv">idle_session_timeout</span><span class="o">=</span><span class="m">300</span>
+<span class="nv">data_connection_timeout</span><span class="o">=</span><span class="m">120</span>
+<span class="nv">guest_enable</span><span class="o">=</span>YES
+<span class="nv">guest_username</span><span class="o">=</span>ftpuser
+<span class="nv">user_config_dir</span><span class="o">=</span>/etc/vsftpd/vuser_conf
+<span class="nv">virtual_use_local_privs</span><span class="o">=</span>YES
+<span class="nv">pasv_address</span><span class="o">=</span><span class="s2">&#34;Your Public IP&#34;</span>
+<span class="nv">pasv_min_port</span><span class="o">=</span><span class="m">10060</span>
+<span class="nv">pasv_max_port</span><span class="o">=</span><span class="m">10090</span>
+<span class="nv">accept_timeout</span><span class="o">=</span><span class="m">5</span>
+<span class="nv">connect_timeout</span><span class="o">=</span><span class="m">5</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>添加ftp用户
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">useradd -g root -M -d /data/ftp_server -s /sbin/nologin ftpuser
-echo <span style="color:#e6db74">&#34;rPUdeubeKCPwRAhpVt8GWLpG&#34;</span> |passwd --stdin ftpuser
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">useradd -g root -M -d /data/ftp_server -s /sbin/nologin ftpuser
+<span class="nb">echo</span> <span class="s2">&#34;rPUdeubeKCPwRAhpVt8GWLpG&#34;</span> <span class="p">|</span>passwd --stdin ftpuser
 chown -R ftpuser.root /data/ftp_server/
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>Config virture User
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch /etc/vsftpd/vuser_passwd
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">touch /etc/vsftpd/vuser_passwd
 vi /etc/vsftpd/vuser_passwd
-<span style="color:#75715e">#user</span>
-<span style="color:#75715e">#password</span>
-db_load -T -t hash -f /etc/vsftpd/vuser_passwd /etc/vsftpd/vuser_passwd.db
-chmod <span style="color:#ae81ff">600</span> /etc/vsftpd/vuser_passwd.db
+<span class="c1">#user</span>
+<span class="c1">#password</span>
+db_load -T -t <span class="nb">hash</span> -f /etc/vsftpd/vuser_passwd /etc/vsftpd/vuser_passwd.db
+chmod <span class="m">600</span> /etc/vsftpd/vuser_passwd.db
 mkdir /etc/vsftpd/vuser_conf
-cd /etc/vsftpd/vuser_conf
+<span class="nb">cd</span> /etc/vsftpd/vuser_conf
 touch tai-yunying
-</code></pre></div></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>修改pam.d下的ftp配置
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#%PAM-1.0</span>
-<span style="color:#75715e">#session    optional     pam_keyinit.so    force revoke</span>
-<span style="color:#75715e">#auth       required    pam_listfile.so item=user sense=deny file=/etc/vsftpd/ftpusers onerr=succeed</span>
-<span style="color:#75715e">#auth       required    pam_shells.so</span>
-<span style="color:#75715e">#auth       include     password-auth</span>
-<span style="color:#75715e">#account    include     password-auth</span>
-<span style="color:#75715e">#session    required     pam_loginuid.so</span>
-<span style="color:#75715e">#session    include     password-auth</span>
-auth required /lib64/security/pam_userdb.so db<span style="color:#f92672">=</span>/etc/vsftpd/vuser_passwd
-account required /lib64/security/pam_userdb.so db<span style="color:#f92672">=</span>/etc/vsftpd/vuser_passwd
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#%PAM-1.0</span>
+<span class="c1">#session    optional     pam_keyinit.so    force revoke</span>
+<span class="c1">#auth       required    pam_listfile.so item=user sense=deny file=/etc/vsftpd/ftpusers onerr=succeed</span>
+<span class="c1">#auth       required    pam_shells.so</span>
+<span class="c1">#auth       include     password-auth</span>
+<span class="c1">#account    include     password-auth</span>
+<span class="c1">#session    required     pam_loginuid.so</span>
+<span class="c1">#session    include     password-auth</span>
+auth required /lib64/security/pam_userdb.so <span class="nv">db</span><span class="o">=</span>/etc/vsftpd/vuser_passwd
+account required /lib64/security/pam_userdb.so <span class="nv">db</span><span class="o">=</span>/etc/vsftpd/vuser_passwd
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>启动服务
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl restart vsftpd.service
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl restart vsftpd.service
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="about-base-yum">About Base Yum</h3>
 <ul>
 <li>Base Yum Repo
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>base<span style="color:#f92672">]</span>
-name<span style="color:#f92672">=</span>CentOS-$7 - Base - 163.com
-<span style="color:#75715e">#mirrorlist=http://mirrorlist.centos.org/?release=$7&amp;arch=$basearch&amp;repo=os</span>
-baseurl<span style="color:#f92672">=</span>http://mirrors.163.com/centos/7/os/$basearch/
-gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-gpgkey<span style="color:#f92672">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>base<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>CentOS-<span class="nv">$7</span> - Base - 163.com
+<span class="c1">#mirrorlist=http://mirrorlist.centos.org/?release=$7&amp;arch=$basearch&amp;repo=os</span>
+<span class="nv">baseurl</span><span class="o">=</span>http://mirrors.163.com/centos/7/os/<span class="nv">$basearch</span>/
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgkey</span><span class="o">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
 
-<span style="color:#75715e">#released updates</span>
-<span style="color:#f92672">[</span>updates<span style="color:#f92672">]</span>
-name<span style="color:#f92672">=</span>CentOS-$7 - Updates - 163.com
-<span style="color:#75715e">#mirrorlist=http://mirrorlist.centos.org/?release=$7&amp;arch=$basearch&amp;repo=updates</span>
-baseurl<span style="color:#f92672">=</span>http://mirrors.163.com/centos/7/updates/$basearch/
-gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-gpgkey<span style="color:#f92672">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
+<span class="c1">#released updates</span>
+<span class="o">[</span>updates<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>CentOS-<span class="nv">$7</span> - Updates - 163.com
+<span class="c1">#mirrorlist=http://mirrorlist.centos.org/?release=$7&amp;arch=$basearch&amp;repo=updates</span>
+<span class="nv">baseurl</span><span class="o">=</span>http://mirrors.163.com/centos/7/updates/<span class="nv">$basearch</span>/
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgkey</span><span class="o">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
 
-<span style="color:#75715e">#additional packages that may be useful</span>
-<span style="color:#f92672">[</span>extras<span style="color:#f92672">]</span>
-name<span style="color:#f92672">=</span>CentOS-$7 - Extras - 163.com
-<span style="color:#75715e">#mirrorlist=http://mirrorlist.centos.org/?release=$7&amp;arch=$basearch&amp;repo=extras</span>
-baseurl<span style="color:#f92672">=</span>http://mirrors.163.com/centos/7/extras/$basearch/
-gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-gpgkey<span style="color:#f92672">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
+<span class="c1">#additional packages that may be useful</span>
+<span class="o">[</span>extras<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>CentOS-<span class="nv">$7</span> - Extras - 163.com
+<span class="c1">#mirrorlist=http://mirrorlist.centos.org/?release=$7&amp;arch=$basearch&amp;repo=extras</span>
+<span class="nv">baseurl</span><span class="o">=</span>http://mirrors.163.com/centos/7/extras/<span class="nv">$basearch</span>/
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">gpgkey</span><span class="o">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
 
-<span style="color:#75715e">#additional packages that extend functionality of existing packages</span>
-<span style="color:#f92672">[</span>centosplus<span style="color:#f92672">]</span>
-name<span style="color:#f92672">=</span>CentOS-$7 - Plus - 163.com
-baseurl<span style="color:#f92672">=</span>http://mirrors.163.com/centos/7/centosplus/$basearch/
-gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-enabled<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-gpgkey<span style="color:#f92672">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
-</code></pre></div></li>
+<span class="c1">#additional packages that extend functionality of existing packages</span>
+<span class="o">[</span>centosplus<span class="o">]</span>
+<span class="nv">name</span><span class="o">=</span>CentOS-<span class="nv">$7</span> - Plus - 163.com
+<span class="nv">baseurl</span><span class="o">=</span>http://mirrors.163.com/centos/7/centosplus/<span class="nv">$basearch</span>/
+<span class="nv">gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">enabled</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">gpgkey</span><span class="o">=</span>http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-7
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="报错解决">报错解决</h3>
 <ul>
@@ -565,41 +702,81 @@ pasv_address＝61.52.112.30</p>
 <h3 id="ftp命令">FTP命令</h3>
 <ul>
 <li>命令详解
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ftp&gt; ascii  <span style="color:#75715e"># 设定以ASCII方式传送文件(缺省值)</span>
-ftp&gt; bell   <span style="color:#75715e"># 每完成一次文件传送,报警提示.</span>
-ftp&gt; binary <span style="color:#75715e"># 设定以二进制方式传送文件.</span>
-ftp&gt; bye    <span style="color:#75715e"># 终止主机FTP进程,并退出FTP管理方式.</span>
-ftp&gt; <span style="color:#66d9ef">case</span> <span style="color:#75715e"># 当为ON时,用MGET命令拷贝的文件名到本地机器中,全部转换为小写字母.</span>
-ftp&gt; cd     <span style="color:#75715e"># 同UNIX的CD命令.</span>
-ftp&gt; cdup   <span style="color:#75715e"># 返回上一级目录.</span>
-ftp&gt; chmod  <span style="color:#75715e"># 改变远端主机的文件权限.</span>
-ftp&gt; close  <span style="color:#75715e"># 终止远端的FTP进程,返回到FTP命令状态, 所有的宏定义都被删除.</span>
-ftp&gt; delete <span style="color:#75715e"># 删除远端主机中的文件.</span>
-ftp&gt; dir <span style="color:#f92672">[</span>remote-directory<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>local-file<span style="color:#f92672">]</span> <span style="color:#75715e"># 列出当前远端主机目录中的文件.如果有本地文件,就将结果写至本地文件.</span>
-ftp&gt; get <span style="color:#f92672">[</span>remote-file<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>local-file<span style="color:#f92672">]</span> <span style="color:#75715e"># 从远端主机中传送至本地主机中.</span>
-ftp&gt; help <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span> <span style="color:#75715e"># 输出命令的解释.</span>
-ftp&gt; lcd <span style="color:#75715e"># 改变当前本地主机的工作目录,如果缺省,就转到当前用户的HOME目录.</span>
-ftp&gt; ls <span style="color:#f92672">[</span>remote-directory<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>local-file<span style="color:#f92672">]</span> <span style="color:#75715e"># 同DIR.</span>
-ftp&gt; macdef                 <span style="color:#75715e"># 定义宏命令.</span>
-ftp&gt; mdelete <span style="color:#f92672">[</span>remote-files<span style="color:#f92672">]</span> <span style="color:#75715e"># 删除一批文件.</span>
-ftp&gt; mget <span style="color:#f92672">[</span>remote-files<span style="color:#f92672">]</span>    <span style="color:#75715e"># 从远端主机接收一批文件至本地主机.</span>
-ftp&gt; mkdir directory-name   <span style="color:#75715e"># 在远端主机中建立目录.</span>
-ftp&gt; mput local-files <span style="color:#75715e"># 将本地主机中一批文件传送至远端主机.</span>
-ftp&gt; open host <span style="color:#f92672">[</span>port<span style="color:#f92672">]</span> <span style="color:#75715e"># 重新建立一个新的连接.</span>
-ftp&gt; prompt           <span style="color:#75715e"># 交互提示模式.</span>
-ftp&gt; put local-file <span style="color:#f92672">[</span>remote-file<span style="color:#f92672">]</span> <span style="color:#75715e"># 将本地一个文件传送至远端主机中.</span>
-ftp&gt; pwd  <span style="color:#75715e"># 列出当前远端主机目录.</span>
-ftp&gt; quit <span style="color:#75715e"># 同BYE.</span>
-ftp&gt; recv remote-file <span style="color:#f92672">[</span>local-file<span style="color:#f92672">]</span> <span style="color:#75715e"># 同GET.</span>
-ftp&gt; rename <span style="color:#f92672">[</span>from<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>to<span style="color:#f92672">]</span>     <span style="color:#75715e"># 改变远端主机中的文件名.</span>
-ftp&gt; rmdir directory-name   <span style="color:#75715e"># 删除远端主机中的目录.</span>
-ftp&gt; send local-file <span style="color:#f92672">[</span>remote-file<span style="color:#f92672">]</span> <span style="color:#75715e"># 同PUT.</span>
-ftp&gt; status   <span style="color:#75715e"># 显示当前FTP的状态.</span>
-ftp&gt; system   <span style="color:#75715e"># 显示远端主机系统类型.</span>
-ftp&gt; user user-name <span style="color:#f92672">[</span>password<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>account<span style="color:#f92672">]</span> <span style="color:#75715e"># 重新以别的用户名登录远端主机.</span>
-ftp&gt; ? <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span> <span style="color:#75715e"># 同HELP. [command]指定需要帮助的命令名称。如果没有指定 command，ftp 将显示全部命令的列表。</span>
-ftp&gt; ! <span style="color:#75715e"># 从 ftp 子系统退出到外壳。</span>
-</code></pre></div></li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">ftp&gt; ascii  <span class="c1"># 设定以ASCII方式传送文件(缺省值)</span>
+ftp&gt; bell   <span class="c1"># 每完成一次文件传送,报警提示.</span>
+ftp&gt; binary <span class="c1"># 设定以二进制方式传送文件.</span>
+ftp&gt; bye    <span class="c1"># 终止主机FTP进程,并退出FTP管理方式.</span>
+ftp&gt; <span class="k">case</span> <span class="c1"># 当为ON时,用MGET命令拷贝的文件名到本地机器中,全部转换为小写字母.</span>
+ftp&gt; <span class="nb">cd</span>     <span class="c1"># 同UNIX的CD命令.</span>
+ftp&gt; cdup   <span class="c1"># 返回上一级目录.</span>
+ftp&gt; chmod  <span class="c1"># 改变远端主机的文件权限.</span>
+ftp&gt; close  <span class="c1"># 终止远端的FTP进程,返回到FTP命令状态, 所有的宏定义都被删除.</span>
+ftp&gt; delete <span class="c1"># 删除远端主机中的文件.</span>
+ftp&gt; dir <span class="o">[</span>remote-directory<span class="o">]</span> <span class="o">[</span>local-file<span class="o">]</span> <span class="c1"># 列出当前远端主机目录中的文件.如果有本地文件,就将结果写至本地文件.</span>
+ftp&gt; get <span class="o">[</span>remote-file<span class="o">]</span> <span class="o">[</span>local-file<span class="o">]</span> <span class="c1"># 从远端主机中传送至本地主机中.</span>
+ftp&gt; <span class="nb">help</span> <span class="o">[</span>command<span class="o">]</span> <span class="c1"># 输出命令的解释.</span>
+ftp&gt; lcd <span class="c1"># 改变当前本地主机的工作目录,如果缺省,就转到当前用户的HOME目录.</span>
+ftp&gt; ls <span class="o">[</span>remote-directory<span class="o">]</span> <span class="o">[</span>local-file<span class="o">]</span> <span class="c1"># 同DIR.</span>
+ftp&gt; macdef                 <span class="c1"># 定义宏命令.</span>
+ftp&gt; mdelete <span class="o">[</span>remote-files<span class="o">]</span> <span class="c1"># 删除一批文件.</span>
+ftp&gt; mget <span class="o">[</span>remote-files<span class="o">]</span>    <span class="c1"># 从远端主机接收一批文件至本地主机.</span>
+ftp&gt; mkdir directory-name   <span class="c1"># 在远端主机中建立目录.</span>
+ftp&gt; mput local-files <span class="c1"># 将本地主机中一批文件传送至远端主机.</span>
+ftp&gt; open host <span class="o">[</span>port<span class="o">]</span> <span class="c1"># 重新建立一个新的连接.</span>
+ftp&gt; prompt           <span class="c1"># 交互提示模式.</span>
+ftp&gt; put local-file <span class="o">[</span>remote-file<span class="o">]</span> <span class="c1"># 将本地一个文件传送至远端主机中.</span>
+ftp&gt; <span class="nb">pwd</span>  <span class="c1"># 列出当前远端主机目录.</span>
+ftp&gt; quit <span class="c1"># 同BYE.</span>
+ftp&gt; recv remote-file <span class="o">[</span>local-file<span class="o">]</span> <span class="c1"># 同GET.</span>
+ftp&gt; rename <span class="o">[</span>from<span class="o">]</span> <span class="o">[</span>to<span class="o">]</span>     <span class="c1"># 改变远端主机中的文件名.</span>
+ftp&gt; rmdir directory-name   <span class="c1"># 删除远端主机中的目录.</span>
+ftp&gt; send local-file <span class="o">[</span>remote-file<span class="o">]</span> <span class="c1"># 同PUT.</span>
+ftp&gt; status   <span class="c1"># 显示当前FTP的状态.</span>
+ftp&gt; system   <span class="c1"># 显示远端主机系统类型.</span>
+ftp&gt; user user-name <span class="o">[</span>password<span class="o">]</span> <span class="o">[</span>account<span class="o">]</span> <span class="c1"># 重新以别的用户名登录远端主机.</span>
+ftp&gt; ? <span class="o">[</span>command<span class="o">]</span> <span class="c1"># 同HELP. [command]指定需要帮助的命令名称。如果没有指定 command，ftp 将显示全部命令的列表。</span>
+ftp&gt; ! <span class="c1"># 从 ftp 子系统退出到外壳。</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 <h3 id="参考连接">参考连接</h3>
 <p><a href="https://segmentfault.com/a/1190000008161400">FTP安装配置</a>
@@ -635,8 +812,8 @@ ftp&gt; ! <span style="color:#75715e"># 从 ftp 子系统退出到外壳。</spa
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/%E8%BF%90%E7%BB%B4%E5%B7%A5%E5%85%B7/">运维工具</a>
-          <a href="http://blog.gourds.site/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">网络协议</a>
+          <a href="https://blog.gourds.site/tags/%E8%BF%90%E7%BB%B4%E5%B7%A5%E5%85%B7/">运维工具</a>
+          <a href="https://blog.gourds.site/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">网络协议</a>
           
         </div>
 
@@ -674,6 +851,8 @@ ftp&gt; ! <span style="color:#75715e"># 从 ftp 子系统退出到外壳。</spa
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -747,7 +926,7 @@ ftp&gt; ! <span style="color:#75715e"># 从 ftp 子系统退出到外壳。</spa
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -816,7 +995,7 @@ ftp&gt; ! <span style="color:#75715e"># 从 ftp 子系统退出到外壳。</spa
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 

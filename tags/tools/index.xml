@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Gourds</title>
-    <link>http://blog.gourds.site/tags/tools/</link>
+    <link>https://blog.gourds.site/tags/tools/</link>
     <description>Recent content in Tools on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Aug 2018 21:12:00 +0000</lastBuildDate><atom:link href="http://blog.gourds.site/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Aug 2018 21:12:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS7安装配置supervisor</title>
-      <link>http://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
+      <link>https://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
       <pubDate>Thu, 30 Aug 2018 21:12:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
+      <guid>https://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
       <description>&lt;p&gt;之前一直用AWS的服务，使用的也是AWS官方提供的系统镜像，感觉挺好使的，所以centos7的版本用的不多。最近刚好需要使用腾讯云，记录一下supervisor的安装配置，不管简单与否，好久没写博客了还是记录一下吧。
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-27.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rsync服务安装配置记录</title>
-      <link>http://blog.gourds.site/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 24 Jul 2017 22:00:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/rsync%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;关于RSYNC，个人理解传送大量资源文件或较多小文件时适合使用传输，具有数据验证、断点续传、增量传输、差异传输等特性。优于scp及ftp等工具。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;rsync是unix/linux下同步文件的一个高效算法，它能同步更新两处计算机的文件与目录，并适当利用查找文件中的不同块以减少数据传输。rsync中一项与其他大部分类似程序或协定中所未见的重要特性是镜像是只对有变更的部分进行传送。rsync可拷贝／显示目录属性，以及拷贝文件，并可选择性的压缩以及递归拷贝。rsync利用由Andrew Tridgell发明的算法&amp;hellip;&lt;/p&gt;
@@ -32,19 +32,19 @@
     
     <item>
       <title>弱网终端替代工具Mosh</title>
-      <link>http://blog.gourds.site/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/</link>
+      <link>https://blog.gourds.site/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/</link>
       <pubDate>Mon, 17 Jul 2017 23:00:45 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;应用背景：&lt;/strong&gt; 当有海外服务器维护需求的时候，常常会遇到使用ssh终端延时高并经常性假死的情况，非常影响维护效率。然后一个能缓解延时假死的小工具就是十分有用的，Mosh正是这样一个工具。Mosh是一个用于从客户端跨互联网连接远程服务器的命令行工具，程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下，基于UDP方式进行数据传输。&lt;/p&gt;</description>
+      <guid>https://blog.gourds.site/post/%E5%BC%B1%E7%BD%91%E7%BB%88%E7%AB%AF%E6%9B%BF%E4%BB%A3%E5%B7%A5%E5%85%B7mosh/</guid>
+      <description>&lt;p&gt;**应用背景：**当有海外服务器维护需求的时候，常常会遇到使用ssh终端延时高并经常性假死的情况，非常影响维护效率。然后一个能缓解延时假死的小工具就是十分有用的，Mosh正是这样一个工具。Mosh是一个用于从客户端跨互联网连接远程服务器的命令行工具，程序最初由Keith Winstein 编写，用于类Unix的操作系统中，发布于GNU GPL V3协议下，基于UDP方式进行数据传输。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>GTX直压上云技术实践</title>
-      <link>http://blog.gourds.site/post/gtx%E7%9B%B4%E5%8E%8B%E4%B8%8A%E4%BA%91%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</link>
+      <link>https://blog.gourds.site/post/gtx%E7%9B%B4%E5%8E%8B%E4%B8%8A%E4%BA%91%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/gtx%E7%9B%B4%E5%8E%8B%E4%B8%8A%E4%BA%91%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>https://blog.gourds.site/post/gtx%E7%9B%B4%E5%8E%8B%E4%B8%8A%E4%BA%91%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;p&gt;**update:**测试时出现二进制文件大小恰好为256M整数倍时解压不退出的bug,提交至维护人员后已经解决，不得不说反馈速度真的是快，从我提出到解决总共用了不到1天时间。给点个赞，棒棒哒
 GTX Compressor(直压上云技术)调研,由于现业务存在大规模业务数据上传云存储，云厂商提供接口具有一些局限性，现在尝试gtz这个工具。该工具目前支持阿里云及AWS非常符合业务场景，具有高压缩比、高性能、高速直压云等特点，且有数据校验机制，而且开包即用，&lt;strong&gt;不依赖当前系统其他任何库&lt;/strong&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -55,29 +55,29 @@ GTX Compressor(直压上云技术)调研,由于现业务存在大规模业务数
     
     <item>
       <title>常见压缩格式对比</title>
-      <link>http://blog.gourds.site/post/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/</link>
+      <link>https://blog.gourds.site/post/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Tue, 30 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/</guid>
+      <guid>https://blog.gourds.site/post/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/</guid>
       <description>&lt;p&gt;&lt;strong&gt;数据压缩&lt;/strong&gt;可以分为无损压缩和有损压缩，有损，指的是压缩之后就无法完整还原原始信息，但是压缩率可以很高，主要应用于视频、话音等数据的压缩，因为损失了一点信息，人是很难察觉的，或者说，也没必要那么清晰照样可以看可以听；无损压缩则用于文件等等必须完整还原信息的场合。目前只归纳zip、rar、tar.gz、tar.bz常见的这几种，其他的以后接触了再进行补充。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>计算机度量单位总结</title>
-      <link>http://blog.gourds.site/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%A6%E9%87%8F%E5%8D%95%E4%BD%8D%E6%80%BB%E7%BB%93/</link>
+      <link>https://blog.gourds.site/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%A6%E9%87%8F%E5%8D%95%E4%BD%8D%E6%80%BB%E7%BB%93/</link>
       <pubDate>Mon, 24 Apr 2017 21:23:45 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%A6%E9%87%8F%E5%8D%95%E4%BD%8D%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://blog.gourds.site/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%A6%E9%87%8F%E5%8D%95%E4%BD%8D%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;第一次可以分不清大B小b，但二次就不应该。。。
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>CentOS搭建rsync服务</title>
-      <link>http://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/</link>
+      <link>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/</link>
       <pubDate>Mon, 11 Apr 2016 13:08:07 +0000</pubDate>
       
-      <guid>http://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/</guid>
+      <guid>https://blog.gourds.site/post/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/</guid>
       <description>&lt;p&gt;更新：本篇选择独立启动模式&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;选择rsync服务器启动方式&lt;/p&gt;

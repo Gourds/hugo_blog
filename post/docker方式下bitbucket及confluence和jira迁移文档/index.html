@@ -37,7 +37,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" />
+<link rel="canonical" href="https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" />
 
 
 
@@ -55,7 +55,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.b3a8813c06e6d785beba22bf8264e174fa2cb3a396b22f9ba24e2c00c18aaf7f.css" integrity="sha256-s6iBPAbm14W&#43;uiK/gmThdPoss6OWsi&#43;bok4sAMGKr38=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -73,7 +73,7 @@
 这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
 PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用【chevreto】，有时间了整一整。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-11-29T13:57:00+00:00" />
 <meta property="article:modified_time" content="2018-11-29T13:57:00+00:00" />
 
@@ -89,7 +89,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
 这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
 PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用【chevreto】，有时间了整一整。"><meta itemprop="datePublished" content="2018-11-29T13:57:00+00:00" />
 <meta itemprop="dateModified" content="2018-11-29T13:57:00+00:00" />
-<meta itemprop="wordCount" content="2165">
+<meta itemprop="wordCount" content="2232">
 <meta itemprop="keywords" content="Docker,Bitbucket,Confluence,Jira," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker方式下Bitbucket及confluence和jira的迁移"/>
 <meta name="twitter:description" content="之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
@@ -133,28 +133,28 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
         
       </li><li class="mobile-menu-item">
@@ -265,7 +265,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/">首页</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
           
 
         
@@ -276,7 +276,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/post/">归档</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
           
 
         
@@ -287,7 +287,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/tags/">标签</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
           
 
         
@@ -298,7 +298,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
         
           
           
-            <a class="menu-item-link" href="http://blog.gourds.site/categories/">分类</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">分类</a>
           
 
         
@@ -352,7 +352,8 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
           2018-11-29
         </time>
         
-        
+        <span class="more-meta"> 2232 words </span>
+          <span class="more-meta"> 5 min read </span>
 
         
         
@@ -400,18 +401,35 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
 <li>启动容器
 先说一下为什么用Mysql，因为刚开始只是有一个Jira的需求，然后选用DB的时候感觉Mysql相对Postsql更易于操作维护，就选了这个，这导致了后面Confluence的DB问题，不过都顺利解决了。Docker启动新容器的命令如下：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --name mysql
-           -p 3306:3306 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           -v /data/mysql/data:/var/lib/mysql <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           -e MYSQL_ROOT_PASSWORD<span style="color:#f92672">=</span>root <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           -idt docker.io/mysql:5.7.21 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           --character-set-server<span style="color:#f92672">=</span>utf8 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           --collation-server<span style="color:#f92672">=</span>utf8_bin <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           --character-set-server<span style="color:#f92672">=</span>utf8 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           --collation-server<span style="color:#f92672">=</span>utf8_bin <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           --max_allowed_packet<span style="color:#f92672">=</span>512M   <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>           --innodb_log_file_size<span style="color:#f92672">=</span>2GB
-</code></pre></div><p>注意Mysql启动时候的参数，不注意这个后面会有好多个坑。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run --name mysql
+           -p 3306:3306 <span class="se">\
+</span><span class="se"></span>           -v /data/mysql/data:/var/lib/mysql <span class="se">\
+</span><span class="se"></span>           -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root <span class="se">\
+</span><span class="se"></span>           -idt docker.io/mysql:5.7.21 <span class="se">\
+</span><span class="se"></span>           --character-set-server<span class="o">=</span>utf8 <span class="se">\
+</span><span class="se"></span>           --collation-server<span class="o">=</span>utf8_bin <span class="se">\
+</span><span class="se"></span>           --character-set-server<span class="o">=</span>utf8 <span class="se">\
+</span><span class="se"></span>           --collation-server<span class="o">=</span>utf8_bin <span class="se">\
+</span><span class="se"></span>           --max_allowed_packet<span class="o">=</span>512M   <span class="se">\
+</span><span class="se"></span>           --innodb_log_file_size<span class="o">=</span>2GB
+</code></pre></td></tr></table>
+</div>
+</div><p>注意Mysql启动时候的参数，不注意这个后面会有好多个坑。
 使用Mysql的要求 =&gt;<a href="https://confluence.atlassian.com/doc/database-setup-for-mysql-128747.html">【Confluence的文档】</a>
 修改建议 =&gt;<a href="https://confluence.atlassian.com/confkb/mysqlsyntaxerrorexception-row-size-too-large-658735905.html">【Confluence的建议】</a>
 关于参数的解释 =&gt; <a href="https://blog.csdn.net/kai404/article/details/80242262">【CSDN上的一篇博客】</a></p>
@@ -419,80 +437,171 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
 <li>Mysql容器的配置
 登入Mysql进行DB和用户的创建</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; CREATE DATABASE jira_db CHARACTER SET utf8 COLLATE utf8_bin;
-mysql&gt; grant ALL PRIVILEGES on jira_db.* to jira_user@<span style="color:#e6db74">&#34;%&#34;</span> Identified by <span style="color:#e6db74">&#34;jira_pass&#34;</span>;
-mysql&gt; CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin;
-mysql&gt; grant ALL PRIVILEGES on confluence.* to confluence_user@<span style="color:#e6db74">&#34;%&#34;</span> Identified by <span style="color:#e6db74">&#34;confluence_pass&#34;</span>;
-<span style="color:#75715e">#mysql&gt; grant SELECT on *.* to backup_user@&#34;%&#34; Identified by &#34;backup_user&#34;;</span>
-<span style="color:#75715e">#mysql&gt; grant ALL PRIVILEGES on *.* to sa_user@&#34;%&#34; Identified by &#34;sa_user&#34;;</span>
-mysql&gt; flush privileges;
-<span style="color:#75715e">#set global max_allowed_packet=1073741824;  当导入时有可能是这个值过小，可以临时进行调整。</span>
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mysql&gt; CREATE DATABASE jira_db CHARACTER SET utf8 COLLATE utf8_bin<span class="p">;</span>
+mysql&gt; grant ALL PRIVILEGES on jira_db.* to jira_user@<span class="s2">&#34;%&#34;</span> Identified by <span class="s2">&#34;jira_pass&#34;</span><span class="p">;</span>
+mysql&gt; CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin<span class="p">;</span>
+mysql&gt; grant ALL PRIVILEGES on confluence.* to confluence_user@<span class="s2">&#34;%&#34;</span> Identified by <span class="s2">&#34;confluence_pass&#34;</span><span class="p">;</span>
+<span class="c1">#mysql&gt; grant SELECT on *.* to backup_user@&#34;%&#34; Identified by &#34;backup_user&#34;;</span>
+<span class="c1">#mysql&gt; grant ALL PRIVILEGES on *.* to sa_user@&#34;%&#34; Identified by &#34;sa_user&#34;;</span>
+mysql&gt; flush privileges<span class="p">;</span>
+<span class="c1">#set global max_allowed_packet=1073741824;  当导入时有可能是这个值过小，可以临时进行调整。</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>Mysql容器的检查
 登入Mysql对配置进行检查</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker exec -it mysql /bin/bash <span style="color:#75715e">#进入mysql容器</span>
-mysql&gt; show global variables; 展示所有配置
-mysql&gt; show engine innodb status<span style="color:#ae81ff">\G</span>;  查看innodb装填
-mysql&gt; show variables like <span style="color:#e6db74">&#39;character%&#39;</span>; 查看字符集设置
-mysql&gt; show variables like <span style="color:#e6db74">&#39;innodb_log_file%&#39;</span>;查看innodb_log_file设置
-</code></pre></div><h3 id="新建jira容器并还原数据">新建Jira容器并还原数据</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker <span class="nb">exec</span> -it mysql /bin/bash <span class="c1">#进入mysql容器</span>
+mysql&gt; show global variables<span class="p">;</span> 展示所有配置
+mysql&gt; show engine innodb status<span class="se">\G</span><span class="p">;</span>  查看innodb装填
+mysql&gt; show variables like <span class="s1">&#39;character%&#39;</span><span class="p">;</span> 查看字符集设置
+mysql&gt; show variables like <span class="s1">&#39;innodb_log_file%&#39;</span><span class="p">;</span>查看innodb_log_file设置
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="新建jira容器并还原数据">新建Jira容器并还原数据</h3>
 <ul>
 <li>启动Jira容器
 先启动容器，不做其他操作</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -p 18080:8080 -dit --name jira docker.io/cptactionhank/atlassian-jira:7.8.2
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -p 18080:8080 -dit --name jira docker.io/cptactionhank/atlassian-jira:7.8.2
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>原数据导出
 注意权限，也可以在导入操作进行权限的修改。另外官方备份的数据并不包括附件及插件等，具体可参照<a href="https://confluence.atlassian.com/adminjiraserver078/backing-up-data-947189268.html">【官方说明】</a></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#导出Jira应用数据</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#导出Jira应用数据</span>
 docker cp jira_v1:/var/atlassian/jira/export/2018-Nov-18--1058.zip ./
 chown -R daemon.daemon 2018-Nov-18--1058.zip
-<span style="color:#75715e">#导出Jira附件</span>
-docker exec -it jira_v1 /bin/bash
-&gt; cd /var/atlassian/jira/
+<span class="c1">#导出Jira附件</span>
+docker <span class="nb">exec</span> -it jira_v1 /bin/bash
+&gt; <span class="nb">cd</span> /var/atlassian/jira/
 &gt; tar czvf jira_data_20181118.tar.gz /data/
 docker cp /var/atlassian/jira/jira_data_20181118.tar.gz ./
-<span style="color:#75715e">#导出插件</span>
+<span class="c1">#导出插件</span>
 docker cp jira_v1:/var/atlassian/jira/jira_plugins_20181118.tar.gz ./
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>将备份数据导入指定目录</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#导入Jira应用数据</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#导入Jira应用数据</span>
 docker cp 2018-Nov-18--1058.zip jira:/var/atlassian/jira/import/
 chown -R daemon.daemon 2018-Nov-18--1058.zip
-<span style="color:#75715e">#导入附件</span>
+<span class="c1">#导入附件</span>
 scp old-host:/tmp/jira_data_20181118.tar.gz ./jira_data_20181118.tar.gz
 chown daemon.daemon jira_data_20181118.tar.gz
 docker cp jira_data_20181118.tar.gz  jira:/var/atlassian/jira/
-<span style="color:#75715e">#导入插件</span>
+<span class="c1">#导入插件</span>
 docker cp jira_v1:/var/atlassian/jira/jira_plugins_20181118.tar.gz ./
 scp old-host:/tmp/jira_plugins_20181118.tar.gz ./
 docker cp jira_plugins_20181118.tar.gz jira:var/atlassian/jira/
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>Jira初始化
 在完成数据导入后，就可以登录<code>http://your_host:18080</code>，按照提示进行授权码的购买或输入。然后在最后的步骤会让选择是作为新的服务器还是从备份恢复，选择从备份恢复即可。提示还是很到位的，注意权限，权限不对的话数据导入会报错，在Jira的log里会有体现。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker logs -f jira <span style="color:#75715e">#追踪jira的log输出</span>
-</code></pre></div><p>没有问题的话，Jira就恢复完成了，另外还有下一步的参数优化，因为官方设置的JVM默认值偏低，所以最好提前调整了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker logs -f jira <span class="c1">#追踪jira的log输出</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>没有问题的话，Jira就恢复完成了，另外还有下一步的参数优化，因为官方设置的JVM默认值偏低，所以最好提前调整了。</p>
 <ul>
 <li>Jira的参数优化
 其实容器启动的时候也可以指定，不过这个后续可能还会变动，直接修改便于维护就这样了，这个根据实际使用情况修改吧</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker exec -it -u root jira /bin/bash
-<span style="color:#75715e">#进入容器后执行以下命令</span>
-sed -i <span style="color:#e6db74">&#39;s@JVM_MINIMUM_MEMORY=.*@JVM_MINIMUM_MEMORY=&#34;1024m&#34;@&#39;</span> /opt/atlassian/jira/bin/setenv.sh
-sed -i <span style="color:#e6db74">&#39;s@JVM_MAXIMUM_MEMORY=.*@JVM_MAXIMUM_MEMORY=&#34;2048m&#34;@&#39;</span> /opt/atlassian/jira/bin/setenv.sh
-<span style="color:#75715e">#修改完之后，退出容器然后重启Jira容器即可</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker <span class="nb">exec</span> -it -u root jira /bin/bash
+<span class="c1">#进入容器后执行以下命令</span>
+sed -i <span class="s1">&#39;s@JVM_MINIMUM_MEMORY=.*@JVM_MINIMUM_MEMORY=&#34;1024m&#34;@&#39;</span> /opt/atlassian/jira/bin/setenv.sh
+sed -i <span class="s1">&#39;s@JVM_MAXIMUM_MEMORY=.*@JVM_MAXIMUM_MEMORY=&#34;2048m&#34;@&#39;</span> /opt/atlassian/jira/bin/setenv.sh
+<span class="c1">#修改完之后，退出容器然后重启Jira容器即可</span>
 docker restart jira
-</code></pre></div><p>OK，完成了Jira的迁移还原操作</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>OK，完成了Jira的迁移还原操作</p>
 <h3 id="新建confluence容器并还原数据">新建Confluence容器并还原数据</h3>
 <ul>
 <li>启动Confluence容器</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -v /data/confluence:/var/atlassian/application-data/confluence --name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;confluence&#34;</span> -d -p 8090:8090 -p 8091:8091 confluence-oracle-jdk:v6.8.1
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -v /data/confluence:/var/atlassian/application-data/confluence --name<span class="o">=</span><span class="s2">&#34;confluence&#34;</span> -d -p 8090:8090 -p 8091:8091 confluence-oracle-jdk:v6.8.1
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>
 <p>Confluence原数据导出
 因为这个数据目录是直接挂在出来的，备份路径在<code>/data/confluence/backups/backup-2018_11_18.zip</code>（根据挂在路径的不同略有差异）</p>
@@ -501,66 +610,144 @@ docker restart jira
 <p>Confluence数据导入</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">scp old-host:/data/confluence/backups/backup-2018_11_18.zip ./
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">scp old-host:/data/confluence/backups/backup-2018_11_18.zip ./
 mv backup-2018_11_18.zip /data/confluence/restore/
 chown daemon.daemon /data/confluence/restore/backup-2018_11_18.zip
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>Confluence初始化
 访问<code>http://your_host:8090</code>,根据提示进行设置，需要注意连接DB的设置需要指定连接Mysql的参数,选择JDBC的方式，如下</li>
 </ul>
-<pre><code>jdbc:mysql://your_host:3306/confluence?sessionVariables=tx_isolation='READ-COMMITTED'&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8
-</code></pre><p>然后就可以正常使用了，跟Jira一样，JVM的参数也可以调整，不然的话，一段时间后可能内存就不够用了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">jdbc:mysql://your_host:3306/confluence?sessionVariables=tx_isolation=&#39;READ-COMMITTED&#39;&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8
+</code></pre></td></tr></table>
+</div>
+</div><p>然后就可以正常使用了，跟Jira一样，JVM的参数也可以调整，不然的话，一段时间后可能内存就不够用了</p>
 <ul>
 <li>Confluence启动参数修改</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker exec -it -u root confluence /bin/bash
-<span style="color:#75715e">#进入Confluence容器后，执行以下命令</span>
-sed -i <span style="color:#e6db74">&#39;s@CATALINA_OPTS=&#34;-Xms.*@CATALINA_OPTS=&#34;-Xms4096m -Xms4096m ${JVM_SUPPORT_RECOMMENDED_ARGS} -Dconfluence.home=${CONFLUENCE_HOME} -XX:+UseG1GC ${CATALINA_OPTS}&#34;@&#39;</span>  /opt/atlassian/confluence/bin/setenv.sh
-<span style="color:#75715e">#修改完参数后重启即可</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker <span class="nb">exec</span> -it -u root confluence /bin/bash
+<span class="c1">#进入Confluence容器后，执行以下命令</span>
+sed -i <span class="s1">&#39;s@CATALINA_OPTS=&#34;-Xms.*@CATALINA_OPTS=&#34;-Xms4096m -Xms4096m ${JVM_SUPPORT_RECOMMENDED_ARGS} -Dconfluence.home=${CONFLUENCE_HOME} -XX:+UseG1GC ${CATALINA_OPTS}&#34;@&#39;</span>  /opt/atlassian/confluence/bin/setenv.sh
+<span class="c1">#修改完参数后重启即可</span>
 docker restart  confluence
-</code></pre></div><h3 id="新建bitbucket容器并还原数据">新建Bitbucket容器并还原数据</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="新建bitbucket容器并还原数据">新建Bitbucket容器并还原数据</h3>
 <p>Bitbucket的迁移采用了相对暴力的方式，可以参照<a href="https://confluence.atlassian.com/bitbucketserver/migrating-bitbucket-server-to-another-server-776640406.html">【官方迁移向导】</a></p>
 <ul>
 <li>Bitbucket使用的是Docker-compose的方式进行部署的，如下</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">postgresql</span>:
-  <span style="color:#f92672">image</span>: <span style="color:#ae81ff">sameersbn/postgresql:9.4-3</span>
-  <span style="color:#f92672">environment</span>:
-    - <span style="color:#ae81ff">DB_USER=bitbucket</span>
-    - <span style="color:#ae81ff">DB_PASS=bitbucket_pass</span>
-    - <span style="color:#ae81ff">DB_NAME=bitbucket</span>
-  <span style="color:#f92672">volumes</span>:
-    - <span style="color:#ae81ff">/srv/docker/bitbucket/postgresql:/var/lib/postgresql</span>
-<span style="color:#f92672">bitbucket</span>:
-  <span style="color:#f92672">image</span>: <span style="color:#ae81ff">atlassian/bitbucket-server:5.0</span>
-  <span style="color:#f92672">links</span>:
-    - <span style="color:#ae81ff">postgresql:postgresql</span>
-  <span style="color:#f92672">ports</span>:
-    - <span style="color:#e6db74">&#34;80:7990&#34;</span>
-    - <span style="color:#e6db74">&#34;7999:7999&#34;</span>
-  <span style="color:#f92672">environment</span>:
-    - <span style="color:#e6db74">&#39;BITBUCKET_PROXY_NAME=&#39;</span>
-    - <span style="color:#e6db74">&#39;BITBUCKET_PROXY_PORT=&#39;</span>
-    - <span style="color:#e6db74">&#39;BITBUCKET_PROXY_SCHEME=&#39;</span>
-    - <span style="color:#e6db74">&#39;BITBUCKET_DELAYED_START=&#39;</span>
-  <span style="color:#f92672">volumes</span>:
-    - <span style="color:#ae81ff">/srv/docker/bitbucket/app-data:/var/atlassian/application-data/bitbucket</span>
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">postgresql</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">sameersbn/postgresql:9.4-3</span><span class="w">
+</span><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="l">DB_USER=bitbucket</span><span class="w">
+</span><span class="w">    </span>- <span class="l">DB_PASS=bitbucket_pass</span><span class="w">
+</span><span class="w">    </span>- <span class="l">DB_NAME=bitbucket</span><span class="w">
+</span><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="l">/srv/docker/bitbucket/postgresql:/var/lib/postgresql</span><span class="w">
+</span><span class="w"></span><span class="nt">bitbucket</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">atlassian/bitbucket-server:5.0</span><span class="w">
+</span><span class="w">  </span><span class="nt">links</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="l">postgresql:postgresql</span><span class="w">
+</span><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="s2">&#34;80:7990&#34;</span><span class="w">
+</span><span class="w">    </span>- <span class="s2">&#34;7999:7999&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="s1">&#39;BITBUCKET_PROXY_NAME=&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="s1">&#39;BITBUCKET_PROXY_PORT=&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="s1">&#39;BITBUCKET_PROXY_SCHEME=&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="s1">&#39;BITBUCKET_DELAYED_START=&#39;</span><span class="w">
+</span><span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="l">/srv/docker/bitbucket/app-data:/var/atlassian/application-data/bitbucket</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>导出数据
 先停止原服务，防止迁移过程中有数据的读写变化</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#从上一步可以看出是直接原来的数据目录直接全部拿过来了</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#从上一步可以看出是直接原来的数据目录直接全部拿过来了</span>
 tar czvf bitbucket_20181118.tar.gz  /srv/docker/bitbucket/
 bitbucket_20181118.tar.gz
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>将备份数据放入挂载目录</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar xvf bitbucket_20181118.tar.gz
-</code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">tar xvf bitbucket_20181118.tar.gz
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>启动Bitbucket</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose up -d
-</code></pre></div><h3 id="补充点">补充点</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker-compose up -d
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="补充点">补充点</h3>
 <p>所有迁移完成后，由于机器IP域名等可能会变化，所以应用间的联通性需要重新建立，这就牵涉使用问题了，不赘述了。以后有其他操作及坑再同步。</p>
     </div>
 
@@ -591,10 +778,10 @@ bitbucket_20181118.tar.gz
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="http://blog.gourds.site/tags/docker/">Docker</a>
-          <a href="http://blog.gourds.site/tags/bitbucket/">Bitbucket</a>
-          <a href="http://blog.gourds.site/tags/confluence/">Confluence</a>
-          <a href="http://blog.gourds.site/tags/jira/">Jira</a>
+          <a href="https://blog.gourds.site/tags/docker/">Docker</a>
+          <a href="https://blog.gourds.site/tags/bitbucket/">Bitbucket</a>
+          <a href="https://blog.gourds.site/tags/confluence/">Confluence</a>
+          <a href="https://blog.gourds.site/tags/jira/">Jira</a>
           
         </div>
 
@@ -632,6 +819,8 @@ bitbucket_20181118.tar.gz
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -705,7 +894,7 @@ bitbucket_20181118.tar.gz
     </a>
 
 
-<a href="http://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -774,7 +963,7 @@ bitbucket_20181118.tar.gz
 
 
 
-<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 
