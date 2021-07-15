@@ -6,17 +6,49 @@
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Sep 2019 20:38:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jul 2021 22:43:46 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>重读《三国演义》</title>
+      <link>https://blog.gourds.site/post/reading/%E9%87%8D%E8%AF%BB_%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/</link>
+      <pubDate>Wed, 14 Jul 2021 22:43:46 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/reading/%E9%87%8D%E8%AF%BB_%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/</guid>
+      
+        <description>&lt;p&gt;前些日子突然想看书，以前屯的书这时作用就显示出来了，书架上书很多，鬼使神差，拿了本三国演义。之前只看过老三国，就是鲍国安那部，遗憾四大名著没读过，刚好趁这个机会读一下，最近也快看完了，博客也打算恢复开始写了，简单记录下乱七八糟的想法。&lt;/p&gt;
+&lt;p&gt;我现在所在的公司是做游戏的，主要是三国题材。之前关于三国有不少疑问，在读的过程中也有点豁然开朗的感觉了。&lt;/p&gt;
+&lt;p&gt;纵观市面上三国题材的游戏，大多LOGO都是赵云，通过读的过程，确实是感觉三国里的人物，还是赵云形象好，没啥负面新闻，关羽傲，吕布骚（专干义父），张飞太糙，刘皇叔又太爱哭。&lt;/p&gt;
+&lt;p&gt;另外也有疑问&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;卧龙凤雏得一人可安天下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;感觉庞统被过誉了，可能是因为未建功而身先死。不过从读到的信息来看，死于落凤坡更多是因为心胸狭隘，他觉得孔明怕他建功，另一方面又没有对战局的清晰认识，所以送了人头。//好一匹白马，手动滑稽&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>《围城》</title>
+      <link>https://blog.gourds.site/post/reading/%E5%9B%B4%E5%9F%8E_%E6%9C%89%E6%84%9F/</link>
+      <pubDate>Mon, 12 Jul 2021 23:08:22 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/reading/%E5%9B%B4%E5%9F%8E_%E6%9C%89%E6%84%9F/</guid>
+      
+        <description>&lt;p&gt;文人确实是心思细腻，表达能力好，名著毕竟是名著，钱老对人物描绘把握的入木三分。
+方鸿渐，苏文执，唐小姐，还有孙柔嘉里面的人物都栩栩如生，就跟真的存在一样。自己并不想读过就忘，所以记点句子，顺便也练习下表达能力。&lt;/p&gt;
+&lt;p&gt;其实一直以来都并不是很会表达，少年时候的想法不知如何表达，生活中许多感悟也不知如何言语，像是一个会说话的哑巴，能言语却词不达意，希望慢慢我也可以把自己的思想分享出来。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>关于对Python面向对象的理解</title>
-      <link>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</link>
+      <link>https://blog.gourds.site/post/programming/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</link>
       <pubDate>Tue, 10 Sep 2019 20:38:24 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
+      <guid>https://blog.gourds.site/post/programming/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
       
         <description>&lt;p&gt;说起面向对象(Object Oriented Programming)首先想到的就是三个词：封装、继承和多态。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;封装：&lt;/strong&gt; 目的是为了简化编程和提升安全性(标识出允许外部使用的所有成员函数和数据项)。&lt;/p&gt;
@@ -77,10 +109,10 @@
     
     <item>
       <title>python中特殊方法和特殊变量总结</title>
-      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
+      <link>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 01 Sep 2019 10:59:29 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
       
         <description>&lt;p&gt;在研究一些python项目的源码时经常会看到一些特殊的方法和变量，比如两边双下划线&lt;code&gt;__init__&lt;/code&gt;定义的方法，还有一些类中会有以双下划线&lt;code&gt;__&lt;/code&gt;开头定义的变量，以及以单下划线&lt;code&gt;_&lt;/code&gt;开头的定义的变量。这里对目前经常遇到的做一个记录&lt;/p&gt;
 &lt;blockquote&gt;
@@ -294,10 +326,10 @@
     
     <item>
       <title>JenkinsActiveChoices插件使用</title>
-      <link>https://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
+      <link>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 30 Aug 2019 08:30:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
       
         <description>&lt;p&gt;之前使用过Jenkins的&lt;a href=&#34;https://wiki.jenkins.io/display/JENKINS/Active+Choices+Plugin&#34;&gt;Active Choices Plugin&lt;/a&gt;插件，概述下当时我想实现的效果&lt;/p&gt;
 &lt;ul&gt;
@@ -363,10 +395,10 @@ wiki2就写一个Groovy的写法不截图了&lt;/p&gt;
     
     <item>
       <title>Flask中Jinja2模板使用总结</title>
-      <link>https://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</link>
+      <link>https://blog.gourds.site/post/programming/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 28 Aug 2019 21:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://blog.gourds.site/post/programming/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
       
         <description>&lt;p&gt;之前&lt;a href=&#34;&#34;&gt;已经总结过Jinja2&lt;/a&gt;了,这里主要总结在Falsk中的一些东西。包括以下方面&lt;/p&gt;
 &lt;ul&gt;
@@ -654,10 +686,10 @@ wiki2就写一个Groovy的写法不截图了&lt;/p&gt;
     
     <item>
       <title>Jinja2语法</title>
-      <link>https://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/</link>
+      <link>https://blog.gourds.site/post/cicd/jinja2%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/jinja2%E8%AF%AD%E6%B3%95/</guid>
+      <guid>https://blog.gourds.site/post/cicd/jinja2%E8%AF%AD%E6%B3%95/</guid>
       
         <description>&lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
 &lt;p&gt;大概介绍一下，主要介绍模板（模板仅仅是文本文件。它可以生成任何基于文本的格式（HTML、XML、CSV、LaTex 等等）。它并没有特定的扩展名，&lt;code&gt;.html&lt;/code&gt;或&lt;code&gt;.xml&lt;/code&gt;都是可以的。）模板包含变量或表达式 ，这两者在模板求值的时候会被替换为值。模板中 还有标签，控制模板的逻辑。模板语法的大量灵感来自于 Django和Python。&lt;/p&gt;
@@ -1518,10 +1550,10 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
     
     <item>
       <title>关于Cookie和Session以及Token的说明</title>
-      <link>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
+      <link>https://blog.gourds.site/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
       <pubDate>Sun, 25 Aug 2019 12:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</guid>
+      <guid>https://blog.gourds.site/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</guid>
       
         <description>&lt;p&gt;现在做web的话就绕不开安全认证这一步，那就先介绍下目前常见的认证方式然后再说关于cookie、session、token的东西。常用的认证方式简单概述如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -1764,10 +1796,10 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
     
     <item>
       <title>Aws使用EMR对Dynamodb进行备份还原</title>
-      <link>https://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
+      <link>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
       <pubDate>Wed, 21 Aug 2019 13:38:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
+      <guid>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
       
         <description>&lt;p&gt;最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由&lt;code&gt;AutoScaling&lt;/code&gt;修改成了&lt;code&gt;按需&lt;/code&gt;，当使用之前的HIVE脚本时出现了&lt;code&gt;Read throughput should not be less than 1&lt;/code&gt;的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持&lt;code&gt;On-Demand billing&lt;/code&gt;这个功能，接着又准备使用&lt;code&gt;awscli&lt;/code&gt;命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的&lt;code&gt;版本问题说明&lt;/code&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;使用hive进行table的备份和还原&#34;&gt;使用Hive进行Table的备份和还原&lt;/h3&gt;
@@ -2395,10 +2427,10 @@ Command exiting with ret &amp;#39;1&amp;#39;
     
     <item>
       <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
-      <link>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
+      <link>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
       <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
+      <guid>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
       
         <description>&lt;p&gt;之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
 &lt;strong&gt;迁移思路：&lt;/strong&gt;&lt;/p&gt;
@@ -2768,10 +2800,10 @@ bitbucket_20181118.tar.gz
     
     <item>
       <title>Docker方式安装Jumpserver</title>
-      <link>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
+      <link>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
       <pubDate>Tue, 27 Nov 2018 15:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
+      <guid>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
       
         <description>&lt;p&gt;之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jumpserver&#34;&gt;【github】&lt;/a&gt;上都有。&lt;/p&gt;
 &lt;h3 id=&#34;开箱即用&#34;&gt;开箱即用&lt;/h3&gt;
@@ -2983,10 +3015,10 @@ bitbucket_20181118.tar.gz
     
     <item>
       <title>博客迁移至阿里云</title>
-      <link>https://blog.gourds.site/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</link>
+      <link>https://blog.gourds.site/post/blog/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</link>
       <pubDate>Tue, 30 Oct 2018 18:23:45 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
+      <guid>https://blog.gourds.site/post/blog/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
       
         <description>&lt;p&gt;之前博客使用的是搬瓦工的机器，感觉访问速度受限，刚好阿里云有活动，就决定迁移到阿里。鉴于之前一直没有一个好用的评论系统，迁移到阿里后进行了备案，开始使用畅言评论系统。
 另外考虑到备份问题，也对部署方式进行了更新。&lt;/p&gt;
@@ -3119,10 +3151,10 @@ Nginx使用Docker的方式&lt;/p&gt;
     
     <item>
       <title>CentOS7安装配置supervisor</title>
-      <link>https://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
+      <link>https://blog.gourds.site/post/linux/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
       <pubDate>Thu, 30 Aug 2018 21:12:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
+      <guid>https://blog.gourds.site/post/linux/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
       
         <description>&lt;p&gt;之前一直用AWS的服务，使用的也是AWS官方提供的系统镜像，感觉挺好使的，所以centos7的版本用的不多。最近刚好需要使用腾讯云，记录一下supervisor的安装配置，不管简单与否，好久没写博客了还是记录一下吧。
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-27.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -3441,10 +3473,10 @@ systemctl is-enabled supervisord
     
     <item>
       <title>Elasticsearch使用curator管理index</title>
-      <link>https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
+      <link>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
       <pubDate>Wed, 01 Aug 2018 12:11:16 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
+      <guid>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
       
         <description>&lt;p&gt;有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具&lt;code&gt;curator&lt;/code&gt;，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句&lt;code&gt;curator&lt;/code&gt;的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。&lt;/p&gt;
 &lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
@@ -3694,10 +3726,10 @@ docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config cura
     
     <item>
       <title>Bitbucket实践</title>
-      <link>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</link>
+      <link>https://blog.gourds.site/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Sat, 09 Jun 2018 12:38:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>https://blog.gourds.site/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
       
         <description>&lt;p&gt;前言：之前使用了Atlassian公司的Confluence和Jira，现在新项目考虑使用Bitbucket做代码仓库，这里记录一下调研实践过程。由于之前的服务是使用docker进行部署的，所以Bitbucket也决定使用docker的方式进行部署。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -3777,10 +3809,10 @@ bitbucket:
     
     <item>
       <title>Etcd的v3版本常用操作及可视化</title>
-      <link>https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <link>https://blog.gourds.site/post/distribution/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Tue, 24 Apr 2018 17:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <guid>https://blog.gourds.site/post/distribution/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       
         <description>&lt;p&gt;简单记录一下&lt;code&gt;Etcd API v3&lt;/code&gt;版本的基本操作和可视化&lt;code&gt;WEB UI&lt;/code&gt;使用，关于V2的使用可以看我之前的一篇介绍&lt;a href=&#34;http://arvon.top/tags/%E8%BF%90%E7%BB%B4%E6%9E%B6%E6%9E%84/&#34;&gt;【etcd v2】&lt;/a&gt;。Etcd v2 和 v3 本质上是共享同一套 raft 协议代码的两个独立的应用，接口不一样，存储不一样，数据也是互相隔离的。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -3896,10 +3928,10 @@ etcdctl user list
     
     <item>
       <title>Gitlab迁移升级记录</title>
-      <link>https://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/linux/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 21 Apr 2018 19:33:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/linux/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
       
         <description>&lt;p&gt;之前写了gitlab的安装文档，目的是为了为迁移做准备，现在记录一下测试迁移的过程。现在需要将编译安装的&lt;code&gt;7.13.4&lt;/code&gt;版本的gitlab升级至&lt;code&gt;10.6.0&lt;/code&gt;并采用docker的方式运行。经查阅官方Docker&lt;a href=&#34;https://hub.docker.com/r/gitlab/gitlab-ce/tags/&#34;&gt;【版本】&lt;/a&gt;是&lt;code&gt;9.5.1-10.7.0&lt;/code&gt;。而在Github上&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn版本】&lt;/a&gt;是&lt;code&gt;v6.1-v10.6.4&lt;/code&gt;。另外
 还有Gitlab的&lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce/tree/master/doc/update&#34;&gt;【官方升级说明】&lt;/a&gt;,这个说明里面都是临近的版本升级说明，但并没有介绍大跨度升级的详细内容。最后决定采用github上提供的升级建议。记录说明如下&lt;/p&gt;
@@ -4094,10 +4126,10 @@ command=&amp;#34;/home/git/gitlab-shell/bin/gitlab-shell key-59&amp;#34;,no-port
     
     <item>
       <title>Gitlab搭建使用记录</title>
-      <link>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/linux/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 14 Apr 2018 20:54:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/linux/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
       
         <description>&lt;p&gt;Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
 操作之前看一把架构图,图片来自官方,侵删
@@ -4650,10 +4682,10 @@ docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -t &amp;lt;your containe
     
     <item>
       <title>使用Docker搭建Jira和Confluence系统</title>
-      <link>https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://blog.gourds.site/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sat, 14 Apr 2018 15:47:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://blog.gourds.site/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
       
         <description>&lt;p&gt;**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence&#34;&gt;【Github】&lt;/a&gt;上都有&lt;/p&gt;
 &lt;blockquote&gt;
@@ -5137,895 +5169,6 @@ upload_s3
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Fluentd使用中遇到的丢数据问题</title>
-      <link>https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Wed, 11 Apr 2018 17:52:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</guid>
-      
-        <description>&lt;p&gt;目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇&lt;a href=&#34;http://arvon.top/2018/02/23/Td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/&#34;&gt;Blog&lt;/a&gt;）&lt;/p&gt;
-&lt;p&gt;需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到&lt;a href=&#34;https://docs.fluentd.org/v1.0/articles/quickstart&#34;&gt;【Fluentd官网】&lt;/a&gt;获取支持。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;graph LR;
-	  A(Td-client)--&amp;gt;F(Td-forward)
-    B(Td-client)--&amp;gt;F(Td-forward)
-    F--&amp;gt;E(Elasticsearch cluster)
-    E--&amp;gt;K(Kibana)
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Version：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;td-agent 0.14.21&lt;/code&gt;
-&lt;code&gt;ES Version: 5.0.0, Build: 253032b/2016-10-26T04:37:51.531Z, JVM: 1.8.0_121&lt;/code&gt; And &lt;code&gt;lucene_version : &amp;quot;6.2.0&lt;/code&gt;
-&lt;em&gt;Td-agent的es插件版本&lt;/em&gt;
-&lt;code&gt;elasticsearch (1.0.18)&lt;/code&gt;
-&lt;code&gt;elasticsearch-api (1.0.18)&lt;/code&gt;
-&lt;code&gt;elasticsearch-transport (1.0.18)&lt;/code&gt;
-&lt;code&gt;fluent-plugin-elasticsearch (1.8.0)&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;q1td-client端的buffer问题&#34;&gt;Q1：Td-client端的Buffer问题&lt;/h3&gt;
-&lt;p&gt;这个问题出现次数最多，而且log暴露的问题也是显而易见，主要解决是参数问题&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;报错日志&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;  2018-03-16 03:25:19 +0000 [warn]: #0 suppressed same stacktrace
-2018-03-16 03:25:19 +0000 [warn]: #0 failed to write data into buffer by buffer overflow action=:throw_exception
-2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&amp;#34;buffer space has too many data&amp;#34; tag=&amp;#34;logics.5013.205&amp;#34;
-  2018-03-16 03:25:19 +0000 [warn]: #0 suppressed same stacktrace
-2018-03-16 03:25:19 +0000 [warn]: #0 failed to write data into buffer by buffer overflow action=:throw_exception
-2018-03-16 03:25:19 +0000 [warn]: #0 emit transaction failed: error_class=Fluent::Plugin::Buffer::BufferOverflowError error=&amp;#34;buffer space has too many data&amp;#34; tag=&amp;#34;logics.5073.205&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;修改后的配置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;match&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;logics.**&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-   type forward
-   &lt;span class=&#34;nt&#34;&gt;&amp;lt;buffer&amp;gt;&lt;/span&gt;
-     @type file
-     path /var/log/td-agent/buffer/td-gamex-buffer
-     chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
-     total_limit_size 32GB #Default: 512MB (memory) / 64GB (file)
-     chunk_full_threshold 0.9 #flush the chunk when actual size reaches chunk_limit_size * chunk_full_threshold
-     compress text #The option to specify compression of each chunks, during events are buffered
-     flush_mode default
-     flush_interval 15s #Default: 60s
-     flush_thread_count 1 #Default: 1 The number threads used to write chunks in parallel
-     delayed_commit_timeout 60 #The timeout seconds decides that async write operation fails
-     overflow_action throw_exception
-     retry_timeout 10m
-   &lt;span class=&#34;nt&#34;&gt;&amp;lt;/buffer&amp;gt;&lt;/span&gt;
-   send_timeout 60s
-   recover_wait 10s
-   heartbeat_interval 1s
-   phi_threshold 16
-   hard_timeout 60s
-   heartbeat_type tcp
-   &lt;span class=&#34;nt&#34;&gt;&amp;lt;server&amp;gt;&lt;/span&gt;
-      name logics.shard
-      host tdagent.test.net
-      port 24224
-      weight 1
-   &lt;span class=&#34;nt&#34;&gt;&amp;lt;/server&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;q2td-forward端的buffer问题&#34;&gt;Q2：Td-forward端的Buffer问题&lt;/h3&gt;
-&lt;p&gt;正常来说对forward端配置buffer跟client端一样就行了，不过在实际使用中发现按client的配置会报错，如下，从报错来看是路径的问题，经查证是buffer的路径在&lt;code&gt;forest copy &lt;/code&gt;的配置类型下，需要区分index来进行缓存，使用&lt;code&gt;${tag}&lt;/code&gt;作为buffer存储路径的话就很好的解决了这个问题。类似issues可前往&lt;a href=&#34;https://github.com/uken/fluent-plugin-elasticsearch/issues/103&#34;&gt;【Github】&lt;/a&gt;查看&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;报错日志&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;2018-04-11 02:24:29 +0000 [error]: #0 Cannot output messages with tag &amp;#39;logics.5022.205&amp;#39;
-2018-04-11 02:24:29 +0000 [error]: #0 failed to configure sub output copy: Other &amp;#39;elasticsearch&amp;#39; plugin already use same buffer path: type = elasticsearch, buffer path = /var/log/td-agent/buffer/td-gamex-buffer
-2018-04-11 02:24:29 +0000 [error]: #0 /opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/buf_file.rb:71:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/output.rb:305:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/inject.rb:104:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_emitter.rb:73:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:504:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-elasticsearch-1.9.2/lib/fluent/plugin/out_elasticsearch.rb:71:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:73:in `block in configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `each&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/multi_output.rb:62:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin.rb:164:in `configure&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:132:in `block in plant&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `synchronize&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:128:in `plant&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluent-plugin-forest-0.3.3/lib/fluent/plugin/out_forest.rb:169:in `emit&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/compat/output.rb:211:in `process&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/bare_output.rb:53:in `emit_sync&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/event_router.rb:96:in `emit_stream&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:300:in `on_message&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:211:in `block in handle_connection&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `call&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:248:in `block (3 levels) in read_messages&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `feed_each&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:247:in `block (2 levels) in read_messages&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `call&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin/in_forward.rb:256:in `block in read_messages&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `call&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/server.rb:576:in `on_read_without_connection&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:123:in `on_readable&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/io.rb:186:in `on_readable&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run_once&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/cool.io-1.4.6/lib/cool.io/loop.rb:88:in `run&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/event_loop.rb:84:in `block in start&amp;#39;
-/opt/td-agent/embedded/lib/ruby/gems/2.1.0/gems/fluentd-0.14.13/lib/fluent/plugin_helper/thread.rb:78:in `block in thread_create&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;解决后的配置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;match&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;logics.**&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-  type forest
-  subtype copy
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;&amp;lt;store&amp;gt;&lt;/span&gt;
-      @type elasticsearch
-      &lt;span class=&#34;nt&#34;&gt;&amp;lt;buffer&amp;gt;&lt;/span&gt;
-        @type file
-        path /var/log/td-agent/buffer/td-gamex-buffer/${tag}
-        chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
-        total_limit_size 32GB #Default: 512MB (memory) / 64GB (file)
-        chunk_full_threshold 0.9 #flush the chunk when actual size reaches chunk_limit_size * chunk_full_threshold
-        compress text #The option to specify compression of each chunks, during events are buffered
-        flush_mode default
-        flush_interval 15s #Default: 60s
-        flush_thread_count 1 #Default: 1 The number threads  used to write chunks in parallel
-        delayed_commit_timeout 60 #The timeout seconds decides that async write operation fails
-        overflow_action throw_exception
-        retry_timeout 10m
-      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/buffer&amp;gt;&lt;/span&gt;
-      host elasticsearch.test.net
-      port 9200
-      logstash_format true
-      logstash_prefix bilogs
-      logstash_dateformat logics-${tag_parts[-1]}.%Y.%m.%d
-      time_key time
-      request_timeout 60s
-      reload_connections false
-      reload_on_failure true
-      reconnect_on_error true
-    &lt;span class=&#34;nt&#34;&gt;&amp;lt;/store&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;q3td-forward端的connection问题&#34;&gt;Q3：Td-forward端的connection问题&lt;/h3&gt;
-&lt;p&gt;这个问题主要发生在TD向ES发送数据阶段，起初考虑是ES集群处理能力达到上限，无法分配更对的连接给TD，但是进行Reload之后就正常了，所以这个问题的可能性不大，很可能是TD或者ES在处理连接的逻辑上存在问题，没有正确的关闭或者使用连接。经过查找资料，也找到了一些蛛丝马迹，可供参考的资料也一快带上&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;参考资料&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A. &lt;a href=&#34;https://github.com/atomita/fluent-plugin-aws-elasticsearch-service/issues/15&#34;&gt;【Github 关于这个问题的Issues】&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;报错信息&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;2018-03-21 04:28:19 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:28:34 +0000 error_class=&amp;#34;Elasticsearch::Transport::Transport::Error&amp;#34; error=&amp;#34;Cannot get new connection from pool.&amp;#34; plugin_id=&amp;#34;object:3fe6fced399c&amp;#34;
-  2018-03-21 04:28:19 +0000 [warn]: suppressed same stacktrace
-2018-03-21 04:28:35 +0000 [warn]: temporarily failed to flush the buffer. next_retry=2018-03-21 04:29:08 +0000 error_class=&amp;#34;Elasticsearch::Transport::Transport::Error&amp;#34; error=&amp;#34;Cannot get new connection from pool.&amp;#34; plugin_id=&amp;#34;object:3fe6fced399c&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;再说明
-**解决方法：**还是升级吧，升级至1.9.1版本之后该问题消失。&lt;a href=&#34;https://github.com/uken/fluent-plugin-elasticsearch/pull/220&#34;&gt;【关于修复PR信息点这里】&lt;/a&gt;在&lt;a href=&#34;https://github.com/uken/fluent-plugin-elasticsearch/pull/220/commits/494a68d6b26575e212713b156ab6fe61a7b38733&#34;&gt;【版本1.9.1 该Release版本时间为2016.12.14】&lt;/a&gt;中修复&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;目前解决主要涉及以下几个方面&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;reload_connections false # defaults to true&lt;/code&gt;
-You can tune how the elasticsearch-transport host reloading feature works. By default it will reload the host list from the server every 10,000th request to spread the load. This can be an issue if your Elasticsearch cluster is behind a Reverse Proxy, as Fluentd process may not have direct network access to the Elasticsearch nodes.
-对于这个参数，我这里ES集群并没有使用代理而是DSN域名&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;reload_on_failure true # defaults to false&lt;/code&gt;
-Indicates that the elasticsearch-transport will try to reload the nodes addresses if there is a failure while making the&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;request, this can be useful to quickly remove a dead node from the list of addresses&lt;/code&gt;
-这个主要是当请求发生故障时ES-transport将重新加载节点地址，删除死节点，我这里使用的也是true&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;reconnect_on_error true&lt;/code&gt;
-Github提到这个有帮助，实测并不好用，问题还是会出现，但频率貌似有减少。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;目前解决途径&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;match&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;logics.**&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
-  type forest
-  subtype copy
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;
-    &lt;span class=&#34;nt&#34;&gt;&amp;lt;store&amp;gt;&lt;/span&gt;
-      type elasticsearch
-      &lt;span class=&#34;nt&#34;&gt;&amp;lt;buffer&amp;gt;&lt;/span&gt;
-        @type file
-        path /var/log/td-agent/buffer/td-gamex-buffer/${tag}
-        chunk_limit_size 512MB #Default: 8MB (memory) / 256MB (file)
-        total_limit_size 32GB #Default: 512MB (memory) / 64GB (file)
-        chunk_full_threshold 0.9 #flush chunk when size reaches chunk_limit_size * chunk_full_threshold
-        compress text #The option to specify compression of each chunks, during events are buffered
-        flush_mode default
-        flush_interval 15s #Default: 60s
-        flush_thread_count 1 #Default: 1 The number threads used to write chunks in parallel
-        delayed_commit_timeout 60 #The timeout seconds  async write operation fails
-        overflow_action throw_exception
-        retry_timeout 10m
-      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/buffer&amp;gt;&lt;/span&gt;
-      host elasticsearch.yingxiong.net
-      port 9200
-      logstash_format true
-      logstash_prefix bilogs
-      logstash_dateformat logics-${tag_parts[-1]}.%Y.%W
-      time_key time
-      flush_interval 10s
-      request_timeout 15s
-      num_threads 2
-      reload_connections false
-      reload_on_failure true
-      reconnect_on_error true
-    &lt;span class=&#34;nt&#34;&gt;&amp;lt;/store&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;nt&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>即学即用Docker读书笔记</title>
-      <link>https://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 09 Apr 2018 19:35:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      
-        <description>&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26700648/&#34;&gt;《即学即用Docker》&lt;/a&gt;这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
-&lt;strong&gt;容器是什么&lt;/strong&gt;
-容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
-容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
-容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。&lt;/p&gt;
-&lt;h3 id=&#34;命令相关&#34;&gt;命令相关&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker version
-&lt;span class=&#34;c1&#34;&gt;#查看docker版本信息&lt;/span&gt;
-docker info
-&lt;span class=&#34;c1&#34;&gt;#查看服务器信息&lt;/span&gt;
-docker &lt;span class=&#34;nv&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; docker create + docker start
-&lt;span class=&#34;c1&#34;&gt;#docker run 是两条命令的聚合&lt;/span&gt;
-docker create --name&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;test-service&amp;#34;&lt;/span&gt; ubuntu:latest
-&lt;span class=&#34;c1&#34;&gt;#指定容器名称&lt;/span&gt;
-docker run -d --name labels -l &lt;span class=&#34;nv&#34;&gt;author&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;arvon -l &lt;span class=&#34;nv&#34;&gt;tester&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;Mo  ubuntu:latest sleep &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;
-docker ps -a -f &lt;span class=&#34;nv&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;deployer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;arvon
-docker inspect 509531d14f70
-&lt;span class=&#34;c1&#34;&gt;#指定容器标签、通过ps可以组合标签过滤、通过inspect可以查看所有标注&lt;/span&gt;
-docker run --rm -it ubuntu:latest /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#启动一个没有任何特殊配置的容器，rm参数表示退出容器时会删除容器,i参数表示交互，t参数表示启动一个伪tty&lt;/span&gt;
-docker run -it --hostname&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;test.example.com&amp;#34;&lt;/span&gt; ubuntu:latest /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#启动一个主机名为test.example.com的容器&lt;/span&gt;
-docker run --it --dns&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;8.8.8.8 --dns&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;8.8.4.4 --dns-search&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;example.com --dns-search&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;example2.com ubuntu:latest /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#启动一个指定dns的容器，默认会使用宿主机resolv.conf&lt;/span&gt;
-docker run --it --mac-address&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;xx.xx.xx.xx.xx.xx&amp;#34;&lt;/span&gt; ubuntu:latest /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#指定MAC地址，默认会自己计算，尽量别使用这个玩意&lt;/span&gt;
-docker run --it -v /mnt/data1:/data ubuntu:latest /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#挂载本地data1到容器/data，不需要容器内预先存在挂载点，会自己创建&lt;/span&gt;
-docker stop -t &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; mysql
-&lt;span class=&#34;c1&#34;&gt;#强制停止myql容器，适用于无法正常停止的情况，发送SIGTERM信号，如果25s后容易还没有停止，就发送SIGKILL信号，强制清除容器&lt;/span&gt;
-docker &lt;span class=&#34;nb&#34;&gt;kill&lt;/span&gt; mysql
-&lt;span class=&#34;c1&#34;&gt;#清除容器，跟Linux的Kill命令一样&lt;/span&gt;
-docker &lt;span class=&#34;nb&#34;&gt;kill&lt;/span&gt; --signal&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;USR1 mysql
-&lt;span class=&#34;c1&#34;&gt;#发送UNIX信号对容器进行管理&lt;/span&gt;
-docker ps
-&lt;span class=&#34;c1&#34;&gt;#查看运行中的容器&lt;/span&gt;
-docker ps -a
-&lt;span class=&#34;c1&#34;&gt;#查看所有容器&lt;/span&gt;
-docker rm mysql
-&lt;span class=&#34;c1&#34;&gt;#删除容器&lt;/span&gt;
-docker images
-&lt;span class=&#34;c1&#34;&gt;#列出镜像&lt;/span&gt;
-docker rmi mysql:0.1
-&lt;span class=&#34;c1&#34;&gt;#删除镜像&lt;/span&gt;
-docker inspect container_id
-&lt;span class=&#34;c1&#34;&gt;#查看容器详细信息&lt;/span&gt;
-docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it mysql /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#进入运行中的容器mysql&lt;/span&gt;
-docker stats
-&lt;span class=&#34;c1&#34;&gt;#查看docker容器的运行状态，类似top&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;关于资源配额&#34;&gt;关于资源配额&lt;/h3&gt;
-&lt;p&gt;Docker使用Linux内核中cgroup功能控制Docker容器的可用资源，执行docker create时可以直接配置分配给容器的CPU和内存量。
-使用&lt;code&gt;docker info&lt;/code&gt;可以查看当前docker是否有支持，如不支持需要在内核启动时指定相应的参数，一般来说都是支持的。
-&lt;strong&gt;CPU配额&lt;/strong&gt;：cpu配额类似nice，可以看做是对任务优先级的调整&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it progrium/stress --cpu &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --io &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; --vm &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --vm-bytes 128M --timeout 120s
-&lt;span class=&#34;c1&#34;&gt;#创建一个容器包含2个cpu密集型1个io密集型和两个占用内存的进程，压测&lt;/span&gt;
-docker run -it  -c &lt;span class=&#34;m&#34;&gt;512&lt;/span&gt;  progrium/stress --cpu &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --io &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; --vm &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --vm-bytes 128M --timeout 120s
-&lt;span class=&#34;c1&#34;&gt;#理论上cpu的load会是上一条命令的一般，使用-c参数指定cpu配额，类似nice，默认配额为1024&lt;/span&gt;
-docker run -it  -c &lt;span class=&#34;m&#34;&gt;512&lt;/span&gt;  --cpuset&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; progrium/stress --cpu &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --io &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; --vm &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --vm-bytes 128M --timeout 120s
-&lt;span class=&#34;c1&#34;&gt;#创建一个容器--cpuset参数指定在特定cpu上运行，没有这个cpu的话容器启动会报错&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;内存配额&lt;/strong&gt;：内存限额是硬性限制，设定限额后容器内存不足会像普通进程一样使用swap&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -it -m 512m progrium/stress --cpu &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --io &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; --vm &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --vm-bytes 128M --timeout 120s
-&lt;span class=&#34;c1&#34;&gt;#创建一个内存限额512M交换分区限额512的容器,使用-m参数&lt;/span&gt;
-docker run -it -m 512m --memory-swap&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; 1024m progrium/stress --cpu &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --io &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; --vm &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --vm-bytes 128M --timeout 120s
-&lt;span class=&#34;c1&#34;&gt;#创建一个内存限额512M交换分区限额1024M的容器，使用--memory-swap单独制定swap，设置为-1则禁用交换空间&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;**权限限制：**类似Linux中的ulimit&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -d --default-ulimit &lt;span class=&#34;nv&#34;&gt;nofile&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;50:150 --default-ulimit &lt;span class=&#34;nv&#34;&gt;nproc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;10:20
-&lt;span class=&#34;c1&#34;&gt;#告诉docker守护进程每个容器可以打开150个文件，运行20个进程，为硬性限制&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;容器自动重启&#34;&gt;容器自动重启&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;自动重启&lt;/strong&gt;：共有三个参数可选&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;no&lt;/code&gt;: 容器退出不重启&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;always&lt;/code&gt;: 不管容器退出码是什么都重启&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;on-failure:3&lt;/code&gt;: 在容器退出码不是零的情况下尝试重启3次，3次依然失败的话就放弃重启&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run --restart&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;on-failure:3 progrium/stress --cpu &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --io &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; --vm &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --vm-bytes 128M --timeout 120s
-&lt;span class=&#34;c1&#34;&gt;#启动一个容器容器退出后尝试重启3次&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;暂停容器&#34;&gt;暂停容器&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;暂停容器：&lt;/strong&gt; 暂停功能是通过cgroup的冻结程序实现的，暂停容器时容器的内存等状态还在，只是无法提供服务，类似于快照的状态&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker pause mysql
-&lt;span class=&#34;c1&#34;&gt;#暂停容器&lt;/span&gt;
-dcoker unpause mysql
-&lt;span class=&#34;c1&#34;&gt;#恢复容器，运行时间从恢复的这一时刻计算&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;镜像存储&#34;&gt;镜像存储&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;公共注册&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Docker Hub&lt;/li&gt;
-&lt;li&gt;Quay.io&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;私有注册&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;docker-registry #支持了S3和Azure&lt;/li&gt;
-&lt;li&gt;CoreOS Enterprose Registry&lt;/li&gt;
-&lt;li&gt;Docker Hub Enterprise&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;容器命名空间&#34;&gt;容器命名空间&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;nsenter工具&lt;/strong&gt;：Linux内核中的util-linux包里有个nsenter工具，用于进入linux的命令空间，因此可以通过这个工具进入运行在宿主机上的容器（不管这个容器是否有响应）
-**注意：**nsenter命令只能在宿主机上使用，并且需要把容器里顶层进程的PID传递给nsenter，看起来很麻烦的说，不过jpetazzo/nsenter容器有一个方便的脚本docker—enter会让这个过程简单不少&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
-&lt;span class=&#34;c1&#34;&gt;#安装nsenter工具到/usr/local/bin目录&lt;/span&gt;
-docker inspect d2c3ce380095 --format &lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt;.State.Pid&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#查看容器的pid&lt;/span&gt;
-nsenter --target &lt;span class=&#34;m&#34;&gt;30302&lt;/span&gt; --mount --uts --ipc --net --pid
-&lt;span class=&#34;c1&#34;&gt;#进入pid为30302的命名空间&lt;/span&gt;
-docker-enter 12b57becb46b /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#使用docker-enter命令相当于上面两条命令的合并，简单多了，主要用这个&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;docker日志&#34;&gt;Docker日志&lt;/h3&gt;
-&lt;p&gt;在Linux对log处理通常有两种方式，一种是将日志写入本地文件，一种是写入内核缓冲区然后使用dmesg命令读取。而docker提供的方式是使用&lt;code&gt;docker logs&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker logs d2c3ce380095
-&lt;span class=&#34;c1&#34;&gt;#查看容器的全部log&lt;/span&gt;
-docker logs -f d2c3ce380095
-&lt;span class=&#34;c1&#34;&gt;#阻塞方式查看log，与Linux中tail -f基本相同&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Docker中容器的默认log存储在&lt;code&gt;/var/lib/docker/containers/&amp;lt;your-contain-id&amp;gt;/&lt;/code&gt;这个目录下，记录的格式如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;{&amp;#34;log&amp;#34;:&amp;#34;[7] 04-08 13:10:00,633 INFO total_commands_processed:3906596\r\n&amp;#34;,&amp;#34;stream&amp;#34;:&amp;#34;stdout&amp;#34;,&amp;#34;time&amp;#34;:&amp;#34;2018-04-08T13:10:00.848081205Z&amp;#34;}
-#log:实际log，stream：log的输出，time：docker守护进程收到log的时间
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;**Tips：**目前大规模部署docker时处理日志的最佳方式是把容器的log直接发送给系统日志syslog，使用这种方式构建容器时需要指定&lt;code&gt;--log-driver=syslog&lt;/code&gt;选项&lt;/p&gt;
-&lt;p&gt;目前解决log问题的思路：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;让应用直接把日志发给系统日志&lt;/li&gt;
-&lt;li&gt;在容器里使用进程管理器转发日志（如systemd、upstart、supervisor等）&lt;/li&gt;
-&lt;li&gt;在容器中运行一个日志中继器，包装容器的stdout和stderr&lt;/li&gt;
-&lt;li&gt;在服务器中把docker的JSON日志转发给系统日志&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;值得实践的方式：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;supervisor插件 ==&amp;gt; &lt;a href=&#34;https://github.com/newrelic/supervisor-remote-logging&#34;&gt;github地址【python编写】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;spotify发布的中继器 ==&amp;gt; &lt;a href=&#34;https://github.com/spotify/syslog-redirector&#34;&gt;github地址【go编写】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;使用logspout集中处理日志 ==&amp;gt; &lt;a href=&#34;https://github.com/gliderlabs/logspout&#34;&gt;github地址【go编写】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;监控docker&#34;&gt;监控docker&lt;/h3&gt;
-&lt;p&gt;Docker提供简单的命令来查看一些比较基础的信息，&lt;code&gt;docker stats&lt;/code&gt;以及&lt;code&gt;docker events&lt;/code&gt;,推荐使用docker的API来对容器进行信息采集和监控，而且结合一些可视化的图表工具会更直观一点。
-&lt;strong&gt;可视化工具推荐&lt;/strong&gt;：商业化的就不推荐了只弄开源的东西&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;cAdvisor 【google开发的】&lt;a href=&#34;https://github.com/google/cadvisor&#34;&gt;项目地址&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Nagios&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;使用cAdvisor&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --volume&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/:/rootfs:ro &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --volume&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/var/run:/var/run:rw &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --volume&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/sys:/sys:ro &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --volume&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/var/lib/docker/:/var/lib/docker:ro &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --volume&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/dev/disk/:/dev/disk:ro &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --publish&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;8080:8080 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --detach&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --name&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;cadvisor &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  google/cadvisor:v0.24.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;访问&lt;code&gt;http://localhost:8080&lt;/code&gt;即可查看web页面，很不错。另外还提供了REST API，可以通过这个api在自己的监控系统中轻松的查询众多详细信息,另外我这里使用0.24.1的原因是使用latest版本报错了，现在暂时不想折腾这个，这个0.24.1版本可用。&lt;/p&gt;
-&lt;h3 id=&#34;部署工具介绍&#34;&gt;部署工具介绍&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;关于部署&lt;/strong&gt;：部署应该满足两个条件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;可以重复执行，每次部署都做相同的事情&lt;/li&gt;
-&lt;li&gt;定义应用的配置，保证每次部署都使用相同的配置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;工具的类别&lt;/strong&gt;：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;用于编排和部署，（替代Capistrano、Fabric、shell等）
-这种工具基本上是在多个Docker守护进程之间采用异步方式协调应用的配置和部署过程，代表有：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;New Relic开发的Centurion&lt;a href=&#34;https://github.com/newrelic/centurion&#34;&gt;【Github项目地址】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Spotify开发的Helios&lt;a href=&#34;https://github.com/spotify/helios&#34;&gt;【Github项目地址】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Ansible为Docker提供的工具&lt;a href=&#34;https://www.ansible.com/integrations/containers/docker&#34;&gt;【官网地址】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;用于自动调度和集群管理，代替手工操作
-使用分布式调度程序管理Docker，将整个网络看作是一个大电脑，通过定义一些策略，指明如何运行应用，不需要人为具体操作底层细节。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;最早出现在公众视野的是CroeOS退出的Fleet&lt;a href=&#34;https://github.com/coreos/fleet&#34;&gt;【Github项目地址】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;目前最火的是Google推出的Kubernetes&lt;a href=&#34;https://kubernetes.io/&#34;&gt;【官网地址】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;最成熟的是由加州伯克利分校研究人员编写的Mesos&lt;a href=&#34;http://mesos.apache.org/&#34;&gt;【官网地址】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Docker公司原生的Swarm&lt;a href=&#34;https://github.com/docker/swarm&#34;&gt;【Github项目地址】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;命名空间&#34;&gt;命名空间&lt;/h3&gt;
-&lt;p&gt;虽然容器和系统中其他进程公用一个内核，但看起来每个容器都有自己的文件系统、网络接口、硬盘和其他资源，其实这是一种抽象的处理，在内核中实现这种抽象的方法是使用命名空间，在命名空间中容器认为自己独占所有资源。命名空间实现的是视觉隔离，而且很多情况下实现的是功能的隔离，目的是让容器看起来像是运行在同一个内核之上的虚拟机。目前Linux内核实现的6种命名空间容器都有，如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;挂载命名空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Docker主要使用这个命名空间让容器看起来有自己完整的文件系统，挂载命名空间与chroot实现类似，不过隔离性更好，而且深入到内核中，以至于&lt;code&gt;mount&lt;/code&gt;和&lt;code&gt;unmount&lt;/code&gt;系统调用都在命名空间中操作&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;UTS命名空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;UTS命名空间作用在内核上，利用UNIX分时系统给各个容器指定主机名和域名&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;IPC命名空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这种命名空间把容器的System V进程间通信。消息队列和POSIX消息队列与主机的消息队列隔离开。IPC命名空间负责的进程间通信不是由文件系统资源实现的，而是由共享内存和信号量实现的，而且相互通信的进程在同一容器里。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;PID命名空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;每个命名空间里的进程都有相对该命名空间而言唯一的PID，如在容器中看的ps和宿主机上看到的ps输出就是完全不同的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;网络命名空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这种命名空间为容器提供专用的网络设备和端口等。&lt;code&gt;docker ps&lt;/code&gt;命令输出会显示容器绑定的端口，这些端口分别在两个命名空间中。如容器里nginx一般会绑定80端口，其实这个端口在容器所属网络命名空间的网络接口上。这种命名空间让容器看起来像是拥有完全独立的网络栈。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;用户命名空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;用户命名空间把容器里的用户和用户组与Docker宿主机的用户和用户组隔离开。在容器里和宿主机上看到用户ID不同的原因就是因为有这个用户命名空间。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;**补充说明之前的一个例子：**命名空间就是之前可以进入一个已经退出的容器的原因，以下命令就是进入这个容器的所有命名空间&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nsenter --target &lt;span class=&#34;nv&#34;&gt;$PID&lt;/span&gt; --mount --uts --ipc --net --pid
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;关于容器安全性&#34;&gt;关于容器安全性&lt;/h3&gt;
-&lt;p&gt;容器只是运行在Docker宿主机中的一个进程。容器实现的隔离性没有虚拟机实现的强。容器的性能之所以高其中的一个原因就是与宿主机公用一个内核，但是内核中的一切并不都会放在命名空间中，这就是人们认为Docker容器存在的安全隐患之一也是最严重的一个。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在容器中以非Root用户运行应用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;容器里的root用户其实是系统的root用户，不过容器里的root用户有些额外的限制，禁止了&lt;code&gt;/proc&lt;/code&gt;和&lt;code&gt;/sys&lt;/code&gt;文件系统中最危险的部分&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;使用&lt;code&gt;--privileged=true&lt;/code&gt;选项赋予容器更大的权限（尽量不要用这个更不安全）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有时候容器需要一些更多的权限去做一些事情，如挂载存储、修改网络配置、新建UNIX设备等。不过建议不是必须不要这么做，可以通过&lt;code&gt;--cap-add=NET_ADMIN&lt;/code&gt;和&lt;code&gt;--cap-drop&lt;/code&gt;结合起来赋予尽可能准确且尽可能少的权限。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;SELinux、AppArmor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;SELinux最初由美国国家安全局开发，目的是精确控制安全。AppArmor的目标与SELinux类似，不过比SELinux简单。Docker会根据所用平台对两者支持其一。这个根据实际需求再研究吧，也算是比较重的一块了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Docker守护进程安全性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;保证Docker安全性的基本做法与很多其他网络守护进程一样：加密通信、认证用户。另外最好不要让docker能直接访问互联网。如果需要在网络外部访问Docker宿主机，应该考虑使用VPN或SSH隧道做跳转。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;容器化平台的12要素&#34;&gt;容器化平台的12要素&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;代码基&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;只把一份代码基纳入版本控制&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;依赖&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;明确声明所需的依赖，并把依赖与周围的环境隔离开&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;配置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在环境变量中存储配置，不在代码基的文件中存储。在创建Dockerfile的时候需要的配置使用环境变量的方式进行传递，在执行容器创建的时候再通过&lt;code&gt;-e&lt;/code&gt;参数传入。如让容器使用类似这种配置&lt;code&gt;process.env.ENVIRONMNET&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;后端服务&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;把后端服务当做是附加资源。要在应用中实现优雅的降级方案，而且不能假定资源（如文件系统存储空间）始终可用&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;构建、发布、运行&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;要严格区分构建和运行步骤，遵守这个流程，每一步自成一体，相互独立有利于缩短反馈循环，尽快解决部署过程中出现的问题&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;进程&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;以一个或多个无状态的进程运行应用。任何共享数据都要从有状态的后端存储中获取，这么做便于重复部署应用实例，而且不会丢失重要的会话数据。应用不能长时间保存状态，保存状态的时间最好比单次请求并返回响应的时间短，而且越短越好。如果必须保存状态，最好使用远程数据存储，如Redis、PostgreSQL、Memcache，甚至是Amazon的S3服务&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;端口绑定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;通过绑定的端口提供服务&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;并发&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;通过进程模型实现横向扩展&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;易用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;加快启动速度，使用优雅的方式关闭，尽量提升健壮性，Docker关闭或者清除容器会向容器发送标准的UNIX信号，因此容器化的应用可以检测这些信号，然后采取合适的方式优雅的关闭服务&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;开发环境和生产环境同等重要&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;尽量保持开发环境，过度环境和生产环境一致&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;日志&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;把日志当作事件流，服务本身不应该关心如何转发或者存储日志。事件不能缓冲，要通过流的形式写入标准输出，交给宿主进程处理。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;管理进程&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;使用一次性进程执行管理任务。主要观点是绝不要使用随意编写出来的计划任务脚本执行管理和维护任务，而要把这些脚本和相关的功能保存在应用的代码基里。不需要在应用的每个实例中运行，需要执行维护作业时，可以启动一个专门的容器，只执行指定的作业，执行完成后就结束生命周期。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;响应式宣言&#34;&gt;响应式宣言&lt;/h3&gt;
-&lt;p&gt;2013年7月，Typesafe公司CTO jonas和几个贡献者完善了这个宣言，根据这个宣言定义，&lt;code&gt;响应式系统&lt;/code&gt;应具备四个特点：反应迅速、恢复力强、灵活性高、消息驱动&lt;/p&gt;</description>
       
     </item>
     

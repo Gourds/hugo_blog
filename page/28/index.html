@@ -23,8 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Hugo theme jane example site." />
-  <meta name="keywords" content="Hugo, theme, jane" />
+  <meta name="description" content="Gourds simple site." />
+  <meta name="keywords" content="Linux, Life, Book, Python" />
 
 
 
@@ -59,14 +59,14 @@
 
 
 <meta property="og:title" content="Gourds" />
-<meta property="og:description" content="Hugo theme jane example site." />
+<meta property="og:description" content="Gourds simple site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.gourds.site/" />
 
 <meta itemprop="name" content="Gourds">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gourds"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:description" content="Gourds simple site."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -319,16 +319,16 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/">安装hexo记录</a>
+      <a class="post-link" href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/">消息队列介绍及常用MQ对比</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-06-13" class="post-time">
-        2015-06-13
+      <time datetime="2015-11-05" class="post-time">
+        2015-11-05
       </time>
       
-      <span class="more-meta"> 152 words </span>
-      <span class="more-meta"> 1 min read </span>
+      <span class="more-meta"> 1744 words </span>
+      <span class="more-meta"> 4 min read </span>
       
       
       
@@ -338,23 +338,26 @@
   <div class="post-content">
     
     <div class="post-summary">
-      <p>简要记录一下在centos上安装hexo的过程
-记录在CentOS环境下配置hexo博客环境记录</p>
-<h2 id="install-git">Install Git</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">yum remove git
-yum install git-core
-</code></pre></td></tr></table>
-</div>
-</div>
+      <h3 id="什么是消息队列">什么是消息队列</h3>
+<p><strong>概述：</strong> 消息队列（Message Queue）一般大家习惯简称为MQ。主要特点为异步处理,也就是说消息的发送者和接收者不需要同时与消息队列交互。消息会保存在队列中，直到接收者取回它。消息队列和信号相比，能够传递更多的信息。与管道相比，消息队列提供了有格式的数据。</p>
+<blockquote>
+<p><strong>举一个直观的小例子</strong>
+姐姐小红希望弟弟小明多读书，经常拿好书给小明看。之前的方式是先问小明什么时候有空，然后把书给小明送过去，监督小明把书读完。后来两人都觉得太麻烦，就换了一个方式。
+买了一个书架，小红一有好书就放到书架上，小明看到书架上有书就取着读。这里，书架其实就是一个消息队列，小红就是生产者，小明就是消费者。
+这样的<strong>好处</strong>是：
+1.小红想给小明书的时候不必问小明什么时候有时间，直接把书放在书架上就行了，小红和小明的时间都更自由
+2.小红相信小明的读书自觉和读书能力，不必亲眼观察小明的读书过程，小红只要做一个放书的动作，很节省时间。
+3.当明天有另一个爱读书的小伙伴小强加入，小红仍旧只需要把书放到书架上，小明和小强从书架上取书即可
+4.书在书架上，小明读的慢就晚点看完，读的快就早点看完，小明的压力会小点。
+对应可以总结为：<strong>解耦</strong>、<strong>提速</strong>、<strong>广播</strong>、<strong>削峰</strong>
+相应<strong>缺点</strong>就是：
+1.引入复杂度
+2.暂时的不一致性
+**PS：**以上内容引自知乎祁达方</p>
+</blockquote>
     </div>
     <div class="read-more">
-      <a href="/post/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/" class="read-more-link">Read more</a>
+      <a href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -365,15 +368,15 @@ yum install git-core
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/">Linux下关于文件属性的三个时间</a>
+      <a class="post-link" href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/">NFS服务安装部署记录</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-05-13" class="post-time">
-        2015-05-13
+      <time datetime="2015-10-20" class="post-time">
+        2015-10-20
       </time>
       
-      <span class="more-meta"> 939 words </span>
+      <span class="more-meta"> 519 words </span>
       <span class="more-meta"> 2 min read </span>
       
       
@@ -384,19 +387,10 @@ yum install git-core
   <div class="post-content">
     
     <div class="post-summary">
-      <p>Tips: 主要区分linux下文件的三个时间属性，atime、mtime、ctime</p>
-<blockquote>
-<ul>
-<li>文件的 Access time，atime 是在读取文件或者执行文件时更改的任何对inode的访问都会使此处改变。</li>
-</ul>
-</blockquote>
-<ul>
-<li>文件的Modified time，mtime 是在写入文件时随文件内容的更改而更改的。</li>
-<li>文件的 Change time，ctime 是在写入文件、更改所有者、权限或链接设置时随 Inode 的内容更改而更改的。只要stat出来的内容发生改变就会发生改变。mtime的改变必然导致ctime的改变。</li>
-</ul>
+      <p>**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client</p>
     </div>
     <div class="read-more">
-      <a href="/post/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/" class="read-more-link">Read more</a>
+      <a href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -407,15 +401,15 @@ yum install git-core
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/">Linux查看主机信息</a>
+      <a class="post-link" href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/">Ansible之HAVE_DECL_MPZ_POWM_SEC报错记录</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-04-13" class="post-time">
-        2015-04-13
+      <time datetime="2015-10-12" class="post-time">
+        2015-10-12
       </time>
       
-      <span class="more-meta"> 364 words </span>
+      <span class="more-meta"> 342 words </span>
       <span class="more-meta"> 1 min read </span>
       
       
@@ -426,10 +420,28 @@ yum install git-core
   <div class="post-content">
     
     <div class="post-summary">
-      <p>这篇包括（系统版本、内核信息、核心数、主机名）还有一个关于系统信息查看的，<a href="http://blog.arvon.top/2015/07/27/Linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/">&ndash;&gt;飞机票</a></p>
+      <p>简述：在centOS6.5上使用pip安装ansible(version=2.1.1.0)时报错</p>
+<h3 id="报错解决">报错解决</h3>
+<ul>
+<li>解决如下
+分析为PyCrypto模块安装有问题，所以就直接卸载重装。。有能力的话我会进一步探究这个报错，不过现在以下方法可以解决，先这样吧</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">pip uninstall python-keyczar pycrypto pyasn1
+yum erase python-keyczar python-crypto pyasn1
+yum install python-keyczar
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
     <div class="read-more">
-      <a href="/post/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/" class="read-more-link">Read more</a>
+      <a href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/" class="read-more-link">Read more</a>
     </div>
     
   </div>

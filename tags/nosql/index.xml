@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 06 Aug 2016 00:14:09 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cassandra简单使用记录</title>
-      <link>https://blog.gourds.site/post/cassandra%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <link>https://blog.gourds.site/post/database/cassandra%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 06 Aug 2016 00:14:09 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/cassandra%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://blog.gourds.site/post/database/cassandra%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;**简述：**在现在公司接触这个比较多，但是之前并不熟悉，所以需要简单记录下基础增删改查，以及简单介绍。我目前的理解就是这个nosql非常适合做集群，在吞吐量上应该远高于传统数据库。需要再以后工作学习中再深入了解，先简单记录一下吧。&lt;/p&gt;
 &lt;h3 id=&#34;简介&#34;&gt;简介&lt;/h3&gt;
 &lt;p&gt;Apache Cassandra最初由Facebook创建，集Google BigTable的数据模型与Amazon Dynamo的完全分布式的架构于一身,是一个大规模可伸缩的开源NoSQL数据库。Cassandra完美地支持管理大量的结构化，半结构化和非结构化数据，且能够跨多个数据中心和云。Cassandra提供了持续可用性，线性扩展，操作简单，跨多个服务器而没有单点故障。且提供了一个有力的动态数据模型，支持最大的灵活性和快速响应。&lt;/p&gt;</description>

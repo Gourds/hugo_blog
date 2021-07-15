@@ -23,8 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Hugo theme jane example site." />
-  <meta name="keywords" content="Hugo, theme, jane" />
+  <meta name="description" content="Gourds simple site." />
+  <meta name="keywords" content="Linux, Life, Book, Python" />
 
 
 
@@ -59,14 +59,14 @@
 
 
 <meta property="og:title" content="Gourds" />
-<meta property="og:description" content="Hugo theme jane example site." />
+<meta property="og:description" content="Gourds simple site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.gourds.site/" />
 
 <meta itemprop="name" content="Gourds">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gourds"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:description" content="Gourds simple site."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -319,7 +319,7 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/crontab%E7%AE%80%E8%AE%B0/"></a>
+      <a class="post-link" href="/post/blog/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BAblog/"></a>
     </h1>
     
     <div class="post-meta">
@@ -327,7 +327,7 @@
         0001-01-01
       </time>
       
-      <span class="more-meta"> 1096 words </span>
+      <span class="more-meta"> 1304 words </span>
       <span class="more-meta"> 3 min read </span>
       
       
@@ -338,123 +338,98 @@
   <div class="post-content">
     
     <div class="post-summary">
-      <h2 id="tags-crontab">title: crontab简记
-date: 2015-09-16 17:01:58
-tags: [Crontab]</h2>
-<p>今天刚好要备份线上的crontab，就顺便记下来，省得忘了以后还要去上网找。
-**介绍:**crontab命令
-常见于Unix和类Unix的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中，以供之后读取和执行。该词来源于希腊语 chronos(χρνο)，原意是时间。常，crontab储存的指令被守护进程激活， crond常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为cron jobs。<em>crontab文件</em>包含送交cron守护进程的一系列作业和指令。每个用户可以拥有自己的crontab文件；同时，操作系统保存一个针对整个系统的crontab文件，该文件通常存放于/etc或者/etc之下的子目录中，而这个文件只能由系统管理员来修改。
-crontab文件的每一行均遵守特定的格式，由空格或tab分隔为数个领域，每个领域可以放置单一或多个数值。(ps:摘自百度百科)</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/crontab%E7%AE%80%E8%AE%B0/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/grep%E5%91%BD%E4%BB%A4/"></a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      <span class="more-meta"> 398 words </span>
-      <span class="more-meta"> 1 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="tags-linux正则">title: grep命令
-date: 2016-07-15
-tags: [Linux,正则]</h2>
-<p>Tips：很有用的几个选项</p>
-<h3 id="常用">常用</h3>
-<ul>
-<li>定向匹配&amp;忽略大小写</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1">#-B</span>
-grep -B <span class="m">5</span> part filename <span class="c1">#显示filename中匹配part的前5行</span>
-<span class="c1">#-A</span>
-grep -A <span class="m">5</span> part filename <span class="c1">#显示filename中匹配part的后5行</span>
-<span class="c1">#-C</span>
-grep -C <span class="m">5</span> part filename <span class="c1">#显示filename中匹配part的前后5行</span>
-<span class="c1">#-i</span>
-grep -i part filename <span class="c1">#匹配filename中的part不区分大小写</span>
-</code></pre></td></tr></table>
-</div>
-</div>
-    </div>
-    <div class="read-more">
-      <a href="/post/grep%E5%91%BD%E4%BB%A4/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/hexo%E7%AE%80%E6%98%8E/"></a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      <span class="more-meta"> 1060 words </span>
-      <span class="more-meta"> 3 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="tags-hexo">title: Hexo简明
-date: 2015-07-20 16:42:47
+      <h2 id="tags-hexo">title: 使用Hexo和Github搭建Blog
+date: 2015-07-17 12:10:00
 tags: [Hexo]</h2>
-<p><strong>简介</strong>：出自台湾某大学生之手，说是叫tommy351，感觉是叼了个扎天。是一个基于Node.js的静态博客程序，其
-编译上百篇文字只需要几秒。hexo生成静态网页可以直接放到Github Pages，BAE，SAE等平台上。</p>
-<p>###常用的命令</p>
-<ul>
-<li>hexo n “我的博客” == hexo new “我的博客”	#新建文章</li>
-<li>hexo p == hexo publish	#将_drafts下的文件放到_post下，也就是发布草稿</li>
-<li>hexo g == hexo generate	#生成静态网页</li>
-<li>hexo d == hexo deploy	#发布到远程服务器，开启&ndash;generate选项可以在deploy前自动generate</li>
-</ul>
+<!-- raw HTML omitted -->
+<p><strong>Update</strong>:添加了云音乐外链，方法非常简单粗暴，直接在网易云音乐上生成外链然后放进文章里就行了，如图
+<img src="http://img.arvon.top:80/images/2019/08/12/20150717-hexoblog-1.jpg" alt="20150717-hexoblog-1">
+<img src="http://img.arvon.top:80/images/2019/08/12/20150717-hexoblog-2.jpg" alt="20150717-hexoblog-2">
+Tips：最近几天都在折腾这个东西，网上有很多的教程，但终究还是有点费劲，在这里总结一下。我是在win7上做的，我尽可能把我出问题的地方着重描述，希望让有兴趣玩这个伙伴们可以顺利点，嘻嘻。特别鸣谢陈素封的博客，帮助很大，话不多说，开始整理。win上多有不便，还会在linux上进行搭建。</p>
     </div>
     <div class="read-more">
-      <a href="/post/hexo%E7%AE%80%E6%98%8E/" class="read-more-link">Read more</a>
+      <a href="/post/blog/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BAblog/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/cicd/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      <span class="more-meta"> 699 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h2 id="tags-pythonansible">title: Ansible根据excel自动生成inventory文件
+date: 2016-08-05
+tags: [Python,Ansible]</h2>
+<p>Tip: 根据excel表格手动写入inventory文件是个费时费力还容易出错的事情，这种事情本就应该使用脚本完成，刚好最近需要，然后就查阅文档，本来是想用shell的，毕竟相比python我还是对shell比较熟悉，奈何python的xlrd模块实在太合适所以就用python写了脚本（需要先安装xlrd模块）。
+Update:现在不推荐使用xlrd模块了，原因是现在python3.0趋向于使用新模块openpyx，而且xlrd模块只是读取excel还需xlwd模块进行写入操作，不过现在这个模块已经支持不是很好了，我用pip没装上，所以现在使用openpyx模块，在<a href="http://arvon.top/2017/05/24/Jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">我博客Jumpserver</a>这篇文章里记录有这个模块的用法</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/cicd/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/cicd/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      <span class="more-meta"> 1140 words </span>
+      <span class="more-meta"> 3 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h2 id="tags-ansiblepython">title: Ansible自定义插件获取指定远端配置
+date: 2018-05-11
+tags: [Ansible,Python]</h2>
+<p>**概述:**将ansible部署与变量控制拆分，解决应用与主机的规划问题。其中使用Ansible本地<code>fact</code>实现应用主机规划，使用自定义的Ansible<code>lookup</code>插件来实现从远端获取变量。通过这种方式可以提高ansible代码的利用率和普适性，降低运维的配置管理工作复杂度。可以关注下以下几点</p>
+<blockquote>
+<ul>
+<li>本地git注册文件的目录结构</li>
+<li>ansible的local fact与git中注册目录的对应关系</li>
+<li>ansible的playbook配置模板与获取fact的配置关系</li>
+</ul>
+</blockquote>
+<p>设计好以上几点可以大幅降低不必要的麻烦，设计的时候最好充分考虑后期扩展问题。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/cicd/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/" class="read-more-link">Read more</a>
     </div>
     
   </div>

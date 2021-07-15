@@ -23,8 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Hugo theme jane example site." />
-  <meta name="keywords" content="Hugo, theme, jane" />
+  <meta name="description" content="Gourds simple site." />
+  <meta name="keywords" content="Linux, Life, Book, Python" />
 
 
 
@@ -59,14 +59,14 @@
 
 
 <meta property="og:title" content="Gourds" />
-<meta property="og:description" content="Hugo theme jane example site." />
+<meta property="og:description" content="Gourds simple site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.gourds.site/" />
 
 <meta itemprop="name" content="Gourds">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gourds"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:description" content="Gourds simple site."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -319,7 +319,73 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/elasticsearch%E9%BB%98%E8%AE%A4fields1000%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/">Elasticsearch默认fields1000报错解决</a>
+      <a class="post-link" href="/post/cicd/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/">Jenkins使用GitSubmodule实现代码库调用</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2017-11-29" class="post-time">
+        2017-11-29
+      </time>
+      
+      <span class="more-meta"> 1002 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**背景：**在实际项目构建中有时会用到调用其他代码库的情况，例如调用公共代码库和基础代码库，此时就可以用git submodule这个模块实现这个需求，git submodule可以将一个git仓库以目录的方式作为另一个git仓库的子目录。Jenkins用来做项目的持续集成，如果使用了Git Submodule,每次Jenkins更新版本库的时候还需要更新submodule的内容。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/cicd/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/ops/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/">collectd使用exec模块进行自定义监控</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2017-11-28" class="post-time">
+        2017-11-28
+      </time>
+      
+      <span class="more-meta"> 360 words </span>
+      <span class="more-meta"> 1 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>使用Grafana进行服务监控的明显优点就是监控出图漂亮，而且拥有丰富的插件，可以直接监控系统资源和负荷信息以及常见的服务进程状态，不过还是会有一些场景直接使用模块是不太容易进行监控的，这个时候更适合使用编写脚本进行数据收集和监控，而<strong>exec</strong>模块就可以满足这样的需求，下面就列举一个小栗子。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/ops/collectd%E4%BD%BF%E7%94%A8exec%E6%A8%A1%E5%9D%97%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/bigdata/elasticsearch%E9%BB%98%E8%AE%A4fields1000%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/">Elasticsearch默认fields1000报错解决</a>
     </h1>
     
     <div class="post-meta">
@@ -346,75 +412,7 @@
 </blockquote>
     </div>
     <div class="read-more">
-      <a href="/post/elasticsearch%E9%BB%98%E8%AE%A4fields1000%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/">关于Kafka分布式消息队列</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2017-11-05" class="post-time">
-        2017-11-05
-      </time>
-      
-      <span class="more-meta"> 3500 words </span>
-      <span class="more-meta"> 7 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><strong>背景:</strong> 直接使用EFK进行日志收集，在大规模高压力的情况下Elasticsearch会存在丢数据的情况，现在考虑使用MQ（Message Queue）进行缓冲，达到不丢数据的目的。由于对于日志收集响应速度并不是十分高，并且对日志的可靠性要求较高，最终选择Kafka来充当消息队列而非官方推荐的redis。这里着重进行kafka介绍，之后会整合EFK+kafka的应用落地记录。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E5%85%B3%E4%BA%8Ekafka%E5%88%86%E5%B8%83%E5%BC%8F%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">Etcd及相关组件安装配置说明</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2017-10-13" class="post-time">
-        2017-10-13
-      </time>
-      
-      <span class="more-meta"> 2785 words </span>
-      <span class="more-meta"> 6 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><strong>简介：</strong><a href="https://coreos.com/etcd/">Etcd</a>是CentOS公司发起的一个开源项目，灵感来自于 ZooKeeper 和 Doozer，它使用Go语言编写，并通过Raft一致性算法处理日志复制以保证强一致性（Raft是一个来自Stanford的新的一致性算法，适用于分布式系统的日志复制，Raft通过选举的方式来实现一致性，在Raft中，任何一个节点都可能成为Leader。），主要用于<strong>共享配置和服务发现</strong>的分布式、一致性的KV存储系统。
-除了常见的共享配置及服务发现，还可以使用Etcd结合SkyDNS提供<strong>内网域名解析服务</strong>。
-这里主要涉及etcd安装配置说明、etcd-view安装配置、skydns安装配置</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" class="read-more-link">Read more</a>
+      <a href="/post/bigdata/elasticsearch%E9%BB%98%E8%AE%A4fields1000%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/" class="read-more-link">Read more</a>
     </div>
     
   </div>

@@ -9,19 +9,19 @@
     <lastBuildDate>Wed, 21 Aug 2019 13:38:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aws使用EMR对Dynamodb进行备份还原</title>
-      <link>https://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
+      <link>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
       <pubDate>Wed, 21 Aug 2019 13:38:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
+      <guid>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
       <description>&lt;p&gt;最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由&lt;code&gt;AutoScaling&lt;/code&gt;修改成了&lt;code&gt;按需&lt;/code&gt;，当使用之前的HIVE脚本时出现了&lt;code&gt;Read throughput should not be less than 1&lt;/code&gt;的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持&lt;code&gt;On-Demand billing&lt;/code&gt;这个功能，接着又准备使用&lt;code&gt;awscli&lt;/code&gt;命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的&lt;code&gt;版本问题说明&lt;/code&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AWS-cli操作S3及DynamoDB</title>
-      <link>https://blog.gourds.site/post/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/</link>
+      <link>https://blog.gourds.site/post/cloud/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/</link>
       <pubDate>Sat, 08 Jul 2017 18:23:45 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/</guid>
+      <guid>https://blog.gourds.site/post/cloud/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;AWS的cli还是挺好用的，文档也比较全面，其实看个文档就可以使用，但是我毕竟是我，记下来，减少查询搜索的时间也是挺赚的，不是么。。话说“懒人使世界进步”，其实有个很重要的前提就是你这个懒人做出了可以帮你出色完成原定任务的东西，这时你才有资格懒。很显然，我没有。。。But我一直在实现这个前提的路上前进&lt;/p&gt;
 &lt;/blockquote&gt;</description>

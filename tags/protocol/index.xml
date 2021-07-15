@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 16 Aug 2016 12:59:31 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/protocol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DNS端口使用解释</title>
-      <link>https://blog.gourds.site/post/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/</link>
+      <link>https://blog.gourds.site/post/linux/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/</link>
       <pubDate>Tue, 16 Aug 2016 12:59:31 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/</guid>
+      <guid>https://blog.gourds.site/post/linux/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/</guid>
       <description>&lt;p&gt;**前言：**我们公司有个面试题很有意思，DNS的默认查询端口是什么？可能大家都很熟悉dns使用53端口，那究竟是使用udp协议还是tcp协议呢，恩，我也不清楚，所以就看了个科普贴！&lt;/p&gt;</description>
     </item>
     

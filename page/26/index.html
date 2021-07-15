@@ -23,8 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Hugo theme jane example site." />
-  <meta name="keywords" content="Hugo, theme, jane" />
+  <meta name="description" content="Gourds simple site." />
+  <meta name="keywords" content="Linux, Life, Book, Python" />
 
 
 
@@ -59,14 +59,14 @@
 
 
 <meta property="og:title" content="Gourds" />
-<meta property="og:description" content="Hugo theme jane example site." />
+<meta property="og:description" content="Gourds simple site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.gourds.site/" />
 
 <meta itemprop="name" content="Gourds">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gourds"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:description" content="Gourds simple site."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -319,7 +319,105 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/">CentOS6.x挂载ntfs和xfs问题</a>
+      <a class="post-link" href="/post/linux/selinux%E5%92%8Ciptables%E5%85%B3%E9%97%AD/">selinux和iptables关闭</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-02-01" class="post-time">
+        2016-02-01
+      </time>
+      
+      <span class="more-meta"> 247 words </span>
+      <span class="more-meta"> 1 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h3 id="iptables">iptables</h3>
+<h4 id="centos6x">Centos6.x</h4>
+<ul>
+<li>临时关闭</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">service iptables stop
+/etc/init.d/iptabels stop
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>永久关闭</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">chkconfig iptables off
+chkconfig iptables on    <span class="c1">#开启</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/selinux%E5%92%8Ciptables%E5%85%B3%E9%97%AD/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/">CentOS搭建NTP服务器</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-01-20" class="post-time">
+        2016-01-20
+      </time>
+      
+      <span class="more-meta"> 608 words </span>
+      <span class="more-meta"> 2 min read </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p><strong>简介：</strong>
+NTP（NetworkTime Protocol，网络时间协议）是用来在分布式时间服务器和客户端之间进行时间同步。<a href="http://blog.arvon.top/2015/12/13/Linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/">&ndash;&gt;另一篇关于时间的</a></p>
+<p>NTP基于UDP报文进行传输，使用的UDP端口号为123。
+使用NTP的目的是对网络内所有具有时钟的设备进行时钟同步，使网络内所有设备的时钟保持一致，从而使设备能够提供基于统一时间的多种应用。
+对于时间错误会导致服务器宕机，所以运行NTP的本地系统，既可以接受来自其他时钟源的同步，又可以作为时钟源同步其他的时钟，并且可以和其他设备互相同步。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/">CentOS6.x挂载ntfs和xfs问题</a>
     </h1>
     
     <div class="post-meta">
@@ -358,73 +456,7 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
 </div>
     </div>
     <div class="read-more">
-      <a href="/post/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/">Linux主机时间不准问题</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-12-13" class="post-time">
-        2015-12-13
-      </time>
-      
-      <span class="more-meta"> 520 words </span>
-      <span class="more-meta"> 2 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**摘要：**linux主机时间过一段时间就会发现时间不对了，查阅资料这个大概是因为硬件时间和服务器时间不一致导致的。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/">linux解压rar及xshell的rz</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-12-05" class="post-time">
-        2015-12-05
-      </time>
-      
-      <span class="more-meta"> 234 words </span>
-      <span class="more-meta"> 1 min read </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**摘要：**有时会遇到要在linux下解压rar包，这就很不舒服，毕竟rar是win下不开源的东西，所以建议还是少用，另外rz这个小工具在使用xshell想上传个小东西的时候非常方便，大文件还是建议ftp或者弄个rsync。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/" class="read-more-link">Read more</a>
+      <a href="/post/linux/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/" class="read-more-link">Read more</a>
     </div>
     
   </div>

@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 30 Aug 2019 08:30:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JenkinsActiveChoices插件使用</title>
-      <link>https://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
+      <link>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 30 Aug 2019 08:30:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;之前使用过Jenkins的&lt;a href=&#34;https://wiki.jenkins.io/display/JENKINS/Active+Choices+Plugin&#34;&gt;Active Choices Plugin&lt;/a&gt;插件，概述下当时我想实现的效果&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;针对自定义选项支持多选&lt;/li&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>Jenkins使用GitSubmodule实现代码库调用</title>
-      <link>https://blog.gourds.site/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</link>
+      <link>https://blog.gourds.site/post/cicd/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</link>
       <pubDate>Wed, 29 Nov 2017 11:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://blog.gourds.site/post/cicd/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/</guid>
       <description>&lt;p&gt;**背景：**在实际项目构建中有时会用到调用其他代码库的情况，例如调用公共代码库和基础代码库，此时就可以用git submodule这个模块实现这个需求，git submodule可以将一个git仓库以目录的方式作为另一个git仓库的子目录。Jenkins用来做项目的持续集成，如果使用了Git Submodule,每次Jenkins更新版本库的时候还需要更新submodule的内容。&lt;/p&gt;</description>
     </item>
     
