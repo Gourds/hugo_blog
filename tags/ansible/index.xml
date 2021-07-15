@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/ansible/</link>
     <description>Recent content in Ansible on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 21 Aug 2019 13:38:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aws使用EMR对Dynamodb进行备份还原</title>

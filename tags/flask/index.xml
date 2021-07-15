@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/flask/</link>
     <description>Recent content in Flask on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 28 Aug 2019 21:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flask中Jinja2模板使用总结</title>

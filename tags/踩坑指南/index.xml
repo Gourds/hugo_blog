@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/</link>
     <description>Recent content in 踩坑指南 on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 11 Apr 2018 17:52:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fluentd使用中遇到的丢数据问题</title>

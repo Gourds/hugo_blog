@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/nosql/</link>
     <description>Recent content in Nosql on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Sat, 06 Aug 2016 00:14:09 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cassandra简单使用记录</title>

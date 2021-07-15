@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/nginx/</link>
     <description>Recent content in Nginx on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Sun, 16 Jul 2017 13:23:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nginx添加登录认证</title>

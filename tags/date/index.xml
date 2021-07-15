@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/date/</link>
     <description>Recent content in Date on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Wed, 20 Jan 2016 12:15:50 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/date/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS搭建NTP服务器</title>

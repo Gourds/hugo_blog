@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/grafana/</link>
     <description>Recent content in Grafana on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Tue, 28 Nov 2017 15:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>collectd使用exec模块进行自定义监控</title>

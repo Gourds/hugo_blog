@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/gitlab/</link>
     <description>Recent content in Gitlab on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Sat, 21 Apr 2018 19:33:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gitlab迁移升级记录</title>

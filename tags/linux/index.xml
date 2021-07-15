@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/linux/</link>
     <description>Recent content in Linux on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Mon, 24 Jul 2017 22:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rsync服务安装配置记录</title>

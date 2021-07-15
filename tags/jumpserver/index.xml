@@ -5,7 +5,6 @@
     <link>https://blog.gourds.site/tags/jumpserver/</link>
     <description>Recent content in Jumpserver on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Tue, 27 Nov 2018 15:00:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/jumpserver/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker方式安装Jumpserver</title>
