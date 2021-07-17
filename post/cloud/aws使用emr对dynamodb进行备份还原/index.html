@@ -26,7 +26,7 @@
   <meta name="description" content="最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由AutoScaling修改成了按需，当使用之前的HIVE脚本时出现了Read throughput should not be less than 1的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持On-Demand billing这个功能，接着又准备使用awscli命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的版本问题说明。
 " />
 
-  <meta name="keywords" content="Linux, Life, Book, Python" />
+  <meta name="keywords" content="Linux, Life, Book, Python, Gourds" />
 
 
 

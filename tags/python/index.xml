@@ -44,15 +44,6 @@
     </item>
     
     <item>
-      <title>python中的*与**用法</title>
-      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
-      <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>python2.6升级2.7记录</title>
       <link>https://blog.gourds.site/post/programming/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Fri, 12 Feb 2016 12:08:36 +0000</pubDate>
