@@ -11,6 +11,259 @@
     
     
     <item>
+      <title>书单</title>
+      <link>https://blog.gourds.site/book/</link>
+      <pubDate>Wed, 07 Jul 2021 19:23:57 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/book/</guid>
+      
+        <description>&lt;h2 id=&#34;阅读计划&#34;&gt;阅读计划&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;时间&lt;/th&gt;
+&lt;th&gt;书名&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2021.06-2021.xx&lt;/td&gt;
+&lt;td&gt;《少有人走的路》&lt;/td&gt;
+&lt;td&gt;在火车上断断续续的看，准备下周读完&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2021.05-2021.07.08&lt;/td&gt;
+&lt;td&gt;《三国演义》&lt;/td&gt;
+&lt;td&gt;晚上看，已经看完了&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《这些人，那些事》&lt;/td&gt;
+&lt;td&gt;这个搁置已久，名字很吸引我，很早以前看了一半，等上面的看完就再读一下&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《怪诞行为学》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《贫穷的本质》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《程序是怎么跑起来的》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《讲一个卖的好的故事》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;读万卷书&#34;&gt;读万卷书&lt;/h2&gt;
+&lt;h3 id=&#34;运维从业书单&#34;&gt;运维从业书单&lt;/h3&gt;
+&lt;h4 id=&#34;系统原理及优化&#34;&gt;系统原理及优化&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/24174119.html&#34;&gt;《网络是怎样连接的》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11676683.html&#34;&gt;《程序是怎么跑起来的》&lt;em&gt;日.矢泽久雄&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11506709.html#crumb-wrap&#34;&gt;《图解网络硬件》&lt;em&gt;日.三轮贤一&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《图解TCP/IP》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《图解HTTP》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/24185678.html&#34;&gt;《图解性能优化》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《编码：隐匿在计算机软硬件背后的语言》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《码农翻身：用故事给技术加点料》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《漫画算法：小灰的算法之旅》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《计算机网络》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Linux性能优化大师》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《LINUX内核:技术手册》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《深入理解LINUX内核》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;运维技能&#34;&gt;运维技能&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.amazon.cn/gp/product/B00U42VM7Y/ref=oh_aui_detailpage_o04_s00?ie=UTF8&amp;amp;psc=1&#34;&gt;《Git版本控制管理》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12052762.html&#34;&gt;《Jenkins权威指南》&lt;em&gt;美.John Ferguson Smart&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Vim实用技巧》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/22851836.html&#34;&gt;《精通正则表达式》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Shell脚本学习指南》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/13788381692.html&#34;&gt;《实用网络流量分析技术》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.amazon.cn/gp/product/B01AS1OS8A/ref=oh_aui_detailpage_o04_s00?ie=UTF8&amp;amp;psc=1&#34;&gt;《Wireshark网络分析的艺术》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《奔跑吧Ansible》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《即学即用Docker》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/25218250.html&#34;&gt;《Docker实践》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12126210.html&#34;&gt;《Docker经典实例》&lt;em&gt;美.Sebastien Goasguen&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11980349.html&#34;&gt;《Kubernetes权威指南》&lt;em&gt;第二版&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12267548.html&#34;&gt;《构建高可用Linux服务器》&lt;em&gt;于洪春&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/10663703.html&#34;&gt;《大话数据结构》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11791607.html&#34;&gt;《Redis实战》&lt;em&gt;美.Josiah L. Carlson&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11344355.html&#34;&gt;《Nginx高性能Web服务器详解》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/31219349856.html&#34;&gt;《基础设施即代码：云服务器管理 》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;架构及思想&#34;&gt;架构及思想&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/23447083.html&#34;&gt;《程序员数学思维修炼》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《数学之美》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12148832.html&#34;&gt;《算法图解》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12308233.html&#34;&gt;《可伸缩服务架构：框架与中间件》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《进化：运维技术变革与实践探索》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/24166002.html&#34;&gt;《系统架构:复杂系统的产品设计与开发》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11973579.html&#34;&gt;《SRE Google运维解密》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《DevOps实践》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《代码整洁之道》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12153873.html&#34;&gt;《编程风格：好代码的逻辑》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;分布式系统&#34;&gt;分布式系统&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/23851271.html&#34;&gt;《分布式服务框架原理与实践》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12234113.html&#34;&gt;《Kafka技术内幕》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《云原生分布式存储基石:etcd深入解析》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;开发语言-python&#34;&gt;开发语言-Python&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《与孩子一起学编程》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Head First Python》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《笨方法学Python》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11020898.html&#34;&gt;《Python标准库》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python Cookbook》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python自动化运维》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;web服务器&#34;&gt;Web服务器&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11444582.html&#34;&gt;《Web性能权威指南》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11594082.html&#34;&gt;《Flask Web开发》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Django之歌:简易》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/24101643.html&#34;&gt;《轻量级Django》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/24029839.html&#34;&gt;《Python Web开发实战》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12170351.html&#34;&gt;《移动Web前端高效开发实战》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《CSS网页设计入门》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;开发扩展&#34;&gt;开发扩展&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11944267.html&#34;&gt;《Go语言学习笔记》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12252845.html&#34;&gt;《Go Web编程》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Perl语言入门》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《使用Perl实现系统管理自动化》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Perl Cookbook》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Perl实例精解》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;软技能扩展&#34;&gt;软技能扩展&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《软技能 代码之外的生存指南》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《奔跑吧，程序员：从零开始打造产品、技术和团队》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《新未来简史：区块链、人工智能、大数据陷阱与数字化生活》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《程序员的英语》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;文学&#34;&gt;文学&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12152685.html&#34;&gt;《百年孤独》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12257413.html&#34;&gt;《原则》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11932116.html&#34;&gt;《S. 忒修斯之船》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《平凡的世界》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《围城》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《黄金时代》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《过于喧器的孤独》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《悲惨世界》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《呼啸山庄》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《傅雷家书》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《稻草人手记》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《老人与海》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《牛虻》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《活着》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《小王子》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《狐狸那时已是猎人》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《光明与磊落》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《哈利波特与94/3站台》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《群书治要》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《曾少年》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《每个人都会死，但我总以为自己不会》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《这些人，那些事》.吴念真&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《三国演义》.罗贯中&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《白夜行》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《菜根谭》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《呐喊》.鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《彷徨》.鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《阿Q正传》.鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《狂人日记》.鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《华盖集》.鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《热风》.鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《朝花夕拾》.鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《从你的全世界路过》.张嘉佳&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《茶花女》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《岛上书店》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《圣女的救济》.东野佳吾&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《生死场》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《追忆似水年华》【法】马塞尔·普鲁斯特&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;心理学哲学&#34;&gt;心理学|哲学&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《发展心理学》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《何为良好生活》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《走出唯一真理观》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《少有人走的路》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《亲密关系》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《怪诞行为学》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《人性的弱点》.戴尔.卡耐基&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《拖延心理学》.简.博克/莱诺拉.袁&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《影响力》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《乌合之众》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《自私的基因》【英】理查德.道金斯&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;兴趣读物&#34;&gt;兴趣读物&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《汽车是怎么跑起来的》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《考拉小巫的英语学习日记》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《民谣吉他：考级标准教程》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《很杂很杂的杂学知识》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《科学也反常：“科学咖啡馆”怪谈》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《思考的乐趣：Matrix67数学笔记》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/21021603.html&#34;&gt;《番茄工作法图解》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12247896.html&#34;&gt;《单核工作法图解》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://item.jd.com/11722416.html&#34;&gt;《八千万里云和月》&lt;em&gt;莫问剑&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《半小时漫画中国史》&lt;em&gt;混子.Kindle版&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《怎样讲好一个故事》&lt;em&gt;Kindle版&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《讲一个卖的好的故事》&lt;em&gt;Kindle版&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《浪潮之巅》&lt;em&gt;Kindle&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://book.douban.com/subject/30256364/?icn=index-latestbook-subject&#34;&gt;《精准表达》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《幻想故事集》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《贫穷的本质》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《股票作手回忆录》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《聪明的投资者》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《这本书能让你戒烟》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《黑天鹅》.纳西姆·尼古拉斯·塔勒布&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《灰犀牛:如何应对大概率危机》.米歇尔.渥克&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《极简经济学》.常青&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《君主论》.[意大利]马基雅维里&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《明朝那些事》.石悦&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《你一定爱读的极简欧洲史》.约翰.赫斯特&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《日本蜡烛图技术》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《史蒂夫.乔布斯传》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《投资中最简单的事》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《中国近代史》【中】蒋廷黻&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>《The Road Less Traveled》</title>
       <link>https://blog.gourds.site/post/book/theroadlesstraveled/</link>
       <pubDate>Sat, 17 Jul 2021 21:41:19 +0800</pubDate>
@@ -18,40 +271,67 @@
       <guid>https://blog.gourds.site/post/book/theroadlesstraveled/</guid>
       
         <description>&lt;p&gt;《少有人走的路：心智成熟之旅》 英文原版书名即 《The Road Less Traveled》。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;em&gt;感想&lt;/em&gt;：&lt;/em&gt;* 还是比较推荐的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;感想：&lt;/strong&gt; 还是比较推荐的。读这类书目的性还是很强的，年龄如果没有和心灵共同成长，就会给自己以及他人带来麻烦。&lt;code&gt;埃尔德里奇·克里佛的一句话：“你不能解决问题，你就会成为问题。”&lt;/code&gt;，书中很多观点对我很有启发。&lt;/p&gt;
 &lt;h4 id=&#34;以下为笔记整理&#34;&gt;以下为笔记整理&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;身体因快乐而结合，心灵因痛苦而靠近。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;没有真正的感同身受，我一直认为我是很富有同理心的，其实很多时候所谓的同理心只是自以为站在别人的立场，人的苦难只有经历过的人才知道。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;“真正的爱，不是单纯的给予，还包括适当的拒绝，及时的赞美，得体的批评，恰当的争论，必要的鼓励和有效的监督。”在这里，我所说的“无条件和有理智的爱”。&lt;/p&gt;
+&lt;p&gt;“真正的爱，不是单纯的给予，还包括适当的拒绝，及时的赞美，得体的批评，恰当的争论，必要的鼓励和有效的监督。”&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;不知何时起，好像不会了争论，对于拒绝也没有自己想象的那么潇洒。原以为不会发火是一种美德，现在看来可能是一种病&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;自律是解决人生问题最主要的工具，也是消除人生痛苦最重要的方法。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;很羡慕那些自律的人，往往我们会高估自己的能力，说要&lt;strong&gt;等&lt;/strong&gt;。。。&lt;strong&gt;就&lt;/strong&gt;。。。的，往往都不会去做。人的惰性使然，所以首先要正视自己的问题，认识到自己的懒惰，做事要从此刻就做，不要给自己任何借口。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我们要让我们自己，也要让我们的孩子认识到，人生的问题和痛苦具有非凡的价值。勇于承担责任，敢于面对困难，才能够使心灵变得健康。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;刚好看了几期《他乡的童年》，其中日本的教育模式对我很有启发。他们会故意把门做成不易关闭的，这样寒冷的时候如果不控制关门的动作，会使门口的同学冻着；会把水龙头设计成不易使用的，用来提醒孩子们，节约用水。还有很多，总之与我们的教育恰恰相反，他们会专门为孩子们的设置各种障碍，我深以为然，在我看来温暖的心灵坚韧的品格对比一帆风顺的童年显然更为重要。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;所谓自律，就是主动要求自己以积极的态度去承受痛苦，解决问题。自律有四个原则：推迟满足感、承担责任、忠于事实、保持平衡。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;这个解释是我第一次接触，不过也是到目前最为认同的。以前一直忽略了一点，在我看来也是最重要的一点，就是&lt;strong&gt;积极的态度&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“我是个有价值的人”——像这样对自我价值的认可，是心理健康的基本前提，也是培养自律的根基。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;这点很重要，我们要对自己的价值予以肯定，不然很可能因别人的一句话、一个动作、一个眼神而惶惶不安。不要把自己活成别人的复制品，对孩子也一样，要认识到孩子有自己的人生和意义。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;让上了小学的孩子正确对待家庭作业，是培养“先苦后甜”原则的最佳时机。当孩子满12岁时，应该已经无须父母敦促，就可以先做完功课，再去看电视。如果是这样，到了十五六岁以后，他们就会把这个原则内化为一种习惯，成为自己的一种常态。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;这个其实我觉得中国大部分家长做的都不错，不过这只是个例子，其实仔细观察生活中点点滴滴都是应用的场景&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;父母自己不遵守自律的原则，就不可能成为孩子的榜样，只会成为反面教材。
 父母习惯用严厉的体罚教训孩子，本质上不是教育，而是发泄自己心中的怨气和不满。&lt;/p&gt;
-&lt;p&gt;忽视问题的存在，反映出人们不愿推迟满足感的心理。&lt;/p&gt;
-&lt;p&gt;不能及时解决自己面临的问题，这些问题就会像山一样横亘在我们心中，阻碍心灵的成长和心智的成熟。&lt;/p&gt;
-&lt;p&gt;神经官能症患者为自己强加责任，人格失调症患者则不愿承担原本属于自己的责任。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;深以为然。我向来有个看法，就是&lt;code&gt;你有的你才能给予&lt;/code&gt;，比如爱、自律、习惯等等皆是如此。言传身教，在我看来身教最重要，而且也更容易被孩子接受。今天看到个短视频，讲的是一个父亲带孩子去吃自助餐，孩子拿了很多吃的，父亲告诉孩子不能浪费云云，然后孩子吃不完趁父亲离开的间隙，把食物倒在了垃圾桶，当父亲回来后告诉父亲已经吃完了，知子莫如父，父亲就让拿垃圾桶过来看，父亲此时却并没有说孩子任何不是，而是把垃圾筒的食物默默拿起来吃，孩子哭着阻止。我想对这个孩子而言这堂课应该很难忘却&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;忽视问题的存在，反映出人们不愿推迟满足感的心理。
+不能及时解决自己面临的问题，这些问题就会像山一样横亘在我们心中，阻碍心灵的成长和心智的成熟。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;与前面自律类似，积极的态度很重要&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;神经官能症患者为自己强加责任，人格失调症患者则不愿承担原本属于自己的责任。
+心理学界有一种公认的说法：“神经官能症患者让自己活得痛苦，人格失调症患者让别人活得痛苦。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;毫不夸张的说，这两种我应该都有。所以我可能是既让自己痛苦也让别人痛苦。。&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;在复杂多变的人生道路上，判断自己该为什么事和什么人负责，这是一个永远存在的难题。这个问题从未彻底解决过，因为我们必须不断地评估、再评估我们的责任所在。这个过程是痛苦的，我们必须完全自愿和主动地去进行这种反反复复的自我审视。这种自愿和主动不是天生的。&lt;/p&gt;
-&lt;p&gt;心理学界有一种公认的说法：“神经官能症患者让自己活得痛苦，人格失调症患者让别人活得痛苦。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;日当三省吾身，古人诚不欺我&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;埃尔德里奇·克里佛的一句话：“你不能解决问题，你就会成为问题。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;反省内心世界带来的痛苦，往往大于观察外在世界带来的痛苦，所以很多人逃避前者而选择后者。实际上，认识和忠于事实带给我们的非凡价值，将使痛苦显得微不足道。自我反省带来的快乐，甚至远远大于痛苦。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;不管个人还是组织，要想接受质疑和挑战，必须要真正允许别人来检视我们的地图。完全忠于事实的第三个要求，就是我们需要一辈子保持诚实。我们必须不断自我反省，确保我们的言语能够准确地表述出我们所认知的事实。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;在我看来，所谓心理治疗，其实就是 “鼓励说真话的游戏”。心理医生最重要的任务，就是让患者说出真话。长时间自欺欺人，使人的愧疚积聚，就会导致心理疾病。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
       
     </item>
@@ -4601,498 +4881,6 @@ docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -t &amp;lt;your containe
 &lt;a href=&#34;https://gitlab.com/help/raketasks/backup_restore.md&#34;&gt;【备份还原说明】&lt;/a&gt;
 &lt;a href=&#34;https://github.com/sund/auto-gitlab-backup&#34;&gt;【备份脚本说明】&lt;/a&gt;
 &lt;a href=&#34;https://blog.mallux.me/2017/02/27/gitlab/&#34;&gt;【mallux的Blog】&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>使用Docker搭建Jira和Confluence系统</title>
-      <link>https://blog.gourds.site/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Sat, 14 Apr 2018 15:47:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
-      
-        <description>&lt;p&gt;**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence&#34;&gt;【Github】&lt;/a&gt;上都有&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;**&lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt;&lt;strong&gt;是Atlassian公司出品的项目与事务跟踪工具，被广泛应用于缺陷跟踪、客户服务、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理等工作领域。
-&lt;/strong&gt;&lt;a href=&#34;https://www.atlassian.com/software/confluence&#34;&gt;Confluence&lt;/a&gt;&lt;strong&gt;是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。使用简单，但它强大的编辑和站点管理特征能够帮助团队成员之间共享信息、文档协作、集体讨论，信息推送。
-&lt;/strong&gt;&lt;a href=&#34;https://github.com/phacility/phabricator&#34;&gt;Phabricator&lt;/a&gt;**是一套基于Web的软件开发协作工具，一个Web应用用于帮助软件公司构建更好的软件。原是facebook员工开发的可视化代码评审工具,主要功能有CodeReview、代码托管、Bug跟踪、Task管理、Wiki文档等功能。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;环境准备&#34;&gt;环境准备&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;本地实践环境:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;OS：&lt;code&gt;CentOS Linux release 7.2.1511 (Core)&lt;/code&gt;
-Docker:&lt;code&gt;v1.13.1&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;启动Docker并将Docker添加至开机启动&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在Centos7上&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yum install docker -y
-systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; docker.service
-systemctl start docker.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;在Centos6及Amazon Linux上&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yum install docker -y
-chkconfig --add docker
-/etc/init.d/docker start
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Iptables及SELinux设置&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在Centos7上&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#SELinux disabled&lt;/span&gt;
-setenforce &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
-sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/^SELINUX=enforcing/SELINUX=disabled/g&amp;#39;&lt;/span&gt; /etc/sysconfig/selinux
-getenforce
-&lt;span class=&#34;c1&#34;&gt;#Iptables setup&lt;/span&gt;
-yum install iptables-services
-iptables -I  INPUT -p tcp --dport &lt;span class=&#34;m&#34;&gt;3306&lt;/span&gt; -j ACCEPT
-iptables -I  INPUT -p tcp --dport &lt;span class=&#34;m&#34;&gt;18080&lt;/span&gt; -j ACCEPT
-iptables -I  INPUT -p tcp --dport &lt;span class=&#34;m&#34;&gt;8090&lt;/span&gt; -j ACCEPT
-service iptables save
-&lt;span class=&#34;c1&#34;&gt;#Other Command(Don&amp;#39;t config)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#systemctl stop firewalld.service&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#systemctl disable firewalld.service&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;安装myql&#34;&gt;安装Myql&lt;/h3&gt;
-&lt;p&gt;使用官方镜像直接启动容器即可。不过使用Jira和Confluence时需要添加几个mysql启动配置,具体可参考&lt;a href=&#34;https://hub.docker.com/_/mysql/&#34;&gt;【Mysql镜像说明】&lt;/a&gt;，&lt;code&gt;packet&lt;/code&gt;及&lt;code&gt;log_file_size&lt;/code&gt;参数为应用要求防止大文件无法存储，&lt;code&gt;utf8&lt;/code&gt;是为了支持中文&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run --name mysql -p 3306:3306 -v /data/mysql/data:/var/lib/mysql -e &lt;span class=&#34;nv&#34;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;yourpasswd -idt mysql/mysql-server:latest --character-set-server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8 --collation-server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8_bin --max_allowed_packet&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;512M --innodb_log_file_size&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2GB
-&lt;span class=&#34;c1&#34;&gt;#docker run -it --rm docker.io/mysql/mysql-server --verbose --help&lt;/span&gt;
-docker ps -a &lt;span class=&#34;c1&#34;&gt;#查看容器状态&lt;/span&gt;
-docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it mysql /bin/bash &lt;span class=&#34;c1&#34;&gt;#进入容器，PS由于mysql启动后root用户监听localhost所以创建Database时需要进入容器内部&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;创建Jira数据库&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#mysql&amp;gt; show variables like &amp;#39;char%&amp;#39;;&lt;/span&gt;
-mysql&amp;gt; CREATE DATABASE jira_db CHARACTER SET utf8 COLLATE utf8_bin&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; grant ALL PRIVILEGES on jira_db.* to jira_user@&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt; Identified by &lt;span class=&#34;s2&#34;&gt;&amp;#34;yourpassword;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;mysql&amp;gt; SHOW CREATE DATABASE jira_db;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;mysql&amp;gt; flush privileges;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;创建Confluence数据库&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#mysql&amp;gt; show variables like &amp;#39;char%&amp;#39;;&lt;/span&gt;
-mysql&amp;gt; create database confluence CHARACTER SET utf8 COLLATE utf8_bin&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; grant ALL PRIVILEGES on confluence.* to confluence_user@&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt; Identified by &lt;span class=&#34;s2&#34;&gt;&amp;#34;yourpassword&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; SHOW CREATE DATABASE confluence&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; flush privileges&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;创建数据库备份用户&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mysql&amp;gt; grant &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; on *.* to backup_user@&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt; Identified by &lt;span class=&#34;s2&#34;&gt;&amp;#34;yourpassword&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; flush privileges&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;安装jira&#34;&gt;安装Jira&lt;/h3&gt;
-&lt;p&gt;使用官方镜像直接启动Jira容器。这个服务没有太多问题，注意端口是否监听正确及相关端口（数据库端口、应用端口）是否放开，这里的端口放开是指本机防火墙，外网防火墙不应放行数据库端口&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -p 18080:8080 -dit --name jira docker.io/cptactionhank/atlassian-jira
-&lt;span class=&#34;c1&#34;&gt;#Manage Application&lt;/span&gt;
-docker ps
-docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it jira /bin/bash
-docker stop jira
-docker start jira
-docker logs jira
-docker logs -f jira
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在浏览器访问&lt;code&gt;http://host_address:18080&lt;/code&gt;跟着提示安装即可。&lt;/p&gt;
-&lt;h3 id=&#34;安装confluence&#34;&gt;安装Confluence&lt;/h3&gt;
-&lt;p&gt;由于Jira使用的是MySQL方便起见Confluence也要用Mysql，但是使用官方镜像会有以下问题&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;a.官方的对于PostSQL支持可以,但无法直接连接mysql需要自行安装支持java连接mysql的组件
-b.中文Office在Confluence的预览查看会出现乱码情况，需要修改confluence连接参数及自行添加中文字体库
-c.官方使用了不受支持的&lt;code&gt;openjdk&lt;/code&gt;，需要更改jdk环境为&lt;code&gt;Oracle JDK&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;鉴于这种情况使用这个官方镜像就很不理智了，还希望使用docker，只能自己做一个镜像了&lt;/p&gt;
-&lt;h4 id=&#34;制作镜像&#34;&gt;制作镜像&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;准备工作&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; 下载&lt;code&gt;java-mysql&lt;/code&gt;
-可以从Mysql官方&lt;a href=&#34;https://dev.mysql.com/downloads/file/?id=476197&#34;&gt;【下载地址】&lt;/a&gt;进行下载解压，只需要其中的两个文件，按下面的目录结构存放就可以了
-&lt;strong&gt;Step 2:&lt;/strong&gt; 准备中文字体库
-这个可以从身边现成的windows机器上直接压缩拷贝过来就行了，windows下的字体存放在&lt;code&gt;C:\Windows\Fonts&lt;/code&gt;,然后按下面的目录结构存放就可以了，注意这个压缩包需要和我下面目录的一直，不然需要自行更改&lt;code&gt;Dockerfile&lt;/code&gt;文件,还有这个压缩包应该是解压完后是&lt;code&gt;Fonts/字体&lt;/code&gt;这样的结构。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;构建的目录结构&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;├── chinese-win.tar.gz
-├── Dockerfile
-├── entrypoint.sh
-├── java-mysql
-    ├── mysql-connector-java-5.1.46-bin.jar
-    └── mysql-connector-java-5.1.46.jar
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;构建文件及启动脚本
-主构建文件&lt;code&gt;Dockerfile&lt;/code&gt;如下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;FROM anapsix/alpine-java:8_jdk
-LABEL &lt;span class=&#34;s2&#34;&gt;&amp;#34;Author&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;arvon2014@gmail.com&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;Date&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;2018-04-11&amp;#34;&lt;/span&gt;
-ENV RUN_USER  daemon
-ENV RUN_GROUP daemon
-ENV CONFLUENCE_HOME /var/atlassian/application-data/confluence
-ENV CONFLUENCE_INSTALL_DIR   /opt/atlassian/confluence
-&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
-VOLUME &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_HOME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
-EXPOSE &lt;span class=&#34;m&#34;&gt;8090&lt;/span&gt;
-EXPOSE &lt;span class=&#34;m&#34;&gt;8091&lt;/span&gt;
-WORKDIR &lt;span class=&#34;nv&#34;&gt;$CONFLUENCE_HOME&lt;/span&gt;
-RUN apk update -qq &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; update-ca-certificates &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apk add ca-certificates wget curl openssh bash procps openssl perl ttf-dejavu tini&lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf /var/lib/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;apt,dpkg,cache,log&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;/ /tmp/* /var/tmp/* &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; mkdir -p  &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
-ARG &lt;span class=&#34;nv&#34;&gt;CONFLUENCE_VERSION&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;6.8.1
-ARG &lt;span class=&#34;nv&#34;&gt;DOWNLOAD_URL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;http://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_VERSION&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.tar.gz
-RUN curl -L --silent                  &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;DOWNLOAD_URL&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tar -xz --strip-components&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; -C &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-ADD chinese-win.tar.gz  /usr/share/fonts/
-&lt;span class=&#34;c1&#34;&gt;#RUN fc-cache -fv&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#ADD atlassian-confluence-6.8.1.tar.gz $CONFLUENCE_INSTALL_DIR/&lt;/span&gt;
-RUN chown -R &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;:&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_GROUP&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/ &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sed -i -e &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/-Xms\([0-9]\+[kmg]\) -Xmx\([0-9]\+[kmg]\)/-Xms\${JVM_MINIMUM_MEMORY:=\1} -Xmx\${JVM_MAXIMUM_MEMORY:=\2} \${JVM_SUPPORT_RECOMMENDED_ARGS} -Dconfluence.home=\${CONFLUENCE_HOME}/g&amp;#39;&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/bin/setenv.sh &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#    &amp;amp;&amp;amp; sed -i -e &amp;#39;/.*-Dconfluence.context.path=.*/a\CATALINA_OPTS=&amp;#34;-Dconfluence.document.conversion.fontpath=/usr/share/fonts/Fonts/ ${CATALINA_OPTS}&amp;#34;&amp;#39; ${CONFLUENCE_INSTALL_DIR}/bin/setenv.sh \&lt;/span&gt;
-    &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sed -i -e &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/port=&amp;#34;8090&amp;#34;/port=&amp;#34;8090&amp;#34; secure=&amp;#34;${catalinaConnectorSecure}&amp;#34; scheme=&amp;#34;${catalinaConnectorScheme}&amp;#34; proxyName=&amp;#34;${catalinaConnectorProxyName}&amp;#34; proxyPort=&amp;#34;${catalinaConnectorProxyPort}&amp;#34;/&amp;#39;&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/conf/server.xml
-COPY entrypoint.sh              /entrypoint.sh
-COPY java-mysql/mysql-connector-java-5.1.46.jar /opt/atlassian/confluence/confluence/WEB-INF/lib/mysql-connector-java-5.1.46.jar
-COPY java-mysql/mysql-connector-java-5.1.46-bin.jar /opt/atlassian/confluence/confluence/WEB-INF/lib/mysql-connector-java-5.1.46-bin.jar
-&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
-RUN chown -R &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;:&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_GROUP&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/
-&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
-CMD &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/entrypoint.sh&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;-fg&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-ENTRYPOINT &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/sbin/tini&amp;#34;&lt;/span&gt;, &lt;span class=&#34;s2&#34;&gt;&amp;#34;--&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#CMD tail -f /entrypoint.sh&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;启动脚本&lt;code&gt;entrypoint.sh&lt;/code&gt;如下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; -euo pipefail
-&lt;span class=&#34;c1&#34;&gt;# Setup Catalina Opts&lt;/span&gt;
-: &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_PROXYNAME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
-: &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_PROXYPORT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
-: &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_SCHEME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:=http&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
-: &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_SECURE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:=false&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
-: &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -DcatalinaConnectorProxyName=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_PROXYNAME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -DcatalinaConnectorProxyPort=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_PROXYPORT&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -DcatalinaConnectorScheme=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_SCHEME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_OPTS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -DcatalinaConnectorSecure=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CATALINA_CONNECTOR_SECURE&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; CATALINA_OPTS
-&lt;span class=&#34;c1&#34;&gt;# Start Confluence as the correct user&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;UID&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -eq &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
-    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;User is currently root. Will change directory ownership to &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_GROUP&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;, then downgrade permission to &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-    &lt;span class=&#34;nv&#34;&gt;PERMISSIONS_SIGNATURE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;stat -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;%u:%U:%a&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_HOME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;nv&#34;&gt;EXPECTED_PERMISSIONS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;id -u &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;:&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;:700
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;PERMISSIONS_SIGNATURE&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; !&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;EXPECTED_PERMISSIONS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
-        chmod -R &lt;span class=&#34;m&#34;&gt;700&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_HOME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;
-            chown -R &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_GROUP&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CONFLUENCE_HOME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;# Now drop privileges&lt;/span&gt;
-    &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; su -s /bin/bash &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;RUN_USER&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/bin/start-confluence.sh &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$@&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
-    &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$CONFLUENCE_INSTALL_DIR&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/bin/start-confluence.sh&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$@&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;构建镜像&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ls &lt;span class=&#34;c1&#34;&gt;#进入dockerfile同级目录&lt;/span&gt;
-docker build -t confluence-oracle-jdk:v6.8.1 . --no-cache &lt;span class=&#34;c1&#34;&gt;#构建镜像，这个需要一点时间，建议使用Tmux&lt;/span&gt;
-docker images &lt;span class=&#34;c1&#34;&gt;#查看镜像&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;启动confluence&#34;&gt;启动Confluence&lt;/h4&gt;
-&lt;p&gt;主要问题一般会出在构建阶段，如果启动失败可以尝试注释&lt;code&gt;Dockerfile&lt;/code&gt;的启动命令，然后进入容器手动调试&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -v /data/confluence:/var/atlassian/application-data/confluence --name&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;confluence&amp;#34;&lt;/span&gt; -d -p 8090:8090 -p 8091:8091 confluence-oracle-jdk:v6.8.1 &lt;span class=&#34;c1&#34;&gt;#调试期间可以加上 --rm参数&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#Manage Confluence&lt;/span&gt;
-docker ps
-docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it confluence /bin/bash
-docker stop confluence
-docker start confluence
-docker logs confluence
-docker logs -f confluence
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;容器启动后跟Jira一样检查端口和防火墙配置,确认没问题后，在浏览器访问&lt;code&gt;http://host_address:8090&lt;/code&gt;跟着提示安装，&lt;strong&gt;注意&lt;/strong&gt;在web界面连接数据库的时候需要选择&lt;code&gt;String&lt;/code&gt;模式，然后按照如下参数填写,如果没来得及修改，可以在&lt;code&gt;/data/confluence/confluence.cfg.xml&lt;/code&gt;这个配置里修改重启。另外如需链接Jira在最后根据提示选择就可以了，别的就没啥了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;jdbc:mysql://host_address:3306/confluence?sessionVariables&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;tx_isolation&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;READ-COMMITTED&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;useSSL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;false&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;useUnicode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;true&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;characterEncoding&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8
-&lt;span class=&#34;c1&#34;&gt;# Answer：https://confluence.atlassian.com/confkb/confluence-fails-to-start-and-throws-mysql-session-isolation-level-repeatable-read-is-no-longer-supported-error-241568536.html&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;数据备份&#34;&gt;数据备份&lt;/h3&gt;
-&lt;p&gt;奉上一个拙劣的脚本，还能使就懒的改了,对了在非&lt;code&gt;Amazon Linux&lt;/code&gt;上，传S3记得装&lt;code&gt;pip install awscli --upgrade&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#* * 3 * * sh /data/arvon/scripts&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ipaddr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;10.0.1.7&amp;#39;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;backup_user&amp;#39;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;yourpasswd&amp;#39;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;dest_dir&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/data/mysql_data_bak&amp;#39;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;###&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; dump_db&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;all_area&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;show databases&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; mysql -h&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ipaddr&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -u&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -p&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;egrep -v &lt;span class=&#34;s2&#34;&gt;&amp;#34;information_schema|mysql|performance_schema|Database|sys&amp;#34;&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;
-mkdir &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;dest_dir&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; -p
-&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; area in &lt;span class=&#34;nv&#34;&gt;$all_area&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-    mysqldump -h&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ipaddr&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -u&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -p&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; --default-character-set&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8 --comments&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;FALSE --tables --no-create-info&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;FALSE --add-drop-table&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;TRUE --no-data&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;FALSE &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;  &amp;gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;dest_dir&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;/&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;_&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.sql
-    &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;dest_dir&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; tar czvf &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;_&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.sql.tar.gz &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;_&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.sql &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;_&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.sql
-    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[`date +%F_%R`] [INFO] Now the `date +%F`_&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;.sql have been backuped&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /var/log/mysql_back.log
-&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; load_db&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#usage:load_db 2017-05-23&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;time_want&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$1&lt;/span&gt;
-mysql -h&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ipaddr&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -u&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -p&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; --default-character-set&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8 --execute&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;DROP DATABASE IF EXISTS  &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql -h&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ipaddr&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -u&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -p&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; --default-character-set&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8 --execute&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;CREATE DATABASE IF NOT EXISTS  &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; DEFAULT CHARACTER SET utf8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql -h&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ipaddr&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -u&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; -p&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; --default-character-set&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8 --database&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &amp;lt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;dest_dir&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;time_want&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;_&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;area&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;.sql&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; upload_s3&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt;
-&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;AWS_ACCESS_KEY_ID&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;xxxx
-&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;AWS_SECRET_ACCESS_KEY&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;xxxx
-aws --region&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;cn-northwest-1 s3 cp  /data/mysql_data_bak/&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;  s3://itbackups/confluence-jira-mysql/&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;date +%F&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;  --recursive
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-
-dump_db
-upload_s3
-&lt;span class=&#34;c1&#34;&gt;#load_db 2017-05-23&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
       
     </item>
     
