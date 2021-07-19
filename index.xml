@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Jul 2021 21:41:19 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jul 2021 09:34:38 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,8 @@
       
       <guid>https://blog.gourds.site/book/</guid>
       
-        <description>&lt;h2 id=&#34;阅读计划&#34;&gt;阅读计划&lt;/h2&gt;
+        <description>&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=330 height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=171254&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;阅读计划&#34;&gt;阅读计划&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -107,12 +108,13 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11791607.html&#34;&gt;《Redis实战》【美】Josiah L. Carlson&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11344355.html&#34;&gt;《Nginx高性能Web服务器详解》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/31219349856.html&#34;&gt;《基础设施即代码：云服务器管理 》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《持续交付2.0》【中】乔梁&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;架构及思想&#34;&gt;架构及思想&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/23447083.html&#34;&gt;《程序员数学思维修炼》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《数学之美》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《数学思维》【英】郑乐隽&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12148832.html&#34;&gt;《算法图解》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12308233.html&#34;&gt;《可伸缩服务架构：框架与中间件》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《进化：运维技术变革与实践探索》&lt;/a&gt;&lt;/li&gt;
@@ -219,13 +221,17 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《何为良好生活》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《走出唯一真理观》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《少有人走的路》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《亲密关系》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《亲密关系》【美】罗兰·米勒 (Rowland S. Miller)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《爱的艺术》【美】埃里希·弗罗姆&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《怪诞行为学》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《人性的弱点》【美】戴尔.卡耐基&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《拖延心理学》【美】简.博克/莱诺拉.袁&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《影响力》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《乌合之众》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《自私的基因》【英】理查德.道金斯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《通向哲学的后楼梯》【德】威廉.魏施德&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《自控力》【美】凯利·麦格尼格尔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《沟通的艺术》 【美】罗纳德·阿德勒/拉塞尔·普罗克特&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;兴趣读物&#34;&gt;兴趣读物&lt;/h3&gt;
@@ -235,7 +241,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《民谣吉他：考级标准教程》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《很杂很杂的杂学知识》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《科学也反常：“科学咖啡馆”怪谈》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《思考的乐趣：Matrix67数学笔记》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《思考的乐趣：Matrix67数学笔记》【中】顾森&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://product.dangdang.com/21021603.html&#34;&gt;《番茄工作法图解》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/12247896.html&#34;&gt;《单核工作法图解》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://item.jd.com/11722416.html&#34;&gt;《八千万里云和月》&lt;/a&gt;&lt;/li&gt;
@@ -257,8 +263,78 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《你一定爱读的极简欧洲史》【澳】约翰.赫斯特&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《日本蜡烛图技术》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《史蒂夫.乔布斯传》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《投资中最简单的事》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《中国近代史》【中】蒋廷黻&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; [《中国古代文化常识》【中】王力]&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《当我跑步时我在谈些什么》【日】村上春树&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《让时间陪你慢慢变富》【中】李笑来&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《指数基金投资指南》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《投资中最简单的事》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《肠子的小心思》【德】朱莉娅·恩德斯 著/吉尔·恩德斯 绘&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《神逻辑：不讲道理的人怎么总有理！》【美】阿里·阿莫萨维&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《火焰中的秘密》【德】延斯·森特根&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《猿猴的把戏》【意】达里奥·马埃斯特里皮埃里 &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《大脑勇士》【美】丹尼尔·亚蒙(Danie &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《柏林日记》【美】威廉.夏伊勒 &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《伯罗奔尼撒战争》【美】唐纳德·卡根&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《不平等社会》【美】沃尔特·沙伊德尔（Walter Scheidel）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《战国歧途》【中】刘勃&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《司马迁的记忆之野》【中】刘勃&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《大脑勇士》【美】丹尼尔·亚蒙/塔娜·亚蒙&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《连接组》【美】承现峻&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Bitbucket 迁移缺失commit</title>
+      <link>https://blog.gourds.site/post/problems/bitbucket_migration_error/</link>
+      <pubDate>Mon, 19 Jul 2021 09:34:38 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/problems/bitbucket_migration_error/</guid>
+      
+        <description>&lt;p&gt;&lt;strong&gt;概括：&lt;/strong&gt; 迁移bitbucket后，发现部分分支commit缺失。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;迁移过程：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对数据目录进行初次同步。使用命令&lt;code&gt;/bin/rsync -auvP --delete -e &amp;quot;ssh -p 10022&amp;quot; /source/dir/ root@dest.host:/dest/dir/ &amp;gt;&amp;gt; /tmp/rsync_rst.log 2&amp;gt;&amp;amp;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;正式迁移开始前停止老Bitbucket的服务&lt;/li&gt;
+&lt;li&gt;对数据目录进行增量同步（由于操作失误忘记加&lt;code&gt;--delete&lt;/code&gt;参数)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;分析：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;通过google发现&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserverkb/missing-commits-in-bitbucket-after-a-filesystem-migration-987137563.html&#34;&gt;官方文档&lt;/a&gt;
+部分解释如下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While running this sequence of commands, the &amp;ndash;delete rsync option is not used so only changes to existing files and new files are synchronized. However, files that have been copied during the earlier rsync are not deleted and this causes unexpected conflicts in the Git repositories.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;At certain intervals, Bitbucket runs a git pack-refs --all (see git-pack-refs for git-pack-refs documentation) causing the files containing the refs to the tip of the branch to be packed to the $REPOSITORY_HOME/packed-refs file.
+
+The file containing the refs, stored as $REPOSITORY_HOME/refs/heads/feature/&amp;lt;branch_name&amp;gt;, is emptied as part of this process.
+
+
+
+If the first rsync has been performed before the pack-refs ran and again after that without the --delete option, both the $REPOSITORY_HOME/refs/heads/&amp;lt;branch_name&amp;gt; and the $REPOSITORY_HOME/packed-refs file will be present in the target filesystem.
+
+When that happens, git recognizes the hash in $REPOSITORY_HOME/refs/heads/&amp;lt;branch_name&amp;gt; as the tip of the branch but this is now outdated and leads to what is described as &amp;#34;missing commits&amp;#34;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;解决：&lt;/strong&gt; 删除原同步内容，重新同步。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tips：&lt;/strong&gt; 无谓的尝试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;期间尝试手动使用&lt;code&gt;touch&lt;/code&gt;命令更改最近修改的时间戳以使得rsync重新进行同步，结果确实对这部分内容进行了重传，不过问题依旧&lt;/li&gt;
+&lt;li&gt;又尝试使用rsync的&lt;code&gt;--checksum&lt;/code&gt;指令进行md5校验重传（rsync默认是按照时间戳及文件大小），不过考虑到数据量较大，就没有尝试。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
@@ -1755,10 +1831,10 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
     
     <item>
       <title>python中的*与**用法</title>
-      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
+      <link>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
       <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
       
-      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
+      <guid>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
       
         <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;
 &lt;h3 id=&#34;对于函数调用中的和&#34;&gt;对于函数调用中的&lt;code&gt;*&lt;/code&gt;和&lt;code&gt;**&lt;/code&gt;&lt;/h3&gt;
@@ -4121,12 +4197,53 @@ bitbucket:
 &lt;li&gt;数据库：&lt;code&gt;which contains data about pull requests, comments, users, groups, permissions, and so on.&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;关于备份官方提供了3种方式&lt;/p&gt;
-&lt;p&gt;|类型|不停机备份|自定义备份|客户端备份|
-|&amp;mdash;|&amp;mdash;|&amp;mdash;|
-|概述|使用内部一致性数据库快照和数据块级别文件系统快照进行不停机备份|使用增量备份及云供应商的快照功能|使用外部程序锁定bitbucker服务器实例，并以独立于供应商的格式备份其整个主目录和数据库。使用简单但不适用与高可用环境|
-|高可用|不影响服务|不可用时间短，只需要几秒钟短暂锁定存储桶就可以创建一致的快照|不可用时间长。bitbucket在整个备份过程中被锁定，这可能需要几分钟或更长时间，特别是在大型组织中|
-|版本支持|Bitbucket 4.8+|Bitbucket 4.0+ &amp;amp;&amp;amp; Stash 2.12+|Bitbucket 4.0+ &amp;amp;&amp;amp; Stash2.7+|
-|文档|&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/using-bitbucket-zero-downtime-backup-829920023.html&#34;&gt;【DOC】&lt;/a&gt;|&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/using-bitbucket-server-diy-backup-776640056.html&#34;&gt;【DOC】&lt;/a&gt;|&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/using-the-bitbucket-server-backup-client-776640064.html&#34;&gt;【DOC】&lt;/a&gt;|&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;不停机备份&lt;/th&gt;
+&lt;th&gt;自定义备份&lt;/th&gt;
+&lt;th&gt;客户端备份&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;概述&lt;/td&gt;
+&lt;td&gt;使用内部一致性数据库快照和数据块级别文件系统快照进行不停机备份&lt;/td&gt;
+&lt;td&gt;使用增量备份及云供应商的快照功能&lt;/td&gt;
+&lt;td&gt;使用外部程序锁定bitbucker服务器实例，并以独立于供应商的格式备份其整个主目录和数据库。使用简单但不适用与高可用环境&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;高可用&lt;/td&gt;
+&lt;td&gt;不影响服务&lt;/td&gt;
+&lt;td&gt;不可用时间短，只需要几秒钟短暂锁定存储桶就可以创建一致的快照&lt;/td&gt;
+&lt;td&gt;不可用时间长。bitbucket在整个备份过程中被锁定，这可能需要几分钟或更长时间，特别是在大型组织中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;版本支持&lt;/td&gt;
+&lt;td&gt;Bitbucket 4.8+&lt;/td&gt;
+&lt;td&gt;Bitbucket 4.0+ &amp;amp;&amp;amp; Stash 2.12+&lt;/td&gt;
+&lt;td&gt;Bitbucket 4.0+ &amp;amp;&amp;amp; Stash2.7+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;文档&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/using-bitbucket-zero-downtime-backup-829920023.html&#34;&gt;【DOC】&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/using-bitbucket-server-diy-backup-776640056.html&#34;&gt;【DOC】&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/using-the-bitbucket-server-backup-client-776640064.html&#34;&gt;【DOC】&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;一些报错&#34;&gt;一些报错&lt;/h3&gt;
+&lt;p&gt;报错如下 // 其实是警告，看着烦&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Tue Jul 13 06:59:00 GMT 2021 WARN: Establishing SSL connection without server&amp;#39;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&amp;#39;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &amp;#39;false&amp;#39;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;修改配置文件中jdbc的连接参数即可&lt;code&gt;String url = &amp;quot;jdbc:mysql://localhost:3306/testDB?useSSL=false&amp;quot;;&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://bitbucket.org/atlassian/docker-atlassian-bitbucket-server&#34;&gt;【官方Docker参考】&lt;/a&gt;
 &lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/data-recovery-and-backups-776640050.html&#34;&gt;【官方备份说明】&lt;/a&gt;&lt;/p&gt;</description>
@@ -4249,204 +4366,6 @@ etcdctl user list
 &lt;p&gt;&lt;a href=&#34;https://github.com/coreos/etcd/tree/master/etcdctl&#34;&gt;【Etcd项目地址】&lt;/a&gt;
 &lt;a href=&#34;https://github.com/coreos/etcd/blob/master/Documentation/dev-guide/api_grpc_gateway.md&#34;&gt;【Etcd API】&lt;/a&gt;
 &lt;a href=&#34;http://www.10tiao.com/html/689/201612/2651576771/2.html&#34;&gt;【Etcd对比介绍】&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Gitlab迁移升级记录</title>
-      <link>https://blog.gourds.site/post/linux/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sat, 21 Apr 2018 19:33:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/linux/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
-      
-        <description>&lt;p&gt;之前写了gitlab的安装文档，目的是为了为迁移做准备，现在记录一下测试迁移的过程。现在需要将编译安装的&lt;code&gt;7.13.4&lt;/code&gt;版本的gitlab升级至&lt;code&gt;10.6.0&lt;/code&gt;并采用docker的方式运行。经查阅官方Docker&lt;a href=&#34;https://hub.docker.com/r/gitlab/gitlab-ce/tags/&#34;&gt;【版本】&lt;/a&gt;是&lt;code&gt;9.5.1-10.7.0&lt;/code&gt;。而在Github上&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn版本】&lt;/a&gt;是&lt;code&gt;v6.1-v10.6.4&lt;/code&gt;。另外
-还有Gitlab的&lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce/tree/master/doc/update&#34;&gt;【官方升级说明】&lt;/a&gt;,这个说明里面都是临近的版本升级说明，但并没有介绍大跨度升级的详细内容。最后决定采用github上提供的升级建议。记录说明如下&lt;/p&gt;
-&lt;h3 id=&#34;迁移升级步骤&#34;&gt;迁移升级步骤&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;思路：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;**概览：**从7.13.4&amp;ndash;&amp;gt;8.0.3&amp;ndash;&amp;gt;10.6.0&lt;/p&gt;
-&lt;p&gt;A. 先迁移至同版本的Docker容器中
-B. 利用Docker易于部署的特性将Gitlab升级至指定版本
-C. 使用了&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn提供的方法】&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;拉取Docker版本的&lt;code&gt;7.13.4&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;docker pull sameersbn/gitlab:7.13.4
-&lt;span class=&#34;c1&#34;&gt;#docker pull sameersbn/gitlab:latest&lt;/span&gt;
-&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; docker-gitlab &lt;span class=&#34;c1&#34;&gt;#获取对应版本docker compose配置&lt;/span&gt;
-git clone https://github.com/sameersbn/docker-gitlab.git
-&lt;span class=&#34;c1&#34;&gt;#docker build --tag=$USER/gitlab .&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;使用docker-compose启动gitlab&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;pip install docker-compose
-&lt;span class=&#34;c1&#34;&gt;#进入docker compose同级目录执行up命令&lt;/span&gt;
-docker-compose up -d
-&lt;span class=&#34;c1&#34;&gt;#docker-compose down&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;还原gitlab到7.13.4&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker ps -a
-cp /gitlab_bak/1523732410_gitlab_backup.tar  /srv/docker/gitlab/gitlab/backups/ &lt;span class=&#34;c1&#34;&gt;#copy 备份数据到docker里backup目录&lt;/span&gt;
-docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it docker-gitlab_gitlab_1 /bin/bash &lt;span class=&#34;c1&#34;&gt;#进入容器&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#容器内部使用了supervisor 先停止gitlab服务&lt;/span&gt;
-supervisor&amp;gt; stop sidekiq
-sidekiq: stopped
-supervisor&amp;gt; stop unicorn
-unicorn: stopped
-&lt;span class=&#34;c1&#34;&gt;#修改权限&lt;/span&gt;
-chown -R git.git /home/git/
-chown -R git.git /home/git/data/backups/1525501269_gitlab_backup.tar
-chown -R git.git /var/log/gitlab/gitlab-shell/gitlab-shell.log
-su git
-&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
-bundle &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; rake gitlab:check &lt;span class=&#34;nv&#34;&gt;SANITIZE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#确认状态无误，导入需确认API和Running状态为关闭&lt;/span&gt;
-bundle &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; rake gitlab:backup:restore &lt;span class=&#34;nv&#34;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;production &lt;span class=&#34;c1&#34;&gt;#还原操作&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;至此还原已经完成了，开始升级操作&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#每次升级之后做一下备份&lt;/span&gt;
-sudo -u git -H bundle &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; rake gitlab:backup:create &lt;span class=&#34;nv&#34;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;production
-&lt;span class=&#34;c1&#34;&gt;#使用compose更新版本&lt;/span&gt;
-git branch
-git checkout .
-git  clean -df
-git checkout v8.0.3
-mv docker-compose.yml.dist docker-compose.yml
-docker-compose up -d
-&lt;span class=&#34;c1&#34;&gt;#backup again&lt;/span&gt;
-docker-compose down
-git checkout 10.6.0
-docker-compose up -d
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;特别说明&#34;&gt;特别说明&lt;/h3&gt;
-&lt;p&gt;我这里最后并没有升级至10.6.0，最后决定使用原版本只是迁移到docker有两点需要注意&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1.数据目录权限如果这个有问题会出现能看到repository的commit等信息，却提示repository不存在&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#更改repository所在目录的权限即可&lt;/span&gt;
-chown -R git.git /home/git/data/repositories
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;2.迁移key,将原gitlab的auth key迁移到新gitlab的auth key位置，注意command&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#提示：可以先手动创建一个就知道该如何写这个command了
-原key：/var/opt/gitlab/.ssh/authorized_keys
-command=&amp;#34;/opt/gitlab/embedded/service/gitlab-shell/bin/gitlab-shell key-58&amp;#34;,no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty ssh-rsa A6dKlEgfVl3G16f5v test@bogon
-现key：/home/git/data/.ssh/authorized_keys
-command=&amp;#34;/home/git/gitlab-shell/bin/gitlab-shell key-59&amp;#34;,no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty ssh-rsa A6dKlEgfVl3G16f5v test@bogon
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;官方建议&#34;&gt;官方建议&lt;/h3&gt;
-&lt;p&gt;官方提供了3种Gitlab的安装方法，根据安装方法的不同需要选取不同的迁移升级策略。三种安装方式分别如下*【除了源码安装其他的安装方法在我之前的一篇&lt;a href=&#34;http://arvon.top/2018/04/14/Gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/&#34;&gt;博客&lt;/a&gt;里已经记录了】*&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Omnibus Packages&lt;/li&gt;
-&lt;li&gt;Source installation&lt;/li&gt;
-&lt;li&gt;Docker installation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;关于如何还原备份&lt;/strong&gt;&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#restore&#34;&gt;【文档地址】&lt;/a&gt;
-主要参照官方吧，我这里不再详细说了。简单记录一点我看到的
-从9.1.0版本开始满足以下条件可以实现升级到新版本而不必停止Gitlab服务&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;只能一次升级一个小版本，如：9.1到9.2，不能9.1到9.3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;从9.2.开始备份文件的时间戳发生了变化&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In GitLab 9.2 the timestamp format was changed from EPOCH_YYYY_MM_DD to EPOCH_YYYY_MM_DD_GitLab version, for example 1493107454_2017_04_25 would become 1493107454_2017_04_25_9.1.0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;其他意见&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;采用Omnibus Packages时&lt;a href=&#34;https://docs.gitlab.com/omnibus/update/README.html&#34;&gt;【文档】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;采用Source installation时&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#restore-for-installation-from-source&#34;&gt;【文档】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;故障排除&#34;&gt;故障排除&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;官方还原文档&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#restore&#34;&gt;【建议】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;参考官方&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#troubleshooting&#34;&gt;【Troubleshooting】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;合理运用命令&lt;code&gt;bundle exec rake gitlab:check SANITIZE=true&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
       
     </item>
     

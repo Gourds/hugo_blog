@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Gourds</title>
+  <title>python中的*与**用法 - Gourds</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Gourds simple site." />
+  <meta name="description" content="在Python中经常会见到以下一些用法，如在函数调用中fun1(*vars)|fun2(**vars),以及在函数定义中如def fun1(*param) or def fun2(**param)这些形式。下面就针对这些情况使用具体例子进行一下说明。
+" />
+
   <meta name="keywords" content="Linux, Life, Book, Python, Gourds" />
 
 
@@ -34,8 +36,8 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Gourds" />
+<link rel="canonical" href="https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/" />
+
 
 
 
@@ -58,15 +60,20 @@
 
 
 
-<meta property="og:title" content="Gourds" />
-<meta property="og:description" content="Gourds simple site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.gourds.site/" />
+<meta property="og:title" content="python中的*与**用法" />
+<meta property="og:description" content="在Python中经常会见到以下一些用法，如在函数调用中fun1(*vars)|fun2(**vars),以及在函数定义中如def fun1(*param) or def fun2(**param)这些形式。下面就针对这些情况使用具体例子进行一下说明。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-08-25T21:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-25T21:00:00+00:00" />
 
-<meta itemprop="name" content="Gourds">
-<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Gourds"/>
-<meta name="twitter:description" content="Gourds simple site."/>
+<meta itemprop="name" content="python中的*与**用法">
+<meta itemprop="description" content="在Python中经常会见到以下一些用法，如在函数调用中fun1(*vars)|fun2(**vars),以及在函数定义中如def fun1(*param) or def fun2(**param)这些形式。下面就针对这些情况使用具体例子进行一下说明。"><meta itemprop="datePublished" content="2019-08-25T21:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-08-25T21:00:00+00:00" />
+<meta itemprop="wordCount" content="422">
+<meta itemprop="keywords" content="Python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python中的*与**用法"/>
+<meta name="twitter:description" content="在Python中经常会见到以下一些用法，如在函数调用中fun1(*vars)|fun2(**vars),以及在函数定义中如def fun1(*param) or def fun2(**param)这些形式。下面就针对这些情况使用具体例子进行一下说明。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -244,7 +251,7 @@ if (!doNotTrack) {
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -336,1150 +343,275 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
-  
-  
+          <article class="post bg-white">
     
-  
-  
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">python中的*与**用法</h1>
       
-      <a class="post-link" href="/post/linux/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/">linux解压rar及xshell的rz</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2019-08-25" class="post-time">
+          2019-08-25
+        </time>
+        
+        <span class="more-meta"> 约 422 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2015-12-05" class="post-time">
-        2015-12-05
-      </time>
-      
-      <span class="more-meta"> 约 234 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      <p>**摘要：**有时会遇到要在linux下解压rar包，这就很不舒服，毕竟rar是win下不开源的东西，所以建议还是少用，另外rz这个小工具在使用xshell想上传个小东西的时候非常方便，大文件还是建议ftp或者弄个rsync。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/">cp和chown的几个好用选项</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-11-14" class="post-time">
-        2015-11-14
-      </time>
-      
-      <span class="more-meta"> 约 1477 字 </span>
-      <span class="more-meta"> 预计阅读 3 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**摘要：**生产环境中对权限什么的要求是很严格的，而使用root用户进行操作，难免会变更权限信息，修改权限就变得十分有必要，而以下的选线都是很实用的。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/">消息队列介绍及常用MQ对比</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-11-05" class="post-time">
-        2015-11-05
-      </time>
-      
-      <span class="more-meta"> 约 1744 字 </span>
-      <span class="more-meta"> 预计阅读 4 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h3 id="什么是消息队列">什么是消息队列</h3>
-<p><strong>概述：</strong> 消息队列（Message Queue）一般大家习惯简称为MQ。主要特点为异步处理,也就是说消息的发送者和接收者不需要同时与消息队列交互。消息会保存在队列中，直到接收者取回它。消息队列和信号相比，能够传递更多的信息。与管道相比，消息队列提供了有格式的数据。</p>
-<blockquote>
-<p><strong>举一个直观的小例子</strong>
-姐姐小红希望弟弟小明多读书，经常拿好书给小明看。之前的方式是先问小明什么时候有空，然后把书给小明送过去，监督小明把书读完。后来两人都觉得太麻烦，就换了一个方式。
-买了一个书架，小红一有好书就放到书架上，小明看到书架上有书就取着读。这里，书架其实就是一个消息队列，小红就是生产者，小明就是消费者。
-这样的<strong>好处</strong>是：
-1.小红想给小明书的时候不必问小明什么时候有时间，直接把书放在书架上就行了，小红和小明的时间都更自由
-2.小红相信小明的读书自觉和读书能力，不必亲眼观察小明的读书过程，小红只要做一个放书的动作，很节省时间。
-3.当明天有另一个爱读书的小伙伴小强加入，小红仍旧只需要把书放到书架上，小明和小强从书架上取书即可
-4.书在书架上，小明读的慢就晚点看完，读的快就早点看完，小明的压力会小点。
-对应可以总结为：<strong>解耦</strong>、<strong>提速</strong>、<strong>广播</strong>、<strong>削峰</strong>
-相应<strong>缺点</strong>就是：
-1.引入复杂度
-2.暂时的不一致性
-**PS：**以上内容引自知乎祁达方</p>
-</blockquote>
-    </div>
-    <div class="read-more">
-      <a href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-    <nav class="pagination">
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
       <ul>
-
-      
-      
-      <li><a href="/">««</a></li>
-      
-
-      
-      
-      <li><a href="/page/27/">«</a></li>
-      
-
-      
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/22/">
-              22
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/23/">
-              23
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/24/">
-              24
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/25/">
-              25
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/26/">
-              26
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/27/">
-              27
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="active">
-            <a href="/page/28/">
-              28
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/29/">
-              29
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/30/">
-              30
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/31/">
-              31
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/32/">
-              32
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/33/">
-              33
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/34/">
-              34
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-      
-      
-      <li><a href="/page/29/">»</a></li>
-      
-
-      
-      
-      <li><a href="/page/41/">»»</a></li>
-      
-
+        <li><a href="#对于函数调用中的和">对于函数调用中的<code>*</code>和<code>**</code></a></li>
+        <li><a href="#对于函数定义中的和">对于函数定义中的<code>*</code>和<code>**</code></a></li>
+        <li><a href="#扩展">扩展</a></li>
       </ul>
-    </nav>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>在Python中经常会见到以下一些用法，如在函数调用中<code>fun1(*vars)</code>|<code>fun2(**vars)</code>,以及在函数定义中如<code>def fun1(*param)</code> or <code>def fun2(**param)</code>这些形式。下面就针对这些情况使用具体例子进行一下说明。</p>
+<h3 id="对于函数调用中的和">对于函数调用中的<code>*</code>和<code>**</code></h3>
+<p>主要功能是一个函数解压传入的过程</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#demo1  * list</span>
+<span class="n">demo_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">demo1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a+b+c=&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">+</span><span class="n">c</span><span class="p">))</span>
+<span class="c1">#列表前面加星号作用是将列表解开成两个独立的参数，传入函数</span>
+<span class="n">demo1</span><span class="p">(</span><span class="o">*</span><span class="n">demo_list</span><span class="p">)</span>
+<span class="c1">#a+b+c=6</span>
+
+
+<span class="c1">#demo2 ** dict</span>
+<span class="n">demo_dict</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;k1&#39;</span><span class="p">:{</span><span class="s1">&#39;v1&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span>
+            <span class="s1">&#39;k2&#39;</span><span class="p">:{</span><span class="s1">&#39;v2&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">},</span>
+            <span class="s1">&#39;k3&#39;</span><span class="p">:{</span><span class="s1">&#39;v3&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+             <span class="p">}</span>
+<span class="k">def</span> <span class="nf">demo2</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span><span class="n">k2</span><span class="p">,</span><span class="n">k3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span><span class="n">k2</span><span class="p">,</span><span class="n">k3</span><span class="p">)</span>
+<span class="c1">#字典前面加两个星号，是将字典解开成独立的元素作为形参</span>
+<span class="c1">#补充：当将字典传入形参时，形参的名称要与字典的键名称相同</span>
+<span class="n">demo2</span><span class="p">(</span><span class="o">**</span><span class="n">demo_dict</span><span class="p">)</span>
+<span class="c1">#{&#39;v1&#39;: 1} {&#39;v2&#39;: 2} {&#39;v3&#39;: 3}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="对于函数定义中的和">对于函数定义中的<code>*</code>和<code>**</code></h3>
+<p>主要功能是将任意个数的参数导入到python函数中</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="o">*</span><span class="n">param2</span><span class="p">):</span>
+    <span class="c1">#将所以参数以元组(tuple)的形式导入</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="o">**</span><span class="n">param2</span><span class="p">):</span>
+    <span class="c1">#将参数以字典的形式导入</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">foo_bar</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span><span class="o">*</span><span class="n">param2</span><span class="p">,</span><span class="o">**</span><span class="n">param3</span><span class="p">):</span>
+    <span class="c1">#上面两个可以混合使用</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">param3</span><span class="p">)</span>
+
+<span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">#1</span>
+<span class="c1">#(2, 3)</span>
+<span class="n">bar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">#1</span>
+<span class="c1">#{&#39;a&#39;: 2, &#39;b&#39;: 3}</span>
+<span class="n">foo_bar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">a</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1">#1</span>
+<span class="c1">#(2, 3)</span>
+<span class="c1">#{&#39;a&#39;: 4, &#39;b&#39;: 5}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="扩展">扩展</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/33896402">知乎的一篇文章</a></p>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Gourds</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-08-25
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/weipay.jpg">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/zhipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://blog.gourds.site/tags/python/">Python</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/cicd/jinja2%E8%AF%AD%E6%B3%95/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Jinja2语法</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/">
+            <span class="next-text nav-default">关于Cookie和Session以及Token的说明</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
   
 
+  
+  
 
+  
 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>

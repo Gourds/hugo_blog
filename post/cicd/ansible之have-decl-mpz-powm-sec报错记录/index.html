@@ -463,23 +463,23 @@ yum install python-keyczar
 <p>ERROR! Unexpected Exception: &lsquo;module&rsquo; object has no attribute &lsquo;HAVE_DECL_MPZ_POWM_SEC&rsquo;
 the full traceback was:
 Traceback (most recent call last):
-File &ldquo;/usr/bin/ansible&rdquo;, line 81, in <!-- raw HTML omitted -->
+File &ldquo;/usr/bin/ansible&rdquo;, line 81, in <module>
 from ansible.cli.adhoc import AdHocCLI as mycli
-File &ldquo;/usr/lib/python2.6/site-packages/ansible/cli/adhoc.py&rdquo;, line 28, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib/python2.6/site-packages/ansible/cli/adhoc.py&rdquo;, line 28, in <module>
 from ansible.executor.task_queue_manager import TaskQueueManager
-File &ldquo;/usr/lib/python2.6/site-packages/ansible/executor/task_queue_manager.py&rdquo;, line 29, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib/python2.6/site-packages/ansible/executor/task_queue_manager.py&rdquo;, line 29, in <module>
 from ansible.executor.process.result import ResultProcess
-File &ldquo;/usr/lib/python2.6/site-packages/ansible/executor/process/result.py&rdquo;, line 34, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib/python2.6/site-packages/ansible/executor/process/result.py&rdquo;, line 34, in <module>
 from Crypto.Random import atfork
-File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/<strong>init</strong>.py&rdquo;, line 29, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/<strong>init</strong>.py&rdquo;, line 29, in <module>
 from Crypto.Random import _UserFriendlyRNG
-File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/_UserFriendlyRNG.py&rdquo;, line 38, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/_UserFriendlyRNG.py&rdquo;, line 38, in <module>
 from Crypto.Random.Fortuna import FortunaAccumulator
-File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/Fortuna/FortunaAccumulator.py&rdquo;, line 39, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/Fortuna/FortunaAccumulator.py&rdquo;, line 39, in <module>
 import FortunaGenerator
-File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/Fortuna/FortunaGenerator.py&rdquo;, line 34, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Random/Fortuna/FortunaGenerator.py&rdquo;, line 34, in <module>
 from Crypto.Util.number import ceil_shift, exact_log2, exact_div
-File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Util/number.py&rdquo;, line 56, in <!-- raw HTML omitted -->
+File &ldquo;/usr/lib64/python2.6/site-packages/Crypto/Util/number.py&rdquo;, line 56, in <module>
 if _fastmath is not None and not _fastmath.HAVE_DECL_MPZ_POWM_SEC:
 AttributeError: &lsquo;module&rsquo; object has no attribute &lsquo;HAVE_DECL_MPZ_POWM_SEC&rsquo;</p>
 </blockquote>

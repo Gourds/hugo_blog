@@ -9,29 +9,57 @@
   </url>
   
   <url>
+    <loc>https://blog.gourds.site/tags/bitbucket/</loc>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/post/problems/bitbucket_migration_error/</loc>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.gourds.site/categories/</loc>
-    <lastmod>2021-07-17T21:41:19+08:00</lastmod>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.gourds.site/</loc>
-    <lastmod>2021-07-17T21:41:19+08:00</lastmod>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.gourds.site/post/</loc>
-    <lastmod>2021-07-17T21:41:19+08:00</lastmod>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.gourds.site/tags/</loc>
-    <lastmod>2021-07-17T21:41:19+08:00</lastmod>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/categories/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -142,7 +170,7 @@
   </url>
   
   <url>
-    <loc>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</loc>
+    <loc>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2019-08-25T21:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -186,13 +214,6 @@
   <url>
     <loc>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</loc>
     <lastmod>2019-08-21T13:38:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/tags/bitbucket/</loc>
-    <lastmod>2018-11-29T13:57:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -289,13 +310,6 @@
   </url>
   
   <url>
-    <loc>https://blog.gourds.site/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
-    <lastmod>2018-06-09T12:38:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.gourds.site/tags/etcd/</loc>
     <lastmod>2018-04-24T17:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -346,13 +360,6 @@
   
   <url>
     <loc>https://blog.gourds.site/post/bigdata/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2018-04-11T17:52:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/tags/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2018-04-11T17:52:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -627,13 +634,6 @@
   <url>
     <loc>https://blog.gourds.site/post/linux/jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-05-24T12:32:05+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/tags/mac/</loc>
-    <lastmod>2017-05-24T01:23:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

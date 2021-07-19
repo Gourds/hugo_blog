@@ -424,7 +424,7 @@ if (!doNotTrack) {
 <h3 id="关于directory">关于directory</h3>
 <ul>
 <li>文件夹的 Access time，atime 是在读取文件或者执行文件时更改的（只cd进入一个目录然后cd ..不会引起atime的改变，但ls一下就不同了）。</li>
-<li>文件夹的 Modified time，mtime 是在文件夹中有文件的新建、删除才会改变（如果只是改变文件内容不会引起mtime的改变，换句话说如果ls -f <!-- raw HTML omitted -->的结果发生改变mtime就会被刷新。这里可能有人要争论了：我进入dd这个文件夹vi了一个文件然后退出，前后ls -f <!-- raw HTML omitted -->的结果没有改变但是文件夹的mtime发生改变了……这点请主意vi命令在编辑文件时会在本文件夹下产生一 个&quot;.file.swp&quot;临时文件，该文件随着vi的退出而被删除……这就导致了mtime的改变 [Auxten:p]不信你可以用nano修改文件来试验）。</li>
+<li>文件夹的 Modified time，mtime 是在文件夹中有文件的新建、删除才会改变（如果只是改变文件内容不会引起mtime的改变，换句话说如果ls -f <directory>的结果发生改变mtime就会被刷新。这里可能有人要争论了：我进入dd这个文件夹vi了一个文件然后退出，前后ls -f <directory>的结果没有改变但是文件夹的mtime发生改变了……这点请主意vi命令在编辑文件时会在本文件夹下产生一 个&quot;.file.swp&quot;临时文件，该文件随着vi的退出而被删除……这就导致了mtime的改变 [Auxten:p]不信你可以用nano修改文件来试验）。</li>
 <li>文件夹的 Change time，ctime 基本同文件的ctime，其体现的是inode的change time。</li>
 <li>这里还要补充一点：mount -o noatime(mount -o remount,atime / 可以在线重新挂载根目录) 可以选择不记录文件的atime的改变，这意味着什么呢？当你创建了这个文件后这个文件的atime就定格了，除非你用touch或者touch -a强制刷新文件的atime。这样在可以在一定程度上提升文件系统的读写性能，特别是网站这种系统中在fstab里面加上noatime是个好主意</li>
 </ul>

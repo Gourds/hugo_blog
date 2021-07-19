@@ -25,8 +25,8 @@
 <meta name="author" content="Gourds" />
   <meta name="description" content="**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以看这里
 " />
+<meta name="keywords" content="ardb" />
 
-  <meta name="keywords" content="Linux, Life, Book, Python, Gourds" />
 
 
 
@@ -352,7 +352,10 @@ if (!doNotTrack) {
         <time datetime="2017-07-07" class="post-time">
           2017-07-07
         </time>
-        
+        <div class="post-category">
+            <a href="https://blog.gourds.site/categories/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/"> 踩坑指南 </a>
+            
+          </div>
         <span class="more-meta"> 约 1128 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
 

@@ -467,10 +467,10 @@ if (!doNotTrack) {
 <p>source
 **Tips:**每个 source 指令必须包括 “type” 参数，指定使用那种插件</p>
 <blockquote>
-<p><!-- raw HTML omitted --><strong>Routing（路由）</strong><!-- raw HTML omitted -->：source 把事件提交到 fluentd 的路由引擎中。一个事件由三个实体组成：tag、time 和 record。
-<!-- raw HTML omitted --><strong>tag</strong><!-- raw HTML omitted -->：是一个通过 “.” 来分离的字符串（e.g. myapp.access），用作 Fluentd 内部路由引擎的方向
-<!-- raw HTML omitted --><strong>time</strong><!-- raw HTML omitted -->：时间字段由输入插件指定，并且必须为 Unix 时间格式。
-<!-- raw HTML omitted --><strong>record</strong><!-- raw HTML omitted -->：一个 JSON 对象。</p>
+<p><font color=#dd0000 size=3><strong>Routing（路由）</strong></font>：source 把事件提交到 fluentd 的路由引擎中。一个事件由三个实体组成：tag、time 和 record。
+<font color=#dd0000 size=3><strong>tag</strong></font>：是一个通过 “.” 来分离的字符串（e.g. myapp.access），用作 Fluentd 内部路由引擎的方向
+<font color=#dd0000 size=3><strong>time</strong></font>：时间字段由输入插件指定，并且必须为 Unix 时间格式。
+<font color=#dd0000 size=3><strong>record</strong></font>：一个 JSON 对象。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -526,10 +526,10 @@ if (!doNotTrack) {
 <p>match
 <strong>Tips:</strong> match指令查询匹配tags事件并处理他们。match 命令的最常见用法是将事件输出到其他系统（因此，与 match 命令对应的插件称为 “输出插件”）。 Fluentd 的标准输出插件包括 file 和 forward。每个 match 指令必须包括一个匹配模式和 type 参数。只有与模式匹配的 “tags” 事件才会发送到输出目标（在上面的示例中，只有标记 “myapp.access” 的事件匹配），Fluentd 尝试按照它们在配置文件中出现的顺序，从上到下来进行 &ldquo;tags&rdquo; 匹配，如上一条已经匹配那么下面的将不会被匹配 。type 参数指定使用哪种输出插件</p>
 <blockquote>
-<p><!-- raw HTML omitted --><em><strong><strong><!-- raw HTML omitted -->：匹配单个 tag 部分。例：a.<em>，匹配 a.b，但不匹配 a 或者 a.b.c
-<!-- raw HTML omitted --></em></strong></strong></em><!-- raw HTML omitted -->：匹配 0 或 多个 tag 部分。例：a.**，匹配 a、a.b 和 a.b.c
+<p><font color=#dd0000 size=3><em><strong><strong></font>：匹配单个 tag 部分。例：a.<em>，匹配 a.b，但不匹配 a 或者 a.b.c
+<font color=#dd0000 size=3></em></strong></strong></em></font>：匹配 0 或 多个 tag 部分。例：a.**，匹配 a、a.b 和 a.b.c
 {X,Y,Z}：匹配 X、Y 或 Z，其中 X、Y 和 Z 是匹配模式。可以和 * 和 ** 模式组合使用
-当多个模式列在一个 <!-- raw HTML omitted --> 标签（由一个或多个空格分隔）内时，它匹配任何列出的模式</p>
+当多个模式列在一个 <match> 标签（由一个或多个空格分隔）内时，它匹配任何列出的模式</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -596,7 +596,7 @@ if (!doNotTrack) {
 <strong>Tips：</strong>“filter” 指令具有与 “match” 相同的语法，但是 filter 可以串联成 pipeline，对数据进行串行处理，最终再交给 match 输出。 使用 fliters，事件流如下：</p>
 <blockquote>
 <p>下面例子里，filter 获取数据后，调用原生的 @type record_transformer 插件，在事件的 record 里插入了新的字段 host_param，然后再交给 match 输出。
-filter 匹配顺序与 match 相同，我们应该在 <!-- raw HTML omitted --> 之前放置 <!-- raw HTML omitted --></p>
+filter 匹配顺序与 match 相同，我们应该在 <match> 之前放置 <filter></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

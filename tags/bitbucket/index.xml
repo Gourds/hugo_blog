@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/tags/bitbucket/</link>
     <description>Recent content in Bitbucket on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Nov 2018 13:57:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/bitbucket/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jul 2021 09:34:38 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/bitbucket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitbucket 迁移缺失commit</title>
+      <link>https://blog.gourds.site/post/problems/bitbucket_migration_error/</link>
+      <pubDate>Mon, 19 Jul 2021 09:34:38 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/problems/bitbucket_migration_error/</guid>
+      <description>概括： 迁移bitbucket后，发现部分分支commit缺失。 迁移过程： 对数据目录进行初次同步。使用命令/bin/rsync -auvP --delete -e &amp;quot;ssh -p 10022&amp;quot; /source/dir/ root@dest.host:/dest/dir/</description>
+    </item>
+    
     <item>
       <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
       <link>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
@@ -22,6 +31,19 @@
 &lt;/blockquote&gt;
 &lt;p&gt;这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
 PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用&lt;a href=&#34;https://github.com/Chevereto/Chevereto-Free&#34;&gt;【chevreto】&lt;/a&gt;，有时间了整一整。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitbucket实践</title>
+      <link>https://blog.gourds.site/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Sat, 09 Jun 2018 12:38:00 +0000</pubDate>
+      
+      <guid>https://blog.gourds.site/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
+      <description>&lt;p&gt;前言：之前使用了Atlassian公司的Confluence和Jira，现在新项目考虑使用Bitbucket做代码仓库，这里记录一下调研实践过程。由于之前的服务是使用docker进行部署的，所以Bitbucket也决定使用docker的方式进行部署。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;update:&lt;/strong&gt;
+2018-06-12: 添加备份还原文档，文档在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/bitbucket/backup-restore&#34;&gt;【这里】&lt;/a&gt;，就不单独在放Blog了&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
   </channel>
