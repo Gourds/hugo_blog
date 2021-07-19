@@ -348,50 +348,6 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/distribution/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/">Etcd的v3版本常用操作及可视化</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2018-04-24" class="post-time">
-        2018-04-24
-      </time>
-      
-      <span class="more-meta"> 约 1020 字 </span>
-      <span class="more-meta"> 预计阅读 3 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>简单记录一下<code>Etcd API v3</code>版本的基本操作和可视化<code>WEB UI</code>使用，关于V2的使用可以看我之前的一篇介绍<a href="http://arvon.top/tags/%E8%BF%90%E7%BB%B4%E6%9E%B6%E6%9E%84/">【etcd v2】</a>。Etcd v2 和 v3 本质上是共享同一套 raft 协议代码的两个独立的应用，接口不一样，存储不一样，数据也是互相隔离的。</p>
-<blockquote>
-<p><strong>V3相对V2的一些主要变化：</strong></p>
-<ul>
-<li>接口通过grpc提供rpc接口，放弃了v2的http接口。优势是长连接效率提升明显，缺点是使用不如以前方便，尤其对不方便维护长连接的场景。</li>
-<li>废弃了原来的目录结构，变成了纯粹的kv，用户可以通过前缀匹配模式模拟目录</li>
-<li>内存中不再保存value，同样的内存可以支持存储更多的key</li>
-<li>watch机制更稳定，基本上可以通过watch机制实现数据的完全同步</li>
-<li>提供了批量操作以及事务机制，用户可以通过批量事务请求来实现Etcd v2的CAS机制（批量事务支持if条件判断）</li>
-</ul>
-<p><em>&ndash;以上摘自王渊命的文章[侵删]</em></p>
-</blockquote>
-    </div>
-    <div class="read-more">
-      <a href="/post/distribution/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
       <a class="post-link" href="/post/linux/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/">Gitlab迁移升级记录</a>
     </h1>
     
@@ -451,6 +407,44 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/post/linux/gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/">使用Docker搭建Jira和Confluence系统</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2018-04-14" class="post-time">
+        2018-04-14
+      </time>
+      
+      <span class="more-meta"> 约 2881 字 </span>
+      <span class="more-meta"> 预计阅读 6 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在<a href="https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence">【Github】</a>上都有</p>
+<blockquote>
+<p>**<a href="https://www.atlassian.com/software/jira">JIRA</a><strong>是Atlassian公司出品的项目与事务跟踪工具，被广泛应用于缺陷跟踪、客户服务、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理等工作领域。
+</strong><a href="https://www.atlassian.com/software/confluence">Confluence</a><strong>是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。使用简单，但它强大的编辑和站点管理特征能够帮助团队成员之间共享信息、文档协作、集体讨论，信息推送。
+</strong><a href="https://github.com/phacility/phabricator">Phabricator</a>**是一套基于Web的软件开发协作工具，一个Web应用用于帮助软件公司构建更好的软件。原是facebook员工开发的可视化代码评审工具,主要功能有CodeReview、代码托管、Bug跟踪、Task管理、Wiki文档等功能。</p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>

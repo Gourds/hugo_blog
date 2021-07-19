@@ -348,65 +348,6 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/database/mysql%E8%87%AA%E7%94%A8%E5%91%BD%E4%BB%A4%E6%89%8B%E5%86%8C/"></a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      <span class="more-meta"> 约 2092 字 </span>
-      <span class="more-meta"> 预计阅读 5 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="tags-mysql">title: mysql自用命令手册
-date: 2015-07-22 16:10:15
-tags: [Mysql]</h2>
-<h3 id="连接登录数据库">连接登录数据库</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">mysql –u用户名 <span class="o">[</span>–h主机名或者IP地址<span class="o">]</span> –p密码
-eggs: mysql -uusername -hIPaddress -p<span class="o">(</span>password<span class="o">)</span>
-<span class="c1">#1. 连接到本机上的MYSQL。</span>
-<span class="c1">#首先打开DOS窗口，然后进入目录mysql\bin，再键入命令mysql -u root -p，回车后提示你输密码.注意用户名前可以有空格也可以没有空格，但是密码前必须没有空格，否则让你重新输入密码.</span>
-<span class="c1">#如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MYSQL的提示符是： mysql&gt;</span>
-<span class="c1">#2. 连接到远程主机上的MYSQL。假设远程主机的IP为：110.110.110.110，用户名为root,密码为abcd123。则键入以下命令：</span>
-<span class="c1">#mysql -h110.110.110.110 -u root -p 123;（注:u与root之间可以不用加空格，其它也一样）</span>
-<span class="c1">#3. 退出MYSQL命令： exit （回车） 或者 \q</span>
-</code></pre></td></tr></table>
-</div>
-</div>
-    </div>
-    <div class="read-more">
-      <a href="/post/database/mysql%E8%87%AA%E7%94%A8%E5%91%BD%E4%BB%A4%E6%89%8B%E5%86%8C/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
       <a class="post-link" href="/post/linux/awk%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B/"></a>
     </h1>
     
@@ -470,6 +411,45 @@ tags: [Zabbix]</h2>
     </div>
     <div class="read-more">
       <a href="/post/linux/centos%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAzabbix%E7%9B%91%E6%8E%A7/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/crontab%E7%AE%80%E8%AE%B0/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      <span class="more-meta"> 约 1096 字 </span>
+      <span class="more-meta"> 预计阅读 3 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h2 id="tags-crontab">title: crontab简记
+date: 2015-09-16 17:01:58
+tags: [Crontab]</h2>
+<p>今天刚好要备份线上的crontab，就顺便记下来，省得忘了以后还要去上网找。
+**介绍:**crontab命令
+常见于Unix和类Unix的操作系统之中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于“crontab”文件中，以供之后读取和执行。该词来源于希腊语 chronos(χρνο)，原意是时间。常，crontab储存的指令被守护进程激活， crond常常在后台运行，每一分钟检查是否有预定的作业需要执行。这类作业一般称为cron jobs。<em>crontab文件</em>包含送交cron守护进程的一系列作业和指令。每个用户可以拥有自己的crontab文件；同时，操作系统保存一个针对整个系统的crontab文件，该文件通常存放于/etc或者/etc之下的子目录中，而这个文件只能由系统管理员来修改。
+crontab文件的每一行均遵守特定的格式，由空格或tab分隔为数个领域，每个领域可以放置单一或多个数值。(ps:摘自百度百科)</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/crontab%E7%AE%80%E8%AE%B0/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
