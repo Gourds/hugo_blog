@@ -348,6 +348,57 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/">关于Cookie和Session以及Token的说明</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2019-08-25" class="post-time">
+        2019-08-25
+      </time>
+      
+      <span class="more-meta"> 约 2551 字 </span>
+      <span class="more-meta"> 预计阅读 6 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>现在做web的话就绕不开安全认证这一步，那就先介绍下目前常见的认证方式然后再说关于cookie、session、token的东西。常用的认证方式简单概述如下：</p>
+<ul>
+<li>cookie-session认证方式</li>
+</ul>
+<blockquote>
+<p>出现较早的认证方式，主要形式是浏览器客户端将用户名密码发送给服务器，服务器验证后创建session并发放用于识别用户的sessionID（与用户状态绑定后记录在服务器端），这个sessionID以及一些相关的其他信息就是cookie，cookie随着响应(Set-Cookie)返回给客户端由客户端存储于浏览器，之后客户端的请求都会带上这个cookie，服务端通过cookie来获取Session信息从而进行认证校验。</p>
+</blockquote>
+<ul>
+<li>Oauth认证方式</li>
+</ul>
+<blockquote>
+<p>Oauth是一种授权机制，主要为第三方应用颁发授权令牌（token）,目前有Oauth2.0和Oauth1.0版本，其中Oauth2.0版本的标准是<a href="https://www.rfc-editor.org/rfc/rfc6749.html">RFC6749</a>，Oauth1.0版本的标准是<a href="https://www.rfc-editor.org/rfc/rfc5849">RFC5849</a>。Oauth2.0的具体介绍可以参考<a href="http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html">阮一峰|Oauth2.0</a></p>
+</blockquote>
+<ul>
+<li>JWT认证方式</li>
+</ul>
+<blockquote>
+<p>JWT的标准是<a href="https://www.rfc-editor.org/rfc/rfc7519.html">RFC7519</a>。大概原理是客户端经过服务器认证后服务器给客户端返回一个json对象（包含用户信息且加密处理的数据），之后客户端与服务器通信都会带上这个json对象，服务器只通过这个对象来认证用户，也就是说服务器端是无状态的不会保存状态数据了（比如session）。具体可参考<a href="http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html">阮一峰|JSON Web Token 入门教程</a></p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/">Aws使用EMR对Dynamodb进行备份还原</a>
     </h1>
     
@@ -413,39 +464,6 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
     </div>
     <div class="read-more">
       <a href="/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/docker/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/">Docker方式安装Jumpserver</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2018-11-27" class="post-time">
-        2018-11-27
-      </time>
-      
-      <span class="more-meta"> 约 579 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的<a href="https://github.com/Gourds/docker-image/tree/master/Service/jumpserver">【github】</a>上都有。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/docker/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1555,6 +1573,30 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/5/">»</a></li>
@@ -1562,7 +1604,7 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
 
       
       
-      <li><a href="/page/40/">»»</a></li>
+      <li><a href="/page/41/">»»</a></li>
       
 
       </ul>

@@ -142,6 +142,13 @@
   </url>
   
   <url>
+    <loc>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</loc>
+    <lastmod>2019-08-25T21:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.gourds.site/tags/network/</loc>
     <lastmod>2019-08-25T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>

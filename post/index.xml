@@ -132,6 +132,15 @@
     </item>
     
     <item>
+      <title>python中的*与**用法</title>
+      <link>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>https://blog.gourds.site/post/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
+      <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>关于Cookie和Session以及Token的说明</title>
       <link>https://blog.gourds.site/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
       <pubDate>Sun, 25 Aug 2019 12:00:00 +0000</pubDate>
@@ -275,20 +284,6 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
       <description>&lt;p&gt;Gitlab有迁移升级的打算，尝试下新版本（10.6.4)顺带记录一下过程。我这里尝试两种安装方法，一种是Omnibus包安装（官方推荐），另一种会尝试Docker。
 操作之前看一把架构图,图片来自官方,侵删
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20180413-gitlab-1.jpg&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>使用Docker搭建Jira和Confluence系统</title>
-      <link>https://blog.gourds.site/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Sat, 14 Apr 2018 15:47:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/</guid>
-      <description>&lt;p&gt;**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence&#34;&gt;【Github】&lt;/a&gt;上都有&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;**&lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt;&lt;strong&gt;是Atlassian公司出品的项目与事务跟踪工具，被广泛应用于缺陷跟踪、客户服务、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理等工作领域。
-&lt;/strong&gt;&lt;a href=&#34;https://www.atlassian.com/software/confluence&#34;&gt;Confluence&lt;/a&gt;&lt;strong&gt;是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。使用简单，但它强大的编辑和站点管理特征能够帮助团队成员之间共享信息、文档协作、集体讨论，信息推送。
-&lt;/strong&gt;&lt;a href=&#34;https://github.com/phacility/phabricator&#34;&gt;Phabricator&lt;/a&gt;**是一套基于Web的软件开发协作工具，一个Web应用用于帮助软件公司构建更好的软件。原是facebook员工开发的可视化代码评审工具,主要功能有CodeReview、代码托管、Bug跟踪、Task管理、Wiki文档等功能。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
     </item>
     
   </channel>
