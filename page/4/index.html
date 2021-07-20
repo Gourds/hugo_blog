@@ -348,6 +348,87 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/cicd/jinja2%E8%AF%AD%E6%B3%95/">Jinja2语法</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2019-08-25" class="post-time">
+        2019-08-25
+      </time>
+      
+      <span class="more-meta"> 约 4848 字 </span>
+      <span class="more-meta"> 预计阅读 10 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h4 id="介绍">介绍</h4>
+<p>大概介绍一下，主要介绍模板（模板仅仅是文本文件。它可以生成任何基于文本的格式（HTML、XML、CSV、LaTex 等等）。它并没有特定的扩展名，<code>.html</code>或<code>.xml</code>都是可以的。）模板包含变量或表达式 ，这两者在模板求值的时候会被替换为值。模板中 还有标签，控制模板的逻辑。模板语法的大量灵感来自于 Django和Python。</p>
+<blockquote>
+<p>Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模板语言。它速度快，被广泛使用，并且提供了可选的沙箱模板执行环境保证安全.特征如下：</p>
+</blockquote>
+<ul>
+<li>沙箱中执行</li>
+<li>强大的HTML自动转义系统保护系统免受XSS</li>
+<li>模板继承</li>
+<li>及时编译最优的python代码</li>
+<li>易于调试。异常的行数直接指向模板中的对应行</li>
+<li>可配置的语法</li>
+</ul>
+<blockquote>
+<p>&mdash;选自 <a href="http://docs.jinkan.org/docs/jinja2/index.html">http://docs.jinkan.org</a></p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/cicd/jinja2%E8%AF%AD%E6%B3%95/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/">python中的*与**用法</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2019-08-25" class="post-time">
+        2019-08-25
+      </time>
+      
+      <span class="more-meta"> 约 422 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>在Python中经常会见到以下一些用法，如在函数调用中<code>fun1(*vars)</code>|<code>fun2(**vars)</code>,以及在函数定义中如<code>def fun1(*param)</code> or <code>def fun2(**param)</code>这些形式。下面就针对这些情况使用具体例子进行一下说明。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/">关于Cookie和Session以及Token的说明</a>
     </h1>
     
@@ -389,81 +470,6 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/">Aws使用EMR对Dynamodb进行备份还原</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-08-21" class="post-time">
-        2019-08-21
-      </time>
-      
-      <span class="more-meta"> 约 2699 字 </span>
-      <span class="more-meta"> 预计阅读 6 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由<code>AutoScaling</code>修改成了<code>按需</code>，当使用之前的HIVE脚本时出现了<code>Read throughput should not be less than 1</code>的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持<code>On-Demand billing</code>这个功能，接着又准备使用<code>awscli</code>命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的<code>版本问题说明</code>。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/">Docker方式下Bitbucket及confluence和jira的迁移</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2018-11-29" class="post-time">
-        2018-11-29
-      </time>
-      
-      <span class="more-meta"> 约 2232 字 </span>
-      <span class="more-meta"> 预计阅读 5 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
-<strong>迁移思路：</strong></p>
-<blockquote>
-<ul>
-<li>按照原来搭建方法在新宿主机上新建相同的容器（注意控制版本，可以用指定的版本来替代image的latest标签）</li>
-<li>将备份的数据导入新的容器中</li>
-</ul>
-</blockquote>
-<p>这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
-PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用<a href="https://github.com/Chevereto/Chevereto-Free">【chevreto】</a>，有时间了整一整。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>

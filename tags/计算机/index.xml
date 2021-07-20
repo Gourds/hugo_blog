@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机 on Gourds</title>
+    <link>https://blog.gourds.site/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 计算机 on Gourds</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 19 Jul 2021 21:13:42 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《程序是怎么跑起来的》</title>
+      <link>https://blog.gourds.site/post/programming/program_how_to_work/</link>
+      <pubDate>Mon, 19 Jul 2021 21:13:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/programming/program_how_to_work/</guid>
+      <description>问题 程序是什么 一个通过逻辑运算得到结果的一个工具 指示计算机每一步动作的一组指令 程序是由什么组成的 变量以及逻辑运算 指令和数据 什么是机器语言 字面</description>
+    </item>
+    
+  </channel>
+</rss>

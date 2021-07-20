@@ -9,6 +9,55 @@
   </url>
   
   <url>
+    <loc>https://blog.gourds.site/categories/</loc>
+    <lastmod>2021-07-19T21:13:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/</loc>
+    <lastmod>2021-07-19T21:13:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/post/</loc>
+    <lastmod>2021-07-19T21:13:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/tags/</loc>
+    <lastmod>2021-07-19T21:13:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/post/programming/program_how_to_work/</loc>
+    <lastmod>2021-07-19T21:13:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2021-07-19T21:13:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/</loc>
+    <lastmod>2021-07-19T21:13:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.gourds.site/tags/bitbucket/</loc>
     <lastmod>2021-07-19T09:34:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,34 +66,6 @@
   
   <url>
     <loc>https://blog.gourds.site/post/problems/bitbucket_migration_error/</loc>
-    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/categories/</loc>
-    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/</loc>
-    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/post/</loc>
-    <lastmod>2021-07-19T09:34:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/tags/</loc>
     <lastmod>2021-07-19T09:34:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -73,13 +94,6 @@
   
   <url>
     <loc>https://blog.gourds.site/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
-    <lastmod>2021-07-17T21:41:19+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/</loc>
     <lastmod>2021-07-17T21:41:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -164,6 +178,13 @@
   
   <url>
     <loc>https://blog.gourds.site/post/cicd/jinja2%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2019-08-25T21:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2019-08-25T21:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

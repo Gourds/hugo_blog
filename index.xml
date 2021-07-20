@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Jul 2021 09:34:38 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jul 2021 21:13:42 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -54,7 +54,7 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.07.19-&lt;/td&gt;
 &lt;td&gt;《程序是怎么跑起来的》&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -282,6 +282,65 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《大脑勇士》【美】丹尼尔·亚蒙/塔娜·亚蒙&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《连接组》【美】承现峻&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《程序是怎么跑起来的》</title>
+      <link>https://blog.gourds.site/post/programming/program_how_to_work/</link>
+      <pubDate>Mon, 19 Jul 2021 21:13:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/programming/program_how_to_work/</guid>
+      
+        <description>&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;程序是什么&lt;/p&gt;
+&lt;p&gt;一个通过逻辑运算得到结果的一个工具
+指示计算机每一步动作的一组指令&lt;/p&gt;
+&lt;p&gt;程序是由什么组成的&lt;/p&gt;
+&lt;p&gt;变量以及逻辑运算
+指令和数据&lt;/p&gt;
+&lt;p&gt;什么是机器语言&lt;/p&gt;
+&lt;p&gt;字面上就是机器看得懂的代码
+CPU可以直接识别并使用的语言&lt;/p&gt;
+&lt;p&gt;正在运行的程序存储在哪&lt;/p&gt;
+&lt;p&gt;运算器
+内存&lt;/p&gt;
+&lt;p&gt;什么是内存地址&lt;/p&gt;
+&lt;p&gt;不知道
+内存中用来表示命令和数据存储位置的数值&lt;/p&gt;
+&lt;p&gt;计算机的构成元件中，负责程序解释和运行的是哪个&lt;/p&gt;
+&lt;p&gt;cpu&lt;/p&gt;
+&lt;p&gt;cpu的组成：寄存器、控制器、运算器、时钟&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;组成&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;寄存器&lt;/td&gt;
+&lt;td&gt;暂存指令、数据等处理对象，类似内存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;控制器&lt;/td&gt;
+&lt;td&gt;负责把内存中的指令、数据等读入到寄存器，并根据执行的结果来控制整个计算机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;运算器&lt;/td&gt;
+&lt;td&gt;负责运算寄存器中的数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;时钟&lt;/td&gt;
+&lt;td&gt;负责发出CPU开始计时的时钟信号，也有计算机的时钟位于CPU的外部&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Tips: 如Pentium 2GHZ表示时钟信号的频率为2GHz（1GHz=10亿次/秒),即时钟频率越高CPU的运行速度越快&lt;/p&gt;
+&lt;p&gt;程序是把寄存器当成对象来描述的
+汇编语言是采用助记符（mov、add）来编写程序，汇编语言和机器语言基本上是一一对应的&lt;/p&gt;
 </description>
       
     </item>
@@ -1826,6 +1885,127 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;基本是&lt;code&gt;W3Cschool&lt;/code&gt;的学习笔记，大部分是复制粘贴的，相当于读写一遍，侵删，以上&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>python中的*与**用法</title>
+      <link>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
+      
+        <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;
+&lt;h3 id=&#34;对于函数调用中的和&#34;&gt;对于函数调用中的&lt;code&gt;*&lt;/code&gt;和&lt;code&gt;**&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;主要功能是一个函数解压传入的过程&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#demo1  * list&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;demo_list&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;demo1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;a+b+c=&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#列表前面加星号作用是将列表解开成两个独立的参数，传入函数&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;demo1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;demo_list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#a+b+c=6&lt;/span&gt;
+
+
+&lt;span class=&#34;c1&#34;&gt;#demo2 ** dict&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;demo_dict&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+            &lt;span class=&#34;s1&#34;&gt;&amp;#39;k1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:{&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;v1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+            &lt;span class=&#34;s1&#34;&gt;&amp;#39;k2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:{&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;v2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+            &lt;span class=&#34;s1&#34;&gt;&amp;#39;k3&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:{&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;v3&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+             &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;demo2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#字典前面加两个星号，是将字典解开成独立的元素作为形参&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#补充：当将字典传入形参时，形参的名称要与字典的键名称相同&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;demo2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;demo_dict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#{&amp;#39;v1&amp;#39;: 1} {&amp;#39;v2&amp;#39;: 2} {&amp;#39;v3&amp;#39;: 3}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;对于函数定义中的和&#34;&gt;对于函数定义中的&lt;code&gt;*&lt;/code&gt;和&lt;code&gt;**&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;主要功能是将任意个数的参数导入到python函数中&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;foo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;c1&#34;&gt;#将所以参数以元组(tuple)的形式导入&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;bar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;c1&#34;&gt;#将参数以字典的形式导入&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;foo_bar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;c1&#34;&gt;#上面两个可以混合使用&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;param3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;foo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#1&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#(2, 3)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;bar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#1&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#{&amp;#39;a&amp;#39;: 2, &amp;#39;b&amp;#39;: 3}&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;foo_bar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#1&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#(2, 3)&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;#{&amp;#39;a&amp;#39;: 4, &amp;#39;b&amp;#39;: 5}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;扩展&#34;&gt;扩展&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/33896402&#34;&gt;知乎的一篇文章&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -4126,323 +4306,6 @@ bitbucket:
 &lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://bitbucket.org/atlassian/docker-atlassian-bitbucket-server&#34;&gt;【官方Docker参考】&lt;/a&gt;
 &lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/data-recovery-and-backups-776640050.html&#34;&gt;【官方备份说明】&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Etcd的v3版本常用操作及可视化</title>
-      <link>https://blog.gourds.site/post/distribution/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
-      <pubDate>Tue, 24 Apr 2018 17:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/distribution/etcd%E7%9A%84v3%E7%89%88%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
-      
-        <description>&lt;p&gt;简单记录一下&lt;code&gt;Etcd API v3&lt;/code&gt;版本的基本操作和可视化&lt;code&gt;WEB UI&lt;/code&gt;使用，关于V2的使用可以看我之前的一篇介绍&lt;a href=&#34;http://arvon.top/tags/%E8%BF%90%E7%BB%B4%E6%9E%B6%E6%9E%84/&#34;&gt;【etcd v2】&lt;/a&gt;。Etcd v2 和 v3 本质上是共享同一套 raft 协议代码的两个独立的应用，接口不一样，存储不一样，数据也是互相隔离的。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;V3相对V2的一些主要变化：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;接口通过grpc提供rpc接口，放弃了v2的http接口。优势是长连接效率提升明显，缺点是使用不如以前方便，尤其对不方便维护长连接的场景。&lt;/li&gt;
-&lt;li&gt;废弃了原来的目录结构，变成了纯粹的kv，用户可以通过前缀匹配模式模拟目录&lt;/li&gt;
-&lt;li&gt;内存中不再保存value，同样的内存可以支持存储更多的key&lt;/li&gt;
-&lt;li&gt;watch机制更稳定，基本上可以通过watch机制实现数据的完全同步&lt;/li&gt;
-&lt;li&gt;提供了批量操作以及事务机制，用户可以通过批量事务请求来实现Etcd v2的CAS机制（批量事务支持if条件判断）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;&amp;ndash;以上摘自王渊命的文章[侵删]&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;使用etcdctl管理&#34;&gt;使用Etcdctl管理&lt;/h4&gt;
-&lt;p&gt;这里列下我常用的，其他选项可以查看help或者官网说明，链接在最后&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl put mykey &lt;span class=&#34;s2&#34;&gt;&amp;#34;this is awesome&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#设置&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl get mykey &lt;span class=&#34;c1&#34;&gt;#获取&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl del mykey &lt;span class=&#34;c1&#34;&gt;#删除&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl get &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; --from-key  &lt;span class=&#34;c1&#34;&gt;#获取所有的键值&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl get &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; --from-key --keys-only &lt;span class=&#34;c1&#34;&gt;#只获取所有的key不含value&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl get &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; --from-key --keys-only --limit &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#获取key只显示3个&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl get --prefix my &lt;span class=&#34;c1&#34;&gt;#获取所有以my开头的key及对应value&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl del my --prefix &lt;span class=&#34;c1&#34;&gt;#删除所有以my开头的键值&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;使用http管理&#34;&gt;使用HTTP管理&lt;/h4&gt;
-&lt;p&gt;HTTP接口没有怎么用，请参考&lt;a href=&#34;https://github.com/coreos/etcd/blob/master/Documentation/dev-guide/api_reference_v3.md&#34;&gt;【API】&lt;/a&gt;及&lt;a href=&#34;https://grpc.io/blog/coreos&#34;&gt;【grpc官方】&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -L http://localhost:2379/v3alpha/maintenance/status -X POST -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;{}&amp;#39;&lt;/span&gt;
-curl -L http://localhost:2379/v3alpha/kv/put -X POST -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;{&amp;#34;key&amp;#34;: &amp;#34;Zm9v&amp;#34;, &amp;#34;value&amp;#34;: &amp;#34;YmFy&amp;#34;}&amp;#39;&lt;/span&gt;
-curl -L http://localhost:2379/v3alpha/kv/range -X POST -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;{&amp;#34;key&amp;#34;: &amp;#34;Zm9v&amp;#34;}&amp;#39;&lt;/span&gt;
-curl -L http://localhost:2379/v3alpha/watch -X POST -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;{&amp;#34;create_request&amp;#34;: {&amp;#34;key&amp;#34;: &amp;#34;Zm9v&amp;#34;}}&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;注册脚本&#34;&gt;注册脚本&lt;/h4&gt;
-&lt;p&gt;我提供的这个脚本主要是将本地目录中的文件以递归的形式注册到etcd上（文件内容是key=value有多行）。不贴具体的脚本了，可以从&lt;a href=&#34;https://github.com/Gourds/daily-scripts/blob/master/python-scripts/register-etcd-from-files.py&#34;&gt;【&amp;ndash;&amp;gt;这里&amp;lt;&amp;ndash;】&lt;/a&gt;获取，脚本主要功能如下&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Support configuration annotation&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Support for registering null values. like &amp;ldquo;value=&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Support for registration of recursive directories&lt;/li&gt;
-&lt;li&gt;Add exception capture&lt;/li&gt;
-&lt;li&gt;Add null file support&lt;/li&gt;
-&lt;li&gt;Add null dircectory support&lt;/li&gt;
-&lt;li&gt;Add etcd v3 api support&lt;/li&gt;
-&lt;li&gt;Support e3w &lt;a href=&#34;https://github.com/soyking/e3w&#34;&gt;https://github.com/soyking/e3w&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;主要说两个问题：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在V2中创建目录
-这个主要使用ETCD的HTTP接口实现，可以直接创建目录，比用key-value的形式要好,V2的可视化，推荐&lt;a href=&#34;https://github.com/nikfoundas/etcd-viewer&#34;&gt;【Etcd-view】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在V3中创建目录
-在V3中本并不存在目录的概念了，但是如果想要使用&lt;a href=&#34;https://github.com/soyking/e3w&#34;&gt;【E3W】&lt;/a&gt;实现可视化，需要使用特定的value给目录这个key。如下root_v3是个目录，它下面那个就是特定的value&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[root@ip ops_user]# ETCDCTL_API=3 etcdctl get root_v3
-root_v3
-etcdv3_dir_$2H#%gRe3*t
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;权限机制&#34;&gt;权限机制&lt;/h4&gt;
-&lt;p&gt;占位，之后根据需要补充&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;
-etcdctl user add root
-etcdctl auth &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt;
-etcdctl user list
-&lt;span class=&#34;nv&#34;&gt;ETCDCTL_API&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; etcdctl user add root --endpoints&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;https://10.17.1.32:2379&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;参考文档&#34;&gt;参考文档&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/coreos/etcd/tree/master/etcdctl&#34;&gt;【Etcd项目地址】&lt;/a&gt;
-&lt;a href=&#34;https://github.com/coreos/etcd/blob/master/Documentation/dev-guide/api_grpc_gateway.md&#34;&gt;【Etcd API】&lt;/a&gt;
-&lt;a href=&#34;http://www.10tiao.com/html/689/201612/2651576771/2.html&#34;&gt;【Etcd对比介绍】&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Gitlab迁移升级记录</title>
-      <link>https://blog.gourds.site/post/linux/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sat, 21 Apr 2018 19:33:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/linux/gitlab%E8%BF%81%E7%A7%BB%E5%8D%87%E7%BA%A7%E8%AE%B0%E5%BD%95/</guid>
-      
-        <description>&lt;p&gt;之前写了gitlab的安装文档，目的是为了为迁移做准备，现在记录一下测试迁移的过程。现在需要将编译安装的&lt;code&gt;7.13.4&lt;/code&gt;版本的gitlab升级至&lt;code&gt;10.6.0&lt;/code&gt;并采用docker的方式运行。经查阅官方Docker&lt;a href=&#34;https://hub.docker.com/r/gitlab/gitlab-ce/tags/&#34;&gt;【版本】&lt;/a&gt;是&lt;code&gt;9.5.1-10.7.0&lt;/code&gt;。而在Github上&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn版本】&lt;/a&gt;是&lt;code&gt;v6.1-v10.6.4&lt;/code&gt;。另外
-还有Gitlab的&lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce/tree/master/doc/update&#34;&gt;【官方升级说明】&lt;/a&gt;,这个说明里面都是临近的版本升级说明，但并没有介绍大跨度升级的详细内容。最后决定采用github上提供的升级建议。记录说明如下&lt;/p&gt;
-&lt;h3 id=&#34;迁移升级步骤&#34;&gt;迁移升级步骤&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;思路：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;**概览：**从7.13.4&amp;ndash;&amp;gt;8.0.3&amp;ndash;&amp;gt;10.6.0&lt;/p&gt;
-&lt;p&gt;A. 先迁移至同版本的Docker容器中
-B. 利用Docker易于部署的特性将Gitlab升级至指定版本
-C. 使用了&lt;a href=&#34;https://github.com/sameersbn/docker-gitlab&#34;&gt;【sameersbn提供的方法】&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;拉取Docker版本的&lt;code&gt;7.13.4&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;docker pull sameersbn/gitlab:7.13.4
-&lt;span class=&#34;c1&#34;&gt;#docker pull sameersbn/gitlab:latest&lt;/span&gt;
-&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; docker-gitlab &lt;span class=&#34;c1&#34;&gt;#获取对应版本docker compose配置&lt;/span&gt;
-git clone https://github.com/sameersbn/docker-gitlab.git
-&lt;span class=&#34;c1&#34;&gt;#docker build --tag=$USER/gitlab .&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;使用docker-compose启动gitlab&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;pip install docker-compose
-&lt;span class=&#34;c1&#34;&gt;#进入docker compose同级目录执行up命令&lt;/span&gt;
-docker-compose up -d
-&lt;span class=&#34;c1&#34;&gt;#docker-compose down&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;还原gitlab到7.13.4&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker ps -a
-cp /gitlab_bak/1523732410_gitlab_backup.tar  /srv/docker/gitlab/gitlab/backups/ &lt;span class=&#34;c1&#34;&gt;#copy 备份数据到docker里backup目录&lt;/span&gt;
-docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it docker-gitlab_gitlab_1 /bin/bash &lt;span class=&#34;c1&#34;&gt;#进入容器&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#容器内部使用了supervisor 先停止gitlab服务&lt;/span&gt;
-supervisor&amp;gt; stop sidekiq
-sidekiq: stopped
-supervisor&amp;gt; stop unicorn
-unicorn: stopped
-&lt;span class=&#34;c1&#34;&gt;#修改权限&lt;/span&gt;
-chown -R git.git /home/git/
-chown -R git.git /home/git/data/backups/1525501269_gitlab_backup.tar
-chown -R git.git /var/log/gitlab/gitlab-shell/gitlab-shell.log
-su git
-&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
-bundle &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; rake gitlab:check &lt;span class=&#34;nv&#34;&gt;SANITIZE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;#确认状态无误，导入需确认API和Running状态为关闭&lt;/span&gt;
-bundle &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; rake gitlab:backup:restore &lt;span class=&#34;nv&#34;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;production &lt;span class=&#34;c1&#34;&gt;#还原操作&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;至此还原已经完成了，开始升级操作&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#每次升级之后做一下备份&lt;/span&gt;
-sudo -u git -H bundle &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; rake gitlab:backup:create &lt;span class=&#34;nv&#34;&gt;RAILS_ENV&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;production
-&lt;span class=&#34;c1&#34;&gt;#使用compose更新版本&lt;/span&gt;
-git branch
-git checkout .
-git  clean -df
-git checkout v8.0.3
-mv docker-compose.yml.dist docker-compose.yml
-docker-compose up -d
-&lt;span class=&#34;c1&#34;&gt;#backup again&lt;/span&gt;
-docker-compose down
-git checkout 10.6.0
-docker-compose up -d
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;特别说明&#34;&gt;特别说明&lt;/h3&gt;
-&lt;p&gt;我这里最后并没有升级至10.6.0，最后决定使用原版本只是迁移到docker有两点需要注意&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1.数据目录权限如果这个有问题会出现能看到repository的commit等信息，却提示repository不存在&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#更改repository所在目录的权限即可&lt;/span&gt;
-chown -R git.git /home/git/data/repositories
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;2.迁移key,将原gitlab的auth key迁移到新gitlab的auth key位置，注意command&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#提示：可以先手动创建一个就知道该如何写这个command了
-原key：/var/opt/gitlab/.ssh/authorized_keys
-command=&amp;#34;/opt/gitlab/embedded/service/gitlab-shell/bin/gitlab-shell key-58&amp;#34;,no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty ssh-rsa A6dKlEgfVl3G16f5v test@bogon
-现key：/home/git/data/.ssh/authorized_keys
-command=&amp;#34;/home/git/gitlab-shell/bin/gitlab-shell key-59&amp;#34;,no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty ssh-rsa A6dKlEgfVl3G16f5v test@bogon
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;官方建议&#34;&gt;官方建议&lt;/h3&gt;
-&lt;p&gt;官方提供了3种Gitlab的安装方法，根据安装方法的不同需要选取不同的迁移升级策略。三种安装方式分别如下*【除了源码安装其他的安装方法在我之前的一篇&lt;a href=&#34;http://arvon.top/2018/04/14/Gitlab%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/&#34;&gt;博客&lt;/a&gt;里已经记录了】*&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Omnibus Packages&lt;/li&gt;
-&lt;li&gt;Source installation&lt;/li&gt;
-&lt;li&gt;Docker installation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;关于如何还原备份&lt;/strong&gt;&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#restore&#34;&gt;【文档地址】&lt;/a&gt;
-主要参照官方吧，我这里不再详细说了。简单记录一点我看到的
-从9.1.0版本开始满足以下条件可以实现升级到新版本而不必停止Gitlab服务&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;只能一次升级一个小版本，如：9.1到9.2，不能9.1到9.3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;从9.2.开始备份文件的时间戳发生了变化&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In GitLab 9.2 the timestamp format was changed from EPOCH_YYYY_MM_DD to EPOCH_YYYY_MM_DD_GitLab version, for example 1493107454_2017_04_25 would become 1493107454_2017_04_25_9.1.0&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;其他意见&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;采用Omnibus Packages时&lt;a href=&#34;https://docs.gitlab.com/omnibus/update/README.html&#34;&gt;【文档】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;采用Source installation时&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#restore-for-installation-from-source&#34;&gt;【文档】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;故障排除&#34;&gt;故障排除&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;官方还原文档&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#restore&#34;&gt;【建议】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;参考官方&lt;a href=&#34;https://docs.gitlab.com/ee/raketasks/backup_restore.html#troubleshooting&#34;&gt;【Troubleshooting】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;合理运用命令&lt;code&gt;bundle exec rake gitlab:check SANITIZE=true&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
       
     </item>
     

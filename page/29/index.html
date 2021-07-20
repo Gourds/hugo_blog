@@ -348,6 +348,88 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/">消息队列介绍及常用MQ对比</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-11-05" class="post-time">
+        2015-11-05
+      </time>
+      
+      <span class="more-meta"> 约 1744 字 </span>
+      <span class="more-meta"> 预计阅读 4 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h3 id="什么是消息队列">什么是消息队列</h3>
+<p><strong>概述：</strong> 消息队列（Message Queue）一般大家习惯简称为MQ。主要特点为异步处理,也就是说消息的发送者和接收者不需要同时与消息队列交互。消息会保存在队列中，直到接收者取回它。消息队列和信号相比，能够传递更多的信息。与管道相比，消息队列提供了有格式的数据。</p>
+<blockquote>
+<p><strong>举一个直观的小例子</strong>
+姐姐小红希望弟弟小明多读书，经常拿好书给小明看。之前的方式是先问小明什么时候有空，然后把书给小明送过去，监督小明把书读完。后来两人都觉得太麻烦，就换了一个方式。
+买了一个书架，小红一有好书就放到书架上，小明看到书架上有书就取着读。这里，书架其实就是一个消息队列，小红就是生产者，小明就是消费者。
+这样的<strong>好处</strong>是：
+1.小红想给小明书的时候不必问小明什么时候有时间，直接把书放在书架上就行了，小红和小明的时间都更自由
+2.小红相信小明的读书自觉和读书能力，不必亲眼观察小明的读书过程，小红只要做一个放书的动作，很节省时间。
+3.当明天有另一个爱读书的小伙伴小强加入，小红仍旧只需要把书放到书架上，小明和小强从书架上取书即可
+4.书在书架上，小明读的慢就晚点看完，读的快就早点看完，小明的压力会小点。
+对应可以总结为：<strong>解耦</strong>、<strong>提速</strong>、<strong>广播</strong>、<strong>削峰</strong>
+相应<strong>缺点</strong>就是：
+1.引入复杂度
+2.暂时的不一致性
+**PS：**以上内容引自知乎祁达方</p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/">NFS服务安装部署记录</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-10-20" class="post-time">
+        2015-10-20
+      </time>
+      
+      <span class="more-meta"> 约 519 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/">Ansible之HAVE_DECL_MPZ_POWM_SEC报错记录</a>
     </h1>
     
@@ -389,94 +471,6 @@ yum install python-keyczar
     </div>
     <div class="read-more">
       <a href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/">安装hexo记录</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-06-13" class="post-time">
-        2015-06-13
-      </time>
-      
-      <span class="more-meta"> 约 152 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>简要记录一下在centos上安装hexo的过程
-记录在CentOS环境下配置hexo博客环境记录</p>
-<h2 id="install-git">Install Git</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">yum remove git
-yum install git-core
-</code></pre></td></tr></table>
-</div>
-</div>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/">Linux下关于文件属性的三个时间</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-05-13" class="post-time">
-        2015-05-13
-      </time>
-      
-      <span class="more-meta"> 约 939 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Tips: 主要区分linux下文件的三个时间属性，atime、mtime、ctime</p>
-<blockquote>
-<ul>
-<li>文件的 Access time，atime 是在读取文件或者执行文件时更改的任何对inode的访问都会使此处改变。</li>
-</ul>
-</blockquote>
-<ul>
-<li>文件的Modified time，mtime 是在写入文件时随文件内容的更改而更改的。</li>
-<li>文件的 Change time，ctime 是在写入文件、更改所有者、权限或链接设置时随 Inode 的内容更改而更改的。只要stat出来的内容发生改变就会发生改变。mtime的改变必然导致ctime的改变。</li>
-</ul>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
