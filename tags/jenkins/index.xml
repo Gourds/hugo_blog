@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/tags/jenkins/</link>
     <description>Recent content in Jenkins on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 30 Aug 2019 08:30:00 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jul 2021 10:25:35 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins_introduction</title>
+      <link>https://blog.gourds.site/post/ppt/jenkins_introduction/</link>
+      <pubDate>Wed, 21 Jul 2021 10:25:35 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/ppt/jenkins_introduction/</guid>
+      <description>Jenkins 介绍 例行介绍 pipeline的设计理念 我司的最佳实践 实际案例分析 The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 为什么选择Jenkins 社区活跃 插件</description>
+    </item>
+    
     <item>
       <title>JenkinsActiveChoices插件使用</title>
       <link>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
