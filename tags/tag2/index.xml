@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 on Gourds</title>
+    <link>https://blog.gourds.site/tags/tag2/</link>
+    <description>Recent content in tag2 on Gourds</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 21 Jul 2021 10:25:35 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins_introduction</title>
+      <link>https://blog.gourds.site/post/ppt/jenkins_introduction/</link>
+      <pubDate>Wed, 21 Jul 2021 10:25:35 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/ppt/jenkins_introduction/</guid>
+      <description>Jenkins 介绍 例行介绍 pipeline的设计理念 我司的最佳实践 实际案例分析 The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. 为什么选择Jenkins 社区活跃 插件</description>
+    </item>
+    
+  </channel>
+</rss>

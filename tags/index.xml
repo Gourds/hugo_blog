@@ -5,7 +5,25 @@
     <link>https://blog.gourds.site/tags/</link>
     <description>Recent content in Tags on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Jul 2021 21:13:42 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jul 2021 10:25:35 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tag1</title>
+      <link>https://blog.gourds.site/tags/tag1/</link>
+      <pubDate>Wed, 21 Jul 2021 10:25:35 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/tags/tag1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag2</title>
+      <link>https://blog.gourds.site/tags/tag2/</link>
+      <pubDate>Wed, 21 Jul 2021 10:25:35 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/tags/tag2/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>计算机</title>
       <link>https://blog.gourds.site/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
@@ -165,24 +183,6 @@
       <pubDate>Tue, 30 Oct 2018 18:23:45 +0000</pubDate>
       
       <guid>https://blog.gourds.site/tags/%E9%9A%8F%E7%AC%94/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>https://blog.gourds.site/tags/tools/</link>
-      <pubDate>Thu, 30 Aug 2018 21:12:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/tags/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ELK</title>
-      <link>https://blog.gourds.site/tags/elk/</link>
-      <pubDate>Wed, 01 Aug 2018 12:11:16 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/tags/elk/</guid>
       <description></description>
     </item>
     
