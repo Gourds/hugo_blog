@@ -666,14 +666,14 @@ IT-jws1(/register(/(merge.*|register-etcd))?)?
           &lt;span class=&#34;n&#34;&gt;progressiveDelay&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;600&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
           &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
         &lt;span class=&#34;n&#34;&gt;extendedEmail&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;recipientList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;guoyafeng@taiyouxi.cn&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;n&#34;&gt;recipientList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds@yeah.net&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
             &lt;span class=&#34;n&#34;&gt;defaultSubject&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;$DEFAULT_SUBJECT&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
             &lt;span class=&#34;n&#34;&gt;replyToList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;$DEFAULT_REPLYTO&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
             &lt;span class=&#34;n&#34;&gt;defaultContent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;${SCRIPT, template=&amp;#34;groovy-html.template&amp;#34;}&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
             &lt;span class=&#34;n&#34;&gt;contentType&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;text/html&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
             &lt;span class=&#34;n&#34;&gt;triggers&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
                 &lt;span class=&#34;n&#34;&gt;stillFailing&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-                    &lt;span class=&#34;n&#34;&gt;recipientList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;guoyafeng@taiyouxi.cn&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+                    &lt;span class=&#34;n&#34;&gt;recipientList&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds@yeah.net&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
                 &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
             &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
         &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
