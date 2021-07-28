@@ -348,6 +348,39 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/linux/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/">DNS端口使用解释</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-08-16" class="post-time">
+        2016-08-16
+      </time>
+      
+      <span class="more-meta"> 约 1646 字 </span>
+      <span class="more-meta"> 预计阅读 4 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**前言：**我们公司有个面试题很有意思，DNS的默认查询端口是什么？可能大家都很熟悉dns使用53端口，那究竟是使用udp协议还是tcp协议呢，恩，我也不清楚，所以就看了个科普贴！</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/blog/hexo%E4%B9%8Bnext%E4%B8%BB%E9%A2%98%E5%A4%B4%E5%83%8F%E8%AE%BE%E7%BD%AE/">hexo之Next主题设置</a>
     </h1>
     
@@ -416,41 +449,6 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/post/book/8%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/">Git钩子在hexo中的应用</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2016-08-12" class="post-time">
-        2016-08-12
-      </time>
-      
-      <span class="more-meta"> 约 1369 字 </span>
-      <span class="more-meta"> 预计阅读 3 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**摘要：**早该记录了，最开始我的blog是使用hexo+github搭建的使用jacman主题，也是因为对git不够了解，当时绑定域名是使用直接在github上写CNAME文件。感觉太麻烦了，就买了空间换了WordPress，wp也是用了要有快一年，然后感觉markdown支持的真是不好，而且迁移很不爽，然后就换了现在的。关于现在这套blog架构，依然使用hexo作为blog框架，我自己的电脑用作服务器，然后VPS作为web服务器提供发布，使用git hook进行更新blog。</p>
-<h3 id="git钩子简介---摘自git-scmhttpsgit-scmcombookzhv2e887aae5ae9ae4b989-git-git-e992a9e5ad90">git钩子简介 &ndash;摘自<a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90">git-scm</a></h3>
-<p>Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1588,6 +1586,14 @@ if (!doNotTrack) {
   
 
   
+
+  
+  <script src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+  <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+  </script>
 </div>
 
     </footer>

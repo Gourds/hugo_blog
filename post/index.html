@@ -340,13 +340,25 @@ if (!doNotTrack) {
 <section id="archive" class="archive">
     <div class="archive-title">
       <span class="archive-post-counter">
-          共计 124 篇文章
+          共计 125 篇文章
       </span>
     </div>
     
       <div class="collection-title">
         <h2 class="archive-year">2021</h2>
       </div>
+
+    <div class="archive-post">
+      <time datetime="2021-07-23" class="archive-post-time">
+        2021-07-23
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/book/%E8%BF%99%E4%BA%9B%E5%B9%B4%E9%82%A3%E4%BA%9B%E4%BA%8B/" class="archive-post-link">
+          《这些年，那些事》
+        </a>
+      </span>
+    </div>
+    
 
     <div class="archive-post">
       <time datetime="2021-07-21" class="archive-post-time">
@@ -454,18 +466,6 @@ if (!doNotTrack) {
       <span class="archive-post-title">
         <a href="/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/" class="archive-post-link">
           JenkinsActiveChoices插件使用
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-08-28" class="archive-post-time">
-        2019-08-28
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/programming/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" class="archive-post-link">
-          Flask中Jinja2模板使用总结
         </a>
       </span>
     </div></section>
@@ -643,6 +643,14 @@ if (!doNotTrack) {
   
 
   
+
+  
+  <script src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+  <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+  </script>
 </div>
 
     </footer>

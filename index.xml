@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Jul 2021 10:25:35 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jul 2021 17:53:14 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -39,9 +39,9 @@
 &lt;td&gt;晚上看，已经看完了&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2021.07.23-？&lt;/td&gt;
-&lt;td&gt;《这些人，那些事》&lt;/td&gt;
-&lt;td&gt;这个搁置已久，名字很吸引我，很早以前看了一半，等上面的看完就再读一下&lt;/td&gt;
+&lt;td&gt;2021.07.23-2021.07.27&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《这些人，那些事》&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;这个搁置已久，名字很吸引我，很早以前看了一半，等上面的看完就再读一下;火车上看完了。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -49,14 +49,14 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.07.28-?&lt;/td&gt;
 &lt;td&gt;《贫穷的本质》&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2021.07.19-2021.07.23&lt;/td&gt;
 &lt;td&gt;&lt;del&gt;《程序是怎么跑起来的》&lt;/del&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;很推荐，可以轻松的窥见一些原理，对现在离硬件越来越远的程序员来说很有帮助&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -67,6 +67,11 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;《老人与海》&lt;/td&gt;
 &lt;td&gt;看过一遍，印象不深刻，再来&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《网络是怎样连接的》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -135,7 +140,7 @@
 &lt;h4 id=&#34;开发语言-python&#34;&gt;开发语言-Python&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《与孩子一起学编程》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Head First Python》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Head First Python》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《笨方法学Python》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://item.jd.com/11020898.html&#34;&gt;《Python标准库》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python Cookbook》&lt;/a&gt;&lt;/li&gt;
@@ -194,7 +199,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《群书治要》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《曾少年》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《每个人都会死，但我总以为自己不会》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《这些人，那些事》【中】吴念真&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《这些人，那些事》【中】吴念真&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《三国演义》【中】罗贯中&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《白夜行》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《菜根谭》&lt;/a&gt;&lt;/li&gt;
@@ -283,6 +288,23 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《连接组》【美】承现峻&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《从一到无穷大》【美】G·伽莫夫&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《这些年，那些事》</title>
+      <link>https://blog.gourds.site/post/book/%E8%BF%99%E4%BA%9B%E5%B9%B4%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
+      <pubDate>Fri, 23 Jul 2021 17:53:14 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/%E8%BF%99%E4%BA%9B%E5%B9%B4%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;人要到了三十多岁，才慢慢开始琢磨上一代人的心思，会站在他们那边想，有时候暗暗分析分析他们年轻的时候是怎么过来的，为什么会有这种性格和脾气，他们的欢喜和恐惧是什么。年轻的时候，当然是一味的反叛，即使是顺从，也是很压抑的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你要照顾家里，辛苦你了，不过，当你的弟弟妹妹，也很辛苦。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
       
     </item>
@@ -4564,259 +4586,6 @@ systemctl is-enabled supervisord
 &lt;p&gt;&lt;a href=&#34;http://supervisord.org/installing.html&#34;&gt;【Supervisor官方文档】&lt;/a&gt;
 &lt;a href=&#34;http://flowsnow.net/2017/09/25/%E8%AF%A6%E8%A7%A3supervisor%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/&#34;&gt;【Flowsnow的Blog】&lt;/a&gt;
 &lt;a href=&#34;http://www.madown.com/2017/05/25/supervisor%E4%B8%AD%E7%9A%84minfds%E5%8F%8Aminprocs%E5%8F%82%E6%95%B0%E7%94%A8%E9%80%94/&#34;&gt;【旺仔牛奶的Blog】&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Elasticsearch使用curator管理index</title>
-      <link>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
-      <pubDate>Wed, 01 Aug 2018 12:11:16 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
-      
-        <description>&lt;p&gt;有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具&lt;code&gt;curator&lt;/code&gt;，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句&lt;code&gt;curator&lt;/code&gt;的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。&lt;/p&gt;
-&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
-&lt;p&gt;官方提供了多种安装途径（pip、yum、SourceCode、Docker），支持Unix及Windows平台。由于安装需要python3.x环境且我使用的是AWS的ec2实例，感觉使用源码或yum的方式管理维护不太方便，所以决定使用Docker方式。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;本地环境&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# cat /etc/issue&lt;/span&gt;
-Amazon Linux AMI release 2017.03
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;安装Docker环境&amp;amp;下载源代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yum install docker
-/etc/init.d/docker start
-&lt;span class=&#34;c1&#34;&gt;#Install and start docker service&lt;/span&gt;
-mkdir -pv /data/ES-curator&lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt;  /data/ES-curator
-wget https://github.com/elastic/curator/archive/v5.5.4.zip &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; unzip v5.5.4.zip
-&lt;span class=&#34;c1&#34;&gt;#Download curator source code&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;简单升级DockerFile&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;FROM python:3.6-alpine3.6 as builder
-RUN apk --no-cache add build-base tar musl-utils openssl-dev
-RUN pip3 install setuptools &lt;span class=&#34;nv&#34;&gt;cx_Freeze&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;6.0b1 requests-aws4auth boto3
-COPY . .
-RUN ln -s /lib/libc.musl-x86_64.so.1 ldd
-RUN ln -s /lib /lib64
-RUN pip3 install -r requirements.txt
-RUN python3 setup.py build_exe
-FROM alpine:3.6
-ENV CURATOR_CONFIG_HOME /data/curator-config
-RUN apk --no-cache upgrade &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apk --no-cache add ca-certificates  &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;    mkdir -p &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CURATOR_CONFIG_HOME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-COPY --from&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;builder build/exe.linux-x86_64-3.6 /curator/
-VOLUME &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CURATOR_CONFIG_HOME&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-USER root:root
-ENTRYPOINT &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/curator/curator&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;构建Docker镜像&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; curator-5.5.4/ &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; docker build -t curator:v5.5.4 .
-&lt;span class=&#34;c1&#34;&gt;#build docker image from source code&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;使用&#34;&gt;使用&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;配置文件（默认会使用&lt;code&gt;~/.curator/curator.yml&lt;/code&gt;，可以手动通过&lt;code&gt;--config&lt;/code&gt;参数指定。配置如下，更具体的文档可以查阅&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/configfile.html&#34;&gt;【官方】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Remember, leave a key empty if there is no value.  None will be a string,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# not a Python &amp;#34;NoneType&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;client&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;hosts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#填写ES的服务节点，可以只写一个节点，可以写成下面的形式，也可以写成[&amp;#39;host1&amp;#39;, &amp;#39;host2]这种形式&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;x.x.x.x&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;9200&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#ES的端口&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;url_prefix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#默认留空即可，使用域名的时候可以根据需求修改&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;use_ssl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;certificate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;client_cert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;client_key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ssl_no_validate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;http_auth&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;timeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;master_only&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;logging&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;loglevel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;INFO&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#记录log的级别&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;logfile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/data/curator-config/log/curator_%Y%m%d.log&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#log的输出设置，默认留空&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;logformat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;default&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;blacklist&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;elasticsearch&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;urllib3&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#日志输出屏蔽的列表，按默认即可，这两个相关log输入太影响Debug&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;使用docker对index进行管理&#34;&gt;使用Docker对Index进行管理&lt;/h4&gt;
-&lt;p&gt;由于直接测试写的文档，也没有什么高深的技术，有兴趣可移步到我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/elasticsearch_curator/cuator_config&#34;&gt;Github&lt;/a&gt;。里面有测试使用的例子（包括打开索引、关闭索引、段合并以及删除索引）&lt;/p&gt;
-&lt;p&gt;自己写了一个简单的启动脚本，由于比较长也没什么营养，感兴趣的可以看&lt;a href=&#34;https://github.com/Gourds/docker-image/blob/master/Service/elasticsearch_curator/cuator_config/curator-manage-index&#34;&gt;【这里】&lt;/a&gt;
-使用我这个脚本，然后再服务器上进行设置定时任务运行,当需要单独执行某个操作时候这种管理方式可能方便些。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#crontab -e&lt;/span&gt;
-&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; * * * service curator-manage-index cron
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;使用命令&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/close_index_rule.yml
-&lt;span class=&#34;c1&#34;&gt;#关闭索引&lt;/span&gt;
-docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/delete_index_rule.yml
-&lt;span class=&#34;c1&#34;&gt;#删除索引&lt;/span&gt;
-docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/merge_index_rule.yml
-&lt;span class=&#34;c1&#34;&gt;#段合并&lt;/span&gt;
-docker run -d --rm -v /data/ES-curator/curator-config/:/data/curator-config curator:v5.5.4 --config /data/curator-config/curator.yml /data/curator-config/open_index_rule.yml
-&lt;span class=&#34;c1&#34;&gt;#打开索引&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;补充配置说明&#34;&gt;补充配置说明&lt;/h3&gt;
-&lt;p&gt;上面记录了我使用中需求的具体示例，还有一些配置选项没有进行说明，就简单介绍下curator可以对Index进行哪些操作，以及常见具体操作时的参数选项。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/alias.html&#34;&gt;【Alias】&lt;/a&gt; 这个操作可以通过别名添加或删除索引&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/allocation.html&#34;&gt;【Allocation】&lt;/a&gt;更改选定索引的分片路由分配&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/close.html&#34;&gt;【Close】&lt;/a&gt;关闭选定索引，可以节省内存&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/cluster_routing.html&#34;&gt;【Cluster Routing】&lt;/a&gt;更改选定索引的分片路由分配&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/create_index.html&#34;&gt;【Create Index】&lt;/a&gt;创建索引&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/delete_indices.html&#34;&gt;【Delete Index】&lt;/a&gt;删除过滤筛选出的索引&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/delete_snapshots.html&#34;&gt;【DeleteSnapshots】&lt;/a&gt;从选定的存储库中删除选定的快照&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/forcemerge.html&#34;&gt;【forceMerge】&lt;/a&gt;将过滤选定的索引按照配置进行强制合并&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/index_settings.html&#34;&gt;【Index Settings】&lt;/a&gt;更新选中的index的设置&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/open.html&#34;&gt;【Open】&lt;/a&gt;打开选定索引&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/reindex.html&#34;&gt;【Reindex】&lt;/a&gt;对index进行重新索引，有很多选项，具体看官网&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/replicas.html&#34;&gt;【Replicas】&lt;/a&gt;此操作将每个shard的副本数设置为count值&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/restore.html&#34;&gt;【Restore】&lt;/a&gt;从快照中恢复index&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/rollover.html&#34;&gt;【Rollover】&lt;/a&gt;对满足任何描述条件的索引使用弹性搜索滚动API创建新索引&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/shrink.html&#34;&gt;【Shrink】&lt;/a&gt;缩小索引，不过需要满足多个条件，具体参照文档&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/snapshot.html&#34;&gt;【Snapshot】&lt;/a&gt;对选定索引创建快照&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;选取indexfilters&#34;&gt;选取Index（Filters）&lt;/h4&gt;
-&lt;p&gt;使用filters进行筛选需要操作的index。虽然过滤器可以链接，但是每个过滤器都通过隐含的逻辑AND操作链接。如果想从几个不同的模式中匹配，就像用逻辑或运算一样，可以用模式过滤器类型使用正则表达式来匹配。&lt;/p&gt;
-&lt;p&gt;操作筛选操作分为两部分（索引以及镜像），这里只对Index的过滤选项进行介绍，更多可以参照&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/filters.html&#34;&gt;【官方】&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#支持正则进行多个index的匹配&lt;/span&gt;
-  filters:
-  - filtertype: pattern
-    kind: regex
-    value: &lt;span class=&#34;s1&#34;&gt;&amp;#39;^(alpha-|bravo-|charlie-).*$&amp;#39;&lt;/span&gt;
-  - filtertype: age &lt;span class=&#34;c1&#34;&gt;#按时间进行筛选index&lt;/span&gt;
-    source: creation_date
-    direction: older
-    unit: days
-    unit_count: &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;参考链接&#34;&gt;参考链接&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/elastic/curator&#34;&gt;【Github地址】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/client/curator/current/index.html&#34;&gt;【官方文档】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;</description>
       
     </item>
     

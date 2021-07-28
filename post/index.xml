@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Jul 2021 10:25:35 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jul 2021 17:53:14 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《这些年，那些事》</title>
+      <link>https://blog.gourds.site/post/book/%E8%BF%99%E4%BA%9B%E5%B9%B4%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
+      <pubDate>Fri, 23 Jul 2021 17:53:14 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/%E8%BF%99%E4%BA%9B%E5%B9%B4%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
+      <description>人要到了三十多岁，才慢慢开始琢磨上一代人的心思，会站在他们那边想，有时候暗暗分析分析他们年轻的时候是怎么过来的，为什么会有这种性格和脾气，他</description>
+    </item>
+    
     <item>
       <title>Jenkins_introduction</title>
       <link>https://blog.gourds.site/post/ppt/jenkins_introduction/</link>
@@ -257,19 +266,6 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
       
       <guid>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
       <description>&lt;p&gt;有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具&lt;code&gt;curator&lt;/code&gt;，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句&lt;code&gt;curator&lt;/code&gt;的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitbucket实践</title>
-      <link>https://blog.gourds.site/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/</link>
-      <pubDate>Sat, 09 Jun 2018 12:38:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/</guid>
-      <description>&lt;p&gt;前言：之前使用了Atlassian公司的Confluence和Jira，现在新项目考虑使用Bitbucket做代码仓库，这里记录一下调研实践过程。由于之前的服务是使用docker进行部署的，所以Bitbucket也决定使用docker的方式进行部署。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;update:&lt;/strong&gt;
-2018-06-12: 添加备份还原文档，文档在&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/bitbucket/backup-restore&#34;&gt;【这里】&lt;/a&gt;，就不单独在放Blog了&lt;/p&gt;
-&lt;/blockquote&gt;</description>
     </item>
     
   </channel>

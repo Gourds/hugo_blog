@@ -344,6 +344,18 @@ if (!doNotTrack) {
       </div>
 
     <div class="archive-post">
+      <time datetime="2019-08-28" class="archive-post-time">
+        2019-08-28
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/programming/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" class="archive-post-link">
+          Flask中Jinja2模板使用总结
+        </a>
+      </span>
+    </div>
+    
+
+    <div class="archive-post">
       <time datetime="2019-08-25" class="archive-post-time">
         2019-08-25
       </time>
@@ -449,18 +461,6 @@ if (!doNotTrack) {
       <span class="archive-post-title">
         <a href="/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/" class="archive-post-link">
           Elasticsearch使用curator管理index
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2018-06-09" class="archive-post-time">
-        2018-06-09
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/" class="archive-post-link">
-          Bitbucket实践
         </a>
       </span>
     </div></section>
@@ -638,6 +638,14 @@ if (!doNotTrack) {
   
 
   
+
+  
+  <script src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+  <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+  </script>
 </div>
 
     </footer>

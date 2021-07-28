@@ -348,6 +348,39 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/linux/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/">Linux后台执行执行程序及环境变量优先级</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2017-06-25" class="post-time">
+        2017-06-25
+      </time>
+      
+      <span class="more-meta"> 约 1232 字 </span>
+      <span class="more-meta"> 预计阅读 3 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**背景故事：**为什么写这个呢，因为有次给媳妇弄翻墙的shadows，配完了想让她每次开机就自动运行，然后发现了个事情，就是脚本有输出的时候直接用&amp;是不大好的。还查了下，这可不应该啊，虽然说好久不用这个玩意，不过还是应该掌握的，所以就当记个笔记吧</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/linux%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BC%98%E5%85%88%E7%BA%A7/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/linux/linux%E7%AE%A1%E7%90%86%E5%91%98%E7%9A%84%E7%91%9E%E5%A3%AB%E5%86%9B%E5%88%80-awk/">Linux管理员的瑞士军刀-AWK</a>
     </h1>
     
@@ -410,39 +443,6 @@ GTX Compressor(直压上云技术)调研,由于现业务存在大规模业务数
     </div>
     <div class="read-more">
       <a href="/post/tools/gtx%E7%9B%B4%E5%8E%8B%E4%B8%8A%E4%BA%91%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/tools/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/">常见压缩格式对比</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2017-05-30" class="post-time">
-        2017-05-30
-      </time>
-      
-      <span class="more-meta"> 约 372 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><strong>数据压缩</strong>可以分为无损压缩和有损压缩，有损，指的是压缩之后就无法完整还原原始信息，但是压缩率可以很高，主要应用于视频、话音等数据的压缩，因为损失了一点信息，人是很难察觉的，或者说，也没必要那么清晰照样可以看可以听；无损压缩则用于文件等等必须完整还原信息的场合。目前只归纳zip、rar、tar.gz、tar.bz常见的这几种，其他的以后接触了再进行补充。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/tools/%E5%B8%B8%E8%A7%81%E5%8E%8B%E7%BC%A9%E6%A0%BC%E5%BC%8F%E5%AF%B9%E6%AF%94/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1580,6 +1580,14 @@ GTX Compressor(直压上云技术)调研,由于现业务存在大规模业务数
   
 
   
+
+  
+  <script src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+  <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+  </script>
 </div>
 
     </footer>

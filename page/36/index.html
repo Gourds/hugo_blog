@@ -348,6 +348,60 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/linux/linux%E4%B8%8Bhexo%E9%85%8D%E7%BD%AE/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      <span class="more-meta"> 约 910 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h2 id="tags-hexo">title: Linux下hexo配置
+date: 2015-03-13 11:25:11
+tags: [Hexo]</h2>
+<h3 id="本地环境">本地环境</h3>
+<blockquote>
+<ul>
+<li>CentOS6</li>
+</ul>
+</blockquote>
+<ul>
+<li>下载nvm（Node.js的版本管理器）软件</li>
+</ul>
+<blockquote>
+<p>wget -qO- <a href="https://raw.github.com/creationix/nvm/master/install.sh">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh	#下载安装nvm（安装目录在/root/.nvm/）</p>
+</blockquote>
+<ul>
+<li>安装nvm软件</li>
+</ul>
+<blockquote>
+<p>nvm install 0.10	#选择Node.js的安装版本
+nvm ls	#查看node.js的版本</p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/linux%E4%B8%8Bhexo%E9%85%8D%E7%BD%AE/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/linux/linux%E4%B8%8B%E6%90%AD%E5%BB%BAvsftp%E6%9C%8D%E5%8A%A1%E5%99%A8/"></a>
     </h1>
     
@@ -413,42 +467,6 @@ tags: [Linux]</h2>
     </div>
     <div class="read-more">
       <a href="/post/linux/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/"></a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      <span class="more-meta"> 约 786 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="tags-linux">title: Linux查看系统信息命令
-date: 2015-07-27 10:49:08
-tags: [Linux]</h2>
-<p>**Command Include：**disk、memory、hostname、find</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1670,6 +1688,14 @@ tags: [Linux]</h2>
   
 
   
+
+  
+  <script src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+  <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+  </script>
 </div>
 
     </footer>

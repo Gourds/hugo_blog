@@ -840,7 +840,7 @@ if (!doNotTrack) {
         
         
         <a href="https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/"
-          style="font-size:1.8914741933766805rem">读书</a>
+          style="font-size:1.9924628438380425rem">读书</a>
         
       
         
@@ -970,6 +970,14 @@ if (!doNotTrack) {
   
 
   
+
+  
+  <script src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+  <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+  </script>
 </div>
 
     </footer>
