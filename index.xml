@@ -17,7 +17,7 @@
       
       <guid>https://blog.gourds.site/book/</guid>
       
-        <description>&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=330 height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=171254&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;
+        <description>&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=330 height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=169311&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;阅读计划&#34;&gt;阅读计划&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -49,9 +49,9 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2021.07.28-?&lt;/td&gt;
-&lt;td&gt;《贫穷的本质》&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.07.28-2021.07.30&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《贫穷的本质》&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;不是太吸引人，感觉有些啰嗦，不过确实对贫穷有了不一样的认识&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2021.07.19-2021.07.23&lt;/td&gt;
@@ -64,12 +64,12 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.07.31-?&lt;/td&gt;
 &lt;td&gt;《老人与海》&lt;/td&gt;
 &lt;td&gt;看过一遍，印象不深刻，再来&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.07.31-?&lt;/td&gt;
 &lt;td&gt;《网络是怎样连接的》&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -228,6 +228,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《少有人走的路:在焦虑的年代获得精神的成长》【美】M·斯科特·派克&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《亲密关系》【美】罗兰·米勒 (Rowland S. Miller)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《爱的艺术》【美】埃里希·弗罗姆&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《爱的五种能力》【中】赵永久&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《怪诞行为学》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《人性的弱点》【美】戴尔.卡耐基&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《拖延心理学》【美】简.博克/莱诺拉.袁&lt;/a&gt;&lt;/li&gt;
@@ -255,7 +256,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《极简经济学》【中】常青&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《小狗钱钱》【德】博多·舍费尔&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《贫穷的本质》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《贫穷的本质》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《股票作手回忆录》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《聪明的投资者》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《让时间陪你慢慢变富》【中】李笑来&lt;/a&gt;&lt;/li&gt;
