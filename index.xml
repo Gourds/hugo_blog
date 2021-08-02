@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Jul 2021 17:53:14 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jul 2021 13:34:42 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -72,6 +72,11 @@
 &lt;td&gt;2021.07.31-?&lt;/td&gt;
 &lt;td&gt;《网络是怎样连接的》&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《群书治要》&lt;/td&gt;
+&lt;td&gt;枕边书ready&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -216,6 +221,11 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《我的职业是小说家》【日】村上春树&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《不如做只猫狗》【中】梁实秋&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《自在独行》【中】贾平凹&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《心》【日】夏目漱石&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《局外人》【法】阿尔贝·加缪&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《雾都孤儿》【英】狄更斯&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《动物农场》【英】乔治·奥威尔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《了不起的盖茨比》【美】菲茨杰拉德&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;心理学哲学&#34;&gt;心理学|哲学&lt;/h3&gt;
 &lt;ul&gt;
@@ -238,6 +248,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《通向哲学的后楼梯》【德】威廉.魏施德&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《自控力》【美】凯利·麦格尼格尔&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《沟通的艺术》 【美】罗纳德·阿德勒/拉塞尔·普罗克特&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《西西弗神话》【法】阿尔贝·加缪&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;历史传记&#34;&gt;历史|传记&lt;/h3&gt;
 &lt;ul&gt;
@@ -265,6 +276,7 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《财富自由之路I:7年赚到你的第一个1000万》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《中华文化与稻盛和夫的经营哲学》【中】章起华&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《穷查理宝典》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《每个人的经济学》【英】张夏准&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;兴趣读物&#34;&gt;兴趣读物&lt;/h3&gt;
 &lt;ul&gt;
@@ -291,7 +303,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《肠子的小心思》【德】朱莉娅·恩德斯 著/吉尔·恩德斯 绘&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《神逻辑：不讲道理的人怎么总有理！》【美】阿里·阿莫萨维&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《火焰中的秘密》【德】延斯·森特根&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; [《我们如何走到今天:重塑世界的6项创新》]&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《我们如何走到今天:重塑世界的6项创新》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《猿猴的把戏》【意】达里奥·马埃斯特里皮埃里 &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《大脑勇士》【美】丹尼尔·亚蒙(Danie &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《每天演好一个情绪稳定成年人》&lt;/a&gt;&lt;/li&gt;
@@ -303,6 +315,17 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《我们为什么要睡觉》【美】Matthew Walker&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>《网络是怎样连接的》</title>
+      <link>https://blog.gourds.site/post/book/how_is_the_network_connected/</link>
+      <pubDate>Sat, 31 Jul 2021 13:34:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/how_is_the_network_connected/</guid>
+      
+        <description></description>
       
     </item>
     
@@ -4278,328 +4301,6 @@ Nginx使用Docker的方式&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>CentOS7安装配置supervisor</title>
-      <link>https://blog.gourds.site/post/linux/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
-      <pubDate>Thu, 30 Aug 2018 21:12:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/linux/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
-      
-        <description>&lt;p&gt;之前一直用AWS的服务，使用的也是AWS官方提供的系统镜像，感觉挺好使的，所以centos7的版本用的不多。最近刚好需要使用腾讯云，记录一下supervisor的安装配置，不管简单与否，好久没写博客了还是记录一下吧。
-&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-27.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Env：&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;OS: &lt;code&gt;CentOS Linux release 7.4.1708 (Core)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Python: &lt;code&gt;Python 2.7.5&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Pip: &lt;code&gt;pip 8.1.2 from /usr/lib/python2.7/site-packages (python 2.7)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Install supervisor with pip&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;yum install python-pip &lt;span class=&#34;c1&#34;&gt;#8.1.2-6.el7&lt;/span&gt;
-pip install supervisor &lt;span class=&#34;c1&#34;&gt;#meld3-1.0.2 supervisor-3.3.4&lt;/span&gt;
-supervisord -v
-&lt;span class=&#34;c1&#34;&gt;#Install supervisor&lt;/span&gt;
-mkdir /etc/supervisor
-echo_supervisord_conf  &amp;gt; /etc/supervisor/supervisord.conf
-cat /etc/supervisor/supervisord.conf &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;egrep -v &lt;span class=&#34;s2&#34;&gt;&amp;#34;^&lt;/span&gt;$&lt;span class=&#34;s2&#34;&gt;|^;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#Create supervisor config file&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Support systemd&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;systemctl --version &lt;span class=&#34;c1&#34;&gt;#systemd 219&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#Support systemd&lt;/span&gt;
-wget https://raw.githubusercontent.com/zokeber/supervisor-systemd/master/etc/systemd/system/supervisord.service -O /etc/systemd/system/supervisord.service
-&lt;span class=&#34;c1&#34;&gt;#Download systemd config for supervisor.&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#https://github.com/Supervisor/initscripts&lt;/span&gt;
-systemctl status supervisord
-&lt;span class=&#34;c1&#34;&gt;#Now can use systemctl command to manage supervisor service&lt;/span&gt;
-systemctl start supervisord &lt;span class=&#34;c1&#34;&gt;#{start|stop|restart|reload}&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#Start service&lt;/span&gt;
-systemctl list-unit-files &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep supervisor
-&lt;span class=&#34;c1&#34;&gt;#检查所有服务开机启动状态并过滤指定服务&lt;/span&gt;
-systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; supervisord
-&lt;span class=&#34;c1&#34;&gt;#添加服务到开机自启动&lt;/span&gt;
-systemctl is-enabled supervisord
-&lt;span class=&#34;c1&#34;&gt;#查询指定服务开机启动状态&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tip:&lt;/strong&gt; &lt;code&gt;supervisord.service&lt;/code&gt;文件如下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Unit]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;Description&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;Supervisor process control system for UNIX&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;Documentation&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;http://supervisord.org&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;After&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;network.target&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;[Service]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;ExecStart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;ExecStop&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/usr/bin/supervisorctl $OPTIONS shutdown&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;ExecReload&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/usr/bin/supervisorctl $OPTIONS reload&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;KillMode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;process&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;Restart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;on-failure&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;RestartSec&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;50s&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;[Install]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;WantedBy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;multi-user.target&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tip：&lt;/strong&gt; 主配置&lt;code&gt;/etc/supervisor/supervisord.conf&lt;/code&gt;示例(参考Flowsnow的博客及官方文档)&lt;a href=&#34;https://github.com/Gourds/daily-scripts/blob/master/ansible-playbook/roles/supervisor/templates/supervisord.conf.j2&#34;&gt;【**附：**我的配置】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;k&#34;&gt;[unix_http_server]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;/tmp/supervisor.sock ;socket文件路径&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;chmod=0700                 ; socket 文件 模式 (默认 0700)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;chown=nobody:nogroup       ; socket file uid:gid owner&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;username=user              ; 使用supervisorctl连接的用户,默认没有用户&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;password=123               ; 使用supervisorctl连接的用户密码,默认没有密码&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;[inet_http_server]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;port&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;172.21.0.4:9001 ;Web Server和远程的supervisorctl配置，默认关闭&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;username&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;user123 ;登录用户，默认没有&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;password&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;password123 ;用于登录密码，默认没有&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;[supervisord]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;logfile&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;/tmp/supervisord.log ;supervisord进程的日志路径&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;logfile_maxbytes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;100MB ;supervisor单个日志的大小，默认为50M&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;logfile_backups&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;20 ;日志文件的个数，默认为10个&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;loglevel&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;info ;日志级别，默认info {trace|info|warn|debug}&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;pidfile&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;/tmp/supervisord.pid ;supervisor的pid文件路径&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;nodaemon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;false ;默认为false在后台运行，改为true即在前台运行&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;minfds&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;20000 ;系统最少有的空闲文件描述符，低于这个值supervisor不会启动，另外跟最大文件句柄数相关&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;minprocs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;200 ;最小可用的进程描述符，低于这个值supervisor将不会正常启动&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;[rpcinterface:supervisor]&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;给XML_RPC用的，要使用supervisord或者web server必须要开启&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;[supervisorctl]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;serverurl&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;unix:///tmp/supervisor.sock ;supervisorctl本地连接supervisord，使用本地UNIX socke&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;[program:theprogramname]      ; 指定管理服务的名称&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/bin/tail -f  /etc/fstab            ; 要执行的进程，可以带参数，不能是守护进程&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;process_name=%(program_name)s ; numprocs参数为1时，就不用管这个参数 默认值%(program_name)s也就是上面的那个program冒号后面的名字&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;numprocs=1                    ; 启动进程的数目。当不为1时，就是进程池的概念，默认为1&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;directory&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/tmp                ; 进程运行前，会前切换到这个目录&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;autostart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;true                ; 设置为true 子进程将在supervisord启动后被自动启动，默认为true&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;startretries&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;3                ; 进程启动失败后，最大尝试启动的次数 当超过3次后，supervisor将把此进程的状态置为FAIL&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;autorestart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;unexpected        ; 设置子进程挂掉后自动重启的情况，有三个选项，false,unexpected和true。默认为unexpected&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;exitcodes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;0,2                 ; 注意和上面的的autorestart=unexpected对应 exitcodes里面的定义的退出码是expected的。&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stopsignal&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;QUIT               ; 进程停止信号，可以为TERM, HUP, INT, QUIT, KILL, USR1, or USR2等信号 默认为TERM 当用设定的信号去杀掉进程，退出码会被认为是expected&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stopwaitsecs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;10               ; 这个是当我们向子进程发送stopsignal信号后，到系统返回信息给supervisord，所等待的最大时间。 超过这个时间，supervisord会向该子进程发送一个强制kill的信号(默认10秒)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;stopasgroup=false             ; 这个东西主要用于，supervisord管理的子进程，这个子进程本身还有子进程 那么我们如果仅仅干掉supervisord的子进程的话，子进程的子进程有可能会变成孤儿进程 所以咱们可以设置这个选项，把整个该子进程的整个进程组都干掉  设置为true的话，一般killasgroup也会被设置为true 该选项发送的是stop信号(def false)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;killasgroup=false             ; 这个和上面的stopasgroup类似，不过发送的是kill信号(def false)&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;chrism                   ; 如果supervisord是root启动，我们在这里设置这个非root用户，可以用来管理该program 默认不设置&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;redirect_stderr=true          ; 为true，则stderr的日志会被写入stdout日志文件中 (default false)&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stdout_logfile&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/a/path        ; 子进程的stdout的日志路径，可以指定路径，AUTO，none等三个选项 设置为none的话，将没有日志产生。设置为AUTO的话，将随机找一个地方成日志文件，而且当supervisord重新启动的时候，以前的日志文件会被清空。当 redirect_stderr=true的时候，sterr也会写进这个日志文件&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stdout_logfile_maxbytes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;100MB   ; 日志文件最大大小，和[supervisord]中定义的一样 (default 50MB)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;stdout_logfile_backups=10     ; 和[supervisord]定义的一样 (0 means none, default 10)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;stdout_capture_maxbytes=1MB   ; 这个东西是设定capture管道的大小，当值不为0的时候，子进程可以从stdout发送信息，而supervisor可以根据信息，发送相应的event  (default 0)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;stdout_events_enabled=false   ; 为ture的时候，当子进程由stdout向文件描述符中写日志的时候，将触发supervisord发送PROCESS_LOG_STDOUT类型的event(default false)&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stderr_logfile&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/a/path        ; 设置stderr写的日志路径，当redirect_stderr=true。这个就不用设置了，设置了也是白搭。因为它会被写入stdout_logfile的同一个文件中 default AUTO(随便找个地存，supervisord重启被清空)&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stderr_logfile_maxbytes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;1MB   ; max # logfile bytes b4 rotation (default 50MB)&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stderr_logfile_backups&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;10     ; # of stderr logfile backups (default 10)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;stderr_capture_maxbytes=1MB   ; number of bytes in &amp;#39;capturemode&amp;#39; (default 0)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;stderr_events_enabled=false   ; emit events on stderr writes (default false)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;environment=A=&amp;#34;1&amp;#34;,B=&amp;#34;2&amp;#34;       ; 这个是该子进程的环境变量，和别的子进程是不共享的&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;serverurl=AUTO                ; override serverurl computation (childutils)&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;[group:thegroupname]          ; 给programs分组，划分到组里面的program。我们就不用一个一个去操作了 我们可以对组名进行统一的操作。 注意：program被划分到组里面之后，就相当于原来的配置从supervisor的配置文件里消失了supervisor只会对组进行管理，而不再会对组里面的单个program进行管理了&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;programs=progname1,progname2  ; 组成员，用逗号分开&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;;priority=999                  ; 优先级，相对于组和组之间 (default 999)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;[include]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;files&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;/etc/supervisord/conf.d/*.conf ;包含其他的程序配置文件&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tip：&lt;/strong&gt; 子服务配置&lt;code&gt;/etc/supervisor/conf.d/example1.conf&lt;/code&gt;示例(即上面的program配置项可以提取到单独文件)&lt;a href=&#34;https://github.com/Gourds/daily-scripts/blob/master/ansible-playbook/roles/supervisor/templates/program_example.j2&#34;&gt;【**附：**我的配置】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;k&#34;&gt;[program:example1]&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/bin/tail -f 121&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;directory&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/tmp&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;arvon&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stdout_logfile&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;/tmp/example1.log&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stdout_logfile_maxbytes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;100MB&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stdout_logfile_backups&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;10&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;redirect_stderr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;true&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;autostart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;true&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;autorestart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;unexpected&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;exitcodes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;0,2&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stopsignal&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;QUIT&lt;/span&gt;
-&lt;span class=&#34;na&#34;&gt;stopwaitsecs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;20&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;注意点（踩坑）&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;supervisord中参数minfds和minprocs决定了supervisord进程及其守护的子进程的Max Processes及Max open files，并且这个limit限制不受系统ulimit所影响&lt;/li&gt;
-&lt;li&gt;supervisord守护的子进程无法在supervisord配置文件中单独修改minfds和minprocs这两个参数。下面红色部分的配置是无效的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;以上截取自旺仔牛奶Blog的结论&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;附centos7与centos6对比&#34;&gt;附：CentOS7与CentOS6对比&lt;/h3&gt;
-&lt;p&gt;CentOS7并没有在生产环境大量使用，刚好可以利用这次线上测试的机会稍微总结下
-&lt;strong&gt;主要区别大致包含以下几个方面：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;基础命令&lt;/li&gt;
-&lt;li&gt;内核版本（2.x和3.x）&lt;/li&gt;
-&lt;li&gt;文件系统（ext4和xfs）&lt;/li&gt;
-&lt;li&gt;安全系统（防火墙）&lt;/li&gt;
-&lt;li&gt;服务管理（service和systemctl）&lt;/li&gt;
-&lt;li&gt;新增特性（虚拟化、性能管理、身份管理、网络管理等）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;建议&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;使用Docker建议使用系统版本&amp;gt;=7.4，7.2印象中之前测试有关于cgroup的坑，另外啰嗦一个下Docker对内核版本的要求是至少3.8;目前官方推荐大于3.10&lt;a href=&#34;https://docs.docker.com/engine/docker-overview/#the-underlying-technology&#34;&gt;【官网地址】&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;看到&lt;a href=&#34;https://blog.csdn.net/xu_Melon/article/details/79043898&#34;&gt;【CSDN上的一篇Blog】&lt;/a&gt;里面介绍了一些命令的不同，我也懒得总结了&lt;/li&gt;
-&lt;li&gt;还是看这个好&lt;a href=&#34;https://wiki.centos.org/Manuals/ReleaseNotes&#34;&gt;【CentOS官方ReleaseNote】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;参考文档&#34;&gt;参考文档&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://supervisord.org/installing.html&#34;&gt;【Supervisor官方文档】&lt;/a&gt;
-&lt;a href=&#34;http://flowsnow.net/2017/09/25/%E8%AF%A6%E8%A7%A3supervisor%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/&#34;&gt;【Flowsnow的Blog】&lt;/a&gt;
-&lt;a href=&#34;http://www.madown.com/2017/05/25/supervisor%E4%B8%AD%E7%9A%84minfds%E5%8F%8Aminprocs%E5%8F%82%E6%95%B0%E7%94%A8%E9%80%94/&#34;&gt;【旺仔牛奶的Blog】&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     

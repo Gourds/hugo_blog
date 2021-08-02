@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Jul 2021 17:53:14 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Jul 2021 13:34:42 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《网络是怎样连接的》</title>
+      <link>https://blog.gourds.site/post/book/how_is_the_network_connected/</link>
+      <pubDate>Sat, 31 Jul 2021 13:34:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/how_is_the_network_connected/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>《这些年，那些事》</title>
       <link>https://blog.gourds.site/post/book/%E8%BF%99%E4%BA%9B%E5%B9%B4%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
@@ -257,15 +266,6 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
       <guid>https://blog.gourds.site/post/linux/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
       <description>&lt;p&gt;之前一直用AWS的服务，使用的也是AWS官方提供的系统镜像，感觉挺好使的，所以centos7的版本用的不多。最近刚好需要使用腾讯云，记录一下supervisor的安装配置，不管简单与否，好久没写博客了还是记录一下吧。
 &lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-27.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Elasticsearch使用curator管理index</title>
-      <link>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
-      <pubDate>Wed, 01 Aug 2018 12:11:16 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</guid>
-      <description>&lt;p&gt;有个管理ES index的需求，感觉使用curl调用HTTP接口很不方便也不是很科学。在Github上一查，果然有官方提供的工具&lt;code&gt;curator&lt;/code&gt;，这个工具不仅仅满足了我简单管理的需要（索引的关闭、打开、段合并、删除等），也为以后的扩展提供了新的解决方案（支持磁盘占用触发）,非常不错。以下记录我的调研测试过程。另外补充一句&lt;code&gt;curator&lt;/code&gt;的官方文档十分完备，如喜欢直接阅读官方文档可以直接跳到本文底部，那里有官方文档链接。&lt;/p&gt;</description>
     </item>
     
   </channel>
