@@ -64,9 +64,9 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2021.07.31-?&lt;/td&gt;
-&lt;td&gt;《老人与海》&lt;/td&gt;
-&lt;td&gt;看过一遍，印象不深刻，再来&lt;/td&gt;
+&lt;td&gt;2021.07.31-2021.08.02&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《老人与海》&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;看过一遍，印象不深刻，再来，十一篇为经典而来&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2021.07.31-?&lt;/td&gt;
@@ -180,7 +180,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《悲惨世界》【法】雨果&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《呼啸山庄》【英】艾米莉·勃朗特&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《稻草人手记》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《老人与海》【美】欧内斯特·海明威&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《老人与海》【美】欧内斯特·海明威&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《牛虻》【爱尔兰】伏尼契&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《活着》【中】余华&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《小王子》【法】圣埃克苏佩里 &lt;/a&gt;&lt;/li&gt;
