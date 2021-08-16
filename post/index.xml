@@ -5,11 +5,11 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 31 Jul 2021 13:34:42 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Aug 2021 17:34:42 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《持续交付2.0》</title>
       <link>https://blog.gourds.site/post/book/continuous_delivery_2.0/</link>
-      <pubDate>Sat, 31 Jul 2021 13:34:42 +0800</pubDate>
+      <pubDate>Mon, 16 Aug 2021 17:34:42 +0800</pubDate>
       
       <guid>https://blog.gourds.site/post/book/continuous_delivery_2.0/</guid>
       <description>配置信息的版本管理 环境配置项（如配置中心地址） 应用配置项（如Jvm配置，路径配置，账号密码） 业务配置项（配置与业务行为相关，如功能开关） 软件</description>
