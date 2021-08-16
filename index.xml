@@ -89,8 +89,8 @@
 &lt;td&gt;不推荐，感觉啰嗦，挺无聊了，看了10章，后面抽着翻了翻，不如程序怎么跑起来那个&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2021.08.09-？&lt;/td&gt;
-&lt;td&gt;《持续交付2.0》&lt;/td&gt;
+&lt;td&gt;2021.08.09-2021.08.16&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《持续交付2.0》&lt;/del&gt;&lt;/td&gt;
 &lt;td&gt;对一些行业概念更清晰了，抽空总结下&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -100,7 +100,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2021.08.09-2021.08.12&lt;/td&gt;
-&lt;td&gt;《呐喊》&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《呐喊》&lt;/del&gt;&lt;/td&gt;
 &lt;td&gt;零零散散读过，记笔记再读下&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -161,7 +161,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Redis实战》【美】Josiah L. Carlson&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Nginx高性能Web服务器详解》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《基础设施即代码：云服务器管理 》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《持续交付2.0》【中】乔梁&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《持续交付2.0》【中】乔梁&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《可伸缩服务架构：框架与中间件》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《进化：运维技术变革与实践探索》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《系统架构:复杂系统的产品设计与开发》&lt;/a&gt;&lt;/li&gt;
@@ -421,6 +421,163 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《从一到无穷大》【美】G·伽莫夫&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《纳闷集》【中】匡扶&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《我们为什么要睡觉》【美】Matthew Walker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《持续交付2.0》</title>
+      <link>https://blog.gourds.site/post/book/continuous_delivery_2.0/</link>
+      <pubDate>Sat, 31 Jul 2021 13:34:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/continuous_delivery_2.0/</guid>
+      
+        <description>&lt;p&gt;配置信息的版本管理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;环境配置项（如配置中心地址）&lt;/li&gt;
+&lt;li&gt;应用配置项（如Jvm配置，路径配置，账号密码）&lt;/li&gt;
+&lt;li&gt;业务配置项（配置与业务行为相关，如功能开关）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;软件工程&#34;&gt;软件工程&lt;/h3&gt;
+&lt;p&gt;瀑布软件开发：重计划、重流程、重文档&lt;/p&gt;
+&lt;p&gt;敏捷软件开发：强调发挥人的主观能动性，提倡面对面沟通，拥抱变化，通过迭代和增量开发尽早交付有价值的软件。&lt;/p&gt;
+&lt;p&gt;敏捷宣言：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;个体和互动高于流程和工具&lt;/li&gt;
+&lt;li&gt;工作的软件高于详尽的文档&lt;/li&gt;
+&lt;li&gt;客户合作高于合同谈判&lt;/li&gt;
+&lt;li&gt;响应变化高于遵循计划&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;也就是说，尽管右项有其价值，我们更重视左项的价值。&lt;/p&gt;
+&lt;p&gt;敏捷软件开发应遵循的12原则&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;尽早的持续交付有价值的软件，以便让客户满意，这是优先级最高的事情。&lt;/li&gt;
+&lt;li&gt;即使在开发阶段后期，也欢迎需求变化。为了让客户获得业务竞争优势，利用敏捷过程来应对变化&lt;/li&gt;
+&lt;li&gt;频繁交付可工作的软件，建议采用较短的交付周期（通常几周或一两个月）&lt;/li&gt;
+&lt;li&gt;在整个项目过程中，业务人员和开发人员每天能够一起工作一段时间&lt;/li&gt;
+&lt;li&gt;围绕积极的个体，建立项目团队。给他们需要的环境和支持，并相信他们能够完成工作&lt;/li&gt;
+&lt;li&gt;不论团队内外，传递信息效果最好效率也最高的方式是面对面的交谈。&lt;/li&gt;
+&lt;li&gt;可工作的软件是进度的首要度量标准&lt;/li&gt;
+&lt;li&gt;敏捷过程倡导可持续开发。责任人、开发人员和用户要能够共同维持其步调稳定延续&lt;/li&gt;
+&lt;li&gt;坚持不懈地追求技术卓越和良好设计，敏捷能力由此增强&lt;/li&gt;
+&lt;li&gt;以简洁为本，它是极力减少不必要工作量的艺术&lt;/li&gt;
+&lt;li&gt;最好的架构、需求和设计出自自组织团队&lt;/li&gt;
+&lt;li&gt;团队定期地反思如何能提高成效，并依此调整自身的举止表现&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;持续交付4个核心原则&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;坚持少做&lt;/li&gt;
+&lt;li&gt;持续分解问题&lt;/li&gt;
+&lt;li&gt;坚持快速反馈&lt;/li&gt;
+&lt;li&gt;持续改进并衡量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;常见架构模式&#34;&gt;常见架构模式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;微核架构（核心框架+插件）&lt;/li&gt;
+&lt;li&gt;微服务架构（&lt;/li&gt;
+&lt;li&gt;巨石架构/巨石应用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;巨石应用的优缺点
+优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;利于开发和调试&lt;/li&gt;
+&lt;li&gt;部署操作简单&lt;/li&gt;
+&lt;li&gt;易扩展（负载均衡+多server）
+劣势：&lt;/li&gt;
+&lt;li&gt;对整体程序不熟悉的人来说，容易产生混乱的代码，污染整个应用，给老代码的学习和理解带来困难&lt;/li&gt;
+&lt;li&gt;难与新技术共同使用&lt;/li&gt;
+&lt;li&gt;只能将整个应用作为一个整体进行扩展&lt;/li&gt;
+&lt;li&gt;持续部署困难。为了更新一个组件，必须重新部署整个应用程序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;架构改造实施模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拆迁者模式（代码重构）&lt;/li&gt;
+&lt;li&gt;绞杀者模式（保持原遗留系统不变，当开发新功能时，重新开发一个服务，实现新功能，通过不断构建新的服务，逐步使旧系统失效，并最终替代它）&lt;/li&gt;
+&lt;li&gt;修缮者模式（将遗留系统的部分功能与其余部分隔离，以新的架构进行单独的改善，在改善的同时，需要保证与其他部分仍能协同工作）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;低风险发布&#34;&gt;低风险发布&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;蓝绿部署（AB两套环境，交替成为生产环境和测试环境）&lt;/li&gt;
+&lt;li&gt;滚动部署（从服务集群中选择一个或者多个服务单元，停止服务后执行版本更新，再重新投入使用，循环往复，直至集群中所有服务实例都更新到新版本，与蓝绿部署相比更加节省资源）&lt;/li&gt;
+&lt;li&gt;金丝雀发布（灰度发布）（泛指通过让一小部分用户先行使用新版本，以便提前发现软件的问题，没问题的话逐步扩大推送范围）&lt;/li&gt;
+&lt;li&gt;暗部署（指功能或特性发布前，将其第一个版本部署到生产环境，以便向最终用户提供该功能之前，团队可以对其进行测试并发现可能的错误。主要是用户无感知）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;影响发布频率的因素&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;增量发布带来的收益和可能性&lt;/li&gt;
+&lt;li&gt;每次发布或部署的操作执行成本有多高&lt;/li&gt;
+&lt;li&gt;出现问题的概率与由这些问题带来的成本有多少&lt;/li&gt;
+&lt;li&gt;维护同一软件的不同版本带来的成本&lt;/li&gt;
+&lt;li&gt;高频发布对工程师的技能要求&lt;/li&gt;
+&lt;li&gt;支撑这种高频发布所需要的基础工具设施与流程完整性&lt;/li&gt;
+&lt;li&gt;组织对这种高频发布的态度与文化取向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;数据监测&#34;&gt;数据监测&lt;/h3&gt;
+&lt;p&gt;生产环境监测范围&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;资源监控（系统基础设施健康度）
+&lt;ul&gt;
+&lt;li&gt;cpu、内存、Disk、Network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;应用监控（应用程序运行健康度）
+&lt;ul&gt;
+&lt;li&gt;进程存活状态&lt;/li&gt;
+&lt;li&gt;是否正常对外服务，是否功能缺陷，是否正常连接数据库&lt;/li&gt;
+&lt;li&gt;是否有超时&lt;/li&gt;
+&lt;li&gt;应用服务抛出的异常和报错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;业务监控（业务指标健康度）
+&lt;ul&gt;
+&lt;li&gt;如，用户访问量&lt;/li&gt;
+&lt;li&gt;页面浏览数&lt;/li&gt;
+&lt;li&gt;订单量、转化率、交易额等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数据的标准化，在功能实现方案之外，事先对业务数据的进行定义和规划&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对业务指标的定义。即与该功能相关的业务指标是什么，与其他业务指标有哪些关联性，以及如何计算这个业务指标&lt;/li&gt;
+&lt;li&gt;数据事件的定义。即为了得到这个业务指标的数据，应该在产品代码的那个位置埋设监听事件，输入和输出格式是什么样的，与其他时间之间的关系是什么。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ps：缺乏经验的产品经理对功能的实现的关注度远远高于对数据的关注度&lt;/p&gt;
+&lt;p&gt;检测数据的3个衡量维度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;正确性。&lt;/li&gt;
+&lt;li&gt;全面性。收集的信息是否足以支持团队做出决策&lt;/li&gt;
+&lt;li&gt;及时性。数据的发生到能够支持决策所需的处理时间足够短&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;告警海洋与智能化管理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每当出现生产事故后，事故复盘分析必须有两个行动项：一是数理当前日志检测和告警点，把相关人员全部配置一遍，生怕漏掉任何一个人；二是加入更多的监测点和报警。一方面是告警数量多，希望减少告警；
+另一方面是害怕出事了没有告警，只能加入更多的告警。最终的胜利者通常都是后者。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;事实上，很大一部分告警都会被接受者直接忽略，看都不看，原因主要有两点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;告警信息的第一处理人不是自己&lt;/li&gt;
+&lt;li&gt;告警信息是一个预备报警&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;告警的原则&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;正确性及真实性&lt;/li&gt;
+&lt;li&gt;及时性&lt;/li&gt;
+&lt;li&gt;可操作性【当收到告警信息后，接警人应该可以针对这个告警做出相应的操作，否则告警信息就如同垃圾短信一样，应该将其屏蔽，因为它会令工作效率降低】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;缓解告警海洋&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过关联分析，让监控点离问题发生地更近&lt;/li&gt;
+&lt;li&gt;通过动态阈值设定合理的告警&lt;/li&gt;
+&lt;li&gt;定期梳理告警设置，清理不必要的告警&lt;/li&gt;
+&lt;li&gt;通过人工智能动态解除告警&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;生产环境中的测试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建自用的测试数据，确保不污染真实用户的数据&lt;/li&gt;
+&lt;li&gt;使用的测试数据尽可能真实&lt;/li&gt;
+&lt;li&gt;不要修改真实用户的数据&lt;/li&gt;
+&lt;li&gt;创建测试专用的用户访问凭证，登录生产环境&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
@@ -4273,142 +4430,6 @@ bitbucket_20181118.tar.gz
 &lt;li&gt;&lt;a href=&#34;https://github.com/jumpserver/Dockerfile&#34;&gt;官方Dockerfile&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.jumpserver.org/zh/docs/dockerinstall.html&#34;&gt;官方docker安装推荐&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>博客迁移至阿里云</title>
-      <link>https://blog.gourds.site/post/blog/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</link>
-      <pubDate>Tue, 30 Oct 2018 18:23:45 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/blog/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
-      
-        <description>&lt;p&gt;之前博客使用的是搬瓦工的机器，感觉访问速度受限，刚好阿里云有活动，就决定迁移到阿里。鉴于之前一直没有一个好用的评论系统，迁移到阿里后进行了备案，开始使用畅言评论系统。
-另外考虑到备份问题，也对部署方式进行了更新。&lt;/p&gt;
-&lt;p&gt;迁移前：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;之前Blog的部署方式是：Hexo + VPS（git-hook） + Nginx（proxy）的形式，图床使用的七牛云。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;迁移后：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;本地Hexo将Blog文件提交到Github
-然后通过Github的Webhooks功能通知Ali服务器，服务器进行Git pull操作
-Nginx使用Docker的方式&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;接收Github通知需要一个HTTP服务器，没必要用太重的web框架，所以就自己写了一个简单的&lt;a href=&#34;https://github.com/Gourds/daily-scripts/blob/master/python-scripts/tools_github_hook.py&#34;&gt;【代码地址】&lt;/a&gt;，如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;ch&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# Requier: pip install GitPython&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# http://note.qidong.name/2018/01/gitpython/&lt;/span&gt;
-&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;socket&lt;/span&gt;
-&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;threading&lt;/span&gt;
-&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
-&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;git&lt;/span&gt;
-&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;time&lt;/span&gt;
-
-
-
-
-&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;init_socket&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;fm&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HOST_NAME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HOST_PORT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MAX_CLIENT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;host_name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HOST_NAME&lt;/span&gt;
-        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;host_port&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HOST_PORT&lt;/span&gt;
-        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ss&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;socket&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;socket&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;socket&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AF_INET&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;socket&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SOCK_STREAM&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ss&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bind&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;HOST_NAME&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;HOST_PORT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ss&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;listen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MAX_CLIENT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;REMOTE_PATH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LOCAL_PATH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;res_ok&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;HTTP/1.1 200 OK&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;Content-Type:text/html&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;Server:myserver&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;Hello, Gourds!&amp;#39;&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;res_xx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;HTTP/1.1 404 OK&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;Content-Type:text/html&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;Server:myserver&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n\n&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;Friend!&amp;#39;&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;sock&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;addr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ss&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;accept&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-            &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sock&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;addr&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sock&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;recv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;method&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;src&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;method&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;src&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;method&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;POST&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-                &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;src&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/hook/push&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-                    &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;res_ok&lt;/span&gt;
-                    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;os&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;listdir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LOCAL_PATH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-                        &lt;span class=&#34;n&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Repo&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;clone_from&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;REMOTE_PATH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to_path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LOCAL_PATH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-                        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Run clone command&amp;#34;&lt;/span&gt;
-                    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-                        &lt;span class=&#34;n&#34;&gt;gp&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cmd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Git&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LOCAL_PATH&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-                        &lt;span class=&#34;n&#34;&gt;gp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pull&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-                        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Run pull command&amp;#34;&lt;/span&gt;
-                &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-                    &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;res_xx&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;res_xx&lt;/span&gt;
-            &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;sock&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sendall&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-            &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;sock&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sleep&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;my_app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;init_socket&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;18080&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;my_app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;git@project.git&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/path/to/nginx/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
       
     </item>
     

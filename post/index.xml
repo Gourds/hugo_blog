@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 31 Jul 2021 13:34:42 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>《持续交付2.0》</title>
+      <link>https://blog.gourds.site/post/book/continuous_delivery_2.0/</link>
+      <pubDate>Sat, 31 Jul 2021 13:34:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/continuous_delivery_2.0/</guid>
+      <description>配置信息的版本管理 环境配置项（如配置中心地址） 应用配置项（如Jvm配置，路径配置，账号密码） 业务配置项（配置与业务行为相关，如功能开关） 软件</description>
+    </item>
+    
+    <item>
       <title>《网络是怎样连接的》</title>
       <link>https://blog.gourds.site/post/book/how_is_the_network_connected/</link>
       <pubDate>Sat, 31 Jul 2021 13:34:42 +0800</pubDate>
@@ -256,16 +265,6 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
       <guid>https://blog.gourds.site/post/blog/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
       <description>&lt;p&gt;之前博客使用的是搬瓦工的机器，感觉访问速度受限，刚好阿里云有活动，就决定迁移到阿里。鉴于之前一直没有一个好用的评论系统，迁移到阿里后进行了备案，开始使用畅言评论系统。
 另外考虑到备份问题，也对部署方式进行了更新。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CentOS7安装配置supervisor</title>
-      <link>https://blog.gourds.site/post/linux/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</link>
-      <pubDate>Thu, 30 Aug 2018 21:12:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/linux/centos7%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEsupervisor/</guid>
-      <description>&lt;p&gt;之前一直用AWS的服务，使用的也是AWS官方提供的系统镜像，感觉挺好使的，所以centos7的版本用的不多。最近刚好需要使用腾讯云，记录一下supervisor的安装配置，不管简单与否，好久没写博客了还是记录一下吧。
-&lt;img src=&#34;http://img.arvon.top:80/images/2019/08/12/20010101-emoticon-27.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

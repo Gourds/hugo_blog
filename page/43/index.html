@@ -348,18 +348,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/book/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/">4月读书计划</a>
+      <a class="post-link" href="/post/tools/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/"></a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2016-04-03" class="post-time">
-        2016-04-03
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
       </time>
-      <div class="post-category">
-          <a href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"> 读万卷书 </a>
-          
-        </div>
-      <span class="more-meta"> 约 548 字 </span>
+      
+      <span class="more-meta"> 约 688 字 </span>
       <span class="more-meta"> 预计阅读 2 分钟 </span>
       
       
@@ -370,87 +367,28 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p><img src="http://img.arvon.top:80/images/2019/08/12/20160403-aprilread-1.jpg" alt="20160403-aprilread-1">
-PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多，不过心里很踏实，最近学习ansibel和git。</p>
-<h3 id="关于最近的学习方向">关于最近的学习方向</h3>
+      <h2 id="tags-tools">title: 使用fio工具测试linux的磁盘性能
+date: 2015-08-24 17:01:45
+tags: [Tools]</h2>
+<p>很多时候我们需要对服务器的性能进行评估，这就少不了运用合适的工具。其中fio是测试iops的一款很好用的工具，用来对硬件进行压力测试和验证，支持13中不同的I/O引擎，包括：sync、mmap、libaio、posixaio、SG v3、splice、null、network、syslet、guasi、solarisaio等等</p>
+<h3 id="简单测试写性能">简单测试写性能</h3>
 <ul>
-<li>ansibel
-<ul>
-<li>最近购买了4本图书，买了就不能白买不是，而且也是机遇不错，现阶段也在使用ansibel，配置管理和版本控制对于运维确实是挺重要的，【奔跑吧ansible】预计花费4周左右时间来学习。</li>
-<li>由于最近需要使用AWS，所需需要研究下ec2模块</li>
-<li>需要进行学习变量和遍历循环</li>
+<li>使用dd简单测试</li>
 </ul>
-</li>
-</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="n">dd</span> <span class="k">if</span><span class="o">=</span><span class="sr">/dev/</span><span class="n">zero</span> <span class="n">of</span><span class="o">=</span><span class="n">testfile</span> <span class="n">bs</span><span class="o">=</span><span class="mi">1</span><span class="n">M</span> <span class="n">count</span><span class="o">=</span><span class="mi">1024</span> <span class="n">oflag</span><span class="o">=</span><span class="n">dsync</span>
+<span class="c1">#采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
     <div class="read-more">
-      <a href="/post/book/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/">CentOS搭建支持ftp的cdn服务</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2016-03-25" class="post-time">
-        2016-03-25
-      </time>
-      
-      <span class="more-meta"> 约 553 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**摘要：**由于测试需要，需用nginx搭建cdn服务器，并要求可以使用ftp上传。送个之前nginx搭建cdn的<a href="http://blog.arvon.top/2016/03/03/Nginx%E6%90%AD%E5%BB%BACDN%E6%BA%90%E7%AB%99/">&ndash;&gt;飞机票</a>,下面是主要vsftp的配置，nginx配置cdn参照飞机票那篇即可。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/">Nginx搭建CDN源站记录</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2016-03-03" class="post-time">
-        2016-03-03
-      </time>
-      
-      <span class="more-meta"> 约 425 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**摘要：**nginx有很多很强大的功能，可以做web，可以做代理、可以做SLB、还可以做缓存CDN等等，这里记录以下做缓存时的配置。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/" class="read-more-link">阅读全文</a>
+      <a href="/post/tools/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -490,7 +428,7 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
 
       
       
-      <li><a href="/page/26/">«</a></li>
+      <li><a href="/page/42/">«</a></li>
       
 
       
@@ -506,28 +444,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
             
 
+          
           
 
         
@@ -548,7 +467,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -569,7 +490,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -590,7 +513,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -611,7 +536,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -632,7 +559,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -653,7 +582,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -674,7 +605,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -695,7 +628,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -716,7 +651,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -737,7 +674,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -758,7 +697,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -779,7 +720,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -800,7 +743,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -821,7 +766,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -842,7 +789,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -863,7 +812,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -884,7 +835,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -905,7 +858,9 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
 
+          
           
 
         
@@ -925,300 +880,265 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
           
 
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
             
               
             
 
           
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/21/">
-              21
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/22/">
-              22
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/23/">
-              23
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/24/">
-              24
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/25/">
-              25
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/26/">
-              26
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="active">
-            <a href="/page/27/">
-              27
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/28/">
-              28
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/29/">
-              29
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/30/">
-              30
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
           
 
         
@@ -1245,9 +1165,11 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
               
             
 
+          
           
 
         
@@ -1274,9 +1196,11 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
               
             
 
+          
           
 
         
@@ -1303,13 +1227,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/34/">
+              34
+            </a>
+          </li>
         
 
       
@@ -1324,13 +1258,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/35/">
+              35
+            </a>
+          </li>
         
 
       
@@ -1345,13 +1289,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/36/">
+              36
+            </a>
+          </li>
         
 
       
@@ -1366,13 +1320,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/37/">
+              37
+            </a>
+          </li>
         
 
       
@@ -1387,13 +1351,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/38/">
+              38
+            </a>
+          </li>
         
 
       
@@ -1408,13 +1382,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/39/">
+              39
+            </a>
+          </li>
         
 
       
@@ -1429,13 +1413,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/40/">
+              40
+            </a>
+          </li>
         
 
       
@@ -1450,13 +1444,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/41/">
+              41
+            </a>
+          </li>
         
 
       
@@ -1471,13 +1475,23 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
         
 
         
+        
+          <li class="">
+            <a href="/page/42/">
+              42
+            </a>
+          </li>
         
 
       
@@ -1492,7 +1506,11 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
           
 
             
+            
+              
+            
 
+          
           
 
         
@@ -1500,17 +1518,19 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
 
         
         
+          <li class="active">
+            <a href="/page/43/">
+              43
+            </a>
+          </li>
+        
 
       
 
       
       
-      <li><a href="/page/28/">»</a></li>
-      
 
       
-      
-      <li><a href="/page/43/">»»</a></li>
       
 
       </ul>
