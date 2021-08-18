@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>归档 - Gourds</title>
+  <title>《实用网络流量分析技术》 - Gourds</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,8 +23,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Gourds simple site." />
-  <meta name="keywords" content="Linux, Life, Book, Python, Gourds" />
+  <meta name="description" content="实用流量分析技术 笔记 不同操作系统的初始TTL值不同，一般情况下 Windows：128 Aix：60 Solaris: 255 网络丢包的可能原因 链路层 网络层 网络拥塞 每" />
+<meta name="keywords" content="network, flow, analyzes" />
+
 
 
 <meta name="baidu-site-verification" content="code-XsKZoymEBo" />
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/" />
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Gourds" />
+<link rel="canonical" href="https://blog.gourds.site/post/book/common_network_flow_analyzes/" />
+
 
 
 
@@ -58,15 +59,20 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Gourds simple site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.gourds.site/post/" />
+<meta property="og:title" content="《实用网络流量分析技术》" />
+<meta property="og:description" content="实用流量分析技术 笔记 不同操作系统的初始TTL值不同，一般情况下 Windows：128 Aix：60 Solaris: 255 网络丢包的可能原因 链路层 网络层 网络拥塞 每" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/book/common_network_flow_analyzes/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-18T12:17:17+08:00" />
+<meta property="article:modified_time" content="2021-08-18T12:17:17+08:00" />
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Gourds simple site."/>
+<meta itemprop="name" content="《实用网络流量分析技术》">
+<meta itemprop="description" content="实用流量分析技术 笔记 不同操作系统的初始TTL值不同，一般情况下 Windows：128 Aix：60 Solaris: 255 网络丢包的可能原因 链路层 网络层 网络拥塞 每"><meta itemprop="datePublished" content="2021-08-18T12:17:17+08:00" />
+<meta itemprop="dateModified" content="2021-08-18T12:17:17+08:00" />
+<meta itemprop="wordCount" content="2298">
+<meta itemprop="keywords" content="读书," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《实用网络流量分析技术》"/>
+<meta name="twitter:description" content="实用流量分析技术 笔记 不同操作系统的初始TTL值不同，一般情况下 Windows：128 Aix：60 Solaris: 255 网络丢包的可能原因 链路层 网络层 网络拥塞 每"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -255,7 +261,7 @@ if (!doNotTrack) {
 
       </li>
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -336,216 +342,278 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">0001</h2>
+    <header class="post-header">
+      <h1 class="post-title">《实用网络流量分析技术》</h1>
+      
+      <div class="post-meta">
+        <time datetime="2021-08-18" class="post-time">
+          2021-08-18
+        </time>
+        <div class="post-category">
+            <a href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"> 读万卷书 </a>
+            
+          </div>
+        <span class="more-meta"> 约 2298 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+
+        
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/programming/prel%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="archive-post-link">
-          
-        </a>
-      </span>
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#实用流量分析技术-笔记">实用流量分析技术 笔记</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h3 id="实用流量分析技术-笔记">实用流量分析技术 笔记</h3>
+<p>不同操作系统的初始TTL值不同，一般情况下</p>
+<ul>
+<li>Windows：128</li>
+<li>Aix：60</li>
+<li>Solaris: 255</li>
+</ul>
+<p>网络丢包的可能原因</p>
+<ul>
+<li>链路层</li>
+<li>网络层</li>
+<li>网络拥塞</li>
+</ul>
+<p>每个IP包都会有一个特定的Identification标识，且同主机一段时间内应该是不同的。</p>
+<p>例子：如收到同Identification标识的数据包，且TTL不同，很可能是网络中存在路由环路</p>
+<p>问题：
+- 为什么本机发出的TCP包，Identification都是0
+- TCP数据传输包是 TLSv1.2</p>
+<p>抓包常见协议</p>
+<ul>
+<li>ARP</li>
+<li>ICMP</li>
+<li>TCP</li>
+<li>UDP</li>
+<li>MDNS（播dns（Multicast DNS），mDNS主要实现了在没有传统DNS服务器的情况下使局域网内的主机实现相互发现和通信，使用的端口为5353，遵从dns协议，使用现有的DNS信息结构、名语法和资源记录类型。并且没有指定新的操作代码或响应代码。）</li>
+<li>SSDP（简单服务发现协议，是应用层协议，是构成UPnP（通用即插即用）技术的核心协议之一。它为网络客户端（network client）提供了一种发现网络服务（network services）的机制，采用基于通知和发现路由的多播方式实现。）</li>
+<li>LLC（逻辑链路控制(LLC Logical Link Control) 层协议,LLC类似于国际标准化组织OSI - 7 层参考模型中的第2层———数据链路层。LLC 主要作用是在移动台MS (Mobile Subscri2ber) 和GPRS 业务支持节点SGSN(Serving GPRS Sup2port Node) 的Layer - 3 的实体之间传送信息。）</li>
+<li>NBNS（网络基本输入/输出系统 (NetBIOS) 名称服务器 (NBNS) 协议是 TCP/IP 上的 NetBIOS (NetBT) 协议族的一部分，它在基于 NetBIOS 名称访问的网络上提供主机名和地址映射方法）</li>
+<li>STP（STP（Spanning Tree Protocol）是生成树协议的英文缩写，可应用于计算机网络中树形拓扑结构建立，主要作用是防止网桥网络中的冗余链路形成环路工作。）</li>
+</ul>
+<p>网络中传输的数据包大小是不一样的</p>
+<ul>
+<li>IP数据包：40-1500字节</li>
+<li>以太网帧：64-1518字节（包含4字节的CRC）</li>
+</ul>
+<p>一般来说，网络中的最小包和最大包是最多的</p>
+<ul>
+<li>使用较多的TCP/IP协议在实际传输中（SYN/SYN ACK/RST/FIN）都是小包</li>
+<li>数据传输时一般是大包</li>
+</ul>
+<p>数据包数量监控</p>
+<ul>
+<li>每秒数据包数量（pps）</li>
+<li>每秒广播包数量</li>
+<li>每秒组播包数量</li>
+<li>不同大小数据包数量，如64B数据包数量、1500B数据包数量</li>
+</ul>
+<p>异常流量的危害</p>
+<ul>
+<li>大量的流量导致网络拥塞，从而出现丢包导致网络服务质量下降</li>
+<li>大量数据包导致网络设备处理性能下降，从而导致网络服务质量下降</li>
+<li>不正常的数据报影响网络的正常访问，破坏网络的正常拓扑结构</li>
+</ul>
+<p>异常流量的产生</p>
+<ul>
+<li>病毒引起的异常网络流量
+<ul>
+<li>CodeRed、Nimda、冲击波等蠕虫病毒</li>
+<li>ARP病毒</li>
+</ul>
+</li>
+<li>网络攻击引起的异常网络流量
+<ul>
+<li>Dos攻击</li>
+</ul>
+</li>
+<li>不正常的网络配置引起的异常网络流量
+<ul>
+<li>物理环路或路由环路</li>
+</ul>
+</li>
+<li>不正当的应用</li>
+</ul>
+<p>蠕虫病毒分析
+一般是指通过网络在计算机间复制自身进行传播的病毒。与传统病毒不同，它并不是以感染文件来达到传播自己的目的，蠕虫病毒不寄生于其他文件上，而是通过网络直接将自身复制到对方的计算机上并运行来达到复制自身的目的，有时自身甚至只在被感染的计算机的内存中驻留，并没有实体文件。</p>
+<p>定位蠕虫病毒：目前比较好的还是通过流量分析</p>
+<ul>
+<li>通过分析主机发送/接收数据包的数量来定位。（如：一些主机发送数据包数量远远高于接收数据包数量）</li>
+<li>通过分析主机的会话来定位。（如：向很多主机发送连接请求，但大多数通信的流量很小，只有1个或2个数据包）</li>
+<li>通过法宝的异常目的地址来定位。（如：流量中有很多异常的目的地址）</li>
+<li>通过蠕虫病毒的特征码来定位。</li>
+</ul>
+<p>P2P(peer to peer)应用分析
+与传统CS模式不同，P2P工作方式中，每个客户端既是客户端也是服务器。每个客户端间都是采用peer to peer的数据传输方式，下载同一个文件的众多用户中的每一个用户终端只需要下载文件的一个片段，然后互相交换，最终每个用户（peer）都能得到完整的文件。</p>
+<p>BitTorrent文件共享传输中的计算机类型有</p>
+<ul>
+<li>种子计算机。共享自身文件给其他用户的计算机</li>
+<li>Announce服务器。记录了所有和该文件共享下载相关的地址，端口信息，也就是每个Peer的信息</li>
+<li>客户端终端计算机。每个下载种子计算机共享文件的计算机就是客户端计算机，每个Peer通过Announce服务器了解种子计算机和其他Peer的信息，然后同它们进行PeerToPeer的通信来获取文件。</li>
+</ul>
+<p>P2P客户端特点</p>
+<ul>
+<li>既接收数据同时又发送数据。往往发送的数据量远超过接收到的数据量</li>
+<li>同大量的主机进行会话</li>
+<li>传输端口不定</li>
+</ul>
+<p>ARP病毒分析</p>
+<p>现在流行的ARP病毒实际上是一种进行ARP欺骗的网络攻击工具，通过ARP欺骗达到截获他人通信数据的目的，一般分别对网关和网络中的主机进行ARP欺骗使主机和外部通信的流量都先经过感染ARP病毒的主机，然后转发至真正的目的地址。</p>
+<p>判别ARP病毒流量</p>
+<ul>
+<li>是否大量发送ARP请求以及伪造大量的ARP回应</li>
+<li>分析网络中捕获的向外网发送数据包的MAC是否是本网段网关的MAC地址相同</li>
+</ul>
+<p>TCP连接分析（Transmission Control Protocol传输控制协议）</p>
+<p>服务器的拒绝包围TCP RST包</p>
+<ul>
+<li>服务器不提供客户端请求端口的服务</li>
+<li>服务器保持的TCP连接数达到极限，不能再接收客户端连接请求</li>
+<li>服务器上指定服务宕机</li>
+<li>防火墙策略不允许，防火墙发送RST数据包中断连接</li>
+</ul>
+<p>TCP的半连接
+半连接是由不正常的客户端引起的，客户端发送TCP连接请求包SYN后不再发送后续的数据包，使TCP的三次握手不完整，无法建立连接。大量的TCP半连接占用服务器的TCP连接资源，直接影响服务器的服务能力</p>
+<p>TCP连接的关闭有两种</p>
+<ul>
+<li>四次握手关闭</li>
+<li>重置式关闭</li>
+</ul>
+<p>造成TCP数据重传的主要原因</p>
+<ul>
+<li>网络拥塞导致的网络丢包</li>
+<li>网络设备运行不正常导致丢包</li>
+<li>MTU设置不匹配</li>
+<li>数据接收方运行不正常</li>
+</ul>
+
     </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Gourds</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2021-08-18
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/weipay.jpg">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/zhipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/book/continuous_delivery_2.0/">
+            <span class="next-text nav-default">《持续交付2.0》</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog_comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
     
 
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/programming/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A86th%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/programming/perl%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A82/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/ops/sa%E8%BF%90%E7%BB%B4%E8%B5%84%E6%BA%90/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/monitor/zabbix%E4%BD%BF%E7%94%A8percona%E7%BB%84%E4%BB%B6%E7%9B%91%E6%8E%A7mysql/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/monitor/zabbix_too_many_open_files%E9%94%99%E8%AF%AF/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/monitor/zabbix3.0%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/yum%E6%BA%90%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/top%E8%BE%93%E5%87%BA%E8%AF%A6%E8%A7%A3/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="0001-01-01" class="archive-post-time">
-        0001-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/tmux-%E4%BD%BF%E7%94%A8%E7%AE%80%E8%AE%B0/" class="archive-post-link">
-          
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
   
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/post/">1</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/7/">7</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/8/">8</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/9/">9</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/10/">10</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/post/page/11/">11</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/12/">12</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/13/">13</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>
@@ -670,6 +738,13 @@ if (!doNotTrack) {
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

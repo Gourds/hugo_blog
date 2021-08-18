@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Aug 2021 17:34:42 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2021 12:17:17 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《实用网络流量分析技术》</title>
+      <link>https://blog.gourds.site/post/book/common_network_flow_analyzes/</link>
+      <pubDate>Wed, 18 Aug 2021 12:17:17 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/common_network_flow_analyzes/</guid>
+      <description>实用流量分析技术 笔记 不同操作系统的初始TTL值不同，一般情况下 Windows：128 Aix：60 Solaris: 255 网络丢包的可能原因 链路层 网络层 网络拥塞 每</description>
+    </item>
+    
     <item>
       <title>《持续交付2.0》</title>
       <link>https://blog.gourds.site/post/book/continuous_delivery_2.0/</link>
@@ -255,16 +264,6 @@ PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需
       
       <guid>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
       <description>&lt;p&gt;之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jumpserver&#34;&gt;【github】&lt;/a&gt;上都有。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>博客迁移至阿里云</title>
-      <link>https://blog.gourds.site/post/blog/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</link>
-      <pubDate>Tue, 30 Oct 2018 18:23:45 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/blog/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
-      <description>&lt;p&gt;之前博客使用的是搬瓦工的机器，感觉访问速度受限，刚好阿里云有活动，就决定迁移到阿里。鉴于之前一直没有一个好用的评论系统，迁移到阿里后进行了备案，开始使用畅言评论系统。
-另外考虑到备份问题，也对部署方式进行了更新。&lt;/p&gt;</description>
     </item>
     
   </channel>
