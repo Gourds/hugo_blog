@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/</link>
     <description>Recent content in 读万卷书 on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Aug 2021 12:17:17 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 12:28:33 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《Docker经典实例》</title>
+      <link>https://blog.gourds.site/post/book/docker_cookbook/</link>
+      <pubDate>Fri, 20 Aug 2021 12:28:33 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/docker_cookbook/</guid>
+      <description>笔记：这书很不推荐，内容浅显又特别能水 Docker Cookbook docker kill SIGKILL信号 docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号 查看数</description>
+    </item>
+    
     <item>
       <title>《实用网络流量分析技术》</title>
       <link>https://blog.gourds.site/post/book/common_network_flow_analyzes/</link>

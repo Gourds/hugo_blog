@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Aug 2021 12:17:17 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Aug 2021 12:28:33 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -127,6 +127,11 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;《漫画算法：小灰的算法之旅》&lt;/td&gt;
 &lt;td&gt;很久之前读一半搁置了&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《棋王》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -446,6 +451,114 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《亲爱的安德烈》【中】龙应台&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《此生未完成》【中】于娟&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《Docker经典实例》</title>
+      <link>https://blog.gourds.site/post/book/docker_cookbook/</link>
+      <pubDate>Fri, 20 Aug 2021 12:28:33 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/docker_cookbook/</guid>
+      
+        <description>&lt;p&gt;笔记：这书很不推荐，内容浅显又特别能水&lt;/p&gt;
+&lt;h3 id=&#34;docker-cookbook&#34;&gt;Docker Cookbook&lt;/h3&gt;
+&lt;p&gt;docker kill SIGKILL信号
+docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号&lt;/p&gt;
+&lt;p&gt;查看数据保存在宿主机上的位置
+docker inspect -f {{.Mounts}} ID&lt;/p&gt;
+&lt;p&gt;docker image&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;commit方式&lt;/li&gt;
+&lt;li&gt;Dockerfile方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;查看在容器中对镜像做出的修改
+docker diff ID&lt;/p&gt;
+&lt;p&gt;镜像的导入导出&lt;/p&gt;
+&lt;p&gt;docker export ID &amp;gt; update.tar
+docker import - update &amp;lt; update.tar&lt;/p&gt;
+&lt;p&gt;docker save -o update1.tar update
+docker load &amp;lt; update1.tar
+区别：保存一个镜像会保留它的历史，而导出容器会对它的历史进行压缩。&lt;/p&gt;
+&lt;p&gt;CMD可以通过&lt;code&gt;docker run&lt;/code&gt;后面的参数来覆盖，而ENTRYPOINT只能通过&lt;code&gt;docker run&lt;/code&gt;的&lt;code&gt;--entrypoint&lt;/code&gt;参数来覆盖。&lt;/p&gt;
+&lt;p&gt;Dockerfile最佳实践&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在每个容器中只运行一个进程&lt;/li&gt;
+&lt;li&gt;对容器的修改应该从基础镜像重新创建它&lt;/li&gt;
+&lt;li&gt;使用.dockerignore文件&lt;/li&gt;
+&lt;li&gt;利用docker hub官方镜像，不要重复造轮子&lt;/li&gt;
+&lt;li&gt;最大限度减少镜像层的数量，并利用镜像缓存的优点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;获取容器IP&lt;/p&gt;
+&lt;p&gt;docker inspect &amp;ndash;format &amp;lsquo;{{ .NetworkSettings.IPAddress }}&amp;rsquo; ID&lt;/p&gt;
+&lt;p&gt;容器的端口映射通过两种机制实现&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;默认情况下Docker会修改宿主机的iptables规则&lt;/li&gt;
+&lt;li&gt;Docker会在宿主机上启动一个轻量的代理程序。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;查看容器链接
+docker inspect -f &amp;ldquo;{.HostConfig.Links}}&amp;rdquo; ID&lt;/p&gt;
+&lt;h4 id=&#34;docker容器网络&#34;&gt;Docker容器网络&lt;/h4&gt;
+&lt;p&gt;默认情况下，DOcker会在宿主机上创建一个名为docker0的Linux网桥设备。该设备拥有一个私有网络地址及其所属子网。分配给Docker网桥的子网地址为&lt;code&gt;172.[17-31].42.1/16&lt;/code&gt;、&lt;code&gt;10.[0-255].42.1/24&lt;/code&gt;、&lt;code&gt;192.168.[42-44].1/24&lt;/code&gt;中第一个没有被占用的子网地址。容器链接到网桥的网络接口会把docker0网络设备作为网关。&lt;/p&gt;
+&lt;p&gt;借助于Linux的IP转发功能和Docker引擎所管理的iptables规则，Docker为容器提供了对外部网络和NAT功能的访问&lt;/p&gt;
+&lt;p&gt;确认IP转发功能已开启&lt;code&gt;cat /proc/sys/net/ipv4/ip_forword&lt;/code&gt;为1则是开启&lt;/p&gt;
+&lt;p&gt;Docker的三种网络模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网桥（默认）&lt;/li&gt;
+&lt;li&gt;主机模式&lt;/li&gt;
+&lt;li&gt;无网络模式&lt;/li&gt;
+&lt;li&gt;与其他容器共享网络&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;pipework
+weaveworks&lt;/p&gt;
+&lt;h3 id=&#34;远程访问docker&#34;&gt;远程访问Docker&lt;/h3&gt;
+&lt;p&gt;修改docker配置&lt;code&gt;/etc/default/docker&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;...
+DOCKER_OPTS=&amp;#34;-H tcp://127.0.0.1:2375&amp;#34;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;docker -H tcp://127.0.0.1:2375 images
+#or
+curl -s http://127.0.0.1:2375/images/json |python -m json.tool
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;kubernetes&#34;&gt;kubernetes&lt;/h3&gt;
+&lt;p&gt;功能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;容器编排&lt;/li&gt;
+&lt;li&gt;可靠的容器重启&lt;/li&gt;
+&lt;li&gt;自愈&lt;/li&gt;
+&lt;li&gt;高集群利用率&lt;/li&gt;
+&lt;li&gt;组织和分组&lt;/li&gt;
+&lt;li&gt;水平扩展和复制&lt;/li&gt;
+&lt;li&gt;微服务友好&lt;/li&gt;
+&lt;li&gt;简化运维&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;kubernetes架构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kubernetes master包括（API server、Scheduler、Controller Mgr）。提供了API来收集和展现集群当前状态，并在节点之间分配pod。大多数用户将始终与master API直接交互&lt;/li&gt;
+&lt;li&gt;主节点存储（etcd）。目前k8s的所有持久化状态都保存在etcd中&lt;/li&gt;
+&lt;li&gt;kubelet。agent运行在每个节点智商，负责控制Docker，向master报告自己的状态&lt;/li&gt;
+&lt;li&gt;kubernetes proxy。运行在每个节点智商，为本地容器提供了一个单一的网络接口，以连接到一组pod&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;查看容器状态&lt;code&gt;docker stats ID&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gliderlabs/logspout&#34;&gt;Docker log 收集&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -4002,379 +4115,6 @@ Command exiting with ret &amp;#39;1&amp;#39;
 &lt;p&gt;&lt;a href=&#34;https://docs.aws.amazon.com/zh_cn/amazondynamodb/latest/developerguide/EMRforDynamoDB.PerformanceTuning.Throughput.html&#34;&gt;关于DynamoDB吞吐量的文档&lt;/a&gt;
 &lt;a href=&#34;https://docs.aws.amazon.com/zh_cn/amazondynamodb/latest/developerguide/Limits.html#default-limits-throughput-capacity-modes&#34;&gt;关于DynamoDB的一些限制&lt;/a&gt;
 &lt;a href=&#34;https://docs.aws.amazon.com/cli/latest/reference/dynamodb/index.html#cli-aws-dynamodb&#34;&gt;使用AWSCLI管理DynamoDB的文档&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Docker方式下Bitbucket及confluence和jira的迁移</title>
-      <link>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</link>
-      <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E4%B8%8Bbitbucket%E5%8F%8Aconfluence%E5%92%8Cjira%E8%BF%81%E7%A7%BB%E6%96%87%E6%A1%A3/</guid>
-      
-        <description>&lt;p&gt;之前写过使用Docker部署Confluence、Jira、Bitbucket的文档，由于宿主服务器硬件有点跟不上了，所以前端时间进行了这些服务的迁移。这里先介绍Confluence及Jira的迁移过程。简单介绍下做的事情
-&lt;strong&gt;迁移思路：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;按照原来搭建方法在新宿主机上新建相同的容器（注意控制版本，可以用指定的版本来替代image的latest标签）&lt;/li&gt;
-&lt;li&gt;将备份的数据导入新的容器中&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
-PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用&lt;a href=&#34;https://github.com/Chevereto/Chevereto-Free&#34;&gt;【chevreto】&lt;/a&gt;，有时间了整一整。&lt;/p&gt;
-&lt;h3 id=&#34;创建mysql容器&#34;&gt;创建Mysql容器&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;启动容器
-先说一下为什么用Mysql，因为刚开始只是有一个Jira的需求，然后选用DB的时候感觉Mysql相对Postsql更易于操作维护，就选了这个，这导致了后面Confluence的DB问题，不过都顺利解决了。Docker启动新容器的命令如下：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run --name mysql
-           -p 3306:3306 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           -v /data/mysql/data:/var/lib/mysql &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           -e &lt;span class=&#34;nv&#34;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;root &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           -idt docker.io/mysql:5.7.21 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           --character-set-server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           --collation-server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8_bin &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           --character-set-server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           --collation-server&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;utf8_bin &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           --max_allowed_packet&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;512M   &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;           --innodb_log_file_size&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;2GB
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;注意Mysql启动时候的参数，不注意这个后面会有好多个坑。
-使用Mysql的要求 =&amp;gt;&lt;a href=&#34;https://confluence.atlassian.com/doc/database-setup-for-mysql-128747.html&#34;&gt;【Confluence的文档】&lt;/a&gt;
-修改建议 =&amp;gt;&lt;a href=&#34;https://confluence.atlassian.com/confkb/mysqlsyntaxerrorexception-row-size-too-large-658735905.html&#34;&gt;【Confluence的建议】&lt;/a&gt;
-关于参数的解释 =&amp;gt; &lt;a href=&#34;https://blog.csdn.net/kai404/article/details/80242262&#34;&gt;【CSDN上的一篇博客】&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mysql容器的配置
-登入Mysql进行DB和用户的创建&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mysql&amp;gt; CREATE DATABASE jira_db CHARACTER SET utf8 COLLATE utf8_bin&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; grant ALL PRIVILEGES on jira_db.* to jira_user@&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt; Identified by &lt;span class=&#34;s2&#34;&gt;&amp;#34;jira_pass&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-mysql&amp;gt; grant ALL PRIVILEGES on confluence.* to confluence_user@&lt;span class=&#34;s2&#34;&gt;&amp;#34;%&amp;#34;&lt;/span&gt; Identified by &lt;span class=&#34;s2&#34;&gt;&amp;#34;confluence_pass&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#mysql&amp;gt; grant SELECT on *.* to backup_user@&amp;#34;%&amp;#34; Identified by &amp;#34;backup_user&amp;#34;;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#mysql&amp;gt; grant ALL PRIVILEGES on *.* to sa_user@&amp;#34;%&amp;#34; Identified by &amp;#34;sa_user&amp;#34;;&lt;/span&gt;
-mysql&amp;gt; flush privileges&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;#set global max_allowed_packet=1073741824;  当导入时有可能是这个值过小，可以临时进行调整。&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Mysql容器的检查
-登入Mysql对配置进行检查&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it mysql /bin/bash &lt;span class=&#34;c1&#34;&gt;#进入mysql容器&lt;/span&gt;
-mysql&amp;gt; show global variables&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; 展示所有配置
-mysql&amp;gt; show engine innodb status&lt;span class=&#34;se&#34;&gt;\G&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  查看innodb装填
-mysql&amp;gt; show variables like &lt;span class=&#34;s1&#34;&gt;&amp;#39;character%&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; 查看字符集设置
-mysql&amp;gt; show variables like &lt;span class=&#34;s1&#34;&gt;&amp;#39;innodb_log_file%&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;查看innodb_log_file设置
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;新建jira容器并还原数据&#34;&gt;新建Jira容器并还原数据&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;启动Jira容器
-先启动容器，不做其他操作&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -p 18080:8080 -dit --name jira docker.io/cptactionhank/atlassian-jira:7.8.2
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;原数据导出
-注意权限，也可以在导入操作进行权限的修改。另外官方备份的数据并不包括附件及插件等，具体可参照&lt;a href=&#34;https://confluence.atlassian.com/adminjiraserver078/backing-up-data-947189268.html&#34;&gt;【官方说明】&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#导出Jira应用数据&lt;/span&gt;
-docker cp jira_v1:/var/atlassian/jira/export/2018-Nov-18--1058.zip ./
-chown -R daemon.daemon 2018-Nov-18--1058.zip
-&lt;span class=&#34;c1&#34;&gt;#导出Jira附件&lt;/span&gt;
-docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it jira_v1 /bin/bash
-&amp;gt; &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; /var/atlassian/jira/
-&amp;gt; tar czvf jira_data_20181118.tar.gz /data/
-docker cp /var/atlassian/jira/jira_data_20181118.tar.gz ./
-&lt;span class=&#34;c1&#34;&gt;#导出插件&lt;/span&gt;
-docker cp jira_v1:/var/atlassian/jira/jira_plugins_20181118.tar.gz ./
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;将备份数据导入指定目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#导入Jira应用数据&lt;/span&gt;
-docker cp 2018-Nov-18--1058.zip jira:/var/atlassian/jira/import/
-chown -R daemon.daemon 2018-Nov-18--1058.zip
-&lt;span class=&#34;c1&#34;&gt;#导入附件&lt;/span&gt;
-scp old-host:/tmp/jira_data_20181118.tar.gz ./jira_data_20181118.tar.gz
-chown daemon.daemon jira_data_20181118.tar.gz
-docker cp jira_data_20181118.tar.gz  jira:/var/atlassian/jira/
-&lt;span class=&#34;c1&#34;&gt;#导入插件&lt;/span&gt;
-docker cp jira_v1:/var/atlassian/jira/jira_plugins_20181118.tar.gz ./
-scp old-host:/tmp/jira_plugins_20181118.tar.gz ./
-docker cp jira_plugins_20181118.tar.gz jira:var/atlassian/jira/
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Jira初始化
-在完成数据导入后，就可以登录&lt;code&gt;http://your_host:18080&lt;/code&gt;，按照提示进行授权码的购买或输入。然后在最后的步骤会让选择是作为新的服务器还是从备份恢复，选择从备份恢复即可。提示还是很到位的，注意权限，权限不对的话数据导入会报错，在Jira的log里会有体现。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker logs -f jira &lt;span class=&#34;c1&#34;&gt;#追踪jira的log输出&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;没有问题的话，Jira就恢复完成了，另外还有下一步的参数优化，因为官方设置的JVM默认值偏低，所以最好提前调整了。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jira的参数优化
-其实容器启动的时候也可以指定，不过这个后续可能还会变动，直接修改便于维护就这样了，这个根据实际使用情况修改吧&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it -u root jira /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#进入容器后执行以下命令&lt;/span&gt;
-sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;s@JVM_MINIMUM_MEMORY=.*@JVM_MINIMUM_MEMORY=&amp;#34;1024m&amp;#34;@&amp;#39;&lt;/span&gt; /opt/atlassian/jira/bin/setenv.sh
-sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;s@JVM_MAXIMUM_MEMORY=.*@JVM_MAXIMUM_MEMORY=&amp;#34;2048m&amp;#34;@&amp;#39;&lt;/span&gt; /opt/atlassian/jira/bin/setenv.sh
-&lt;span class=&#34;c1&#34;&gt;#修改完之后，退出容器然后重启Jira容器即可&lt;/span&gt;
-docker restart jira
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;OK，完成了Jira的迁移还原操作&lt;/p&gt;
-&lt;h3 id=&#34;新建confluence容器并还原数据&#34;&gt;新建Confluence容器并还原数据&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;启动Confluence容器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -v /data/confluence:/var/atlassian/application-data/confluence --name&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;confluence&amp;#34;&lt;/span&gt; -d -p 8090:8090 -p 8091:8091 confluence-oracle-jdk:v6.8.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Confluence原数据导出
-因为这个数据目录是直接挂在出来的，备份路径在&lt;code&gt;/data/confluence/backups/backup-2018_11_18.zip&lt;/code&gt;（根据挂在路径的不同略有差异）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Confluence数据导入&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;scp old-host:/data/confluence/backups/backup-2018_11_18.zip ./
-mv backup-2018_11_18.zip /data/confluence/restore/
-chown daemon.daemon /data/confluence/restore/backup-2018_11_18.zip
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Confluence初始化
-访问&lt;code&gt;http://your_host:8090&lt;/code&gt;,根据提示进行设置，需要注意连接DB的设置需要指定连接Mysql的参数,选择JDBC的方式，如下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;jdbc:mysql://your_host:3306/confluence?sessionVariables=tx_isolation=&amp;#39;READ-COMMITTED&amp;#39;&amp;amp;useSSL=false&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf8
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;然后就可以正常使用了，跟Jira一样，JVM的参数也可以调整，不然的话，一段时间后可能内存就不够用了&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Confluence启动参数修改&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; -it -u root confluence /bin/bash
-&lt;span class=&#34;c1&#34;&gt;#进入Confluence容器后，执行以下命令&lt;/span&gt;
-sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;s@CATALINA_OPTS=&amp;#34;-Xms.*@CATALINA_OPTS=&amp;#34;-Xms4096m -Xms4096m ${JVM_SUPPORT_RECOMMENDED_ARGS} -Dconfluence.home=${CONFLUENCE_HOME} -XX:+UseG1GC ${CATALINA_OPTS}&amp;#34;@&amp;#39;&lt;/span&gt;  /opt/atlassian/confluence/bin/setenv.sh
-&lt;span class=&#34;c1&#34;&gt;#修改完参数后重启即可&lt;/span&gt;
-docker restart  confluence
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;新建bitbucket容器并还原数据&#34;&gt;新建Bitbucket容器并还原数据&lt;/h3&gt;
-&lt;p&gt;Bitbucket的迁移采用了相对暴力的方式，可以参照&lt;a href=&#34;https://confluence.atlassian.com/bitbucketserver/migrating-bitbucket-server-to-another-server-776640406.html&#34;&gt;【官方迁移向导】&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bitbucket使用的是Docker-compose的方式进行部署的，如下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;nt&#34;&gt;postgresql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;sameersbn/postgresql:9.4-3&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;DB_USER=bitbucket&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;DB_PASS=bitbucket_pass&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;DB_NAME=bitbucket&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/srv/docker/bitbucket/postgresql:/var/lib/postgresql&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;bitbucket&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;atlassian/bitbucket-server:5.0&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;postgresql:postgresql&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;s2&#34;&gt;&amp;#34;80:7990&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;s2&#34;&gt;&amp;#34;7999:7999&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;s1&#34;&gt;&amp;#39;BITBUCKET_PROXY_NAME=&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;s1&#34;&gt;&amp;#39;BITBUCKET_PROXY_PORT=&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;s1&#34;&gt;&amp;#39;BITBUCKET_PROXY_SCHEME=&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;s1&#34;&gt;&amp;#39;BITBUCKET_DELAYED_START=&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/srv/docker/bitbucket/app-data:/var/atlassian/application-data/bitbucket&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;导出数据
-先停止原服务，防止迁移过程中有数据的读写变化&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#从上一步可以看出是直接原来的数据目录直接全部拿过来了&lt;/span&gt;
-tar czvf bitbucket_20181118.tar.gz  /srv/docker/bitbucket/
-bitbucket_20181118.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;将备份数据放入挂载目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;tar xvf bitbucket_20181118.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;启动Bitbucket&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker-compose up -d
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;补充点&#34;&gt;补充点&lt;/h3&gt;
-&lt;p&gt;所有迁移完成后，由于机器IP域名等可能会变化，所以应用间的联通性需要重新建立，这就牵涉使用问题了，不赘述了。以后有其他操作及坑再同步。&lt;/p&gt;</description>
       
     </item>
     

@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Aug 2021 12:17:17 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 12:28:33 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《Docker经典实例》</title>
+      <link>https://blog.gourds.site/post/book/docker_cookbook/</link>
+      <pubDate>Fri, 20 Aug 2021 12:28:33 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/docker_cookbook/</guid>
+      <description>笔记：这书很不推荐，内容浅显又特别能水 Docker Cookbook docker kill SIGKILL信号 docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号 查看数</description>
+    </item>
+    
     <item>
       <title>《实用网络流量分析技术》</title>
       <link>https://blog.gourds.site/post/book/common_network_flow_analyzes/</link>
@@ -255,15 +264,6 @@
 &lt;/blockquote&gt;
 &lt;p&gt;这里面最容易出问题的就是备份数据是否是完全完整的，比如Jira的附件及插件、Bitbucket代码是可以导入等，当然许多官方会有相关的提示，不过并没有提供更详尽的解决过程，这里算一个补充吧。
 PS：Atlassian的这几个服务都是有自动备份功能的，所以也不需要过多干涉，后面的还原数据操作，Jira和Confluence都是用的应用自己的备份，备份路径也是官方Docker的路径（这个就根据实际情况拿到备份就行了）。还有本来想贴几个图可能会更直观，不过七牛的图床域名被回收了，之后应该会用&lt;a href=&#34;https://github.com/Chevereto/Chevereto-Free&#34;&gt;【chevreto】&lt;/a&gt;，有时间了整一整。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Docker方式安装Jumpserver</title>
-      <link>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</link>
-      <pubDate>Tue, 27 Nov 2018 15:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/docker/docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jumpserver/</guid>
-      <description>&lt;p&gt;之前有自己手动封装过Jumpserver的Docker镜像，既然官方发布的有Docker那就使用官方的。不过官方的是DockerAllinone模式，推荐使用外置DB及Reids。所以这里就再弄一个用。如官方所述需要注意Mysql的编码问题，另外还有一个关于Docker的volume小瑕疵，其他的就没有什么问题了。官方链接放在最后需要的自取，另外以下代码在我的&lt;a href=&#34;https://github.com/Gourds/docker-image/tree/master/Service/jumpserver&#34;&gt;【github】&lt;/a&gt;上都有。&lt;/p&gt;</description>
     </item>
     
   </channel>
