@@ -109,9 +109,9 @@
 &lt;td&gt;之前好像没看过&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2021.08.17-？&lt;/td&gt;
-&lt;td&gt;《故事新编》&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.08.17-2021.08.20&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《故事新编》&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;传统故事新读法，称之为故事新编，还可以罢&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2021.08.18-2021.08.20&lt;/td&gt;
@@ -119,7 +119,7 @@
 &lt;td&gt;很水，不推荐&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.08.21-？&lt;/td&gt;
 &lt;td&gt;《Redis实战》&lt;/td&gt;
 &lt;td&gt;用了很久，没仔细研看过，补一下&lt;/td&gt;
 &lt;/tr&gt;
@@ -129,9 +129,14 @@
 &lt;td&gt;很久之前读一半搁置了&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.08.22-2021.08.23&lt;/td&gt;
 &lt;td&gt;《棋王》&lt;/td&gt;
+&lt;td&gt;这类书果然很好读，挺不错的，棋王、树王、孩子王&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《平凡的世界》&lt;/td&gt;
+&lt;td&gt;经典，等等来一波&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -237,7 +242,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《菜根谭》【中】洪应明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《呐喊》【中】鲁迅&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《彷徨》【中】鲁迅&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《故事新编》【中】鲁迅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《故事新编》【中】鲁迅&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《华盖集》【中】鲁迅&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《热风》【中】鲁迅&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《朝花夕拾》【中】鲁迅&lt;/a&gt;&lt;/li&gt;
@@ -269,7 +274,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《雾都孤儿》【英】狄更斯&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《动物农场》【英】乔治·奥威尔&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《了不起的盖茨比》【美】菲茨杰拉德&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《棋王》【中】阿城&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《棋王》【中】阿城&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《送你一颗子弹》【中】刘瑜&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《黄金时代》【中】王小波&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《边城》【中】沈从文&lt;/a&gt;&lt;/li&gt;
@@ -296,6 +301,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《变形记》【奥地利】弗朗茨·卡夫卡&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《遥远的救世主》【中】豆豆(李雪)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《飞鸟集》【印】拉宾德拉纳特·泰戈尔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《浮生六记》【中】沈复&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;推理科幻&#34;&gt;推理|科幻&lt;/h3&gt;
 &lt;ul&gt;
@@ -450,6 +456,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《孩子你慢慢来》【中】龙应台&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《亲爱的安德烈》【中】龙应台&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《此生未完成》【中】于娟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《微信背后的产品观》【中】张小龙&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
