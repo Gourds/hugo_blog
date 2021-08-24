@@ -348,15 +348,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/">CentOS6.8搭建个人dokuwiki</a>
+      <a class="post-link" href="/post/tools/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/"></a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2016-08-20" class="post-time">
-        2016-08-20
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
       </time>
       
-      <span class="more-meta"> 约 782 字 </span>
+      <span class="more-meta"> 约 688 字 </span>
       <span class="more-meta"> 预计阅读 2 分钟 </span>
       
       
@@ -367,76 +367,28 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p><strong>摘要：</strong><a href="https://www.dokuwiki.org/wiki:dokuwiki">dokuwiki</a>是一个开源的wiki引擎程序，非常适合知识库管理，因为有的东西知识不完善不好用blog写，有时也许即时记录一下想法什么的，所以这个还是很有必要的。之前也对比过其他的wiki程序，不过这个比较符合我的要求，所以就用这个程序，这里主要对安装配置做一下记录。</p>
+      <h2 id="tags-tools">title: 使用fio工具测试linux的磁盘性能
+date: 2015-08-24 17:01:45
+tags: [Tools]</h2>
+<p>很多时候我们需要对服务器的性能进行评估，这就少不了运用合适的工具。其中fio是测试iops的一款很好用的工具，用来对硬件进行压力测试和验证，支持13中不同的I/O引擎，包括：sync、mmap、libaio、posixaio、SG v3、splice、null、network、syslet、guasi、solarisaio等等</p>
+<h3 id="简单测试写性能">简单测试写性能</h3>
+<ul>
+<li>使用dd简单测试</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-perl" data-lang="perl"><span class="n">dd</span> <span class="k">if</span><span class="o">=</span><span class="sr">/dev/</span><span class="n">zero</span> <span class="n">of</span><span class="o">=</span><span class="n">testfile</span> <span class="n">bs</span><span class="o">=</span><span class="mi">1</span><span class="n">M</span> <span class="n">count</span><span class="o">=</span><span class="mi">1024</span> <span class="n">oflag</span><span class="o">=</span><span class="n">dsync</span>
+<span class="c1">#采用dd创建一个1G的文件的磁盘写速度，IO引擎为dsync</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
     <div class="read-more">
-      <a href="/post/linux/centos6-8%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAdokuwiki/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/computer/ubuntu14-04%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C/">Ubuntu14.04命令行连接无线网络</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2016-08-17" class="post-time">
-        2016-08-17
-      </time>
-      
-      <span class="more-meta"> 约 967 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>***摘要：***自己有个性能一般的ThinkPad本子，装了Ubuntu14.04，不过最近感觉触摸板很不好用，就打算使用命令行直接使用不用图形界面了，也更省资源。命令行启动后遇见个问题，我不会用命令行直接连接无线网络，真是尴尬，这里记录一下解决过程。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/computer/ubuntu14-04%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%9E%E6%8E%A5%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/">DNS端口使用解释</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2016-08-16" class="post-time">
-        2016-08-16
-      </time>
-      
-      <span class="more-meta"> 约 1646 字 </span>
-      <span class="more-meta"> 预计阅读 4 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**前言：**我们公司有个面试题很有意思，DNS的默认查询端口是什么？可能大家都很熟悉dns使用53端口，那究竟是使用udp协议还是tcp协议呢，恩，我也不清楚，所以就看了个科普贴！</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/dns%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8%E8%A7%A3%E9%87%8A/" class="read-more-link">阅读全文</a>
+      <a href="/post/tools/%E4%BD%BF%E7%94%A8fio%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95linux%E7%9A%84%E7%A3%81%E7%9B%98%E6%80%A7%E8%83%BD/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -476,7 +428,7 @@ if (!doNotTrack) {
 
       
       
-      <li><a href="/page/23/">«</a></li>
+      <li><a href="/page/43/">«</a></li>
       
 
       
@@ -492,28 +444,9 @@ if (!doNotTrack) {
           
 
             
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
             
 
+          
           
 
         
@@ -534,7 +467,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -555,7 +490,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -576,7 +513,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -597,7 +536,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -618,7 +559,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -639,7 +582,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -660,7 +605,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -681,7 +628,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -702,7 +651,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -723,7 +674,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -744,7 +697,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -765,7 +720,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -786,7 +743,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -807,7 +766,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -828,7 +789,9 @@ if (!doNotTrack) {
           
 
             
+            
 
+          
           
 
         
@@ -848,10 +811,357 @@ if (!doNotTrack) {
           
           
 
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+
+          
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
             
               
             
 
+          
           
 
         
@@ -860,8 +1170,8 @@ if (!doNotTrack) {
         
         
           <li class="">
-            <a href="/page/18/">
-              18
+            <a href="/page/32/">
+              32
             </a>
           </li>
         
@@ -878,9 +1188,11 @@ if (!doNotTrack) {
           
 
             
+            
               
             
 
+          
           
 
         
@@ -889,8 +1201,8 @@ if (!doNotTrack) {
         
         
           <li class="">
-            <a href="/page/19/">
-              19
+            <a href="/page/33/">
+              33
             </a>
           </li>
         
@@ -907,9 +1219,11 @@ if (!doNotTrack) {
           
 
             
+            
               
             
 
+          
           
 
         
@@ -918,8 +1232,8 @@ if (!doNotTrack) {
         
         
           <li class="">
-            <a href="/page/20/">
-              20
+            <a href="/page/34/">
+              34
             </a>
           </li>
         
@@ -936,9 +1250,11 @@ if (!doNotTrack) {
           
 
             
+            
               
             
 
+          
           
 
         
@@ -947,8 +1263,8 @@ if (!doNotTrack) {
         
         
           <li class="">
-            <a href="/page/21/">
-              21
+            <a href="/page/35/">
+              35
             </a>
           </li>
         
@@ -965,9 +1281,11 @@ if (!doNotTrack) {
           
 
             
+            
               
             
 
+          
           
 
         
@@ -976,8 +1294,8 @@ if (!doNotTrack) {
         
         
           <li class="">
-            <a href="/page/22/">
-              22
+            <a href="/page/36/">
+              36
             </a>
           </li>
         
@@ -994,9 +1312,11 @@ if (!doNotTrack) {
           
 
             
+            
               
             
 
+          
           
 
         
@@ -1005,8 +1325,8 @@ if (!doNotTrack) {
         
         
           <li class="">
-            <a href="/page/23/">
-              23
+            <a href="/page/37/">
+              37
             </a>
           </li>
         
@@ -1023,9 +1343,197 @@ if (!doNotTrack) {
           
 
             
+            
               
             
 
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/38/">
+              38
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/39/">
+              39
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/40/">
+              40
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/41/">
+              41
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/42/">
+              42
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/43/">
+              43
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+            
+              
+            
+
+          
           
 
         
@@ -1034,490 +1542,18 @@ if (!doNotTrack) {
         
         
           <li class="active">
-            <a href="/page/24/">
-              24
+            <a href="/page/44/">
+              44
             </a>
           </li>
         
 
       
 
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/25/">
-              25
-            </a>
-          </li>
-        
-
       
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/26/">
-              26
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/27/">
-              27
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/28/">
-              28
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/29/">
-              29
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-              
-            
-
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/page/30/">
-              30
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-
-          
-
-        
-        
-
-        
-        
-
       
 
       
-      
-      <li><a href="/page/25/">»</a></li>
-      
-
-      
-      
-      <li><a href="/page/44/">»»</a></li>
       
 
       </ul>

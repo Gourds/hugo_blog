@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 12:28:33 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Aug 2021 14:28:19 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -467,6 +467,485 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《此生未完成》【中】于娟&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《微信背后的产品观》【中】张小龙&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《Redis实战》</title>
+      <link>https://blog.gourds.site/post/book/redis_in_action/</link>
+      <pubDate>Tue, 24 Aug 2021 14:28:19 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/redis_in_action/</guid>
+      
+        <description>&lt;p&gt;Reids in Action Notebook&lt;/p&gt;
+&lt;p&gt;这书还不错，查漏补缺，部分开发内容只大概浏览了下，之后用到的话再详细看下具体应用。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Redis的5种数据结构。（STRING、LIST、SET、HASH、ZSET）&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;存储&lt;/th&gt;
+&lt;th&gt;结构的读写能力&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;STRING&lt;/td&gt;
+&lt;td&gt;可以是字符串、整数或浮点数&lt;/td&gt;
+&lt;td&gt;对整个字符串或者字符串的一部分执行操作； &lt;br&gt; 对整数和浮点数执行自增（increment）或自减（decrement）操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LIST&lt;/td&gt;
+&lt;td&gt;一个链表，链表上的每个节点都包含了一个字符串&lt;/td&gt;
+&lt;td&gt;从链表的两端推入或者弹出元素；&lt;br&gt; 根据偏移量对链表进行修剪（trim）；&lt;br&gt; 读取单个或多个元素；&lt;br&gt; 根据值查找或移除元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SET&lt;/td&gt;
+&lt;td&gt;包含字符串的无序收集器（unordered collection），并且被包含的每个字符串都是不同的&lt;/td&gt;
+&lt;td&gt;添加、获取、移除单个元素；&lt;br&gt;检查一个元素是否存在于集合中；&lt;br&gt;计算交集、并集、差集；&lt;br&gt;从集合里面随机获得元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;HASH&lt;/td&gt;
+&lt;td&gt;包含键值对的无序散列表&lt;/td&gt;
+&lt;td&gt;添加、获取、删除单个键值对；&lt;br&gt;获取所有键值对&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ZSET&lt;/td&gt;
+&lt;td&gt;字符串成员（member）与浮点数分值（score）之间的有序映射，元素的排列顺序由分值的大小决定&lt;/td&gt;
+&lt;td&gt;添加、获取、删除单个元素；&lt;br&gt;根据分值范围（range）或者成员来获取元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;string命令(可以存储字节串、整数、浮点数）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;set hello world
+get hello
+del hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;extend&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;conn = redis.Redis()
+conn.get(&amp;#39;key&amp;#39;)
+comm.incr(&amp;#39;key&amp;#39;, 15) #+15
+conn.decr(&amp;#39;key&amp;#39;, 5)  #-5
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;list命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;rpush list-key item
+rpush list-key item2
+lrange list-key 0 -1
+lindex list-key 1
+lpop list-key
+lrange list-key 0 -1
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;BLPOP/BRPOP，对于阻塞弹出命令和弹出并推入命令，最常用的就是消息传递和任务队列（task queue）。&lt;/p&gt;
+&lt;p&gt;set命令,set与list的不同，list可以存储相同的字符串&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;sadd set-key item
+sadd set-key item2
+sadd set-key item3
+smembers set-key
+sismember set-key item
+srem set-key item2
+smembers set-key
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;hash命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hset hash-key sub-key1 value1
+hset hash-key sub-key2 value2
+hset hash-key sub-key3 value3
+hgetall hash-key #返回散列包含的所有键值对
+hdel hash-key sub-key2
+hgetall hash-key
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hmget key-name key1 key2
+hmset key-name key1 value1 key2 value2
+hlen key-name #返回散列包含的键值对数量
+hexists key-name key #检查给定键是否存在于散列
+hkeys key-name #获取散列包含的所有键
+hvals key-name #获取散列包含的所有值
+hincrby key-name key increment #将键key存储的值加上整数incremenet
+hincrbyfloat key-name key increment #将键key存储的值加上浮点数incremenet
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;zset命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;zadd zset-key 728 member1
+zadd zset-key 982 member0
+zrange zset-key 0 -1 withscores
+zrangebyscore zset-key 0 800 withscores
+zrem zset-key member1
+zrange zset-key 0 -1 withscores
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;应用&#34;&gt;应用&lt;/h3&gt;
+&lt;p&gt;一般用来登录的cookie，有两种类型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;签名cookie（singed cookie）&lt;/li&gt;
+&lt;li&gt;令牌cookie&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;cooked类型&lt;/th&gt;
+&lt;th&gt;优点&lt;/th&gt;
+&lt;th&gt;缺点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;签名cookie&lt;/td&gt;
+&lt;td&gt;验证cookie所需的一切信息都存储在cookie里面。cookie可以包含额外的信息，并且对这些信息进行签名也很容易&lt;/td&gt;
+&lt;td&gt;正确的处理签名很难。很容易忘记对数据进行签名，或者忘记验证数据的签名，从而造成安全漏洞&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;令牌cookie&lt;/td&gt;
+&lt;td&gt;添加信息非常容器。cookie的体积非常小，因此移动终端和速度较慢的客户端可以更快的发送请求&lt;/td&gt;
+&lt;td&gt;需要在服务器端存储更多的信息。如果使用的是关系型数据库，那么存储和载入cookie的代价可能会很高。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;发布和订阅publishsubscribe&#34;&gt;发布和订阅（publish/subscribe)&lt;/h3&gt;
+&lt;p&gt;一般来说，发布和订阅的特点是订阅者（listener）负责订阅频道（channel），发送者（publisher）负责向频道发送二进制字符串消息（binary string message）。每当有消息被发送给指定频道时，频道的所有订阅者都会收到消息。&lt;/p&gt;
+&lt;p&gt;Reids提供的5个发布与订阅命令&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;用例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;SUBSCRIBE&lt;/td&gt;
+&lt;td&gt;subscribe channel [channel &amp;hellip;]&lt;/td&gt;
+&lt;td&gt;订阅给定的一个或多个频道&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;UNSUBSCRIBE&lt;/td&gt;
+&lt;td&gt;unsubscribe [channel [channel &amp;hellip;]]&lt;/td&gt;
+&lt;td&gt;退订给定的一个或多个频道，如果执行时没有给定任何频道，那么退订所有的频道&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PUBLISH&lt;/td&gt;
+&lt;td&gt;publish channel message&lt;/td&gt;
+&lt;td&gt;向给定频道发送消息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PSUBSCRIBE&lt;/td&gt;
+&lt;td&gt;psubscribe pattern [pattern &amp;hellip;]&lt;/td&gt;
+&lt;td&gt;订阅与给定模式相匹配的所有频道&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PUNSUBSCRIBE&lt;/td&gt;
+&lt;td&gt;punsubscribe [pattern [pattern &amp;hellip;]]&lt;/td&gt;
+&lt;td&gt;退订给定模式，如果执行时没有给定模式，MAME退订所有模式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;redis事务&#34;&gt;Redis事务&lt;/h3&gt;
+&lt;p&gt;Redis的基本事务（basic transaction）需要用到MULTI命令和EXEC命令，这种事务可以让一个客户端在不被其他客户端打断的情况下执行多个命令。与关系型数据库的可以在执行过程中进行回滚（rollback）的事务不同，在redis里，被multi和exec命令包围的所有命令会一个借一个的执行，直到所有命令执行完毕为止。当一个事务执行完毕后，Reids才会处理其他客户端的命令。&lt;/p&gt;
+&lt;h3 id=&#34;键的过期时间&#34;&gt;键的过期时间&lt;/h3&gt;
+&lt;p&gt;用于处理过期时间的redis命令&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;PERSIST&lt;/td&gt;
+&lt;td&gt;persist key-name&lt;/td&gt;
+&lt;td&gt;移除键的过期时间&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TTL&lt;/td&gt;
+&lt;td&gt;ttl key-name&lt;/td&gt;
+&lt;td&gt;查看指定键距离过期还有多少秒&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;EXPIRE&lt;/td&gt;
+&lt;td&gt;expire key-name seconds&lt;/td&gt;
+&lt;td&gt;让指定键在指定的秒数之后过期&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;EXPOREAT&lt;/td&gt;
+&lt;td&gt;expireat key-name timestamp&lt;/td&gt;
+&lt;td&gt;让指定键在指定的unix时间戳过期&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PTTL&lt;/td&gt;
+&lt;td&gt;pttl key-name&lt;/td&gt;
+&lt;td&gt;查看给定键距离过期还有多少毫秒&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PEXPIRE&lt;/td&gt;
+&lt;td&gt;pexpire key-name milliseconds&lt;/td&gt;
+&lt;td&gt;指定毫秒后过期&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PEXPIREAT&lt;/td&gt;
+&lt;td&gt;pexpireat key-name timestamp-milliseconds&lt;/td&gt;
+&lt;td&gt;毫秒级的unix时间戳过期&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;安全及持久化&#34;&gt;安全及持久化&lt;/h3&gt;
+&lt;p&gt;持久化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;point-in-time dump（即快照snapshotting RDB）。
+&lt;ul&gt;
+&lt;li&gt;指定时间内有指定的操作时执行&lt;/li&gt;
+&lt;li&gt;通过调用两条转储到硬盘(dump-to-disk)命令中的任意一条&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;append-only（即AOF）。
+&lt;ul&gt;
+&lt;li&gt;可设置从不同步、每秒一次、每个写命令一次&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;快照持久化选项&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;save 60 1000
+stop-writes-on-bgsave-error no #持久化失败后是否仍然继续执行写命令
+rdbcompression yes
+dbfilename dump.rdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;创建快照的常见方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BGSAVE命令：windows平台不支持。redis会调用fork来创建一个子进程，然后子进程负责将快照写入硬盘，而父进程则继续处理命令请求&lt;/li&gt;
+&lt;li&gt;SAVE命令：接到save命令的redis服务器在快照创建完毕之前将不再响应任何其他命令。save命令并不常用，通常在没有足够内存去执行bgsave命令的情况下，或者即使等待持久化操作执行完毕也无所谓的情况下才会去使用&lt;/li&gt;
+&lt;li&gt;配置设置的save配置选项：如&lt;code&gt;save 60 10000&lt;/code&gt;，表示从redis最近一次创建快照之后开始算起，当”60秒之内有10000次写入“这个条件被满足时，redis就会自动触发bgsave命令。如果有多个save配置，那么任一条件满足就会触发一次bgsave&lt;/li&gt;
+&lt;li&gt;当redis通过shutdown命令接收到关闭服务器请求时，或接收到标准的TERM信号时，会执行一个save命令，阻塞所有客户端，不再执行客户端发送的任何命令，并在save命令执行完毕之后关闭服务器&lt;/li&gt;
+&lt;li&gt;当一个redis服务器连接另一个redis服务器，并向对方发送SYNC命令来开始一次复制操作的时候，如果主redis目前没有在执行bgsave操作，或主redis并非刚刚执行完bgsave操作，那么主服务器就会执行bgsave&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;执行bgsave而导致的停顿时间取决于redis所在的系统&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;真实硬件、VMware、KVM：Redis进程每占用1GB内存，创建该进程的子进程所需要的时间就要增加10-20毫秒&lt;/li&gt;
+&lt;li&gt;Xen虚拟机：每1GB，增加时间200-400毫秒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AOF持久化选项&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;appendonly no
+appendfsync everysec
+no-appendfsync-on-rewrite no
+auto-aof-rewrite-percentage 100
+auto-aof-rewrite-min-size 64mb
+
+#当aof文件体积大于64MB，并且aof文件的体积比上一次重写之后的体积大了至少1（100%）倍的时候，redis将执行bgrewriteaof命令
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;appendfsync的选项及同步频率&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选项&lt;/th&gt;
+&lt;th&gt;同步频率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;always&lt;/td&gt;
+&lt;td&gt;每个Redis写命令都要同步写入硬盘。这样会严重降低redis的速度，不推荐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;everysec&lt;/td&gt;
+&lt;td&gt;每秒执行1次同步，显式的将多个写命令同步到硬盘，建议用这个&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;no&lt;/td&gt;
+&lt;td&gt;让操作系统来决定应该何时进行同步，不推荐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果选择always选项，一般机械硬盘每秒只能处理200个写命令，固态硬盘每秒大概也只能处理几万个写命令&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;AOF的主要问题是备份文件的大小会越来越大。可以向redis发送&lt;code&gt;BGREWRITEAOF&lt;/code&gt;命令，这个命令会通过移除AOF文件中的冗余命令来重写AOF文件，使AOF文件的体积变的尽可能的小。&lt;/p&gt;
+&lt;h3 id=&#34;redis主从&#34;&gt;Redis主从&lt;/h3&gt;
+&lt;p&gt;注意&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实际中最好还是让主服务器只适用50%-65%的内存，留下30%-45%的内存用于执行bgsave命令和创建记录写命令的缓冲区&lt;/li&gt;
+&lt;li&gt;从服务器在进行同步时会清空自己的所有数据&lt;/li&gt;
+&lt;li&gt;redis不支持主主复制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;同步过程&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;步骤&lt;/th&gt;
+&lt;th&gt;主服务器操作&lt;/th&gt;
+&lt;th&gt;从服务器操作&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;（等待命令）&lt;/td&gt;
+&lt;td&gt;连接主服务器，发送sync命令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;开始执行bgsave，且使用缓冲区记录bgsave之后执行的所有写命令&lt;/td&gt;
+&lt;td&gt;根据配置选项来决定是继续使用现有数据处理请求，还是向请求者返回错误&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;bgsave完成，向从服务器发送rdb文件，且在发送期间依然用缓冲区记录发送期间的写命令&lt;/td&gt;
+&lt;td&gt;丢弃所有旧数据，开始载入主服务器发来的rdb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;开始将缓冲区里的写命令发送给从服务器&lt;/td&gt;
+&lt;td&gt;rdb载入完成，开始接受命令请求&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;缓冲区命令发送完毕；然后每执行一个新的写命令都会向从服务器发送相同的命令&lt;/td&gt;
+&lt;td&gt;执行主服务器发来的缓冲区所有命令，并从现在起，接受并执行主服务器发来的每个写命令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;配置文件中配置SLAVEOF和命令行SLAVEOF的区别：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SLAVEOF配置：会首先载入当前可用的RDB或者AOF，载入后才开始同步过程&lt;/li&gt;
+&lt;li&gt;SLAVEOF命令：直接开始尝试连接主服务器，并开始同步过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主从链：从服务器可以拥有自己的从服务器，这就构成了主从链。如果从X拥有从Y，那么当从X在跟自己master同步时，会断开与从Y的连接，导致从Y需要重新连接并重新同步（rsync）。主从链主要为了减轻多从服务器时主服务器的同步压力。&lt;/p&gt;
+&lt;p&gt;可以通过INFO命令的输出结果&lt;code&gt;aof_pending_bio_fsync&lt;/code&gt;如果是0，则表示服务器已经将已知的数据都保存到硬盘了。&lt;/p&gt;
+&lt;p&gt;验证备份文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;redis-check-aof file.aof
+redis-check-dump dump.rdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;备份文件修复，只能修复aof，rdb不支持
+修复命令&lt;code&gt;redis-check-aof --fix file.aof&lt;/code&gt;，原理就是删除出错写指令及之后的所有写指令，一般也就是删除aof文件末位的不完整写命令&lt;/p&gt;
+&lt;p&gt;为什么Redis没有典型的加锁功能？不是没有锁，只是锁是乐观锁&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;传统关系型数据库的锁功能，缺点在于持有锁的的客户端越慢，等待解锁的客户端被阻塞的时间越长&lt;/li&gt;
+&lt;li&gt;redis为了尽可能的减少客户端的等待时间，并不会在执行watch命令时对数据进行加锁。相反，redis只会在数据已经被其他客户端抢先修改的情况下，通知执行了watch命令的客户端，这是乐观锁（optimistic locking）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;redis性能测试命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;redis-benchmark -c 1 -q
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;关于测试结果&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一般不使用pipeline流水线的话，python客户端的性能大概是redis-benchmark显示性能的50%-60%&lt;/li&gt;
+&lt;li&gt;若自己客户端性能只有redis-benchmark的30%以下或者返回&lt;code&gt;Cannot assign requested address&lt;/code&gt;错误，可能是每次发送命令时都创建了新的连接。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;应用示例&#34;&gt;应用示例&lt;/h3&gt;
+&lt;p&gt;传统日志记录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;直接写log文件&lt;/li&gt;
+&lt;li&gt;通过系统syslog服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;syslog的守护进程推荐使用syslog-ng替代rsyslogd&lt;/p&gt;
 </description>
       
     </item>
@@ -3500,637 +3979,6 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 &lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/bd1be47a16c1&#34;&gt;骑小猪看流星 | Cookie、Session、Token那点事儿&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://segmentfault.com/a/1190000017831088&#34;&gt;心难收 | 彻底弄懂session，cookie，token&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Aws使用EMR对Dynamodb进行备份还原</title>
-      <link>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
-      <pubDate>Wed, 21 Aug 2019 13:38:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
-      
-        <description>&lt;p&gt;最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由&lt;code&gt;AutoScaling&lt;/code&gt;修改成了&lt;code&gt;按需&lt;/code&gt;，当使用之前的HIVE脚本时出现了&lt;code&gt;Read throughput should not be less than 1&lt;/code&gt;的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持&lt;code&gt;On-Demand billing&lt;/code&gt;这个功能，接着又准备使用&lt;code&gt;awscli&lt;/code&gt;命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的&lt;code&gt;版本问题说明&lt;/code&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;使用hive进行table的备份和还原&#34;&gt;使用Hive进行Table的备份和还原&lt;/h3&gt;
-&lt;p&gt;需要使用EMR版本需要&lt;code&gt;5.22.0&lt;/code&gt;以上&lt;/p&gt;
-&lt;h4 id=&#34;使用hive导出dynamo&#34;&gt;使用Hive导出Dynamo&lt;/h4&gt;
-&lt;p&gt;使用的备份Hive脚本（backup_dynamo.q)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;CREATE EXTERNAL TABLE ${DynamoDBName} (item map&amp;lt;string,string&amp;gt;)
-STORED BY &amp;#39;org.apache.hadoop.hive.dynamodb.DynamoDBStorageHandler&amp;#39;
-TBLPROPERTIES (&amp;#34;dynamodb.table.name&amp;#34; = &amp;#34;${DynamoDBName}&amp;#34;);
-
-CREATE EXTERNAL TABLE ${DynamoDBName}s3  (item map&amp;lt;string, string&amp;gt;)
-ROW FORMAT DELIMITED FIELDS TERMINATED BY &amp;#39;\t&amp;#39; LINES TERMINATED BY &amp;#39;\n&amp;#39;
-LOCATION &amp;#39;${OUTPUT}/&amp;#39;;
-SET dynamodb.throughput.read.percent=${SPEEDX};
-INSERT OVERWRITE TABLE ${DynamoDBName}s3 SELECT * FROM ${DynamoDBName};
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;使用&lt;code&gt;pipeline script&lt;/code&gt;，脚本内容如下(里面有两个参数变量一个是SPEED可选&lt;a href=&#34;%E5%85%B7%E4%BD%93%E5%8F%AF%E5%8F%82%E7%85%A7%E6%96%87%E6%9C%AB%E7%9A%84Dynamo%E5%90%9E%E5%90%90%E9%87%8F%E8%AF%B4%E6%98%8E%E9%93%BE%E6%8E%A5&#34;&gt;0.1-1.5&lt;/a&gt;，另一个是DBS是要备份的dynamodb的表名，多个表的话用&lt;code&gt;,&lt;/code&gt;分割)
-其中&lt;code&gt;s3://backup-205/dynamodb/scripts/backup_dynamo.q&lt;/code&gt;是上面备份语句文件所在的位置
-其中&lt;code&gt;s3://backup-to-dir/dynamodb/&lt;/code&gt;是备份文件输出的位置&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;63
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;64
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;65
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;66
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;67
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;68
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;69
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;70
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;71
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;72
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;73
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;74
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;75
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;76
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;77
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;78
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;79
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;80
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;81
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;82
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;83
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;84
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;85
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;86
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;87
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;88
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import groovy.json.JsonOutput
-_EMRHiveScript = new String(&amp;#39;s3://scripts/backup_dynamo.q&amp;#39;)
-def date = new Date()
-datesubfolder = date.format(&amp;#39;yyyyMMddhhmmz&amp;#39;)
-
-@NonCPS
-def GenerateEMRShellTask(name, cmds) {
-  def map = [:]
-  map.Type = &amp;#39;CUSTOM_JAR&amp;#39;
-  map.ActionOnFailure = &amp;#39;CONTINUE&amp;#39;
-  map.Jar = &amp;#34;command-runner.jar&amp;#34;
-  // String Properties
-  map.Name = name
-  map.Args = cmds.split(&amp;#39; &amp;#39;)
-  return map
-}
-
-@NonCPS
-def GenerateDynamoBackupStep(dbName, speed, output) {
-    if (speed &amp;gt; 1.5){
-      speed = 1.5
-    }
-    cmd = &amp;#34;&amp;#34;&amp;#34;hive-script --run-hive-script --args -f ${_EMRHiveScript} -d OUTPUT=${output} -d DynamoDBName=${dbName} -d SPEEDX=${speed}&amp;#34;&amp;#34;&amp;#34;
-    return GenerateEMRShellTask(dbName+&amp;#39;Backup&amp;#39;, cmd)
-}
-
-@NonCPS
-def GetCmds() {
-    def speed = Float.valueOf(SPEED)
-    def ret = []
-
-    if(DBS.size() &amp;lt; 1) {
-        error &amp;#34;没选择任何数据库&amp;#34;
-    }
-
-    DBS.split(&amp;#39;,&amp;#39;).each{ it -&amp;gt;
-      ret &amp;lt;&amp;lt; GenerateDynamoBackupStep(it, speed, &amp;#39;s3://backup-to-dir/dynamodb/&amp;#39; + it + &amp;#39;/&amp;#39; + datesubfolder)
-    }
-    def steps = JsonOutput.prettyPrint(JsonOutput.toJson(ret))
-    return &amp;#34;&amp;#34;&amp;#34;
-aws emr create-cluster \
---region ap-southeast-1 \
---release-label emr-5.22.0 \
---auto-terminate \
---applications Name=Hadoop Name=Hive --name &amp;#39;BackupDynamoDBFullSpeed&amp;#39; \
---tags &amp;#39;Name=EMRBackup&amp;#39; \
---instance-groups &amp;#39;
-[
-    {
-        &amp;#34;InstanceCount&amp;#34;: 1,
-        &amp;#34;InstanceGroupType&amp;#34;: &amp;#34;MASTER&amp;#34;,
-        &amp;#34;InstanceType&amp;#34;: &amp;#34;m3.xlarge&amp;#34;,
-        &amp;#34;Name&amp;#34;: &amp;#34;Master Instance Group&amp;#34;
-    },
-    {
-        &amp;#34;InstanceCount&amp;#34;: 3,
-        &amp;#34;InstanceGroupType&amp;#34;: &amp;#34;CORE&amp;#34;,
-        &amp;#34;InstanceType&amp;#34;: &amp;#34;m3.xlarge&amp;#34;,
-        &amp;#34;Name&amp;#34;: &amp;#34;Core Instance Group&amp;#34;
-    }
-]
-&amp;#39; \
---ec2-attributes &amp;#39;
-{
-    &amp;#34;KeyName&amp;#34;: &amp;#34;server-pem&amp;#34;,
-    &amp;#34;InstanceProfile&amp;#34;: &amp;#34;EMR_EC2_DefaultRole&amp;#34;,
-    &amp;#34;SubnetId&amp;#34;: &amp;#34;subnet-88a4dbfe&amp;#34;,
-    &amp;#34;EmrManagedSlaveSecurityGroup&amp;#34;: &amp;#34;your_set&amp;#34;,
-    &amp;#34;EmrManagedMasterSecurityGroup&amp;#34;: &amp;#34;your_set&amp;#34;
-}
-&amp;#39; \
---service-role EMR_DefaultRole  --steps &amp;#39;
-${steps}
-&amp;#39;
-&amp;#34;&amp;#34;&amp;#34;
-}
-
-def shcmd=GetCmds()
-
-node {
-    stage &amp;#34;echo cmds for debug&amp;#34;
-    echo shcmd
-
-    stage &amp;#34;run aws emr for backup&amp;#34;
-    withCredentials([[$class: &amp;#39;StringBinding&amp;#39;, credentialsId: &amp;#39;EMRRUN_KEY_ID&amp;#39;, variable: &amp;#39;AWS_ACCESS_KEY_ID&amp;#39;], [$class: &amp;#39;StringBinding&amp;#39;, credentialsId: &amp;#39;EMRRUN_KEY_SEC&amp;#39;, variable: &amp;#39;AWS_SECRET_ACCESS_KEY&amp;#39;]]) {
-        sh shcmd
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;使用hive导入dynamo&#34;&gt;使用Hive导入Dynamo&lt;/h4&gt;
-&lt;p&gt;导入的Hive脚本如下（restore_dynamo.q）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;CREATE EXTERNAL TABLE ${DynamoDBName}s3 (item map&amp;lt;string, string&amp;gt;)
-ROW FORMAT DELIMITED FIELDS TERMINATED BY &amp;#39;\t&amp;#39; LINES TERMINATED BY &amp;#39;\n&amp;#39;
-LOCATION &amp;#39;${INPUT}/&amp;#39;;
-
-CREATE EXTERNAL TABLE ${DynamoDBName} (item map&amp;lt;string,string&amp;gt;)
-STORED BY &amp;#39;org.apache.hadoop.hive.dynamodb.DynamoDBStorageHandler&amp;#39;
-TBLPROPERTIES (&amp;#34;dynamodb.table.name&amp;#34; = &amp;#34;${DynamoDBName}&amp;#34;);
-
-SET dynamodb.throughput.write.percent=${SPEEDX};
-INSERT OVERWRITE TABLE ${DynamoDBName} SELECT * FROM ${DynamoDBName}s3;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;使用的&lt;code&gt;pipeline script&lt;/code&gt;如下,其中需要3个参数配置(&lt;code&gt;SPEED&lt;/code&gt;/&lt;code&gt;datesubfolder&lt;/code&gt;/&lt;code&gt;DBS&lt;/code&gt;)
-其中&lt;code&gt;SPEED&lt;/code&gt;跟备份一样是选择速率，&lt;code&gt;datesubfolder&lt;/code&gt;这个需要选择某个备份输出的目录如&lt;code&gt;201805280419CST&lt;/code&gt;,&lt;code&gt;DBS&lt;/code&gt;这个是要还原的表名也就是&lt;code&gt;daesubfolder&lt;/code&gt;备份目录的上以及目录
-注意修改&lt;code&gt;s3://backup-to-dir/dynamodb/&lt;/code&gt;这个参数以及脚本里面的集群参数&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;63
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;64
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;65
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;66
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;67
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;68
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;69
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;70
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;71
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;72
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;73
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;74
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;75
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;76
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;77
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;78
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;79
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;80
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;81
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;82
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;83
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;import groovy.json.JsonOutput
-_EMRHiveScript = new String(&amp;#39;s3://scripts/restore_dynamo.q&amp;#39;)
-@NonCPS
-def GenerateEMRShellTask(name, cmds) {
-  def map = [:]
-  map.Type = &amp;#39;CUSTOM_JAR&amp;#39;
-  map.ActionOnFailure = &amp;#39;CONTINUE&amp;#39;
-  map.Jar = &amp;#34;command-runner.jar&amp;#34;
-  // String Properties
-  map.Name = name
-  map.Args = cmds.split(&amp;#39; &amp;#39;)
-  return map
-}
-
-@NonCPS
-def GenerateDynamoBackupStep(dbName, speed, input) {
-    if (speed &amp;gt; 1.5){
-      speed = 1.5
-    }
-    cmd = &amp;#34;&amp;#34;&amp;#34;hive-script --run-hive-script --args -f ${_EMRHiveScript} -d INPUT=${input} -d DynamoDBName=${dbName} -d SPEEDX=${speed}&amp;#34;&amp;#34;&amp;#34;
-    return GenerateEMRShellTask(dbName+&amp;#39;Restore&amp;#39;, cmd)
-}
-
-@NonCPS
-def GetCmds() {
-    def speed = Float.valueOf(SPEED)
-    def ret = []
-
-    if(DBS.size() &amp;lt; 1) {
-        error &amp;#34;没选择任何数据库&amp;#34;
-    }
-
-    DBS.split(&amp;#39;,&amp;#39;).each{ it -&amp;gt;
-      ret &amp;lt;&amp;lt; GenerateDynamoBackupStep(it, speed, &amp;#39;s3://backup-to-dir/dynamodb/&amp;#39; + it + &amp;#39;/&amp;#39; + datesubfolder)
-    }
-    def steps = JsonOutput.prettyPrint(JsonOutput.toJson(ret))
-    return &amp;#34;&amp;#34;&amp;#34;
-aws emr create-cluster \
---region ap-southeast-1 \
---release-label emr-5.22.0 \
---auto-terminate \
---applications Name=Hadoop Name=Hive --name &amp;#39;BackupDynamoDBFullSpeed&amp;#39; \
---tags &amp;#39;Name=EMRBackup&amp;#39; \
---instance-groups &amp;#39;
-[
-    {
-        &amp;#34;InstanceCount&amp;#34;: 1,
-        &amp;#34;InstanceGroupType&amp;#34;: &amp;#34;MASTER&amp;#34;,
-        &amp;#34;InstanceType&amp;#34;: &amp;#34;m3.xlarge&amp;#34;,
-        &amp;#34;Name&amp;#34;: &amp;#34;Master Instance Group&amp;#34;
-    },
-    {
-        &amp;#34;InstanceCount&amp;#34;: 3,
-        &amp;#34;InstanceGroupType&amp;#34;: &amp;#34;CORE&amp;#34;,
-        &amp;#34;InstanceType&amp;#34;: &amp;#34;m3.xlarge&amp;#34;,
-        &amp;#34;Name&amp;#34;: &amp;#34;Core Instance Group&amp;#34;
-    }
-]
-&amp;#39; \
---ec2-attributes &amp;#39;
-{
-    &amp;#34;KeyName&amp;#34;: &amp;#34;server-pem&amp;#34;,
-    &amp;#34;InstanceProfile&amp;#34;: &amp;#34;EMR_EC2_DefaultRole&amp;#34;,
-    &amp;#34;SubnetId&amp;#34;: &amp;#34;subnet-88a4dbfe&amp;#34;,
-    &amp;#34;EmrManagedSlaveSecurityGroup&amp;#34;: &amp;#34;your_set&amp;#34;,
-    &amp;#34;EmrManagedMasterSecurityGroup&amp;#34;: &amp;#34;your_set&amp;#34;
-}
-&amp;#39; \
---service-role EMR_DefaultRole  --steps &amp;#39;${steps}&amp;#39;
-&amp;#34;&amp;#34;&amp;#34;
-}
-
-def shcmd=GetCmds()
-
-node {
-    stage &amp;#34;echo cmds for debug&amp;#34;
-    echo shcmd
-
-    stage &amp;#34;run aws emr for backup&amp;#34;
-    withCredentials([[$class: &amp;#39;StringBinding&amp;#39;, credentialsId: &amp;#39;EMRRUN_KEY_ID&amp;#39;, variable: &amp;#39;AWS_ACCESS_KEY_ID&amp;#39;], [$class: &amp;#39;StringBinding&amp;#39;, credentialsId: &amp;#39;EMRRUN_KEY_SEC&amp;#39;, variable: &amp;#39;AWS_SECRET_ACCESS_KEY&amp;#39;]]) {
-        sh shcmd
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;版本问题的说明&#34;&gt;版本问题的说明&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：使用EMR版本&lt;code&gt;emr-4.7.2&lt;/code&gt;时会出现以下报错&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
-WARNING: Configured write throughput of the dynamodb table HMTGift is less than the cluster map capacity. ClusterMapCapacity: 30 WriteThroughput: 0
-WARNING: Writes to this table might result in a write outage on the table.
-OK
-Time taken: 1.786 seconds
-OK
-Time taken: 0.349 seconds
-Query ID = hadoop_xxxx_xxxx-xxxx-xxxx
-Total jobs = 3
-Launching Job 1 out of 3
-Number of reduce tasks is set to 0 since there&amp;#39;s no reduce operator
-java.lang.RuntimeException: Read throughput should not be less than 1. Read throughput percent: 0.0
-	at org.apache.hadoop.dynamodb.read.AbstractDynamoDBInputFormat.getSplits(AbstractDynamoDBInputFormat.java:51 )
-	at org.apache.hadoop.hive.ql.io.HiveInputFormat.addSplitsForGroup(HiveInputFormat.java:298 )
-	at org.apache.hadoop.hive.ql.io.HiveInputFormat.getSplitsInternal(HiveInputFormat.java:412 )
-	at org.apache.hadoop.hive.ql.io.HiveInputFormat.getSplits(HiveInputFormat.java:330 )
-	at org.apache.hadoop.hive.ql.io.CombineHiveInputFormat.getCombineSplits(CombineHiveInputFormat.java:311 )
-	at org.apache.hadoop.hive.ql.io.CombineHiveInputFormat.getSplitsInternal(CombineHiveInputFormat.java:519 )
-	at org.apache.hadoop.hive.ql.io.CombineHiveInputFormat.getSplits(CombineHiveInputFormat.java:463 )
-	at org.apache.hadoop.mapreduce.JobSubmitter.writeOldSplits(JobSubmitter.java:328 )
-	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:320 )
-	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:196 )
-	at org.apache.hadoop.mapreduce.Job$10.run (Job.java:1290 )
-	at org.apache.hadoop.mapreduce.Job$10.run (Job.java:1287 )
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415 )
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657 )
-	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287 )
-	at org.apache.hadoop.mapred.JobClient$1.run (JobClient.java:575 )
-	at org.apache.hadoop.mapred.JobClient$1.run (JobClient.java:570 )
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:415 )
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657 )
-	at org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:570 )
-	at org.apache.hadoop.mapred.JobClient.submitJob(JobClient.java:561 )
-	at org.apache.hadoop.hive.ql.exec.mr.ExecDriver.execute(ExecDriver.java:429 )
-	at org.apache.hadoop.hive.ql.exec.mr.MapRedTask.execute(MapRedTask.java:137 )
-	at org.apache.hadoop.hive.ql.exec.Task.executeTask(Task.java:160 )
-	at org.apache.hadoop.hive.ql.exec.TaskRunner.runSequential(TaskRunner.java:85 )
-	at org.apache.hadoop.hive.ql.Driver.launchTask(Driver.java:1618 )
-	at org.apache.hadoop.hive.ql.Driver.execute(Driver.java:1379 )
-	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1192 )
-	at org.apache.hadoop.hive.ql.Driver.run (Driver.java:1019 )
-	at org.apache.hadoop.hive.ql.Driver.run (Driver.java:1009 )
-	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:201 )
-	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:153 )
-	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:364 )
-	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:299 )
-	at org.apache.hadoop.hive.cli.CliDriver.processReader(CliDriver.java:397 )
-	at org.apache.hadoop.hive.cli.CliDriver.processFile(CliDriver.java:413 )
-	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:668 )
-	at org.apache.hadoop.hive.cli.CliDriver.run (CliDriver.java:631 )
-	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:570 )
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57 )
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43 )
-	at java.lang.reflect.Method.invoke(Method.java:606 )
-	at org.apache.hadoop.util.RunJar.run (RunJar.java:221 )
-	at org.apache.hadoop.util.RunJar.main(RunJar.java:136 )
-Job Submission failed with exception &amp;#39;java.lang.RuntimeException(Read throughput should not be less than 1. Read throughput percent: 0.0)&amp;#39;
-FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
-Command exiting with ret &amp;#39;1&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;给AWS提了Case，确定是EMR版本问题（这是一个已知issue，在5.22.0版本修复），AWS官方回复如下&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;从emr-5.22.0开始，可以成功运行Hive语句和on-demand table进行import/export操作
-根据调查，这是老EMR版本中使用的EMR DDB connector的known issue，由于在EMR中Apache Hadoop, Hive, Spark会使用该connector去访问Dynamodb，老版本中DDB connector并不支持和on-demand配置类型的Dynamodb table操作，且并没有其他的workaround。该问题已经在EMR release 5.22中被修复。
-我建议您使用emr-5.22.0及以上的版本来和on-demand Dynamodb table交互。如果您的使用条件不允许进行EMR升级，建议您将Dynamodb table转为预配置（provision）进行操作。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;使用awscli管理dynamodb&#34;&gt;使用AWSCLI管理DynamoDB&lt;/h3&gt;
-&lt;p&gt;这个AWS官网的文档很清晰，就不赘述了，最下面附有链接，简单例子如下
-容量调整&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;aws --region ap-southeast-1 dynamodb update-table --table-name your_table_name --provisioned-throughput ReadCapacityUnits=300,WriteCapacityUnits=120
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;使用ansible管理dynamodb&#34;&gt;使用Ansible管理DynamoDB&lt;/h3&gt;
-&lt;p&gt;目前使用Ansible还不能实现DynamoDB计费模式的更改（因为后来加入的按需付费功能），如果使用了按需付费就不能使用Ansible的Dynamo模块进行容量变更也不能更改Dynamodb的付费模式。目前Ansible还没有加入这个功能，感兴趣的话可以通过这个&lt;a href=&#34;https://github.com/ansible/ansible/issues/56923&#34;&gt;ISSUES&lt;/a&gt;进行追踪.&lt;/p&gt;
-&lt;p&gt;另外可以参考&lt;a href=&#34;https://docs.ansible.com/ansible/latest/modules/dynamodb_table_module.html&#34;&gt;Ansible的Dynamo模块文档&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#https://docs.ansible.com/ansible/latest/modules/dynamodb_table_module.html
-- hosts: localhost
-  remote_user: ec2-user
-  become: no
-  become_user: root
-  gather_facts: false
-  vars:
-    my_env_access_key: xxx
-    my_env_secret_key: xxx
-  tasks:
-  #205 and 209
-  - dynamodb_table:
-      name: my-table
-      region: us-east-1
-      aws_access_key: &amp;#34;{{ my_env_access_key }}&amp;#34;
-      aws_secret_key: &amp;#34;{{ my_env_secret_key }}&amp;#34;
-      read_capacity: 300
-      write_capacity: 30
-      with_items:
-        - &amp;#34;GMInfo&amp;#34;
-        - &amp;#34;HMTGift&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;其他一些文档&#34;&gt;其他一些文档&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.aws.amazon.com/zh_cn/amazondynamodb/latest/developerguide/EMRforDynamoDB.PerformanceTuning.Throughput.html&#34;&gt;关于DynamoDB吞吐量的文档&lt;/a&gt;
-&lt;a href=&#34;https://docs.aws.amazon.com/zh_cn/amazondynamodb/latest/developerguide/Limits.html#default-limits-throughput-capacity-modes&#34;&gt;关于DynamoDB的一些限制&lt;/a&gt;
-&lt;a href=&#34;https://docs.aws.amazon.com/cli/latest/reference/dynamodb/index.html#cli-aws-dynamodb&#34;&gt;使用AWSCLI管理DynamoDB的文档&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     

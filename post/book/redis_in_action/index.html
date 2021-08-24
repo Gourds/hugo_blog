@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>《Docker经典实例》 - Gourds</title>
+  <title>《Redis实战》 - Gourds</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,8 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="笔记：这书很不推荐，内容浅显又特别能水 Docker Cookbook docker kill SIGKILL信号 docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号 查看数" />
-<meta name="keywords" content="docker, k8s" />
+  <meta name="description" content="Reids in Action Notebook 这书还不错，查漏补缺，部分开发内容只大概浏览了下，之后用到的话再详细看下具体应用。 Redis的5种数据结构。（STRING、LIST" />
+<meta name="keywords" content="redis" />
 
 
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/book/docker_cookbook/" />
+<link rel="canonical" href="https://blog.gourds.site/post/book/redis_in_action/" />
 
 
 
@@ -59,20 +59,20 @@
 
 
 
-<meta property="og:title" content="《Docker经典实例》" />
-<meta property="og:description" content="笔记：这书很不推荐，内容浅显又特别能水 Docker Cookbook docker kill SIGKILL信号 docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号 查看数" />
+<meta property="og:title" content="《Redis实战》" />
+<meta property="og:description" content="Reids in Action Notebook 这书还不错，查漏补缺，部分开发内容只大概浏览了下，之后用到的话再详细看下具体应用。 Redis的5种数据结构。（STRING、LIST" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.gourds.site/post/book/docker_cookbook/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-08-20T12:28:33+08:00" />
-<meta property="article:modified_time" content="2021-08-20T12:28:33+08:00" />
+<meta property="og:url" content="https://blog.gourds.site/post/book/redis_in_action/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-24T14:28:19+08:00" />
+<meta property="article:modified_time" content="2021-08-24T14:28:19+08:00" />
 
-<meta itemprop="name" content="《Docker经典实例》">
-<meta itemprop="description" content="笔记：这书很不推荐，内容浅显又特别能水 Docker Cookbook docker kill SIGKILL信号 docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号 查看数"><meta itemprop="datePublished" content="2021-08-20T12:28:33+08:00" />
-<meta itemprop="dateModified" content="2021-08-20T12:28:33+08:00" />
-<meta itemprop="wordCount" content="1155">
+<meta itemprop="name" content="《Redis实战》">
+<meta itemprop="description" content="Reids in Action Notebook 这书还不错，查漏补缺，部分开发内容只大概浏览了下，之后用到的话再详细看下具体应用。 Redis的5种数据结构。（STRING、LIST"><meta itemprop="datePublished" content="2021-08-24T14:28:19+08:00" />
+<meta itemprop="dateModified" content="2021-08-24T14:28:19+08:00" />
+<meta itemprop="wordCount" content="4122">
 <meta itemprop="keywords" content="读书," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="《Docker经典实例》"/>
-<meta name="twitter:description" content="笔记：这书很不推荐，内容浅显又特别能水 Docker Cookbook docker kill SIGKILL信号 docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号 查看数"/>
+<meta name="twitter:title" content="《Redis实战》"/>
+<meta name="twitter:description" content="Reids in Action Notebook 这书还不错，查漏补缺，部分开发内容只大概浏览了下，之后用到的话再详细看下具体应用。 Redis的5种数据结构。（STRING、LIST"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -345,18 +345,18 @@ if (!doNotTrack) {
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">《Docker经典实例》</h1>
+      <h1 class="post-title">《Redis实战》</h1>
       
       <div class="post-meta">
-        <time datetime="2021-08-20" class="post-time">
-          2021-08-20
+        <time datetime="2021-08-24" class="post-time">
+          2021-08-24
         </time>
         <div class="post-category">
             <a href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"> 读万卷书 </a>
             
           </div>
-        <span class="more-meta"> 约 1155 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span class="more-meta"> 约 4122 字 </span>
+          <span class="more-meta"> 预计阅读 9 分钟 </span>
 
         
         
@@ -375,9 +375,13 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
-        <li><a href="#docker-cookbook">Docker Cookbook</a></li>
-        <li><a href="#远程访问docker">远程访问Docker</a></li>
-        <li><a href="#kubernetes">kubernetes</a></li>
+        <li><a href="#应用">应用</a></li>
+        <li><a href="#发布和订阅publishsubscribe">发布和订阅（publish/subscribe)</a></li>
+        <li><a href="#redis事务">Redis事务</a></li>
+        <li><a href="#键的过期时间">键的过期时间</a></li>
+        <li><a href="#安全及持久化">安全及持久化</a></li>
+        <li><a href="#redis主从">Redis主从</a></li>
+        <li><a href="#应用示例">应用示例</a></li>
       </ul>
     </li>
   </ul>
@@ -387,58 +391,47 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      <p>笔记：这书很不推荐，内容浅显又特别能水</p>
-<h3 id="docker-cookbook">Docker Cookbook</h3>
-<p>docker kill SIGKILL信号
-docker stop SIGTERM信号，一定时间内容器未停止会再发送SIGKILL信号</p>
-<p>查看数据保存在宿主机上的位置
-docker inspect -f {{.Mounts}} ID</p>
-<p>docker image</p>
-<ul>
-<li>commit方式</li>
-<li>Dockerfile方式</li>
-</ul>
-<p>查看在容器中对镜像做出的修改
-docker diff ID</p>
-<p>镜像的导入导出</p>
-<p>docker export ID &gt; update.tar
-docker import - update &lt; update.tar</p>
-<p>docker save -o update1.tar update
-docker load &lt; update1.tar
-区别：保存一个镜像会保留它的历史，而导出容器会对它的历史进行压缩。</p>
-<p>CMD可以通过<code>docker run</code>后面的参数来覆盖，而ENTRYPOINT只能通过<code>docker run</code>的<code>--entrypoint</code>参数来覆盖。</p>
-<p>Dockerfile最佳实践</p>
-<ul>
-<li>在每个容器中只运行一个进程</li>
-<li>对容器的修改应该从基础镜像重新创建它</li>
-<li>使用.dockerignore文件</li>
-<li>利用docker hub官方镜像，不要重复造轮子</li>
-<li>最大限度减少镜像层的数量，并利用镜像缓存的优点</li>
-</ul>
-<p>获取容器IP</p>
-<p>docker inspect &ndash;format &lsquo;{{ .NetworkSettings.IPAddress }}&rsquo; ID</p>
-<p>容器的端口映射通过两种机制实现</p>
-<ul>
-<li>默认情况下Docker会修改宿主机的iptables规则</li>
-<li>Docker会在宿主机上启动一个轻量的代理程序。</li>
-</ul>
-<p>查看容器链接
-docker inspect -f &ldquo;{.HostConfig.Links}}&rdquo; ID</p>
-<h4 id="docker容器网络">Docker容器网络</h4>
-<p>默认情况下，DOcker会在宿主机上创建一个名为docker0的Linux网桥设备。该设备拥有一个私有网络地址及其所属子网。分配给Docker网桥的子网地址为<code>172.[17-31].42.1/16</code>、<code>10.[0-255].42.1/24</code>、<code>192.168.[42-44].1/24</code>中第一个没有被占用的子网地址。容器链接到网桥的网络接口会把docker0网络设备作为网关。</p>
-<p>借助于Linux的IP转发功能和Docker引擎所管理的iptables规则，Docker为容器提供了对外部网络和NAT功能的访问</p>
-<p>确认IP转发功能已开启<code>cat /proc/sys/net/ipv4/ip_forword</code>为1则是开启</p>
-<p>Docker的三种网络模式</p>
-<ul>
-<li>网桥（默认）</li>
-<li>主机模式</li>
-<li>无网络模式</li>
-<li>与其他容器共享网络</li>
-</ul>
-<p>pipework
-weaveworks</p>
-<h3 id="远程访问docker">远程访问Docker</h3>
-<p>修改docker配置<code>/etc/default/docker</code></p>
+      <p>Reids in Action Notebook</p>
+<p>这书还不错，查漏补缺，部分开发内容只大概浏览了下，之后用到的话再详细看下具体应用。</p>
+<hr>
+<p>Redis的5种数据结构。（STRING、LIST、SET、HASH、ZSET）</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储</th>
+<th>结构的读写能力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STRING</td>
+<td>可以是字符串、整数或浮点数</td>
+<td>对整个字符串或者字符串的一部分执行操作； <br> 对整数和浮点数执行自增（increment）或自减（decrement）操作</td>
+</tr>
+<tr>
+<td>LIST</td>
+<td>一个链表，链表上的每个节点都包含了一个字符串</td>
+<td>从链表的两端推入或者弹出元素；<br> 根据偏移量对链表进行修剪（trim）；<br> 读取单个或多个元素；<br> 根据值查找或移除元素</td>
+</tr>
+<tr>
+<td>SET</td>
+<td>包含字符串的无序收集器（unordered collection），并且被包含的每个字符串都是不同的</td>
+<td>添加、获取、移除单个元素；<br>检查一个元素是否存在于集合中；<br>计算交集、并集、差集；<br>从集合里面随机获得元素</td>
+</tr>
+<tr>
+<td>HASH</td>
+<td>包含键值对的无序散列表</td>
+<td>添加、获取、删除单个键值对；<br>获取所有键值对</td>
+</tr>
+<tr>
+<td>ZSET</td>
+<td>字符串成员（member）与浮点数分值（score）之间的有序映射，元素的排列顺序由分值的大小决定</td>
+<td>添加、获取、删除单个元素；<br>根据分值范围（range）或者成员来获取元素</td>
+</tr>
+</tbody>
+</table>
+<p>string命令(可以存储字节串、整数、浮点数）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -446,9 +439,84 @@ weaveworks</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">...
-DOCKER_OPTS=&#34;-H tcp://127.0.0.1:2375&#34;
-...
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">set hello world
+get hello
+del hello
+</code></pre></td></tr></table>
+</div>
+</div><p>extend</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">conn = redis.Redis()
+conn.get(&#39;key&#39;)
+comm.incr(&#39;key&#39;, 15) #+15
+conn.decr(&#39;key&#39;, 5)  #-5
+</code></pre></td></tr></table>
+</div>
+</div><p>list命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">rpush list-key item
+rpush list-key item2
+lrange list-key 0 -1
+lindex list-key 1
+lpop list-key
+lrange list-key 0 -1
+</code></pre></td></tr></table>
+</div>
+</div><p>BLPOP/BRPOP，对于阻塞弹出命令和弹出并推入命令，最常用的就是消息传递和任务队列（task queue）。</p>
+<p>set命令,set与list的不同，list可以存储相同的字符串</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">sadd set-key item
+sadd set-key item2
+sadd set-key item3
+smembers set-key
+sismember set-key item
+srem set-key item2
+smembers set-key
+</code></pre></td></tr></table>
+</div>
+</div><p>hash命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">hset hash-key sub-key1 value1
+hset hash-key sub-key2 value2
+hset hash-key sub-key3 value3
+hgetall hash-key #返回散列包含的所有键值对
+hdel hash-key sub-key2
+hgetall hash-key
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -456,34 +524,341 @@ DOCKER_OPTS=&#34;-H tcp://127.0.0.1:2375&#34;
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">docker -H tcp://127.0.0.1:2375 images
-#or
-curl -s http://127.0.0.1:2375/images/json |python -m json.tool
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">hmget key-name key1 key2
+hmset key-name key1 value1 key2 value2
+hlen key-name #返回散列包含的键值对数量
+hexists key-name key #检查给定键是否存在于散列
+hkeys key-name #获取散列包含的所有键
+hvals key-name #获取散列包含的所有值
+hincrby key-name key increment #将键key存储的值加上整数incremenet
+hincrbyfloat key-name key increment #将键key存储的值加上浮点数incremenet
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="kubernetes">kubernetes</h3>
-<p>功能</p>
+</div><p>zset命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">zadd zset-key 728 member1
+zadd zset-key 982 member0
+zrange zset-key 0 -1 withscores
+zrangebyscore zset-key 0 800 withscores
+zrem zset-key member1
+zrange zset-key 0 -1 withscores
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="应用">应用</h3>
+<p>一般用来登录的cookie，有两种类型</p>
 <ul>
-<li>容器编排</li>
-<li>可靠的容器重启</li>
-<li>自愈</li>
-<li>高集群利用率</li>
-<li>组织和分组</li>
-<li>水平扩展和复制</li>
-<li>微服务友好</li>
-<li>简化运维</li>
+<li>签名cookie（singed cookie）</li>
+<li>令牌cookie</li>
 </ul>
-<p>kubernetes架构</p>
+<table>
+<thead>
+<tr>
+<th>cooked类型</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>签名cookie</td>
+<td>验证cookie所需的一切信息都存储在cookie里面。cookie可以包含额外的信息，并且对这些信息进行签名也很容易</td>
+<td>正确的处理签名很难。很容易忘记对数据进行签名，或者忘记验证数据的签名，从而造成安全漏洞</td>
+</tr>
+<tr>
+<td>令牌cookie</td>
+<td>添加信息非常容器。cookie的体积非常小，因此移动终端和速度较慢的客户端可以更快的发送请求</td>
+<td>需要在服务器端存储更多的信息。如果使用的是关系型数据库，那么存储和载入cookie的代价可能会很高。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="发布和订阅publishsubscribe">发布和订阅（publish/subscribe)</h3>
+<p>一般来说，发布和订阅的特点是订阅者（listener）负责订阅频道（channel），发送者（publisher）负责向频道发送二进制字符串消息（binary string message）。每当有消息被发送给指定频道时，频道的所有订阅者都会收到消息。</p>
+<p>Reids提供的5个发布与订阅命令</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>用例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUBSCRIBE</td>
+<td>subscribe channel [channel &hellip;]</td>
+<td>订阅给定的一个或多个频道</td>
+</tr>
+<tr>
+<td>UNSUBSCRIBE</td>
+<td>unsubscribe [channel [channel &hellip;]]</td>
+<td>退订给定的一个或多个频道，如果执行时没有给定任何频道，那么退订所有的频道</td>
+</tr>
+<tr>
+<td>PUBLISH</td>
+<td>publish channel message</td>
+<td>向给定频道发送消息</td>
+</tr>
+<tr>
+<td>PSUBSCRIBE</td>
+<td>psubscribe pattern [pattern &hellip;]</td>
+<td>订阅与给定模式相匹配的所有频道</td>
+</tr>
+<tr>
+<td>PUNSUBSCRIBE</td>
+<td>punsubscribe [pattern [pattern &hellip;]]</td>
+<td>退订给定模式，如果执行时没有给定模式，MAME退订所有模式</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redis事务">Redis事务</h3>
+<p>Redis的基本事务（basic transaction）需要用到MULTI命令和EXEC命令，这种事务可以让一个客户端在不被其他客户端打断的情况下执行多个命令。与关系型数据库的可以在执行过程中进行回滚（rollback）的事务不同，在redis里，被multi和exec命令包围的所有命令会一个借一个的执行，直到所有命令执行完毕为止。当一个事务执行完毕后，Reids才会处理其他客户端的命令。</p>
+<h3 id="键的过期时间">键的过期时间</h3>
+<p>用于处理过期时间的redis命令</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PERSIST</td>
+<td>persist key-name</td>
+<td>移除键的过期时间</td>
+</tr>
+<tr>
+<td>TTL</td>
+<td>ttl key-name</td>
+<td>查看指定键距离过期还有多少秒</td>
+</tr>
+<tr>
+<td>EXPIRE</td>
+<td>expire key-name seconds</td>
+<td>让指定键在指定的秒数之后过期</td>
+</tr>
+<tr>
+<td>EXPOREAT</td>
+<td>expireat key-name timestamp</td>
+<td>让指定键在指定的unix时间戳过期</td>
+</tr>
+<tr>
+<td>PTTL</td>
+<td>pttl key-name</td>
+<td>查看给定键距离过期还有多少毫秒</td>
+</tr>
+<tr>
+<td>PEXPIRE</td>
+<td>pexpire key-name milliseconds</td>
+<td>指定毫秒后过期</td>
+</tr>
+<tr>
+<td>PEXPIREAT</td>
+<td>pexpireat key-name timestamp-milliseconds</td>
+<td>毫秒级的unix时间戳过期</td>
+</tr>
+</tbody>
+</table>
+<h3 id="安全及持久化">安全及持久化</h3>
+<p>持久化</p>
 <ul>
-<li>kubernetes master包括（API server、Scheduler、Controller Mgr）。提供了API来收集和展现集群当前状态，并在节点之间分配pod。大多数用户将始终与master API直接交互</li>
-<li>主节点存储（etcd）。目前k8s的所有持久化状态都保存在etcd中</li>
-<li>kubelet。agent运行在每个节点智商，负责控制Docker，向master报告自己的状态</li>
-<li>kubernetes proxy。运行在每个节点智商，为本地容器提供了一个单一的网络接口，以连接到一组pod</li>
+<li>point-in-time dump（即快照snapshotting RDB）。
+<ul>
+<li>指定时间内有指定的操作时执行</li>
+<li>通过调用两条转储到硬盘(dump-to-disk)命令中的任意一条</li>
 </ul>
-<p>查看容器状态<code>docker stats ID</code></p>
-<p><a href="https://github.com/gliderlabs/logspout">Docker log 收集</a></p>
+</li>
+<li>append-only（即AOF）。
+<ul>
+<li>可设置从不同步、每秒一次、每个写命令一次</li>
+</ul>
+</li>
+</ul>
+<p>快照持久化选项</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">save 60 1000
+stop-writes-on-bgsave-error no #持久化失败后是否仍然继续执行写命令
+rdbcompression yes
+dbfilename dump.rdb
+</code></pre></td></tr></table>
+</div>
+</div><p>创建快照的常见方法</p>
+<ul>
+<li>BGSAVE命令：windows平台不支持。redis会调用fork来创建一个子进程，然后子进程负责将快照写入硬盘，而父进程则继续处理命令请求</li>
+<li>SAVE命令：接到save命令的redis服务器在快照创建完毕之前将不再响应任何其他命令。save命令并不常用，通常在没有足够内存去执行bgsave命令的情况下，或者即使等待持久化操作执行完毕也无所谓的情况下才会去使用</li>
+<li>配置设置的save配置选项：如<code>save 60 10000</code>，表示从redis最近一次创建快照之后开始算起，当”60秒之内有10000次写入“这个条件被满足时，redis就会自动触发bgsave命令。如果有多个save配置，那么任一条件满足就会触发一次bgsave</li>
+<li>当redis通过shutdown命令接收到关闭服务器请求时，或接收到标准的TERM信号时，会执行一个save命令，阻塞所有客户端，不再执行客户端发送的任何命令，并在save命令执行完毕之后关闭服务器</li>
+<li>当一个redis服务器连接另一个redis服务器，并向对方发送SYNC命令来开始一次复制操作的时候，如果主redis目前没有在执行bgsave操作，或主redis并非刚刚执行完bgsave操作，那么主服务器就会执行bgsave</li>
+</ul>
+<blockquote>
+<p>执行bgsave而导致的停顿时间取决于redis所在的系统</p>
+</blockquote>
+<ul>
+<li>真实硬件、VMware、KVM：Redis进程每占用1GB内存，创建该进程的子进程所需要的时间就要增加10-20毫秒</li>
+<li>Xen虚拟机：每1GB，增加时间200-400毫秒</li>
+</ul>
+<p>AOF持久化选项</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">appendonly no
+appendfsync everysec
+no-appendfsync-on-rewrite no
+auto-aof-rewrite-percentage 100
+auto-aof-rewrite-min-size 64mb
+
+#当aof文件体积大于64MB，并且aof文件的体积比上一次重写之后的体积大了至少1（100%）倍的时候，redis将执行bgrewriteaof命令
+</code></pre></td></tr></table>
+</div>
+</div><p>appendfsync的选项及同步频率</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>同步频率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>always</td>
+<td>每个Redis写命令都要同步写入硬盘。这样会严重降低redis的速度，不推荐</td>
+</tr>
+<tr>
+<td>everysec</td>
+<td>每秒执行1次同步，显式的将多个写命令同步到硬盘，建议用这个</td>
+</tr>
+<tr>
+<td>no</td>
+<td>让操作系统来决定应该何时进行同步，不推荐</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>如果选择always选项，一般机械硬盘每秒只能处理200个写命令，固态硬盘每秒大概也只能处理几万个写命令</p>
+</blockquote>
+<p>AOF的主要问题是备份文件的大小会越来越大。可以向redis发送<code>BGREWRITEAOF</code>命令，这个命令会通过移除AOF文件中的冗余命令来重写AOF文件，使AOF文件的体积变的尽可能的小。</p>
+<h3 id="redis主从">Redis主从</h3>
+<p>注意</p>
+<ul>
+<li>实际中最好还是让主服务器只适用50%-65%的内存，留下30%-45%的内存用于执行bgsave命令和创建记录写命令的缓冲区</li>
+<li>从服务器在进行同步时会清空自己的所有数据</li>
+<li>redis不支持主主复制</li>
+</ul>
+<p>同步过程</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>主服务器操作</th>
+<th>从服务器操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>（等待命令）</td>
+<td>连接主服务器，发送sync命令</td>
+</tr>
+<tr>
+<td>2</td>
+<td>开始执行bgsave，且使用缓冲区记录bgsave之后执行的所有写命令</td>
+<td>根据配置选项来决定是继续使用现有数据处理请求，还是向请求者返回错误</td>
+</tr>
+<tr>
+<td>3</td>
+<td>bgsave完成，向从服务器发送rdb文件，且在发送期间依然用缓冲区记录发送期间的写命令</td>
+<td>丢弃所有旧数据，开始载入主服务器发来的rdb</td>
+</tr>
+<tr>
+<td>4</td>
+<td>开始将缓冲区里的写命令发送给从服务器</td>
+<td>rdb载入完成，开始接受命令请求</td>
+</tr>
+<tr>
+<td>5</td>
+<td>缓冲区命令发送完毕；然后每执行一个新的写命令都会向从服务器发送相同的命令</td>
+<td>执行主服务器发来的缓冲区所有命令，并从现在起，接受并执行主服务器发来的每个写命令</td>
+</tr>
+</tbody>
+</table>
+<p>配置文件中配置SLAVEOF和命令行SLAVEOF的区别：</p>
+<ul>
+<li>SLAVEOF配置：会首先载入当前可用的RDB或者AOF，载入后才开始同步过程</li>
+<li>SLAVEOF命令：直接开始尝试连接主服务器，并开始同步过程</li>
+</ul>
+<p>主从链：从服务器可以拥有自己的从服务器，这就构成了主从链。如果从X拥有从Y，那么当从X在跟自己master同步时，会断开与从Y的连接，导致从Y需要重新连接并重新同步（rsync）。主从链主要为了减轻多从服务器时主服务器的同步压力。</p>
+<p>可以通过INFO命令的输出结果<code>aof_pending_bio_fsync</code>如果是0，则表示服务器已经将已知的数据都保存到硬盘了。</p>
+<p>验证备份文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">redis-check-aof file.aof
+redis-check-dump dump.rdb
+</code></pre></td></tr></table>
+</div>
+</div><p>备份文件修复，只能修复aof，rdb不支持
+修复命令<code>redis-check-aof --fix file.aof</code>，原理就是删除出错写指令及之后的所有写指令，一般也就是删除aof文件末位的不完整写命令</p>
+<p>为什么Redis没有典型的加锁功能？不是没有锁，只是锁是乐观锁</p>
+<ul>
+<li>传统关系型数据库的锁功能，缺点在于持有锁的的客户端越慢，等待解锁的客户端被阻塞的时间越长</li>
+<li>redis为了尽可能的减少客户端的等待时间，并不会在执行watch命令时对数据进行加锁。相反，redis只会在数据已经被其他客户端抢先修改的情况下，通知执行了watch命令的客户端，这是乐观锁（optimistic locking）。</li>
+</ul>
+<p>redis性能测试命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">redis-benchmark -c 1 -q
+</code></pre></td></tr></table>
+</div>
+</div><p>关于测试结果</p>
+<ul>
+<li>一般不使用pipeline流水线的话，python客户端的性能大概是redis-benchmark显示性能的50%-60%</li>
+<li>若自己客户端性能只有redis-benchmark的30%以下或者返回<code>Cannot assign requested address</code>错误，可能是每次发送命令时都创建了新的连接。</li>
+</ul>
+<h3 id="应用示例">应用示例</h3>
+<p>传统日志记录</p>
+<ul>
+<li>直接写log文件</li>
+<li>通过系统syslog服务</li>
+</ul>
+<p>syslog的守护进程推荐使用syslog-ng替代rsyslogd</p>
 
     </div>
 
@@ -497,7 +872,7 @@ curl -s http://127.0.0.1:2375/images/json |python -m json.tool
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2021-08-20
+      2021-08-24
       
     </span>
   </p>
@@ -538,22 +913,9 @@ curl -s http://127.0.0.1:2375/images/json |python -m json.tool
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/book/redis_in_action/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">《Redis实战》</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/book/common_network_flow_analyzes/">
-            <span class="next-text nav-default">《实用网络流量分析技术》</span>
+          <a class="next" href="/post/book/docker_cookbook/">
+            <span class="next-text nav-default">《Docker经典实例》</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">

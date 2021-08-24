@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/</link>
     <description>Recent content in 读书 on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 12:28:33 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Aug 2021 14:28:19 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《Redis实战》</title>
+      <link>https://blog.gourds.site/post/book/redis_in_action/</link>
+      <pubDate>Tue, 24 Aug 2021 14:28:19 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/redis_in_action/</guid>
+      <description>Reids in Action Notebook 这书还不错，查漏补缺，部分开发内容只大概浏览了下，之后用到的话再详细看下具体应用。 Redis的5种数据结构。（STRING、LIST</description>
+    </item>
+    
     <item>
       <title>《Docker经典实例》</title>
       <link>https://blog.gourds.site/post/book/docker_cookbook/</link>
