@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 24 Aug 2021 14:28:19 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Aug 2021 19:34:35 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -139,9 +139,14 @@
 &lt;td&gt;等一波电子版上架&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;《漫画算法：小灰的算法之旅》&lt;/td&gt;
+&lt;td&gt;2021.08.24-2021.08.26&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《漫画算法：小灰的算法之旅》&lt;/del&gt;&lt;/td&gt;
 &lt;td&gt;很久之前读一半搁置了&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《流畅的python》&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -207,6 +212,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《分布式服务框架原理与实践》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《与孩子一起学编程》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Head First Python》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《流畅的python》【美】Luciano Ramalho&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《笨方法学Python》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python标准库》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python Cookbook》&lt;/a&gt;&lt;/li&gt;
@@ -219,11 +225,11 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Perl Cookbook》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Perl实例精解》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Web性能权威指南》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python Web开发实战》【中】董伟明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Flask Web开发实战》【中】李辉&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Flask Web开发》【美】Grinberg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Django之歌:简易》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《轻量级Django》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python Web开发实战》【中】董伟明&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Flask Web开发实战【中】李辉&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《移动Web前端高效开发实战》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《CSS网页设计入门》&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -467,6 +473,275 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《此生未完成》【中】于娟&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《微信背后的产品观》【中】张小龙&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>《小灰的算法之旅》笔记</title>
+      <link>https://blog.gourds.site/post/book/xiaohui_algorithm/</link>
+      <pubDate>Thu, 26 Aug 2021 19:34:35 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/xiaohui_algorithm/</guid>
+      
+        <description>&lt;p&gt;《漫画算法：小灰的算法之旅》&lt;/p&gt;
+&lt;p&gt;整体还可以，先了解计算机内存物理结构会好一点。了解算法对开阔思路很有帮助。&lt;/p&gt;
+&lt;p&gt;egg：少年高斯1+50，等差数列求和，高斯算法&lt;/p&gt;
+&lt;h3 id=&#34;基本概念&#34;&gt;基本概念&lt;/h3&gt;
+&lt;p&gt;算法衡量维度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度&lt;/li&gt;
+&lt;li&gt;空间复杂度(space complexity)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;多数情况下，时间度更重要一些，我们愿意多分配一些内存空间，也要提升程序的执行速度。&lt;/p&gt;
+&lt;p&gt;算法应用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;运算&lt;/li&gt;
+&lt;li&gt;查找&lt;/li&gt;
+&lt;li&gt;排序&lt;/li&gt;
+&lt;li&gt;最优决策&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数据结构组成方式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;线性结构，包括数组、链表、栈、队列、哈希表&lt;/li&gt;
+&lt;li&gt;树，如二叉树、二叉堆&lt;/li&gt;
+&lt;li&gt;图&lt;/li&gt;
+&lt;li&gt;其他由基本数据结构变形而来，用来解决某些特定问题，如跳表、哈希链表、位图等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对数：若a的x次方等于N（a&amp;gt;0，且a不等于1），那么数x叫做以a为底N的对数（logarithm）。记做x=logaN）。其中a叫做对数的底数，N叫做真数。&lt;/p&gt;
+&lt;p&gt;常见复杂度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;T(n) = 3n&lt;/li&gt;
+&lt;li&gt;T(n) = 5logn&lt;/li&gt;
+&lt;li&gt;T(n) = 2&lt;/li&gt;
+&lt;li&gt;T(n) = 0.5n2+0.5n&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;渐进时间复杂度（asymptotic time complexity）用大写O表示，也称为大O表示法&lt;/p&gt;
+&lt;p&gt;原则&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果运行时间是常数量级，则用常数1表示&lt;/li&gt;
+&lt;li&gt;只保留时间函数中的最高阶项&lt;/li&gt;
+&lt;li&gt;如果最高阶存在，则省去最高阶项前面的系数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例子：
+T(n)=2   写作 T(n)=O(1)
+T(n)=3n  写作 T(n)=O(n)
+T(n)=5logn 写作 T(n)=O(logn)
+T(n)=0.5n2 + 0.5n 写作 T(n)=O(n2)&lt;/p&gt;
+&lt;p&gt;当n足够大时，4种时间复杂度用时
+&lt;code&gt;O(n) &amp;lt; O(logn) &amp;lt; O(n) &amp;lt; O(n2)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;常见空间复杂度情形&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;常量空间 O(1)&lt;/li&gt;
+&lt;li&gt;线性空间 O(n)&lt;/li&gt;
+&lt;li&gt;二维空间 O(n2)&lt;/li&gt;
+&lt;li&gt;递归空间 O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;数据结构&#34;&gt;数据结构&lt;/h3&gt;
+&lt;p&gt;数组（array）是有限个相同类型的变量所组成的有序集合，数组中的每一个变量被称为元素。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数组是最为简单、最为常用的数据结构&lt;/li&gt;
+&lt;li&gt;数组在内存中是顺序存储，因此可以很好实现逻辑上的顺序表&lt;/li&gt;
+&lt;li&gt;适合读操作多，写操作少的场景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数组的优缺点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数组拥有高效的随机访问能力，只要给出下标，就可以用常量时间找到对应元素。二分查找就利用了这点&lt;/li&gt;
+&lt;li&gt;插入和删除元素会导致大量元素被迫移动，影响效率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;链表（linked list）是一种在物理上非连续、非顺序的数据结构，由若干节点（node）所组成。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若说数组在内存中是顺序存储，那么链表在内存中存储方式是随机存储&lt;/li&gt;
+&lt;li&gt;单向链表的每个节点包含两部分
+&lt;ul&gt;
+&lt;li&gt;存放数据的变量data&lt;/li&gt;
+&lt;li&gt;下一个节点的指针next&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;双向链表
+&lt;ul&gt;
+&lt;li&gt;指向前置节点的prev指针&lt;/li&gt;
+&lt;li&gt;存放数据的data&lt;/li&gt;
+&lt;li&gt;next指针&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;垃圾回收机制（GC），如java，就是当内存中的变量没有外部引用指向它们，这时就会被自动回收&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以这么理解
+数据分物理结构和逻辑结构，数组链表属于物理结构，而基于物理结构实现的机构如，顺序表、栈、队列、树、图属于逻辑结构&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;栈（stact）是一种线性数据机构，栈中的元素遵循（FILO First in last out）。最早进入的元素放的位置叫做栈底（bottom），最后进入的元素放的位置叫做栈顶（top）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;栈通常用于对”历史“的回溯，如面包屑导航，浏览页面可以轻松返回上一级或者更上一级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;队列（queue）也是一种线性数据机构，队列的出口端叫做队头（front），入口段叫做队尾（rear）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;队列常用于对”历史“的回放，如多线程中争夺公平锁的等待队列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;栈和队列都是既可以用数组实现，也可以用链表实现。&lt;/p&gt;
+&lt;p&gt;双端队列，综合了栈和队列的优点，可以从队头的一段入队或出队，也可以从队尾一段入队或出队
+优先队列，不遵循先入先出，而是谁优先级高谁先出队，不属于线性结构，是基于二叉堆来实现的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最大优先队列，最大元素优先出队&lt;/li&gt;
+&lt;li&gt;最小优先队列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;散列表也叫哈希表（hash table），这种数据结构提供了键（key）和值（value）的映射关系，时间复杂度接近于O（1）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;散列表本质上也是一个数组。通过一个”中转站“对数组下标和key进行转换，这个中转站就叫做哈希函数。&lt;/li&gt;
+&lt;li&gt;哈希冲突无法避免，主要有两种解决方法
+&lt;ul&gt;
+&lt;li&gt;开放寻址法&lt;/li&gt;
+&lt;li&gt;链表法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;散列表的读操作就是通过给定的key，在散列表中查找对应的value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;树（tree）是n个节点的有限集。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当n=0时，称为空树&lt;/li&gt;
+&lt;li&gt;有且仅有一个特点的称为根节点&lt;/li&gt;
+&lt;li&gt;当n&amp;gt;1时，其余节点可分为m个互不相交的有限集，每个集合本身又是一个树，称为根的子树&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二叉树（binary tree）是树的一种特殊形式。即每个节点最多有2个子节点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;满二叉树（每个分支都是慢的）&lt;/li&gt;
+&lt;li&gt;完全二叉树（最后一个节点之前的节点都齐全即可）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二叉树主要用于&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;查找&lt;/li&gt;
+&lt;li&gt;维持相对顺序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二叉查找树又叫做二叉排序树（binary sort tree）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若左子树不为空，则左子树所有及诶点需小于根节点的值&lt;/li&gt;
+&lt;li&gt;右子树需大于根节点的值&lt;/li&gt;
+&lt;li&gt;左右子树也都是二叉查找树&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二叉树的自平衡方式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;红黑树&lt;/li&gt;
+&lt;li&gt;AVL树&lt;/li&gt;
+&lt;li&gt;树堆&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二叉树的遍历方式（2大类4种）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;深度遍历优先
+&lt;ul&gt;
+&lt;li&gt;前序遍历(root&amp;ndash;&amp;gt;left&amp;ndash;&amp;gt;right)（可以用栈，利用栈的回溯特性）&lt;/li&gt;
+&lt;li&gt;中序遍历(left&amp;ndash;&amp;gt;root&amp;ndash;&amp;gt;right)&lt;/li&gt;
+&lt;li&gt;后序遍历(left&amp;ndash;&amp;gt;right&amp;ndash;&amp;gt;root)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;广度遍历优先
+&lt;ul&gt;
+&lt;li&gt;层序遍历(可以用队列）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二叉堆。本质上是一种完全二叉树，分为两个类型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最大堆&lt;/li&gt;
+&lt;li&gt;最小堆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;二叉堆基于堆的自我调整，就是把一个不符合堆的完全二叉树，调整成一个堆。本质就是让所有非叶子节点依次下沉。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;二叉堆虽然是完全二叉树，但存储方式并不是链式存储，而是顺序存储，即二叉堆的所有节点都存储在数组中&lt;/li&gt;
+&lt;li&gt;二叉堆是实现堆排序和优先队列的基础&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;排序算法&#34;&gt;排序算法&lt;/h3&gt;
+&lt;p&gt;常见排序算法（按时间复杂度分大体分3类）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度O（n2）
+&lt;ul&gt;
+&lt;li&gt;冒泡排序&lt;/li&gt;
+&lt;li&gt;选择排序&lt;/li&gt;
+&lt;li&gt;插入排序&lt;/li&gt;
+&lt;li&gt;希尔排序（性能略优于O(n2),但大于O(logn))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;时间复杂度O(nlogn)
+&lt;ul&gt;
+&lt;li&gt;快速排序&lt;/li&gt;
+&lt;li&gt;归并排序&lt;/li&gt;
+&lt;li&gt;堆排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;时间复杂度线性
+&lt;ul&gt;
+&lt;li&gt;计数排序（利用数组下标来确认元素的正确位置）&lt;/li&gt;
+&lt;li&gt;桶排序&lt;/li&gt;
+&lt;li&gt;基数排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;稳定排序与不稳定排序：衡量标准为值相同的元素排序后是否保持排序前的顺序&lt;/p&gt;
+&lt;p&gt;冒泡排序（bubble sort），这是一种基础的交换排序。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;就是比较右边元素的大小，如果比右边大就交换位置。&lt;/li&gt;
+&lt;li&gt;鸡尾酒排序可以看做是冒泡排序的升级排序法（鸡尾酒排序的比较和交换是双向的）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;快速排序，快速排序跟冒泡一样也属于交换排序，不同的是，冒泡排序在每一轮只是把1个元素冒泡到数列的一段，而快速排序则在每一轮挑选一个基准元素，并让其他比它大的元素移到数列一遍，比它小的元素移动到数列另一边。这种思路叫做分治法。&lt;/p&gt;
+&lt;p&gt;绝大多数的递归逻辑，都可以用栈的方法来替代&lt;/p&gt;
+&lt;p&gt;堆排序和快速排序都是不稳定排序&lt;/p&gt;
+&lt;p&gt;计数排序局限性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不适合最大和最小值差距太大&lt;/li&gt;
+&lt;li&gt;数列元素不是整数时，也不适合计数排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;桶排序，每个桶（bucket）代表一个区间范围，里面可以有一个或多个元素&lt;/p&gt;
+&lt;p&gt;常见算法
+&lt;img src=&#34;https://raw.githubusercontent.com/Gourds/hugo_blog_comments/main/blog_img/archive_2021/20210826-suanfa.png&#34; alt=&#34;20210826-suanfa&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;qa&#34;&gt;Q&amp;amp;A&lt;/h3&gt;
+&lt;p&gt;Q1: 如何判断链表有环&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;遍历，每遍历一个新节点就从头检查新节点之前的所有节点和新节点对比，相同则说明这个节点被遍历过两次&lt;/li&gt;
+&lt;li&gt;Hash,先创建一个以节点ID为key的hashset集合，用来存储遍历过的节点。然后从头节点遍历，每遍历一个新节点，都用新节点和hashset集合中存储的节点比较，如果存在与之相同的接地那ID，说明有环，如果不存在就把这个新节点ID存入hashset中&lt;/li&gt;
+&lt;li&gt;指针，两个指针，指针p1每次向后移动1个节点，指针p2每次向后移动2个节点，然后比较两个指针指向的节点是否相同。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Q2：实现一个最小栈&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;采用额外一个栈存储最小值,（存储栈中曾经的最小值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Q3：求最大公约数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;辗转相除法又名欧几里得算法（Euclidean algorithm）。定理：两个正整数a和b（a&amp;gt;b）,他们的最大公约数等于a除以b的余数c和b之间的最大公约数。&lt;/li&gt;
+&lt;li&gt;更相减损术，出自中国古代《九章算术》。原理：两个正整数a和b（a&amp;gt;b）,他们的最大公约数等于a减去b的差值c和b之间的最大公约数。&lt;/li&gt;
+&lt;li&gt;辗转相除法结合更相减损术&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Q4：判断一个数是否是2的整数次幂&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;利用2进制，除了高位有1就不是&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Q5：无序数组排序后的最大相邻差&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;利用计数排序思想&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Q6：用栈实现队列&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;两个栈&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;算法实际应用&#34;&gt;算法实际应用&lt;/h3&gt;
+&lt;p&gt;Bitmap（位图）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主要用于对大量证书做去重和查询操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;LRU（Least Recently Used）是一种内存管理算法，LRU使用了哈希链表&lt;/p&gt;
+&lt;p&gt;A星寻路算法（A* search algorithm）是一种用于寻找有效路径的算法。&lt;/p&gt;
 </description>
       
     </item>
@@ -3733,252 +4008,6 @@ Include语句用于包含一个模板，并在当前命名空间返回文件的�
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;扩展&#34;&gt;扩展&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/33896402&#34;&gt;知乎的一篇文章&lt;/a&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>关于Cookie和Session以及Token的说明</title>
-      <link>https://blog.gourds.site/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
-      <pubDate>Sun, 25 Aug 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</guid>
-      
-        <description>&lt;p&gt;现在做web的话就绕不开安全认证这一步，那就先介绍下目前常见的认证方式然后再说关于cookie、session、token的东西。常用的认证方式简单概述如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;cookie-session认证方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;出现较早的认证方式，主要形式是浏览器客户端将用户名密码发送给服务器，服务器验证后创建session并发放用于识别用户的sessionID（与用户状态绑定后记录在服务器端），这个sessionID以及一些相关的其他信息就是cookie，cookie随着响应(Set-Cookie)返回给客户端由客户端存储于浏览器，之后客户端的请求都会带上这个cookie，服务端通过cookie来获取Session信息从而进行认证校验。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Oauth认证方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Oauth是一种授权机制，主要为第三方应用颁发授权令牌（token）,目前有Oauth2.0和Oauth1.0版本，其中Oauth2.0版本的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc6749.html&#34;&gt;RFC6749&lt;/a&gt;，Oauth1.0版本的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc5849&#34;&gt;RFC5849&lt;/a&gt;。Oauth2.0的具体介绍可以参考&lt;a href=&#34;http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html&#34;&gt;阮一峰|Oauth2.0&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;JWT认证方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;JWT的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc7519.html&#34;&gt;RFC7519&lt;/a&gt;。大概原理是客户端经过服务器认证后服务器给客户端返回一个json对象（包含用户信息且加密处理的数据），之后客户端与服务器通信都会带上这个json对象，服务器只通过这个对象来认证用户，也就是说服务器端是无状态的不会保存状态数据了（比如session）。具体可参考&lt;a href=&#34;http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html&#34;&gt;阮一峰|JSON Web Token 入门教程&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;概念梳理&#34;&gt;概念梳理&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Cookie&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Cookie（复数形态Cookies），又称为“小甜饼”。类型为“小型文本文件”[1]，指某些网站为了辨别用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。由网景公司的前雇员卢·蒙特利在1993年3月发明[2]。最初定义于RFC 2109。当前使用最广泛的 Cookie标准却不是RFC中定义的任何一个，而是在网景公司制定的标准上进行扩展后的产物。&lt;/p&gt;
-&lt;p&gt;Cookie总是保存在客户端中，按在客户端中的存储位置，可分为内存Cookie和硬盘Cookie。内存Cookie由浏览器维护，保存在内存中，浏览器关闭后就消失了，其存在时间是短暂的。硬盘Cookie保存在硬盘里，有一个过期时间，除非用户手工清理或到了过期时间，硬盘Cookie不会被删除，其存在时间是长期的。所以，按存在时间，可分为非持久Cookie和持久Cookie。&lt;/p&gt;
-&lt;p&gt;Cookie就是用来绕开HTTP的无状态性的“额外手段”之一。服务器可以设置或读取Cookies中包含信息，借此维护用户跟服务器会话中的状态&lt;/p&gt;
-&lt;p&gt;使用Cookie的缺陷：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cookie会被附加在每个HTTP请求中，所以无形中增加了流量&lt;/li&gt;
-&lt;li&gt;由于在HTTP请求中的Cookie是明文传递的，所以安全性成问题，除非用HTTPS&lt;/li&gt;
-&lt;li&gt;Cookie的大小限制在4KB左右，对于复杂的存储需求来说是不够用的&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&amp;ndash;选自&lt;a href=&#34;https://en.wikipedia.org/wiki/HTTP_cookie&#34;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Session&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;跟上面cookie不同，cookie是实际存在的，而session是一个抽象概念，我们更多说的是session的实现。session其实就是服务器用来保存用户会话状态（因为HTTP是一个无状态的协议）的一种机制。&lt;/p&gt;
-&lt;p&gt;服务器session存放在服务器（默认存在文件也可以存在内存、数据库中），运行需要依赖于session id，不过一般session id会存在客户端cookie中（当然如果浏览器禁用cookie的话，也可以通过其他方式实现，比如通过url来传递）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Token&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这里说的token是access token，仅仅是指访问资源凭证，是跟上面说的Oauth认证相关的。主要针对的是从第三方应用获得授权登录，客户端从第三方应用获取的授权登录令牌，我们就称为token。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;代码示例flask&#34;&gt;代码示例（Flask）&lt;/h3&gt;
-&lt;p&gt;下面就FLask来做一些代码演示&lt;/p&gt;
-&lt;h4 id=&#34;demo-1逻辑演示&#34;&gt;Demo-1（逻辑演示）&lt;/h4&gt;
-&lt;p&gt;如果不使用session-cookie机制，我们也可以实现用户的登录控制,下面这个非常简陋只是为了演示下登录验证的思路，不必纠结细节，极其不pythonic，代码臃肿且不科学。说一下下面的问题&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;缺失判断来源的逻辑（应该增加判断条件更准确的鉴别请求来源）&lt;/li&gt;
-&lt;li&gt;每次都需要重新登录验证&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Python&#34; data-lang=&#34;Python&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;POST&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;login&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;method&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login.html&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;arvon&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;success login&amp;#39;&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login.html&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/page1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;page1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;play page1&amp;#39;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url_for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/page2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;page2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;play page2&amp;#39;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url_for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;demo-2使用session-cookie&#34;&gt;demo-2（使用session-cookie）&lt;/h4&gt;
-&lt;p&gt;使用session-cookie的话，如下
-在下面的例子中当键入用户密码发出POST请求后，服务器的response是&lt;code&gt;Set-cookie:session=eyJnb3VyZHMiOiJnb3VyZHMtc2Vzc2lvbiJ9.EEaMcA.eV2X1jpYYTAZePmRTT5cdYhUfXw; HttpOnly; Path=/&lt;/code&gt;,从浏览器开发者模式可以看到这个值存放在浏览器&lt;code&gt;cookies&lt;/code&gt;下，然后访问其他页面时请求头（Request headers:&lt;code&gt;session=eyJnb3VyZHMiOiJnb3VyZHMtc2Vzc2lvbiJ9.EEaMcA.eV2X1jpYYTAZePmRTT5cdYhUfXw&lt;/code&gt;）会带上这个cookie&lt;code&gt;session=eyJnb3VyZHMiOiJnb3VyZHMtc2Vzc2lvbiJ9.EEaMcA.eV2X1jpYYTAZePmRTT5cdYhUfXw&lt;/code&gt;，就避免了每次输入账号密码的尴尬了。如果在浏览器在这个cookie删除或者禁用，就不能正常访问了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Python&#34; data-lang=&#34;Python&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;POST&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;login&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;method&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login.html&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;arvon&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds-session&amp;#39;&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;success login&amp;#39;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login.html&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/page1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;page1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;play page1&amp;#39;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url_for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/page2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;page2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;play page2&amp;#39;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url_for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;demo-3使用flask的特殊装饰符&#34;&gt;Demo-3(使用Flask的特殊装饰符)&lt;/h4&gt;
-&lt;p&gt;使用Flask的特殊装饰符&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;allow_login&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;
-
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;before_request&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;check_status&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;POST&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;login&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;method&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login.html&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;arvon&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;gourds-session&amp;#39;&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;success login&amp;#39;&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;login.html&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/page1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;page1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;play page1&amp;#39;&lt;/span&gt;
-
-&lt;span class=&#34;nd&#34;&gt;@app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/page2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GET&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endpoint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;p2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;page2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;play page2&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;参考文档&#34;&gt;参考文档&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc2109.html&#34;&gt;RFC2109 | HTTP State Management Mechanism&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Session_(computer_science)&#34;&gt;wikipedia|Session&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Access_token&#34;&gt;wikipedia|Access_token&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/moyand/p/9047978.html&#34;&gt;墨颜丶 | 彻底理解cookie，session，token&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/bd1be47a16c1&#34;&gt;骑小猪看流星 | Cookie、Session、Token那点事儿&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://segmentfault.com/a/1190000017831088&#34;&gt;心难收 | 彻底弄懂session，cookie，token&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
       
     </item>
     

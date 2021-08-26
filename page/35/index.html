@@ -348,6 +348,43 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/cicd/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      <span class="more-meta"> 约 699 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h2 id="tags-pythonansible">title: Ansible根据excel自动生成inventory文件
+date: 2016-08-05
+tags: [Python,Ansible]</h2>
+<p>Tip: 根据excel表格手动写入inventory文件是个费时费力还容易出错的事情，这种事情本就应该使用脚本完成，刚好最近需要，然后就查阅文档，本来是想用shell的，毕竟相比python我还是对shell比较熟悉，奈何python的xlrd模块实在太合适所以就用python写了脚本（需要先安装xlrd模块）。
+Update:现在不推荐使用xlrd模块了，原因是现在python3.0趋向于使用新模块openpyx，而且xlrd模块只是读取excel还需xlwd模块进行写入操作，不过现在这个模块已经支持不是很好了，我用pip没装上，所以现在使用openpyx模块，在<a href="http://arvon.top/2017/05/24/Jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">我博客Jumpserver</a>这篇文章里记录有这个模块的用法</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/cicd/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/cicd/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/"></a>
     </h1>
     
@@ -418,65 +455,6 @@ tags: [Mysql]</h2>
     </div>
     <div class="read-more">
       <a href="/post/database/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/database/mysql%E8%87%AA%E7%94%A8%E5%91%BD%E4%BB%A4%E6%89%8B%E5%86%8C/"></a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      <span class="more-meta"> 约 2092 字 </span>
-      <span class="more-meta"> 预计阅读 5 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="tags-mysql">title: mysql自用命令手册
-date: 2015-07-22 16:10:15
-tags: [Mysql]</h2>
-<h3 id="连接登录数据库">连接登录数据库</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">mysql –u用户名 <span class="o">[</span>–h主机名或者IP地址<span class="o">]</span> –p密码
-eggs: mysql -uusername -hIPaddress -p<span class="o">(</span>password<span class="o">)</span>
-<span class="c1">#1. 连接到本机上的MYSQL。</span>
-<span class="c1">#首先打开DOS窗口，然后进入目录mysql\bin，再键入命令mysql -u root -p，回车后提示你输密码.注意用户名前可以有空格也可以没有空格，但是密码前必须没有空格，否则让你重新输入密码.</span>
-<span class="c1">#如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MYSQL的提示符是： mysql&gt;</span>
-<span class="c1">#2. 连接到远程主机上的MYSQL。假设远程主机的IP为：110.110.110.110，用户名为root,密码为abcd123。则键入以下命令：</span>
-<span class="c1">#mysql -h110.110.110.110 -u root -p 123;（注:u与root之间可以不用加空格，其它也一样）</span>
-<span class="c1">#3. 退出MYSQL命令： exit （回车） 或者 \q</span>
-</code></pre></td></tr></table>
-</div>
-</div>
-    </div>
-    <div class="read-more">
-      <a href="/post/database/mysql%E8%87%AA%E7%94%A8%E5%91%BD%E4%BB%A4%E6%89%8B%E5%86%8C/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>

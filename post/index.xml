@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 24 Aug 2021 14:28:19 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 19:34:35 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《小灰的算法之旅》笔记</title>
+      <link>https://blog.gourds.site/post/book/xiaohui_algorithm/</link>
+      <pubDate>Thu, 26 Aug 2021 19:34:35 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/xiaohui_algorithm/</guid>
+      <description>《漫画算法：小灰的算法之旅》 整体还可以，先了解计算机内存物理结构会好一点。了解算法对开阔思路很有帮助。 egg：少年高斯1+50，等差数列求和</description>
+    </item>
+    
     <item>
       <title>《Redis实战》</title>
       <link>https://blog.gourds.site/post/book/redis_in_action/</link>
@@ -246,15 +255,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;JWT的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc7519.html&#34;&gt;RFC7519&lt;/a&gt;。大概原理是客户端经过服务器认证后服务器给客户端返回一个json对象（包含用户信息且加密处理的数据），之后客户端与服务器通信都会带上这个json对象，服务器只通过这个对象来认证用户，也就是说服务器端是无状态的不会保存状态数据了（比如session）。具体可参考&lt;a href=&#34;http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html&#34;&gt;阮一峰|JSON Web Token 入门教程&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>Aws使用EMR对Dynamodb进行备份还原</title>
-      <link>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</link>
-      <pubDate>Wed, 21 Aug 2019 13:38:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/cloud/aws%E4%BD%BF%E7%94%A8emr%E5%AF%B9dynamodb%E8%BF%9B%E8%A1%8C%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F/</guid>
-      <description>&lt;p&gt;最近需要对DynamoDB的数据进行迁移，由于现阶段将Dynamo的容量模式由&lt;code&gt;AutoScaling&lt;/code&gt;修改成了&lt;code&gt;按需&lt;/code&gt;，当使用之前的HIVE脚本时出现了&lt;code&gt;Read throughput should not be less than 1&lt;/code&gt;的报错，报错跟DynamoDB的容量有关，继而准备用Ansible在执行脚本前将Dynamo的容量和模式进行调整，又发现了Ansible的Dynamo模块现阶段还没有支持&lt;code&gt;On-Demand billing&lt;/code&gt;这个功能，接着又准备使用&lt;code&gt;awscli&lt;/code&gt;命令行进行调整，经调研这个应该是可以对Dynamo进行调整的，文章后面有一些资料可以参考，现在由于AWS官方给出了回复，所以就不用搞这个了，直接升级版本就好了，更省事。关于版本问题可以看下面说的&lt;code&gt;版本问题说明&lt;/code&gt;。&lt;/p&gt;</description>
     </item>
     
   </channel>

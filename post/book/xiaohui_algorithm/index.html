@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>读万卷书 · Gourds</title>
+  <title>《小灰的算法之旅》笔记 - Gourds</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,8 +23,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Gourds simple site." />
-  <meta name="keywords" content="Linux, Life, Book, Python, Gourds" />
+  <meta name="description" content="《漫画算法：小灰的算法之旅》 整体还可以，先了解计算机内存物理结构会好一点。了解算法对开阔思路很有帮助。 egg：少年高斯1&#43;50，等差数列求和" />
+<meta name="keywords" content="algorithm" />
+
 
 
 <meta name="baidu-site-verification" content="code-XsKZoymEBo" />
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/" />
-<link href="/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/index.xml" rel="alternate" type="application/rss+xml" title="Gourds" />
+<link rel="canonical" href="https://blog.gourds.site/post/book/xiaohui_algorithm/" />
+
 
 
 
@@ -58,15 +59,20 @@
 
 
 
-<meta property="og:title" content="读万卷书" />
-<meta property="og:description" content="Gourds simple site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/" />
+<meta property="og:title" content="《小灰的算法之旅》笔记" />
+<meta property="og:description" content="《漫画算法：小灰的算法之旅》 整体还可以，先了解计算机内存物理结构会好一点。了解算法对开阔思路很有帮助。 egg：少年高斯1&#43;50，等差数列求和" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/book/xiaohui_algorithm/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-26T19:34:35+08:00" />
+<meta property="article:modified_time" content="2021-08-26T19:34:35+08:00" />
 
-<meta itemprop="name" content="读万卷书">
-<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="读万卷书"/>
-<meta name="twitter:description" content="Gourds simple site."/>
+<meta itemprop="name" content="《小灰的算法之旅》笔记">
+<meta itemprop="description" content="《漫画算法：小灰的算法之旅》 整体还可以，先了解计算机内存物理结构会好一点。了解算法对开阔思路很有帮助。 egg：少年高斯1&#43;50，等差数列求和"><meta itemprop="datePublished" content="2021-08-26T19:34:35+08:00" />
+<meta itemprop="dateModified" content="2021-08-26T19:34:35+08:00" />
+<meta itemprop="wordCount" content="3143">
+<meta itemprop="keywords" content="读书," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《小灰的算法之旅》笔记"/>
+<meta name="twitter:description" content="《漫画算法：小灰的算法之旅》 整体还可以，先了解计算机内存物理结构会好一点。了解算法对开阔思路很有帮助。 egg：少年高斯1&#43;50，等差数列求和"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -336,170 +342,415 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-
-<section id="archive" class="archive">
-  
+          <article class="post bg-white">
     
-      <div class="archive-title category">
-        <h2 class="archive-name">分类： 读万卷书</h2>
+    <header class="post-header">
+      <h1 class="post-title">《小灰的算法之旅》笔记</h1>
+      
+      <div class="post-meta">
+        <time datetime="2021-08-26" class="post-time">
+          2021-08-26
+        </time>
+        <div class="post-category">
+            <a href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"> 读万卷书 </a>
+            
+          </div>
+        <span class="more-meta"> 约 3143 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
+
+        
+        
+
+        
+        
       </div>
+    </header>
+
     
-  
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#基本概念">基本概念</a></li>
+        <li><a href="#数据结构">数据结构</a></li>
+        <li><a href="#排序算法">排序算法</a></li>
+        <li><a href="#qa">Q&amp;A</a></li>
+        <li><a href="#算法实际应用">算法实际应用</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
 
-  
-    <div class="archive-post">
-      <time datetime="2021-08-26" class="archive-post-time">
-        2021-08-26
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/xiaohui_algorithm/" class="archive-post-link">
-          《小灰的算法之旅》笔记
-        </a>
-      </span>
+    
+    <div class="post-content">
+      <p>《漫画算法：小灰的算法之旅》</p>
+<p>整体还可以，先了解计算机内存物理结构会好一点。了解算法对开阔思路很有帮助。</p>
+<p>egg：少年高斯1+50，等差数列求和，高斯算法</p>
+<h3 id="基本概念">基本概念</h3>
+<p>算法衡量维度</p>
+<ul>
+<li>时间复杂度</li>
+<li>空间复杂度(space complexity)</li>
+</ul>
+<p>多数情况下，时间度更重要一些，我们愿意多分配一些内存空间，也要提升程序的执行速度。</p>
+<p>算法应用</p>
+<ul>
+<li>运算</li>
+<li>查找</li>
+<li>排序</li>
+<li>最优决策</li>
+</ul>
+<p>数据结构组成方式</p>
+<ul>
+<li>线性结构，包括数组、链表、栈、队列、哈希表</li>
+<li>树，如二叉树、二叉堆</li>
+<li>图</li>
+<li>其他由基本数据结构变形而来，用来解决某些特定问题，如跳表、哈希链表、位图等</li>
+</ul>
+<p>对数：若a的x次方等于N（a&gt;0，且a不等于1），那么数x叫做以a为底N的对数（logarithm）。记做x=logaN）。其中a叫做对数的底数，N叫做真数。</p>
+<p>常见复杂度</p>
+<ul>
+<li>T(n) = 3n</li>
+<li>T(n) = 5logn</li>
+<li>T(n) = 2</li>
+<li>T(n) = 0.5n2+0.5n</li>
+</ul>
+<p>渐进时间复杂度（asymptotic time complexity）用大写O表示，也称为大O表示法</p>
+<p>原则</p>
+<ul>
+<li>如果运行时间是常数量级，则用常数1表示</li>
+<li>只保留时间函数中的最高阶项</li>
+<li>如果最高阶存在，则省去最高阶项前面的系数</li>
+</ul>
+<p>例子：
+T(n)=2   写作 T(n)=O(1)
+T(n)=3n  写作 T(n)=O(n)
+T(n)=5logn 写作 T(n)=O(logn)
+T(n)=0.5n2 + 0.5n 写作 T(n)=O(n2)</p>
+<p>当n足够大时，4种时间复杂度用时
+<code>O(n) &lt; O(logn) &lt; O(n) &lt; O(n2)</code></p>
+<p>常见空间复杂度情形</p>
+<ul>
+<li>常量空间 O(1)</li>
+<li>线性空间 O(n)</li>
+<li>二维空间 O(n2)</li>
+<li>递归空间 O(n)</li>
+</ul>
+<h3 id="数据结构">数据结构</h3>
+<p>数组（array）是有限个相同类型的变量所组成的有序集合，数组中的每一个变量被称为元素。</p>
+<ul>
+<li>数组是最为简单、最为常用的数据结构</li>
+<li>数组在内存中是顺序存储，因此可以很好实现逻辑上的顺序表</li>
+<li>适合读操作多，写操作少的场景</li>
+</ul>
+<p>数组的优缺点</p>
+<ul>
+<li>数组拥有高效的随机访问能力，只要给出下标，就可以用常量时间找到对应元素。二分查找就利用了这点</li>
+<li>插入和删除元素会导致大量元素被迫移动，影响效率</li>
+</ul>
+<p>链表（linked list）是一种在物理上非连续、非顺序的数据结构，由若干节点（node）所组成。</p>
+<ul>
+<li>若说数组在内存中是顺序存储，那么链表在内存中存储方式是随机存储</li>
+<li>单向链表的每个节点包含两部分
+<ul>
+<li>存放数据的变量data</li>
+<li>下一个节点的指针next</li>
+</ul>
+</li>
+<li>双向链表
+<ul>
+<li>指向前置节点的prev指针</li>
+<li>存放数据的data</li>
+<li>next指针</li>
+</ul>
+</li>
+</ul>
+<p>垃圾回收机制（GC），如java，就是当内存中的变量没有外部引用指向它们，这时就会被自动回收</p>
+<blockquote>
+<p>可以这么理解
+数据分物理结构和逻辑结构，数组链表属于物理结构，而基于物理结构实现的机构如，顺序表、栈、队列、树、图属于逻辑结构</p>
+</blockquote>
+<p>栈（stact）是一种线性数据机构，栈中的元素遵循（FILO First in last out）。最早进入的元素放的位置叫做栈底（bottom），最后进入的元素放的位置叫做栈顶（top）。</p>
+<ul>
+<li>栈通常用于对”历史“的回溯，如面包屑导航，浏览页面可以轻松返回上一级或者更上一级</li>
+</ul>
+<p>队列（queue）也是一种线性数据机构，队列的出口端叫做队头（front），入口段叫做队尾（rear）。</p>
+<ul>
+<li>队列常用于对”历史“的回放，如多线程中争夺公平锁的等待队列</li>
+</ul>
+<p>栈和队列都是既可以用数组实现，也可以用链表实现。</p>
+<p>双端队列，综合了栈和队列的优点，可以从队头的一段入队或出队，也可以从队尾一段入队或出队
+优先队列，不遵循先入先出，而是谁优先级高谁先出队，不属于线性结构，是基于二叉堆来实现的。</p>
+<ul>
+<li>最大优先队列，最大元素优先出队</li>
+<li>最小优先队列</li>
+</ul>
+<p>散列表也叫哈希表（hash table），这种数据结构提供了键（key）和值（value）的映射关系，时间复杂度接近于O（1）。</p>
+<ul>
+<li>散列表本质上也是一个数组。通过一个”中转站“对数组下标和key进行转换，这个中转站就叫做哈希函数。</li>
+<li>哈希冲突无法避免，主要有两种解决方法
+<ul>
+<li>开放寻址法</li>
+<li>链表法</li>
+</ul>
+</li>
+<li>散列表的读操作就是通过给定的key，在散列表中查找对应的value</li>
+</ul>
+<p>树（tree）是n个节点的有限集。</p>
+<ul>
+<li>当n=0时，称为空树</li>
+<li>有且仅有一个特点的称为根节点</li>
+<li>当n&gt;1时，其余节点可分为m个互不相交的有限集，每个集合本身又是一个树，称为根的子树</li>
+</ul>
+<p>二叉树（binary tree）是树的一种特殊形式。即每个节点最多有2个子节点</p>
+<ul>
+<li>满二叉树（每个分支都是慢的）</li>
+<li>完全二叉树（最后一个节点之前的节点都齐全即可）</li>
+</ul>
+<p>二叉树主要用于</p>
+<ul>
+<li>查找</li>
+<li>维持相对顺序</li>
+</ul>
+<p>二叉查找树又叫做二叉排序树（binary sort tree）</p>
+<ul>
+<li>若左子树不为空，则左子树所有及诶点需小于根节点的值</li>
+<li>右子树需大于根节点的值</li>
+<li>左右子树也都是二叉查找树</li>
+</ul>
+<p>二叉树的自平衡方式</p>
+<ul>
+<li>红黑树</li>
+<li>AVL树</li>
+<li>树堆</li>
+<li>&hellip;</li>
+</ul>
+<p>二叉树的遍历方式（2大类4种）</p>
+<ul>
+<li>深度遍历优先
+<ul>
+<li>前序遍历(root&ndash;&gt;left&ndash;&gt;right)（可以用栈，利用栈的回溯特性）</li>
+<li>中序遍历(left&ndash;&gt;root&ndash;&gt;right)</li>
+<li>后序遍历(left&ndash;&gt;right&ndash;&gt;root)</li>
+</ul>
+</li>
+<li>广度遍历优先
+<ul>
+<li>层序遍历(可以用队列）</li>
+</ul>
+</li>
+</ul>
+<p>二叉堆。本质上是一种完全二叉树，分为两个类型</p>
+<ul>
+<li>最大堆</li>
+<li>最小堆</li>
+</ul>
+<p>二叉堆基于堆的自我调整，就是把一个不符合堆的完全二叉树，调整成一个堆。本质就是让所有非叶子节点依次下沉。</p>
+<ul>
+<li>二叉堆虽然是完全二叉树，但存储方式并不是链式存储，而是顺序存储，即二叉堆的所有节点都存储在数组中</li>
+<li>二叉堆是实现堆排序和优先队列的基础</li>
+</ul>
+<h3 id="排序算法">排序算法</h3>
+<p>常见排序算法（按时间复杂度分大体分3类）</p>
+<ul>
+<li>时间复杂度O（n2）
+<ul>
+<li>冒泡排序</li>
+<li>选择排序</li>
+<li>插入排序</li>
+<li>希尔排序（性能略优于O(n2),但大于O(logn))</li>
+</ul>
+</li>
+<li>时间复杂度O(nlogn)
+<ul>
+<li>快速排序</li>
+<li>归并排序</li>
+<li>堆排序</li>
+</ul>
+</li>
+<li>时间复杂度线性
+<ul>
+<li>计数排序（利用数组下标来确认元素的正确位置）</li>
+<li>桶排序</li>
+<li>基数排序</li>
+</ul>
+</li>
+</ul>
+<p>稳定排序与不稳定排序：衡量标准为值相同的元素排序后是否保持排序前的顺序</p>
+<p>冒泡排序（bubble sort），这是一种基础的交换排序。</p>
+<ul>
+<li>就是比较右边元素的大小，如果比右边大就交换位置。</li>
+<li>鸡尾酒排序可以看做是冒泡排序的升级排序法（鸡尾酒排序的比较和交换是双向的）</li>
+</ul>
+<p>快速排序，快速排序跟冒泡一样也属于交换排序，不同的是，冒泡排序在每一轮只是把1个元素冒泡到数列的一段，而快速排序则在每一轮挑选一个基准元素，并让其他比它大的元素移到数列一遍，比它小的元素移动到数列另一边。这种思路叫做分治法。</p>
+<p>绝大多数的递归逻辑，都可以用栈的方法来替代</p>
+<p>堆排序和快速排序都是不稳定排序</p>
+<p>计数排序局限性</p>
+<ul>
+<li>不适合最大和最小值差距太大</li>
+<li>数列元素不是整数时，也不适合计数排序</li>
+</ul>
+<p>桶排序，每个桶（bucket）代表一个区间范围，里面可以有一个或多个元素</p>
+<p>常见算法
+<img src="https://raw.githubusercontent.com/Gourds/hugo_blog_comments/main/blog_img/archive_2021/20210826-suanfa.png" alt="20210826-suanfa"></p>
+<h3 id="qa">Q&amp;A</h3>
+<p>Q1: 如何判断链表有环</p>
+<blockquote>
+<ol>
+<li>遍历，每遍历一个新节点就从头检查新节点之前的所有节点和新节点对比，相同则说明这个节点被遍历过两次</li>
+<li>Hash,先创建一个以节点ID为key的hashset集合，用来存储遍历过的节点。然后从头节点遍历，每遍历一个新节点，都用新节点和hashset集合中存储的节点比较，如果存在与之相同的接地那ID，说明有环，如果不存在就把这个新节点ID存入hashset中</li>
+<li>指针，两个指针，指针p1每次向后移动1个节点，指针p2每次向后移动2个节点，然后比较两个指针指向的节点是否相同。</li>
+</ol>
+</blockquote>
+<p>Q2：实现一个最小栈</p>
+<blockquote>
+<ol>
+<li>采用额外一个栈存储最小值,（存储栈中曾经的最小值）</li>
+</ol>
+</blockquote>
+<p>Q3：求最大公约数</p>
+<blockquote>
+<ol>
+<li>辗转相除法又名欧几里得算法（Euclidean algorithm）。定理：两个正整数a和b（a&gt;b）,他们的最大公约数等于a除以b的余数c和b之间的最大公约数。</li>
+<li>更相减损术，出自中国古代《九章算术》。原理：两个正整数a和b（a&gt;b）,他们的最大公约数等于a减去b的差值c和b之间的最大公约数。</li>
+<li>辗转相除法结合更相减损术</li>
+</ol>
+</blockquote>
+<p>Q4：判断一个数是否是2的整数次幂</p>
+<blockquote>
+<ol>
+<li>利用2进制，除了高位有1就不是</li>
+</ol>
+</blockquote>
+<p>Q5：无序数组排序后的最大相邻差</p>
+<blockquote>
+<ol>
+<li>利用计数排序思想</li>
+</ol>
+</blockquote>
+<p>Q6：用栈实现队列</p>
+<blockquote>
+<ol>
+<li>两个栈</li>
+</ol>
+</blockquote>
+<h3 id="算法实际应用">算法实际应用</h3>
+<p>Bitmap（位图）</p>
+<ul>
+<li>主要用于对大量证书做去重和查询操作</li>
+</ul>
+<p>LRU（Least Recently Used）是一种内存管理算法，LRU使用了哈希链表</p>
+<p>A星寻路算法（A* search algorithm）是一种用于寻找有效路径的算法。</p>
+
     </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-08-24" class="archive-post-time">
-        2021-08-24
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/redis_in_action/" class="archive-post-link">
-          《Redis实战》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-08-20" class="archive-post-time">
-        2021-08-20
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/docker_cookbook/" class="archive-post-link">
-          《Docker经典实例》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-08-18" class="archive-post-time">
-        2021-08-18
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/common_network_flow_analyzes/" class="archive-post-link">
-          《实用网络流量分析技术》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-08-16" class="archive-post-time">
-        2021-08-16
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/continuous_delivery_2.0/" class="archive-post-link">
-          《持续交付2.0》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-07-31" class="archive-post-time">
-        2021-07-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/how_is_the_network_connected/" class="archive-post-link">
-          《网络是怎样连接的》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-07-23" class="archive-post-time">
-        2021-07-23
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/%E8%BF%99%E4%BA%9B%E5%B9%B4%E9%82%A3%E4%BA%9B%E4%BA%8B/" class="archive-post-link">
-          《这些年，那些事》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-07-19" class="archive-post-time">
-        2021-07-19
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/programming/program_how_to_work/" class="archive-post-link">
-          《程序是怎么跑起来的》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-07-17" class="archive-post-time">
-        2021-07-17
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/theroadlesstraveled/" class="archive-post-link">
-          《The Road Less Traveled》
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2021-07-14" class="archive-post-time">
-        2021-07-14
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/%E9%87%8D%E8%AF%BB_%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/" class="archive-post-link">
-          重读《三国演义》
-        </a>
-      </span>
-    </div>
-  
-</section>
 
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Gourds</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2021-08-26
       
-      <li  class="active" >
-        <a href="/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/">1</a>
-      </li>
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/weipay.jpg">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/zhipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+          
+        </div>
+
       
-      <li >
-        <a href="/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/page/2/">2</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/book/redis_in_action/">
+            <span class="next-text nav-default">《Redis实战》</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
 
   
   
 
+  
 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog_comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
+  
 
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>
@@ -624,6 +875,13 @@ if (!doNotTrack) {
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 
