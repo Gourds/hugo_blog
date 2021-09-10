@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 26 Aug 2021 19:34:35 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Sep 2021 12:19:44 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《流畅的Python》</title>
+      <link>https://blog.gourds.site/post/book/fluent_python/</link>
+      <pubDate>Wed, 08 Sep 2021 12:19:44 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/fluent_python/</guid>
+      <description>这本书需要一定基础，旨在让代码更加优雅。很推荐，里面会介绍一些最佳实践，以及背后的原因和设计思路。 与运算符无关的特殊方法 特殊方法是为了让解释</description>
+    </item>
+    
     <item>
       <title>《小灰的算法之旅》笔记</title>
       <link>https://blog.gourds.site/post/book/xiaohui_algorithm/</link>
@@ -228,33 +237,6 @@
       
       <guid>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
       <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>关于Cookie和Session以及Token的说明</title>
-      <link>https://blog.gourds.site/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</link>
-      <pubDate>Sun, 25 Aug 2019 12:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/network/%E5%85%B3%E4%BA%8Ecookie%E5%92%8Csession%E4%BB%A5%E5%8F%8Atoken%E7%9A%84%E8%AF%B4%E6%98%8E/</guid>
-      <description>&lt;p&gt;现在做web的话就绕不开安全认证这一步，那就先介绍下目前常见的认证方式然后再说关于cookie、session、token的东西。常用的认证方式简单概述如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;cookie-session认证方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;出现较早的认证方式，主要形式是浏览器客户端将用户名密码发送给服务器，服务器验证后创建session并发放用于识别用户的sessionID（与用户状态绑定后记录在服务器端），这个sessionID以及一些相关的其他信息就是cookie，cookie随着响应(Set-Cookie)返回给客户端由客户端存储于浏览器，之后客户端的请求都会带上这个cookie，服务端通过cookie来获取Session信息从而进行认证校验。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Oauth认证方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Oauth是一种授权机制，主要为第三方应用颁发授权令牌（token）,目前有Oauth2.0和Oauth1.0版本，其中Oauth2.0版本的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc6749.html&#34;&gt;RFC6749&lt;/a&gt;，Oauth1.0版本的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc5849&#34;&gt;RFC5849&lt;/a&gt;。Oauth2.0的具体介绍可以参考&lt;a href=&#34;http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html&#34;&gt;阮一峰|Oauth2.0&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;JWT认证方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;JWT的标准是&lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc7519.html&#34;&gt;RFC7519&lt;/a&gt;。大概原理是客户端经过服务器认证后服务器给客户端返回一个json对象（包含用户信息且加密处理的数据），之后客户端与服务器通信都会带上这个json对象，服务器只通过这个对象来认证用户，也就是说服务器端是无状态的不会保存状态数据了（比如session）。具体可参考&lt;a href=&#34;http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html&#34;&gt;阮一峰|JSON Web Token 入门教程&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description>
     </item>
     
   </channel>
