@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Sep 2021 12:19:44 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Sep 2021 14:33:43 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python闭包与装饰器</title>
+      <link>https://blog.gourds.site/post/programming/python-decorate-1/</link>
+      <pubDate>Fri, 17 Sep 2021 14:33:43 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/programming/python-decorate-1/</guid>
+      <description>闭包 定义：内部函数对外部函数作用域里变量的引用 函数内的属性都是有生命周期的，只在函数运行期间存活 闭包内的闭包函数私有化了变量，完成了数据的封</description>
+    </item>
+    
     <item>
       <title>《流畅的Python》</title>
       <link>https://blog.gourds.site/post/book/fluent_python/</link>
@@ -228,15 +237,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;&amp;mdash;选自 &lt;a href=&#34;http://docs.jinkan.org/docs/jinja2/index.html&#34;&gt;http://docs.jinkan.org&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>python中的*与**用法</title>
-      <link>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%9A%84%E4%B8%8E%E7%94%A8%E6%B3%95/</guid>
-      <description>&lt;p&gt;在Python中经常会见到以下一些用法，如在函数调用中&lt;code&gt;fun1(*vars)&lt;/code&gt;|&lt;code&gt;fun2(**vars)&lt;/code&gt;,以及在函数定义中如&lt;code&gt;def fun1(*param)&lt;/code&gt; or &lt;code&gt;def fun2(**param)&lt;/code&gt;这些形式。下面就针对这些情况使用具体例子进行一下说明。&lt;/p&gt;</description>
     </item>
     
   </channel>
