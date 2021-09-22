@@ -250,12 +250,6 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Go语言学习笔记》【中】雨痕&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Go Web编程》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Go 语言程序设计》【英】Mark Summerfield&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- - [ ] [《Perl语言入门》]()     不读了
-- [ ] [《使用Perl实现系统管理自动化》]()
-- [ ] [《Perl Cookbook》]()
-- [ ] [《Perl实例精解》]() --&gt;
-&lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Web性能权威指南》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python Web开发实战》【中】董伟明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Flask Web开发实战》【中】李辉&lt;/a&gt;&lt;/li&gt;
