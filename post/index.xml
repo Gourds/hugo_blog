@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Sep 2021 14:33:43 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 10:01:52 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go常用数组排序</title>
+      <link>https://blog.gourds.site/post/programming/go-sort-array/</link>
+      <pubDate>Thu, 23 Sep 2021 10:01:52 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/programming/go-sort-array/</guid>
+      <description>冒泡排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 /* 数组冒泡排序：[2,1,13,5,9] ==&amp;gt; [1 2 5 9 13] */ arr1 := [5]int{2, 1, 13, 5, 9} fmt.Println(arr1[2]) //for i,_ := range arr1 { // if i+1 &amp;lt; len(arr1) {</description>
+    </item>
+    
     <item>
       <title>Python闭包与装饰器</title>
       <link>https://blog.gourds.site/post/programming/python-decorate-1/</link>
@@ -213,30 +222,6 @@
 &lt;li&gt;HTML转义&lt;/li&gt;
 &lt;li&gt;特殊装饰器&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Jinja2语法</title>
-      <link>https://blog.gourds.site/post/cicd/jinja2%E8%AF%AD%E6%B3%95/</link>
-      <pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/cicd/jinja2%E8%AF%AD%E6%B3%95/</guid>
-      <description>&lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
-&lt;p&gt;大概介绍一下，主要介绍模板（模板仅仅是文本文件。它可以生成任何基于文本的格式（HTML、XML、CSV、LaTex 等等）。它并没有特定的扩展名，&lt;code&gt;.html&lt;/code&gt;或&lt;code&gt;.xml&lt;/code&gt;都是可以的。）模板包含变量或表达式 ，这两者在模板求值的时候会被替换为值。模板中 还有标签，控制模板的逻辑。模板语法的大量灵感来自于 Django和Python。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模板语言。它速度快，被广泛使用，并且提供了可选的沙箱模板执行环境保证安全.特征如下：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;沙箱中执行&lt;/li&gt;
-&lt;li&gt;强大的HTML自动转义系统保护系统免受XSS&lt;/li&gt;
-&lt;li&gt;模板继承&lt;/li&gt;
-&lt;li&gt;及时编译最优的python代码&lt;/li&gt;
-&lt;li&gt;易于调试。异常的行数直接指向模板中的对应行&lt;/li&gt;
-&lt;li&gt;可配置的语法&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;mdash;选自 &lt;a href=&#34;http://docs.jinkan.org/docs/jinja2/index.html&#34;&gt;http://docs.jinkan.org&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description>
     </item>
     
   </channel>

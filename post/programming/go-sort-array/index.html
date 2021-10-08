@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>归档 - Gourds</title>
+  <title>Go常用数组排序 - Gourds</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,8 +23,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Gourds" />
-  <meta name="description" content="Gourds simple site." />
-  <meta name="keywords" content="Linux, Life, Book, Python, Gourds" />
+  <meta name="description" content="冒泡排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 /* 数组冒泡排序：[2,1,13,5,9] ==&amp;gt; [1 2 5 9 13] */ arr1 := [5]int{2, 1, 13, 5, 9} fmt.Println(arr1[2]) //for i,_ := range arr1 { // if i&#43;1 &amp;lt; len(arr1) {" />
+<meta name="keywords" content="go, sort, array" />
+
 
 
 <meta name="baidu-site-verification" content="code-XsKZoymEBo" />
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.85.0" />
 
 
-<link rel="canonical" href="https://blog.gourds.site/post/" />
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Gourds" />
+<link rel="canonical" href="https://blog.gourds.site/post/programming/go-sort-array/" />
+
 
 
 
@@ -58,15 +59,20 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Gourds simple site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.gourds.site/post/" />
+<meta property="og:title" content="Go常用数组排序" />
+<meta property="og:description" content="冒泡排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 /* 数组冒泡排序：[2,1,13,5,9] ==&gt; [1 2 5 9 13] */ arr1 := [5]int{2, 1, 13, 5, 9} fmt.Println(arr1[2]) //for i,_ := range arr1 { // if i&#43;1 &lt; len(arr1) {" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/programming/go-sort-array/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-09-23T10:01:52+08:00" />
+<meta property="article:modified_time" content="2021-09-23T10:01:52+08:00" />
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Gourds simple site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Gourds simple site."/>
+<meta itemprop="name" content="Go常用数组排序">
+<meta itemprop="description" content="冒泡排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 /* 数组冒泡排序：[2,1,13,5,9] ==&gt; [1 2 5 9 13] */ arr1 := [5]int{2, 1, 13, 5, 9} fmt.Println(arr1[2]) //for i,_ := range arr1 { // if i&#43;1 &lt; len(arr1) {"><meta itemprop="datePublished" content="2021-09-23T10:01:52+08:00" />
+<meta itemprop="dateModified" content="2021-09-23T10:01:52+08:00" />
+<meta itemprop="wordCount" content="109">
+<meta itemprop="keywords" content="go," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go常用数组排序"/>
+<meta name="twitter:description" content="冒泡排序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 /* 数组冒泡排序：[2,1,13,5,9] ==&gt; [1 2 5 9 13] */ arr1 := [5]int{2, 1, 13, 5, 9} fmt.Println(arr1[2]) //for i,_ := range arr1 { // if i&#43;1 &lt; len(arr1) {"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -255,7 +261,7 @@ if (!doNotTrack) {
 
       </li>
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -336,612 +342,198 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2016</h2>
+    <header class="post-header">
+      <h1 class="post-title">Go常用数组排序</h1>
+      
+      <div class="post-meta">
+        <time datetime="2021-09-23" class="post-time">
+          2021-09-23
+        </time>
+        <div class="post-category">
+            <a href="https://blog.gourds.site/categories/go/"> go </a>
+            
+          </div>
+        <span class="more-meta"> 约 109 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+
+        
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2016-08-11" class="archive-post-time">
-        2016-08-11
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/" class="archive-post-link">
-          sort小插曲
-        </a>
-      </span>
-    </div>
     
-
-    <div class="archive-post">
-      <time datetime="2016-08-08" class="archive-post-time">
-        2016-08-08
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/ssh%E6%97%A0%E4%BA%A4%E4%BA%92%E6%89%B9%E9%87%8F%E8%AE%A4%E8%AF%81/" class="archive-post-link">
-          ssh无交互批量认证
-        </a>
-      </span>
-    </div>
     
-
-    <div class="archive-post">
-      <time datetime="2016-08-06" class="archive-post-time">
-        2016-08-06
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/database/cassandra%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="archive-post-link">
-          Cassandra简单使用记录
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2016-08-05" class="archive-post-time">
-        2016-08-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/monitor/zabbix%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/" class="archive-post-link">
-          Zabbix添加自定义监控项
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2016-04-11" class="archive-post-time">
-        2016-04-11
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/" class="archive-post-link">
-          CentOS搭建rsync服务
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2016-04-03" class="archive-post-time">
-        2016-04-03
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/book/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/" class="archive-post-link">
-          4月读书计划
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2016-03-25" class="archive-post-time">
-        2016-03-25
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/" class="archive-post-link">
-          CentOS搭建支持ftp的cdn服务
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2016-03-03" class="archive-post-time">
-        2016-03-03
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/nginx%E6%90%AD%E5%BB%BAcdn%E6%BA%90%E7%AB%99/" class="archive-post-link">
-          Nginx搭建CDN源站记录
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2016-02-12" class="archive-post-time">
-        2016-02-12
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/programming/python2-6%E5%8D%87%E7%BA%A72-7%E8%AE%B0%E5%BD%95/" class="archive-post-link">
-          python2.6升级2.7记录
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2016-02-01" class="archive-post-time">
-        2016-02-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/linux/selinux%E5%92%8Ciptables%E5%85%B3%E9%97%AD/" class="archive-post-link">
-          selinux和iptables关闭
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-    <nav class="pagination">
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
       <ul>
-
-      
-      
-      <li><a href="/post/">««</a></li>
-      
-
-      
-      
-      <li><a href="/post/page/8/">«</a></li>
-      
-
-      
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-
-          
-          
-
-        
-        
-
-        
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/2/">
-              2
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/3/">
-              3
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/4/">
-              4
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/5/">
-              5
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/6/">
-              6
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/7/">
-              7
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/8/">
-              8
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="active">
-            <a href="/post/page/9/">
-              9
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/10/">
-              10
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/11/">
-              11
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/12/">
-              12
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/13/">
-              13
-            </a>
-          </li>
-        
-
-      
-
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-              
-            
-
-          
-          
-
-        
-        
-
-        
-        
-          <li class="">
-            <a href="/post/page/14/">
-              14
-            </a>
-          </li>
-        
-
-      
-
-      
-      
-      <li><a href="/post/page/10/">»</a></li>
-      
-
-      
-      
-      <li><a href="/post/page/14/">»»</a></li>
-      
-
+        <li></li>
       </ul>
-    </nav>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h4 id="冒泡排序">冒泡排序</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go">	<span class="cm">/*
+</span><span class="cm">		数组冒泡排序：[2,1,13,5,9]
+</span><span class="cm">		==&gt; [1 2 5 9 13]
+</span><span class="cm">	*/</span>
+	<span class="nx">arr1</span> <span class="o">:=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">arr1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+	<span class="c1">//for i,_ := range arr1 {
+</span><span class="c1"></span>	<span class="c1">//	if i+1 &lt; len(arr1) {
+</span><span class="c1"></span>	<span class="c1">//		if arr1[i] &gt; arr1[i+1] {
+</span><span class="c1"></span>	<span class="c1">//			arr1[i], arr1[i+1] = arr1[i+1], arr1[i]
+</span><span class="c1"></span>	<span class="c1">//		}
+</span><span class="c1"></span>	<span class="c1">//	}
+</span><span class="c1"></span>	<span class="c1">//}
+</span><span class="c1"></span>	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">+</span><span class="mi">1</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nx">arr1</span><span class="p">);</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">&gt;</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="p">{</span>
+			<span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">arr1</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Gourds</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2021-09-23
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/weipay.jpg">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/zhipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://blog.gourds.site/tags/go/">go</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/programming/python-decorate-1/">
+            <span class="next-text nav-default">Python闭包与装饰器</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
   
 
+  
+  
 
+  
 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog_comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
+  
+
+  
+
+  
+
+    
+
+  
 
         </div>
       </div>
@@ -1066,6 +658,13 @@ if (!doNotTrack) {
 
 
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 

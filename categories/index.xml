@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/categories/</link>
     <description>Recent content in Categories on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Sep 2021 14:33:43 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 10:01:52 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go</title>
+      <link>https://blog.gourds.site/categories/go/</link>
+      <pubDate>Thu, 23 Sep 2021 10:01:52 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/categories/go/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Python</title>
       <link>https://blog.gourds.site/categories/python/</link>
