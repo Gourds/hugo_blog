@@ -183,6 +183,11 @@
 &lt;td&gt;《通向哲学的后楼梯》&lt;/td&gt;
 &lt;td&gt;之前零零散散读了一半&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2021.10.14-2021.10.15&lt;/td&gt;
+&lt;td&gt;《Flask Web开发》&lt;/td&gt;
+&lt;td&gt;复习下，准备完善一下csdb&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;读万卷书&#34;&gt;读万卷书&lt;/h2&gt;
@@ -258,7 +263,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Web性能权威指南》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Python Web开发实战》【中】董伟明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Flask Web开发实战》【中】李辉&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Flask Web开发》【美】Grinberg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Flask Web开发》【美】Grinberg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Django之歌:简易》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《轻量级Django》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《移动Web前端高效开发实战》&lt;/a&gt;&lt;/li&gt;
