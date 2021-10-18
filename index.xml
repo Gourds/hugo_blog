@@ -185,7 +185,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2021.10.14-2021.10.15&lt;/td&gt;
-&lt;td&gt;《Flask Web开发》&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《Flask Web开发》&lt;/del&gt;&lt;/td&gt;
 &lt;td&gt;复习下，准备完善一下csdb&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -445,6 +445,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《傅雷家书》【中】傅雷/朱梅馥/傅聪&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《陈寅恪语录》【中】胡文辉&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《伊朗四千年》【伊朗】霍昌·纳哈万迪【法】伊夫·博马提&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《历史的温度/5》【中】张玮&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;经管投资&#34;&gt;经管|投资&lt;/h3&gt;
 &lt;ul&gt;
@@ -515,6 +516,10 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《亲爱的安德烈》【中】龙应台&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《此生未完成》【中】于娟&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《微信背后的产品观》【中】张小龙&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《100个成语中的古代生活史》【中】许晖&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《阅读是一座随身携带的避难所》【英】毛姆&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《年轻人自救指南》【中】蔡澜&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《为什么要把小说写的这么好》【中】刘按&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
