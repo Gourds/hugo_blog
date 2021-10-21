@@ -189,9 +189,9 @@
 &lt;td&gt;复习下，准备完善一下csdb&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2021.10.18-？&lt;/td&gt;
-&lt;td&gt;《云原生分布式存储基石:etcd深入解析》&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2021.10.18-2021.10.21&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;《云原生分布式存储基石:etcd深入解析》&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;翻了一遍，记了笔记，书还可以吧&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -202,6 +202,11 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;《好妈妈胜过好老师2：自由的孩子最自觉》&lt;/td&gt;
 &lt;td&gt;育儿的书没怎么看过，希望可以拓宽解决问题的视角&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;《DevOps实践指南》&lt;/td&gt;
+&lt;td&gt;一个精美的pdf，不读一下浪费资源&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -256,9 +261,10 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《进化：运维技术变革与实践探索》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《系统架构:复杂系统的产品设计与开发》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《SRE Google运维解密》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《DevOps实践》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《DevOps实践》【美】Joakim Verona&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《DevOps实践指南》【美】Gene Kim/Jez Humble/Patrick Debois/John Willis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Kafka技术内幕》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《云原生分布式存储基石:etcd深入解析》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《云原生分布式存储基石:etcd深入解析》&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;开发相关&#34;&gt;开发相关&lt;/h4&gt;
 &lt;ul&gt;
@@ -545,6 +551,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《年轻人自救指南》【中】蔡澜&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《为什么要把小说写的这么好》【中】刘按&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《好妈妈胜过好老师2：自由的孩子最自觉》【中】尹建莉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《《在峡江的转弯处：陈行甲人生笔记》》【中】陈行甲&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
