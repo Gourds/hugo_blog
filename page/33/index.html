@@ -348,15 +348,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/">NFS服务安装部署记录</a>
+      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/">CentOS搭建NTP服务器</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-10-20" class="post-time">
-        2015-10-20
+      <time datetime="2016-01-20" class="post-time">
+        2016-01-20
       </time>
       
-      <span class="more-meta"> 约 519 字 </span>
+      <span class="more-meta"> 约 608 字 </span>
       <span class="more-meta"> 预计阅读 2 分钟 </span>
       
       
@@ -367,10 +367,14 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p>**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client</p>
+      <p><strong>简介：</strong>
+NTP（NetworkTime Protocol，网络时间协议）是用来在分布式时间服务器和客户端之间进行时间同步。<a href="http://blog.arvon.top/2015/12/13/Linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/">&ndash;&gt;另一篇关于时间的</a></p>
+<p>NTP基于UDP报文进行传输，使用的UDP端口号为123。
+使用NTP的目的是对网络内所有具有时钟的设备进行时钟同步，使网络内所有设备的时钟保持一致，从而使设备能够提供基于统一时间的多种应用。
+对于时间错误会导致服务器宕机，所以运行NTP的本地系统，既可以接受来自其他时钟源的同步，又可以作为时钟源同步其他的时钟，并且可以和其他设备互相同步。</p>
     </div>
     <div class="read-more">
-      <a href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -381,15 +385,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/">Ansible之HAVE_DECL_MPZ_POWM_SEC报错记录</a>
+      <a class="post-link" href="/post/linux/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/">CentOS6.x挂载ntfs和xfs问题</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-10-12" class="post-time">
-        2015-10-12
+      <time datetime="2016-01-13" class="post-time">
+        2016-01-13
       </time>
       
-      <span class="more-meta"> 约 342 字 </span>
+      <span class="more-meta"> 约 402 字 </span>
       <span class="more-meta"> 预计阅读 1 分钟 </span>
       
       
@@ -400,11 +404,10 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p>简述：在centOS6.5上使用pip安装ansible(version=2.1.1.0)时报错</p>
-<h3 id="报错解决">报错解决</h3>
+      <p><strong>摘要：</strong> centos6.x默认是ext4的文件系统，而centos7.x是默认xfs的文件系统，所以直接挂载是会出问题的，另外ntfs是windows上的文件系统，挂载也会出问题，这里记录一下如何解决。</p>
+<h3 id="挂载xfs">挂载xfs</h3>
 <ul>
-<li>解决如下
-分析为PyCrypto模块安装有问题，所以就直接卸载重装。。有能力的话我会进一步探究这个报错，不过现在以下方法可以解决，先这样吧</li>
+<li>安装支持包</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -413,15 +416,15 @@ if (!doNotTrack) {
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pip uninstall python-keyczar pycrypto pyasn1
-yum erase python-keyczar python-crypto pyasn1
-yum install python-keyczar
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget http://mirrors.opencas.cn/epel/6/i386/epel-release-6-8.noarch.rpm
+yum install xfsprogs kmod-xfs xfsdump xfsprogs-devel
+mount -t xfs /dev/sdc1 /data3/sdc1/
 </code></pre></td></tr></table>
 </div>
 </div>
     </div>
     <div class="read-more">
-      <a href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -432,16 +435,16 @@ yum install python-keyczar
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/">安装hexo记录</a>
+      <a class="post-link" href="/post/linux/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/">Linux主机时间不准问题</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-06-13" class="post-time">
-        2015-06-13
+      <time datetime="2015-12-13" class="post-time">
+        2015-12-13
       </time>
       
-      <span class="more-meta"> 约 152 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      <span class="more-meta"> 约 520 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
       
       
       
@@ -451,23 +454,10 @@ yum install python-keyczar
   <div class="post-content">
     
     <div class="post-summary">
-      <p>简要记录一下在centos上安装hexo的过程
-记录在CentOS环境下配置hexo博客环境记录</p>
-<h2 id="install-git">Install Git</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">yum remove git
-yum install git-core
-</code></pre></td></tr></table>
-</div>
-</div>
+      <p>**摘要：**linux主机时间过一段时间就会发现时间不对了，查阅资料这个大概是因为硬件时间和服务器时间不一致导致的。</p>
     </div>
     <div class="read-more">
-      <a href="/post/linux/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1562,6 +1552,48 @@ yum install git-core
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/34/">»</a></li>
@@ -1569,7 +1601,7 @@ yum install git-core
 
       
       
-      <li><a href="/page/45/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>

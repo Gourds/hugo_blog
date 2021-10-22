@@ -348,16 +348,16 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/">CentOS搭建NTP服务器</a>
+      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/">CentOS搭建rsync服务</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2016-01-20" class="post-time">
-        2016-01-20
+      <time datetime="2016-04-11" class="post-time">
+        2016-04-11
       </time>
       
-      <span class="more-meta"> 约 608 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      <span class="more-meta"> 约 1305 字 </span>
+      <span class="more-meta"> 预计阅读 3 分钟 </span>
       
       
       
@@ -367,64 +367,24 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p><strong>简介：</strong>
-NTP（NetworkTime Protocol，网络时间协议）是用来在分布式时间服务器和客户端之间进行时间同步。<a href="http://blog.arvon.top/2015/12/13/Linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/">&ndash;&gt;另一篇关于时间的</a></p>
-<p>NTP基于UDP报文进行传输，使用的UDP端口号为123。
-使用NTP的目的是对网络内所有具有时钟的设备进行时钟同步，使网络内所有设备的时钟保持一致，从而使设备能够提供基于统一时间的多种应用。
-对于时间错误会导致服务器宕机，所以运行NTP的本地系统，既可以接受来自其他时钟源的同步，又可以作为时钟源同步其他的时钟，并且可以和其他设备互相同步。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/">CentOS6.x挂载ntfs和xfs问题</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2016-01-13" class="post-time">
-        2016-01-13
-      </time>
-      
-      <span class="more-meta"> 约 402 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><strong>摘要：</strong> centos6.x默认是ext4的文件系统，而centos7.x是默认xfs的文件系统，所以直接挂载是会出问题的，另外ntfs是windows上的文件系统，挂载也会出问题，这里记录一下如何解决。</p>
-<h3 id="挂载xfs">挂载xfs</h3>
+      <p>更新：本篇选择独立启动模式</p>
+<blockquote>
+<p>选择rsync服务器启动方式</p>
+</blockquote>
 <ul>
-<li>安装支持包</li>
+<li>rsync服务器负载比较高，则使用独立启动模式</li>
+<li>rsync服务器负责较低，使用xinetd运行方式</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">wget http://mirrors.opencas.cn/epel/6/i386/epel-release-6-8.noarch.rpm
-yum install xfsprogs kmod-xfs xfsdump xfsprogs-devel
-mount -t xfs /dev/sdc1 /data3/sdc1/
-</code></pre></td></tr></table>
-</div>
-</div>
+<p>Tips：由于需要将线上大量数据迁移至本地，直接使用ftp或scp会很不方便，使用rsync可以有断点续传功能，而且搭建起来十分快捷方便。</p>
+<h4 id="环境">环境</h4>
+<ul>
+<li>本地CentOS release 6.7</li>
+<li>线上CentOS release 6.5</li>
+<li>这里是将线上数据拉至本地，本地主机在局域网中 ，并没有单独的公网IP，故线上服务器做rsync的服务端，本地PC做rsync的客户端</li>
+</ul>
     </div>
     <div class="read-more">
-      <a href="/post/linux/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -435,15 +395,18 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/">Linux主机时间不准问题</a>
+      <a class="post-link" href="/post/book/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/">4月读书计划</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-12-13" class="post-time">
-        2015-12-13
+      <time datetime="2016-04-03" class="post-time">
+        2016-04-03
       </time>
-      
-      <span class="more-meta"> 约 520 字 </span>
+      <div class="post-category">
+          <a href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"> 读万卷书 </a>
+          
+        </div>
+      <span class="more-meta"> 约 548 字 </span>
       <span class="more-meta"> 预计阅读 2 分钟 </span>
       
       
@@ -454,10 +417,54 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
   <div class="post-content">
     
     <div class="post-summary">
-      <p>**摘要：**linux主机时间过一段时间就会发现时间不对了，查阅资料这个大概是因为硬件时间和服务器时间不一致导致的。</p>
+      <p><img src="http://img.arvon.top:80/images/2019/08/12/20160403-aprilread-1.jpg" alt="20160403-aprilread-1">
+PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多，不过心里很踏实，最近学习ansibel和git。</p>
+<h3 id="关于最近的学习方向">关于最近的学习方向</h3>
+<ul>
+<li>ansibel
+<ul>
+<li>最近购买了4本图书，买了就不能白买不是，而且也是机遇不错，现阶段也在使用ansibel，配置管理和版本控制对于运维确实是挺重要的，【奔跑吧ansible】预计花费4周左右时间来学习。</li>
+<li>由于最近需要使用AWS，所需需要研究下ec2模块</li>
+<li>需要进行学习变量和遍历循环</li>
+</ul>
+</li>
+</ul>
     </div>
     <div class="read-more">
-      <a href="/post/linux/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/" class="read-more-link">阅读全文</a>
+      <a href="/post/book/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/">CentOS搭建支持ftp的cdn服务</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-03-25" class="post-time">
+        2016-03-25
+      </time>
+      
+      <span class="more-meta"> 约 553 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**摘要：**由于测试需要，需用nginx搭建cdn服务器，并要求可以使用ftp上传。送个之前nginx搭建cdn的<a href="http://blog.arvon.top/2016/03/03/Nginx%E6%90%AD%E5%BB%BACDN%E6%BA%90%E7%AB%99/">&ndash;&gt;飞机票</a>,下面是主要vsftp的配置，nginx配置cdn参照飞机票那篇即可。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1552,6 +1559,48 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/32/">»</a></li>
@@ -1559,7 +1608,7 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
 
       
       
-      <li><a href="/page/45/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>

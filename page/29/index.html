@@ -348,15 +348,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/">CentOS搭建rsync服务</a>
+      <a class="post-link" href="/post/linux/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/">Git钩子在hexo中的应用</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2016-04-11" class="post-time">
-        2016-04-11
+      <time datetime="2016-08-12" class="post-time">
+        2016-08-12
       </time>
       
-      <span class="more-meta"> 约 1305 字 </span>
+      <span class="more-meta"> 约 1369 字 </span>
       <span class="more-meta"> 预计阅读 3 分钟 </span>
       
       
@@ -367,24 +367,12 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p>更新：本篇选择独立启动模式</p>
-<blockquote>
-<p>选择rsync服务器启动方式</p>
-</blockquote>
-<ul>
-<li>rsync服务器负载比较高，则使用独立启动模式</li>
-<li>rsync服务器负责较低，使用xinetd运行方式</li>
-</ul>
-<p>Tips：由于需要将线上大量数据迁移至本地，直接使用ftp或scp会很不方便，使用rsync可以有断点续传功能，而且搭建起来十分快捷方便。</p>
-<h4 id="环境">环境</h4>
-<ul>
-<li>本地CentOS release 6.7</li>
-<li>线上CentOS release 6.5</li>
-<li>这里是将线上数据拉至本地，本地主机在局域网中 ，并没有单独的公网IP，故线上服务器做rsync的服务端，本地PC做rsync的客户端</li>
-</ul>
+      <p>**摘要：**早该记录了，最开始我的blog是使用hexo+github搭建的使用jacman主题，也是因为对git不够了解，当时绑定域名是使用直接在github上写CNAME文件。感觉太麻烦了，就买了空间换了WordPress，wp也是用了要有快一年，然后感觉markdown支持的真是不好，而且迁移很不爽，然后就换了现在的。关于现在这套blog架构，依然使用hexo作为blog框架，我自己的电脑用作服务器，然后VPS作为web服务器提供发布，使用git hook进行更新blog。</p>
+<h3 id="git钩子简介---摘自git-scmhttpsgit-scmcombookzhv2e887aae5ae9ae4b989-git-git-e992a9e5ad90">git钩子简介 &ndash;摘自<a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90">git-scm</a></h3>
+<p>Git 能在特定的重要动作发生时触发自定义脚本。 有两组这样的钩子：客户端的和服务器端的。 客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。 你可以随心所欲地运用这些钩子。</p>
     </div>
     <div class="read-more">
-      <a href="/post/linux/centos%E6%90%AD%E5%BB%BArsync%E6%9C%8D%E5%8A%A1/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/git%E9%92%A9%E5%AD%90%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -395,19 +383,16 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/book/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/">4月读书计划</a>
+      <a class="post-link" href="/post/linux/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/">Tmux源码安装</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2016-04-03" class="post-time">
-        2016-04-03
+      <time datetime="2016-08-12" class="post-time">
+        2016-08-12
       </time>
-      <div class="post-category">
-          <a href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"> 读万卷书 </a>
-          
-        </div>
-      <span class="more-meta"> 约 548 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      <span class="more-meta"> 约 477 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
       
       
       
@@ -417,21 +402,10 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p><img src="http://img.arvon.top:80/images/2019/08/12/20160403-aprilread-1.jpg" alt="20160403-aprilread-1">
-PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多，不过心里很踏实，最近学习ansibel和git。</p>
-<h3 id="关于最近的学习方向">关于最近的学习方向</h3>
-<ul>
-<li>ansibel
-<ul>
-<li>最近购买了4本图书，买了就不能白买不是，而且也是机遇不错，现阶段也在使用ansibel，配置管理和版本控制对于运维确实是挺重要的，【奔跑吧ansible】预计花费4周左右时间来学习。</li>
-<li>由于最近需要使用AWS，所需需要研究下ec2模块</li>
-<li>需要进行学习变量和遍历循环</li>
-</ul>
-</li>
-</ul>
+      <p>**简述：**之前其实有写过<a href="http://arvon.top/2015/07/22/Tmux-%E4%BD%BF%E7%94%A8%E7%AE%80%E8%AE%B0/">一篇tmux的简单使用绍</a>,但是不够详尽，而且当时也并没有出现几个问题，当yum不好使的时候，就要上源码了。</p>
     </div>
     <div class="read-more">
-      <a href="/post/book/4%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/tmux%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -442,15 +416,15 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/">CentOS搭建支持ftp的cdn服务</a>
+      <a class="post-link" href="/post/linux/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/">sort小插曲</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2016-03-25" class="post-time">
-        2016-03-25
+      <time datetime="2016-08-11" class="post-time">
+        2016-08-11
       </time>
       
-      <span class="more-meta"> 约 553 字 </span>
+      <span class="more-meta"> 约 953 字 </span>
       <span class="more-meta"> 预计阅读 2 分钟 </span>
       
       
@@ -461,10 +435,10 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
   <div class="post-content">
     
     <div class="post-summary">
-      <p>**摘要：**由于测试需要，需用nginx搭建cdn服务器，并要求可以使用ftp上传。送个之前nginx搭建cdn的<a href="http://blog.arvon.top/2016/03/03/Nginx%E6%90%AD%E5%BB%BACDN%E6%BA%90%E7%AB%99/">&ndash;&gt;飞机票</a>,下面是主要vsftp的配置，nginx配置cdn参照飞机票那篇即可。</p>
+      <p>**Tips:**遇见一个有趣的sort命令问题，很有意思，这里记录一下，顺便也再复习一下sort命令。</p>
     </div>
     <div class="read-more">
-      <a href="/post/linux/centos%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81ftp%E7%9A%84cdn%E6%9C%8D%E5%8A%A1/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/sort%E5%B0%8F%E6%8F%92%E6%9B%B2/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1559,6 +1533,48 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/30/">»</a></li>
@@ -1566,7 +1582,7 @@ PS：学习其实是一件蛮幸福的事情，学的越多感觉不会的越多
 
       
       
-      <li><a href="/page/45/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>

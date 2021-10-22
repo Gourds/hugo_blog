@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>《Google运维解密》笔记 - Gourds</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Gourds" />
+  <meta name="description" content="今天是儿童节呢。 不能将碰运气当成战略 &amp;ndash;SRE俗语 系统运维本质上是人与计算机共同参与的一项系统性工程。 Dev与OPS分离两项成本 直" />
+<meta name="keywords" content="sre, google" />
+
+
+
+<meta name="baidu-site-verification" content="code-XsKZoymEBo" />
+<meta name="google-site-verification" content="G-LVSQVTKWX5" />
+
+
+<meta name="generator" content="Hugo 0.85.0" />
+
+
+<link rel="canonical" href="https://blog.gourds.site/post/book/google%E8%BF%90%E7%BB%B4%E8%A7%A3%E5%AF%86/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css" integrity="sha256-&#43;ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="《Google运维解密》笔记" />
+<meta property="og:description" content="今天是儿童节呢。 不能将碰运气当成战略 &ndash;SRE俗语 系统运维本质上是人与计算机共同参与的一项系统性工程。 Dev与OPS分离两项成本 直" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.gourds.site/post/book/google%E8%BF%90%E7%BB%B4%E8%A7%A3%E5%AF%86/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-06-01T12:19:44+08:00" />
+<meta property="article:modified_time" content="2018-06-01T12:19:44+08:00" />
+
+<meta itemprop="name" content="《Google运维解密》笔记">
+<meta itemprop="description" content="今天是儿童节呢。 不能将碰运气当成战略 &ndash;SRE俗语 系统运维本质上是人与计算机共同参与的一项系统性工程。 Dev与OPS分离两项成本 直"><meta itemprop="datePublished" content="2018-06-01T12:19:44+08:00" />
+<meta itemprop="dateModified" content="2018-06-01T12:19:44+08:00" />
+<meta itemprop="wordCount" content="4698">
+<meta itemprop="keywords" content="读书," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《Google运维解密》笔记"/>
+<meta name="twitter:description" content="今天是儿童节呢。 不能将碰运气当成战略 &ndash;SRE俗语 系统运维本质上是人与计算机共同参与的一项系统性工程。 Dev与OPS分离两项成本 直"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-LVSQVTKWX5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">进击de葫芦娃</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">专栏</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/book/">书单</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      进击de葫芦娃
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/">首页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/categories/">专栏</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.gourds.site/book/">书单</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
+              Wiki
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">《Google运维解密》笔记</h1>
+      
+      <div class="post-meta">
+        <time datetime="2018-06-01" class="post-time">
+          2018-06-01
+        </time>
+        <div class="post-category">
+            <a href="https://blog.gourds.site/categories/%E8%AF%BB%E4%B8%87%E5%8D%B7%E4%B9%A6/"> 读万卷书 </a>
+            
+          </div>
+        <span class="more-meta"> 约 4698 字 </span>
+          <span class="more-meta"> 预计阅读 10 分钟 </span>
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#拥抱变化">拥抱变化</a></li>
+    <li><a href="#拥抱风险">拥抱风险</a></li>
+    <li><a href="#服务的质量目标">服务的质量目标</a></li>
+    <li><a href="#减少琐事">减少琐事</a></li>
+    <li><a href="#分布式系统监控">分布式系统监控</a></li>
+    <li><a href="#google自动化系统的演进">Google自动化系统的演进</a></li>
+    <li><a href="#发布工程">发布工程</a></li>
+    <li><a href="#简单化">简单化</a></li>
+    <li><a href="#具体实践">具体实践</a></li>
+    <li><a href="#基于时间序列数据进行有效报警">基于时间序列数据进行有效报警</a></li>
+    <li><a href="#on-call轮值">on-call轮值</a></li>
+    <li><a href="#有效的故障排查手段">有效的故障排查手段</a></li>
+    <li><a href="#紧急事故管理">紧急事故管理</a></li>
+    <li><a href="#事后总结从失败中学习">事后总结：从失败中学习</a></li>
+    <li><a href="#跟踪故障">跟踪故障</a></li>
+    <li><a href="#测试可靠性">测试可靠性</a></li>
+    <li><a href="#sre部门中的软件工程实践">SRE部门中的软件工程实践</a></li>
+    <li><a href="#前端服务器的负载均衡">前端服务器的负载均衡</a></li>
+    <li><a href="#应对过载">应对过载</a></li>
+    <li><a href="#处理连锁故障">处理连锁故障</a></li>
+    <li><a href="#管理关键状态利用分布式共识来提高可靠性">管理关键状态：利用分布式共识来提高可靠性</a></li>
+    <li><a href="#数据完整性读写一致">数据完整性：读写一致</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>今天是儿童节呢。</p>
+<p>不能将碰运气当成战略 &ndash;SRE俗语
+系统运维本质上是人与计算机共同参与的一项系统性工程。</p>
+<p>Dev与OPS分离两项成本</p>
+<ul>
+<li>直接成本（人力成本、团队随业务规模呈线性增长）</li>
+<li>间接成本（研发运维团队目标不同，沟通成本）</li>
+</ul>
+<h2 id="拥抱变化">拥抱变化</h2>
+<p>SER职责
+可用性改进、延迟优化、性能优化、效率优化、变更管理、监控、紧急事务处理、容量规划与管理</p>
+<p>SRE团队的运维工作比重应该在50%以下，确保可以长期关注研发工作
+ON-call准则：在8-12小时的on-call轮班期间最多只处理两个紧急事件，以保证on-call工程师有足够的时间跟进紧急事件。</p>
+<p>Google准则：对事不对人，事后总结的目标是尽早的发现和堵住漏洞，而不是通过流程去绕过和掩盖它们。</p>
+<p>错误预算：任何产品都不是也不应该做到100%可靠。根据产品特性制定合理的错误预算，从而尽可能的加快新功能上线速度。常见战术策略有灰度发布、1%AB测试等</p>
+<p>监控系统不应该依赖人来分析报警信息，而是应该由系统自动分析，仅当需要用户执行某种操作时，才需要通知用户。一个监控系统应该只有三类输出</p>
+<ul>
+<li>紧急报警（alert）：需要用户立即执行某种操作，从而解决某种已经发生的问题或即将发生的问题</li>
+<li>工单（ticket）：系统不能自动解决目前的情况，用户应该执行某种操作，但并非需要立即执行</li>
+<li>日志（logging）：平时没有人会去主动阅读日志，除非特殊需要比如调试及事后分析</li>
+</ul>
+<p>评价运维团队将系统恢复到正常情况的有效指标就是MTTR（平均恢复时间），另外可靠性还包含另一个指标MTTF（平均失败时间）</p>
+<p>变更管理：SRE的经验是大概70%的生产事故是由于某种部署变更而触发的，变更管理的最佳实践是通过自动化来完成以下几个项目</p>
+<ul>
+<li>采用渐进式的发布机制</li>
+<li>迅速而准确的检测到问题的发生</li>
+<li>当出现问题时，安全迅速的回退改动</li>
+</ul>
+<p>容量规划必须的几个步骤</p>
+<ul>
+<li>必须有一个准确的自然增长需求预测模型(需求预测的时间应该超过资源获取的时间)</li>
+<li>规划中必须有准确的非自然增长的需求来源统计</li>
+<li>必须有周期性的压力测试，以便准确的将系统原始资源信息和业务容量对应起来</li>
+</ul>
+<p>服务质量指标（SLI）
+服务质量目标（SLO）
+服务质量协议（SLA）</p>
+<p>区别SLO和SLA的一个简单指标就是是否如果SLO没有达到时有什么后果，若果没有明确定义后果，那么我们讨论的就是一个SLO而不是SLA</p>
+<p>软件工程的一个关键思想（不仅仅是运维部分）是保持简单</p>
+<h2 id="拥抱风险">拥抱风险</h2>
+<p>事实证明构建一个100%可靠的服务是不必要的，极端的可靠性会带来成本的大幅提升，过分的追求稳定性会限制新功能的开发与交付。</p>
+<p>度量服务的风险（基于时间的可用性、合计可用性）</p>
+<p>服务的风险容忍度</p>
+<h2 id="服务的质量目标">服务的质量目标</h2>
+<p>并不是监控系统中所有的指标都要定义为SLI；需要理解用户对系统的真实需求才能真正决定哪些指标有用。指标过多会影响我们真正需要关注的指标。</p>
+<p>SLO目标的选择原则</p>
+<ul>
+<li>不要用目前的状态为基础来选择目标，要从全局出发，不能被当前的架构环境所束缚</li>
+<li>保持简单</li>
+<li>避免绝对值</li>
+<li>SLO越少越好</li>
+<li>不要追求完美</li>
+</ul>
+<h2 id="减少琐事">减少琐事</h2>
+<p>SRE应该把更多的时间花费在长期项目研发上而非日常运维琐事中。
+琐事是指手动性的、重复的、可以被自动化的、战术性的、没有持久价值的工作，而且琐事是与服务发展存在线性增长关系。</p>
+<h2 id="分布式系统监控">分布式系统监控</h2>
+<p>监控的目的</p>
+<ul>
+<li>分析长期趋势</li>
+<li>跨时间范围的比较</li>
+<li>报警</li>
+<li>构建监控台页面</li>
+<li>临时性的回溯分析</li>
+</ul>
+<p>监控系统应该解决两个问题：什么东西故障了以及为什么出现故障，区分这两点是构建信噪比高的监控系统最重要的概念。</p>
+<p>4个黄金指标：延迟、流量、错误、饱和度（saturation）</p>
+<p>度量监控指标的时候采用合适的精度（根据服务的特点、SLA需求进行采集）</p>
+<p>简化监控系统</p>
+<ul>
+<li>能反映真实故障的规则应该越简单越好，可预测性强</li>
+<li>不常用的数据收集、汇总以及报警配置应该定期删除</li>
+<li>收集的信息但是没有暴露给任何监控台或被任何报警规则使用的应该定期删除</li>
+</ul>
+<p>当为监控系统和报警系统增加新规则时，可以考虑以下几点</p>
+<ul>
+<li>该规则是否可以检测到以前检测不到的可能发生或即将发生用户可见故障</li>
+<li>是否可以忽略这条报警？什么情况可能会导致用户忽略这条报警，如何避免？</li>
+<li>这条报警是否确实显示了用户正在受到的影响？是否存在误报？测试或维护状态下这个报警是否应该被过滤</li>
+</ul>
+<h2 id="google自动化系统的演进">Google自动化系统的演进</h2>
+<p>自动化的价值</p>
+<ul>
+<li>一致性，手动操作必然存在人为的不一致性，这些不一致性会导致错误、疏漏、数据质量问题及可靠性问题</li>
+<li>平台性，通过正确的设计和实现，自动化系统可以提供一个可以扩展的、广泛适用的、甚至可能带来额外收益的平台</li>
+<li>修复速度快，自动化处理系统中的常见故障，可以降低平均修复时间（MTTR）</li>
+<li>行动速度更快</li>
+<li>节省时间</li>
+</ul>
+<p>自动化的演进路径遵循以下几点</p>
+<ul>
+<li>没有自动化</li>
+<li>外部维护的系统特定的自动化系统</li>
+<li>外部维护的通用的自动化系统</li>
+<li>内部维护的系统特定的自动化</li>
+<li>不需要任何自动化的系统</li>
+</ul>
+<h2 id="发布工程">发布工程</h2>
+<p>发布工程（Release Engineering）是软件工程内部一个较新、发展较快的学科，这个学科主要专注于构建和交付。</p>
+<p>发布工程哲学</p>
+<ul>
+<li>自服务模型。发布工程师开发工具制定最佳实践，让产品研发团队可以自己掌控和执行自己的发布流程，每个团队必须能够自给自足。</li>
+<li>追求速度。（可借鉴每小时构建基于测试和功能选择可用构建版本发布，也有测试就发布这种）</li>
+<li>密闭性。基于同一源码的构建结果应该是相同的，构建过程使用指定版本的构建工具及依赖库，编译过程自包含，不依赖编译环境之外的其他服务。</li>
+<li>强调策略和流程。多层安全和访问控制机制，确保发布过程中只有指定的人才可以执行指定的操作。</li>
+</ul>
+<p>持续构建与部署</p>
+<p>设置科学的代码分支策略来进行构建测试发布</p>
+<p>发布工程的几个问题：</p>
+<ul>
+<li>如何管理包版本</li>
+<li>是采用持续部署模型还是定期构建，发布的频率如何</li>
+<li>如何管理配置文件</li>
+<li>哪些发布过程的指标有用</li>
+</ul>
+<h2 id="简单化">简单化</h2>
+<p>可靠性只有靠最大程度的简化不断追求而得到。 &ndash;C.A.R.Hoare, Turing Award lecture</p>
+<p>软件系统本质上是动态和不稳定的。我们的工作最终就是再系统的灵活性和稳定性上维持平衡。</p>
+<p>保持代码简单，定期清理源代码中的无用代码（注释及功能开关未启动的代码）</p>
+<p>书写一个明确的、最小的API是管理软件系统简单性的必要部分。</p>
+<h2 id="具体实践">具体实践</h2>
+<p>SRE职责：</p>
+<ul>
+<li>低级：能够正常对外服务</li>
+<li>高级：主动控制服务状态，而不是被动救火</li>
+</ul>
+<h2 id="基于时间序列数据进行有效报警">基于时间序列数据进行有效报警</h2>
+<p>Riemann/Heka/Bosun/Prometheus都是开源软件中与Borgmon基于时间序列报警理念类似的系统。</p>
+<p>报警设置的最小持续时间值一般至少被设置为两个计算周期，以确保偶尔一次的信息收集失败不会立即出发报警</p>
+<h2 id="on-call轮值">on-call轮值</h2>
+<p>on-call工程师负责处理生产环境中即将或者正在发生的业务事故以及评审对生产系统的变更请求，在on-call时工程师承诺可以再分钟级别响应，具体时间应该是SRE团队和产品团队共同商议得出。</p>
+<p>可参考的on-call标准</p>
+<ul>
+<li>对直接面向最终用户的服务或时间非常紧迫的服务，时间可定为5分钟</li>
+<li>非敏感业务，时间可以定为30分钟</li>
+</ul>
+<h2 id="有效的故障排查手段">有效的故障排查手段</h2>
+<p>故障排除需要的两个条件</p>
+<ul>
+<li>对通用故障排查过程的理解</li>
+<li>对发生故障的系统足够了解</li>
+</ul>
+<p>提高故障排查效率建议</p>
+<ul>
+<li>增加可观察性。在实现之初就给每个组件增加监控指标和结构化日志</li>
+<li>利用成熟的观察性好的组件接口设计系统</li>
+</ul>
+<h2 id="紧急事故管理">紧急事故管理</h2>
+<p>嵌套式职责分离（在事故处理中让每个人清楚自己的职责）</p>
+<ul>
+<li>事故总控</li>
+<li>事故处理团队（唯一对系统进行修改变更）</li>
+<li>发言人&amp;规划负责人（协助包括对外发言、事故文档、Bug报告等）</li>
+</ul>
+<p>什么时候对外宣布事故（Google的标准）</p>
+<ul>
+<li>是否需要引入第二个团队来帮助处理问题</li>
+<li>是否正在影响最终用户</li>
+<li>在集中分析一个小时后问题依然没有得到解决</li>
+</ul>
+<p>事故流程管理最佳实践</p>
+<ul>
+<li>划分优先级：控制影响范围，恢复服务，同时为根源调查保存现场</li>
+<li>事前准备：事先就准备好完备的流程</li>
+<li>信任：相信事故处理参与者分配职责后让其自主行动</li>
+<li>反思：事故处理过程中注意自己的情绪和精神状态</li>
+<li>考虑替代方案：周期性审查项目状况，考虑目前做的事是否正确是否有必要调整</li>
+<li>练习：多使用制定好的流程使之成为习惯</li>
+<li>换位思考：鼓励每个团队成员熟悉流程中的其他角色</li>
+</ul>
+<h2 id="事后总结从失败中学习">事后总结：从失败中学习</h2>
+<p>基本的事故总结条件：</p>
+<ul>
+<li>用户可见的宕机时间或服务质量降低到一定标准</li>
+<li>任何类型的数据丢失</li>
+<li>on-call工程师需要人工介入的事故（包括rollback、切换用户流量等）</li>
+<li>问题解决耗时超过一定限制</li>
+<li>监控问题（预示着问题是由人工发现而非报警系统）</li>
+</ul>
+<p>协作及知识共享
+建立事后总结文化</p>
+<h2 id="跟踪故障">跟踪故障</h2>
+<h2 id="测试可靠性">测试可靠性</h2>
+<p>如果你还没有亲自试过某件东西，那么就假设它是坏的</p>
+<p>软件测试分为两大类：传统测试及生产测试</p>
+<p>传统测试</p>
+<ul>
+<li>单元测试：最小最简单的软件测试形式（如一个类、一个函数的正确性），也是用来保证某个函数或模块完全符合系统对其的行为要求的一种规范</li>
+<li>集成测试：通过单元的测试的组件组装成大的系统组件，然后进行集成测试检验该组件功能的正确性</li>
+<li>系统测试：包括（冒烟测试、性能测试、回归测试）</li>
+</ul>
+<p>生产测试</p>
+<ul>
+<li>配置测试</li>
+<li>压力测试</li>
+<li>金丝雀测试（结构化的最终用户验收测试）</li>
+</ul>
+<h2 id="sre部门中的软件工程实践">SRE部门中的软件工程实践</h2>
+<p>SRE开发的工具是一个完整的软件工程项目，而不是一次性的脚本和小补丁。开发这些工具的SRE也需要对内部用户的需求进行产品规划制定未来的发展方向。</p>
+<p>容量规划：基于意图的容量规划</p>
+<p>表达产品意图的先导条件</p>
+<ul>
+<li>依赖关系</li>
+<li>性能指标</li>
+<li>优先级</li>
+</ul>
+<p>向大型团队推广内部软件的要点：</p>
+<ul>
+<li>持续和完善的推广方案</li>
+<li>用户的用户</li>
+<li>资深工程师和管理层的赞助让他们看到项目的实用性潜力</li>
+</ul>
+<p>Google的一些指导经验</p>
+<ul>
+<li>创建并宣扬一个明确的信息</li>
+<li>评估组织的能力</li>
+<li>发布并且迭代</li>
+<li>不要降低标准</li>
+</ul>
+<h2 id="前端服务器的负载均衡">前端服务器的负载均衡</h2>
+<p>考虑的几个因素：</p>
+<ul>
+<li>逻辑层面（全局还是局部）</li>
+<li>技术层面（硬件和软件）</li>
+<li>用户流量的天然属性</li>
+</ul>
+<p>使用DNS进行负载均衡
+虚拟IP</p>
+<h2 id="应对过载">应对过载</h2>
+<p>避免过载是负载均衡策略的一个重要目标</p>
+<p>QPS陷阱：Google的经验按照QPS来规划服务容量或者是按照某种静态属性一般是错误的，更好的解决方案是直接以可用资源来衡量可用容量，绝大多数情况下简单使用CPU数量作为资源配给主要信号就可以工作的很好，原因如下</p>
+<ul>
+<li>在有垃圾回收（GC）机制的编程环境中，内存的压力通常自然而然的变成了CPU压力</li>
+<li>在其他编程环境里，其他资源一般可以通过某种比例进行配置</li>
+</ul>
+<h2 id="处理连锁故障">处理连锁故障</h2>
+<p>连锁故障产生的原因：服务器过载、资源耗尽、服务不可用</p>
+<p>资源耗尽</p>
+<ul>
+<li>CPU：请求数量上升、队列过长、线程卡主、CPU死锁或者请求卡主、RPC超时、CPU缓存效率下降</li>
+<li>内存：任务崩溃、GC速率加快导致cpu使用率上升、缓存命中率</li>
+<li>线程</li>
+<li>文件描述符：不足可能会导致无法建立网络连接</li>
+<li>资源之间的相互依赖</li>
+</ul>
+<p>应对过载</p>
+<ul>
+<li>使用负载均衡技术</li>
+<li>提供降级结果</li>
+<li>过载时主动拒绝请求</li>
+<li>上层系统主动拒绝请求</li>
+<li>进行容量规划</li>
+</ul>
+<p>队列管理</p>
+<p>流量抛弃和优雅降级
+FIFO（先入先出）队列模式、LIFO（后入先出）
+优雅降级（Graceful degradation）可在流量抛弃的基础上进一步减少服务器的工作量。</p>
+<p>连锁故障的触发条件</p>
+<ul>
+<li>进程崩溃</li>
+<li>进程更新</li>
+<li>新的发布</li>
+<li>自然增长</li>
+<li>计划中或计划外的不可用</li>
+<li>资源限制</li>
+</ul>
+<p>解决连锁故障的立即步骤</p>
+<ul>
+<li>增加资源</li>
+<li>停止健康检查导致的任务死亡</li>
+<li>重启软件服务器</li>
+<li>丢弃流量</li>
+<li>进入降级模式</li>
+<li>消除批处理负载</li>
+</ul>
+<h2 id="管理关键状态利用分布式共识来提高可靠性">管理关键状态：利用分布式共识来提高可靠性</h2>
+<p>传统ACID数据存储语义（原子性、一致性、隔离性、持久性）
+新的分布式存储语义（基本可用、软状态、最终一致性）</p>
+<p>分布式共识常用协议（Paxos、Raft、Zab、Mencius）
+很多成功使用分布式共识算法的系统常常是作为该算法实现的服务的一个客户端来使用的。如ZooKeeper、Consul、Etcd</p>
+<h2 id="数据完整性读写一致">数据完整性：读写一致</h2>
+<p>提供超高的数据完整性的策略</p>
+<ul>
+<li>在线时间</li>
+<li>延迟</li>
+<li>规模</li>
+<li>创新速度</li>
+<li>隐私</li>
+</ul>
+<p>区别备份与存档的重要区别就是数据恢复（没有人想备份数据他们只是想恢复数据），备份时可以直接被应用程序重新加载的。</p>
+<p>数据完整性是手段，数据的可用性是目标
+交付一个恢复系统，而非备份系统</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Gourds</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2018-06-01
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/weipay.jpg">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img_own/zhipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/tools/bitbucket%E5%AE%9E%E8%B7%B5/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Bitbucket实践</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/book/devops%E5%AE%9E%E8%B7%B5/">
+            <span class="next-text nav-default">《DevOps实践》笔记</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "Gourds/hugo_blog_comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:gourds@yeah.net" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://github.com/gourds" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://www.zhihu.com/people/gourds" rel="me noopener" class="iconfont"
+      title="zhihu"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M351.791182 562.469462l192.945407 0c0-45.367257-21.3871-71.939449-21.3871-71.939449L355.897709 490.530013c3.977591-82.182744 7.541767-187.659007 8.816806-226.835262l159.282726 0c0 0-0.86367-67.402109-18.578124-67.402109s-279.979646 0-279.979646 0 16.850783-88.141456 39.318494-127.053698c0 0-83.60514-4.510734-112.121614 106.962104S81.344656 355.077018 76.80834 367.390461c-4.536316 12.313443 24.62791 5.832845 36.941354 0 12.313443-5.832845 68.050885-25.924439 84.252893-103.69571l86.570681 0c1.165546 49.28652 4.596691 200.335724 3.515057 226.835262L109.86113 490.530013c-25.275663 18.147312-33.701566 71.939449-33.701566 71.939449L279.868105 562.469462c-8.497535 56.255235-23.417339 128.763642-44.275389 167.210279-33.05279 60.921511-50.55235 116.65793-169.802314 212.576513 0 0-19.442818 14.257725 40.829917 9.073656 60.273758-5.185093 117.305683-20.739347 156.840094-99.807147 20.553105-41.107233 41.805128-93.250824 58.386782-146.138358l-0.055259 0.185218 167.855986 193.263655c0 0 22.035876-51.847855 5.832845-108.880803L371.045711 650.610918l-42.1244 31.157627-0.045025 0.151449c11.69946-41.020252 20.11206-81.5749 22.726607-116.858498C351.665315 564.212152 351.72876 563.345412 351.791182 562.469462z"></path>
+  <path d="M584.918753 182.033893l0 668.840094 70.318532 0 28.807093 80.512708 121.875768-80.512708 153.600307 0L959.520453 182.033893 584.918753 182.033893zM887.150192 778.934538l-79.837326 0-99.578949 65.782216-23.537066-65.782216-24.855084 0L659.341766 256.673847l227.807403 0L887.149169 778.934538z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://blog.gourds.site/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2015 -
+    2021
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Gourds
+        
+      </span></span>
+
+  
+  
+
+  
+
+  
+  <script src="https://unpkg.com/mermaid@8.8.1/dist/mermaid.min.js"></script>
+  <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+  </script>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?7b7c5cd05ce16d342444570aeb9e9544";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

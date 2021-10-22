@@ -348,16 +348,16 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/">Nginx添加登录认证</a>
+      <a class="post-link" href="/post/distribution/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">Etcd及相关组件安装配置说明</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2017-07-16" class="post-time">
-        2017-07-16
+      <time datetime="2017-10-13" class="post-time">
+        2017-10-13
       </time>
       
-      <span class="more-meta"> 约 872 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      <span class="more-meta"> 约 2785 字 </span>
+      <span class="more-meta"> 预计阅读 6 分钟 </span>
       
       
       
@@ -367,10 +367,12 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p>之前在爆Zabbix漏洞的时候，在未进行漏洞升级修复的情况下，可以先对nginx的web入口加一个认证，这样就能很大程度上降低被黑的风险。同理在使用Nginx代理一些服务的时候，也可以用这种方法进行安全上的加固。做起来比较简单，却行之有效。Nginx上一般使用的认证方式有2种，分别是auth_basic（本机认证）及ngx_http_auth_request_module（第三方认证）</p>
+      <p><strong>简介：</strong><a href="https://coreos.com/etcd/">Etcd</a>是CentOS公司发起的一个开源项目，灵感来自于 ZooKeeper 和 Doozer，它使用Go语言编写，并通过Raft一致性算法处理日志复制以保证强一致性（Raft是一个来自Stanford的新的一致性算法，适用于分布式系统的日志复制，Raft通过选举的方式来实现一致性，在Raft中，任何一个节点都可能成为Leader。），主要用于<strong>共享配置和服务发现</strong>的分布式、一致性的KV存储系统。
+除了常见的共享配置及服务发现，还可以使用Etcd结合SkyDNS提供<strong>内网域名解析服务</strong>。
+这里主要涉及etcd安装配置说明、etcd-view安装配置、skydns安装配置</p>
     </div>
     <div class="read-more">
-      <a href="/post/linux/nginx%E6%B7%BB%E5%8A%A0%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/" class="read-more-link">阅读全文</a>
+      <a href="/post/distribution/etcd%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E4%BB%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -381,16 +383,16 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/cloud/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/">AWS-cli操作S3及DynamoDB</a>
+      <a class="post-link" href="/post/cicd/ansible%E9%83%A8%E7%BD%B2nfs%E6%9C%8D%E5%8A%A1/">Ansible部署NFS服务</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2017-07-08" class="post-time">
-        2017-07-08
+      <time datetime="2017-09-07" class="post-time">
+        2017-09-07
       </time>
       
-      <span class="more-meta"> 约 614 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      <span class="more-meta"> 约 370 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
       
       
       
@@ -400,12 +402,14 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <blockquote>
-<p>AWS的cli还是挺好用的，文档也比较全面，其实看个文档就可以使用，但是我毕竟是我，记下来，减少查询搜索的时间也是挺赚的，不是么。。话说“懒人使世界进步”，其实有个很重要的前提就是你这个懒人做出了可以帮你出色完成原定任务的东西，这时你才有资格懒。很显然，我没有。。。But我一直在实现这个前提的路上前进</p>
+      <p>虽然很简单，写的比较low，不过还是记下吧，下次就可以直接拿着用了。很久以前写过一篇如何配置，这个安装基本是把原来的给改成playbook了，附原来<a href="http://arvon.top/2015/10/20/NFS%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/">手动配置</a>的链接。
+另附官方模块地址：</p>
+<blockquote>
+<p><a href="http://docs.ansible.com/ansible/latest/mount_module.html">http://docs.ansible.com/ansible/latest/mount_module.html</a></p>
 </blockquote>
     </div>
     <div class="read-more">
-      <a href="/post/cloud/aws-cli%E6%93%8D%E4%BD%9Cs3%E5%8F%8Adynamodb/" class="read-more-link">阅读全文</a>
+      <a href="/post/cicd/ansible%E9%83%A8%E7%BD%B2nfs%E6%9C%8D%E5%8A%A1/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -416,19 +420,16 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/problems/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/">记ARDB频繁崩溃错误</a>
+      <a class="post-link" href="/post/linux/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/">vsftp安装配置记录</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2017-07-07" class="post-time">
-        2017-07-07
+      <time datetime="2017-08-13" class="post-time">
+        2017-08-13
       </time>
-      <div class="post-category">
-          <a href="https://blog.gourds.site/categories/%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/"> 踩坑指南 </a>
-          
-        </div>
-      <span class="more-meta"> 约 1128 字 </span>
-      <span class="more-meta"> 预计阅读 3 分钟 </span>
+      
+      <span class="more-meta"> 约 1560 字 </span>
+      <span class="more-meta"> 预计阅读 4 分钟 </span>
       
       
       
@@ -438,10 +439,11 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p>**背景：**在业务规模对db没有高需求的情况下使用redis存储其实是有些浪费的，毕竟内存要比磁盘贵很多。这也就是我们要把部分db从redis迁移到ardb的原因，虽然在上线之前已经做了内网测试以及线上部分db替换测试，但是并未触发ardb的这个bug，其中线上测试了30d，现在分析看来，应该是因为线上替换的这个db压力不高，用户基数小。记录一下，关于ardb可以<a href="https://github.com/yinqiwen/ardb">看这里</a></p>
+      <p>ftp服务在运维工作中还是十分常用的。下面记录下安装配置过程。关于主动被动原理可以看一下<a href="http://wiki.arvon.top/doku.php?id=ftp">我的wiki</a>
+vsftp是一个主打安全的ftp服务，所以配置文件会复杂一些。下面是适用于一般场景的配置，使用虚拟用户进行登录操作，更多定制需要需要自行进行修改。</p>
     </div>
     <div class="read-more">
-      <a href="/post/problems/%E8%AE%B0ardb%E9%A2%91%E7%B9%81%E5%B4%A9%E6%BA%83%E9%94%99%E8%AF%AF/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/vsftp%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1536,6 +1538,48 @@ if (!doNotTrack) {
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/19/">»</a></li>
@@ -1543,7 +1587,7 @@ if (!doNotTrack) {
 
       
       
-      <li><a href="/page/45/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>

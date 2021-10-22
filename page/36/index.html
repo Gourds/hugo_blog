@@ -348,15 +348,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/cicd/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/"></a>
+      <a class="post-link" href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/">Linux下关于文件属性的三个时间</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
+      <time datetime="2015-05-13" class="post-time">
+        2015-05-13
       </time>
       
-      <span class="more-meta"> 约 699 字 </span>
+      <span class="more-meta"> 约 939 字 </span>
       <span class="more-meta"> 预计阅读 2 分钟 </span>
       
       
@@ -367,58 +367,19 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <h2 id="tags-pythonansible">title: Ansible根据excel自动生成inventory文件
-date: 2016-08-05
-tags: [Python,Ansible]</h2>
-<p>Tip: 根据excel表格手动写入inventory文件是个费时费力还容易出错的事情，这种事情本就应该使用脚本完成，刚好最近需要，然后就查阅文档，本来是想用shell的，毕竟相比python我还是对shell比较熟悉，奈何python的xlrd模块实在太合适所以就用python写了脚本（需要先安装xlrd模块）。
-Update:现在不推荐使用xlrd模块了，原因是现在python3.0趋向于使用新模块openpyx，而且xlrd模块只是读取excel还需xlwd模块进行写入操作，不过现在这个模块已经支持不是很好了，我用pip没装上，所以现在使用openpyx模块，在<a href="http://arvon.top/2017/05/24/Jumpserver%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">我博客Jumpserver</a>这篇文章里记录有这个模块的用法</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/cicd/ansible%E6%A0%B9%E6%8D%AEexcel%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90inventory%E6%96%87%E4%BB%B6/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/cicd/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/"></a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      <span class="more-meta"> 约 1140 字 </span>
-      <span class="more-meta"> 预计阅读 3 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="tags-ansiblepython">title: Ansible自定义插件获取指定远端配置
-date: 2018-05-11
-tags: [Ansible,Python]</h2>
-<p>**概述:**将ansible部署与变量控制拆分，解决应用与主机的规划问题。其中使用Ansible本地<code>fact</code>实现应用主机规划，使用自定义的Ansible<code>lookup</code>插件来实现从远端获取变量。通过这种方式可以提高ansible代码的利用率和普适性，降低运维的配置管理工作复杂度。可以关注下以下几点</p>
+      <p>Tips: 主要区分linux下文件的三个时间属性，atime、mtime、ctime</p>
 <blockquote>
 <ul>
-<li>本地git注册文件的目录结构</li>
-<li>ansible的local fact与git中注册目录的对应关系</li>
-<li>ansible的playbook配置模板与获取fact的配置关系</li>
+<li>文件的 Access time，atime 是在读取文件或者执行文件时更改的任何对inode的访问都会使此处改变。</li>
 </ul>
 </blockquote>
-<p>设计好以上几点可以大幅降低不必要的麻烦，设计的时候最好充分考虑后期扩展问题。</p>
+<ul>
+<li>文件的Modified time，mtime 是在写入文件时随文件内容的更改而更改的。</li>
+<li>文件的 Change time，ctime 是在写入文件、更改所有者、权限或链接设置时随 Inode 的内容更改而更改的。只要stat出来的内容发生改变就会发生改变。mtime的改变必然导致ctime的改变。</li>
+</ul>
     </div>
     <div class="read-more">
-      <a href="/post/cicd/ansible%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%92%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%8C%87%E5%AE%9A%E8%BF%9C%E7%AB%AF%E9%85%8D%E7%BD%AE/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -429,16 +390,16 @@ tags: [Ansible,Python]</h2>
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/database/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/"></a>
+      <a class="post-link" href="/post/linux/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/">Linux查看主机信息</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
+      <time datetime="2015-04-13" class="post-time">
+        2015-04-13
       </time>
       
-      <span class="more-meta"> 约 751 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      <span class="more-meta"> 约 364 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
       
       
       
@@ -448,13 +409,58 @@ tags: [Ansible,Python]</h2>
   <div class="post-content">
     
     <div class="post-summary">
-      <h2 id="tags-mysql">title: mysql主从
-date: 2015-09-07 15:38:14
-tags: [Mysql]</h2>
-<p>这篇题目占了好长时间了，一直说补上也没补上，今天没事，就弄个实验环境来记录一下。正所谓好记性不如烂笔头，那就写一下。</p>
+      <p>这篇包括（系统版本、内核信息、核心数、主机名）还有一个关于系统信息查看的，<a href="http://blog.arvon.top/2015/07/27/Linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/">&ndash;&gt;飞机票</a></p>
     </div>
     <div class="read-more">
-      <a href="/post/database/mysql%E4%B8%BB%E4%BB%8E%E9%85%8D%E7%BD%AE/" class="read-more-link">阅读全文</a>
+      <a href="/post/linux/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/">Centos搭建nginx&#43;php环境</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-02-13" class="post-time">
+        2015-02-13
+      </time>
+      
+      <span class="more-meta"> 约 291 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>Tips：线上pfsense中添加bandwidthd监控流量的功能存在问题，需要配置一个支持php的web环境来进行支持，这里选择了nginx+php。</p>
+<h3 id="environment">Environment</h3>
+<ul>
+<li>yum</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget http://mirrors.opencas.cn/epel/6/i386/epel-release-6-8.noarch.rpm
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>CentOS6.3_x64</li>
+</ul>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1549,6 +1555,48 @@ tags: [Mysql]</h2>
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/37/">»</a></li>
@@ -1556,7 +1604,7 @@ tags: [Mysql]</h2>
 
       
       
-      <li><a href="/page/45/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>

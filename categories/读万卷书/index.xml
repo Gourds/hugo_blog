@@ -122,6 +122,69 @@
     </item>
     
     <item>
+      <title>《Kubernetes权威指南》笔记</title>
+      <link>https://blog.gourds.site/post/book/kubernetes%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Wed, 07 Aug 2019 13:34:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/kubernetes%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97/</guid>
+      <description>Kubernetes学习笔记 K8s是google久负盛名的内部大规模集群管理系统Borg的一个开源版本，Borg基于容器技术，目的是实现资源</description>
+    </item>
+    
+    <item>
+      <title>《图解性能优化》笔记</title>
+      <link>https://blog.gourds.site/post/book/%E5%9B%BE%E8%A7%A3%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Tue, 14 Aug 2018 23:08:22 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/%E5%9B%BE%E8%A7%A3%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
+      <description>终于要开始阅读这本期待已久的书籍图灵系列丛书中信出版《图解性能优化》，不得不说接触的这几本图解系列都蛮不错的，读完再来前面补充。 性能的基础知</description>
+    </item>
+    
+    <item>
+      <title>《程序员的数学思维修炼》笔记</title>
+      <link>https://blog.gourds.site/post/book/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%E4%BF%AE%E7%82%BC/</link>
+      <pubDate>Tue, 24 Jul 2018 13:34:42 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%E4%BF%AE%E7%82%BC/</guid>
+      <description>update：先说结论，不推荐专门阅读，可以作为闲暇读物。里面的内容基本都是中学的东西，不过毕竟时间久了，温习一下也不错，有些小栗子和典</description>
+    </item>
+    
+    <item>
+      <title>《Google运维解密》笔记</title>
+      <link>https://blog.gourds.site/post/book/google%E8%BF%90%E7%BB%B4%E8%A7%A3%E5%AF%86/</link>
+      <pubDate>Fri, 01 Jun 2018 12:19:44 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/google%E8%BF%90%E7%BB%B4%E8%A7%A3%E5%AF%86/</guid>
+      <description>今天是儿童节呢。 不能将碰运气当成战略 &amp;ndash;SRE俗语 系统运维本质上是人与计算机共同参与的一项系统性工程。 Dev与OPS分离两项成本 直</description>
+    </item>
+    
+    <item>
+      <title>《DevOps实践》笔记</title>
+      <link>https://blog.gourds.site/post/book/devops%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Tue, 22 May 2018 12:17:17 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/devops%E5%AE%9E%E8%B7%B5/</guid>
+      <description>目前身边有三本关于DevOps的书，这本最薄，决定花个1~2天先通读一下。 update: 读完了，本身就是抱着课外读物的心态读的，总体来说实际应用价值不大</description>
+    </item>
+    
+    <item>
+      <title>《ES权威指南》笔记</title>
+      <link>https://blog.gourds.site/post/book/elasticsearch%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 21 May 2018 12:28:33 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/book/elasticsearch%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://es.xiaoleilu.com&#34;&gt;ES权威指南&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Elasticsearch是一个基于Apache Lucene(TM)的开源搜索引擎。目前Lucene可以被认为是迄今为止最先进、性能最好的、功能最全的搜索引擎库。要使用Lucene这个引擎库，必须要使用Java作为开发语言并将其直接集成到应用中，这个过程十分复杂。而ES就是使用Java开发并使用Lucene作为核心来实现索引和搜索功能，但是它通过简单的RESTful API隐藏了Lucene的复杂性，从而使搜索变得简单。&lt;/p&gt;
+&lt;p&gt;那ES总结来说可以归纳以下几点：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;分布式的实时文件存储，每个字段都被索引并可被搜索&lt;/li&gt;
+&lt;li&gt;分布式的实时分析搜索引擎&lt;/li&gt;
+&lt;li&gt;可以扩展到上百台服务器，处理PB级结构化或非结构化数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>8月读书计划</title>
       <link>https://blog.gourds.site/post/book/8%E6%9C%88%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/</link>
       <pubDate>Sat, 13 Aug 2016 00:38:24 +0000</pubDate>

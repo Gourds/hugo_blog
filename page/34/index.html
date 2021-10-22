@@ -348,16 +348,16 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/">Linux下关于文件属性的三个时间</a>
+      <a class="post-link" href="/post/linux/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/">linux解压rar及xshell的rz</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2015-05-13" class="post-time">
-        2015-05-13
+      <time datetime="2015-12-05" class="post-time">
+        2015-12-05
       </time>
       
-      <span class="more-meta"> 约 939 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      <span class="more-meta"> 约 234 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
       
       
       
@@ -367,100 +367,92 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p>Tips: 主要区分linux下文件的三个时间属性，atime、mtime、ctime</p>
+      <p>**摘要：**有时会遇到要在linux下解压rar包，这就很不舒服，毕竟rar是win下不开源的东西，所以建议还是少用，另外rz这个小工具在使用xshell想上传个小东西的时候非常方便，大文件还是建议ftp或者弄个rsync。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/linux%E8%A7%A3%E5%8E%8Brar%E5%8F%8Axshell%E7%9A%84rz/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/">cp和chown的几个好用选项</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-11-14" class="post-time">
+        2015-11-14
+      </time>
+      
+      <span class="more-meta"> 约 1477 字 </span>
+      <span class="more-meta"> 预计阅读 3 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**摘要：**生产环境中对权限什么的要求是很严格的，而使用root用户进行操作，难免会变更权限信息，修改权限就变得十分有必要，而以下的选线都是很实用的。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/cp%E5%92%8Cchown%E7%9A%84%E5%87%A0%E4%B8%AA%E5%A5%BD%E7%94%A8%E9%80%89%E9%A1%B9/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/">消息队列介绍及常用MQ对比</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-11-05" class="post-time">
+        2015-11-05
+      </time>
+      
+      <span class="more-meta"> 约 1744 字 </span>
+      <span class="more-meta"> 预计阅读 4 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h3 id="什么是消息队列">什么是消息队列</h3>
+<p><strong>概述：</strong> 消息队列（Message Queue）一般大家习惯简称为MQ。主要特点为异步处理,也就是说消息的发送者和接收者不需要同时与消息队列交互。消息会保存在队列中，直到接收者取回它。消息队列和信号相比，能够传递更多的信息。与管道相比，消息队列提供了有格式的数据。</p>
 <blockquote>
-<ul>
-<li>文件的 Access time，atime 是在读取文件或者执行文件时更改的任何对inode的访问都会使此处改变。</li>
-</ul>
+<p><strong>举一个直观的小例子</strong>
+姐姐小红希望弟弟小明多读书，经常拿好书给小明看。之前的方式是先问小明什么时候有空，然后把书给小明送过去，监督小明把书读完。后来两人都觉得太麻烦，就换了一个方式。
+买了一个书架，小红一有好书就放到书架上，小明看到书架上有书就取着读。这里，书架其实就是一个消息队列，小红就是生产者，小明就是消费者。
+这样的<strong>好处</strong>是：
+1.小红想给小明书的时候不必问小明什么时候有时间，直接把书放在书架上就行了，小红和小明的时间都更自由
+2.小红相信小明的读书自觉和读书能力，不必亲眼观察小明的读书过程，小红只要做一个放书的动作，很节省时间。
+3.当明天有另一个爱读书的小伙伴小强加入，小红仍旧只需要把书放到书架上，小明和小强从书架上取书即可
+4.书在书架上，小明读的慢就晚点看完，读的快就早点看完，小明的压力会小点。
+对应可以总结为：<strong>解耦</strong>、<strong>提速</strong>、<strong>广播</strong>、<strong>削峰</strong>
+相应<strong>缺点</strong>就是：
+1.引入复杂度
+2.暂时的不一致性
+**PS：**以上内容引自知乎祁达方</p>
 </blockquote>
-<ul>
-<li>文件的Modified time，mtime 是在写入文件时随文件内容的更改而更改的。</li>
-<li>文件的 Change time，ctime 是在写入文件、更改所有者、权限或链接设置时随 Inode 的内容更改而更改的。只要stat出来的内容发生改变就会发生改变。mtime的改变必然导致ctime的改变。</li>
-</ul>
     </div>
     <div class="read-more">
-      <a href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/">Linux查看主机信息</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-04-13" class="post-time">
-        2015-04-13
-      </time>
-      
-      <span class="more-meta"> 约 364 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>这篇包括（系统版本、内核信息、核心数、主机名）还有一个关于系统信息查看的，<a href="http://blog.arvon.top/2015/07/27/Linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/">&ndash;&gt;飞机票</a></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/">Centos搭建nginx&#43;php环境</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-02-13" class="post-time">
-        2015-02-13
-      </time>
-      
-      <span class="more-meta"> 约 291 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Tips：线上pfsense中添加bandwidthd监控流量的功能存在问题，需要配置一个支持php的web环境来进行支持，这里选择了nginx+php。</p>
-<h3 id="environment">Environment</h3>
-<ul>
-<li>yum</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">wget http://mirrors.opencas.cn/epel/6/i386/epel-release-6-8.noarch.rpm
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>CentOS6.3_x64</li>
-</ul>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/centos%E6%90%AD%E5%BB%BAnginx-php%E7%8E%AF%E5%A2%83/" class="read-more-link">阅读全文</a>
+      <a href="/post/distribution/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%B8%B8%E7%94%A8mq%E5%AF%B9%E6%AF%94/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1555,6 +1547,48 @@ if (!doNotTrack) {
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/35/">»</a></li>
@@ -1562,7 +1596,7 @@ if (!doNotTrack) {
 
       
       
-      <li><a href="/page/45/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>

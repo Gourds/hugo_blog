@@ -348,15 +348,53 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/bigdata/%E5%85%B3%E4%BA%8Efluentd%E4%BD%BF%E7%94%A8%E4%B8%ADfilter%E5%8F%8Aes%E6%8F%92%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">关于Fluentd使用中filter及ES插件的问题记录</a>
+      <a class="post-link" href="/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/">使用Docker搭建Jira和Confluence系统</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2018-03-01" class="post-time">
-        2018-03-01
+      <time datetime="2018-04-14" class="post-time">
+        2018-04-14
       </time>
       
-      <span class="more-meta"> 约 1511 字 </span>
+      <span class="more-meta"> 约 2881 字 </span>
+      <span class="more-meta"> 预计阅读 6 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**整理补个文档：**这周折腾了两天Jira和Confluence，准备用这个来代替现在使用的phabricator，Phabricator这个是开源的，Jira和Confluence时Atlassian公司的商业产品，具体如何选择看公司爱好吧。为简化测试和正式部署使用，采取Docker的方式进行安装部署。这里记录一下安装过程和一些避坑建议。另外多说一句Altlassian公司的产品还都蛮好用的，譬如Sourcetree。以下的脚本在<a href="https://github.com/Gourds/docker-image/tree/master/Service/jira_confluence">【Github】</a>上都有</p>
+<blockquote>
+<p>**<a href="https://www.atlassian.com/software/jira">JIRA</a><strong>是Atlassian公司出品的项目与事务跟踪工具，被广泛应用于缺陷跟踪、客户服务、需求收集、流程审批、任务跟踪、项目跟踪和敏捷管理等工作领域。
+</strong><a href="https://www.atlassian.com/software/confluence">Confluence</a><strong>是一个专业的企业知识管理与协同软件，也可以用于构建企业wiki。使用简单，但它强大的编辑和站点管理特征能够帮助团队成员之间共享信息、文档协作、集体讨论，信息推送。
+</strong><a href="https://github.com/phacility/phabricator">Phabricator</a>**是一套基于Web的软件开发协作工具，一个Web应用用于帮助软件公司构建更好的软件。原是facebook员工开发的可视化代码评审工具,主要功能有CodeReview、代码托管、Bug跟踪、Task管理、Wiki文档等功能。</p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/docker/%E4%BD%BF%E7%94%A8docker%E6%90%AD%E5%BB%BAjira%E5%92%8Cconfluence%E7%B3%BB%E7%BB%9F/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/bigdata/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/">Fluentd使用中遇到的丢数据问题</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2018-04-11" class="post-time">
+        2018-04-11
+      </time>
+      
+      <span class="more-meta"> 约 1810 字 </span>
       <span class="more-meta"> 预计阅读 4 分钟 </span>
       
       
@@ -367,15 +405,28 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      <p>**背景介绍：**线上需求将业务log数据清洗后导入kibana，原始log也要一同导入，从服务直接输出两份log肯定是不合理的，所以考虑从fluentd收集的时候进行处理，先将原始数据复制为2份，然后一份直接导入kibana，另一份通过fluentd的filter进行过滤筛选后导入kibana。其中filter遇到无法筛选nested类型数据的问题，升级版本后并更改写法后解决；升级后导致ES的index无法按原来的方法命名的问题，通过更换ES插件解决，具体见以下记录。</p>
-<blockquote>
-<p>测试环境：
-OS: Amazon Linux AMI release 2015.03
-Fluentd: td-agent 0.12.20</p>
-</blockquote>
+      <p>目前遇到的问题主要有3个：两个关于buffer，一个关于connection。下面具体说描述下问题的详细信息及目前我采取的解决措施。先交代下我这里使用的Td-agent架构如下，PS（方便起见以下均将Td-agent简化为TD，关于TD和Fluentd的关系移步我的另一篇<a href="http://arvon.top/2018/02/23/Td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">Blog</a>）</p>
+<p>需要注意： 这里的缓存Buffer设置对0.14.21版本测试生效，亲测0.12.20不生效，具体可到<a href="https://docs.fluentd.org/v1.0/articles/quickstart">【Fluentd官网】</a>获取支持。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">graph LR;
+	  A(Td-client)--&gt;F(Td-forward)
+    B(Td-client)--&gt;F(Td-forward)
+    F--&gt;E(Elasticsearch cluster)
+    E--&gt;K(Kibana)
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
     <div class="read-more">
-      <a href="/post/bigdata/%E5%85%B3%E4%BA%8Efluentd%E4%BD%BF%E7%94%A8%E4%B8%ADfilter%E5%8F%8Aes%E6%8F%92%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+      <a href="/post/bigdata/fluentd%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%A2%E6%95%B0%E6%8D%AE%E9%97%AE%E9%A2%98/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -386,16 +437,16 @@ Fluentd: td-agent 0.12.20</p>
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/linux/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/">Td-agent配置说明</a>
+      <a class="post-link" href="/post/docker/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">即学即用Docker读书笔记</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2018-02-23" class="post-time">
-        2018-02-23
+      <time datetime="2018-04-09" class="post-time">
+        2018-04-09
       </time>
       
-      <span class="more-meta"> 约 3106 字 </span>
-      <span class="more-meta"> 预计阅读 7 分钟 </span>
+      <span class="more-meta"> 约 5812 字 </span>
+      <span class="more-meta"> 预计阅读 12 分钟 </span>
       
       
       
@@ -405,50 +456,14 @@ Fluentd: td-agent 0.12.20</p>
   <div class="post-content">
     
     <div class="post-summary">
-      <p><strong>简介：</strong>
-生产环境并没有使用传统ELK,而是使用tdagent来代替Logstash作日志收集。
-关于td-agent和Fluentd的关系可以引用<a href="https://www.fluentd.org/faqs">官网的描述</a>：<code>&quot;In one word, td-agent is a stable distribution package of Fluentd.&quot;</code></p>
-<blockquote>
-<p>update：2017-05-20 初次修改</p>
-</blockquote>
-<h3 id="一般架构">一般架构</h3>
-<p><img src="http://img.arvon.top:80/images/2019/08/12/20170911-fluentd-1.jpg" alt="fluentd-1"></p>
+      <p><a href="https://book.douban.com/subject/26700648/">《即学即用Docker》</a>这本书在手里也有很长时间了，现在补上读书笔记。感觉这书非常适合入门，对没有docker基础的推荐阅读。目前手里还有《Docker经典实例》和《Kubernetes权威指南》等待我的临幸，有时间就争取先来一遍。
+<strong>容器是什么</strong>
+容器不同于VMware或者Xen这种虚拟化系统，是一种完全不同的虚拟化方式，所有容器共用一个内核，而且容器之间的隔离完全在这个内核中实现，这叫做操作系统虚拟化。
+容器是自成一体的执行环境，所有容器共用宿主机的内核，而且系统中的容器之间是相互隔离的（不强制一定要隔离）。
+容器的最大优势是高效使用资源，因为不用为了使用各个独立的功能而运行整个操作系统。因为容器共用一个内核，所以隔离执行的任务和底层硬件之间少了一层交互。运行在容器里面的进程只需要使用很少一部分内核，进程在特权模式下进出处理器时不会再调出一个完整的内核。</p>
     </div>
     <div class="read-more">
-      <a href="/post/linux/td-agent%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/cicd/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/">Jenkins使用GitSubmodule实现代码库调用</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2017-11-29" class="post-time">
-        2017-11-29
-      </time>
-      
-      <span class="more-meta"> 约 1002 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**背景：**在实际项目构建中有时会用到调用其他代码库的情况，例如调用公共代码库和基础代码库，此时就可以用git submodule这个模块实现这个需求，git submodule可以将一个git仓库以目录的方式作为另一个git仓库的子目录。Jenkins用来做项目的持续集成，如果使用了Git Submodule,每次Jenkins更新版本库的时候还需要更新submodule的内容。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/cicd/jenkins%E4%BD%BF%E7%94%A8gitsubmodule%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B0%83%E7%94%A8/" class="read-more-link">阅读全文</a>
+      <a href="/post/docker/%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8docker%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1543,6 +1558,48 @@ Fluentd: td-agent 0.12.20</p>
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/15/">»</a></li>
@@ -1550,7 +1607,7 @@ Fluentd: td-agent 0.12.20</p>
 
       
       
-      <li><a href="/page/45/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>
