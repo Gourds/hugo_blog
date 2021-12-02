@@ -144,6 +144,13 @@ if (!doNotTrack) {
         
           
           
+            <a class="menu-item-link" href="https://blog.gourds.site/post/life/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/">观影清单</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
             <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
               Wiki
               
@@ -303,6 +310,17 @@ if (!doNotTrack) {
         
           
           
+            <a class="menu-item-link" href="https://blog.gourds.site/post/life/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/">观影清单</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
             <a class="menu-item-link" href="https://wiki.gourds.site" rel="noopener" target="_blank">
               Wiki
               
@@ -343,6 +361,42 @@ if (!doNotTrack) {
     
   
   
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/linux/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      <span class="more-meta"> 约 720 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h2 id="tags-linux">title: Linux挂载LVM分区
+date: 2015-08-07 18:02:24
+tags: [Linux]</h2>
+<p>**简介：**LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制，它由Heinz Mauelshagen在Linux 2.4内核上实现，目前最新版本为：稳定版1.0.5，开发版 1.1.0-rc2，以及LVM2开发版。Linux用户安装Linux操作系统时遇到的一个常见的难以决定的问题就是如何正确地评估各分区大小，以分配合适的硬盘空间。普通的磁盘分区管理方式在逻辑分区划分好之后就无法改变其大小，当一个逻辑分区存放不下某个文件时，这个文件因为受上层文件系统的限制，也不能跨越多个分区来存放，所以也不能同时放到别的磁盘上。而遇到出现某个分区空间耗尽时，解决的方法通常是使用符号链接，或者使用调整分区大小的工具，但这只是暂时解决办法，没有从根本上解决问题。随着Linux的逻辑卷管理功能的出现，这些问题都迎刃而解，用户在无需停机的情况下可以方便地调整各个分区大小。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/linux%E6%8C%82%E8%BD%BDlvm%E5%88%86%E5%8C%BA/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
   
     <article class="post bg-white">
   <header class="post-header">
@@ -410,47 +464,6 @@ tags: [Command,Tools]</h2>
     </div>
     <div class="read-more">
       <a href="/post/linux/lsof%E5%91%BD%E4%BB%A4/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/"></a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      <span class="more-meta"> 约 1198 字 </span>
-      <span class="more-meta"> 预计阅读 3 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="tags-nginx">title: Nginx重定向及域名CNAME问题
-date: 2017-05-29 17:12:05
-tags: [Nginx]</h2>
-<p><img src="http://img.arvon.top:80/images/2019/08/12/20170529-nginxcname-1.jpg" alt="20170529-nginxcname-1">
-<strong>关于域名解析</strong>的几个问题整理，最近换了博客评论系统，原因是多说马上就停止支持了，所以现在转用网易云跟帖，个人感觉还可以。期间有个域名解析的问题我觉得可以记录下。主要就是DNS的CNAME记录以及Nginx的301、302重定向。</p>
-<h3 id="关于dns的cname解析">关于DNS的CNAME解析</h3>
-<blockquote>
-<p>其实这个也蛮好理解，不涉及数据报内容的改变，就是将要解析的域名指向另一个域名解析。对比A记录就更清晰了，A记录是域名到IP的解析，而CNAME记录是域名解析到域名。所以通过域名的CNAME记录对web访问时没有任何影响的，它只是改变了域名解析的过程而已。</p>
-</blockquote>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/nginx%E9%87%8D%E5%AE%9A%E5%90%91%E5%8F%8A%E5%9F%9F%E5%90%8Dcname%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
