@@ -94,10 +94,16 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《万箭穿心》【中】2012.王竞&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《地久天长》【中】2019.王小帅&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《暖》【中】2003.霍建起&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《孔雀》【中】2005.顾长卫&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《那山那人那狗》【中】1999.霍建起&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《孔雀》【中】2005.顾长卫&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《我们俩》【中】2005.马俪文&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《碧海蓝天》【法】1988.吕克·贝松&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《布达佩斯大饭店》【美】2014.韦斯·安德森&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《教父》【美】1972.弗朗西斯·福特·科波拉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《教父2》【美】1974.弗朗西斯·福特·科波拉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《教父3》【美】1990.弗朗西斯·福特·科波拉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《老无所依》【德】2007.乔尔·科恩、伊桑·科恩兄弟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《海蒂和爷爷》【德】2015.阿兰·葛斯彭纳&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;好动漫&#34;&gt;好动漫&lt;/h3&gt;
 &lt;ul&gt;
@@ -681,7 +687,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《年轻人自救指南》【中】蔡澜&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《为什么要把小说写的这么好》【中】刘按&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《好妈妈胜过好老师2：自由的孩子最自觉》【中】尹建莉&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《《在峡江的转弯处：陈行甲人生笔记》》【中】陈行甲&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《在峡江的转弯处：陈行甲人生笔记》【中】陈行甲&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
