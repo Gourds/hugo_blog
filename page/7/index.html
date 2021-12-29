@@ -144,7 +144,7 @@ if (!doNotTrack) {
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/life/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/">观影清单</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/">观影清单</a>
           
         
       </li><li class="mobile-menu-item">
@@ -310,7 +310,7 @@ if (!doNotTrack) {
         
           
           
-            <a class="menu-item-link" href="https://blog.gourds.site/post/life/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/">观影清单</a>
+            <a class="menu-item-link" href="https://blog.gourds.site/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/">观影清单</a>
           
 
         
@@ -361,50 +361,6 @@ if (!doNotTrack) {
     
   
   
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/programming/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/">关于对Python面向对象的理解</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-09-10" class="post-time">
-        2019-09-10
-      </time>
-      
-      <span class="more-meta"> 约 631 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>说起面向对象(Object Oriented Programming)首先想到的就是三个词：封装、继承和多态。</p>
-<p><strong>封装：</strong> 目的是为了简化编程和提升安全性(标识出允许外部使用的所有成员函数和数据项)。</p>
-<ul>
-<li>属性封装</li>
-<li>方法封装</li>
-</ul>
-<p><strong>继承和多态：</strong> 顾名思义，继承就是子类可以获取父类的特性，实际上就是为了更好的进行代码复用，而多态是指基于不同的父类调用同一方法也可能有不同的执行逻辑，与这个相关的还有一个有趣的名词”<a href="https://zh.wikipedia.org/wiki/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B">鸭子模型</a>“。</p>
-<p>另外与面向对象对应的还有个面向过程(Process Oriented)。其中的区别下面有一个通俗的解释，可以做一个参考</p>
-<blockquote>
-<p>面向对象是相对于面向过程的，比如你要充话费，你会想，可以下个支付宝，然后绑定银行卡，然后在淘宝上买卡，自己冲，这种种过程。但是对于你女朋友就不一样了，她是面向“对象”的，她会想，谁会充话费呢？当然是你了，她就给你电话，然后你把之前的做了一遍，然后她收到到帐的短信，说了句，亲爱的。这就是面向对象！女的思维大部分是面向“对象”的！她不关心处理的细节，只关心谁可以，和结果！</p>
-<p>来源：知乎 <a href="https://www.zhihu.com/question/31021366/answer/50581592">链接</a></p>
-</blockquote>
-    </div>
-    <div class="read-more">
-      <a href="/post/programming/%E5%85%B3%E4%BA%8E%E5%AF%B9python%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%90%86%E8%A7%A3/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
   
     <article class="post bg-white">
   <header class="post-header">
@@ -480,6 +436,45 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/programming/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">Flask中Jinja2模板使用总结</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2019-08-28" class="post-time">
+        2019-08-28
+      </time>
+      
+      <span class="more-meta"> 约 1426 字 </span>
+      <span class="more-meta"> 预计阅读 3 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>之前<a href="">已经总结过Jinja2</a>了,这里主要总结在Falsk中的一些东西。包括以下方面</p>
+<ul>
+<li>模板的目录结构设计</li>
+<li>常用的模块</li>
+<li>HTML转义</li>
+<li>特殊装饰器</li>
+</ul>
+    </div>
+    <div class="read-more">
+      <a href="/post/programming/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1757,30 +1752,6 @@ if (!doNotTrack) {
 
       
 
-        
-
-        
-        
-
-          
-          
-          
-
-            
-            
-
-          
-          
-          
-
-        
-        
-
-        
-        
-
-      
-
       
       
       <li><a href="/page/8/">»</a></li>
@@ -1788,7 +1759,7 @@ if (!doNotTrack) {
 
       
       
-      <li><a href="/page/48/">»»</a></li>
+      <li><a href="/page/47/">»»</a></li>
       
 
       </ul>

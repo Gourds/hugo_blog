@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 27 Dec 2021 14:18:52 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>观影清单</title>
-      <link>https://blog.gourds.site/post/life/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/</link>
-      <pubDate>Wed, 01 Dec 2021 19:23:57 +0800</pubDate>
-      
-      <guid>https://blog.gourds.site/post/life/%E8%A7%82%E5%BD%B1%E6%B8%85%E5%8D%95/</guid>
-      <description>观影记录 时间 名称 备注 《变脸王》 人间自有真情在，推荐 好电影 《变脸王》【中】1995.吴天明 《城南旧事》【中】1983.吴贻弓 《百鸟朝凤》【中】</description>
-    </item>
-    
-    <item>
       <title>Read_Record_2021</title>
       <link>https://blog.gourds.site/post/record/read_record_2021/</link>
       <pubDate>Mon, 27 Dec 2021 14:18:52 +0800</pubDate>
@@ -210,6 +201,21 @@
 &lt;p&gt;&lt;code&gt;__&lt;/code&gt;:在类内部如果使用双下划线开头定义变量，那么这个变量就变成了私有变量（private），即这个变量只有在内部访问（并不是绝对控制，可以通过其他方法访问）&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_&lt;/code&gt;:在类内部如果使用_开头定义变量，其实表示建议（表示可以从外部访问但最好不要访问）当成私有变量&lt;/p&gt;
 &lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>JenkinsActiveChoices插件使用</title>
+      <link>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 30 Aug 2019 08:30:00 +0000</pubDate>
+      
+      <guid>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;之前使用过Jenkins的&lt;a href=&#34;https://wiki.jenkins.io/display/JENKINS/Active+Choices+Plugin&#34;&gt;Active Choices Plugin&lt;/a&gt;插件，概述下当时我想实现的效果&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;针对自定义选项支持多选&lt;/li&gt;
+&lt;li&gt;在Job中点击构建是默认全部选中&lt;/li&gt;
+&lt;li&gt;采用DSL构建
+所以当时调研后就选择了这个插件，使用起来还不错。不过今天又遇到一个问题，记录一下&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>
