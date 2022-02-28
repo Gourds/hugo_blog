@@ -272,10 +272,13 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Vim实用技巧》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《精通正则表达式》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Shell脚本学习指南》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《深度探索Linux操作系统：系统构建和原理解析》【中】王柏生&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《深度探索Linux系统虚拟化：原理与实现》【中】王柏生/谢广军 &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Linux Shell编程与编辑器使用详解》【中】刘丽霞/杨宇&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Linux 系统管理员工具集》【中】曹江华/林捷&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《实用网络流量分析技术》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Wireshark网络分析的艺术》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Ansible自动化运维:技术与最佳实践》【中】陈金窗/沈灿/刘政委&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《奔跑吧Ansible》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《即学即用Docker》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Docker实践》&lt;/a&gt;&lt;/li&gt;
@@ -294,7 +297,8 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《DevOps实践指南》【美】Gene Kim/Jez Humble/Patrick Debois/John Willis&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Kafka技术内幕》&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《云原生分布式存储基石:etcd深入解析》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《Ansible自动化运维:技术与最佳实践》【中】陈金窗/沈灿/刘政委&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《云原生模式》【美】Cornelia，Davis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《云原生架构：从技术演进到最佳实践》【中】贺阮/史冰迪 &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;开发相关&#34;&gt;开发相关&lt;/h4&gt;
 &lt;ul&gt;
