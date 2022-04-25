@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCP on Gourds</title>
+    <link>https://blog.gourds.site/tags/gcp/</link>
+    <description>Recent content in GCP on Gourds</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Apr 2022 15:34:58 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/gcp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>谷歌CloudFuncion发送消息到飞书</title>
+      <link>https://blog.gourds.site/post/programming/%E8%B0%B7%E6%AD%8Ccloudfuncion%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF%E5%88%B0%E9%A3%9E%E4%B9%A6/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/programming/%E8%B0%B7%E6%AD%8Ccloudfuncion%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF%E5%88%B0%E9%A3%9E%E4%B9%A6/</guid>
+      <description>&lt;p&gt;订阅谷歌云事件并发送通知到飞书。直接使用Google的&lt;code&gt;logging&lt;/code&gt;服务可以订阅事件，然后通过日志路由器，发送事件到订阅（即&lt;code&gt;PUB/SUB&lt;/code&gt;服务）。此时就可以直接调用Webhook了，不过Google的数据格式和
+飞书要求的格式不太统一，需要自己处理一下。这里我选择使用Google的&lt;code&gt;Cloud Function&lt;/code&gt;服务，直接就可以由订阅Topic中的事件触发&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

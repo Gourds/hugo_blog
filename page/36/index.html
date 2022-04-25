@@ -366,6 +366,90 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/">NFS服务安装部署记录</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-10-20" class="post-time">
+        2015-10-20
+      </time>
+      
+      <span class="more-meta"> 约 519 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>**简述：**其实在部署多台服务器时搭建一个nfs服务器是个共享资源非常好的方案，可以实现脚本共享，也可以实现数据集中备份，是个非常好用的网络文件系统。实验环境为多台服务器，其中一台用作NFSserver其余的主机作为client</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/nfs%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/">Ansible之HAVE_DECL_MPZ_POWM_SEC报错记录</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-10-12" class="post-time">
+        2015-10-12
+      </time>
+      
+      <span class="more-meta"> 约 342 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>简述：在centOS6.5上使用pip安装ansible(version=2.1.1.0)时报错</p>
+<h3 id="报错解决">报错解决</h3>
+<ul>
+<li>解决如下
+分析为PyCrypto模块安装有问题，所以就直接卸载重装。。有能力的话我会进一步探究这个报错，不过现在以下方法可以解决，先这样吧</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">pip uninstall python-keyczar pycrypto pyasn1
+yum erase python-keyczar python-crypto pyasn1
+yum install python-keyczar
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    <div class="read-more">
+      <a href="/post/cicd/ansible%E4%B9%8Bhave-decl-mpz-powm-sec%E6%8A%A5%E9%94%99%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/linux/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/">安装hexo记录</a>
     </h1>
     
@@ -402,81 +486,6 @@ yum install git-core
     </div>
     <div class="read-more">
       <a href="/post/linux/centos%E5%AE%89%E8%A3%85hexo%E8%AE%B0%E5%BD%95/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/">Linux下关于文件属性的三个时间</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-05-13" class="post-time">
-        2015-05-13
-      </time>
-      
-      <span class="more-meta"> 约 939 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Tips: 主要区分linux下文件的三个时间属性，atime、mtime、ctime</p>
-<blockquote>
-<ul>
-<li>文件的 Access time，atime 是在读取文件或者执行文件时更改的任何对inode的访问都会使此处改变。</li>
-</ul>
-</blockquote>
-<ul>
-<li>文件的Modified time，mtime 是在写入文件时随文件内容的更改而更改的。</li>
-<li>文件的 Change time，ctime 是在写入文件、更改所有者、权限或链接设置时随 Inode 的内容更改而更改的。只要stat出来的内容发生改变就会发生改变。mtime的改变必然导致ctime的改变。</li>
-</ul>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/linux%E4%B8%8B%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E7%9A%84%E4%B8%89%E4%B8%AA%E6%97%B6%E9%97%B4/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/">Linux查看主机信息</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-04-13" class="post-time">
-        2015-04-13
-      </time>
-      
-      <span class="more-meta"> 约 364 字 </span>
-      <span class="more-meta"> 预计阅读 1 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>这篇包括（系统版本、内核信息、核心数、主机名）还有一个关于系统信息查看的，<a href="http://blog.arvon.top/2015/07/27/Linux%E7%B3%BB%E7%BB%9F%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4/">&ndash;&gt;飞机票</a></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/linux%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -1613,6 +1622,27 @@ yum install git-core
 
       
 
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
       
       
       <li><a href="/page/37/">»</a></li>
@@ -1620,7 +1650,7 @@ yum install git-core
 
       
       
-      <li><a href="/page/47/">»»</a></li>
+      <li><a href="/page/48/">»»</a></li>
       
 
       </ul>

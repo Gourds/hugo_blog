@@ -5,7 +5,26 @@
     <link>https://blog.gourds.site/post/</link>
     <description>Recent content in Posts on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 14:18:52 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Apr 2022 15:34:58 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于Fluentd使用中filter及ES插件的问题记录</title>
+      <link>https://blog.gourds.site/post/bigdata/fluentd%E5%A4%9Aoutput%E8%BE%93%E5%87%BA/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/bigdata/fluentd%E5%A4%9Aoutput%E8%BE%93%E5%87%BA/</guid>
+      <description>消费kafka数据，将数据同时导入ES以及GCS。两种做法，一种是同一Topic及消费组，采用Fluentd的copy类型，将一份数据拷贝为</description>
+    </item>
+    
+    <item>
+      <title>谷歌CloudFuncion发送消息到飞书</title>
+      <link>https://blog.gourds.site/post/programming/%E8%B0%B7%E6%AD%8Ccloudfuncion%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF%E5%88%B0%E9%A3%9E%E4%B9%A6/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/programming/%E8%B0%B7%E6%AD%8Ccloudfuncion%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF%E5%88%B0%E9%A3%9E%E4%B9%A6/</guid>
+      <description>&lt;p&gt;订阅谷歌云事件并发送通知到飞书。直接使用Google的&lt;code&gt;logging&lt;/code&gt;服务可以订阅事件，然后通过日志路由器，发送事件到订阅（即&lt;code&gt;PUB/SUB&lt;/code&gt;服务）。此时就可以直接调用Webhook了，不过Google的数据格式和
+飞书要求的格式不太统一，需要自己处理一下。这里我选择使用Google的&lt;code&gt;Cloud Function&lt;/code&gt;服务，直接就可以由订阅Topic中的事件触发&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Read_Record_2021</title>
       <link>https://blog.gourds.site/post/record/read_record_2021/</link>
@@ -184,38 +203,6 @@
 &lt;p&gt;面向对象是相对于面向过程的，比如你要充话费，你会想，可以下个支付宝，然后绑定银行卡，然后在淘宝上买卡，自己冲，这种种过程。但是对于你女朋友就不一样了，她是面向“对象”的，她会想，谁会充话费呢？当然是你了，她就给你电话，然后你把之前的做了一遍，然后她收到到帐的短信，说了句，亲爱的。这就是面向对象！女的思维大部分是面向“对象”的！她不关心处理的细节，只关心谁可以，和结果！&lt;/p&gt;
 &lt;p&gt;来源：知乎 &lt;a href=&#34;https://www.zhihu.com/question/31021366/answer/50581592&#34;&gt;链接&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>python中特殊方法和特殊变量总结</title>
-      <link>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Sun, 01 Sep 2019 10:59:29 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/programming/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/</guid>
-      <description>&lt;p&gt;在研究一些python项目的源码时经常会看到一些特殊的方法和变量，比如两边双下划线&lt;code&gt;__init__&lt;/code&gt;定义的方法，还有一些类中会有以双下划线&lt;code&gt;__&lt;/code&gt;开头定义的变量，以及以单下划线&lt;code&gt;_&lt;/code&gt;开头的定义的变量。这里对目前经常遇到的做一个记录&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;__method__&lt;/code&gt;:在class中有一些以双下划线开头和结尾的函数被称为特殊方法(Magic Method)，更具体可以参考&lt;a href=&#34;https://docs.python.org/3/reference/datamodel.html#special-method-names&#34;&gt; 官方文档&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;顺便说一下访问限制。如下（限制其实并不严格，主要靠自觉）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;__&lt;/code&gt;:在类内部如果使用双下划线开头定义变量，那么这个变量就变成了私有变量（private），即这个变量只有在内部访问（并不是绝对控制，可以通过其他方法访问）&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;_&lt;/code&gt;:在类内部如果使用_开头定义变量，其实表示建议（表示可以从外部访问但最好不要访问）当成私有变量&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>JenkinsActiveChoices插件使用</title>
-      <link>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Fri, 30 Aug 2019 08:30:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;之前使用过Jenkins的&lt;a href=&#34;https://wiki.jenkins.io/display/JENKINS/Active+Choices+Plugin&#34;&gt;Active Choices Plugin&lt;/a&gt;插件，概述下当时我想实现的效果&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;针对自定义选项支持多选&lt;/li&gt;
-&lt;li&gt;在Job中点击构建是默认全部选中&lt;/li&gt;
-&lt;li&gt;采用DSL构建
-所以当时调研后就选择了这个插件，使用起来还不错。不过今天又遇到一个问题，记录一下&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
   </channel>

@@ -5,7 +5,52 @@
     <link>https://blog.gourds.site/tags/</link>
     <description>Recent content in Tags on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 14:18:52 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Apr 2022 15:34:58 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ELK</title>
+      <link>https://blog.gourds.site/tags/elk/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/tags/elk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GCF</title>
+      <link>https://blog.gourds.site/tags/gcf/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/tags/gcf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GCP</title>
+      <link>https://blog.gourds.site/tags/gcp/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/tags/gcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://blog.gourds.site/tags/python/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>消息队列</title>
+      <link>https://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>读书</title>
       <link>https://blog.gourds.site/tags/%E8%AF%BB%E4%B9%A6/</link>
@@ -21,15 +66,6 @@
       <pubDate>Thu, 23 Sep 2021 10:01:52 +0800</pubDate>
       
       <guid>https://blog.gourds.site/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://blog.gourds.site/tags/python/</link>
-      <pubDate>Fri, 17 Sep 2021 14:33:43 +0800</pubDate>
-      
-      <guid>https://blog.gourds.site/tags/python/</guid>
       <description></description>
     </item>
     
@@ -147,42 +183,6 @@
       <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
       
       <guid>https://blog.gourds.site/tags/confluence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://blog.gourds.site/tags/docker/</link>
-      <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jira</title>
-      <link>https://blog.gourds.site/tags/jira/</link>
-      <pubDate>Thu, 29 Nov 2018 13:57:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/tags/jira/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jumpserver</title>
-      <link>https://blog.gourds.site/tags/jumpserver/</link>
-      <pubDate>Tue, 27 Nov 2018 15:00:00 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/tags/jumpserver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>随笔</title>
-      <link>https://blog.gourds.site/tags/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Tue, 30 Oct 2018 18:23:45 +0000</pubDate>
-      
-      <guid>https://blog.gourds.site/tags/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
     

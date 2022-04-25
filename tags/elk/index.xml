@@ -5,7 +5,16 @@
     <link>https://blog.gourds.site/tags/elk/</link>
     <description>Recent content in ELK on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Aug 2018 12:11:16 +0000</lastBuildDate><atom:link href="https://blog.gourds.site/tags/elk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Apr 2022 15:34:58 +0800</lastBuildDate><atom:link href="https://blog.gourds.site/tags/elk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于Fluentd使用中filter及ES插件的问题记录</title>
+      <link>https://blog.gourds.site/post/bigdata/fluentd%E5%A4%9Aoutput%E8%BE%93%E5%87%BA/</link>
+      <pubDate>Mon, 25 Apr 2022 15:34:58 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/bigdata/fluentd%E5%A4%9Aoutput%E8%BE%93%E5%87%BA/</guid>
+      <description>消费kafka数据，将数据同时导入ES以及GCS。两种做法，一种是同一Topic及消费组，采用Fluentd的copy类型，将一份数据拷贝为</description>
+    </item>
+    
     <item>
       <title>Elasticsearch使用curator管理index</title>
       <link>https://blog.gourds.site/post/bigdata/es%E4%BD%BF%E7%94%A8curator%E7%AE%A1%E7%90%86index/</link>
