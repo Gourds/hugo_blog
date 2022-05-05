@@ -366,6 +366,67 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/linux/selinux%E5%92%8Ciptables%E5%85%B3%E9%97%AD/">selinux和iptables关闭</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2016-02-01" class="post-time">
+        2016-02-01
+      </time>
+      
+      <span class="more-meta"> 约 247 字 </span>
+      <span class="more-meta"> 预计阅读 1 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <h3 id="iptables">iptables</h3>
+<h4 id="centos6x">Centos6.x</h4>
+<ul>
+<li>临时关闭</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">service iptables stop
+/etc/init.d/iptabels stop
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>永久关闭</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">chkconfig iptables off
+chkconfig iptables on    <span class="c1">#开启</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    <div class="read-more">
+      <a href="/post/linux/selinux%E5%92%8Ciptables%E5%85%B3%E9%97%AD/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/linux/centos%E6%90%AD%E5%BB%BAntp%E6%9C%8D%E5%8A%A1%E5%99%A8/">CentOS搭建NTP服务器</a>
     </h1>
     
@@ -443,39 +504,6 @@ mount -t xfs /dev/sdc1 /data3/sdc1/
     </div>
     <div class="read-more">
       <a href="/post/linux/centos6-x%E6%8C%82%E8%BD%BDntfs%E5%92%8Cxfs%E9%97%AE%E9%A2%98/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/">Linux主机时间不准问题</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-12-13" class="post-time">
-        2015-12-13
-      </time>
-      
-      <span class="more-meta"> 约 520 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>**摘要：**linux主机时间过一段时间就会发现时间不对了，查阅资料这个大概是因为硬件时间和服务器时间不一致导致的。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/linux%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4%E4%B8%8D%E5%87%86%E9%97%AE%E9%A2%98/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>

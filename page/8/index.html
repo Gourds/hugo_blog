@@ -366,6 +366,47 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/programming/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/">python中特殊方法和特殊变量总结</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2019-09-01" class="post-time">
+        2019-09-01
+      </time>
+      
+      <span class="more-meta"> 约 1871 字 </span>
+      <span class="more-meta"> 预计阅读 4 分钟 </span>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>在研究一些python项目的源码时经常会看到一些特殊的方法和变量，比如两边双下划线<code>__init__</code>定义的方法，还有一些类中会有以双下划线<code>__</code>开头定义的变量，以及以单下划线<code>_</code>开头的定义的变量。这里对目前经常遇到的做一个记录</p>
+<blockquote>
+<p><code>__method__</code>:在class中有一些以双下划线开头和结尾的函数被称为特殊方法(Magic Method)，更具体可以参考<a href="https://docs.python.org/3/reference/datamodel.html#special-method-names"> 官方文档</a></p>
+</blockquote>
+<p>顺便说一下访问限制。如下（限制其实并不严格，主要靠自觉）</p>
+<blockquote>
+<p><code>__</code>:在类内部如果使用双下划线开头定义变量，那么这个变量就变成了私有变量（private），即这个变量只有在内部访问（并不是绝对控制，可以通过其他方法访问）</p>
+<p><code>_</code>:在类内部如果使用_开头定义变量，其实表示建议（表示可以从外部访问但最好不要访问）当成私有变量</p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/programming/python%E4%B8%AD%E7%89%B9%E6%AE%8A%E6%96%B9%E6%B3%95%E5%92%8C%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%E6%80%BB%E7%BB%93/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/cicd/jenkins%E7%9A%84activechoices%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/">JenkinsActiveChoices插件使用</a>
     </h1>
     
@@ -434,54 +475,6 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/post/programming/flask%E4%B8%ADjinja2%E6%A8%A1%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/cicd/jinja2%E8%AF%AD%E6%B3%95/">Jinja2语法</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-08-25" class="post-time">
-        2019-08-25
-      </time>
-      
-      <span class="more-meta"> 约 4848 字 </span>
-      <span class="more-meta"> 预计阅读 10 分钟 </span>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h4 id="介绍">介绍</h4>
-<p>大概介绍一下，主要介绍模板（模板仅仅是文本文件。它可以生成任何基于文本的格式（HTML、XML、CSV、LaTex 等等）。它并没有特定的扩展名，<code>.html</code>或<code>.xml</code>都是可以的。）模板包含变量或表达式 ，这两者在模板求值的时候会被替换为值。模板中 还有标签，控制模板的逻辑。模板语法的大量灵感来自于 Django和Python。</p>
-<blockquote>
-<p>Jinja2是一个现代的，设计者友好的，仿照Django模板的Python模板语言。它速度快，被广泛使用，并且提供了可选的沙箱模板执行环境保证安全.特征如下：</p>
-</blockquote>
-<ul>
-<li>沙箱中执行</li>
-<li>强大的HTML自动转义系统保护系统免受XSS</li>
-<li>模板继承</li>
-<li>及时编译最优的python代码</li>
-<li>易于调试。异常的行数直接指向模板中的对应行</li>
-<li>可配置的语法</li>
-</ul>
-<blockquote>
-<p>&mdash;选自 <a href="http://docs.jinkan.org/docs/jinja2/index.html">http://docs.jinkan.org</a></p>
-</blockquote>
-    </div>
-    <div class="read-more">
-      <a href="/post/cicd/jinja2%E8%AF%AD%E6%B3%95/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>

@@ -5,7 +5,7 @@
     <link>https://blog.gourds.site/</link>
     <description>Recent content on Gourds</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Apr 2022 15:34:58 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Apr 2022 15:53:38 +0800</lastBuildDate>
     
         <atom:link href="https://blog.gourds.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -467,6 +467,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《禅与摩托车维修艺术》【美】罗伯特·M.波西格&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《如果一年后，我不在这世上》【日】清水研&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《法治的细节》【中】罗翔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《理想国》【古希腊】柏拉图&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;效率习惯&#34;&gt;效率|习惯&lt;/h3&gt;
 &lt;ul&gt;
@@ -607,6 +608,77 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;《山海经校注》【中】袁珂&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>ES节点扩容</title>
+      <link>https://blog.gourds.site/post/bigdata/es%E8%8A%82%E7%82%B9%E6%89%A9%E5%AE%B9/</link>
+      <pubDate>Fri, 29 Apr 2022 15:53:38 +0800</pubDate>
+      
+      <guid>https://blog.gourds.site/post/bigdata/es%E8%8A%82%E7%82%B9%E6%89%A9%E5%AE%B9/</guid>
+      
+        <description>&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://cloud.tencent.com/developer/article/1763280&#34;&gt;https://cloud.tencent.com/developer/article/1763280&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;修改分片平衡策略&lt;/li&gt;
+&lt;li&gt;停止要升级的节点&lt;/li&gt;
+&lt;li&gt;修改jvm内存配置&lt;/li&gt;
+&lt;li&gt;关机&lt;/li&gt;
+&lt;li&gt;升配&lt;/li&gt;
+&lt;li&gt;开机&lt;/li&gt;
+&lt;li&gt;恢复分片平衡策略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;步骤&#34;&gt;步骤&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;
+&lt;span class=&#34;nv&#34;&gt;es_node&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;localhost:9200
+curl -XGET &lt;span class=&#34;nv&#34;&gt;$es_node&lt;/span&gt;/_cluster/health?pretty
+curl -XGET &lt;span class=&#34;nv&#34;&gt;$es_node&lt;/span&gt;/_cluster/settings?pretty
+curl -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; -XPUT &lt;span class=&#34;nv&#34;&gt;$es_node&lt;/span&gt;/_cluster/settings -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;{
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;    &amp;#34;transient&amp;#34; : {
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;        &amp;#34;cluster.routing.allocation.enable&amp;#34; : &amp;#34;none&amp;#34;
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;    }
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;}
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;
+
+&lt;span class=&#34;c1&#34;&gt;# 所有节点执行完升级可以恢复下面的配置，all或者null都行&lt;/span&gt;
+curl -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; -XPUT &lt;span class=&#34;nv&#34;&gt;$es_node&lt;/span&gt;/_cluster/settings -d &lt;span class=&#34;s1&#34;&gt;&amp;#39;
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;{
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;    &amp;#34;transient&amp;#34; : {
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;        &amp;#34;cluster.routing.allocation.enable&amp;#34; : null
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;    }
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;}
+&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
       
     </item>
     
@@ -3717,24 +3789,6 @@ When that happens, git recognizes the hash in $REPOSITORY_HOME/refs/heads/&amp;l
 &lt;p&gt;在我看来，所谓心理治疗，其实就是 “鼓励说真话的游戏”。心理医生最重要的任务，就是让患者说出真话。长时间自欺欺人，使人的愧疚积聚，就会导致心理疾病。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-      
-    </item>
-    
-    <item>
-      <title>重读《三国演义》</title>
-      <link>https://blog.gourds.site/post/book/%E9%87%8D%E8%AF%BB_%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/</link>
-      <pubDate>Wed, 14 Jul 2021 22:43:46 +0800</pubDate>
-      
-      <guid>https://blog.gourds.site/post/book/%E9%87%8D%E8%AF%BB_%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89/</guid>
-      
-        <description>&lt;p&gt;前些日子突然想看书，以前屯的书这时作用就显示出来了，书架上书很多，鬼使神差，拿了本三国演义。之前只看过老三国，就是鲍国安那部，遗憾四大名著没读过，刚好趁这个机会读一下，最近也快看完了，博客也打算恢复开始写了，简单记录下乱七八糟的想法。&lt;/p&gt;
-&lt;p&gt;我现在所在的公司是做游戏的，主要是三国题材。之前关于三国有不少疑问，在读的过程中也有点豁然开朗的感觉了。&lt;/p&gt;
-&lt;p&gt;纵观市面上三国题材的游戏，大多LOGO都是赵云，通过读的过程，确实是感觉三国里的人物，还是赵云形象好，没啥负面新闻，关羽傲，吕布骚（专干义父），张飞太糙，刘皇叔又太爱哭。&lt;/p&gt;
-&lt;p&gt;另外也有疑问&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;卧龙凤雏得一人可安天下&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;感觉庞统被过誉了，可能是因为未建功而身先死。不过从读到的信息来看，死于落凤坡更多是因为心胸狭隘，他觉得孔明怕他建功，另一方面又没有对战局的清晰认识，所以送了人头。//好一匹白马，手动滑稽&lt;/p&gt;</description>
       
     </item>
     
